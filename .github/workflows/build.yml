@@ -1,0 +1,59 @@
+name: Build
+
+on:
+  workflow_dispatch:
+    inputs:
+      auto_deploy:
+        type: choice
+        description: Auto deploy to (NONE/UAT/PRD)
+        options:
+          - PRD
+          - UAT
+          - NONE
+        default: NONE
+        required: true
+      bump_version:
+        type: choice
+        description: Bump version
+        options:
+          - patch
+          - minor
+          - major
+        default: patch
+        required: true
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npm ci
+
+      - name: Build
+        id: build
+        run: ./scripts/build.sh
+        shell: bash
+        env:
+          BUMP_VERSION: ${{ github.event.inputs.bump_version }}
+
+      - name: Upload artefacts
+        uses: railmapgen/upload-artefacts@main
+        with:
+          app_name: seed-project
+          version: ${{ steps.build.outputs.RMG_VER }}
+          dist: dist
+          token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
+
+      - name: Auto deploy
+        if: ${{ github.event.inputs.auto_deploy == 'UAT' || github.event.inputs.auto_deploy == 'PRD' }}
+        run: |
+          curl -XPOST -u "wongchito:${{ secrets.RMG_BUILD_AND_RELEASE }}" \
+            -H "Accept: application/vnd.github.everest-preview+json" \
+            -H "Content-Type: application/json" \
+            https://api.github.com/repos/uat-railmapgen/rmg-repositories/actions/workflows/release.yml/dispatches \
+            --data '{"ref": "main", "inputs": {"app_name": "seed-project", "version": "${{ steps.build.outputs.RMG_VER }}", "environment": "${{ github.event.inputs.auto_deploy }}"}}'

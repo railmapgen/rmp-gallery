@@ -1,0 +1,57 @@
+{
+    "homepage": "https://railmapgen.github.io/seed-project",
+    "name": "seed-project",
+    "repository": "github:railmapgen/seed-project",
+    "bugs": {
+        "url": "https://github.com/railmapgen/seed-project/issues"
+    },
+    "license": "GPL-3.0-only",
+    "dependencies": {
+        "@chakra-ui/react": "^2.5.1",
+        "@emotion/react": "^11.10.6",
+        "@emotion/styled": "^11.10.6",
+        "@railmapgen/rmg-components": "^7.0.4",
+        "@railmapgen/rmg-runtime": "^4.0.10",
+        "@railmapgen/rmg-translate": "^2.0.1",
+        "@reduxjs/toolkit": "^1.9.3",
+        "framer-motion": "^10.3.4",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-i18next": "^12.2.0",
+        "react-icons": "^4.8.0",
+        "react-redux": "^8.0.5",
+        "react-router-dom": "^6.9.0"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^5.16.5",
+        "@testing-library/react": "^14.0.0",
+        "@types/node": "^18.15.3",
+        "@types/react": "^18.0.28",
+        "@types/react-dom": "^18.0.11",
+        "@types/react-router-dom": "^5.3.3",
+        "@types/redux-mock-store": "^1.0.3",
+        "@typescript-eslint/eslint-plugin": "^5.55.0",
+        "@typescript-eslint/parser": "^5.55.0",
+        "@vitejs/plugin-legacy": "^4.0.2",
+        "@vitejs/plugin-react": "^3.1.0",
+        "eslint": "^8.36.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "eslint-plugin-react": "^7.32.2",
+        "jsdom": "^21.1.1",
+        "prettier": "^2.8.4",
+        "redux-mock-store": "^1.5.4",
+        "terser": "^5.16.6",
+        "typescript": "^4.9.5",
+        "vite": "^4.2.0",
+        "vitest": "^0.29.3"
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "test": "vitest",
+        "lint": "eslint ./src",
+        "lint:fix": "eslint ./src --fix",
+        "preview": "vite preview"
+    },
+    "version": "1.0.14"
+}

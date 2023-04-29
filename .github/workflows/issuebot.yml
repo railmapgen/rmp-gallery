@@ -1,0 +1,51 @@
+name: Issue bot
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  updateGallery:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.body, 'Do not edit lines below, they are meant for bots only!!!') && !contains(github.event.issue.body, 'REPLACE ME')
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
+
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '18'
+
+      - run: npm ci
+        working-directory: scripts
+
+      - name: Setup firefox
+        uses: browser-actions/setup-firefox@v1
+        with:
+          firefox-version: latest
+
+      # - name: Install CNS11643 fonts
+      #   uses: RisingInIris2017/cjk-fonts-action@v1  
+
+      - name: Update and push
+        run: node --loader ts-node/esm ./issuebot.ts
+        working-directory: scripts
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          USER_LOGIN: ${{ github.event.issue.user.login }}
+          USER_ID: ${{ github.event.issue.user.id }}
+        id: bot
+
+      - name: pull-request-action
+        uses: vsoch/pull-request-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH_PREFIX: "bot-"
+          PULL_REQUEST_FROM_BRANCH: bot-${{ github.event.issue.number }}
+          PULL_REQUEST_BRANCH: "main"
+          PULL_REQUEST_TOKEN: ${{ secrets.RMG_BUILD_AND_RELEASE }}
+          PULL_REQUEST_TITLE: ${{ github.event.issue.title }}
+          PULL_REQUEST_BODY: "Hi, I'm the rmg bot updating ${{ github.event.issue.title }} on behalf of ${{ github.event.issue.user.login }}.\nThis should fix #${{ github.event.issue.number }}\n\n${{ steps.bot.outputs.REVIEW_URLS }}"

@@ -19,7 +19,7 @@ export default function WindowHeader() {
     return (
         <RmgWindowHeader>
             <Heading as="h4" size="md">
-                {t('Seed Project')}
+                {t('header.about.rmpGallery')}
             </Heading>
             <RmgEnvBadge environment={environment} version={appVersion} />
 

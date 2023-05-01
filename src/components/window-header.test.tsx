@@ -6,6 +6,6 @@ describe('WindowHeader', () => {
     it('Can render window header', () => {
         render(<WindowHeader />);
 
-        expect(screen.getByRole('heading').textContent).toContain('Seed Project');
+        expect(screen.getByRole('heading').textContent).toContain('RMP Gallery');
     });
 });

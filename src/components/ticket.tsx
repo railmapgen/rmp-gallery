@@ -66,9 +66,10 @@ export default function Ticket() {
         name: Translation;
         desc: Translation;
         reference: string;
+        justification: string;
     });
     const [param, setParam] = React.useState('');
-    const cityName = metadata.name['en']?.toLowerCase() ?? '';
+    const cityName = metadata.name['en']?.replace(/[^A-Za-z0-9]/g, '').toLowerCase() ?? '';
     const issueBody = [
         GITHUB_ISSUE_HEADER,
         GITHUB_ISSUE_PREAMBLE,
@@ -80,7 +81,7 @@ export default function Ticket() {
     ].join('\n\n');
     const manualSearchParams = new URLSearchParams({
         labels: 'resources',
-        title: `Resources: New palettes of ${cityName}`,
+        title: `Resources: New template of ${cityName}`,
     });
 
     const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -132,8 +133,8 @@ export default function Ticket() {
             type: 'input',
             label: t('Justification'),
             placeholder: 'The reason why you make these changes',
-            value: metadata.reference,
-            onChange: value => setMetadata({ ...metadata, reference: value }),
+            value: metadata.justification,
+            onChange: value => setMetadata({ ...metadata, justification: value }),
             minW: 250,
         },
     ];

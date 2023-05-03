@@ -63,7 +63,7 @@ const getMetadataFromCity = async (
     const filePath = resolve('..', 'public', 'resources', 'real_world', cityNameWithExtension);
     // https://stackoverflow.com/questions/15564185/exec-not-returning-anything-when-trying-to-run-git-shortlog-with-nodejs
     // https://stackoverflow.com/questions/73085141/git-shortlog-in-a-github-workflow-for-a-specific-directory
-    const stdout = execSync(`git log ${filePath} | git shortlog -s -e`, { encoding: 'utf-8' });
+    const stdout = execSync(`git log -- ${filePath} | git shortlog -s -e`, { encoding: 'utf-8' });
     const contributors = stdout
         .split(EOL)
         .map(line => line.match(/<\d+/)?.at(0))

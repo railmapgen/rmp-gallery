@@ -63,7 +63,7 @@ const getMetadataFromCity = async (
     const filePath = resolve('..', 'public', 'resources', 'real_world', cityNameWithExtension);
     // https://stackoverflow.com/questions/15564185/exec-not-returning-anything-when-trying-to-run-git-shortlog-with-nodejs
     // https://stackoverflow.com/questions/73085141/git-shortlog-in-a-github-workflow-for-a-specific-directory
-    const stdout = execSync(`git log | git shortlog -s -e -- ${filePath}`, { encoding: 'utf-8' });
+    const stdout = execSync(`git log ${filePath} | git shortlog -s -e`, { encoding: 'utf-8' });
     const contributors = stdout
         .split(EOL)
         .map(line => line.match(/<\d+/)?.at(0))
@@ -93,9 +93,11 @@ const main = async () => {
     });
     if (!existsSync(resolve('..', 'public', 'resources', 'metadata')))
         await mkdir(resolve('..', 'public', 'resources', 'metadata'));
-    await writeFile(resolve('..', 'public', 'resources', 'metadata', `${cityName}.json`), JSON.stringify(metadata), {
-        encoding: 'utf-8',
-    });
+    await writeFile(
+        resolve('..', 'public', 'resources', 'metadata', `${cityName}.json`),
+        JSON.stringify(metadata, null, 4),
+        { encoding: 'utf-8' }
+    );
 
     if (!existsSync(resolve('..', 'public', 'resources', 'thumbnails')))
         await mkdir(resolve('..', 'public', 'resources', 'thumbnails'));
@@ -124,9 +126,11 @@ const main = async () => {
             })
         )
     );
-    await writeFile(resolve('..', 'public', 'resources', 'real_world.json'), JSON.stringify(citiesWithMetadata), {
-        encoding: 'utf-8',
-    });
+    await writeFile(
+        resolve('..', 'public', 'resources', 'real_world.json'),
+        JSON.stringify(citiesWithMetadata, null, 4),
+        { encoding: 'utf-8' }
+    );
 
     execSync(`git add ${resolve('..', 'public', 'resources')}`);
     execSync(`git commit --amend --no-edit`);

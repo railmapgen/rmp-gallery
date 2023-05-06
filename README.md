@@ -17,5 +17,5 @@ Browse, use, and submit your RMP template here!
 7. Click _Submit_.
 8. Click _Copy issue body and open a new issue_.
 9. Paste the auto-copied context in issue body.
-10. Click _Submit new issue_
+10. Click _Submit new issue_.
 11. Wait check, approval, and merge from administrators. (No action required.)

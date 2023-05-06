@@ -1,5 +1,6 @@
 import {
     Button,
+    Divider,
     Flex,
     HStack,
     Input,
@@ -10,19 +11,17 @@ import {
     ModalFooter,
     ModalHeader,
     ModalOverlay,
-    Text,
     SystemStyleObject,
-    Divider,
+    Text,
 } from '@chakra-ui/react';
 import { RmgDebouncedTextarea, RmgFields, RmgFieldsField, RmgLabel, RmgPage } from '@railmapgen/rmg-components';
 import rmgRuntime from '@railmapgen/rmg-runtime';
-import { Translation } from '@railmapgen/rmg-translate';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { stringify } from 'zipson';
 
-import { GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE } from '../util/constant';
+import { GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, Metadata } from '../util/constant';
 import { makeGitHubIssueDetails, readFileAsText } from '../util/utils';
 import MultiLangEntryCard from './multi-lang-entry-card';
 
@@ -57,16 +56,11 @@ export default function Ticket() {
     const textareaRef = React.useRef<HTMLTextAreaElement>(null);
     const [isSubmitModalOpen, setIsSubmitModalOpen] = React.useState(false);
 
-    const [metadata, setMetadata] = React.useState({
+    const [metadata, setMetadata] = React.useState<Metadata>({
         name: { en: '' },
         desc: { en: '' },
         reference: '',
         justification: '',
-    } as {
-        name: Translation;
-        desc: Translation;
-        reference: string;
-        justification: string;
     });
     const [param, setParam] = React.useState('');
     const cityName = metadata.name['en']?.replace(/[^A-Za-z0-9]/g, '').toLowerCase() ?? '';
@@ -158,6 +152,25 @@ export default function Ticket() {
                         onRemove={lang => {
                             const metadataCopy = structuredClone(metadata);
                             delete metadataCopy.name[lang];
+                            setMetadata(metadataCopy);
+                        }}
+                    />
+                </RmgLabel>
+                <RmgLabel label={t('Description (Optional)')}>
+                    <MultiLangEntryCard
+                        translations={Object.entries(metadata.desc)}
+                        onUpdate={(lang, desc) =>
+                            setMetadata({ ...metadata, desc: { ...metadata.desc, [lang]: desc } })
+                        }
+                        onLangSwitch={(prevLang, nextLang) => {
+                            const metadataCopy = structuredClone(metadata);
+                            metadataCopy.desc[nextLang] = metadataCopy.desc[prevLang];
+                            delete metadataCopy.desc[prevLang];
+                            setMetadata(metadataCopy);
+                        }}
+                        onRemove={lang => {
+                            const metadataCopy = structuredClone(metadata);
+                            delete metadataCopy.desc[lang];
                             setMetadata(metadataCopy);
                         }}
                     />

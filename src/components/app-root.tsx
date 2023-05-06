@@ -1,7 +1,7 @@
 import { RmgErrorBoundary, RmgLoader, RmgPage, RmgThemeProvider, RmgWindow } from '@railmapgen/rmg-components';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Gallery from './gallery';
+import GalleryView from './gallery';
 import Ticket from './ticket';
 import WindowHeader from './window-header';
 
@@ -17,7 +17,7 @@ export default function AppRoot() {
                                 path="/"
                                 element={
                                     <RmgErrorBoundary suspenseFallback={<RmgLoader isIndeterminate />}>
-                                        <Gallery />
+                                        <GalleryView />
                                     </RmgErrorBoundary>
                                 }
                             />

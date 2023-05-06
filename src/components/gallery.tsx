@@ -18,34 +18,41 @@ import {
     Tabs,
 } from '@chakra-ui/react';
 import rmgRuntime from '@railmapgen/rmg-runtime';
-import { LanguageCode, Translation } from '@railmapgen/rmg-translate';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { MdAdd } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
-import { Events } from '../util/constant';
+import { useRootDispatch, useRootSelector } from '../redux';
+import { setGallery } from '../redux/app/app-slice';
+import { Events, Gallery } from '../util/constant';
+import DetailsModal from './details';
+import useTranslatedName from './hooks/use-translated-name';
 
-export default function Gallery() {
-    const {
-        t,
-        i18n: { language },
-    } = useTranslation();
+export default function GalleryView() {
     const navigate = useNavigate();
+    const dispatch = useRootDispatch();
+    const translateName = useTranslatedName();
+    const { t } = useTranslation();
+
+    const gallery = useRootSelector(state => state.app.gallery);
 
     const handleNew = () => {
         navigate('/new');
         rmgRuntime.event(Events.UPLOAD_TEMPLATES, {});
     };
 
-    const [realWorld, setRealWorld] = React.useState(
-        {} as { [cityName: string]: { contributors: string[]; name: Translation } }
-    );
+    const [city, setCity] = React.useState('shanghai');
+    const [isDetailsModalOpen, setIsDetailsModalOpen] = React.useState(false);
+    const handleDetails = (city: string) => {
+        setIsDetailsModalOpen(true);
+        setCity(city);
+    };
 
     React.useEffect(() => {
         fetch('resources/real_world.json')
-            .then(res => res.json())
-            .then(data => setRealWorld(data));
+            .then(res => res.json() as Promise<Gallery>)
+            .then(data => dispatch(setGallery(data)));
     }, []);
 
     return (
@@ -57,25 +64,30 @@ export default function Gallery() {
             <TabPanels>
                 <TabPanel>
                     <Flex flexWrap="wrap">
-                        {Object.keys(realWorld).map(city => (
+                        {Object.keys(gallery).map(city => (
                             <Card key={city} variant="elevated" minWidth="300" m="2">
                                 <CardBody>
                                     <Image src={`resources/thumbnails/${city}@300.png`} alt={city} borderRadius="lg" />
                                     <Stack mt="6" spacing="3">
-                                        <Heading size="lg">{realWorld[city].name[language as LanguageCode]}</Heading>
+                                        <Heading size="lg">{translateName(gallery[city].name)}</Heading>
                                     </Stack>
                                 </CardBody>
                                 <CardFooter>
-                                    <AvatarGroup>
-                                        {realWorld[city].contributors.map(contributor => (
+                                    <AvatarGroup max={3}>
+                                        {gallery[city].contributors.map(contributor => (
                                             <Avatar
                                                 key={contributor}
                                                 src={`https://avatars.githubusercontent.com/u/${contributor}`}
                                             />
                                         ))}
                                     </AvatarGroup>
-                                    <Button variant="solid" colorScheme="blue" ml="auto" isDisabled>
-                                        Set
+                                    <Button
+                                        variant="solid"
+                                        colorScheme="blue"
+                                        ml="auto"
+                                        onClick={() => handleDetails(city)}
+                                    >
+                                        {t('Details')}
                                     </Button>
                                 </CardFooter>
                             </Card>
@@ -90,6 +102,12 @@ export default function Gallery() {
                             />
                         </Box>
                     </Flex>
+
+                    <DetailsModal
+                        city={city}
+                        isOpen={isDetailsModalOpen}
+                        onClose={() => setIsDetailsModalOpen(false)}
+                    />
                 </TabPanel>
             </TabPanels>
         </Tabs>

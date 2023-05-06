@@ -34,11 +34,7 @@ export default function Gallery() {
     const navigate = useNavigate();
 
     const handleNew = () => {
-        if (rmgRuntime.isStandaloneWindow()) {
-            navigate('/new');
-        } else {
-            rmgRuntime.openApp('rmg-templates-upload');
-        }
+        navigate('/new');
         rmgRuntime.event(Events.UPLOAD_TEMPLATES, {});
     };
 

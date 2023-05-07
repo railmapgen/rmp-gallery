@@ -20,6 +20,7 @@ import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { stringify } from 'zipson';
 
+import { useRootSelector } from '../redux';
 import { GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, Metadata } from '../util/constant';
 import { makeGitHubIssueDetails, readFileAsText } from '../util/utils';
 import MultiLangEntryCard from './multi-lang-entry-card';
@@ -45,6 +46,7 @@ export default function Ticket() {
         state: { metadata: metadataParam },
     } = useLocation();
     const navigate = useNavigate();
+    const gallery = useRootSelector(state => state.app.gallery);
     const { t } = useTranslation();
 
     const handleBack = () => navigate('/');
@@ -66,7 +68,7 @@ export default function Ticket() {
     ].join('\n\n');
     const manualSearchParams = new URLSearchParams({
         labels: 'resources',
-        title: `Resources: New template of ${cityName}`,
+        title: `Resources: ${cityName in gallery ? 'Update' : 'New'} template of ${cityName}`,
     });
 
     const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {

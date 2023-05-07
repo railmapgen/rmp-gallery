@@ -113,7 +113,7 @@ const main = async () => {
 
     execSync(`git add ${resolve('..', 'public', 'resources')}`);
     execSync(
-        `git commit -m "#${process.env.ISSUE_NUMBER} Update ${cityName}" ` +
+        `git commit -m "#${process.env.ISSUE_NUMBER} ${process.env.ISSUE_TITLE}" ` +
             `--author="${process.env.USER_LOGIN} <${process.env.USER_ID}+${process.env.USER_LOGIN}@users.noreply.github.com>"`
     );
 

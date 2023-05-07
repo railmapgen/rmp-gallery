@@ -1,15 +1,20 @@
 import { Heading, HStack, IconButton, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react';
-import { useTranslation } from 'react-i18next';
 import { RmgEnvBadge, RmgWindowHeader } from '@railmapgen/rmg-components';
-import { LANGUAGE_NAMES, LanguageCode, SUPPORTED_LANGUAGES } from '@railmapgen/rmg-translate';
 import rmgRuntime from '@railmapgen/rmg-runtime';
-import { MdTranslate } from 'react-icons/md';
+import { LanguageCode, LANGUAGE_NAMES, SUPPORTED_LANGUAGES } from '@railmapgen/rmg-translate';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { MdHelp, MdTranslate } from 'react-icons/md';
+
+import AboutModal from './about';
 
 export default function WindowHeader() {
     const { t } = useTranslation();
 
     const environment = rmgRuntime.getEnv();
     const appVersion = rmgRuntime.getAppVersion();
+
+    const [isAboutModalOpen, setIsAboutModalOpen] = React.useState(false);
 
     const handleSelectLanguage = (language: LanguageCode) => {
         rmgRuntime.setLanguage(language);
@@ -34,7 +39,16 @@ export default function WindowHeader() {
                         ))}
                     </MenuList>
                 </Menu>
+                <IconButton
+                    size="sm"
+                    variant="ghost"
+                    aria-label="Help"
+                    icon={<MdHelp />}
+                    onClick={() => setIsAboutModalOpen(true)}
+                />
             </HStack>
+
+            <AboutModal isOpen={isAboutModalOpen} onClose={() => setIsAboutModalOpen(false)} />
         </RmgWindowHeader>
     );
 }

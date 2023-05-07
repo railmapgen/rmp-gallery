@@ -1,6 +1,6 @@
 # RMP Gallery
 
-Browse, use, and submit your RMP template here!
+Browse, set, and submit your RMP template here!
 
 ## How to submit your project
 

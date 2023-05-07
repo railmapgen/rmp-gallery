@@ -38,7 +38,16 @@ export default function GalleryView() {
     const gallery = useRootSelector(state => state.app.gallery);
 
     const handleNew = () => {
-        navigate('/new');
+        navigate('/new', {
+            state: {
+                metadata: {
+                    name: { en: '' },
+                    desc: { en: '' },
+                    reference: '',
+                    justification: '',
+                },
+            },
+        });
         rmgRuntime.event(Events.UPLOAD_TEMPLATES, {});
     };
 

@@ -15,10 +15,9 @@ import {
     Text,
 } from '@chakra-ui/react';
 import { RmgDebouncedTextarea, RmgFields, RmgFieldsField, RmgLabel, RmgPage } from '@railmapgen/rmg-components';
-import rmgRuntime from '@railmapgen/rmg-runtime';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { stringify } from 'zipson';
 
 import { GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, Metadata } from '../util/constant';
@@ -42,26 +41,18 @@ const styles: SystemStyleObject = {
 };
 
 export default function Ticket() {
-    const { t } = useTranslation();
+    const {
+        state: { metadata: metadataParam },
+    } = useLocation();
     const navigate = useNavigate();
+    const { t } = useTranslation();
 
-    const handleBack = () => {
-        if (rmgRuntime.isStandaloneWindow()) {
-            navigate('/');
-        } else {
-            rmgRuntime.openApp('rmg-templates');
-        }
-    };
+    const handleBack = () => navigate('/');
 
     const textareaRef = React.useRef<HTMLTextAreaElement>(null);
     const [isSubmitModalOpen, setIsSubmitModalOpen] = React.useState(false);
 
-    const [metadata, setMetadata] = React.useState<Metadata>({
-        name: { en: '' },
-        desc: { en: '' },
-        reference: '',
-        justification: '',
-    });
+    const [metadata, setMetadata] = React.useState<Metadata>(metadataParam);
     const [param, setParam] = React.useState('');
     const cityName = metadata.name['en']?.replace(/[^A-Za-z0-9]/g, '').toLowerCase() ?? '';
     const issueBody = [

@@ -17,7 +17,8 @@ import {
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoHeartOutline, IoStarOutline } from 'react-icons/io5';
-import { MdDownload, MdInsertDriveFile } from 'react-icons/md';
+import { MdDownload, MdEdit, MdInsertDriveFile } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 
 import { useRootSelector } from '../redux';
 import { Metadata } from '../util/constant';
@@ -25,6 +26,7 @@ import useTranslatedName from './hooks/use-translated-name';
 
 const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => void }) => {
     const { city, isOpen, onClose } = props;
+    const navigate = useNavigate();
     const { t } = useTranslation();
     const translateName = useTranslatedName();
 
@@ -39,11 +41,13 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
     React.useEffect(() => {
         fetch(`resources/metadata/${city}.json`)
             .then(res => res.json())
-            .then(data => setMetadata(data));
+            .then(data => setMetadata({ ...data, justification: '' }));
     }, [city]);
 
+    const handleEdit = () => navigate('/new', { state: { metadata } });
+
     return (
-        <Modal isOpen={isOpen} onClose={onClose} size="xl" scrollBehavior="inside">
+        <Modal isOpen={isOpen} onClose={onClose} size="6xl" scrollBehavior="inside">
             <ModalOverlay />
             <ModalContent>
                 <ModalHeader>{t('Details')}</ModalHeader>
@@ -69,6 +73,7 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
                     </AvatarGroup>
                     <IconButton aria-label="Like" variant="ghost" icon={<IoHeartOutline />} isDisabled />
                     <IconButton aria-label="Favorite" variant="ghost" icon={<IoStarOutline />} isDisabled />
+                    <IconButton aria-label="Edit" variant="ghost" icon={<MdEdit />} onClick={handleEdit} />
                     <a href={`resources/real_world/${city}.json`} target="_blank" rel="noopener noreferrer">
                         <IconButton aria-label="Download" variant="ghost" icon={<MdDownload />} />
                     </a>

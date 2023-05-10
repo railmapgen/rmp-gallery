@@ -79,7 +79,16 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
                 <ModalFooter>
                     <AvatarGroup max={8} mr="auto">
                         {gallery[city].contributors.map(contributor => (
-                            <Avatar key={contributor} src={`https://avatars.githubusercontent.com/u/${contributor}`} />
+                            <Avatar
+                                key={contributor}
+                                src={`https://avatars.githubusercontent.com/u/${contributor}`}
+                                cursor="pointer"
+                                onClick={() =>
+                                    fetch(`https://api.github.com/user/${contributor}`)
+                                        .then(res => res.json())
+                                        .then(user => window.open(`https://github.com/${user.login}`))
+                                }
+                            />
                         ))}
                     </AvatarGroup>
                     <IconButton aria-label="Like" variant="ghost" icon={<IoHeartOutline />} isDisabled />

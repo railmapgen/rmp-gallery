@@ -179,7 +179,12 @@ export default function Ticket() {
                     <Button
                         size="sm"
                         colorScheme="primary"
-                        isDisabled={param === '' || metadata.reference === '' || cityName === ''}
+                        isDisabled={
+                            param === '' ||
+                            metadata.reference === '' ||
+                            metadata.justification === '' ||
+                            cityName === ''
+                        }
                         onClick={() => setIsSubmitModalOpen(true)}
                     >
                         {t('Submit')}

@@ -12,12 +12,14 @@ import {
     ModalHeader,
     ModalOverlay,
     Text,
+    Tooltip,
+    useToast,
     VStack,
 } from '@chakra-ui/react';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoHeartOutline, IoStarOutline } from 'react-icons/io5';
-import { MdDownload, MdEdit, MdInsertDriveFile } from 'react-icons/md';
+import { MdDownload, MdEdit, MdInsertDriveFile, MdShare } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
 import { useRootSelector } from '../redux';
@@ -27,6 +29,7 @@ import useTranslatedName from './hooks/use-translated-name';
 const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => void }) => {
     const { city, isOpen, onClose } = props;
     const navigate = useNavigate();
+    const toast = useToast();
     const { t } = useTranslation();
     const translateName = useTranslatedName();
 
@@ -45,6 +48,14 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
     }, [city]);
 
     const handleEdit = () => navigate('/new', { state: { metadata } });
+
+    const rmpShareLink = `https://${window.location.hostname}/rmp/s/${city}`;
+    const rmpShareLinkClickedToast = {
+        title: t('Link copied.'),
+        status: 'success' as const,
+        duration: 9000,
+        isClosable: true,
+    };
 
     return (
         <Modal isOpen={isOpen} onClose={onClose} size="6xl" scrollBehavior="inside">
@@ -73,6 +84,17 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
                     </AvatarGroup>
                     <IconButton aria-label="Like" variant="ghost" icon={<IoHeartOutline />} isDisabled />
                     <IconButton aria-label="Favorite" variant="ghost" icon={<IoStarOutline />} isDisabled />
+                    <Tooltip label={rmpShareLink}>
+                        <IconButton
+                            aria-label="Share"
+                            variant="ghost"
+                            icon={<MdShare />}
+                            onClick={() => {
+                                navigator.clipboard.writeText(rmpShareLink);
+                                toast(rmpShareLinkClickedToast);
+                            }}
+                        />
+                    </Tooltip>
                     <IconButton aria-label="Edit" variant="ghost" icon={<MdEdit />} onClick={handleEdit} />
                     <a href={`resources/real_world/${city}.json`} target="_blank" rel="noopener noreferrer">
                         <IconButton aria-label="Download" variant="ghost" icon={<MdDownload />} />

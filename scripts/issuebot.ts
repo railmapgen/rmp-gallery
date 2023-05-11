@@ -9,6 +9,7 @@ import { parse } from 'zipson';
 import { Translation } from '@railmapgen/rmg-translate';
 
 import { makeImage, makeThumbnail } from './images.js';
+import { Metadata, MetadataDetail } from './constants.js';
 
 const readIssueBody = async (): Promise<HTMLDetailsElement[]> => {
     execSync(
@@ -29,7 +30,7 @@ const parseDetailsEl = (detailsEls: HTMLDetailsElement[]) => {
     if (!metadataDetailEl) {
         throw new Error('Detail element of metadata is required.');
     }
-    const metadata = JSON.parse(metadataDetailEl.textContent!.trim());
+    const metadataDetail = JSON.parse(metadataDetailEl.textContent!.trim()) as MetadataDetail;
 
     const paramDetailEl = detailsEls.find(el => el.getAttribute('type') === 'real_world');
     if (!paramDetailEl) {
@@ -44,13 +45,28 @@ const parseDetailsEl = (detailsEls: HTMLDetailsElement[]) => {
     if (paramDetailEl.textContent === null) {
         throw new Error('textContent must contains data.');
     }
-    const param = parse(paramDetailEl.textContent.trim()); // zipson requirement
+    const param = parse(paramDetailEl.textContent.trim()); // trim to make a valid zipson data
     const cityName = paramDetailEl.getAttribute('city');
     if (!cityName || cityName === '') {
         throw new Error('City name must be a non empty string.');
     }
 
-    return { metadata, param, cityName };
+    return { metadataDetail, param, cityName };
+};
+
+const makeMetadataWithUpdateHistory = async (cityName: string, metadataDetail: MetadataDetail) => {
+    const oldMetadataFile = await readFile(resolve('..', 'public', 'resources', 'metadata', `${cityName}.json`), {
+        encoding: 'utf-8',
+    });
+    const oldMetadata = JSON.parse(oldMetadataFile) as Metadata;
+    const metadata = structuredClone(oldMetadata);
+    const updateHistory = metadata.updateHistory ?? [];
+    updateHistory.push({
+        id: parseInt(process.env.USER_ID!),
+        reason: metadataDetail.justification,
+        time: Date.now(),
+    });
+    return metadata;
 };
 
 const getMetadataFromCity = async (
@@ -83,7 +99,7 @@ const getMetadataFromCity = async (
 
 const main = async () => {
     const detailsEls = await readIssueBody();
-    const { metadata, param, cityName } = parseDetailsEl(detailsEls);
+    const { metadataDetail, param, cityName } = parseDetailsEl(detailsEls);
 
     if (!existsSync(resolve('..', 'public', 'resources'))) await mkdir(resolve('..', 'public', 'resources'));
     if (!existsSync(resolve('..', 'public', 'resources', 'real_world')))
@@ -91,6 +107,8 @@ const main = async () => {
     await writeFile(resolve('..', 'public', 'resources', 'real_world', `${cityName}.json`), JSON.stringify(param), {
         encoding: 'utf-8',
     });
+
+    const metadata = await makeMetadataWithUpdateHistory(cityName, metadataDetail);
     if (!existsSync(resolve('..', 'public', 'resources', 'metadata')))
         await mkdir(resolve('..', 'public', 'resources', 'metadata'));
     await writeFile(

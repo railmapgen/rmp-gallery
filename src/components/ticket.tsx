@@ -120,6 +120,8 @@ export default function Ticket() {
             type: 'input',
             label: t('Justification'),
             placeholder: 'The reason why you make these changes',
+            // Enforce a pure English update history.
+            validator: val => /^[a-zA-Z0-9. -]+$/.test(val),
             value: metadata.justification,
             onChange: value => setMetadata({ ...metadata, justification: value }),
             minW: 250,
@@ -183,6 +185,7 @@ export default function Ticket() {
                             param === '' ||
                             metadata.reference === '' ||
                             metadata.justification === '' ||
+                            !/^[a-zA-Z0-9. -]+$/.test(metadata.justification) ||
                             cityName === ''
                         }
                         onClick={() => setIsSubmitModalOpen(true)}

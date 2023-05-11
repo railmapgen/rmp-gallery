@@ -34,7 +34,7 @@ const AboutModal = (props: { isOpen: boolean; onClose: () => void }) => {
 
                 <ModalBody paddingBottom={10}>
                     <Flex direction="row">
-                        <Image boxSize="128px" src="/logo192.png" />
+                        <Image boxSize="128px" src="/rmp-gallery/logo192.png" />
                         <Flex direction="column" width="100%" alignItems="center" justifyContent="center">
                             <Text fontSize="xl" as="b">
                                 {t('header.about.rmpGallery')}

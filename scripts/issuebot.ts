@@ -55,17 +55,23 @@ const parseDetailsEl = (detailsEls: HTMLDetailsElement[]) => {
 };
 
 const makeMetadataWithUpdateHistory = async (cityName: string, metadataDetail: MetadataDetail) => {
-    const oldMetadataFile = await readFile(resolve('..', 'public', 'resources', 'metadata', `${cityName}.json`), {
-        encoding: 'utf-8',
-    });
-    const oldMetadata = JSON.parse(oldMetadataFile) as Metadata;
-    const metadata = structuredClone(oldMetadata);
-    const updateHistory = metadata.updateHistory ?? [];
+    const { justification, ...metadataWithoutJustification } = metadataDetail;
+    const metadata = structuredClone(metadataWithoutJustification) as Metadata;
+
+    const oldMetadataFilePath = resolve('..', 'public', 'resources', 'metadata', `${cityName}.json`);
+    const updateHistory: Metadata['updateHistory'] = [];
+    if (existsSync(oldMetadataFilePath)) {
+        const oldMetadataFile = await readFile(oldMetadataFilePath, { encoding: 'utf-8' });
+        const oldMetadata = JSON.parse(oldMetadataFile) as Metadata;
+        updateHistory.push(...structuredClone(oldMetadata.updateHistory));
+    }
     updateHistory.push({
         id: parseInt(process.env.USER_ID!),
         reason: metadataDetail.justification,
         time: Date.now(),
     });
+    metadata.updateHistory = updateHistory;
+
     return metadata;
 };
 
@@ -74,7 +80,7 @@ const getMetadataFromCity = async (
 ): Promise<{
     contributors: string[];
     name: Translation;
-    // lastUpdateOn: number;
+    lastUpdateOn: number;
 }> => {
     const filePath = resolve('..', 'public', 'resources', 'real_world', cityNameWithExtension);
     // https://stackoverflow.com/questions/15564185/exec-not-returning-anything-when-trying-to-run-git-shortlog-with-nodejs
@@ -90,11 +96,13 @@ const getMetadataFromCity = async (
         resolve('..', 'public', 'resources', 'metadata', cityNameWithExtension),
         'utf-8'
     );
-    const metadata = JSON.parse(metadataString);
+    const metadata = JSON.parse(metadataString) as Metadata;
     const name = metadata.name;
     if (!name) throw new Error('Metadata must contain name.');
 
-    return { contributors, name };
+    const lastUpdateOn = Math.max(...metadata.updateHistory.map(entry => entry.time));
+
+    return { contributors, name, lastUpdateOn };
 };
 
 const main = async () => {

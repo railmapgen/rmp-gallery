@@ -19,6 +19,7 @@ import {
     useToast,
     VStack,
 } from '@chakra-ui/react';
+import rmgRuntime from '@railmapgen/rmg-runtime';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoHeartOutline, IoStarOutline } from 'react-icons/io5';
@@ -28,6 +29,10 @@ import { useNavigate } from 'react-router-dom';
 import { useRootSelector } from '../redux';
 import { Metadata } from '../util/constant';
 import useTranslatedName from './hooks/use-translated-name';
+
+const RMP_GALLERY_CHANNEL_NAME = 'RMP_GALLERY_CHANNEL';
+const RMP_GALLERY_CHANNEL_EVENT = 'OPEN_TEMPLATE';
+const CHN = new BroadcastChannel(RMP_GALLERY_CHANNEL_NAME);
 
 const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => void }) => {
     const { city, isOpen, onClose } = props;
@@ -51,6 +56,15 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
     }, [city]);
 
     const handleEdit = () => navigate('/new', { state: { metadata } });
+    const handleOpenTemplate = () => {
+        CHN.postMessage({ event: RMP_GALLERY_CHANNEL_EVENT, data: city });
+        toast({
+            title: t(`Template ${city} imported in Rail Map Painter.`),
+            status: 'success' as const,
+            duration: 9000,
+            isClosable: true,
+        });
+    };
 
     const rmpShareLink = `https://${window.location.hostname}/rmp/s/${city}`;
     const rmpShareLinkClickedToast = {
@@ -128,7 +142,18 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
                     <a href={`resources/real_world/${city}.json`} target="_blank" rel="noopener noreferrer">
                         <IconButton aria-label="Download" variant="ghost" icon={<MdDownload />} />
                     </a>
-                    <IconButton aria-label="Import" variant="ghost" icon={<MdInsertDriveFile />} isDisabled />
+                    {rmgRuntime.isStandaloneWindow() ? (
+                        <Tooltip label="You may directly use this template if your are in Rail Map Painter or Rail Map Toolkit">
+                            <IconButton aria-label="Import" variant="ghost" icon={<MdInsertDriveFile />} isDisabled />
+                        </Tooltip>
+                    ) : (
+                        <IconButton
+                            aria-label="Import"
+                            variant="ghost"
+                            icon={<MdInsertDriveFile />}
+                            onClick={handleOpenTemplate}
+                        />
+                    )}
                 </ModalFooter>
             </ModalContent>
         </Modal>

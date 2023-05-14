@@ -35,7 +35,7 @@ export default function GalleryView() {
     const translateName = useTranslatedName();
     const { t } = useTranslation();
 
-    const gallery = useRootSelector(state => state.app.gallery);
+    const { gallery } = useRootSelector(state => state.app);
 
     const handleNew = () => {
         navigate('/new', {

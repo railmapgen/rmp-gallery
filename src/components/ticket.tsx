@@ -21,7 +21,7 @@ import { useLocation, useNavigate } from 'react-router-dom';
 import { stringify } from 'zipson';
 
 import { useRootSelector } from '../redux';
-import { GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, Metadata } from '../util/constant';
+import { GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, MetadataDetail } from '../util/constant';
 import { makeGitHubIssueDetails, readFileAsText } from '../util/utils';
 import MultiLangEntryCard from './multi-lang-entry-card';
 
@@ -54,7 +54,7 @@ export default function Ticket() {
     const textareaRef = React.useRef<HTMLTextAreaElement>(null);
     const [isSubmitModalOpen, setIsSubmitModalOpen] = React.useState(false);
 
-    const [metadata, setMetadata] = React.useState<Metadata>(metadataParam);
+    const [metadata, setMetadata] = React.useState<MetadataDetail>(metadataParam);
     const [param, setParam] = React.useState('');
     const cityName = metadata.name['en']?.replace(/[^A-Za-z0-9]/g, '').toLowerCase() ?? '';
     const issueBody = [

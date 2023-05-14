@@ -8,13 +8,24 @@ export enum Events {
 export const GITHUB_ISSUE_HEADER = 'Hi RMP team! I would like to contribute to the gallery with the data below.';
 export const GITHUB_ISSUE_PREAMBLE = '**Do not edit lines below, they are meant for bots only!!!**';
 
-export interface Metadata {
+export interface MetadataDetail {
     name: Translation;
     desc: Translation;
     reference: string;
     justification: string;
 }
 
+export interface Metadata {
+    name: Translation;
+    desc: Translation;
+    reference: string;
+    updateHistory: {
+        id: number;
+        reason: string;
+        time: number;
+    }[];
+}
+
 export interface Gallery {
-    [cityName: string]: { contributors: string[]; name: Translation };
+    [cityName: string]: { contributors: string[]; name: Translation; lastUpdateOn: number };
 }

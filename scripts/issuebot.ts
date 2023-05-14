@@ -67,6 +67,7 @@ const makeMetadataWithUpdateHistory = async (cityName: string, metadataDetail: M
     }
     updateHistory.push({
         id: parseInt(process.env.USER_ID!),
+        issueNumber: parseInt(process.env.ISSUE_NUMBER!),
         reason: metadataDetail.justification,
         time: Date.now(),
     });

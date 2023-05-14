@@ -13,6 +13,7 @@ export interface Metadata {
     reference: string;
     updateHistory: {
         id: number;
+        issueNumber: number;
         reason: string;
         time: number;
     }[];

@@ -1,9 +1,12 @@
 import {
     Avatar,
     AvatarGroup,
+    Flex,
     Heading,
     IconButton,
     Image,
+    List,
+    ListItem,
     Modal,
     ModalBody,
     ModalCloseButton,
@@ -39,7 +42,7 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
         name: { en: '' },
         desc: { en: '' },
         reference: '',
-        justification: '',
+        updateHistory: [],
     });
     React.useEffect(() => {
         fetch(`resources/metadata/${city}.json`)
@@ -70,10 +73,29 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
                             <Image src={`resources/thumbnails/${city}.png`} alt={city} borderRadius="lg" />
                         </a>
                     </VStack>
-                    <Heading as="h5" size="sm" mt={3} mb={2}>
+                    <Heading as="h5" size="md" mt={3} mb={2}>
                         {translateName(metadata.name)}
                     </Heading>
                     <Text>{translateName(metadata.desc)}</Text>
+
+                    <Heading as="h5" size="sm" mt={3} mb={2}>
+                        {t('Update History')}
+                    </Heading>
+                    <List>
+                        {metadata.updateHistory.map(entry => (
+                            <ListItem key={entry.id}>
+                                <Flex flexDirection="row" alignItems="center">
+                                    <Avatar
+                                        size="sm"
+                                        mr="2"
+                                        src={`https://avatars.githubusercontent.com/u/${entry.id}`}
+                                    />
+                                    <Text mr="auto">{entry.reason}</Text>
+                                    <Text>{new Date(entry.time).toLocaleString(undefined, { hour12: false })}</Text>
+                                </Flex>
+                            </ListItem>
+                        ))}
+                    </List>
                 </ModalBody>
 
                 <ModalFooter>

@@ -25,8 +25,7 @@ import { IoHeartOutline, IoStarOutline } from 'react-icons/io5';
 import { MdDownload, MdEdit, MdInsertDriveFile, MdShare } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
-import { useRootSelector } from '../redux';
-import { Metadata } from '../util/constant';
+import { Metadata, MetadataDetail } from '../util/constant';
 import useTranslatedName from './hooks/use-translated-name';
 
 const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => void }) => {
@@ -35,8 +34,6 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
     const toast = useToast();
     const { t } = useTranslation();
     const translateName = useTranslatedName();
-
-    const gallery = useRootSelector(state => state.app.gallery);
 
     const [metadata, setMetadata] = React.useState<Metadata>({
         name: { en: '' },
@@ -50,7 +47,13 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
             .then(data => setMetadata({ ...data, justification: '' }));
     }, [city]);
 
-    const handleEdit = () => navigate('/new', { state: { metadata } });
+    const handleEdit = () => {
+        const metadataCopy = structuredClone(metadata);
+        const metadataDetail = (({ updateHistory, ...rest }) => ({ ...rest, justification: '' }))(
+            metadataCopy
+        ) as MetadataDetail;
+        navigate('/new', { state: { metadata: metadataDetail } });
+    };
 
     const rmpShareLink = `https://${window.location.hostname}/rmp/s/${city}`;
     const rmpShareLinkClickedToast = {
@@ -83,7 +86,7 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
                     </Heading>
                     <List>
                         {metadata.updateHistory.map(entry => (
-                            <ListItem key={entry.id}>
+                            <ListItem key={entry.issueNumber}>
                                 <Flex flexDirection="row" alignItems="center">
                                     <Avatar
                                         size="sm"

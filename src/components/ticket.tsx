@@ -110,7 +110,7 @@ export default function Ticket() {
         },
         {
             type: 'input',
-            label: t('Reference link'),
+            label: t('Reference link (Official website preferred)'),
             placeholder: 'Enter the link where you get the valid data',
             value: metadata.reference,
             onChange: value => setMetadata({ ...metadata, reference: value }),
@@ -118,7 +118,7 @@ export default function Ticket() {
         },
         {
             type: 'input',
-            label: t('Justification'),
+            label: t('Justification (English only)'),
             placeholder: 'The reason why you make these changes',
             // Enforce a pure English update history.
             validator: val => /^[a-zA-Z0-9. -]+$/.test(val),
@@ -132,7 +132,7 @@ export default function Ticket() {
         <RmgPage sx={styles}>
             <Flex>
                 <RmgFields fields={fields} />
-                <RmgLabel label={t('City Name')}>
+                <RmgLabel label={t('City Name (English required)')}>
                     <MultiLangEntryCard
                         translations={Object.entries(metadata.name)}
                         onUpdate={(lang, name) =>
@@ -151,7 +151,7 @@ export default function Ticket() {
                         }}
                     />
                 </RmgLabel>
-                <RmgLabel label={t('Description (Optional)')}>
+                <RmgLabel label={t('Description (Optional, English required)')}>
                     <MultiLangEntryCard
                         translations={Object.entries(metadata.desc)}
                         onUpdate={(lang, desc) =>
@@ -186,6 +186,7 @@ export default function Ticket() {
                             metadata.reference === '' ||
                             metadata.justification === '' ||
                             !/^[a-zA-Z0-9. -]+$/.test(metadata.justification) ||
+                            (Object.keys(metadata.desc).length > 0 && !('en' in metadata.desc)) ||
                             cityName === ''
                         }
                         onClick={() => setIsSubmitModalOpen(true)}

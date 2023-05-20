@@ -67,6 +67,7 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
             duration: 9000,
             isClosable: true,
         });
+        onClose();
     };
 
     const rmpShareLink = `https://${window.location.hostname}/rmp/s/${city}`;

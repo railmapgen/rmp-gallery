@@ -16,7 +16,7 @@ export default function AppRoot() {
                             <Route
                                 path="/"
                                 element={
-                                    <RmgErrorBoundary suspenseFallback={<RmgLoader isIndeterminate />}>
+                                    <RmgErrorBoundary>
                                         <GalleryView />
                                     </RmgErrorBoundary>
                                 }
@@ -24,7 +24,7 @@ export default function AppRoot() {
                             <Route
                                 path="/new"
                                 element={
-                                    <RmgErrorBoundary suspenseFallback={<RmgLoader isIndeterminate />}>
+                                    <RmgErrorBoundary>
                                         <Ticket />
                                     </RmgErrorBoundary>
                                 }

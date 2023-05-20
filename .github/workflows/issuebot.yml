@@ -2,12 +2,12 @@ name: Issue bot
 
 on:
   issues:
-    types: [opened]
+    types: [opened, edited]
 
 jobs:
   updateGallery:
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.body, 'Do not edit lines below, they are meant for bots only!!!') && !contains(github.event.issue.body, 'REPLACE ME')
+    if: contains(github.event.issue.body, 'Do not edit lines below, they are meant for bots only!!!')
     steps:
       - uses: actions/checkout@v3
         with:

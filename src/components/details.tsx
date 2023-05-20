@@ -26,8 +26,7 @@ import { IoHeartOutline, IoStarOutline } from 'react-icons/io5';
 import { MdDownload, MdEdit, MdInsertDriveFile, MdShare } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
-import { useRootSelector } from '../redux';
-import { Metadata } from '../util/constant';
+import { Metadata, MetadataDetail } from '../util/constant';
 import useTranslatedName from './hooks/use-translated-name';
 
 const RMP_GALLERY_CHANNEL_NAME = 'RMP_GALLERY_CHANNEL';
@@ -41,8 +40,6 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
     const { t } = useTranslation();
     const translateName = useTranslatedName();
 
-    const gallery = useRootSelector(state => state.app.gallery);
-
     const [metadata, setMetadata] = React.useState<Metadata>({
         name: { en: '' },
         desc: { en: '' },
@@ -55,7 +52,13 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
             .then(data => setMetadata({ ...data, justification: '' }));
     }, [city]);
 
-    const handleEdit = () => navigate('/new', { state: { metadata } });
+    const handleEdit = () => {
+        const metadataCopy = structuredClone(metadata);
+        const metadataDetail = (({ updateHistory, ...rest }) => ({ ...rest, justification: '' }))(
+            metadataCopy
+        ) as MetadataDetail;
+        navigate('/new', { state: { metadata: metadataDetail } });
+    };
     const handleOpenTemplate = () => {
         CHN.postMessage({ event: RMP_GALLERY_CHANNEL_EVENT, data: city });
         toast({
@@ -97,7 +100,7 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
                     </Heading>
                     <List>
                         {metadata.updateHistory.map(entry => (
-                            <ListItem key={entry.id}>
+                            <ListItem key={entry.issueNumber}>
                                 <Flex flexDirection="row" alignItems="center">
                                     <Avatar
                                         size="sm"

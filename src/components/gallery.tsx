@@ -25,7 +25,7 @@ import { useNavigate } from 'react-router-dom';
 
 import { useRootDispatch, useRootSelector } from '../redux';
 import { setGallery } from '../redux/app/app-slice';
-import { Events, Gallery } from '../util/constant';
+import { Events, Gallery, MetadataDetail } from '../util/constant';
 import DetailsModal from './details';
 import useTranslatedName from './hooks/use-translated-name';
 
@@ -45,7 +45,7 @@ export default function GalleryView() {
                     desc: { en: '' },
                     reference: '',
                     justification: '',
-                },
+                } as MetadataDetail,
             },
         });
         rmgRuntime.event(Events.UPLOAD_TEMPLATES, {});

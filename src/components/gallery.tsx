@@ -96,7 +96,7 @@ export default function GalleryView() {
                                         ml="auto"
                                         onClick={() => handleDetails(city)}
                                     >
-                                        {t('Details')}
+                                        {t('details.title')}
                                     </Button>
                                 </CardFooter>
                             </Card>

@@ -67,7 +67,7 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
         <Modal isOpen={isOpen} onClose={onClose} size="6xl" scrollBehavior="inside">
             <ModalOverlay />
             <ModalContent>
-                <ModalHeader>{t('Details')}</ModalHeader>
+                <ModalHeader>{t('details.title')}</ModalHeader>
                 <ModalCloseButton />
 
                 <ModalBody paddingBottom={10}>
@@ -82,7 +82,7 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
                     <Text>{translateName(metadata.desc)}</Text>
 
                     <Heading as="h5" size="sm" mt={3} mb={2}>
-                        {t('Update History')}
+                        {t('details.updateHistory')}
                     </Heading>
                     <List>
                         {metadata.updateHistory.map(entry => (

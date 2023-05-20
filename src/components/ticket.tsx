@@ -114,22 +114,22 @@ export default function Ticket() {
     const fields: RmgFieldsField[] = [
         {
             type: 'custom',
-            label: t('Project file'),
+            label: t('ticket.file'),
             component: <Input variant="flushed" size="xs" type="file" accept=".json" onChange={handleFileUpload} />,
             minW: 250,
         },
         {
             type: 'input',
-            label: t('Reference link (Official website preferred)'),
-            placeholder: 'Enter the link where you get the valid data',
+            label: t('ticket.link'),
+            placeholder: t('ticket.linkPlaceHolder'),
             value: metadata.reference,
             onChange: value => setMetadata({ ...metadata, reference: value }),
             minW: 250,
         },
         {
             type: 'input',
-            label: t('Justification (English only)'),
-            placeholder: 'The reason why you make these changes',
+            label: t('ticket.justification'),
+            placeholder: t('ticket.justificationPlaceHolder'),
             // Enforce a pure English update history.
             validator: val => /^[a-zA-Z0-9. -]+$/.test(val),
             value: metadata.justification,
@@ -142,7 +142,7 @@ export default function Ticket() {
         <RmgPage sx={styles}>
             <Flex>
                 <RmgFields fields={fields} />
-                <RmgLabel label={t('City Name (English required)')}>
+                <RmgLabel label={t('ticket.cityName')}>
                     <MultiLangEntryCard
                         translations={Object.entries(metadata.name)}
                         onUpdate={(lang, name) =>
@@ -161,7 +161,7 @@ export default function Ticket() {
                         }}
                     />
                 </RmgLabel>
-                <RmgLabel label={t('Description (Optional, English required)')}>
+                <RmgLabel label={t('ticket.description')}>
                     <MultiLangEntryCard
                         translations={Object.entries(metadata.desc)}
                         onUpdate={(lang, desc) =>
@@ -184,7 +184,7 @@ export default function Ticket() {
 
             <Flex>
                 <Button size="sm" onClick={handleBack}>
-                    {t('Back to list')}
+                    {t('ticket.back')}
                 </Button>
 
                 <HStack ml="auto">
@@ -201,7 +201,7 @@ export default function Ticket() {
                         }
                         onClick={() => setIsSubmitModalOpen(true)}
                     >
-                        {t('Submit')}
+                        {t('ticket.submit')}
                     </Button>
                 </HStack>
             </Flex>
@@ -209,12 +209,12 @@ export default function Ticket() {
             <Modal isOpen={isSubmitModalOpen} onClose={() => setIsSubmitModalOpen(false)}>
                 <ModalOverlay />
                 <ModalContent>
-                    <ModalHeader>{t('Submit template')}</ModalHeader>
+                    <ModalHeader>{t('ticket.submitTemplate')}</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
                         {issueBody.length < 100 * 100 ? (
                             <>
-                                <Text>{t("You may now copy the following text into your new issue's body.")}</Text>
+                                <Text>{t('ticket.instruction')}</Text>
                                 <Divider mt="2" mb="4" />
                                 <RmgDebouncedTextarea
                                     ref={textareaRef}
@@ -225,13 +225,11 @@ export default function Ticket() {
                             </>
                         ) : (
                             <>
+                                <Text>{t('ticket.instructionFile')}</Text>
                                 <Text>
-                                    {t("Upload the file downloaded below at the end of your new issue's body.")}
-                                </Text>
-                                <Text>
-                                    {t('Make sure to submit your issue after ')}
+                                    {t('ticket.instructionFileHint1')}
                                     <Code>{t('Uploading your files... (1/1)')}</Code>
-                                    {t(' is disappeared.')}
+                                    {t('ticket.instructionFileHint2')}
                                 </Text>
                             </>
                         )}
@@ -239,11 +237,11 @@ export default function Ticket() {
                     <ModalFooter>
                         {issueBody.length < 100 * 100 ? (
                             <Button colorScheme="primary" onClick={handleNew}>
-                                {t('Copy issue body and open an issue')}
+                                {t('ticket.openIssue')}
                             </Button>
                         ) : (
                             <Button colorScheme="primary" onClick={handleDownload}>
-                                {t('Download file')}
+                                {t('ticket.download')}
                             </Button>
                         )}
                     </ModalFooter>

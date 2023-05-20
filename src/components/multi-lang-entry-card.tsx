@@ -27,7 +27,7 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
         return [
             {
                 type: 'select',
-                label: t('Language'),
+                label: t('multiLangEntry.lang'),
                 value: lang,
                 options: Object.entries(LANGUAGE_NAMES).reduce(
                     (acc, cur) => ({
@@ -41,7 +41,7 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
             },
             {
                 type: 'input',
-                label: t('Name'),
+                label: t('multiLangEntry.name'),
                 value: name,
                 onChange: value => onUpdate(lang, value),
                 validator: value => !!value,
@@ -65,8 +65,8 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
                         <IconButton
                             size="sm"
                             variant="ghost"
-                            aria-label={t('Add a name in another language')}
-                            title={t('Add a name in another language')}
+                            aria-label={t('multiLangEntry.add')}
+                            title={t('multiLangEntry.add')}
                             onClick={handleAddEntry}
                             icon={<MdAdd />}
                         />
@@ -78,8 +78,8 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
                         <IconButton
                             size="sm"
                             variant="ghost"
-                            aria-label={t('Remove this name')}
-                            title={t('Remove this name')}
+                            aria-label={t('multiLangEntry.remove')}
+                            title={t('multiLangEntry.remove')}
                             onClick={() => onRemove(lang as LanguageCode)}
                             icon={<MdDelete />}
                         />

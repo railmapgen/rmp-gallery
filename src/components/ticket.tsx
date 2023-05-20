@@ -1,5 +1,6 @@
 import {
     Button,
+    Code,
     Divider,
     Flex,
     HStack,
@@ -22,7 +23,7 @@ import { stringify } from 'zipson';
 
 import { useRootSelector } from '../redux';
 import { GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, MetadataDetail } from '../util/constant';
-import { makeGitHubIssueDetails, readFileAsText } from '../util/utils';
+import { downloadAs, makeGitHubIssueDetails, readFileAsText } from '../util/utils';
 import MultiLangEntryCard from './multi-lang-entry-card';
 
 const styles: SystemStyleObject = {
@@ -99,6 +100,15 @@ export default function Ticket() {
             await navigator.clipboard.writeText(issueBody);
         }
         window.open('https://github.com/railmapgen/rmp-gallery/issues/new?' + manualSearchParams.toString(), '_blank');
+    };
+    const handleDownload = () => {
+        downloadAs(`${cityName}.txt`, 'application/json', issueBody);
+        const fileParam = new URLSearchParams({
+            labels: 'resources',
+            title: `Resources: ${cityName in gallery ? 'Update' : 'New'} template of ${cityName}`,
+            body: [GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, ''].join('\n\n'),
+        });
+        window.open('https://github.com/railmapgen/rmp-gallery/issues/new?' + fileParam.toString(), '_blank');
     };
 
     const fields: RmgFieldsField[] = [
@@ -202,19 +212,40 @@ export default function Ticket() {
                     <ModalHeader>{t('Submit template')}</ModalHeader>
                     <ModalCloseButton />
                     <ModalBody>
-                        <Text>{t("You may now copy the following text into your new issue's body.")}</Text>
-                        <Divider mt="2" mb="2" />
-                        <RmgDebouncedTextarea
-                            ref={textareaRef}
-                            isReadOnly
-                            defaultValue={issueBody}
-                            onClick={({ target }) => (target as HTMLTextAreaElement).select()}
-                        />
+                        {issueBody.length < 100 * 100 ? (
+                            <>
+                                <Text>{t("You may now copy the following text into your new issue's body.")}</Text>
+                                <Divider mt="2" mb="4" />
+                                <RmgDebouncedTextarea
+                                    ref={textareaRef}
+                                    isReadOnly
+                                    defaultValue={issueBody}
+                                    onClick={({ target }) => (target as HTMLTextAreaElement).select()}
+                                />
+                            </>
+                        ) : (
+                            <>
+                                <Text>
+                                    {t("Upload the file downloaded below at the end of your new issue's body.")}
+                                </Text>
+                                <Text>
+                                    {t('Make sure to submit your issue after ')}
+                                    <Code>{t('Uploading your files... (1/1)')}</Code>
+                                    {t(' is disappeared.')}
+                                </Text>
+                            </>
+                        )}
                     </ModalBody>
                     <ModalFooter>
-                        <Button colorScheme="primary" onClick={handleNew}>
-                            {t('Copy issue body and open a new issue')}
-                        </Button>
+                        {issueBody.length < 100 * 100 ? (
+                            <Button colorScheme="primary" onClick={handleNew}>
+                                {t('Copy issue body and open an issue')}
+                            </Button>
+                        ) : (
+                            <Button colorScheme="primary" onClick={handleDownload}>
+                                {t('Download file')}
+                            </Button>
+                        )}
                     </ModalFooter>
                 </ModalContent>
             </Modal>

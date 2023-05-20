@@ -17,7 +17,14 @@ const readIssueBody = async (): Promise<HTMLDetailsElement[]> => {
     );
     const issue = await readFile('issue.json', 'utf-8');
     const data = JSON.parse(issue);
-    const issueBody = data.body;
+    let issueBody = data.body as string;
+
+    if (issueBody.includes('https://github.com/railmapgen/rmp-gallery/files/')) {
+        const bodyURL = issueBody.match(/\(https:\/\/github.com\/railmapgen\/rmp-gallery\/files\/.+\)/)?.at(0);
+        if (bodyURL === undefined) throw new Error('The file link must be valid.');
+        issueBody = await(await fetch(bodyURL.substring(1, bodyURL.length - 1))).text();
+    }
+
     const dom = new JSDOM(issueBody);
     return Array.from(dom.window.document.querySelectorAll('details[repo="rmp-gallery"]'));
 };

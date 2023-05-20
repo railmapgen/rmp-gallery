@@ -121,7 +121,7 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
                                     >
                                         {entry.reason}
                                     </Link>
-                                    <Text>{new Date(entry.time).toLocaleString(undefined, { hour12: false })}</Text>
+                                    <Text>{new Date(entry.time).toLocaleDateString(undefined, { hour12: false })}</Text>
                                 </Flex>
                             </ListItem>
                         ))}

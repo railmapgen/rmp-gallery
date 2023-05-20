@@ -32,7 +32,7 @@ export default function WindowHeader() {
                 <Menu>
                     <MenuButton as={IconButton} icon={<MdTranslate />} variant="ghost" size="sm" />
                     <MenuList>
-                        {SUPPORTED_LANGUAGES.map(lang => (
+                        {(['en', 'zh-Hans', 'zh-Hant', 'ja', 'ko'] as LanguageCode[]).map(lang => (
                             <MenuItem key={lang} onClick={() => handleSelectLanguage(lang)}>
                                 {LANGUAGE_NAMES[lang][lang]}
                             </MenuItem>

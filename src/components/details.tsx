@@ -147,7 +147,7 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
                         <IconButton aria-label="Download" variant="ghost" icon={<MdDownload />} />
                     </a>
                     {rmgRuntime.isStandaloneWindow() ? (
-                        <Tooltip label="You may directly use this template if your are in Rail Map Painter or Rail Map Toolkit">
+                        <Tooltip label={t('details.import')}>
                             <IconButton aria-label="Import" variant="ghost" icon={<MdInsertDriveFile />} isDisabled />
                         </Tooltip>
                     ) : (

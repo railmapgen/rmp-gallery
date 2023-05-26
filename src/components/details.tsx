@@ -33,8 +33,13 @@ const RMP_GALLERY_CHANNEL_NAME = 'RMP_GALLERY_CHANNEL';
 const RMP_GALLERY_CHANNEL_EVENT = 'OPEN_TEMPLATE';
 const CHN = new BroadcastChannel(RMP_GALLERY_CHANNEL_NAME);
 
-const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => void }) => {
-    const { city, isOpen, onClose } = props;
+const DetailsModal = (props: {
+    city: string;
+    type: 'real_world' | 'fantasy';
+    isOpen: boolean;
+    onClose: () => void;
+}) => {
+    const { city, type, isOpen, onClose } = props;
     const navigate = useNavigate();
     const toast = useToast();
     const { t } = useTranslation();
@@ -57,7 +62,7 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
         const metadataDetail = (({ updateHistory, ...rest }) => ({ ...rest, justification: '' }))(
             metadataCopy
         ) as MetadataDetail;
-        navigate('/new', { state: { metadata: metadataDetail } });
+        navigate('/new', { state: { metadata: metadataDetail, type } });
     };
     const handleOpenTemplate = () => {
         CHN.postMessage({ event: RMP_GALLERY_CHANNEL_EVENT, data: city });
@@ -143,7 +148,7 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
                         />
                     </Tooltip>
                     <IconButton aria-label="Edit" variant="ghost" icon={<MdEdit />} onClick={handleEdit} />
-                    <a href={`resources/real_world/${city}.json`} target="_blank" rel="noopener noreferrer">
+                    <a href={`resources/${type}/${city}.json`} target="_blank" rel="noopener noreferrer">
                         <IconButton aria-label="Download" variant="ghost" icon={<MdDownload />} />
                     </a>
                     {rmgRuntime.isStandaloneWindow() ? (

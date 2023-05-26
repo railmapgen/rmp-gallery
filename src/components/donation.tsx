@@ -33,6 +33,7 @@ import { MdCheckCircle, MdFlagCircle, MdRemoveCircle } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
 export default function DonationModal(props: { isOpen: boolean; onClose: () => void }) {
+    const { isOpen } = props;
     const navigate = useNavigate();
     const { t } = useTranslation();
 
@@ -46,7 +47,7 @@ export default function DonationModal(props: { isOpen: boolean; onClose: () => v
     };
 
     return (
-        <Modal isOpen onClose={handleBack} size="2xl">
+        <Modal isOpen={isOpen} onClose={handleBack} size="2xl">
             <ModalOverlay />
             <ModalContent>
                 <ModalHeader>{t('donation.title')}</ModalHeader>

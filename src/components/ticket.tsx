@@ -55,7 +55,7 @@ export default function Ticket() {
 
     const textareaRef = React.useRef<HTMLTextAreaElement>(null);
     const [isSubmitModalOpen, setIsSubmitModalOpen] = React.useState(false);
-    const [isDonationModalOpen, setIsDonationModalOpen] = React.useState(true);
+    const [isDonationModalOpen, setIsDonationModalOpen] = React.useState(type === 'fantasy');
 
     const [metadata, setMetadata] = React.useState<MetadataDetail>(metadataParam);
     const [param, setParam] = React.useState('');

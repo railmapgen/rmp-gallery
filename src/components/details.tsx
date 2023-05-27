@@ -19,6 +19,7 @@ import {
     useToast,
     VStack,
 } from '@chakra-ui/react';
+import rmgRuntime from '@railmapgen/rmg-runtime';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoHeartOutline, IoStarOutline } from 'react-icons/io5';
@@ -28,8 +29,17 @@ import { useNavigate } from 'react-router-dom';
 import { Metadata, MetadataDetail } from '../util/constant';
 import useTranslatedName from './hooks/use-translated-name';
 
-const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => void }) => {
-    const { city, isOpen, onClose } = props;
+const RMP_GALLERY_CHANNEL_NAME = 'RMP_GALLERY_CHANNEL';
+const RMP_GALLERY_CHANNEL_EVENT = 'OPEN_TEMPLATE';
+const CHN = new BroadcastChannel(RMP_GALLERY_CHANNEL_NAME);
+
+const DetailsModal = (props: {
+    city: string;
+    type: 'real_world' | 'fantasy';
+    isOpen: boolean;
+    onClose: () => void;
+}) => {
+    const { city, type, isOpen, onClose } = props;
     const navigate = useNavigate();
     const toast = useToast();
     const { t } = useTranslation();
@@ -52,7 +62,17 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
         const metadataDetail = (({ updateHistory, ...rest }) => ({ ...rest, justification: '' }))(
             metadataCopy
         ) as MetadataDetail;
-        navigate('/new', { state: { metadata: metadataDetail } });
+        navigate('/new', { state: { metadata: metadataDetail, type } });
+    };
+    const handleOpenTemplate = () => {
+        CHN.postMessage({ event: RMP_GALLERY_CHANNEL_EVENT, data: city });
+        toast({
+            title: t(`Template ${city} imported in Rail Map Painter.`),
+            status: 'success' as const,
+            duration: 9000,
+            isClosable: true,
+        });
+        onClose();
     };
 
     const rmpShareLink = `https://${window.location.hostname}/rmp/s/${city}`;
@@ -106,7 +126,7 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
                                     >
                                         {entry.reason}
                                     </Link>
-                                    <Text>{new Date(entry.time).toLocaleString(undefined, { hour12: false })}</Text>
+                                    <Text>{new Date(entry.time).toLocaleDateString(undefined, { hour12: false })}</Text>
                                 </Flex>
                             </ListItem>
                         ))}
@@ -128,10 +148,21 @@ const DetailsModal = (props: { city: string; isOpen: boolean; onClose: () => voi
                         />
                     </Tooltip>
                     <IconButton aria-label="Edit" variant="ghost" icon={<MdEdit />} onClick={handleEdit} />
-                    <a href={`resources/real_world/${city}.json`} target="_blank" rel="noopener noreferrer">
+                    <a href={`resources/${type}/${city}.json`} target="_blank" rel="noopener noreferrer">
                         <IconButton aria-label="Download" variant="ghost" icon={<MdDownload />} />
                     </a>
-                    <IconButton aria-label="Import" variant="ghost" icon={<MdInsertDriveFile />} isDisabled />
+                    {rmgRuntime.isStandaloneWindow() ? (
+                        <Tooltip label={t('details.import')}>
+                            <IconButton aria-label="Import" variant="ghost" icon={<MdInsertDriveFile />} isDisabled />
+                        </Tooltip>
+                    ) : (
+                        <IconButton
+                            aria-label="Import"
+                            variant="ghost"
+                            icon={<MdInsertDriveFile />}
+                            onClick={handleOpenTemplate}
+                        />
+                    )}
                 </ModalFooter>
             </ModalContent>
         </Modal>

@@ -24,6 +24,7 @@ import { stringify } from 'zipson';
 import { useRootSelector } from '../redux';
 import { GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, MetadataDetail } from '../util/constant';
 import { downloadAs, makeGitHubIssueDetails, readFileAsText } from '../util/utils';
+import DonationModal from './donation';
 import MultiLangEntryCard from './multi-lang-entry-card';
 
 const styles: SystemStyleObject = {
@@ -44,16 +45,17 @@ const styles: SystemStyleObject = {
 
 export default function Ticket() {
     const {
-        state: { metadata: metadataParam },
+        state: { metadata: metadataParam, type },
     } = useLocation();
     const navigate = useNavigate();
-    const gallery = useRootSelector(state => state.app.gallery);
+    const gallery = useRootSelector(state => state.app.realWorld);
     const { t } = useTranslation();
 
     const handleBack = () => navigate('/');
 
     const textareaRef = React.useRef<HTMLTextAreaElement>(null);
     const [isSubmitModalOpen, setIsSubmitModalOpen] = React.useState(false);
+    const [isDonationModalOpen, setIsDonationModalOpen] = React.useState(type === 'fantasy');
 
     const [metadata, setMetadata] = React.useState<MetadataDetail>(metadataParam);
     const [param, setParam] = React.useState('');
@@ -111,13 +113,15 @@ export default function Ticket() {
         window.open('https://github.com/railmapgen/rmp-gallery/issues/new?' + fileParam.toString(), '_blank');
     };
 
-    const fields: RmgFieldsField[] = [
+    const fileField: RmgFieldsField[] = [
         {
             type: 'custom',
             label: t('ticket.file'),
             component: <Input variant="flushed" size="xs" type="file" accept=".json" onChange={handleFileUpload} />,
             minW: 250,
         },
+    ];
+    const realWorldFields: RmgFieldsField[] = [
         {
             type: 'input',
             label: t('ticket.link'),
@@ -137,11 +141,31 @@ export default function Ticket() {
             minW: 250,
         },
     ];
+    const fantasyFields: RmgFieldsField[] = [
+        {
+            type: 'input',
+            label: t('ticket.donation'),
+            placeholder: t('ticket.donationPlaceHolder'),
+            value: metadata.reference,
+            onChange: value => setMetadata({ ...metadata, reference: value }),
+            minW: 250,
+        },
+        {
+            type: 'input',
+            label: t('ticket.reason'),
+            placeholder: t('ticket.reasonPlaceHolder'),
+            value: metadata.justification,
+            onChange: value => setMetadata({ ...metadata, justification: value }),
+            minW: 250,
+        },
+    ];
 
     return (
         <RmgPage sx={styles}>
             <Flex>
-                <RmgFields fields={fields} />
+                <RmgFields fields={fileField} />
+                {type === 'real_world' && <RmgFields fields={realWorldFields} />}
+                {type === 'fantasy' && <RmgFields fields={fantasyFields} />}
                 <RmgLabel label={t('ticket.cityName')}>
                     <MultiLangEntryCard
                         translations={Object.entries(metadata.name)}
@@ -194,8 +218,9 @@ export default function Ticket() {
                         isDisabled={
                             param === '' ||
                             metadata.reference === '' ||
-                            metadata.justification === '' ||
-                            !/^[a-zA-Z0-9. -]+$/.test(metadata.justification) ||
+                            (type === 'real_world' &&
+                                (metadata.justification === '' || !/^[a-zA-Z0-9. -]+$/.test(metadata.justification))) ||
+                            type === 'fantasy' ||
                             (Object.keys(metadata.desc).length > 0 && !('en' in metadata.desc)) ||
                             cityName === ''
                         }
@@ -247,6 +272,8 @@ export default function Ticket() {
                     </ModalFooter>
                 </ModalContent>
             </Modal>
+
+            <DonationModal isOpen={isDonationModalOpen} onClose={() => setIsDonationModalOpen(false)} />
         </RmgPage>
     );
 }

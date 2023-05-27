@@ -6,16 +6,17 @@ import {
     Card,
     CardBody,
     CardFooter,
+    CardHeader,
     Flex,
     Heading,
     IconButton,
     Image,
-    Stack,
     Tab,
     TabList,
     TabPanel,
     TabPanels,
     Tabs,
+    Text,
 } from '@chakra-ui/react';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import React from 'react';
@@ -79,6 +80,16 @@ export default function GalleryView() {
                 <TabPanels>
                     {[realWorld, fantasy].map((g, i) => (
                         <TabPanel key={i}>
+                            {type === 'real_world' && (
+                                <Card variant="filled">
+                                    <CardHeader>
+                                        <Heading size="lg">{t('gallery.warning')}</Heading>
+                                    </CardHeader>
+                                    <CardBody paddingTop="0">
+                                        <Text size="xl">{t('gallery.noTravelAdvice')}</Text>
+                                    </CardBody>
+                                </Card>
+                            )}
                             <Flex flexWrap="wrap">
                                 {Object.entries(g).map(([id, metadata]) => (
                                     <Card key={`${type}+${id}`} variant="elevated" minWidth="300" m="2">
@@ -88,10 +99,10 @@ export default function GalleryView() {
                                                 alt={id}
                                                 borderRadius="lg"
                                             />
-                                            <Stack mt="6" spacing="3">
-                                                <Heading size="lg">{translateName(metadata.name)}</Heading>
-                                            </Stack>
                                         </CardBody>
+                                        <CardHeader>
+                                            <Heading size="lg">{translateName(metadata.name)}</Heading>
+                                        </CardHeader>
                                         <CardFooter>
                                             <AvatarGroup max={3}>
                                                 {metadata.contributors.map(contributor => (

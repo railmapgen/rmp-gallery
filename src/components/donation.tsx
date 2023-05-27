@@ -111,7 +111,7 @@ export default function DonationModal(props: { isOpen: boolean; onClose: () => v
                             <Card align="center">
                                 <CardBody>
                                     <Stack spacing={3} alignItems="center">
-                                        <Heading>{t('donation.typeA')}</Heading>
+                                        <Heading>{t('donation.typeB')}</Heading>
                                         <List>
                                             <ListItem>
                                                 <ListIcon as={MdCheckCircle} color="blue.500" />
@@ -125,7 +125,14 @@ export default function DonationModal(props: { isOpen: boolean; onClose: () => v
                                                 <ListIcon as={MdCheckCircle} color="blue.500" />
                                                 {t('donation.unlimitedUpdates')}
                                             </ListItem>
-                                            <Tooltip label={t('donation.earlyBirdBonus')}>
+                                            <Tooltip
+                                                label={
+                                                    <Stack alignItems="center">
+                                                        <Text>{t('donation.earlyBirdBonus')}</Text>
+                                                        <Text>https://railmapgen.github.io/rmp/s/wenxi</Text>
+                                                    </Stack>
+                                                }
+                                            >
                                                 <ListItem>
                                                     <ListIcon as={MdFlagCircle} color="teal.500" />
                                                     {t('donation.personalizedLink')}

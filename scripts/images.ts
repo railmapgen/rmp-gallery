@@ -29,7 +29,7 @@ export const makeImage = async (filePath: string) => {
 
     Promise.all(
         Array.from({ length: 2 }).map((_, i) =>
-            driver.findElement(By.xpath(`/html/body/div[4]/div[3]/div/section/div/label[${i + 1}]/span[1]`)).click()
+            driver.findElement(By.xpath(`/html/body/div[5]/div[3]/div/section/div/label[${i + 1}]/span[1]`)).click()
         )
     );
 

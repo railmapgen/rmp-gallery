@@ -33,7 +33,7 @@ export const makeImage = async (filePath: string) => {
         )
     );
 
-    const downloadButtonXPath = '/html/body/div[4]/div[3]/div/section/footer/div/button';
+    const downloadButtonXPath = '/html/body/div[5]/div[3]/div/section/footer/div/button';
     await driver.findElement(By.xpath(downloadButtonXPath)).click();
 
     await new Promise(r => setTimeout(r, 2000));

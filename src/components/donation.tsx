@@ -60,11 +60,11 @@ export default function DonationModal(props: { isOpen: boolean; onClose: () => v
                             {t('donation.content2')}
                             <Link
                                 color="blue.500"
-                                href="https://railmapgen.github.io/rmp/s/mcG7zS"
+                                href={`https://${window.location.hostname}/rmp/s/mcG7zS`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                https://railmapgen.github.io/rmp/s/mcG7zS
+                                https://{window.location.hostname}/rmp/s/mcG7zS
                             </Link>
                         </Text>
                         <SimpleGrid columns={2} spacing="10">
@@ -89,7 +89,7 @@ export default function DonationModal(props: { isOpen: boolean; onClose: () => v
                                                 label={
                                                     <Stack alignItems="center">
                                                         <Text>{t('donation.earlyBirdBonus')}</Text>
-                                                        <Text>https://railmapgen.github.io/rmp/s/wenxi</Text>
+                                                        <Text>https://{window.location.hostname}/rmp/s/wenxi</Text>
                                                     </Stack>
                                                 }
                                             >
@@ -129,7 +129,7 @@ export default function DonationModal(props: { isOpen: boolean; onClose: () => v
                                                 label={
                                                     <Stack alignItems="center">
                                                         <Text>{t('donation.earlyBirdBonus')}</Text>
-                                                        <Text>https://railmapgen.github.io/rmp/s/wenxi</Text>
+                                                        <Text>https://{window.location.hostname}/rmp/s/wenxi</Text>
                                                     </Stack>
                                                 }
                                             >
@@ -151,7 +151,7 @@ export default function DonationModal(props: { isOpen: boolean; onClose: () => v
                         </SimpleGrid>
                         <Text>{t('donation.content3')}</Text>
                         <Text>{t('donation.content4')}</Text>
-                        <Accordion allowToggle allowMultiple>
+                        <Accordion allowMultiple>
                             <AccordionItem>
                                 <AccordionButton>
                                     <Box as="span" flex="1" textAlign="left">

@@ -6,6 +6,7 @@ import { MdAdd, MdDelete } from 'react-icons/md';
 import useTranslatedName from './hooks/use-translated-name';
 
 interface MultiLangEntryCardProps {
+    inputType: 'input' | 'textarea';
     translations: any[];
     onUpdate: (lang: LanguageCode, name: string) => void;
     onLangSwitch: (prevLang: LanguageCode, nextLang: LanguageCode) => void;
@@ -19,7 +20,7 @@ const cardRowStyles: SystemStyleObject = {
 };
 
 export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
-    const { translations, onUpdate, onLangSwitch, onRemove } = props;
+    const { inputType, translations, onUpdate, onLangSwitch, onRemove } = props;
     const { t } = useTranslation();
     const translateName = useTranslatedName();
 
@@ -40,11 +41,10 @@ export default function MultiLangEntryCard(props: MultiLangEntryCardProps) {
                 onChange: value => onLangSwitch(lang, value as LanguageCode),
             },
             {
-                type: 'input',
+                type: inputType,
                 label: t('multiLangEntry.name'),
                 value: name,
-                onChange: value => onUpdate(lang, value),
-                validator: value => !!value,
+                onChange: (value: string) => onUpdate(lang, value),
             },
         ];
     };

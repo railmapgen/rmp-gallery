@@ -168,6 +168,7 @@ export default function Ticket() {
                 {type === 'fantasy' && <RmgFields fields={fantasyFields} />}
                 <RmgLabel label={t('ticket.cityName')}>
                     <MultiLangEntryCard
+                        inputType="input"
                         translations={Object.entries(metadata.name)}
                         onUpdate={(lang, name) =>
                             setMetadata({ ...metadata, name: { ...metadata.name, [lang]: name } })
@@ -187,6 +188,7 @@ export default function Ticket() {
                 </RmgLabel>
                 <RmgLabel label={t('ticket.description')}>
                     <MultiLangEntryCard
+                        inputType="textarea"
                         translations={Object.entries(metadata.desc)}
                         onUpdate={(lang, desc) =>
                             setMetadata({ ...metadata, desc: { ...metadata.desc, [lang]: desc } })

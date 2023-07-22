@@ -24,12 +24,12 @@ export const makeImage = async (filePath: string) => {
 
     // https://stackoverflow.com/questions/75168142/how-to-choose-an-option-from-a-non-select-dropdown-menu-in-selenium-python
     const exportImageButtonXPath =
-        "//button[contains(@class, 'chakra-menu__menuitem')][starts-with(@id, 'menu-list-download-menuitem-')][2]";
+        "//button[contains(@class, 'chakra-menu__menuitem')][starts-with(@id, 'menu-list-download-menuitem-')][3]";
     await driver.findElement(By.xpath(exportImageButtonXPath)).click();
 
     Promise.all(
-        Array.from({ length: 2 }).map((_, i) =>
-            driver.findElement(By.xpath(`/html/body/div[5]/div[3]/div/section/div/label[${i + 1}]/span[1]`)).click()
+        [1, 2].map(i =>
+            driver.findElement(By.xpath(`/html/body/div[5]/div[3]/div/section/div/label[${i}]/span[1]`)).click()
         )
     );
 

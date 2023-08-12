@@ -1,22 +1,17 @@
 import {
-    Avatar,
-    AvatarGroup,
     Box,
-    Button,
     Card,
     CardBody,
-    CardFooter,
     CardHeader,
     Flex,
     Heading,
     IconButton,
-    Image,
     Tab,
     TabList,
     TabPanel,
     TabPanels,
     Tabs,
-    Text,
+    Text
 } from '@chakra-ui/react';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import React from 'react';
@@ -25,10 +20,11 @@ import { MdAdd } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
 import { useRootDispatch, useRootSelector } from '../redux';
-import { setRealWorld, setFantasy } from '../redux/app/app-slice';
+import { setFantasy, setRealWorld } from '../redux/app/app-slice';
 import { Events, Gallery, MetadataDetail } from '../util/constant';
 import DetailsModal from './details';
 import useTranslatedName from './hooks/use-translated-name';
+import { TemplateCard } from './template-card';
 
 export default function GalleryView() {
     const navigate = useNavigate();
@@ -81,58 +77,65 @@ export default function GalleryView() {
                     {[realWorld, fantasy].map((g, i) => (
                         <TabPanel key={i}>
                             {type === 'real_world' && (
-                                <Card variant="filled">
-                                    <CardHeader>
-                                        <Heading size="lg">{t('gallery.warning')}</Heading>
-                                    </CardHeader>
-                                    <CardBody paddingTop="0">
-                                        <Text size="xl">{t('gallery.noTravelAdvice')}</Text>
-                                    </CardBody>
-                                </Card>
-                            )}
-                            <Flex flexWrap="wrap">
-                                {Object.entries(g).map(([id, metadata]) => (
-                                    <Card key={`${type}+${id}`} variant="elevated" minWidth="300" m="2">
-                                        <CardBody>
-                                            <Image
-                                                src={`resources/thumbnails/${id}@300.png`}
-                                                alt={id}
-                                                borderRadius="lg"
-                                            />
-                                        </CardBody>
+                                <>
+                                    <Card variant="filled">
                                         <CardHeader>
-                                            <Heading size="lg">{translateName(metadata.name)}</Heading>
+                                            <Heading size="lg">{t('gallery.warning')}</Heading>
                                         </CardHeader>
-                                        <CardFooter>
-                                            <AvatarGroup max={3}>
-                                                {metadata.contributors.map(contributor => (
-                                                    <Avatar
-                                                        key={contributor}
-                                                        src={`https://avatars.githubusercontent.com/u/${contributor}`}
-                                                    />
-                                                ))}
-                                            </AvatarGroup>
-                                            <Button
-                                                variant="solid"
-                                                colorScheme="blue"
-                                                ml="auto"
-                                                onClick={() => handleDetails(id)}
-                                            >
-                                                {t('details.title')}
-                                            </Button>
-                                        </CardFooter>
+                                        <CardBody paddingTop="0">
+                                            <Text size="xl">{t('gallery.noTravelAdvice')}</Text>
+                                        </CardBody>
                                     </Card>
-                                ))}
-                                <Box onClick={handleNew} position="fixed" bottom="20px" right="20px" zIndex={3}>
-                                    <IconButton
-                                        aria-label="new"
-                                        size="lg"
-                                        icon={<MdAdd />}
-                                        colorScheme="blue"
-                                        variant="solid"
-                                    />
-                                </Box>
-                            </Flex>
+                                    <Card mt="2">
+                                        <CardHeader>
+                                            <Heading size="lg">{t('gallery.editorSelected')}</Heading>
+                                        </CardHeader>
+                                        <CardBody paddingTop="0">
+                                            <Flex flexWrap="wrap">
+                                                {['shanghai', 'guangzhou', 'hongkong', 'beijing']
+                                                    .map(id => ({ id, metadata: g[id] }))
+                                                    .filter(({ id, metadata }) => metadata !== undefined)
+                                                    .map(({ id, metadata }) => (
+                                                        <TemplateCard
+                                                            key={`${type}+${id}`}
+                                                            type={type}
+                                                            id={id}
+                                                            metadata={metadata}
+                                                            handleDetails={handleDetails}
+                                                        />
+                                                    ))}
+                                            </Flex>
+                                        </CardBody>
+                                    </Card>
+                                </>
+                            )}
+                            <Card mt="2">
+                                <CardHeader>
+                                    <Heading size="lg">{t('gallery.all')}</Heading>
+                                </CardHeader>
+                                <CardBody paddingTop="0">
+                                    <Flex flexWrap="wrap">
+                                        {Object.entries(g).map(([id, metadata]) => (
+                                            <TemplateCard
+                                                key={`${type}+${id}`}
+                                                type={type}
+                                                id={id}
+                                                metadata={metadata}
+                                                handleDetails={handleDetails}
+                                            />
+                                        ))}
+                                        <Box onClick={handleNew} position="fixed" bottom="20px" right="20px" zIndex={3}>
+                                            <IconButton
+                                                aria-label="new"
+                                                size="lg"
+                                                icon={<MdAdd />}
+                                                colorScheme="blue"
+                                                variant="solid"
+                                            />
+                                        </Box>
+                                    </Flex>
+                                </CardBody>
+                            </Card>
                         </TabPanel>
                     ))}
                 </TabPanels>

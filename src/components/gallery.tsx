@@ -11,8 +11,9 @@ import {
     TabPanel,
     TabPanels,
     Tabs,
-    Text
+    Text,
 } from '@chakra-ui/react';
+import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -20,19 +21,17 @@ import { MdAdd } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
 import { useRootDispatch, useRootSelector } from '../redux';
-import { setFantasy, setRealWorld } from '../redux/app/app-slice';
+import { setFantasy, setLogins, setRealWorld } from '../redux/app/app-slice';
 import { Events, Gallery, MetadataDetail } from '../util/constant';
 import DetailsModal from './details';
-import useTranslatedName from './hooks/use-translated-name';
 import { TemplateCard } from './template-card';
 
 export default function GalleryView() {
     const navigate = useNavigate();
     const dispatch = useRootDispatch();
-    const translateName = useTranslatedName();
     const { t } = useTranslation();
 
-    const { realWorld, fantasy } = useRootSelector(state => state.app);
+    const { realWorld, fantasy, logins } = useRootSelector(state => state.app);
 
     const [type, setType] = React.useState('real_world' as 'real_world' | 'fantasy');
     const [city, setCity] = React.useState('shanghai');
@@ -64,7 +63,37 @@ export default function GalleryView() {
         fetch('resources/fantasy.json')
             .then(res => res.json() as Promise<Gallery>)
             .then(data => dispatch(setFantasy(data)));
+        fetch('resources/logins.json')
+            .then(
+                res =>
+                    res.json() as Promise<{
+                        realWorld: { [id in string]: string };
+                        fantasy: { [id in string]: string };
+                    }>
+            )
+            .then(data => dispatch(setLogins(data)));
     }, []);
+
+    const [filterID, setFilterID] = React.useState('');
+    const [sortBy, setSortBy] = React.useState('alphabetical' as 'alphabetical' | 'update_time');
+    const fields: RmgFieldsField[] = [
+        {
+            type: 'select',
+            label: t('gallery.filterAuthor'),
+            value: filterID,
+            options: { '': 'None', ...(type === 'real_world' ? logins.realWorld : logins.fantasy) },
+            onChange: val => setFilterID(val.toString()),
+            minW: 200,
+        },
+        {
+            type: 'select',
+            label: t('gallery.sortBy.label'),
+            value: sortBy,
+            options: { alphabetical: t('gallery.sortBy.alphabetical'), update_time: t('gallery.sortBy.updateTime') },
+            onChange: val => setSortBy(val.toString() as 'alphabetical' | 'update_time'),
+            minW: 200,
+        },
+    ];
 
     return (
         <>
@@ -94,7 +123,7 @@ export default function GalleryView() {
                                             <Flex flexWrap="wrap">
                                                 {['shanghai', 'guangzhou', 'hongkong', 'beijing']
                                                     .map(id => ({ id, metadata: g[id] }))
-                                                    .filter(({ id, metadata }) => metadata !== undefined)
+                                                    .filter(({ metadata }) => metadata !== undefined)
                                                     .map(({ id, metadata }) => (
                                                         <TemplateCard
                                                             key={`${type}+${id}`}
@@ -111,19 +140,32 @@ export default function GalleryView() {
                             )}
                             <Card mt="2">
                                 <CardHeader>
-                                    <Heading size="lg">{t('gallery.all')}</Heading>
+                                    <Flex direction="row">
+                                        <Heading size="lg" mr="auto">
+                                            {t('gallery.all')}
+                                        </Heading>
+                                        <RmgFields fields={fields} />
+                                    </Flex>
                                 </CardHeader>
                                 <CardBody paddingTop="0">
                                     <Flex flexWrap="wrap">
-                                        {Object.entries(g).map(([id, metadata]) => (
-                                            <TemplateCard
-                                                key={`${type}+${id}`}
-                                                type={type}
-                                                id={id}
-                                                metadata={metadata}
-                                                handleDetails={handleDetails}
-                                            />
-                                        ))}
+                                        {Object.entries(g)
+                                            .filter(([_, metadata]) =>
+                                                filterID === '' ? true : metadata.contributors.includes(filterID)
+                                            )
+                                            // @ts-expect-error This works well and can't understand the error
+                                            .sort((a, b) =>
+                                                sortBy === 'alphabetical' ? 0 : a[1].lastUpdateOn < b[1].lastUpdateOn
+                                            )
+                                            .map(([id, metadata]) => (
+                                                <TemplateCard
+                                                    key={`${type}+${id}`}
+                                                    type={type}
+                                                    id={id}
+                                                    metadata={metadata}
+                                                    handleDetails={handleDetails}
+                                                />
+                                            ))}
                                         <Box onClick={handleNew} position="fixed" bottom="20px" right="20px" zIndex={3}>
                                             <IconButton
                                                 aria-label="new"

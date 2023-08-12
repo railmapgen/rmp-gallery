@@ -4,6 +4,10 @@ import { Gallery } from '../../util/constant';
 interface AppState {
     realWorld: Gallery;
     fantasy: Gallery;
+    logins: {
+        realWorld: { [id in string]: string };
+        fantasy: { [id in string]: string };
+    };
 }
 
 const initialState: AppState = {
@@ -21,6 +25,10 @@ const initialState: AppState = {
             lastUpdateOn: 1683810518708,
         },
     },
+    logins: {
+        realWorld: {},
+        fantasy: {},
+    },
 };
 
 const appSlice = createSlice({
@@ -33,8 +41,11 @@ const appSlice = createSlice({
         setFantasy: (state, action: PayloadAction<Gallery>) => {
             state.fantasy = action.payload;
         },
+        setLogins: (state, action: PayloadAction<AppState['logins']>) => {
+            state.logins = action.payload;
+        },
     },
 });
 
-export const { setRealWorld, setFantasy } = appSlice.actions;
+export const { setRealWorld, setFantasy, setLogins } = appSlice.actions;
 export default appSlice.reducer;

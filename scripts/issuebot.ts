@@ -10,6 +10,7 @@ import { Translation } from '@railmapgen/rmg-translate';
 
 import { makeImage, makeThumbnail } from './images.js';
 import { Metadata, MetadataDetail } from './constants.js';
+import { getLogins } from './loginbot.js';
 
 const readIssueBody = async (): Promise<HTMLDetailsElement[]> => {
     execSync(
@@ -167,6 +168,8 @@ const main = async () => {
         JSON.stringify(citiesWithMetadata, null, 4),
         { encoding: 'utf-8' }
     );
+
+    await getLogins();
 
     execSync(`git add ${resolve('..', 'public', 'resources')}`);
     execSync(`git commit --amend --no-edit`);

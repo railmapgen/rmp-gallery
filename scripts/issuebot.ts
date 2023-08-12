@@ -120,9 +120,11 @@ const main = async () => {
     if (!existsSync(resolve('..', 'public', 'resources'))) await mkdir(resolve('..', 'public', 'resources'));
     if (!existsSync(resolve('..', 'public', 'resources', 'real_world')))
         await mkdir(resolve('..', 'public', 'resources', 'real_world'));
-    await writeFile(resolve('..', 'public', 'resources', 'real_world', `${cityName}.json`), JSON.stringify(param), {
-        encoding: 'utf-8',
-    });
+    await writeFile(
+        resolve('..', 'public', 'resources', 'real_world', `${cityName}.json`),
+        JSON.stringify(param, null, 4),
+        { encoding: 'utf-8' }
+    );
 
     const metadata = await makeMetadataWithUpdateHistory(cityName, metadataDetail);
     if (!existsSync(resolve('..', 'public', 'resources', 'metadata')))

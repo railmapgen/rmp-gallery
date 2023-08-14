@@ -15,6 +15,7 @@ const getLoginsByType = async type => {
     for (const id of ids) {
         const rep = await (await fetch(`https://api.github.com/user/${id}`)).json();
         ret[id] = rep.login;
+        console.log(`login for id: ${id} is ${ret[id]}`);
         await sleep(1000);
     }
     return ret;
@@ -33,3 +34,5 @@ export const getLogins = async () => {
         encoding: 'utf-8',
     });
 };
+
+await getLogins();

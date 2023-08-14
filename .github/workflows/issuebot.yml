@@ -29,7 +29,12 @@ jobs:
       - name: Install Noto CJK fonts
         run: sudo apt install -y fonts-noto-cjk
 
-      - name: Update and push
+      - name: Configure git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Make metadata and images
         run: node --loader ts-node/esm ./issuebot.ts
         working-directory: scripts
         env:
@@ -39,6 +44,18 @@ jobs:
           USER_LOGIN: ${{ github.event.issue.user.login }}
           USER_ID: ${{ github.event.issue.user.id }}
         id: bot
+
+      - name: Make logins
+        run: |
+          node ./loginbot.js
+          git add ../public/resources/
+          git commit --amend --no-edit
+        working-directory: scripts
+
+      - name: Print diff and push
+        run: |
+          git --no-pager diff HEAD^ HEAD
+          git push --set-upstream origin bot-${{ github.event.issue.number }}
 
       - name: pull-request-action
         uses: vsoch/pull-request-action@master

@@ -10,7 +10,6 @@ import { Translation } from '@railmapgen/rmg-translate';
 
 import { makeImage, makeThumbnail } from './images.js';
 import { Metadata, MetadataDetail } from './constants.js';
-import { getLogins } from './loginbot.js';
 
 const readIssueBody = async (): Promise<HTMLDetailsElement[]> => {
     execSync(
@@ -143,9 +142,6 @@ const main = async () => {
     const thumbnail = await makeThumbnail(image);
     await writeFile(resolve('..', 'public', 'resources', 'thumbnails', `${cityName}@300.png`), thumbnail);
 
-    execSync("git config --global user.name 'github-actions[bot]'");
-    execSync("git config --global user.email 'github-actions[bot]@users.noreply.github.com'");
-
     execSync(`git checkout -b bot-${process.env.ISSUE_NUMBER}`);
 
     execSync(`git add ${resolve('..', 'public', 'resources')}`);
@@ -169,12 +165,8 @@ const main = async () => {
         { encoding: 'utf-8' }
     );
 
-    await getLogins();
-
     execSync(`git add ${resolve('..', 'public', 'resources')}`);
     execSync(`git commit --amend --no-edit`);
-
-    execSync(`git push --set-upstream origin bot-${process.env.ISSUE_NUMBER}`);
 
     return 0;
 };

@@ -11,10 +11,12 @@ const getLoginsByType = async type => {
             .map(_ => _.contributors)
             .flat()
     );
+    console.log(data, ids);
     const ret = {};
     for (const id of ids) {
         const rep = await (await fetch(`https://api.github.com/user/${id}`)).json();
         ret[id] = rep.login;
+        console.log(`login for id: ${id} is ${ret[id]}`);
         await sleep(1000);
     }
     return ret;
@@ -25,6 +27,7 @@ export const getLogins = async () => {
         realWorld: await getLoginsByType('real_world'),
         fantasy: await getLoginsByType('fantasy'),
     };
+    console.log(logins);
 
     // await writeFile('logins.json', JSON.stringify(logins, null, 4), {
     //     encoding: 'utf-8',
@@ -33,3 +36,5 @@ export const getLogins = async () => {
         encoding: 'utf-8',
     });
 };
+
+await getLogins();

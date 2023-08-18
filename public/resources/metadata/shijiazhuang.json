@@ -1,10 +1,17 @@
 {
     "name": {
         "en": "Shijiazhuang",
-        "zh-CN": "石家庄"
+        "zh-Hans": "石家庄",
+        "zh-Hant": "石家莊",
+        "ja": "石家荘",
+        "ko": "스자좡"
     },
     "desc": {
-        "en": ""
+        "en": "Shijiazhuang Metro is a rapid transit system in Shijiazhuang, Hebei province, China.",
+        "zh-Hans": "石家庄地铁，又称石家庄轨道交通，是中国河北省石家庄市的城市轨道交通系统。其首期工程于2017年6月26日开通运营，截止2021年4月6日共有1号线、2号线、3号线三条线路，共计63个车站运营，运营里程76.5公里。日均客流量24万人次。",
+        "zh-Hant": "石家莊地鐵，又稱石家莊軌道交通，是中國河北省石家莊市的城市軌道交通系統。其首期工程於2017年6月26日開通營運，截止2021年4月6日共有1號綫、2號綫、3號綫三條路線，共計63個車站營運，營運距離76.5千米。日均客流量24萬人次。",
+        "ja": "石家荘地下鉄は、中華人民共和国河北省石家荘市において運行されている地下鉄である。",
+        "ko": "스자좡 지하철은 중화인민공화국 허베이성 스자좡시의 도시 철도이다."
     },
     "reference": "http://www.sjzmetro.cn/cyportal2.3/fcktemplate/Image/8a87a88378a4e4f30178a67c593524b2/8a87a88378a4e4f30178a67c593524b3.jpg",
     "updateHistory": [
@@ -13,6 +20,12 @@
             "issueNumber": 398,
             "reason": "Upload Shijiazhuang Metro Railmap",
             "time": 1692363312358
+        },
+        {
+            "id": 139970605,
+            "issueNumber": 567,
+            "reason": "Fix station names with polyphones such as BAILINZHUANG and ZHAOHUIQIAO.",
+            "time": 1692378916679
         }
     ]
 }

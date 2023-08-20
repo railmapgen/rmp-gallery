@@ -1,4 +1,4 @@
-import { Avatar, AvatarGroup, Button, Card, CardBody, CardFooter, CardHeader, Heading, Image } from '@chakra-ui/react';
+import { Avatar, AvatarGroup, Button, Card, CardBody, CardFooter, CardHeader, Heading } from '@chakra-ui/react';
 
 import { useTranslation } from 'react-i18next';
 
@@ -18,7 +18,8 @@ export const TemplateCard = (props: {
     return (
         <Card key={`${type}+${id}`} variant="elevated" minWidth="300" m="2">
             <CardBody>
-                <Image src={`resources/thumbnails/${id}@300.png`} alt={id} borderRadius="lg" />
+                {/* Using native img due to: https://bugzilla.mozilla.org/show_bug.cgi?id=1647077 */}
+                <img width="300" height="300" loading="lazy" src={`resources/thumbnails/${id}@300.png`} alt={id} />
             </CardBody>
             <CardHeader>
                 <Heading size="lg">{translateName(metadata.name)}</Heading>

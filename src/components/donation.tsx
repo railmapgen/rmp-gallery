@@ -11,6 +11,7 @@ import {
     CardFooter,
     Divider,
     Heading,
+    Icon,
     Link,
     List,
     ListIcon,
@@ -19,35 +20,51 @@ import {
     ModalBody,
     ModalCloseButton,
     ModalContent,
+    ModalFooter,
     ModalHeader,
     ModalOverlay,
     SimpleGrid,
     Stack,
     Text,
-    Tooltip,
     UnorderedList,
 } from '@chakra-ui/react';
+import rmgRuntime from '@railmapgen/rmg-runtime';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { MdCheckCircle, MdFlagCircle, MdRemoveCircle } from 'react-icons/md';
+import { MdCheckCircle, MdOpenInNew, MdRemoveCircle } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
+import { Events, MetadataDetail } from '../util/constant';
 
-export default function DonationModal(props: { isOpen: boolean; onClose: () => void }) {
-    const { isOpen } = props;
+export default function Donation() {
     const navigate = useNavigate();
-    const { t } = useTranslation();
+    const { i18n, t } = useTranslation();
 
     const handleBack = () => navigate('/');
-    const handleBecomeEarlyBird = (sku: 'A' | 'B') => {
-        const param = new URLSearchParams({
-            labels: 'donation',
-            title: `Donation: Early bird ${sku}`,
+    const handleDonate = () => {
+        if (i18n.language === 'zh-Hans') {
+            window.open('https://afdian.net/a/rail-map-toolkit', '_blank');
+        } else {
+            window.open('https://opencollective.com/rail-map-toolkit', '_blank');
+        }
+    };
+
+    const handleNew = () => {
+        rmgRuntime.event(Events.UPLOAD_TEMPLATES, { type: 'fantasy' });
+        navigate('/new', {
+            state: {
+                metadata: {
+                    name: { en: '' },
+                    desc: { en: '' },
+                    reference: '',
+                    justification: 'New template of ',
+                } as MetadataDetail,
+                type: 'fantasy',
+            },
         });
-        window.open('https://github.com/railmapgen/rmp-gallery/issues/new?' + param.toString(), '_blank');
     };
 
     return (
-        <Modal isOpen={isOpen} onClose={handleBack} size="2xl">
+        <Modal isOpen={true} onClose={handleBack} size="2xl">
             <ModalOverlay />
             <ModalContent>
                 <ModalHeader>{t('donation.title')}</ModalHeader>
@@ -85,26 +102,13 @@ export default function DonationModal(props: { isOpen: boolean; onClose: () => v
                                                 <ListIcon as={MdRemoveCircle} color="red.500" />
                                                 {t('donation.noUpdates')}
                                             </ListItem>
-                                            <Tooltip
-                                                label={
-                                                    <Stack alignItems="center">
-                                                        <Text>{t('donation.earlyBirdBonus')}</Text>
-                                                        <Text>https://{window.location.hostname}/rmp/s/wenxi</Text>
-                                                    </Stack>
-                                                }
-                                            >
-                                                <ListItem>
-                                                    <ListIcon as={MdFlagCircle} color="teal.500" />
-                                                    {t('donation.personalizedLink')}
-                                                </ListItem>
-                                            </Tooltip>
                                         </List>
                                     </Stack>
                                 </CardBody>
                                 <Divider />
                                 <CardFooter>
-                                    <Button colorScheme="blue" onClick={() => handleBecomeEarlyBird('A')}>
-                                        {t('donation.becomeAnEarlyBird')}
+                                    <Button colorScheme="blue" onClick={() => handleDonate()}>
+                                        {t('donation.donate')}
                                     </Button>
                                 </CardFooter>
                             </Card>
@@ -125,26 +129,13 @@ export default function DonationModal(props: { isOpen: boolean; onClose: () => v
                                                 <ListIcon as={MdCheckCircle} color="blue.500" />
                                                 {t('donation.unlimitedUpdates')}
                                             </ListItem>
-                                            <Tooltip
-                                                label={
-                                                    <Stack alignItems="center">
-                                                        <Text>{t('donation.earlyBirdBonus')}</Text>
-                                                        <Text>https://{window.location.hostname}/rmp/s/wenxi</Text>
-                                                    </Stack>
-                                                }
-                                            >
-                                                <ListItem>
-                                                    <ListIcon as={MdFlagCircle} color="teal.500" />
-                                                    {t('donation.personalizedLink')}
-                                                </ListItem>
-                                            </Tooltip>
                                         </List>
                                     </Stack>
                                 </CardBody>
                                 <Divider />
                                 <CardFooter>
-                                    <Button colorScheme="blue" onClick={() => handleBecomeEarlyBird('B')}>
-                                        {t('donation.becomeAnEarlyBird')}
+                                    <Button colorScheme="blue" onClick={() => handleDonate()}>
+                                        {t('donation.donate')}
                                     </Button>
                                 </CardFooter>
                             </Card>
@@ -160,6 +151,7 @@ export default function DonationModal(props: { isOpen: boolean; onClose: () => v
                                     <AccordionIcon />
                                 </AccordionButton>
                                 <AccordionPanel>
+                                    <Text>{t('donation.termsLastUpdatedOn')}</Text>
                                     <UnorderedList>
                                         {Array.from({ length: 12 }).map((_, i) => (
                                             <ListItem key={i}>{t(`donation.terms${i + 1}`)}</ListItem>
@@ -174,7 +166,23 @@ export default function DonationModal(props: { isOpen: boolean; onClose: () => v
                                     </Box>
                                     <AccordionIcon />
                                 </AccordionButton>
-                                <AccordionPanel>{t('donation.comingSoon')}</AccordionPanel>
+                                <AccordionPanel>
+                                    <Link
+                                        color="blue.500"
+                                        href="https://afdian.net/a/rail-map-toolkit"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        https://afdian.net/a/rail-map-toolkit <Icon as={MdOpenInNew} />
+                                    </Link>
+                                    <UnorderedList>
+                                        <ListItem key="1">{t('donation.methodGithubAccount')}</ListItem>
+                                        <ListItem key="2">{t('donation.methodAfdianAccount')}</ListItem>
+                                        <ListItem key="3">{t('donation.methodCNMethod')}</ListItem>
+                                        <ListItem key="4">{t('donation.methodCNLeaveMessage')}</ListItem>
+                                        <ListItem key="5">{t('donation.methodMessageContains')}</ListItem>
+                                    </UnorderedList>
+                                </AccordionPanel>
                             </AccordionItem>
                             <AccordionItem>
                                 <AccordionButton>
@@ -183,11 +191,33 @@ export default function DonationModal(props: { isOpen: boolean; onClose: () => v
                                     </Box>
                                     <AccordionIcon />
                                 </AccordionButton>
-                                <AccordionPanel>{t('donation.comingSoon')}</AccordionPanel>
+                                <AccordionPanel>
+                                    <Link
+                                        color="blue.500"
+                                        href="https://opencollective.com/rail-map-toolkit"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        https://opencollective.com/rail-map-toolkit <Icon as={MdOpenInNew} />
+                                    </Link>
+                                    <UnorderedList>
+                                        <ListItem key="1">{t('donation.methodGithubAccount')}</ListItem>
+                                        <ListItem key="2">{t('donation.methodOpenCollectiveAccount')}</ListItem>
+                                        <ListItem key="3">{t('donation.methodUSMethod')}</ListItem>
+                                        <ListItem key="4">{t('donation.methodUSLeaveMessage')}</ListItem>
+                                        <ListItem key="5">{t('donation.methodMessageContains')}</ListItem>
+                                    </UnorderedList>
+                                </AccordionPanel>
                             </AccordionItem>
                         </Accordion>
                     </Stack>
                 </ModalBody>
+
+                <ModalFooter>
+                    <Button colorScheme="primary" onClick={handleNew}>
+                        {t('donation.next')}
+                    </Button>
+                </ModalFooter>
             </ModalContent>
         </Modal>
     );

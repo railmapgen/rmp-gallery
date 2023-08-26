@@ -34,6 +34,10 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
+      - name: Save issue into a file
+        run: |
+          gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/railmapgen/rmp-gallery/issues/${{ github.event.issue.number }} > issue.json
+
       - name: Make metadata and images
         run: node --loader ts-node/esm ./issuebot.ts
         working-directory: scripts

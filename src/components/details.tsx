@@ -62,7 +62,7 @@ const DetailsModal = (props: {
         const metadataDetail = (({ updateHistory, ...rest }) => ({ ...rest, justification: '' }))(
             metadataCopy
         ) as MetadataDetail;
-        navigate('/new', { state: { metadata: metadataDetail, type } });
+        navigate('/new', { state: { metadata: metadataDetail, type, id: city } });
     };
     const handleOpenTemplate = () => {
         CHN.postMessage({ event: RMP_GALLERY_CHANNEL_EVENT, data: city });

@@ -24,7 +24,6 @@ import { stringify } from 'zipson';
 import { useRootSelector } from '../redux';
 import { GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, MetadataDetail } from '../util/constant';
 import { downloadAs, makeGitHubIssueDetails, readFileAsText } from '../util/utils';
-import DonationModal from './donation';
 import MultiLangEntryCard from './multi-lang-entry-card';
 
 const styles: SystemStyleObject = {
@@ -45,7 +44,7 @@ const styles: SystemStyleObject = {
 
 export default function Ticket() {
     const {
-        state: { metadata: metadataParam, type },
+        state: { metadata: metadataParam, type, id },
     } = useLocation();
     const navigate = useNavigate();
     const gallery = useRootSelector(state => state.app.realWorld);
@@ -55,7 +54,6 @@ export default function Ticket() {
 
     const textareaRef = React.useRef<HTMLTextAreaElement>(null);
     const [isSubmitModalOpen, setIsSubmitModalOpen] = React.useState(false);
-    const [isDonationModalOpen, setIsDonationModalOpen] = React.useState(type === 'fantasy');
 
     const [metadata, setMetadata] = React.useState<MetadataDetail>(metadataParam);
     const [param, setParam] = React.useState('');
@@ -64,9 +62,9 @@ export default function Ticket() {
         GITHUB_ISSUE_HEADER,
         GITHUB_ISSUE_PREAMBLE,
         makeGitHubIssueDetails('metadata', JSON.stringify(metadata, null, 4), {}),
-        makeGitHubIssueDetails('real_world', param, {
+        makeGitHubIssueDetails(type, param, {
             compress: 'zipson',
-            city: cityName,
+            city: id ?? cityName,
         }),
     ].join('\n\n');
     const manualSearchParams = new URLSearchParams({
@@ -152,10 +150,30 @@ export default function Ticket() {
         },
         {
             type: 'input',
-            label: t('ticket.reason'),
+            label: t('ticket.reasonOptional'),
             placeholder: t('ticket.reasonPlaceHolder'),
             value: metadata.justification,
             onChange: value => setMetadata({ ...metadata, justification: value }),
+            minW: 250,
+        },
+        {
+            type: 'input',
+            label: t('ticket.earlyBirdIssue'),
+            placeholder: t('ticket.earlyBirdIssuePlaceHolder'),
+            value: metadata.earlyBirdIssue ?? '',
+            isDisabled: id !== undefined,
+            onChange: value => setMetadata({ ...metadata, earlyBirdIssue: value }),
+            minW: 250,
+        },
+        {
+            type: 'input',
+            label: t('ticket.personalizedLink'),
+            placeholder: t('ticket.personalizedLinkPlaceHolder'),
+            // Enforce a valid personalized link.
+            validator: val => /^[a-zA-Z0-9. -]+$/.test(val),
+            value: id ?? metadata.personalizedLink ?? '',
+            isDisabled: id !== undefined,
+            onChange: value => setMetadata({ ...metadata, personalizedLink: value }),
             minW: 250,
         },
     ];
@@ -222,7 +240,11 @@ export default function Ticket() {
                             metadata.reference === '' ||
                             (type === 'real_world' &&
                                 (metadata.justification === '' || !/^[a-zA-Z0-9. -]+$/.test(metadata.justification))) ||
-                            type === 'fantasy' ||
+                            (type === 'fantasy' &&
+                                metadata.personalizedLink &&
+                                (metadata.personalizedLink.length < 6 ||
+                                    metadata.personalizedLink.length > 20 ||
+                                    !/^[a-zA-Z0-9. -]+$/.test(metadata.personalizedLink))) ||
                             (Object.keys(metadata.desc).length > 0 && !('en' in metadata.desc)) ||
                             cityName === ''
                         }
@@ -274,8 +296,6 @@ export default function Ticket() {
                     </ModalFooter>
                 </ModalContent>
             </Modal>
-
-            <DonationModal isOpen={isDonationModalOpen} onClose={() => setIsDonationModalOpen(false)} />
         </RmgPage>
     );
 }

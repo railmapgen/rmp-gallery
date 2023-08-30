@@ -56,7 +56,7 @@ export default function Donation() {
                     name: { en: '' },
                     desc: { en: '' },
                     reference: '',
-                    justification: 'New template of ',
+                    justification: '',
                 } as MetadataDetail,
                 type: 'fantasy',
             },
@@ -142,7 +142,7 @@ export default function Donation() {
                         </SimpleGrid>
                         <Text>{t('donation.content3')}</Text>
                         <Text>{t('donation.content4')}</Text>
-                        <Accordion allowMultiple>
+                        <Accordion allowMultiple defaultIndex={[i18n.language === 'zh-Hans' ? 1 : 2]}>
                             <AccordionItem>
                                 <AccordionButton>
                                     <Box as="span" flex="1" textAlign="left">

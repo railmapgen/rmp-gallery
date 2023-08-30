@@ -5,6 +5,7 @@ import {
     Flex,
     HStack,
     Input,
+    ListItem,
     Modal,
     ModalBody,
     ModalCloseButton,
@@ -14,6 +15,7 @@ import {
     ModalOverlay,
     SystemStyleObject,
     Text,
+    UnorderedList,
 } from '@chakra-ui/react';
 import { RmgDebouncedTextarea, RmgFields, RmgFieldsField, RmgLabel, RmgPage } from '@railmapgen/rmg-components';
 import React from 'react';
@@ -183,6 +185,16 @@ export default function Ticket() {
             <Flex>
                 <RmgFields fields={fileField} />
                 {type === 'real_world' && <RmgFields fields={realWorldFields} />}
+                {type === 'fantasy' && (
+                    <>
+                        <Text>{t('ticket.donationInfo')}</Text>
+                        <UnorderedList>
+                            {Array.from({ length: 4 }).map((_, i) => (
+                                <ListItem key={i}>{t(`ticket.donationInfo${i + 1}`)}</ListItem>
+                            ))}
+                        </UnorderedList>
+                    </>
+                )}
                 {type === 'fantasy' && <RmgFields fields={fantasyFields} />}
                 <RmgLabel label={t('ticket.cityName')}>
                     <MultiLangEntryCard

@@ -21,6 +21,7 @@ export interface Metadata {
     name: Translation;
     desc: Translation;
     reference: string;
+    expireOn?: number;
     updateHistory: {
         id: number;
         issueNumber: number;

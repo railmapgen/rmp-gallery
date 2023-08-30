@@ -5,12 +5,15 @@ export interface MetadataDetail {
     desc: Translation;
     reference: string;
     justification: string;
+    earlyBirdIssue?: string;
+    personalizedLink?: string;
 }
 
 export interface Metadata {
     name: Translation;
     desc: Translation;
     reference: string;
+    expireOn?: number;
     updateHistory: {
         id: number;
         issueNumber: number;

@@ -1,28 +1,26 @@
 import { execSync } from 'child_process';
+import * as crypto from 'crypto';
 import { existsSync } from 'fs';
-import { mkdir, readFile, readdir, writeFile } from 'fs/promises';
-import { EOL } from 'os';
+import { mkdir, readdir, readFile, writeFile } from 'fs/promises';
+import { EOL, homedir } from 'os';
 import { resolve } from 'path';
 
+import { Translation } from '@railmapgen/rmg-translate';
 import { JSDOM } from 'jsdom';
 import { parse } from 'zipson';
-import { Translation } from '@railmapgen/rmg-translate';
 
-import { makeImage, makeThumbnail } from './images.js';
 import { Metadata, MetadataDetail } from './constants.js';
+import { makeImage, makeThumbnail } from './images.js';
 
 const readIssueBody = async (): Promise<HTMLDetailsElement[]> => {
-    execSync(
-        `gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/railmapgen/rmp-gallery/issues/${process.env.ISSUE_NUMBER} > issue.json`
-    );
-    const issue = await readFile('issue.json', 'utf-8');
+    const issue = await readFile(resolve(homedir(), 'issue.json'), 'utf-8');
     const data = JSON.parse(issue);
     let issueBody = data.body as string;
 
     if (issueBody.includes('https://github.com/railmapgen/rmp-gallery/files/')) {
         const bodyURL = issueBody.match(/\(https:\/\/github.com\/railmapgen\/rmp-gallery\/files\/.+\)/)?.at(0);
         if (bodyURL === undefined) throw new Error('The file link must be valid.');
-        issueBody = await(await fetch(bodyURL.substring(1, bodyURL.length - 1))).text();
+        issueBody = await (await fetch(bodyURL.substring(1, bodyURL.length - 1))).text();
     }
 
     const dom = new JSDOM(issueBody);
@@ -39,29 +37,49 @@ const parseDetailsEl = (detailsEls: HTMLDetailsElement[]) => {
     }
     const metadataDetail = JSON.parse(metadataDetailEl.textContent!.trim()) as MetadataDetail;
 
-    const paramDetailEl = detailsEls.find(el => el.getAttribute('type') === 'real_world');
+    const paramDetailEl = detailsEls.find(el => ['real_world', 'fantasy'].includes(el.getAttribute('type') ?? ''));
     if (!paramDetailEl) {
         throw new Error('Detail element of real world data is required.');
     }
     if (paramDetailEl.getAttribute('compress') !== 'zipson') {
         throw new Error('Data must be compressed by zipson.');
     }
-    if (paramDetailEl.getAttribute('type') !== 'real_world') {
-        throw new Error('Data must come from real world.');
-    }
     if (paramDetailEl.textContent === null) {
         throw new Error('textContent must contains data.');
     }
+
     const param = parse(paramDetailEl.textContent.trim()); // trim to make a valid zipson data
     const cityName = paramDetailEl.getAttribute('city');
     if (!cityName || cityName === '') {
         throw new Error('City name must be a non empty string.');
     }
+    const type = paramDetailEl.getAttribute('type') as 'real_world' | 'fantasy';
+    if (!type || !(type === 'real_world' || type === 'fantasy')) {
+        throw new Error('Type must be real_world or fantasy.');
+    }
 
-    return { metadataDetail, param, cityName };
+    // additional checks for submitting a new fantasy work for the first time
+    if (type === 'fantasy' && process.env.ISSUE_TITLE?.includes('New')) {
+        // no early bird donation means no personalized link, thus we use a random name
+        if (!metadataDetail.earlyBirdIssue && !metadataDetail.personalizedLink) {
+            // https://stackoverflow.com/a/27747377 random string in node
+            const id = crypto.randomBytes(4).toString('hex');
+            return { metadataDetail, param, cityName: id, type };
+        }
+
+        if (!metadataDetail.personalizedLink || !metadataDetail.personalizedLink.match(/^[a-zA-Z0-9]{6,20}$/))
+            throw new Error('Invalid personalized link for early bird donation.');
+        return { metadataDetail, param, cityName: metadataDetail.personalizedLink, type };
+    }
+
+    return { metadataDetail, param, cityName, type };
 };
 
-const makeMetadataWithUpdateHistory = async (cityName: string, metadataDetail: MetadataDetail) => {
+const makeMetadataWithUpdateHistory = async (
+    cityName: string,
+    metadataDetail: MetadataDetail,
+    type: 'real_world' | 'fantasy'
+) => {
     const { justification, ...metadataWithoutJustification } = metadataDetail;
     const metadata = structuredClone(metadataWithoutJustification) as Metadata;
 
@@ -70,6 +88,10 @@ const makeMetadataWithUpdateHistory = async (cityName: string, metadataDetail: M
     if (existsSync(oldMetadataFilePath)) {
         const oldMetadataFile = await readFile(oldMetadataFilePath, { encoding: 'utf-8' });
         const oldMetadata = JSON.parse(oldMetadataFile) as Metadata;
+
+        if (type === 'fantasy' && oldMetadata.remainingUpdateCount! === 0)
+            throw new Error('This work can not be changed.');
+
         updateHistory.push(...structuredClone(oldMetadata.updateHistory));
     }
     updateHistory.push({
@@ -80,17 +102,32 @@ const makeMetadataWithUpdateHistory = async (cityName: string, metadataDetail: M
     });
     metadata.updateHistory = updateHistory;
 
+    // New template under fantasy type
+    if (type === 'fantasy' && updateHistory.length === 1 && metadata.expireOn === undefined) {
+        const now = new Date();
+        // extra 4 days in case of delay
+        const nextYear = now.setUTCDate(now.getUTCDate() + 366 + 4);
+        metadata.expireOn = nextYear;
+
+        if (metadataDetail.earlyBirdIssue && metadataDetail.personalizedLink) {
+            metadata.remainingUpdateCount = -1;
+        } else {
+            metadata.remainingUpdateCount = 0;
+        }
+    }
+
     return metadata;
 };
 
 const getMetadataFromCity = async (
-    cityNameWithExtension: string
+    cityNameWithExtension: string,
+    type: 'real_world' | 'fantasy'
 ): Promise<{
     contributors: string[];
     name: Translation;
     lastUpdateOn: number;
 }> => {
-    const filePath = resolve('..', 'public', 'resources', 'real_world', cityNameWithExtension);
+    const filePath = resolve('..', 'public', 'resources', type, cityNameWithExtension);
     // https://stackoverflow.com/questions/15564185/exec-not-returning-anything-when-trying-to-run-git-shortlog-with-nodejs
     // https://stackoverflow.com/questions/73085141/git-shortlog-in-a-github-workflow-for-a-specific-directory
     const stdout = execSync(`git log -- ${filePath} | git shortlog -s -e`, { encoding: 'utf-8' });
@@ -100,7 +137,8 @@ const getMetadataFromCity = async (
                 .split(EOL)
                 .map(line => line.match(/<\d+/)?.at(0))
                 .filter(uid => uid !== undefined)
-                .map(s => s?.substring(1)) as string[]
+                .map(s => s?.substring(1))
+                .reverse() as string[]
         ),
     ];
 
@@ -117,20 +155,20 @@ const getMetadataFromCity = async (
     return { contributors, name, lastUpdateOn };
 };
 
-const main = async () => {
+export const main = async () => {
     const detailsEls = await readIssueBody();
-    const { metadataDetail, param, cityName } = parseDetailsEl(detailsEls);
+    const { metadataDetail, param, cityName, type } = parseDetailsEl(detailsEls);
 
     if (!existsSync(resolve('..', 'public', 'resources'))) await mkdir(resolve('..', 'public', 'resources'));
     if (!existsSync(resolve('..', 'public', 'resources', 'real_world')))
         await mkdir(resolve('..', 'public', 'resources', 'real_world'));
-    await writeFile(
-        resolve('..', 'public', 'resources', 'real_world', `${cityName}.json`),
-        JSON.stringify(param, null, 4),
-        { encoding: 'utf-8' }
-    );
+    if (!existsSync(resolve('..', 'public', 'resources', 'fantasy')))
+        await mkdir(resolve('..', 'public', 'resources', 'fantasy'));
+    await writeFile(resolve('..', 'public', 'resources', type, `${cityName}.json`), JSON.stringify(param, null, 4), {
+        encoding: 'utf-8',
+    });
 
-    const metadata = await makeMetadataWithUpdateHistory(cityName, metadataDetail);
+    const metadata = await makeMetadataWithUpdateHistory(cityName, metadataDetail, type);
     if (!existsSync(resolve('..', 'public', 'resources', 'metadata')))
         await mkdir(resolve('..', 'public', 'resources', 'metadata'));
     await writeFile(
@@ -141,7 +179,7 @@ const main = async () => {
 
     if (!existsSync(resolve('..', 'public', 'resources', 'thumbnails')))
         await mkdir(resolve('..', 'public', 'resources', 'thumbnails'));
-    const image = await makeImage(resolve('..', 'public', 'resources', 'real_world', `${cityName}.json`));
+    const image = await makeImage(resolve('..', 'public', 'resources', type, `${cityName}.json`));
     await writeFile(resolve('..', 'public', 'resources', 'thumbnails', `${cityName}.png`), image);
     const thumbnail = await makeThumbnail(image);
     await writeFile(resolve('..', 'public', 'resources', 'thumbnails', `${cityName}@300.png`), thumbnail);
@@ -154,20 +192,18 @@ const main = async () => {
             `--author="${process.env.USER_LOGIN} <${process.env.USER_ID}+${process.env.USER_LOGIN}@users.noreply.github.com>"`
     );
 
-    const citiesNameWithExtension = await readdir(resolve('..', 'public', 'resources', 'real_world'));
+    const citiesNameWithExtension = await readdir(resolve('..', 'public', 'resources', type));
     const citiesWithMetadata = Object.fromEntries(
         await Promise.all(
             citiesNameWithExtension.map(async cityNameWithExtension => {
-                const metadata = await getMetadataFromCity(cityNameWithExtension);
+                const metadata = await getMetadataFromCity(cityNameWithExtension, type);
                 return [cityNameWithExtension.split('.').at(0)!, metadata];
             })
         )
     );
-    await writeFile(
-        resolve('..', 'public', 'resources', 'real_world.json'),
-        JSON.stringify(citiesWithMetadata, null, 4),
-        { encoding: 'utf-8' }
-    );
+    await writeFile(resolve('..', 'public', 'resources', `${type}.json`), JSON.stringify(citiesWithMetadata, null, 4), {
+        encoding: 'utf-8',
+    });
 
     execSync(`git add ${resolve('..', 'public', 'resources')}`);
     execSync(`git commit --amend --no-edit`);

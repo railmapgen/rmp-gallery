@@ -42,18 +42,22 @@ export default function GalleryView() {
     };
 
     const handleNew = () => {
-        navigate('/new', {
-            state: {
-                metadata: {
-                    name: { en: '' },
-                    desc: { en: '' },
-                    reference: '',
-                    justification: '',
-                } as MetadataDetail,
-                type,
-            },
-        });
-        rmgRuntime.event(Events.UPLOAD_TEMPLATES, {});
+        if (type === 'real_world') {
+            rmgRuntime.event(Events.UPLOAD_TEMPLATES, { type });
+            navigate('/new', {
+                state: {
+                    metadata: {
+                        name: { en: '' },
+                        desc: { en: '' },
+                        reference: '',
+                        justification: 'New template of ',
+                    } as MetadataDetail,
+                    type,
+                },
+            });
+        } else if (type === 'fantasy') {
+            navigate('/donation');
+        }
     };
 
     React.useEffect(() => {

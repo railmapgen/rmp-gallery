@@ -59,9 +59,10 @@ const DetailsModal = (props: {
 
     const handleEdit = () => {
         const metadataCopy = structuredClone(metadata);
-        const metadataDetail = (({ updateHistory, ...rest }) => ({ ...rest, justification: '' }))(
-            metadataCopy
-        ) as MetadataDetail;
+        const metadataDetail = (({ updateHistory, expireOn, ...rest }) => ({
+            ...rest,
+            justification: '',
+        }))(metadataCopy) as MetadataDetail;
         navigate('/new', { state: { metadata: metadataDetail, type } });
     };
     const handleOpenTemplate = () => {

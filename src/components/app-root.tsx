@@ -1,6 +1,7 @@
-import { RmgErrorBoundary, RmgLoader, RmgPage, RmgThemeProvider, RmgWindow } from '@railmapgen/rmg-components';
+import { RmgErrorBoundary, RmgPage, RmgThemeProvider, RmgWindow } from '@railmapgen/rmg-components';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
+import Donation from './donation';
 import GalleryView from './gallery';
 import Ticket from './ticket';
 import WindowHeader from './window-header';
@@ -26,6 +27,14 @@ export default function AppRoot() {
                                 element={
                                     <RmgErrorBoundary>
                                         <Ticket />
+                                    </RmgErrorBoundary>
+                                }
+                            />
+                            <Route
+                                path="/donation"
+                                element={
+                                    <RmgErrorBoundary>
+                                        <Donation />
                                     </RmgErrorBoundary>
                                 }
                             />

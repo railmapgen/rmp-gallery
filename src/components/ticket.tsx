@@ -71,7 +71,9 @@ export default function Ticket() {
     ].join('\n\n');
     const manualSearchParams = new URLSearchParams({
         labels: 'resources',
-        title: `Donation: ${cityName in gallery ? 'Update' : 'New'} template of ${cityName}`,
+        title: `${type === 'real_world' ? 'Resources' : 'Donation'}: ${
+            cityName in gallery ? 'Update' : 'New'
+        } template of ${cityName}`,
     });
 
     const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -107,7 +109,9 @@ export default function Ticket() {
         downloadAs(`${cityName}.txt`, 'application/json', issueBody);
         const fileParam = new URLSearchParams({
             labels: 'resources',
-            title: `Resources: ${cityName in gallery ? 'Update' : 'New'} template of ${cityName}`,
+            title: `${type === 'real_world' ? 'Resources' : 'Donation'}: ${
+                cityName in gallery ? 'Update' : 'New'
+            } template of ${cityName}`,
             body: [GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, ''].join('\n\n'),
         });
         window.open('https://github.com/railmapgen/rmp-gallery/issues/new?' + fileParam.toString(), '_blank');

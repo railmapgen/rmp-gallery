@@ -5,6 +5,8 @@ export interface MetadataDetail {
     desc: Translation;
     reference: string;
     justification: string;
+    earlyBirdIssue?: string;
+    personalizedLink?: string;
 }
 
 export interface Metadata {

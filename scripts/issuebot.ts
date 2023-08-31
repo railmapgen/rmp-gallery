@@ -1,4 +1,5 @@
 import { execSync } from 'child_process';
+import * as crypto from "crypto";
 import { existsSync } from 'fs';
 import { mkdir, readdir, readFile, writeFile } from 'fs/promises';
 import { EOL } from 'os';
@@ -55,6 +56,12 @@ const parseDetailsEl = (detailsEls: HTMLDetailsElement[]) => {
     const type = paramDetailEl.getAttribute('type') as 'real_world' | 'fantasy';
     if (!type || !(type === 'real_world' || type === 'fantasy')) {
         throw new Error('Type must be real_world or fantasy.');
+    }
+
+    if (type === 'fantasy' && metadataDetail.earlyBirdIssue === '' && metadataDetail.personalizedLink === '') {
+        // https://stackoverflow.com/a/27747377 random string in node
+        const id = crypto.randomBytes(4).toString('hex');
+        return { metadataDetail, param, cityName: id, type };
     }
 
     return { metadataDetail, param, cityName, type };

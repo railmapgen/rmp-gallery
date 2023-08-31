@@ -7,7 +7,9 @@ on:
 jobs:
   updateGallery:
     runs-on: ubuntu-latest
-    if: contains(github.event.issue.body, 'Do not edit lines below, they are meant for bots only!!!')
+    if: |
+      contains(github.event.issue.body, 'Paste or Upload below. They are meant for BOTS ONLY!!!') &&
+      startsWith(github.event.issue.title, 'Donation: ')
     steps:
       - uses: actions/checkout@v3
         with:

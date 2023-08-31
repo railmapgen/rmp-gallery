@@ -71,7 +71,7 @@ export default function Ticket() {
     ].join('\n\n');
     const manualSearchParams = new URLSearchParams({
         labels: 'resources',
-        title: `Resources: ${cityName in gallery ? 'Update' : 'New'} template of ${cityName}`,
+        title: `Donation: ${cityName in gallery ? 'Update' : 'New'} template of ${cityName}`,
     });
 
     const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {

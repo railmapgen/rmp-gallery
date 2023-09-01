@@ -38,7 +38,7 @@ jobs:
 
       - name: Save issue into a file
         run: |
-          gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/railmapgen/rmp-gallery/issues/${{ github.event.issue.number }} > issue.json
+          gh api -H "Accept: application/vnd.github+json" -H "X-GitHub-Api-Version: 2022-11-28" /repos/railmapgen/rmp-gallery/issues/${{ github.event.issue.number }} > $HOME/issue.json
         env:
           GH_TOKEN: ${{ github.token }}
 

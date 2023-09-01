@@ -1,8 +1,8 @@
 import { execSync } from 'child_process';
-import * as crypto from "crypto";
+import * as crypto from 'crypto';
 import { existsSync } from 'fs';
 import { mkdir, readdir, readFile, writeFile } from 'fs/promises';
-import { EOL } from 'os';
+import { EOL, homedir } from 'os';
 import { resolve } from 'path';
 
 import { Translation } from '@railmapgen/rmg-translate';
@@ -13,7 +13,7 @@ import { Metadata, MetadataDetail } from './constants.js';
 import { makeImage, makeThumbnail } from './images.js';
 
 const readIssueBody = async (): Promise<HTMLDetailsElement[]> => {
-    const issue = await readFile('issue.json', 'utf-8');
+    const issue = await readFile(resolve(homedir(), 'issue.json'), 'utf-8');
     const data = JSON.parse(issue);
     let issueBody = data.body as string;
 

@@ -6,19 +6,36 @@ export enum Events {
 }
 
 export const GITHUB_ISSUE_HEADER = 'Hi RMP team! I would like to contribute to the gallery with the data below.';
-export const GITHUB_ISSUE_PREAMBLE = '**Do not edit lines below, they are meant for bots only!!!**';
+export const GITHUB_ISSUE_PREAMBLE = '**Paste or Upload below. They are meant for BOTS ONLY!!!**';
 
 export interface MetadataDetail {
     name: Translation;
     desc: Translation;
     reference: string;
     justification: string;
+    earlyBirdIssue?: string;
+    personalizedLink?: string;
+    /**
+     * 0 for no updates, -1 for unlimited updates.
+     * Must exists in fantasy works.
+     */
+    remainingUpdateCount?: number;
 }
 
 export interface Metadata {
     name: Translation;
     desc: Translation;
     reference: string;
+    /**
+     * The unix timestamp of expiration.
+     * Must exists in fantasy works.
+     */
+    expireOn?: number;
+    /**
+     * 0 for no updates, -1 for unlimited updates.
+     * Must exists in fantasy works.
+     */
+    remainingUpdateCount?: number;
     updateHistory: {
         id: number;
         issueNumber: number;

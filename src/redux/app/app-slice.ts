@@ -18,13 +18,7 @@ const initialState: AppState = {
             lastUpdateOn: 1683810518708,
         },
     },
-    fantasy: {
-        wenxi: {
-            contributors: ['3353040'],
-            name: { en: 'Shanghai', 'zh-Hans': '上海', 'zh-Hant': '上海' },
-            lastUpdateOn: 1683810518708,
-        },
-    },
+    fantasy: {},
     logins: {
         realWorld: {},
         fantasy: {},

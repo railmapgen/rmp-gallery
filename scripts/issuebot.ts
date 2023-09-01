@@ -58,10 +58,18 @@ const parseDetailsEl = (detailsEls: HTMLDetailsElement[]) => {
         throw new Error('Type must be real_world or fantasy.');
     }
 
-    if (type === 'fantasy' && metadataDetail.earlyBirdIssue === '' && metadataDetail.personalizedLink === '') {
-        // https://stackoverflow.com/a/27747377 random string in node
-        const id = crypto.randomBytes(4).toString('hex');
-        return { metadataDetail, param, cityName: id, type };
+    // additional checks for submitting a new fantasy work for the first time
+    if (type === 'fantasy' && process.env.ISSUE_TITLE?.includes('New')) {
+        // no early bird donation means no personalized link, thus we use a random name
+        if (!metadataDetail.earlyBirdIssue && !metadataDetail.personalizedLink) {
+            // https://stackoverflow.com/a/27747377 random string in node
+            const id = crypto.randomBytes(4).toString('hex');
+            return { metadataDetail, param, cityName: id, type };
+        }
+
+        if (!metadataDetail.personalizedLink || !/^[a-zA-Z0-9]{6,20}$/.test(metadataDetail.personalizedLink))
+            throw new Error('Invalid personalized link for early bird donation.');
+        return { metadataDetail, param, cityName: metadataDetail.personalizedLink, type };
     }
 
     return { metadataDetail, param, cityName, type };
@@ -80,6 +88,10 @@ const makeMetadataWithUpdateHistory = async (
     if (existsSync(oldMetadataFilePath)) {
         const oldMetadataFile = await readFile(oldMetadataFilePath, { encoding: 'utf-8' });
         const oldMetadata = JSON.parse(oldMetadataFile) as Metadata;
+
+        if (type === 'fantasy' && oldMetadata.remainingUpdateCount! === 0)
+            throw new Error('This work can not be changed.');
+
         updateHistory.push(...structuredClone(oldMetadata.updateHistory));
     }
     updateHistory.push({
@@ -90,11 +102,18 @@ const makeMetadataWithUpdateHistory = async (
     });
     metadata.updateHistory = updateHistory;
 
+    // New template under fantasy type
     if (type === 'fantasy' && updateHistory.length === 1 && metadata.expireOn === undefined) {
         const now = new Date();
         // extra 4 days in case of delay
         const nextYear = now.setUTCDate(now.getUTCDate() + 366 + 4);
         metadata.expireOn = nextYear;
+
+        if (metadataDetail.earlyBirdIssue && metadataDetail.personalizedLink) {
+            metadata.remainingUpdateCount = -1;
+        } else {
+            metadata.remainingUpdateCount = 0;
+        }
     }
 
     return metadata;

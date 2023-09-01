@@ -176,7 +176,7 @@ export default function Ticket() {
             label: t('ticket.personalizedLink'),
             placeholder: t('ticket.personalizedLinkPlaceHolder'),
             // Enforce a valid personalized link.
-            validator: val => /^[a-zA-Z0-9]{6,20}$/.test(val),
+            validator: val => /^[a-zA-Z0-9]{5,20}$/.test(val),
             value: id ?? metadata.personalizedLink ?? '',
             isDisabled: id !== undefined,
             onChange: value => setMetadata({ ...metadata, personalizedLink: value }),
@@ -258,9 +258,7 @@ export default function Ticket() {
                                 (metadata.justification === '' || !/^[a-zA-Z0-9. -]+$/.test(metadata.justification))) ||
                             (type === 'fantasy' &&
                                 metadata.personalizedLink &&
-                                (metadata.personalizedLink.length < 6 ||
-                                    metadata.personalizedLink.length > 20 ||
-                                    !/^[a-zA-Z0-9]{6,20}$/.test(metadata.personalizedLink))) ||
+                                !/^[a-zA-Z0-9]{5,20}$/.test(metadata.personalizedLink)) ||
                             (Object.keys(metadata.desc).length > 0 && !('en' in metadata.desc)) ||
                             cityName === ''
                         }

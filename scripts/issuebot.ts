@@ -67,7 +67,7 @@ const parseDetailsEl = (detailsEls: HTMLDetailsElement[]) => {
             return { metadataDetail, param, cityName: id, type };
         }
 
-        if (!metadataDetail.personalizedLink || !/^[a-zA-Z0-9]{6,20}$/.test(metadataDetail.personalizedLink))
+        if (!metadataDetail.personalizedLink || !/^[a-zA-Z0-9]{5,20}$/.test(metadataDetail.personalizedLink))
             throw new Error('Invalid personalized link for early bird donation.');
         return { metadataDetail, param, cityName: metadataDetail.personalizedLink, type };
     }

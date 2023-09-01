@@ -158,6 +158,7 @@ export default function Ticket() {
             type: 'select',
             label: t('ticket.remainingUpdateCount'),
             value: metadata.remainingUpdateCount,
+            isDisabled: id !== undefined,
             options: { 0: t('donation.noUpdates'), '-1': t('donation.unlimitedUpdates') },
             onChange: value => setMetadata({ ...metadata, remainingUpdateCount: value as number }),
             minW: 250,

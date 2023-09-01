@@ -15,13 +15,27 @@ export interface MetadataDetail {
     justification: string;
     earlyBirdIssue?: string;
     personalizedLink?: string;
+    /**
+     * 0 for no updates, -1 for unlimited updates.
+     * Must exists in fantasy works.
+     */
+    remainingUpdateCount?: number;
 }
 
 export interface Metadata {
     name: Translation;
     desc: Translation;
     reference: string;
+    /**
+     * The unix timestamp of expiration.
+     * Must exists in fantasy works.
+     */
     expireOn?: number;
+    /**
+     * 0 for no updates, -1 for unlimited updates.
+     * Must exists in fantasy works.
+     */
+    remainingUpdateCount?: number;
     updateHistory: {
         id: number;
         issueNumber: number;

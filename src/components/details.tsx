@@ -59,10 +59,11 @@ const DetailsModal = (props: {
 
     const handleEdit = () => {
         const metadataCopy = structuredClone(metadata);
-        const metadataDetail = (({ updateHistory, ...rest }) => ({ ...rest, justification: '' }))(
-            metadataCopy
-        ) as MetadataDetail;
-        navigate('/new', { state: { metadata: metadataDetail, type, id: city } });
+        const metadataDetail = (({ updateHistory, expireOn, ...rest }) => ({
+            ...rest,
+            justification: '',
+        }))(metadataCopy) as MetadataDetail;
+        navigate('/new', { state: { metadata: metadataDetail, type } });
     };
     const handleOpenTemplate = () => {
         CHN.postMessage({ event: RMP_GALLERY_CHANNEL_EVENT, data: city });

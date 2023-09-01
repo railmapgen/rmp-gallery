@@ -57,6 +57,7 @@ export default function Donation() {
                     desc: { en: '' },
                     reference: '',
                     justification: '',
+                    remainingUpdateCount: 0,
                 } as MetadataDetail,
                 type: 'fantasy',
             },

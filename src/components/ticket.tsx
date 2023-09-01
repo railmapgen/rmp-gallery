@@ -73,7 +73,7 @@ export default function Ticket() {
         labels: 'resources',
         title: `${type === 'real_world' ? 'Resources' : 'Donation'}: ${
             cityName in gallery ? 'Update' : 'New'
-        } template of ${cityName}`,
+        } work of ${cityName}`,
     });
 
     const handleFileUpload = async (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -111,7 +111,7 @@ export default function Ticket() {
             labels: 'resources',
             title: `${type === 'real_world' ? 'Resources' : 'Donation'}: ${
                 cityName in gallery ? 'Update' : 'New'
-            } template of ${cityName}`,
+            } work of ${cityName}`,
             body: [GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, ''].join('\n\n'),
         });
         window.open('https://github.com/railmapgen/rmp-gallery/issues/new?' + fileParam.toString(), '_blank');
@@ -152,6 +152,14 @@ export default function Ticket() {
             placeholder: t('ticket.donationPlaceHolder'),
             value: metadata.reference,
             onChange: value => setMetadata({ ...metadata, reference: value }),
+            minW: 250,
+        },
+        {
+            type: 'select',
+            label: t('ticket.remainingUpdateCount'),
+            value: metadata.remainingUpdateCount,
+            options: { 0: t('donation.noUpdates'), '-1': t('donation.unlimitedUpdates') },
+            onChange: value => setMetadata({ ...metadata, remainingUpdateCount: value as number }),
             minW: 250,
         },
         {

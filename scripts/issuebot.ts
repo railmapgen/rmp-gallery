@@ -69,6 +69,11 @@ const parseDetailsEl = (detailsEls: HTMLDetailsElement[]) => {
 
         if (!metadataDetail.personalizedLink || !/^[a-zA-Z0-9]{5,20}$/.test(metadataDetail.personalizedLink))
             throw new Error('Invalid personalized link for early bird donation.');
+        if (existsSync(resolve('..', 'public', 'resources', 'real_world', `${metadataDetail.personalizedLink}.json`)))
+            throw new Error('Duplicated personalized link for early bird donation.');
+        if (existsSync(resolve('..', 'public', 'resources', 'fantasy', `${metadataDetail.personalizedLink}.json`)))
+            throw new Error('Duplicated personalized link for early bird donation.');
+
         return { metadataDetail, param, cityName: metadataDetail.personalizedLink, type };
     }
 
@@ -109,11 +114,8 @@ const makeMetadataWithUpdateHistory = async (
         const nextYear = now.setUTCDate(now.getUTCDate() + 366 + 4);
         metadata.expireOn = nextYear;
 
-        if (metadataDetail.earlyBirdIssue && metadataDetail.personalizedLink) {
-            metadata.remainingUpdateCount = -1;
-        } else {
-            metadata.remainingUpdateCount = 0;
-        }
+        if (metadata.remainingUpdateCount !== 0 && metadata.remainingUpdateCount !== -1)
+            throw new Error('remainingUpdateCount is invalid.');
     }
 
     return metadata;

@@ -160,6 +160,7 @@ const getMetadataFromCity = async (
 export const main = async () => {
     const detailsEls = await readIssueBody();
     const { metadataDetail, param, cityName, type } = parseDetailsEl(detailsEls);
+    console.log(metadataDetail, param, cityName, type);
 
     if (!existsSync(resolve('..', 'public', 'resources'))) await mkdir(resolve('..', 'public', 'resources'));
     if (!existsSync(resolve('..', 'public', 'resources', 'real_world')))

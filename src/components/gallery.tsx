@@ -17,6 +17,7 @@ import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { IoMdHeart } from 'react-icons/io';
 import { MdAdd } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
@@ -33,7 +34,7 @@ export default function GalleryView() {
 
     const { realWorld, fantasy, logins } = useRootSelector(state => state.app);
 
-    const [type, setType] = React.useState('real_world' as 'real_world' | 'fantasy');
+    const [type, setType] = React.useState('fantasy' as 'real_world' | 'fantasy');
     const [city, setCity] = React.useState('shanghai');
     const [isDetailsModalOpen, setIsDetailsModalOpen] = React.useState(false);
     const handleDetails = (city: string) => {
@@ -101,7 +102,7 @@ export default function GalleryView() {
 
     return (
         <>
-            <Tabs isLazy isFitted onChange={i => setType(i === 0 ? 'real_world' : 'fantasy')}>
+            <Tabs isLazy isFitted defaultIndex={1} onChange={i => setType(i === 0 ? 'real_world' : 'fantasy')}>
                 <TabList>
                     <Tab>{t('gallery.type.realWorld')}</Tab>
                     <Tab>{t('gallery.type.fantasy')}</Tab>
@@ -174,8 +175,8 @@ export default function GalleryView() {
                                             <IconButton
                                                 aria-label="new"
                                                 size="lg"
-                                                icon={<MdAdd />}
-                                                colorScheme="blue"
+                                                icon={type === 'real_world' ? <MdAdd /> : <IoMdHeart />}
+                                                colorScheme={type === 'real_world' ? 'blue' : 'red'}
                                                 variant="solid"
                                             />
                                         </Box>

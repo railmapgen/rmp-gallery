@@ -27,7 +27,7 @@ export const TemplateCard = (props: {
             <CardFooter>
                 <AvatarGroup max={3}>
                     {metadata.contributors.map(contributor => (
-                        <Avatar key={contributor} src={`https://avatars.githubusercontent.com/u/${contributor}`} />
+                        <Avatar key={contributor} src={`https://avatars.githubusercontent.com/u/${contributor}?s=48`} />
                     ))}
                 </AvatarGroup>
                 <Button variant="solid" colorScheme="blue" ml="auto" onClick={() => handleDetails(id)}>

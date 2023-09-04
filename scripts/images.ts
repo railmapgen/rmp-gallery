@@ -4,13 +4,18 @@ import { readdir, readFile } from 'fs/promises';
 import { homedir } from 'os';
 import { resolve } from 'path';
 
-import { Builder, Browser, By, Capabilities, until } from 'selenium-webdriver';
+import { Browser, Builder, By, Capabilities, until } from 'selenium-webdriver';
 import sharp from 'sharp';
 
 export const makeImage = async (filePath: string) => {
     const capabilities = new Capabilities();
     capabilities.set('browserName', Browser.FIREFOX);
-    capabilities.set('moz:firefoxOptions', { args: ['-headless'] });
+    // https://developer.mozilla.org/en-US/docs/Web/WebDriver/Capabilities/firefoxOptions
+    capabilities.set('moz:firefoxOptions', {
+        args: ['-headless'],
+        // increase localStorage size to allow super big saves
+        prefs: { 'dom.storage.default_quota': 102400 },
+    });
 
     const driver = await new Builder().withCapabilities(capabilities).build();
     await driver.get('https://railmapgen.github.io/rmp/');
@@ -36,7 +41,7 @@ export const makeImage = async (filePath: string) => {
     const downloadButtonXPath = '/html/body/div[6]/div[3]/div/section/footer/div/button';
     await driver.findElement(By.xpath(downloadButtonXPath)).click();
 
-    await new Promise(r => setTimeout(r, 2000));
+    await new Promise(r => setTimeout(r, 60000));
     // await driver.wait(async () => {
     //     const files = await readdir(resolve(homedir(), 'Downloads'));
     //     return files.some(file => file.endsWith('.png'));
@@ -52,7 +57,7 @@ export const makeImage = async (filePath: string) => {
 };
 
 export const makeThumbnail = async (image: Buffer) => {
-    const img = sharp(image);
+    const img = sharp(image, { limitInputPixels: 1024000000 });
     const metadata = await img.metadata();
     const width = Math.floor((metadata.width! * 2) / 3);
     const height = Math.floor((metadata.height! * 2) / 3);

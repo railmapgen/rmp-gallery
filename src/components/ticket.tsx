@@ -5,7 +5,6 @@ import {
     Flex,
     HStack,
     Input,
-    ListItem,
     Modal,
     ModalBody,
     ModalCloseButton,
@@ -15,13 +14,15 @@ import {
     ModalOverlay,
     SystemStyleObject,
     Text,
-    UnorderedList,
 } from '@chakra-ui/react';
 import { RmgDebouncedTextarea, RmgFields, RmgFieldsField, RmgLabel, RmgPage } from '@railmapgen/rmg-components';
 import React from 'react';
+import DatePicker from 'react-datepicker';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { stringify } from 'zipson';
+
+import 'react-datepicker/dist/react-datepicker.css';
 
 import { useRootSelector } from '../redux';
 import { GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, MetadataDetail } from '../util/constant';
@@ -149,13 +150,33 @@ export default function Ticket() {
             minW: 250,
         },
     ];
+    const [donationDate, setDonationDate] = React.useState(new Date());
+    const [donationChannel, setDonationChannel] = React.useState('');
+    React.useEffect(
+        () => setMetadata({ ...metadata, reference: `${donationChannel},${donationDate}` }),
+        [donationDate, donationChannel]
+    );
     const fantasyFields: RmgFieldsField[] = [
+        {
+            type: 'custom',
+            label: t('ticket.donationDate'),
+            component: (
+                <DatePicker
+                    selected={donationDate}
+                    onChange={d => {
+                        if (d) setDonationDate(d);
+                    }}
+                />
+            ),
+            minW: 250,
+        },
         {
             type: 'input',
             label: t('ticket.donation'),
             placeholder: t('ticket.donationPlaceHolder'),
-            value: metadata.reference,
-            onChange: value => setMetadata({ ...metadata, reference: value }),
+            value: donationChannel,
+            onChange: value => setDonationChannel(value),
+            optionList: ['Open Collective', '爱发电'],
             minW: 250,
         },
         {
@@ -202,16 +223,6 @@ export default function Ticket() {
             <Flex>
                 <RmgFields fields={fileField} />
                 {type === 'real_world' && <RmgFields fields={realWorldFields} />}
-                {type === 'fantasy' && (
-                    <>
-                        <Text>{t('ticket.donationInfo')}</Text>
-                        <UnorderedList>
-                            {Array.from({ length: 4 }).map((_, i) => (
-                                <ListItem key={i}>{t(`ticket.donationInfo${i + 1}`)}</ListItem>
-                            ))}
-                        </UnorderedList>
-                    </>
-                )}
                 {type === 'fantasy' && <RmgFields fields={fantasyFields} />}
                 <RmgLabel label={t('ticket.cityName')}>
                     <MultiLangEntryCard

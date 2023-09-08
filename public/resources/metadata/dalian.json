@@ -2,12 +2,18 @@
     "name": {
         "en": "Dalian",
         "zh-CN": "大连",
-        "zh-Hant": "大連"
+        "zh-Hant": "大連",
+        "ja": "大連",
+        "ko": "다롄"
     },
     "desc": {
-        "en": ""
+        "en": "The Dalian Metro is a rapid transit system in the city of Dalian, Liaoning, China. The metro system opened on 1 May 2003. The system currently in operation consists of 6 lines: Line 1, Line 2, Line 3, Line 5, Line 12, and Line 13.",
+        "zh-Hans": "大连地铁是中华人民共和国辽宁省大连市的城市轨道交通系统。\n\n大连地铁的构想始于1980年代。1987年，大连首次提出建设地铁，但未获批准。2002年，大连快速轨道交通3号线通车试运营。2005年，大连再次提出修建地铁，并于2009年7月通过审批，于2010年正式开工建设第一条线路。\n\n目前，正在运营中的线路有：1号线、2号线、3号线、5号线、12号线和13号线。",
+        "zh-Hant": "大連地鐵是中華人民共和國遼寧省大連市的城市軌道交通系統。\n\n大連地鐵的構想始於1980年代。1987年，大連首次提出建設地鐵，但未獲批准。2002年，大連快速軌道交通3號綫通車試營運。2005年，大連再次提出修建地鐵，並於2009年7月通過審批，於2010年正式開工建設第一條路線。\n\n目前，正在營運中的路線有：1號綫、2號綫、3號綫、5號綫、12號綫和13號綫。",
+        "ja": "大連地下鉄は、中華人民共和国遼寧省大連市にて営業中の地下鉄である。2023年7月現在、1号線、2号線、3号線、5号線および12号線、13号線が運行されている。",
+        "ko": "다롄 지하철은 중화인민공화국 랴오닝성 다롄시의 도시 철도이다."
     },
-    "reference": "https://www.dlmetro.com/map/index.do",
+    "reference": "https://www.dlmetro.com/img/linMap_20190701.png",
     "updateHistory": [
         {
             "id": 123074394,
@@ -26,6 +32,12 @@
             "issueNumber": 472,
             "reason": "Add Sea",
             "time": 1691566893499
+        },
+        {
+            "id": 139970605,
+            "issueNumber": 719,
+            "reason": "Fix station translations of Ganjingzi Street and Qiange while change styles such as railway and line badges nearer to the official style. Also adding descriptions.",
+            "time": 1694195899462
         }
     ]
 }

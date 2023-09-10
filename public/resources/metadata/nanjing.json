@@ -1,9 +1,17 @@
 {
     "name": {
-        "en": "Nanjing"
+        "en": "Nanjing",
+        "zh-Hans": "南京",
+        "zh-Hant": "南京",
+        "ja": "南京",
+        "ko": "난징"
     },
     "desc": {
-        "en": ""
+        "en": "The Nanjing Metro is a rapid transit system serving the urban and suburban districts of Nanjing, the capital city of Jiangsu Province in the People's Republic of China.\n\nProposals for a metro system serving Nanjing first began in 1984, with approval by the State Planning Commission granted in 1994. Construction began on the initial 16-station Line 1 in 1999, and opened in 2005. The system has 13 lines and 218 stations running on 498.66 km (309.85 mi) of track. It is operated and maintained by the Nanjing Metro Group Company. Future expansion plans include 30 lines set to open within the next few years, with several more awaiting approval to begin construction.",
+        "zh-Hans": "南京地铁是中华人民共和国江苏省南京市的城市轨道交通系统，覆盖南京市全部11个市辖区，安徽省滁州市（S4号线）及镇江市句容市（S6号线），由南京地铁集团有限公司建设、运营和维护保养。南京地铁2019年全年共发送旅客11.52亿人次。\n\n南京地铁规划始于1986年，2005年开通首条线路。截至2023年6月28日，有1号线、2号线、3号线、4号线、7号线、10号线、S1号线、S3号线、S4号线、S6号线、S7号线、S8号线和S9号线共13条运营线路，组成包括223座车站、全长约507.95公里的地铁线网。截止2019年，南京地铁日均客流超过315.58万人次，是中国大陆第7繁忙的城市轨道交通系统。现有5号线、6号线、9号线等新线在建。",
+        "zh-Hant": "南京地鐵是中華人民共和國江蘇省南京市的城市軌道交通系統，覆蓋南京市全部11個市轄區，安徽省滁州市（S4號綫）及鎮江市句容市（S6號綫），由南京地鐵集團有限公司建設、營運和維護保養。南京地鐵2019年全年共運送旅客11.52億人次。\n\n南京地鐵規劃始於1986年，2005年開通首條路線。截至2023年6月28日，有1號綫、2號綫、3號綫、4號綫、7號綫、10號綫、S1號綫、S3號綫、S4號綫、S6號綫、S7號綫、S8號綫和S9號綫共13條營運路線，組成包括223座車站、全長約507.95公里的地鐵綫網。截止2019年，南京地鐵日均客流超過315.58萬人次，是中國大陸第7繁忙的城市軌道交通系統。現有5號綫、6號綫、9號綫等新綫在建。",
+        "ja": "南京地下鉄は中華人民共和国南京市と南京都市圏にある地下鉄である。",
+        "ko": "난징 지하철은 중화인민공화국 장쑤성 난징시에서 운행하는 지하철이다. 전체 운행연장 길이는 총 449.45km이며 역은 총 208개가 있다. 2005년에 처음 개통하였다."
     },
     "reference": "https://www.njmetro.com.cn/njdtweb/dtweb/images/map_new.jpg",
     "updateHistory": [
@@ -12,6 +20,12 @@
             "issueNumber": 271,
             "reason": "Provide the latest and clear Nanjing subway map",
             "time": 1694243601315
+        },
+        {
+            "id": 139970605,
+            "issueNumber": 731,
+            "reason": "Remove dummy stations and fix station names such as DAXINGGONG. Also adding translations and descriptions.",
+            "time": 1694333447830
         }
     ]
 }

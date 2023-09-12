@@ -16,13 +16,15 @@ export const TemplateCard = (props: {
     const { t } = useTranslation();
 
     return (
-        <Card key={`${type}+${id}`} variant="elevated" minWidth="300" m="2">
+        <Card key={`${type}+${id}`} variant="elevated" minW="300" maxW="340" m="2">
             <CardBody>
                 {/* Using native img due to: https://bugzilla.mozilla.org/show_bug.cgi?id=1647077 */}
                 <img width="300" height="300" loading="lazy" src={`resources/thumbnails/${id}@300.png`} alt={id} />
             </CardBody>
             <CardHeader>
-                <Heading size="lg">{translateName(metadata.name)}</Heading>
+                <Heading size="lg" whiteSpace="nowrap" overflow="hidden" textOverflow="ellipsis">
+                    {translateName(metadata.name)}
+                </Heading>
             </CardHeader>
             <CardFooter>
                 <AvatarGroup max={3}>

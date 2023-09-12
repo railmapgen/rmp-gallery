@@ -152,10 +152,9 @@ export default function Ticket() {
     ];
     const [donationDate, setDonationDate] = React.useState(new Date());
     const [donationChannel, setDonationChannel] = React.useState('');
-    React.useEffect(
-        () => setMetadata({ ...metadata, reference: `${donationChannel},${donationDate}` }),
-        [donationDate, donationChannel]
-    );
+    React.useEffect(() => {
+        if (type === 'fantasy') setMetadata({ ...metadata, reference: `${donationChannel},${donationDate}` });
+    }, [donationDate, donationChannel]);
     const fantasyFields: RmgFieldsField[] = [
         {
             type: 'custom',
@@ -175,6 +174,7 @@ export default function Ticket() {
             label: t('ticket.donation'),
             placeholder: t('ticket.donationPlaceHolder'),
             value: donationChannel,
+            isDisabled: id !== undefined,
             onChange: value => setDonationChannel(value),
             optionList: ['Open Collective', '爱发电'],
             minW: 250,

@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 240,
+    "svgViewBoxZoom": 280,
     "svgViewBoxMin": {
-        "x": -552.1,
-        "y": -373.52
+        "x": -1388.916,
+        "y": -535.417
     },
     "graph": {
         "options": {
@@ -68,13 +68,21 @@
                             "表参道",
                             "表参道\\Omote-sando"
                         ],
-                        "rotate": 0,
+                        "rotate": 90,
                         "transfer": [
                             [
                                 [
                                     "tokyo",
+                                    "c",
+                                    "#00bb85",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "tokyo",
                                     "z",
-                                    "#8f76d6",
+                                    "#8c7dba",
                                     "#fff",
                                     "",
                                     ""
@@ -82,15 +90,7 @@
                                 [
                                     "tokyo",
                                     "g",
-                                    "#ff9500",
-                                    "#fff",
-                                    "",
-                                    ""
-                                ],
-                                [
-                                    "tokyo",
-                                    "c",
-                                    "#00bb85",
+                                    "#f9a328",
                                     "#fff",
                                     "",
                                     ""
@@ -100,8 +100,8 @@
                     },
                     "type": "mtr",
                     "visible": true,
-                    "x": 620,
-                    "y": 535,
+                    "x": 610,
+                    "y": 525,
                     "zIndex": 0
                 },
                 "key": "stn_df353Tvz3E"
@@ -122,7 +122,7 @@
                     },
                     "type": "mtr",
                     "visible": true,
-                    "x": 685,
+                    "x": 696.5,
                     "y": 475,
                     "zIndex": 0
                 },
@@ -169,7 +169,7 @@
                     },
                     "type": "mtr",
                     "visible": true,
-                    "x": 735,
+                    "x": 745,
                     "y": 420,
                     "zIndex": 0
                 },
@@ -218,7 +218,7 @@
                 "attributes": {
                     "mtr": {
                         "nameOffsetX": "left",
-                        "nameOffsetY": "top",
+                        "nameOffsetY": "middle",
                         "names": [
                             "溜池山王",
                             "溜池山王\\Tameike-Sanno"
@@ -248,7 +248,7 @@
                     "type": "mtr",
                     "visible": true,
                     "x": 840,
-                    "y": 520,
+                    "y": 495,
                     "zIndex": 0
                 },
                 "key": "stn_JqABKL1Ipi"
@@ -327,7 +327,7 @@
                             "新桥",
                             "新橋\\Shimbashi"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "middle",
                         "nameOffsetY": "top",
                         "rotate": 90,
                         "transfer": [
@@ -446,7 +446,7 @@
                             "日本桥",
                             "日本橋\\Nihombashi"
                         ],
-                        "nameOffsetX": "middle",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "top",
                         "rotate": 0,
                         "transfer": [
@@ -713,15 +713,15 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 880,
-                    "y": 540,
+                    "y": 530,
                     "type": "mtr",
                     "mtr": {
                         "names": [
                             "国会议事堂前\\【国会议事堂】",
-                            "国会議事堂前\\Kokai-gijidomae\\【National Diet Bldg.】"
+                            "国会議事堂前\\Kokkai-gijidomae\\【National Diet Bldg.】"
                         ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "top",
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
                         "rotate": 270,
                         "transfer": [
                             [
@@ -752,7 +752,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 965,
-                    "y": 530,
+                    "y": 520,
                     "type": "mtr",
                     "mtr": {
                         "names": [
@@ -1212,7 +1212,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 565,
+                    "x": 545,
                     "y": 350,
                     "type": "mtr",
                     "mtr": {
@@ -1268,7 +1268,7 @@
                             "新宿\\Shinjuku"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "top",
+                        "nameOffsetY": "middle",
                         "rotate": 0,
                         "transfer": [
                             []
@@ -1627,7 +1627,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 1250,
-                    "y": 430,
+                    "y": 420,
                     "type": "mtr",
                     "mtr": {
                         "names": [
@@ -1635,7 +1635,7 @@
                             "八丁堀\\Hatchobori"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "top",
+                        "nameOffsetY": "middle",
                         "rotate": 0,
                         "transfer": [
                             []
@@ -2539,7 +2539,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 520,
+                    "x": 540,
                     "y": 490,
                     "type": "mtr",
                     "mtr": {
@@ -2547,8 +2547,8 @@
                             "明治神宫前〈原宿〉",
                             "明治神宮前〈原宿〉\\Meiji-jingumae\\(Harajuku）"
                         ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
                         "rotate": 0,
                         "transfer": [
                             [
@@ -2623,7 +2623,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 780,
-                    "y": 535,
+                    "y": 525,
                     "type": "mtr",
                     "mtr": {
                         "names": [
@@ -2645,7 +2645,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 710,
-                    "y": 535,
+                    "y": 525,
                     "type": "mtr",
                     "mtr": {
                         "names": [
@@ -3770,10 +3770,10 @@
                     "mtr": {
                         "names": [
                             "押上\\（晴空塔）",
-                            "押上〈スカイツリー前〉\\Asakusa"
+                            "押上〈スカイツリー前〉\\Oshiage (Skytree)"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetY": "top",
                         "rotate": 90,
                         "transfer": [
                             [
@@ -4212,17 +4212,17 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 530,
-                    "y": 260,
+                    "x": 560,
+                    "y": 270,
                     "type": "mtr",
                     "mtr": {
                         "names": [
                             "东新宿",
-                            "東新宿\\Shinjuku"
+                            "東新宿\\Higashi-shinjuku"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
-                        "rotate": 0,
+                        "rotate": 90,
                         "transfer": [
                             [
                                 [
@@ -4393,7 +4393,10 @@
                             "jsr",
                             "#000000",
                             "#fff"
-                        ]
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
                     }
                 }
             },
@@ -4541,7 +4544,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 1190,
-                    "y": 435,
+                    "y": 445,
                     "type": "mtr",
                     "mtr": {
                         "names": [
@@ -4563,7 +4566,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 1190,
-                    "y": 260,
+                    "y": 285,
                     "type": "mtr",
                     "mtr": {
                         "names": [
@@ -4571,7 +4574,7 @@
                             "東日本橋\\Higashi-\\nihombashi"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "top",
+                        "nameOffsetY": "middle",
                         "rotate": 90,
                         "transfer": [
                             []
@@ -4660,7 +4663,10 @@
                             "jsr",
                             "#000000",
                             "#fff"
-                        ]
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
                     }
                 }
             },
@@ -4710,8 +4716,8 @@
                             "芝公园",
                             "芝公園\\Shibakoen"
                         ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
                         "rotate": 0,
                         "transfer": [
                             []
@@ -4724,8 +4730,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 960,
-                    "y": 685,
+                    "x": 945,
+                    "y": 700,
                     "type": "mtr",
                     "mtr": {
                         "names": [
@@ -4754,7 +4760,7 @@
                             "内幸町",
                             "内幸町\\Uchisaiwaicho"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "rotate": 0,
                         "transfer": [
@@ -5345,7 +5351,7 @@
                             "菊川\\Kikukawa"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "top",
+                        "nameOffsetY": "middle",
                         "rotate": 90,
                         "transfer": [
                             []
@@ -5542,7 +5548,7 @@
                             "新宿西口",
                             "新宿西口\\Shinjuku-nishiguchi"
                         ],
-                        "nameOffsetX": "middle",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "top",
                         "rotate": 0,
                         "transfer": [
@@ -5873,15 +5879,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1145,
-                    "y": 125,
+                    "x": 1125,
+                    "y": 120,
                     "type": "mtr",
                     "mtr": {
                         "names": [
                             "新御徒町",
                             "新御徒町\\Shin-okachimachi"
                         ],
-                        "nameOffsetX": "middle",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "top",
                         "rotate": 0,
                         "transfer": [
@@ -6028,15 +6034,15 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 480,
-                    "y": 430,
+                    "y": 400,
                     "type": "mtr",
                     "mtr": {
                         "names": [
                             "代代木",
                             "代々木\\Yoyogi"
                         ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
                         "rotate": 0,
                         "transfer": [
                             []
@@ -6050,9 +6056,9 @@
                 "attributes": {
                     "diagonal": {
                         "offsetFrom": 0,
-                        "offsetTo": 5,
+                        "offsetTo": 10,
                         "roundCornerFactor": 10,
-                        "startFrom": "from"
+                        "startFrom": "to"
                     },
                     "reconcileId": "",
                     "single-color": {
@@ -6075,8 +6081,8 @@
             {
                 "attributes": {
                     "diagonal": {
-                        "offsetFrom": 0,
-                        "offsetTo": -5,
+                        "offsetFrom": 10,
+                        "offsetTo": 5,
                         "roundCornerFactor": 10,
                         "startFrom": "from"
                     },
@@ -8477,7 +8483,7 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": 10,
+                        "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
                     "style": "single-color",
@@ -9867,7 +9873,7 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetTo": 5,
                         "roundCornerFactor": 10
                     },
                     "style": "single-color",
@@ -9888,12 +9894,12 @@
                 "target": "stn_df353Tvz3E",
                 "attributes": {
                     "visible": true,
-                    "zIndex": 0,
+                    "zIndex": -1,
                     "type": "diagonal",
                     "diagonal": {
-                        "startFrom": "from",
+                        "startFrom": "to",
                         "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetTo": 5,
                         "roundCornerFactor": 10
                     },
                     "style": "single-color",
@@ -10716,7 +10722,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "diagonal",
+                    "type": "perpendicular",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -10727,7 +10733,7 @@
                         ]
                     },
                     "reconcileId": "",
-                    "diagonal": {
+                    "perpendicular": {
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
@@ -10900,9 +10906,9 @@
                     "zIndex": 0,
                     "type": "diagonal",
                     "diagonal": {
-                        "startFrom": "from",
+                        "startFrom": "to",
                         "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetTo": 5,
                         "roundCornerFactor": 10
                     },
                     "style": "single-color",
@@ -12495,7 +12501,7 @@
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
+                        "offsetFrom": 5,
                         "offsetTo": 0,
                         "roundCornerFactor": 18.33
                     },
@@ -12522,7 +12528,7 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetTo": -5,
                         "roundCornerFactor": 10
                     },
                     "style": "single-color",
@@ -12752,10 +12758,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "simple",
-                    "simple": {
-                        "offset": 0
-                    },
+                    "type": "diagonal",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -12765,7 +12768,13 @@
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "diagonal": {
+                        "startFrom": "to",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    }
                 }
             },
             {
@@ -13139,10 +13148,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "simple",
-                    "simple": {
-                        "offset": 0
-                    },
+                    "type": "perpendicular",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -13152,7 +13158,13 @@
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    }
                 }
             },
             {
@@ -13180,5 +13192,5 @@
             }
         ]
     },
-    "version": 11
+    "version": 19
 }

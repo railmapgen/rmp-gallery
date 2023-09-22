@@ -22,8 +22,9 @@ import {
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { BiImport } from 'react-icons/bi';
 import { IoHeartOutline, IoStarOutline } from 'react-icons/io5';
-import { MdDownload, MdEdit, MdInsertDriveFile, MdShare } from 'react-icons/md';
+import { MdDownload, MdEdit, MdShare } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
 import { Metadata, MetadataDetail } from '../util/constant';
@@ -132,6 +133,13 @@ const DetailsModal = (props: {
                             </ListItem>
                         ))}
                     </List>
+
+                    {type === 'fantasy' && (
+                        <Text mt={3}>
+                            {t('details.expireOn')}
+                            {new Date(metadata.expireOn ?? 0).toLocaleDateString()}
+                        </Text>
+                    )}
                 </ModalBody>
 
                 <ModalFooter>
@@ -148,19 +156,25 @@ const DetailsModal = (props: {
                             }}
                         />
                     </Tooltip>
-                    <IconButton aria-label="Edit" variant="ghost" icon={<MdEdit />} onClick={handleEdit} />
+                    <IconButton
+                        aria-label="Edit"
+                        variant="ghost"
+                        isDisabled={type === 'fantasy' && (metadata.remainingUpdateCount ?? 0) === 0}
+                        icon={<MdEdit />}
+                        onClick={handleEdit}
+                    />
                     <a href={`resources/${type}/${city}.json`} target="_blank" rel="noopener noreferrer">
                         <IconButton aria-label="Download" variant="ghost" icon={<MdDownload />} />
                     </a>
                     {rmgRuntime.isStandaloneWindow() ? (
                         <Tooltip label={t('details.import')}>
-                            <IconButton aria-label="Import" variant="ghost" icon={<MdInsertDriveFile />} isDisabled />
+                            <IconButton aria-label="Import" variant="ghost" icon={<BiImport />} isDisabled />
                         </Tooltip>
                     ) : (
                         <IconButton
                             aria-label="Import"
                             variant="ghost"
-                            icon={<MdInsertDriveFile />}
+                            icon={<BiImport />}
                             onClick={handleOpenTemplate}
                         />
                     )}

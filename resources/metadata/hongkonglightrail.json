@@ -1,11 +1,17 @@
 {
     "name": {
-        "en": "Hong Kong(Light Rail)",
+        "en": "Hong Kong (Light Rail)",
         "zh-Hans": "香港（轻铁）",
-        "zh-HK": "香港（輕鐵）"
+        "zh-HK": "香港（輕鐵）",
+        "ja": "香港（軽鉄）",
+        "ko": "홍콩（라이트 레일）"
     },
     "desc": {
-        "en": ""
+        "en": "The Light Rail, also known as the Light Rail Transit (LRT), officially the North-West Railway, is a light rail system in Hong Kong, serving the northwestern New Territories, within Tuen Mun District and Yuen Long District. The system operates over 1,435 mm (4 ft 8+1⁄2 in) standard gauge track, using 750 V DC overhead power supply. It was once one of four systems comprising the KCR network in Hong Kong, before the MTR–KCR merger in 2007. It has a daily ridership of about 483,000 people.",
+        "zh-Hans": "轻铁（英语：Light Rail；全称轻便铁路，前称九广轻铁，《香港法例》上则称为西北铁路，英语：North-West Railway）是香港一个位于新界西北运行的轻型铁路系统，高速的无闭塞轻铁系统之一，行驶于新界西的屯门区及元朗区，总长度36.15千米，68个车站。轻铁由九广铁路公司拥有，香港铁路有限公司运营，为港铁一部分；线路图代表颜色为泥黄色。",
+        "zh-Hant": "輕鐵（英語：Light Rail；全稱輕便鐵路，前稱九廣輕鐵，《香港法例》上則稱為西北鐵路，英語：North-West Railway）是香港一個位於新界西北運行的輕型鐵路系統，高速的無閉塞輕鐵系統之一，行駛於新界西的屯門區及元朗區，總長度36.15公里，68個車站。輕鐵由九廣鐵路公司擁有，香港鐵路有限公司營運，為港鐵一部份；路線圖代表顏色為泥黃色。",
+        "ja": "軽鉄は香港の港鉄によって運行されているライトレール。香港郊外の新界西部に位置する屯門区と元朗区を結ぶ。旧称は九広軽鉄。",
+        "ko": "홍콩 라이트 레일은 홍콩의 홍콩 MTR이 운영하는 라이트 레일 체계이다. 홍콩 교외의 신제 서부에 위치한 튄문구 및 윈롱구를 잇는다."
     },
     "reference": "https://www.mtr.com.hk/archive/ch/services/LR_routemap.pdf",
     "updateHistory": [
@@ -14,6 +20,12 @@
             "issueNumber": 525,
             "reason": "9",
             "time": 1691990809167
+        },
+        {
+            "id": 139970605,
+            "issueNumber": 795,
+            "reason": "Fix station offsets and English names. Add Tuen Ma Line interchange signs. Also adding descriptions.",
+            "time": 1695202455639
         }
     ]
 }

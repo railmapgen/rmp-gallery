@@ -1,0 +1,216 @@
+{
+    "svgViewBoxZoom": 130,
+    "svgViewBoxMin": {
+        "x": -365.4,
+        "y": -129.2
+    },
+    "graph": {
+        "options": {
+            "type": "directed",
+            "multi": true,
+            "allowSelfLoops": true
+        },
+        "attributes": {},
+        "nodes": [
+            {
+                "attributes": {
+                    "shmetro-basic": {
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "names": [
+                            "连云站",
+                            "Lianyun station"
+                        ]
+                    },
+                    "type": "shmetro-basic",
+                    "visible": true,
+                    "x": 860,
+                    "y": 190,
+                    "zIndex": 0
+                },
+                "key": "stn_XqVQOcZDS-"
+            },
+            {
+                "attributes": {
+                    "shmetro-basic": {
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "names": [
+                            "墟沟站",
+                            "Xugou Station"
+                        ]
+                    },
+                    "type": "shmetro-basic",
+                    "visible": true,
+                    "x": 750,
+                    "y": 300,
+                    "zIndex": 0
+                },
+                "key": "stn_8x2bGFL-hF"
+            },
+            {
+                "attributes": {
+                    "shmetro-basic": {
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "names": [
+                            "盐坨站",
+                            "Yantuo Station"
+                        ]
+                    },
+                    "type": "shmetro-basic",
+                    "visible": true,
+                    "x": 555,
+                    "y": 495,
+                    "zIndex": 0
+                },
+                "key": "stn_70pWRB73y9"
+            },
+            {
+                "attributes": {
+                    "shmetro-basic": {
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "names": [
+                            "连云港站",
+                            "Lianyungang Station"
+                        ]
+                    },
+                    "type": "shmetro-basic",
+                    "visible": true,
+                    "x": 435,
+                    "y": 615,
+                    "zIndex": 0
+                },
+                "key": "stn_eFEVtmqzUL"
+            },
+            {
+                "attributes": {
+                    "shmetro-basic": {
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "names": [
+                            "连云港东站",
+                            "Lianyungangdong Station"
+                        ]
+                    },
+                    "type": "shmetro-basic",
+                    "visible": true,
+                    "x": 645,
+                    "y": 405,
+                    "zIndex": 0
+                },
+                "key": "stn_NdfEAxq7lu"
+            },
+            {
+                "key": "misc_node_RGKEukAzDV",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 630,
+                    "y": 390,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_wfH-R14xGU",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 420,
+                    "y": 595,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_WrtlCg6cOo",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 635,
+                    "y": 50,
+                    "type": "text",
+                    "text": {
+                        "content": "连云港城市动车线路图",
+                        "fontSize": 38,
+                        "lineHeight": 16,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "en",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_ot0zz7Z-Bh",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 640,
+                    "y": 85,
+                    "type": "text",
+                    "text": {
+                        "content": "Map of Lianyungang Intercity EMU Train",
+                        "fontSize": 21,
+                        "lineHeight": 16,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "en",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            }
+        ],
+        "edges": [
+            {
+                "key": "line_3Vj2wni0aU",
+                "source": "stn_XqVQOcZDS-",
+                "target": "stn_eFEVtmqzUL",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            }
+        ]
+    },
+    "version": 19
+}

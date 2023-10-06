@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 197,
+    "svgViewBoxZoom": 134,
     "svgViewBoxMin": {
-        "x": 32.951,
-        "y": 63.463
+        "x": 869.32,
+        "y": 207.96
     },
     "graph": {
         "options": {
@@ -13,61 +13,40 @@
         "attributes": {},
         "nodes": [
             {
-                "key": "misc_node_qelfS2yMMr",
                 "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 565,
-                    "y": 590,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 1,
-                        "color": [
-                            "xian",
-                            "xa1",
-                            "#0077C8",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_JS6mgN2I6y",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 900,
-                    "y": 780,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "shmetro-basic": {
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
                         "names": [
                             "沣河森林公园",
                             "FENGHESENLINGONGYUAN"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
-                    }
-                }
+                        ]
+                    },
+                    "type": "shmetro-basic",
+                    "visible": true,
+                    "x": 900,
+                    "y": 780,
+                    "zIndex": 0
+                },
+                "key": "stn_JS6mgN2I6y"
             },
             {
-                "key": "stn_B8bbHj-qke",
                 "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 970,
-                    "y": 780,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "shmetro-basic": {
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
                         "names": [
                             "北槐",
                             "BEIHUAI"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
-                    }
-                }
+                        ]
+                    },
+                    "type": "shmetro-basic",
+                    "visible": true,
+                    "x": 970,
+                    "y": 780,
+                    "zIndex": 0
+                },
+                "key": "stn_B8bbHj-qke"
             },
             {
                 "key": "stn_ZFTErAcBaG",
@@ -76,15 +55,17 @@
                     "zIndex": 0,
                     "x": 1040,
                     "y": 780,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "上林路",
                             "SHANGLINLU"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -95,15 +76,14 @@
                     "zIndex": 0,
                     "x": 1120,
                     "y": 780,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "沣东自贸园",
                             "FENGDONGZIMAOYUAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -114,15 +94,14 @@
                     "zIndex": 0,
                     "x": 1190,
                     "y": 780,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "后卫寨",
                             "HOUWEIZHAI"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -133,15 +112,14 @@
                     "zIndex": 0,
                     "x": 1255,
                     "y": 780,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "三桥",
                             "SANQIAO"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -152,15 +130,14 @@
                     "zIndex": 0,
                     "x": 1295,
                     "y": 795,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "皂河",
                             "ZAOHE"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -171,15 +148,14 @@
                     "zIndex": 0,
                     "x": 1320,
                     "y": 820,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "枣园",
                             "ZAOYUAN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -190,15 +166,14 @@
                     "zIndex": 0,
                     "x": 1345,
                     "y": 845,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "汉城路",
                             "HANCHENGLU"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -207,17 +182,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1425,
+                    "x": 1430,
                     "y": 860,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "开远门",
                             "KAIYUANMEN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -228,15 +202,14 @@
                     "zIndex": 0,
                     "x": 1480,
                     "y": 860,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "劳动路",
                             "LAODONGLU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -247,15 +220,14 @@
                     "zIndex": 0,
                     "x": 1545,
                     "y": 860,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "玉祥门",
                             "YUXIANGMEN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -266,15 +238,14 @@
                     "zIndex": 0,
                     "x": 1610,
                     "y": 860,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "洒金桥",
                             "SAJINQIAO"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -285,15 +256,17 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 860,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "北大街",
                             "BEIDAJIE"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -304,15 +277,17 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 860,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "五路口",
                             "WULUKOU"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -323,15 +298,14 @@
                     "zIndex": 0,
                     "x": 1885,
                     "y": 860,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "朝阳门",
                             "CHAOYANGMEN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -342,15 +316,14 @@
                     "zIndex": 0,
                     "x": 1940,
                     "y": 860,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "康复路",
                             "KANGFULU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -361,15 +334,17 @@
                     "zIndex": 0,
                     "x": 2025,
                     "y": 860,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "通化门",
                             "TONGHUAMEN"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -380,15 +355,14 @@
                     "zIndex": 0,
                     "x": 2100,
                     "y": 860,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "万寿路",
                             "WANSHOULU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -399,15 +373,14 @@
                     "zIndex": 0,
                     "x": 2170,
                     "y": 860,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "长乐坡",
                             "CHANGLEPO"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -418,15 +391,14 @@
                     "zIndex": 0,
                     "x": 2230,
                     "y": 860,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "浐河",
                             "CHANHE"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -437,15 +409,14 @@
                     "zIndex": 0,
                     "x": 2290,
                     "y": 860,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "半坡",
                             "BANPO"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -456,15 +427,17 @@
                     "zIndex": 0,
                     "x": 2365,
                     "y": 860,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "纺织城",
                             "FANGZHICHENG"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -475,15 +448,17 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 930,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "钟楼",
                             "ZHONGLOU"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -494,15 +469,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 970,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "永宁门",
                             "YONGNINGMEN"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -513,15 +487,17 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 1030,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "南稍门",
                             "NANSHAOMEN"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -532,15 +508,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 1105,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "体育场",
                             "TIYUCHANG"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -551,15 +526,17 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 1155,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "小寨",
                             "XIAOZHAI"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -570,15 +547,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 1225,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "纬一街",
                             "WEI 1-JIE"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -589,15 +565,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 1275,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "电视塔",
                             "DIANSHITA"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -608,15 +583,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 1325,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "三爻",
                             "SANYAO"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -627,15 +601,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 1375,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "凤栖原",
                             "FENGQIYUAN"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -646,15 +619,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 1425,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "航天城",
                             "HANGTIANCHENG"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -665,53 +637,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 1475,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "韦曲南",
                             "WEIQUNAN"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_s-fMkVyAKy",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 2330,
-                    "y": 815,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 1,
-                        "color": [
-                            "xian",
-                            "xa1",
-                            "#0077C8",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "misc_node_NUyDQxroYO",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1645,
-                    "y": 1602.5,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 2,
-                        "color": [
-                            "xian",
-                            "xa2",
-                            "#EF3340",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -722,15 +655,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 790,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "安远门",
                             "ANYUANMEN"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -741,15 +673,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 730,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "龙首原",
                             "LONGSHOUYUAN"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -760,15 +691,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 670,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "大明宫西",
                             "DAMINGGONGXI"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -779,15 +709,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 615,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "市图书馆",
                             "SHITUSHUGUAN"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -798,15 +727,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 560,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "凤城五路",
                             "FENGCHENG 5-LU"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -817,15 +745,17 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 495,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "行政中心",
                             "XINGZHENGZHONGXIN"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -836,15 +766,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 425,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "凤城十路",
                             "FENGCHENG 10-LU"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -855,15 +784,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 370,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "北苑",
                             "BEIYUAN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -874,15 +802,14 @@
                     "zIndex": 0,
                     "x": 1645,
                     "y": 1155,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "吉祥村",
                             "JIXIANGCUN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -891,36 +818,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1605,
+                    "x": 1610,
                     "y": 1155,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "太白南路",
                             "TAIBAINANLU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_uA6H7FPyzy",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1625,
-                    "y": 305,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 2,
-                        "color": [
-                            "xian",
-                            "xa2",
-                            "#EF3340",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -931,15 +838,17 @@
                     "zIndex": 0,
                     "x": 1577.5,
                     "y": 1155,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "科技路",
                             "KEJILU"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -950,15 +859,14 @@
                     "zIndex": 0,
                     "x": 1515,
                     "y": 1155,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "延平门",
                             "YANPINGMEN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -969,15 +877,14 @@
                     "zIndex": 0,
                     "x": 1470,
                     "y": 1155,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "丈八北路",
                             "ZHANGBABEILU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -988,34 +895,14 @@
                     "zIndex": 0,
                     "x": 1425,
                     "y": 1155,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "鱼化寨",
                             "YUHUAZHAI"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_VjX7_55w1L",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1410,
-                    "y": 1110,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 3,
-                        "color": [
-                            "xian",
-                            "xa3",
-                            "#CE70CC",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -1026,15 +913,17 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 1155,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "大雁塔",
                             "DAYANTA"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -1045,15 +934,14 @@
                     "zIndex": 0,
                     "x": 1880,
                     "y": 1155,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "北池头",
                             "BEICHITOU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -1064,15 +952,17 @@
                     "zIndex": 0,
                     "x": 1935,
                     "y": 1155,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "青龙寺",
                             "QINGLONGSI"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -1083,15 +973,14 @@
                     "zIndex": 0,
                     "x": 2025,
                     "y": 1060,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "延兴门",
                             "YANXINGMEN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1102,15 +991,17 @@
                     "zIndex": 0,
                     "x": 2025,
                     "y": 985,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "咸宁路",
                             "XIANNINGLU"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -1121,15 +1012,14 @@
                     "zIndex": 0,
                     "x": 2025,
                     "y": 935,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "长乐公园",
                             "CHANGLEGONGYUAN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1140,15 +1030,14 @@
                     "zIndex": 0,
                     "x": 2025,
                     "y": 805,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "胡家庙",
                             "HUJIAMIAO"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1159,15 +1048,14 @@
                     "zIndex": 0,
                     "x": 2025,
                     "y": 755,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "石家街",
                             "SHIJIAJIE"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1178,15 +1066,14 @@
                     "zIndex": 0,
                     "x": 2025,
                     "y": 715,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "辛家庙",
                             "XINJIAMIAO"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1197,15 +1084,14 @@
                     "zIndex": 0,
                     "x": 2105,
                     "y": 685,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "广泰门",
                             "GUANGTAIMEN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -1216,15 +1102,14 @@
                     "zIndex": 0,
                     "x": 2185,
                     "y": 685,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "桃花潭",
                             "TAOHUATAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -1235,15 +1120,14 @@
                     "zIndex": 0,
                     "x": 2215,
                     "y": 570,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "浐灞中心",
                             "CHANBAZHONGXIN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1254,15 +1138,14 @@
                     "zIndex": 0,
                     "x": 2215,
                     "y": 485,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "香湖湾",
                             "XIANGHUWAN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1273,15 +1156,14 @@
                     "zIndex": 0,
                     "x": 2215,
                     "y": 405,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "务庄",
                             "WUZHUANG"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1292,15 +1174,14 @@
                     "zIndex": 0,
                     "x": 2215,
                     "y": 325,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "国际港务区",
                             "GUOJIGANGWUQU"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1311,15 +1192,17 @@
                     "zIndex": 0,
                     "x": 2215,
                     "y": 255,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "双寨",
                             "SHUANGZHAI"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -1330,15 +1213,14 @@
                     "zIndex": 0,
                     "x": 2215,
                     "y": 200,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "新筑",
                             "XINZHU"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1349,53 +1231,14 @@
                     "zIndex": 0,
                     "x": 2215,
                     "y": 140,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "保税区",
                             "BAOSHUIQU"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_-61psSHTXE",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 2220,
-                    "y": 105,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 3,
-                        "color": [
-                            "xian",
-                            "xa3",
-                            "#CE70CC",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "misc_node_sFrJoOZViU",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1625,
-                    "y": 285,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 4,
-                        "color": [
-                            "other",
-                            "other",
-                            "#02af8e",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1406,15 +1249,17 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 257.5,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "西安北站",
                             "XI'AN BEIZHAN"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -1425,15 +1270,14 @@
                     "zIndex": 0,
                     "x": 1535,
                     "y": 305,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "元朔路",
                             "YUANSHUOLU"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1444,15 +1288,14 @@
                     "zIndex": 0,
                     "x": 1535,
                     "y": 450,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "凤城九路",
                             "FENGCHENG 9-LU"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1463,15 +1306,14 @@
                     "zIndex": 0,
                     "x": 1535,
                     "y": 375,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "凤城十二路",
                             "FENGCHENG 12-LU"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1482,15 +1324,14 @@
                     "zIndex": 0,
                     "x": 1605,
                     "y": 495,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "文景路",
                             "WENJINGLU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -1501,15 +1342,14 @@
                     "zIndex": 0,
                     "x": 1740,
                     "y": 495,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "市中医医院",
                             "SHIZHONGYIYIYUAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -1520,15 +1360,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 530,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "常青路",
                             "CHANGQINGLU"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1537,7 +1376,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1610,
+                    "x": 1600,
                     "y": 275,
                     "type": "facilities",
                     "facilities": {
@@ -1552,15 +1391,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 570,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "百花村",
                             "BAIHUACUN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1571,15 +1409,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 610,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "余家寨",
                             "YUJIAZHAI"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1590,15 +1427,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 650,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "大明宫北",
                             "DAMINGGONGBEI"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1609,15 +1445,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 690,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "大明宫",
                             "DAMINGGONG"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1628,15 +1463,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 730,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "含元殿",
                             "HANYUANDIAN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1647,15 +1481,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 770,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "西安站",
                             "XI'ANZHAN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1664,8 +1497,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1860,
-                    "y": 767.5,
+                    "x": 1865,
+                    "y": 765,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -1679,15 +1512,17 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 930,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "大差市",
                             "DACHAISHI"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -1698,15 +1533,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 970,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "和平门",
                             "HEPINGMEN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1717,15 +1551,17 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 1030,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "建筑科技大学\\·李家村",
                             "JIANZHUKEJIDAXUE\\·LIJIACUN"
                         ],
-                        "nameOffsetX": "left",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -1736,15 +1572,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 1225,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "大唐芙蓉园",
                             "DATANGFURONGYUAN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1755,15 +1590,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 1275,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "曲江池西",
                             "QUJIANGCHIXI"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1774,15 +1608,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 1325,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "金滹沱",
                             "JINHUTUO"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1793,15 +1626,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 1375,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "航天大道",
                             "HANGTIANDADAO"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1812,15 +1644,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 1470,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "东长安街",
                             "DONGCHANG'ANJIE"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1831,15 +1662,14 @@
                     "zIndex": 0,
                     "x": 1800,
                     "y": 1425,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "飞天路",
                             "FEITIANLU"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -1850,15 +1680,14 @@
                     "zIndex": 0,
                     "x": 1850,
                     "y": 1520,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "神舟大道",
                             "SHENZHOUDADAO"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -1869,15 +1698,14 @@
                     "zIndex": 0,
                     "x": 1950,
                     "y": 1520,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "航天东路",
                             "HANGTIANDONGLU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -1888,34 +1716,14 @@
                     "zIndex": 0,
                     "x": 2060,
                     "y": 1520,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "航天新城",
                             "HANGTIANXINCHENG"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_P8WryepXIM",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 2040,
-                    "y": 1550,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 4,
-                        "color": [
-                            "other",
-                            "other",
-                            "#02af8e",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -1926,15 +1734,14 @@
                     "zIndex": 0,
                     "x": 2000,
                     "y": 1210,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "理工大曲江校区",
                             "LIGONGDAQUJIANGXIAOQU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -1945,15 +1752,14 @@
                     "zIndex": 0,
                     "x": 2045,
                     "y": 1210,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "黄渠头",
                             "HUANGQUTOU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -1964,15 +1770,14 @@
                     "zIndex": 0,
                     "x": 2095,
                     "y": 1210,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "马腾空",
                             "MATENGKONG"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -1983,15 +1788,14 @@
                     "zIndex": 0,
                     "x": 2140,
                     "y": 1210,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "月登阁",
                             "YUEDENGGE"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": false
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2002,15 +1806,14 @@
                     "zIndex": 0,
                     "x": 2190,
                     "y": 1210,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "雁鸣湖",
                             "YANMINGHU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": false
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2021,34 +1824,14 @@
                     "zIndex": 0,
                     "x": 2230,
                     "y": 1210,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "西安东站",
                             "XI'ANDONGZHAN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": false
-                    }
-                }
-            },
-            {
-                "key": "misc_node_Wfw7rg5ihE",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 2300,
-                    "y": 1205,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 5,
-                        "color": [
-                            "xian",
-                            "xa5",
-                            "#A6E35F",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2059,15 +1842,14 @@
                     "zIndex": 0,
                     "x": 1935,
                     "y": 1090,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "雁翔路北口",
                             "YANXIANGLUBEIKOU"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -2076,17 +1858,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1830,
+                    "x": 1865,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "太乙路",
                             "TAIYILU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2097,15 +1878,14 @@
                     "zIndex": 0,
                     "x": 1740,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "文艺路",
                             "WENYILU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2114,17 +1894,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1635,
+                    "x": 1630,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "省人民医院·\\黄雁村",
                             "SHENGRENMINYIYUAN\\·HUANGYANCUN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2135,15 +1914,14 @@
                     "zIndex": 0,
                     "x": 1607.5,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "边家村",
                             "BIANJIACUN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2154,15 +1932,17 @@
                     "zIndex": 0,
                     "x": 1577.5,
                     "y": 1030,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "西北工业大学",
                             "XIBEIGONGYEDAXUE"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -2173,15 +1953,14 @@
                     "zIndex": 0,
                     "x": 1520,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "丰庆公园",
                             "FENGQINGGONGYUAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2190,17 +1969,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1472.5,
+                    "x": 1465,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "金光门",
                             "JINGUANGMEN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2211,15 +1989,14 @@
                     "zIndex": 0,
                     "x": 1432.5,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "汉城南路",
                             "HANCHENGNANLU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2230,15 +2007,14 @@
                     "zIndex": 0,
                     "x": 1385,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "西窑头",
                             "XIYAOTOU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2249,15 +2025,14 @@
                     "zIndex": 0,
                     "x": 1327.5,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "石桥立交",
                             "SHIQIAOLIJIAO"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2268,15 +2043,14 @@
                     "zIndex": 0,
                     "x": 1280,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "阿房宫南",
                             "EPANGGONGNAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2287,15 +2061,14 @@
                     "zIndex": 0,
                     "x": 1227.5,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "王寺",
                             "WANGSI"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2306,15 +2079,14 @@
                     "zIndex": 0,
                     "x": 1170,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "斗门",
                             "DOUMEN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2325,15 +2097,14 @@
                     "zIndex": 0,
                     "x": 1102.5,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "复兴大道南",
                             "FUXINGDADAONAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2344,15 +2115,14 @@
                     "zIndex": 0,
                     "x": 1040,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "镐京",
                             "HAOJING"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2363,15 +2133,17 @@
                     "zIndex": 0,
                     "x": 1002.5,
                     "y": 1030,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "欢乐谷",
                             "HUANLEGU"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -2380,17 +2152,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 975,
+                    "x": 970,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "文教园",
                             "WENJIAOYUAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2401,15 +2172,14 @@
                     "zIndex": 0,
                     "x": 932.5,
                     "y": 1030,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "高桥",
                             "GAOQIAO"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2420,15 +2190,14 @@
                     "zIndex": 0,
                     "x": 912.5,
                     "y": 985,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "东马坊",
                             "DONGMAFANG"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -2439,15 +2208,14 @@
                     "zIndex": 0,
                     "x": 882.5,
                     "y": 965,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "沣西文化公园",
                             "FENGXIWENHUA GONGYUAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2458,15 +2226,14 @@
                     "zIndex": 0,
                     "x": 820,
                     "y": 965,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "钓台",
                             "DIAOTAI"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2477,15 +2244,14 @@
                     "zIndex": 0,
                     "x": 787.5,
                     "y": 985,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "翱翔小镇",
                             "AOXIANGXIAOZHEN"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -2496,15 +2262,14 @@
                     "zIndex": 0,
                     "x": 787.5,
                     "y": 1010,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "创新港东",
                             "CHUANGXINGANGDONG"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -2515,34 +2280,14 @@
                     "zIndex": 0,
                     "x": 787.5,
                     "y": 1035,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "创新港",
                             "CHUANGXINGANG"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_huDnGMN05A",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 752.5,
-                    "y": 1047.5,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 5,
-                        "color": [
-                            "xian",
-                            "xa5",
-                            "#A6E35F",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -2553,15 +2298,14 @@
                     "zIndex": 0,
                     "x": 1577.5,
                     "y": 1195,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "甘家寨",
                             "GANJIAZHAI"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -2572,15 +2316,14 @@
                     "zIndex": 0,
                     "x": 1577.5,
                     "y": 1230,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "木塔寺",
                             "MUTASI"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -2591,15 +2334,14 @@
                     "zIndex": 0,
                     "x": 1555,
                     "y": 1270,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "省体育馆",
                             "SHENGTIYUGUAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2610,15 +2352,14 @@
                     "zIndex": 0,
                     "x": 1490,
                     "y": 1270,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "丈八一路",
                             "ZHANGBA 1 LU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2629,15 +2370,14 @@
                     "zIndex": 0,
                     "x": 1430,
                     "y": 1270,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "丈八四路",
                             "ZHANGBA 4 LU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2648,15 +2388,14 @@
                     "zIndex": 0,
                     "x": 1380,
                     "y": 1270,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "丈八六路",
                             "ZHANGBA 6 LU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2667,15 +2406,14 @@
                     "zIndex": 0,
                     "x": 1340,
                     "y": 1320,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "造字台",
                             "ZAOZITAI"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -2686,15 +2424,14 @@
                     "zIndex": 0,
                     "x": 1340,
                     "y": 1360,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "西部大道（西太路口）",
                             "XIBUDADAO（XITAILUKOU）"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -2705,15 +2442,14 @@
                     "zIndex": 0,
                     "x": 1340,
                     "y": 1395,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "郭杜西",
                             "GUODUXI"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -2724,15 +2460,14 @@
                     "zIndex": 0,
                     "x": 1340,
                     "y": 1435,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "仁村",
                             "RENCUN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -2743,15 +2478,14 @@
                     "zIndex": 0,
                     "x": 1340,
                     "y": 1475,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "西安国际医学中心",
                             "XI'ANGUOJIYIXUEZHONGXIN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -2762,15 +2496,14 @@
                     "zIndex": 0,
                     "x": 1280,
                     "y": 1510,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "西电科大南校区·未来之瞳",
                             "XIDIANKEDANANXIAOQU·WEILAIZHITONG"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": false
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2781,34 +2514,14 @@
                     "zIndex": 0,
                     "x": 1205,
                     "y": 1510,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "西安南站",
                             "XI'ANNANZHAN"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": false
-                    }
-                }
-            },
-            {
-                "key": "misc_node_3CgEag2rYO",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1115,
-                    "y": 1505,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 6,
-                        "color": [
-                            "xian",
-                            "xa6",
-                            "#485CC7",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2819,15 +2532,14 @@
                     "zIndex": 0,
                     "x": 1577.5,
                     "y": 975,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "大唐西市",
                             "DATANGXISHI"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -2836,17 +2548,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1605,
+                    "x": 1595,
                     "y": 930,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "安定门",
                             "ANDINGMEN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2855,17 +2566,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1652.5,
+                    "x": 1650,
                     "y": 930,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "广济街",
                             "GUANGJIJIE"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2874,17 +2584,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1627.5,
+                    "x": 1620,
                     "y": 930,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "桥梓口",
                             "QIAOZIKOU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2895,15 +2604,14 @@
                     "zIndex": 0,
                     "x": 1852.5,
                     "y": 930,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "长乐门",
                             "CHANGLEMEN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2912,17 +2620,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1930,
+                    "x": 1940,
                     "y": 930,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "交通大学·兴庆宫",
                             "JIAOTONGDAXUE·XINGQINGGONG"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2933,15 +2640,14 @@
                     "zIndex": 0,
                     "x": 2090,
                     "y": 985,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "公园南路",
                             "GONGYUANNANLU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2952,15 +2658,14 @@
                     "zIndex": 0,
                     "x": 2145,
                     "y": 985,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "万寿南路",
                             "WANSHOUNANLU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -2971,15 +2676,14 @@
                     "zIndex": 0,
                     "x": 2195,
                     "y": 985,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "卫星测控中心",
                             "WEIXINGCEKONGZHONGXIN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -2990,15 +2694,14 @@
                     "zIndex": 0,
                     "x": 2245,
                     "y": 985,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "田家湾",
                             "TIANJIAWAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3009,15 +2712,14 @@
                     "zIndex": 0,
                     "x": 2290,
                     "y": 985,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "穆将王",
                             "MUJIANGWANG"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -3028,15 +2730,14 @@
                     "zIndex": 0,
                     "x": 2365,
                     "y": 905,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "纺二路",
                             "FANG 2-LU"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3047,34 +2748,14 @@
                     "zIndex": 0,
                     "x": 2365,
                     "y": 940,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "纺六路",
                             "FANG 6-LU"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_WPbl_AWzHP",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 2365,
-                    "y": 815,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 6,
-                        "color": [
-                            "xian",
-                            "xa6",
-                            "#485CC7",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3085,15 +2766,14 @@
                     "zIndex": 0,
                     "x": 2400,
                     "y": 860,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "香王",
                             "XIANGWANG"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -3104,15 +2784,14 @@
                     "zIndex": 0,
                     "x": 2445,
                     "y": 840,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "灞柳二路",
                             "BALIU 2 LU"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3123,15 +2802,14 @@
                     "zIndex": 0,
                     "x": 2445,
                     "y": 815,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "田王",
                             "TIANWANG"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3142,15 +2820,14 @@
                     "zIndex": 0,
                     "x": 2445,
                     "y": 790,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "洪庆",
                             "HONGQING"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3161,15 +2838,14 @@
                     "zIndex": 0,
                     "x": 2445,
                     "y": 760,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "紫霞三路",
                             "ZIXIA 3 LU"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3180,15 +2856,14 @@
                     "zIndex": 0,
                     "x": 2445,
                     "y": 730,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "凤凰池",
                             "FENGHUANGCHI"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3199,15 +2874,14 @@
                     "zIndex": 0,
                     "x": 2445,
                     "y": 700,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "鹦鹉寺公园",
                             "YINGWUSIGONGYUAN"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3218,15 +2892,14 @@
                     "zIndex": 0,
                     "x": 2445,
                     "y": 675,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "芷阳广场",
                             "ZHIYANGGUANGCHANG"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3237,15 +2910,14 @@
                     "zIndex": 0,
                     "x": 2505,
                     "y": 650,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "西工程大·西科大（临潼校区）",
                             "XIGONGCHENGDA·XIKEDA (LINTONGXIAOQU)"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3256,15 +2928,14 @@
                     "zIndex": 0,
                     "x": 2630,
                     "y": 650,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "西花园",
                             "XIHUAYUAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3275,15 +2946,14 @@
                     "zIndex": 0,
                     "x": 2705,
                     "y": 650,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "华清池",
                             "HUAQINGCHI"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -3294,15 +2964,14 @@
                     "zIndex": 0,
                     "x": 2735,
                     "y": 620,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "东三岔",
                             "DONGSANCHA"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3313,15 +2982,14 @@
                     "zIndex": 0,
                     "x": 2735,
                     "y": 585,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "银桥大道",
                             "YINQIAODADAO"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3332,53 +3000,14 @@
                     "zIndex": 0,
                     "x": 2735,
                     "y": 550,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "秦陵西",
                             "QINLINGXI"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_Pbs1Qq-sRS",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 2345,
-                    "y": 795,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 9,
-                        "color": [
-                            "xian",
-                            "xa9",
-                            "#FF9E1B",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "misc_node_JZwUbf6j9r",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 2645,
-                    "y": 540,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 9,
-                        "color": [
-                            "xian",
-                            "xa9",
-                            "#FF9E1B",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3389,15 +3018,14 @@
                     "zIndex": 0,
                     "x": 2250,
                     "y": 255,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "新寺",
                             "XINSI"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3408,15 +3036,14 @@
                     "zIndex": 0,
                     "x": 2295,
                     "y": 255,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "港务大道",
                             "GANGWUDADAO"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3427,34 +3054,14 @@
                     "zIndex": 0,
                     "x": 2350,
                     "y": 255,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "贺韶",
                             "HESHAO"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_KHauiqe_rE",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 2330,
-                    "y": 210,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 14,
-                        "color": [
-                            "xian",
-                            "xa14",
-                            "#00C1D4",
-                            "#000"
-                        ]
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3465,15 +3072,14 @@
                     "zIndex": 0,
                     "x": 2075,
                     "y": 255,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "奥体中心",
                             "AOTIZHONGXIN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3484,15 +3090,14 @@
                     "zIndex": 0,
                     "x": 1980,
                     "y": 255,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "北辰",
                             "BEICHEN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3503,15 +3108,14 @@
                     "zIndex": 0,
                     "x": 1877.5,
                     "y": 255,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "西安工大·武德路",
                             "XI'ANGONGDA·WUDELU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3522,15 +3126,14 @@
                     "zIndex": 0,
                     "x": 1785,
                     "y": 255,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "文景山公园",
                             "WENJINGSHANGONGYUAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3541,15 +3144,14 @@
                     "zIndex": 0,
                     "x": 1595,
                     "y": 255,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "渭河南",
                             "WEIHENAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3560,15 +3162,14 @@
                     "zIndex": 0,
                     "x": 1515,
                     "y": 195,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "秦宫",
                             "QINGONG"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3579,15 +3180,14 @@
                     "zIndex": 0,
                     "x": 1465,
                     "y": 195,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "秦汉新城",
                             "QINHANXINCHENG"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3598,15 +3198,14 @@
                     "zIndex": 0,
                     "x": 1385,
                     "y": 195,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "长陵",
                             "CHANGLING"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3617,15 +3216,14 @@
                     "zIndex": 0,
                     "x": 1315,
                     "y": 160,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "摆旗寨",
                             "BAIQIZHAI"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3636,15 +3234,14 @@
                     "zIndex": 0,
                     "x": 1260,
                     "y": 120,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "艺术中心",
                             "YISHUZHONGXIN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3655,15 +3252,14 @@
                     "zIndex": 0,
                     "x": 1205,
                     "y": 120,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "空港新城",
                             "KONGGANGXINCHENG"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -3674,15 +3270,14 @@
                     "zIndex": 0,
                     "x": 1150,
                     "y": 120,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
-                            "机场（T5）",
-                            "AIRPORT (T5)"
+                            "机场(T5)",
+                            "AIRPORT (T5)\\(暂缓开通)"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": false
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3693,34 +3288,14 @@
                     "zIndex": 0,
                     "x": 1100,
                     "y": 120,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
-                            "机场西（T1、T2、T3）",
+                            "机场西(T1、T2、T3)",
                             "AIRPORT W. (T1,T2,T3)"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_jo-u_O9_sX",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1085,
-                    "y": 150,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 14,
-                        "color": [
-                            "xian",
-                            "xa14",
-                            "#00C1D4",
-                            "#000"
-                        ]
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -3731,15 +3306,14 @@
                     "zIndex": 0,
                     "x": 1730,
                     "y": 195,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "红会医院北区",
                             "HONGHUIYIYUAN BEIQU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -3750,15 +3324,14 @@
                     "zIndex": 0,
                     "x": 1765,
                     "y": 195,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "草滩",
                             "CAOTAN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3768,16 +3341,15 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 1040,
-                    "y": 720,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "y": 715,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "秦创原中心",
                             "QINCHUANGYUANZHONGXIN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3787,35 +3359,15 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 1040,
-                    "y": 745,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "y": 740,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "西咸大厦",
                             "XIXIANDASHA"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_dzfvUu4e2g",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1140,
-                    "y": 710,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 16,
-                        "color": [
-                            "xian",
-                            "xa16",
-                            "#ee805f",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3825,16 +3377,15 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 1040,
-                    "y": 815,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "y": 820,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "复兴大道北",
                             "FUXINGDADAOBEI"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3845,15 +3396,14 @@
                     "zIndex": 0,
                     "x": 1040,
                     "y": 865,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "西安国际足球中心",
                             "XI'ANGUOJIZUQIUZHONGXIN"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3864,15 +3414,14 @@
                     "zIndex": 0,
                     "x": 1040,
                     "y": 920,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "细柳营",
                             "XILIUYING"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3883,15 +3432,14 @@
                     "zIndex": 0,
                     "x": 1040,
                     "y": 980,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "沣东城市广场",
                             "FENGDONGCHENGSHIGUANGCHANG"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3902,34 +3450,14 @@
                     "zIndex": 0,
                     "x": 1002.5,
                     "y": 1072.5,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "诗经里",
                             "SHIJINGLI"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_Wjw1ruhfKf",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1050,
-                    "y": 1065,
-                    "type": "bjsubway-num-line-badge",
-                    "bjsubway-num-line-badge": {
-                        "num": 16,
-                        "color": [
-                            "xian",
-                            "xa16",
-                            "#ee805f",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3940,15 +3468,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 1532.5,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "何家营",
                             "HEJIAYING"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -3959,15 +3486,14 @@
                     "zIndex": 0,
                     "x": 1675,
                     "y": 1595,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "常宁宫",
                             "CHANGNINGGONG"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -4011,37 +3537,14 @@
                     "zIndex": 0,
                     "x": 1280,
                     "y": 1070,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "阿房宫南",
                             "EPANGGONGNAN"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_wPX4oWlwUD",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1220,
-                    "y": 1065,
-                    "type": "bjsubway-text-line-badge",
-                    "bjsubway-text-line-badge": {
-                        "names": [
-                            "西户线",
-                            "Xihu Line"
-                        ],
-                        "color": [
-                            "xian",
-                            "xaxh",
-                            "#720160",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -4063,27 +3566,525 @@
                     "zIndex": 0,
                     "x": 835,
                     "y": 1355,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "户县",
                             "HUXIAN"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "middle"
                     }
                 }
             },
             {
-                "key": "misc_node_8zVFmpEHmZ",
+                "key": "stn_GPqSvIfYqm",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1800,
+                    "y": 1090,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "西安科技大学",
+                            "XI'ANKEJIDAXUE"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_QCQQ-RYmCt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 830,
+                    "y": 780,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "陕西中医药大学",
+                            "SHAANXI ZHONGYIYAO DAXUE"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_sFB5Pk8Umg",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
                     "x": 760,
-                    "y": 1345,
-                    "type": "bjsubway-text-line-badge",
-                    "bjsubway-text-line-badge": {
+                    "y": 780,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "白马河",
+                            "BAIMAHE"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top"
+                    }
+                }
+            },
+            {
+                "key": "stn_JHTWP3_msN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 690,
+                    "y": 780,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "陈杨寨",
+                            "CHENYANGZHAI"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_CLZNm0wb29",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 620,
+                    "y": 780,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "安谷",
+                            "ANGU"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top"
+                    }
+                }
+            },
+            {
+                "key": "stn_pvkhfh9n0m",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 580,
+                    "y": 730,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "中华西路",
+                            "ZHONGHUAXILU"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_ISnECEUjy0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 580,
+                    "y": 675,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "宝泉路",
+                            "BAOQUANLU"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_CGfMzGl4tu",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 580,
+                    "y": 620,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "咸阳西站",
+                            "XIANYANGXIZHAN"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_6IetVsdnXS",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1240,
+                    "y": 1010,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_hNSzKWsX1s",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1140,
+                    "y": 1510,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 6,
+                        "color": [
+                            "xian",
+                            "xa6",
+                            "#485CC7",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_6YuNtsD88W",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 2305,
+                    "y": 870,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 6,
+                        "color": [
+                            "xian",
+                            "xa6",
+                            "#485CC7",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_nhzaozL675",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 2310,
+                    "y": 805,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 1,
+                        "color": [
+                            "xian",
+                            "xa1",
+                            "#0077C8",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_TU5ccPd7Wo",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 2380,
+                    "y": 805,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 9,
+                        "color": [
+                            "xian",
+                            "xa9",
+                            "#FF9E1B",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_W2ikvJDO0c",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 515,
+                    "y": 635,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 1,
+                        "color": [
+                            "xian",
+                            "xa1",
+                            "#0077C8",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_ZCJ5Y_XSS0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 805,
+                    "y": 1010,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 5,
+                        "color": [
+                            "xian",
+                            "xa5",
+                            "#A6E35F",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_fluDHRE4J2",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 2245,
+                    "y": 1210,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 5,
+                        "color": [
+                            "xian",
+                            "xa5",
+                            "#A6E35F",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_2ANMupzGsU",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1690,
+                    "y": 1565,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 2,
+                        "color": [
+                            "xian",
+                            "xa2",
+                            "#EF3340",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_EoQ-BgYhXh",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1815,
+                    "y": 180,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 2,
+                        "color": [
+                            "xian",
+                            "xa2",
+                            "#EF3340",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_jn7csIhvZH",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1690,
+                    "y": 265,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 4,
+                        "color": [
+                            "xian",
+                            "xa4",
+                            "#39b09e",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_aUFgUmyBGf",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 2100,
+                    "y": 1520,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 4,
+                        "color": [
+                            "xian",
+                            "xa4",
+                            "#39b09e",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_OSxZDF-N0j",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1365,
+                    "y": 1135,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 3,
+                        "color": [
+                            "xian",
+                            "xa3",
+                            "#CE70CC",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_g81HR5Nlpn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 2210,
+                    "y": 100,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 3,
+                        "color": [
+                            "xian",
+                            "xa3",
+                            "#CE70CC",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_T3mcSrP_kF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 2620,
+                    "y": 540,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 9,
+                        "color": [
+                            "xian",
+                            "xa9",
+                            "#FF9E1B",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_kxBdRYs1V6",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 2310,
+                    "y": 270,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 14,
+                        "color": [
+                            "xian",
+                            "xa14",
+                            "#00C1D4",
+                            "#000"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_OQtoJNWeJD",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1095,
+                    "y": 160,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 14,
+                        "color": [
+                            "xian",
+                            "xa14",
+                            "#00C1D4",
+                            "#000"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_88ifDujliO",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1000,
+                    "y": 1090,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 16,
+                        "color": [
+                            "xian",
+                            "xa16",
+                            "#ee805f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_HaYd6OCe9v",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 975,
+                    "y": 715,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 16,
+                        "color": [
+                            "xian",
+                            "xa16",
+                            "#ee805f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_fd3zX9op5w",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1295,
+                    "y": 1085,
+                    "type": "shmetro-text-line-badge",
+                    "shmetro-text-line-badge": {
                         "names": [
                             "西户线",
                             "Xihu Line"
@@ -4098,154 +4099,89 @@
                 }
             },
             {
-                "key": "stn_GPqSvIfYqm",
+                "key": "misc_node_hooJL1-OVW",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1800,
-                    "y": 1095,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "x": 750,
+                    "y": 1340,
+                    "type": "shmetro-text-line-badge",
+                    "shmetro-text-line-badge": {
                         "names": [
-                            "西安科技大学",
-                            "XI'ANKEJIDAXUE"
+                            "西户线",
+                            "Xihu Line"
                         ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "color": [
+                            "xian",
+                            "xaxh",
+                            "#720160",
+                            "#fff"
+                        ]
                     }
                 }
             },
             {
-                "key": "stn_QCQQ-RYmCt",
+                "key": "misc_node_2fLbqhBL_i",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 830,
-                    "y": 780,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
-                        "names": [
-                            "陕西中医药大学",
-                            "SHAANXI ZHONGYIYAO DAXUE"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                    "x": 1205,
+                    "y": 1490,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
                     }
                 }
             },
             {
-                "key": "stn_sFB5Pk8Umg",
+                "key": "misc_node_insXBEAORT",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 760,
-                    "y": 780,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
-                        "names": [
-                            "白马河",
-                            "BAIMAHE"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                    "x": 2230,
+                    "y": 1190,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
                     }
                 }
             },
             {
-                "key": "stn_JHTWP3_msN",
+                "key": "misc_node_AFxRRJaIBk",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 690,
-                    "y": 780,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
-                        "names": [
-                            "陈杨寨",
-                            "CHENYANGZHAI"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                    "x": 670,
+                    "y": 615,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
                     }
                 }
             },
             {
-                "key": "stn_CLZNm0wb29",
+                "key": "misc_node_4yf8GOgDUV",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 620,
-                    "y": 780,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
-                        "names": [
-                            "安谷",
-                            "ANGU"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "open": true
+                    "x": 1110,
+                    "y": 100,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "airport"
                     }
                 }
             },
             {
-                "key": "stn_pvkhfh9n0m",
+                "key": "misc_node_gNBtafE6V-",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 580,
-                    "y": 730,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
-                        "names": [
-                            "中华西路",
-                            "ZHONGHUAXILU"
-                        ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "stn_ISnECEUjy0",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 580,
-                    "y": 675,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
-                        "names": [
-                            "宝泉路",
-                            "BAOQUANLU"
-                        ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
-                    }
-                }
-            },
-            {
-                "key": "stn_CGfMzGl4tu",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 580,
-                    "y": 620,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
-                        "names": [
-                            "咸阳西站",
-                            "XIANYANGXIZHAN"
-                        ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                    "x": 1025,
+                    "y": 135,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "airport"
                     }
                 }
             }
@@ -9378,6 +9314,25 @@
                         ]
                     },
                     "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_5Me-vRydj1",
+                "source": "stn_7VhRdnkrFA",
+                "target": "stn_kmRSV2uJMn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "shmetro-virtual-int",
+                    "reconcileId": "",
+                    "shmetro-virtual-int": {}
                 }
             }
         ]

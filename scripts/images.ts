@@ -65,5 +65,5 @@ export const makeThumbnail = async (image: Buffer) => {
     const sideLength = Math.min(width, height);
     const left = Math.floor((metadata.width! - sideLength) / 2);
     const top = Math.floor((metadata.height! - sideLength) / 2);
-    return await img.extract({ width, height, left, top }).resize(300, 300).toBuffer();
+    return await img.extract({ width: sideLength, height: sideLength, left, top }).resize(300, 300).toBuffer();
 };

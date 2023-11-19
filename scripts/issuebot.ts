@@ -98,6 +98,12 @@ const makeMetadataWithUpdateHistory = async (
             throw new Error('This work can not be changed.');
 
         updateHistory.push(...structuredClone(oldMetadata.updateHistory));
+
+        if (type === 'fantasy') {
+            // overwrite previous donation date and expiration date
+            metadata.reference = oldMetadata.reference;
+            metadata.expireOn = oldMetadata.expireOn;
+        }
     }
     updateHistory.push({
         id: parseInt(process.env.USER_ID!),
@@ -107,7 +113,7 @@ const makeMetadataWithUpdateHistory = async (
     });
     metadata.updateHistory = updateHistory;
 
-    // New template under fantasy type
+    // new template under fantasy type
     if (type === 'fantasy' && updateHistory.length === 1 && metadata.expireOn === undefined) {
         const now = new Date();
         // extra 4 days in case of delay

@@ -67,8 +67,8 @@ export default function Ticket() {
                 ? 'Update'
                 : 'New'
             : id in fantasyGallery
-            ? 'Update'
-            : 'New';
+              ? 'Update'
+              : 'New';
     const issueBody = [
         GITHUB_ISSUE_HEADER,
         GITHUB_ISSUE_PREAMBLE,

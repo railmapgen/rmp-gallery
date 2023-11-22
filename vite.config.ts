@@ -15,13 +15,15 @@ export default defineConfig({
         }),
         splitVendorChunkPlugin(),
     ],
+    server: {
+        deps: {
+            fallbackCJS: true,
+        },
+    },
     test: {
         globals: true,
         environment: 'jsdom',
         setupFiles: './src/setupTests.ts',
-        deps: {
-            fallbackCJS: true,
-        },
         watch: false,
     },
 });

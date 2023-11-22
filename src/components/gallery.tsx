@@ -34,7 +34,7 @@ export default function GalleryView() {
 
     const { realWorld, fantasy, logins } = useRootSelector(state => state.app);
 
-    const [type, setType] = React.useState('fantasy' as 'real_world' | 'fantasy');
+    const [type, setType] = React.useState('real_world' as 'real_world' | 'fantasy');
     const [city, setCity] = React.useState('shanghai');
     const [isDetailsModalOpen, setIsDetailsModalOpen] = React.useState(false);
     const handleDetails = (city: string) => {
@@ -81,6 +81,10 @@ export default function GalleryView() {
 
     const [filterID, setFilterID] = React.useState('');
     const [sortBy, setSortBy] = React.useState('alphabetical' as 'alphabetical' | 'update_time');
+    const sortByOptions = {
+        alphabetical: t('gallery.sortBy.alphabetical'),
+        ...(type === 'real_world' ? { update_time: t('gallery.sortBy.updateTime') } : {}),
+    };
     const fields: RmgFieldsField[] = [
         {
             type: 'select',
@@ -94,15 +98,22 @@ export default function GalleryView() {
             type: 'select',
             label: t('gallery.sortBy.label'),
             value: sortBy,
-            options: { alphabetical: t('gallery.sortBy.alphabetical'), update_time: t('gallery.sortBy.updateTime') },
+            options: sortByOptions,
             onChange: val => setSortBy(val.toString() as 'alphabetical' | 'update_time'),
+            hidden: type === 'fantasy',
             minW: 200,
         },
     ];
 
+    const handleTabChange = (i: number) => {
+        // set some default values for different types
+        setType(i === 0 ? 'real_world' : 'fantasy');
+        setSortBy(i === 0 ? 'alphabetical' : 'update_time');
+    };
+
     return (
         <>
-            <Tabs isLazy isFitted defaultIndex={1} onChange={i => setType(i === 0 ? 'real_world' : 'fantasy')}>
+            <Tabs isLazy isFitted onChange={i => handleTabChange(i)}>
                 <TabList>
                     <Tab>{t('gallery.type.realWorld')}</Tab>
                     <Tab>{t('gallery.type.fantasy')}</Tab>
@@ -158,9 +169,9 @@ export default function GalleryView() {
                                             .filter(([_, metadata]) =>
                                                 filterID === '' ? true : metadata.contributors.includes(filterID)
                                             )
-                                            // @ts-expect-error This works well and can't understand the error
                                             .sort((a, b) =>
-                                                sortBy === 'alphabetical' ? 0 : a[1].lastUpdateOn < b[1].lastUpdateOn
+                                                // https://stackoverflow.com/questions/59773396/why-array-prototype-sort-has-different-behavior-in-chrome
+                                                sortBy === 'alphabetical' ? 0 : b[1].lastUpdateOn - a[1].lastUpdateOn
                                             )
                                             .map(([id, metadata]) => (
                                                 <TemplateCard

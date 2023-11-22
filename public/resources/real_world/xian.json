@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 134,
+    "svgViewBoxZoom": 360,
     "svgViewBoxMin": {
-        "x": 869.32,
-        "y": 207.96
+        "x": -964.8,
+        "y": -482
     },
     "graph": {
         "options": {
@@ -1376,8 +1376,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1600,
-                    "y": 275,
+                    "x": 1585,
+                    "y": 260,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -1497,8 +1497,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1865,
-                    "y": 765,
+                    "x": 1855,
+                    "y": 755,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -2043,14 +2043,17 @@
                     "zIndex": 0,
                     "x": 1280,
                     "y": 1030,
-                    "type": "shmetro-basic",
-                    "shmetro-basic": {
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "阿房宫南",
                             "EPANGGONGNAN"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top"
+                        "nameOffsetY": "top",
+                        "rotate": 90,
+                        "height": 10,
+                        "width": 20
                     }
                 }
             },
@@ -3531,24 +3534,6 @@
                 }
             },
             {
-                "key": "stn_kmRSV2uJMn",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1280,
-                    "y": 1070,
-                    "type": "shmetro-basic",
-                    "shmetro-basic": {
-                        "names": [
-                            "阿房宫南",
-                            "EPANGGONGNAN"
-                        ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle"
-                    }
-                }
-            },
-            {
                 "key": "misc_node_r6J9olkaci",
                 "attributes": {
                     "visible": true,
@@ -3718,19 +3703,6 @@
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle"
-                    }
-                }
-            },
-            {
-                "key": "misc_node_6IetVsdnXS",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1240,
-                    "y": 1010,
-                    "type": "facilities",
-                    "facilities": {
-                        "type": "railway"
                     }
                 }
             },
@@ -4077,56 +4049,12 @@
                 }
             },
             {
-                "key": "misc_node_fd3zX9op5w",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1295,
-                    "y": 1085,
-                    "type": "shmetro-text-line-badge",
-                    "shmetro-text-line-badge": {
-                        "names": [
-                            "西户线",
-                            "Xihu Line"
-                        ],
-                        "color": [
-                            "xian",
-                            "xaxh",
-                            "#720160",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "misc_node_hooJL1-OVW",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 750,
-                    "y": 1340,
-                    "type": "shmetro-text-line-badge",
-                    "shmetro-text-line-badge": {
-                        "names": [
-                            "西户线",
-                            "Xihu Line"
-                        ],
-                        "color": [
-                            "xian",
-                            "xaxh",
-                            "#720160",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "misc_node_2fLbqhBL_i",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1205,
-                    "y": 1490,
+                    "x": 1115,
+                    "y": 1480,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -4138,8 +4066,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 2230,
-                    "y": 1190,
+                    "x": 2220,
+                    "y": 1180,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -4151,8 +4079,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 670,
-                    "y": 615,
+                    "x": 615,
+                    "y": 580,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -4164,8 +4092,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1110,
-                    "y": 100,
+                    "x": 1100,
+                    "y": 80,
                     "type": "facilities",
                     "facilities": {
                         "type": "airport"
@@ -4177,11 +4105,55 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1025,
-                    "y": 135,
+                    "x": 1015,
+                    "y": 120,
                     "type": "facilities",
                     "facilities": {
                         "type": "airport"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_VMyh4vfLT2",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 780,
+                    "y": 1315,
+                    "type": "shmetro-text-line-badge",
+                    "shmetro-text-line-badge": {
+                        "names": [
+                            "西户线",
+                            "Xihu Line"
+                        ],
+                        "color": [
+                            "xian",
+                            "xaxh",
+                            "#720160",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_MGnnSVJu9F",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1285,
+                    "y": 1090,
+                    "type": "shmetro-text-line-badge",
+                    "shmetro-text-line-badge": {
+                        "names": [
+                            "西户线",
+                            "Xihu Line"
+                        ],
+                        "color": [
+                            "xian",
+                            "xaxh",
+                            "#720160",
+                            "#fff"
+                        ]
                     }
                 }
             }
@@ -9101,32 +9073,6 @@
                 }
             },
             {
-                "key": "line_2i0uqcZ75j",
-                "source": "misc_node_r6J9olkaci",
-                "target": "stn_kmRSV2uJMn",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "xian",
-                            "xaxh",
-                            "#720160",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": ""
-                }
-            },
-            {
                 "key": "line_R3XaKf88w7",
                 "source": "stn_jweXNrIMAb",
                 "target": "misc_node_r6J9olkaci",
@@ -9317,25 +9263,32 @@
                 }
             },
             {
-                "key": "line_5Me-vRydj1",
-                "source": "stn_7VhRdnkrFA",
-                "target": "stn_kmRSV2uJMn",
+                "key": "line_JmEUUdDiC0",
+                "source": "misc_node_r6J9olkaci",
+                "target": "stn_7VhRdnkrFA",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
+                    "type": "diagonal",
+                    "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 18.33
+                        "roundCornerFactor": 10
                     },
-                    "style": "shmetro-virtual-int",
-                    "reconcileId": "",
-                    "shmetro-virtual-int": {}
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "xian",
+                            "xaxh",
+                            "#720160",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
                 }
             }
         ]
     },
-    "version": 19
+    "version": 21
 }

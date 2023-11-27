@@ -29,6 +29,7 @@ global.fetch = (...args) => {
             json: () => Promise.resolve(infoJson),
         }) as any;
     } else {
+        // @ts-expect-error any here :)
         return originalFetch(...args);
     }
 };

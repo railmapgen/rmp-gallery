@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 70,
+    "svgViewBoxZoom": 390,
     "svgViewBoxMin": {
-        "x": 1607.5,
-        "y": 760.2
+        "x": -1867.863,
+        "y": 162.21
     },
     "graph": {
         "options": {
@@ -1605,7 +1605,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 950,
-                    "y": 855,
+                    "y": 867.5,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -1618,7 +1618,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 770,
-                    "y": 340,
+                    "y": 352.5,
                     "type": "facilities",
                     "facilities": {
                         "type": "airport"
@@ -1631,7 +1631,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 2105,
-                    "y": 2115,
+                    "y": 2127.5,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -2941,7 +2941,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 755,
-                    "y": 1535,
+                    "y": 1547.5,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -2977,7 +2977,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 1150,
-                    "y": 1645,
+                    "y": 1657.5,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -2990,7 +2990,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 2170,
-                    "y": 1080,
+                    "y": 1092.5,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -3045,7 +3045,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 950,
-                    "y": 2160,
+                    "y": 2150,
                     "type": "shmetro-basic-2020",
                     "shmetro-basic-2020": {
                         "names": [
@@ -3068,7 +3068,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 950,
-                    "y": 2095,
+                    "y": 2075,
                     "type": "shmetro-basic-2020",
                     "shmetro-basic-2020": {
                         "names": [
@@ -3526,7 +3526,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 950,
-                    "y": 2010,
+                    "y": 2000,
                     "type": "shmetro-basic-2020",
                     "shmetro-basic-2020": {
                         "names": [
@@ -3549,7 +3549,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 875,
-                    "y": 2185,
+                    "y": 2325,
                     "type": "shmetro-num-line-badge",
                     "shmetro-num-line-badge": {
                         "num": 5,
@@ -3598,7 +3598,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 2265,
-                    "y": 935,
+                    "y": 947.5,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -5602,7 +5602,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 2590,
-                    "y": 2585,
+                    "y": 2597.5,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -6322,6 +6322,52 @@
                             "wuhan",
                             "wh21",
                             "#CF0192",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_BI5mvvTU9l",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 950,
+                    "y": 2225,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "黄家湖（武科大）",
+                            "Huangjiahu (Wuhan University of Science and Technology)"
+                        ],
+                        "rotate": 270,
+                        "color": [
+                            "other",
+                            "other",
+                            "#a62e37",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_qsRGOTm6n1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 950,
+                    "y": 2300,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "红霞",
+                            "Hongxia"
+                        ],
+                        "rotate": 270,
+                        "color": [
+                            "other",
+                            "other",
+                            "#a62e37",
                             "#fff"
                         ]
                     }
@@ -13035,32 +13081,6 @@
                 }
             },
             {
-                "key": "line_MjnLbAiDBL",
-                "source": "stn_d0AAdc5XbB",
-                "target": "stn_G3TPmMlti2",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "wuhan",
-                            "wh5",
-                            "#a62e37",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": ""
-                }
-            },
-            {
                 "key": "line_TBkCkxelFK",
                 "source": "stn_shvrtDeYIw",
                 "target": "stn_G3TPmMlti2",
@@ -13163,8 +13183,216 @@
                     },
                     "reconcileId": ""
                 }
+            },
+            {
+                "key": "line_pFT64mhtEZ",
+                "source": "stn_FPFL3IdKFH",
+                "target": "stn_G3TPmMlti2",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "wuhan",
+                            "wh5",
+                            "#a62e37",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_xeYPb9unwp",
+                "source": "stn_Ua7Ud2vE4z",
+                "target": "stn_FPFL3IdKFH",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "wuhan",
+                            "wh5",
+                            "#a62e37",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_NqaxzyZtIr",
+                "source": "stn_KX5TKW4O6N",
+                "target": "stn_Ua7Ud2vE4z",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "wuhan",
+                            "wh5",
+                            "#a62e37",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_QLQS4zuW_I",
+                "source": "stn_ZaBCOBXWdr",
+                "target": "stn_KX5TKW4O6N",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "wuhan",
+                            "wh5",
+                            "#a62e37",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_URMSMCK7gi",
+                "source": "stn_QiL7kGsEKN",
+                "target": "stn_ZaBCOBXWdr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "wuhan",
+                            "wh5",
+                            "#a62e37",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_GtoplRC-Q9",
+                "source": "stn_d0AAdc5XbB",
+                "target": "stn_QiL7kGsEKN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "wuhan",
+                            "wh5",
+                            "#a62e37",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_UuB3I5nHa2",
+                "source": "stn_BI5mvvTU9l",
+                "target": "stn_d0AAdc5XbB",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "wuhan",
+                            "wh5",
+                            "#a62e37",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_g1Hw2jBIQq",
+                "source": "stn_qsRGOTm6n1",
+                "target": "stn_BI5mvvTU9l",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "wuhan",
+                            "wh5",
+                            "#a62e37",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
             }
         ]
     },
-    "version": 13
+    "version": 21
 }

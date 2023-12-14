@@ -66,9 +66,9 @@ export default function Ticket() {
             ? cityName in realWorldGallery
                 ? 'Update'
                 : 'New'
-            : cityName in fantasyGallery
-            ? 'Update'
-            : 'New';
+            : id in fantasyGallery
+              ? 'Update'
+              : 'New';
     const issueBody = [
         GITHUB_ISSUE_HEADER,
         GITHUB_ISSUE_PREAMBLE,

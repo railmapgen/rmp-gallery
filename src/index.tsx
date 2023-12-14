@@ -27,6 +27,6 @@ const renderApp = () => {
 rmgRuntime.ready().then(() => {
     initStore(store);
     renderApp();
-    rmgRuntime.injectCss();
+    rmgRuntime.injectUITools();
     rmgRuntime.event(Events.APP_LOAD, {});
 });

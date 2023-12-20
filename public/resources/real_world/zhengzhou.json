@@ -1,8 +1,8 @@
 {
     "svgViewBoxZoom": 47,
     "svgViewBoxMin": {
-        "x": -114.9,
-        "y": 62.966
+        "x": 411.769,
+        "y": -14.818
     },
     "graph": {
         "options": {
@@ -177,7 +177,7 @@
                             "黄河路",
                             "HUANGHELU"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "bottom",
                         "outOfStation": false
                     }
@@ -365,7 +365,7 @@
                     "bjsubway-basic": {
                         "names": [
                             "商鼎路",
-                            "SHANGDINGLU"
+                            "SHANGDING-\\LU"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
@@ -397,17 +397,17 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 645,
+                    "x": 640,
                     "y": 215,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "bjsubway-int",
+                    "bjsubway-int": {
                         "names": [
                             "西周",
                             "XIZHOU"
                         ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "open": true
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "outOfStation": false
                     }
                 }
             },
@@ -416,7 +416,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 690,
+                    "x": 695,
                     "y": 215,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
@@ -492,17 +492,17 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 605,
+                    "x": 630,
                     "y": 155,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "bjsubway-int",
+                    "bjsubway-int": {
                         "names": [
                             "黄河南路",
-                            "HUANGHENANLU"
+                            "HUANGHE-\\NANLU"
                         ],
-                        "nameOffsetX": "middle",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "open": true
+                        "outOfStation": false
                     }
                 }
             },
@@ -530,13 +530,13 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 690,
+                    "x": 695,
                     "y": 155,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
                             "东风南路",
-                            "DONGFENGNANLU"
+                            "DONGFENG-\\NANLU"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
@@ -587,13 +587,13 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 470,
+                    "x": 460,
                     "y": 100,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
                             "省人民医院",
-                            "HENAN PEOPLE'S HOSPITAL"
+                            "HENAN\\PEOPLE'S\\HOSPITAL"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
@@ -606,7 +606,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 505,
+                    "x": 495,
                     "y": 100,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
@@ -615,7 +615,7 @@
                             "YAOZHAI"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetY": "top",
                         "open": true
                     }
                 }
@@ -652,7 +652,7 @@
                             "中央商务区",
                             "CENTRAL BUSINESS DISTRICT"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "bottom",
                         "outOfStation": false
                     }
@@ -663,17 +663,17 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 615,
+                    "x": 630,
                     "y": 100,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "bjsubway-int",
+                    "bjsubway-int": {
                         "names": [
                             "儿童医院",
-                            "CHILDREN'S HOSPITAL"
+                            "CHILDREN'S\\HOSPITAL"
                         ],
-                        "nameOffsetX": "middle",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "open": true
+                        "outOfStation": false
                     }
                 }
             },
@@ -682,7 +682,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 670,
+                    "x": 660,
                     "y": 100,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
@@ -728,7 +728,7 @@
                             "农业东路",
                             "NONGYE DONGLU"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "open": true
                     }
@@ -918,7 +918,7 @@
                             "关虎屯",
                             "GUANHUTUN"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "open": true
                     }
@@ -2220,7 +2220,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 620,
+                    "x": 615,
                     "y": 350,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
@@ -2241,15 +2241,15 @@
                     "zIndex": 0,
                     "x": 655,
                     "y": 350,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "type": "bjsubway-int",
+                    "bjsubway-int": {
                         "names": [
                             "福塔东",
                             "ZHONGYUAN\\TOWER EAST"
                         ],
-                        "nameOffsetX": "middle",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "open": true
+                        "outOfStation": false
                     }
                 }
             },
@@ -2258,7 +2258,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 690,
+                    "x": 700,
                     "y": 350,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
@@ -2862,7 +2862,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 785,
-                    "y": 120,
+                    "y": 105,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -2881,16 +2881,16 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 785,
-                    "y": 85,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "y": 60,
+                    "type": "bjsubway-int",
+                    "bjsubway-int": {
                         "names": [
                             "龙子湖",
                             "LONGZIHU"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "open": true
+                        "nameOffsetY": "top",
+                        "outOfStation": false
                     }
                 }
             },
@@ -2900,7 +2900,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 785,
-                    "y": 50,
+                    "y": 25,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -2919,7 +2919,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 785,
-                    "y": 15,
+                    "y": -10,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -3001,7 +3001,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 795,
-                    "y": 5,
+                    "y": -20,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
                         "num": 1,
@@ -3467,6 +3467,158 @@
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "open": true
+                    }
+                }
+            },
+            {
+                "key": "stn_OfEuDGBuPM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 655,
+                    "y": 395,
+                    "type": "bjsubway-basic",
+                    "bjsubway-basic": {
+                        "names": [
+                            "梁湖",
+                            "LIANGHU"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "open": true
+                    }
+                }
+            },
+            {
+                "key": "misc_node_1eOGoGsU_7",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 640,
+                    "y": 405,
+                    "type": "bjsubway-num-line-badge",
+                    "bjsubway-num-line-badge": {
+                        "num": 12,
+                        "color": [
+                            "zhengzhou",
+                            "zz12",
+                            "#225E9E",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_Gje505BHEo",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 655,
+                    "y": 285,
+                    "type": "bjsubway-basic",
+                    "bjsubway-basic": {
+                        "names": [
+                            "经北五路",
+                            "JINGBEIWU LU"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "open": true
+                    }
+                }
+            },
+            {
+                "key": "stn_KuRu5sU19W",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 670,
+                    "y": 60,
+                    "type": "bjsubway-basic",
+                    "bjsubway-basic": {
+                        "names": [
+                            "东风东路",
+                            "DONGFENGDONG LU"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "open": true
+                    }
+                }
+            },
+            {
+                "key": "stn_uqZ6MzshrX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 710,
+                    "y": 60,
+                    "type": "bjsubway-basic",
+                    "bjsubway-basic": {
+                        "names": [
+                            "高铁公园",
+                            "GAOTIE GONGYUAN"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "open": true
+                    }
+                }
+            },
+            {
+                "key": "stn_JcSzL_fmG1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 60,
+                    "type": "bjsubway-basic",
+                    "bjsubway-basic": {
+                        "names": [
+                            "龙子湖西",
+                            "LONGZIHU XI"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "open": true
+                    }
+                }
+            },
+            {
+                "key": "stn_fPYdIdiX2N",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 830,
+                    "y": 60,
+                    "type": "bjsubway-basic",
+                    "bjsubway-basic": {
+                        "names": [
+                            "龙子湖东",
+                            "LONGZIHU DONG"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "open": true
+                    }
+                }
+            },
+            {
+                "key": "misc_node_Qxf5juTqV-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 840,
+                    "y": 50,
+                    "type": "bjsubway-num-line-badge",
+                    "bjsubway-num-line-badge": {
+                        "num": 12,
+                        "color": [
+                            "zhengzhou",
+                            "zz12",
+                            "#225E9E",
+                            "#fff"
+                        ]
                     }
                 }
             }
@@ -8047,8 +8199,268 @@
                     },
                     "reconcileId": ""
                 }
+            },
+            {
+                "key": "line_Dw8PGy1J6J",
+                "source": "stn_NihT50n_hU",
+                "target": "stn_OfEuDGBuPM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "zhengzhou",
+                            "zz12",
+                            "#225E9E",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_WilsAz8If5",
+                "source": "stn_Gje505BHEo",
+                "target": "stn_NihT50n_hU",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "zhengzhou",
+                            "zz12",
+                            "#225E9E",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_oJKD5brh4p",
+                "source": "stn_Gje505BHEo",
+                "target": "stn_M1zZ8uAPer",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "zhengzhou",
+                            "zz12",
+                            "#225E9E",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_Dz9qcI53eg",
+                "source": "stn_evLMSxccng",
+                "target": "stn_M1zZ8uAPer",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "zhengzhou",
+                            "zz12",
+                            "#225E9E",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_go-PYQCA8f",
+                "source": "stn_XIbxLe7twa",
+                "target": "stn_evLMSxccng",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "zhengzhou",
+                            "zz12",
+                            "#225E9E",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_4PSVs2Oihm",
+                "source": "stn_KuRu5sU19W",
+                "target": "stn_XIbxLe7twa",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "zhengzhou",
+                            "zz12",
+                            "#225E9E",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_J1URYwRs3p",
+                "source": "stn_KuRu5sU19W",
+                "target": "stn_uqZ6MzshrX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "zhengzhou",
+                            "zz12",
+                            "#225E9E",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_NsY6xZFifT",
+                "source": "stn_uqZ6MzshrX",
+                "target": "stn_JcSzL_fmG1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "zhengzhou",
+                            "zz12",
+                            "#225E9E",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_pKiXSiCa1N",
+                "source": "stn_JcSzL_fmG1",
+                "target": "stn_n1Hs9vS_EJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "zhengzhou",
+                            "zz12",
+                            "#225E9E",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_Qroy5pB7vW",
+                "source": "stn_n1Hs9vS_EJ",
+                "target": "stn_fPYdIdiX2N",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "zhengzhou",
+                            "zz12",
+                            "#225E9E",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
             }
         ]
     },
-    "version": 19
+    "version": 24
 }

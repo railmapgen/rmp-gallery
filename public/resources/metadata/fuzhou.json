@@ -1,11 +1,13 @@
 {
     "name": {
         "en": "Fuzhou",
-        "zh-Hans": "福州"
+        "zh-Hans": "福州",
+        "zh-CN": "福州"
     },
     "desc": {
         "en": "Fuzhou Metro is an urban rail transit system serving Fuzhou City, Fujian Province, China. Its first line was put into operation on May 18, 2016, making Fuzhou the 28th city in mainland China and the first city in Fujian Province to open rail transit.",
-        "zh-Hans": "福州地铁（Fuzhou Metro）是服务于中国福建省福州市的城市轨道交通系统。其第一条线路于2016年5月18日开通初期运营，使福州市成为中国内地第二十八座、福建省首座开通轨道交通的城市。"
+        "zh-Hans": "福州地铁（Fuzhou Metro）是服务于中国福建省福州市的城市轨道交通系统。其第一条线路于2016年5月18日开通初期运营，使福州市成为中国内地第二十八座、福建省首座开通轨道交通的城市。",
+        "zh-CN": "福州地铁（Fuzhou Metro）是服务于中国福建省福州市的城市轨道交通系统。其第一条线路于2016年5月18日开通初期运营，使福州市成为中国内地第二十八座、福建省首座开通轨道交通的城市。"
     },
     "reference": "http://www.fzmtr.com/html/fzdt/xlcx/index.html",
     "updateHistory": [
@@ -20,6 +22,12 @@
             "issueNumber": 820,
             "reason": "Fix positions of station badges and font styles. Also unifying format to Beijing style which is nearer to the official format.",
             "time": 1695455005201
+        },
+        {
+            "id": 86472219,
+            "issueNumber": 1113,
+            "reason": "Changed the site style and added a diagram for the rear section of Line 4",
+            "time": 1703928509807
         }
     ]
 }

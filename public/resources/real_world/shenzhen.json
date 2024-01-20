@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 60,
+    "svgViewBoxZoom": 70,
     "svgViewBoxMin": {
-        "x": 89.935,
-        "y": -578.134
+        "x": -66.939,
+        "y": -765.21
     },
     "graph": {
         "options": {
@@ -626,7 +626,7 @@
                     "mtr": {
                         "names": [
                             "清湖",
-                            "Stn"
+                            "Qinghu"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
@@ -968,7 +968,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 15,
-                    "y": 85,
+                    "y": 95,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -3468,7 +3468,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -1105,
-                    "y": -95,
+                    "y": -105,
                     "type": "mtr",
                     "mtr": {
                         "names": [
@@ -3489,7 +3489,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1115,
+                    "x": -1125,
                     "y": -140,
                     "type": "mtr",
                     "mtr": {
@@ -4923,16 +4923,16 @@
                                 ],
                                 [
                                     "shenzhen",
-                                    "sz5",
-                                    "#A05EB5",
+                                    "sz14",
+                                    "#F2C75C",
                                     "#fff",
                                     "",
                                     ""
                                 ],
                                 [
                                     "shenzhen",
-                                    "sz14",
-                                    "#F2C75C",
+                                    "sz5",
+                                    "#A05EB5",
                                     "#fff",
                                     "",
                                     ""
@@ -5097,7 +5097,7 @@
                     "mtr": {
                         "names": [
                             "太安",
-                            "Stn"
+                            "Tai'an"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
@@ -5821,8 +5821,8 @@
                     "type": "mtr",
                     "mtr": {
                         "names": [
-                            "车站",
-                            "Stn"
+                            "翰岭",
+                            "Hanling"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
@@ -5843,8 +5843,8 @@
                     "type": "mtr",
                     "mtr": {
                         "names": [
-                            "车站",
-                            "Stn"
+                            "銀湖",
+                            "Yinhu"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
@@ -5882,8 +5882,8 @@
                     "type": "mtr",
                     "mtr": {
                         "names": [
-                            "车站",
-                            "Stn"
+                            "泥岗",
+                            "Nigang"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
@@ -6535,7 +6535,7 @@
                     "mtr": {
                         "names": [
                             "凉帽山",
-                            "Stn"
+                            "Liangmao Hill"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
@@ -7122,7 +7122,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 390,
-                    "y": -400,
+                    "y": -410,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -8220,8 +8220,8 @@
                     "type": "mtr",
                     "mtr": {
                         "names": [
-                            "车站",
-                            "Stn"
+                            "人才公园",
+                            "Talent Park"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
@@ -12726,13 +12726,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "to",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
+                    "type": "perpendicular",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -12742,7 +12736,13 @@
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 2.5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    }
                 }
             },
             {
@@ -12780,7 +12780,7 @@
                     "zIndex": 0,
                     "type": "diagonal",
                     "diagonal": {
-                        "startFrom": "to",
+                        "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
                         "roundCornerFactor": 10
@@ -15162,7 +15162,7 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": -10,
+                        "offsetTo": -5,
                         "roundCornerFactor": 10
                     },
                     "style": "single-color",
@@ -17031,7 +17031,7 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": -10,
+                        "offsetTo": -5,
                         "roundCornerFactor": 10
                     },
                     "style": "single-color",
@@ -19037,5 +19037,5 @@
             }
         ]
     },
-    "version": 21
+    "version": 26
 }

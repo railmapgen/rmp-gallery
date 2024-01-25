@@ -16,13 +16,16 @@ export default defineConfig({
         splitVendorChunkPlugin(),
     ],
     server: {
-        deps: {
-            fallbackCJS: true,
-        },
+        port: 8000,
     },
     test: {
-        globals: true,
         environment: 'jsdom',
+        globals: true,
+        server: {
+            deps: {
+                fallbackCJS: true,
+            },
+        },
         setupFiles: './src/setupTests.ts',
         watch: false,
     },

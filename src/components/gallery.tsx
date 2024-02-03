@@ -6,6 +6,7 @@ import {
     Flex,
     Heading,
     IconButton,
+    SystemStyleObject,
     Tab,
     TabList,
     TabPanel,
@@ -26,6 +27,13 @@ import { setFantasy, setLogins, setRealWorld } from '../redux/app/app-slice';
 import { Events, Gallery, MetadataDetail } from '../util/constant';
 import DetailsModal from './details';
 import { TemplateCard } from './template-card';
+
+const stickyHeaderStyles: SystemStyleObject = {
+    position: 'sticky',
+    top: -4,
+    zIndex: 1,
+    background: 'inherit',
+};
 
 export default function GalleryView() {
     const navigate = useNavigate();
@@ -113,14 +121,14 @@ export default function GalleryView() {
 
     return (
         <>
-            <Tabs isLazy isFitted onChange={i => handleTabChange(i)}>
+            <Tabs isLazy isFitted onChange={i => handleTabChange(i)} overflow="hidden">
                 <TabList>
                     <Tab>{t('gallery.type.realWorld')}</Tab>
                     <Tab>{t('gallery.type.fantasy')}</Tab>
                 </TabList>
-                <TabPanels>
+                <TabPanels overflow="hidden" h="100%">
                     {[realWorld, fantasy].map((g, i) => (
-                        <TabPanel key={i}>
+                        <TabPanel key={i} overflowY="auto" h="calc(100% - 2rem - 8px)">
                             {type === 'real_world' && (
                                 <>
                                     <Card variant="filled">
@@ -132,7 +140,7 @@ export default function GalleryView() {
                                         </CardBody>
                                     </Card>
                                     <Card mt="2">
-                                        <CardHeader>
+                                        <CardHeader sx={stickyHeaderStyles}>
                                             <Heading size="lg">{t('gallery.editorSelected')}</Heading>
                                         </CardHeader>
                                         <CardBody paddingTop="0">
@@ -155,7 +163,7 @@ export default function GalleryView() {
                                 </>
                             )}
                             <Card mt="2">
-                                <CardHeader>
+                                <CardHeader sx={stickyHeaderStyles}>
                                     <Flex direction="row">
                                         <Heading size="lg" mr="auto">
                                             {t('gallery.all')}

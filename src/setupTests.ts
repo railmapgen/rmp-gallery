@@ -1,12 +1,5 @@
-import { RootState } from './redux';
-import createMockStore from 'redux-mock-store';
-import { getDefaultMiddleware, ThunkDispatch } from '@reduxjs/toolkit';
 import { TextEncoder } from 'util';
 import { vi } from 'vitest';
-
-// FIXME: any -> AnyAction?
-type DispatchExts = ThunkDispatch<RootState, void, any>;
-export const createMockRootStore = createMockStore<RootState, DispatchExts>(getDefaultMiddleware());
 
 const originalFetch = global.fetch;
 global.fetch = vi.fn().mockImplementation((...args: any[]) => {

@@ -17,13 +17,9 @@ import {
 } from '@chakra-ui/react';
 import { RmgDebouncedTextarea, RmgFields, RmgFieldsField, RmgLabel, RmgPage } from '@railmapgen/rmg-components';
 import React from 'react';
-import DatePicker from 'react-datepicker';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { stringify } from 'zipson';
-
-import 'react-datepicker/dist/react-datepicker.css';
-
 import { useRootSelector } from '../redux';
 import { GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, MetadataDetail } from '../util/constant';
 import { downloadAs, makeGitHubIssueDetails, readFileAsText } from '../util/utils';
@@ -157,16 +153,11 @@ export default function Ticket() {
     }, [donationDate, donationChannel]);
     const fantasyFields: RmgFieldsField[] = [
         {
-            type: 'custom',
+            type: 'input',
             label: t('ticket.donationDate'),
-            component: (
-                <DatePicker
-                    selected={donationDate}
-                    onChange={d => {
-                        if (d) setDonationDate(d);
-                    }}
-                />
-            ),
+            variant: 'date',
+            value: donationDate.toJSON().slice(0, 10),
+            onChange: value => setDonationDate(new Date(value)),
             minW: 250,
         },
         {

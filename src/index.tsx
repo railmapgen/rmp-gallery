@@ -1,3 +1,4 @@
+import './index.css';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { StrictMode } from 'react';
 import { Provider } from 'react-redux';

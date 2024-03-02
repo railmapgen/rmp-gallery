@@ -4,8 +4,7 @@ import { render, RenderOptions } from '@testing-library/react';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n/config';
 import { Provider } from 'react-redux';
-import rootReducer from './redux';
-import { createMockRootStore } from './setupTests';
+import { createStore } from './redux';
 import { Store } from '@reduxjs/toolkit';
 
 interface CustomRenderOptions extends Omit<RenderOptions, 'wrapper'> {
@@ -13,7 +12,7 @@ interface CustomRenderOptions extends Omit<RenderOptions, 'wrapper'> {
 }
 
 const initialOptions: CustomRenderOptions = {
-    store: createMockRootStore({ ...rootReducer.getState() }),
+    store: createStore(),
 };
 
 interface TestingProviderProps {

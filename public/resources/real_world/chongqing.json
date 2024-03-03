@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 290,
+    "svgViewBoxZoom": 90,
     "svgViewBoxMin": {
-        "x": -2475.086,
-        "y": -839.915
+        "x": -1179.65,
+        "y": 4.05
     },
     "graph": {
         "options": {
@@ -14,16 +14,36 @@
         "nodes": [
             {
                 "attributes": {
-                    "bjsubway-int": {
+                    "kunmingrt-int": {
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
                         "names": [
                             "较场口",
                             "Jiaochangkou"
                         ],
-                        "outOfStation": false
+                        "rotate": 270,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq1",
+                                    "#E4002B",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq2",
+                                    "#007033",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     },
-                    "type": "bjsubway-int",
+                    "type": "kunmingrt-int",
                     "visible": true,
                     "x": 0,
                     "y": -10,
@@ -33,16 +53,36 @@
             },
             {
                 "attributes": {
-                    "bjsubway-int": {
+                    "kunmingrt-int": {
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
                         "names": [
                             "小什字",
                             "Xiaoshizi"
                         ],
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq1",
+                                    "#E4002B",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq6",
+                                    "#F67599",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     },
-                    "type": "bjsubway-int",
+                    "type": "kunmingrt-int",
                     "visible": true,
                     "x": 100,
                     "y": -25,
@@ -57,8 +97,8 @@
                     "zIndex": 0,
                     "x": 100,
                     "y": -95,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "朝天门",
                             "Chaotianmen"
@@ -81,15 +121,35 @@
                     "zIndex": 0,
                     "x": -250,
                     "y": -10,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "两路口",
                             "Lianglukou"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 90,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq1",
+                                    "#E4002B",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq3",
+                                    "#003DA5",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -100,8 +160,8 @@
                     "zIndex": 0,
                     "x": -380,
                     "y": 10,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "鹅岭",
                             "Eling"
@@ -124,15 +184,35 @@
                     "zIndex": 0,
                     "x": -450,
                     "y": 30,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "大坪",
                             "Daping"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 90,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq1",
+                                    "#E4002B",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq2",
+                                    "#007033",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -143,8 +223,8 @@
                     "zIndex": 0,
                     "x": -385,
                     "y": -20,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "佛图关",
                             "Fotuguan"
@@ -165,15 +245,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -345,
-                    "y": -20,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "x": -295,
+                    "y": -55,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "李子坝",
                             "Liziba"
                         ],
-                        "nameOffsetX": "middle",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "top",
                         "color": [
                             "chongqing",
@@ -191,15 +271,35 @@
                     "zIndex": 0,
                     "x": -250,
                     "y": -100,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "牛角沱",
                             "Niujiaotuo"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 90,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq2",
+                                    "#007033",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq3",
+                                    "#003DA5",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -210,15 +310,35 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": -120,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "曾家岩",
                             "Zengjiayan"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 90,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq2",
+                                    "#007033",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -229,8 +349,8 @@
                     "zIndex": 0,
                     "x": -70,
                     "y": -120,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "大溪沟",
                             "Daxigou"
@@ -253,8 +373,8 @@
                     "zIndex": 0,
                     "x": -30,
                     "y": -120,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "黄花园",
                             "Huanghuayuan"
@@ -277,8 +397,8 @@
                     "zIndex": 0,
                     "x": 0,
                     "y": -70,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "临江门",
                             "Linjiangmen"
@@ -301,8 +421,8 @@
                     "zIndex": 0,
                     "x": -450,
                     "y": 75,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "袁家岗",
                             "Yuanjiagang"
@@ -325,15 +445,35 @@
                     "zIndex": 0,
                     "x": -450,
                     "y": 140,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "谢家湾",
                             "Xiejiawan"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq2",
+                                    "#007033",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "loop",
+                                    "#f2a900",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -344,8 +484,8 @@
                     "zIndex": 0,
                     "x": -220,
                     "y": 85,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "铜元局",
                             "Tongyuanju"
@@ -368,8 +508,8 @@
                     "zIndex": 0,
                     "x": -180,
                     "y": 85,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "工贸",
                             "Gongmao"
@@ -392,15 +532,35 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": 140,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "四公里",
                             "Sigongli"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq3",
+                                    "#003DA5",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "loop",
+                                    "#f2a900",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -411,8 +571,8 @@
                     "zIndex": 0,
                     "x": -300,
                     "y": 140,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "海峡路",
                             "Haixialu"
@@ -435,8 +595,8 @@
                     "zIndex": 0,
                     "x": 100,
                     "y": 125,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "罗家坝",
                             "Luojiaba"
@@ -459,8 +619,8 @@
                     "zIndex": 0,
                     "x": 140,
                     "y": 85,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "海棠溪",
                             "Haitangxi"
@@ -483,8 +643,8 @@
                     "zIndex": 0,
                     "x": 180,
                     "y": 45,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "上浩",
                             "Shanghao"
@@ -507,15 +667,35 @@
                     "zIndex": 0,
                     "x": 230,
                     "y": -25,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "上新街",
                             "Shangxinjie"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq6",
+                                    "#F67599",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "loop",
+                                    "#f2a900",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -526,8 +706,8 @@
                     "zIndex": 0,
                     "x": 32.5,
                     "y": -180,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "大剧院",
                             "Grand Theatre"
@@ -550,15 +730,35 @@
                     "zIndex": 0,
                     "x": 30,
                     "y": -230,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "江北城",
                             "Jiangbeicheng"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq9",
+                                    "#861f41",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq6",
+                                    "#F67599",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -569,15 +769,43 @@
                     "zIndex": 0,
                     "x": 30,
                     "y": -267.5,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "五里店",
                             "Wulidian"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq9",
+                                    "#861f41",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq6",
+                                    "#F67599",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "loop",
+                                    "#f2a900",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -588,8 +816,8 @@
                     "zIndex": 0,
                     "x": -50,
                     "y": -200,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "刘家台",
                             "Liujiatai"
@@ -612,15 +840,35 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": -200,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "鲤鱼池",
                             "Liyuchi"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq9",
+                                    "#861f41",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -629,10 +877,10 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -220,
-                    "y": -180,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "x": -245,
+                    "y": -175,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "华新街",
                             "Huaxinjie"
@@ -655,15 +903,35 @@
                     "zIndex": 0,
                     "x": -220,
                     "y": -200,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "观音桥",
                             "Guanyinqiao"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": true
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq3",
+                                    "#003DA5",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq9",
+                                    "#861f41",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -674,8 +942,8 @@
                     "zIndex": 0,
                     "x": 230,
                     "y": -100,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "仁济",
                             "Renji"
@@ -698,8 +966,8 @@
                     "zIndex": 0,
                     "x": 230,
                     "y": -150,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "涂山",
                             "Tushan"
@@ -722,8 +990,8 @@
                     "zIndex": 0,
                     "x": 230,
                     "y": -195,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "弹子石",
                             "Danzishi"
@@ -746,15 +1014,35 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": -265,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "红土地",
                             "Hongtudi"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq6",
+                                    "#F67599",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -765,8 +1053,8 @@
                     "zIndex": 0,
                     "x": -35,
                     "y": -320,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "渝鲁",
                             "Yulu"
@@ -789,15 +1077,35 @@
                     "zIndex": 0,
                     "x": -220,
                     "y": -265,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "红旗河沟",
                             "Hongqihegou"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq3",
+                                    "#003DA5",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq6",
+                                    "#F67599",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -808,14 +1116,14 @@
                     "zIndex": 0,
                     "x": -175,
                     "y": -265,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "黄泥塝",
                             "Huangnibang"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
+                        "nameOffsetY": "bottom",
                         "color": [
                             "chongqing",
                             "cq6",
@@ -832,8 +1140,8 @@
                     "zIndex": 0,
                     "x": -220,
                     "y": -285,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "嘉州路",
                             "Jiazhoulu"
@@ -856,8 +1164,8 @@
                     "zIndex": 0,
                     "x": -205,
                     "y": -315,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "郑家院子",
                             "Zhengjiayuanzi"
@@ -880,8 +1188,8 @@
                     "zIndex": 0,
                     "x": -170,
                     "y": -315,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "唐家院子",
                             "Tangjiayuanzi"
@@ -904,8 +1212,8 @@
                     "zIndex": 0,
                     "x": -135,
                     "y": -315,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "狮子坪",
                             "Shiziping"
@@ -926,17 +1234,45 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -112.5,
+                    "x": -110,
                     "y": -360,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "重庆北站南广场",
                             "Chongqing North Station South Square"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq3",
+                                    "#003DA5",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "loop",
+                                    "#f2a900",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -947,8 +1283,8 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": -300,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "龙头寺公园",
                             "Longtousi Park"
@@ -969,17 +1305,29 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -106.5,
+                    "x": -105,
                     "y": -400,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "重庆北站北广场",
                             "Chongqing North Station North Square"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -990,15 +1338,35 @@
                     "zIndex": 0,
                     "x": -235,
                     "y": -360,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "民安大道",
                             "Min'an Avenue"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "loop",
+                                    "#f2a900",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq4",
+                                    "#DC8633",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1009,8 +1377,8 @@
                     "zIndex": 0,
                     "x": -360,
                     "y": -360,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "洪湖东路",
                             "Honghudonglu"
@@ -1033,8 +1401,8 @@
                     "zIndex": 0,
                     "x": -495,
                     "y": -360,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "动步公园",
                             "Dongbu Park"
@@ -1057,8 +1425,8 @@
                     "zIndex": 0,
                     "x": -465,
                     "y": -265,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "花卉园",
                             "Huahuiyuan"
@@ -1081,15 +1449,35 @@
                     "zIndex": 0,
                     "x": -580,
                     "y": -305,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "大龙山",
                             "Dalongshan"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
-                        "outOfStation": false
+                        "rotate": 180,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq5",
+                                    "#00A3E0",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq6",
+                                    "#F67599",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1100,15 +1488,43 @@
                     "zIndex": 0,
                     "x": -580,
                     "y": -360,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "冉家坝",
                             "Ranjiaba"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq5",
+                                    "#00A3E0",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq6",
+                                    "#F67599",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "loop",
+                                    "#f2a900",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1119,8 +1535,8 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": -60,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "大礼堂",
                             "Chongqing People's Auditorium"
@@ -1143,15 +1559,35 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": -10,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "七星岗",
                             "Qixinggang"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 270,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq1",
+                                    "#E4002B",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1162,8 +1598,8 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": 60,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "后堡",
                             "Houbao"
@@ -1186,15 +1622,35 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": 90,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "南坪",
                             "Nanping"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq3",
+                                    "#003DA5",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1205,15 +1661,35 @@
                     "zIndex": 0,
                     "x": -200,
                     "y": 140,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "南湖",
                             "Nanhu"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "loop",
+                                    "#f2a900",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1224,8 +1700,8 @@
                     "zIndex": 0,
                     "x": -577.5,
                     "y": -230,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "大石坝",
                             "Dashiba"
@@ -1247,16 +1723,36 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -577.5,
-                    "y": -115,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "y": -117.5,
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "红岩村",
                             "Hongyancun"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq5",
+                                    "#00A3E0",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq9",
+                                    "#861f41",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1267,8 +1763,8 @@
                     "zIndex": 0,
                     "x": -520,
                     "y": 30,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "石油路",
                             "Shiyoulu"
@@ -1290,16 +1786,36 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -475,
-                    "y": -117.5,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "y": -115,
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "富华路",
                             "Fuhualu"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 135,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq9",
+                                    "#861f41",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq18",
+                                    "#2ad2c9",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1309,16 +1825,44 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -575,
-                    "y": 32.5,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "y": 35,
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "歇台子",
                             "Xietaizi"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq1",
+                                    "#E4002B",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq18",
+                                    "#2ad2c9",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq5",
+                                    "#00A3E0",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1328,16 +1872,36 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -670,
-                    "y": 32.5,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "y": 35,
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "石桥铺",
                             "Shiqiaopu"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 90,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq1",
+                                    "#E4002B",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq5",
+                                    "#00A3E0",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1348,8 +1912,8 @@
                     "zIndex": 0,
                     "x": -345,
                     "y": -130,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "化龙桥",
                             "Hualongqiao"
@@ -1372,8 +1936,8 @@
                     "zIndex": 0,
                     "x": -345,
                     "y": -175,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "李家坪",
                             "Lijiaping"
@@ -1396,8 +1960,8 @@
                     "zIndex": 0,
                     "x": -290,
                     "y": -200,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "蚂蝗梁",
                             "Mahuangliang"
@@ -1420,8 +1984,8 @@
                     "zIndex": 0,
                     "x": -715,
                     "y": -10,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "高庙村",
                             "Gaomiaocun"
@@ -1444,8 +2008,8 @@
                     "zIndex": 0,
                     "x": -775,
                     "y": -70,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "马家岩",
                             "Majiayan"
@@ -1468,15 +2032,35 @@
                     "zIndex": 0,
                     "x": -825,
                     "y": -120,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "小龙坎",
                             "Xiaolongkan"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 90,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq1",
+                                    "#E4002B",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq9",
+                                    "#861f41",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1487,15 +2071,43 @@
                     "zIndex": 0,
                     "x": -950,
                     "y": -120,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "沙坪坝",
                             "Dashakeng"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq1",
+                                    "#E4002B",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "loop",
+                                    "#f2a900",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq9",
+                                    "#861f41",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1506,8 +2118,8 @@
                     "zIndex": 0,
                     "x": -710,
                     "y": -335,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "体育公园",
                             "Sports Park"
@@ -1530,8 +2142,8 @@
                     "zIndex": 0,
                     "x": -710,
                     "y": -300,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "南桥寺",
                             "Nanqiaosi"
@@ -1554,8 +2166,8 @@
                     "zIndex": 0,
                     "x": -710,
                     "y": -255,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "玉带山",
                             "Yudaishan"
@@ -1578,8 +2190,8 @@
                     "zIndex": 0,
                     "x": -935,
                     "y": -165,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "重庆大学",
                             "Chongqing University"
@@ -1600,10 +2212,10 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -720,
+                    "x": -710,
                     "y": -117.5,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "土湾",
                             "Tuwan"
@@ -1626,8 +2238,8 @@
                     "zIndex": 0,
                     "x": -745,
                     "y": 105,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "石新路",
                             "Shixinlu"
@@ -1650,8 +2262,8 @@
                     "zIndex": 0,
                     "x": -790,
                     "y": 150,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "巴山",
                             "Bashan"
@@ -1674,8 +2286,8 @@
                     "zIndex": 0,
                     "x": -845,
                     "y": 205,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "凤西路",
                             "Fengxilu"
@@ -1698,8 +2310,8 @@
                     "zIndex": 0,
                     "x": -950,
                     "y": -70,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "天星桥",
                             "Tianxingqiao"
@@ -1722,8 +2334,8 @@
                     "zIndex": 0,
                     "x": -950,
                     "y": 10,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "重庆图书馆",
                             "Chongqing Library"
@@ -1746,8 +2358,8 @@
                     "zIndex": 0,
                     "x": -950,
                     "y": 90,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "凤鸣山",
                             "Fengmingshan"
@@ -1770,8 +2382,8 @@
                     "zIndex": 0,
                     "x": -950,
                     "y": 170,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "上桥",
                             "Shangqiao"
@@ -1794,15 +2406,35 @@
                     "zIndex": 0,
                     "x": -947.5,
                     "y": 250,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "重庆西站",
                             "Chongqing West Station"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 180,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq5",
+                                    "#00A3E0",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "loop",
+                                    "#f2a900",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1813,8 +2445,8 @@
                     "zIndex": 0,
                     "x": -810,
                     "y": 330,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "华龙",
                             "Hualong"
@@ -1837,8 +2469,8 @@
                     "zIndex": 0,
                     "x": -720,
                     "y": 280,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "二郎",
                             "Erlang"
@@ -1861,8 +2493,8 @@
                     "zIndex": 0,
                     "x": -665,
                     "y": 225,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "彩云湖",
                             "Caiyunhu"
@@ -1885,8 +2517,8 @@
                     "zIndex": 0,
                     "x": -610,
                     "y": 170,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "陈家坪",
                             "Chenjiaping"
@@ -1909,15 +2541,35 @@
                     "zIndex": 0,
                     "x": -540,
                     "y": 140,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "奥体中心",
                             "Olympic Sports Center"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq18",
+                                    "#2ad2c9",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "loop",
+                                    "#f2a900",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -1928,8 +2580,8 @@
                     "zIndex": 0,
                     "x": -1040,
                     "y": -80,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "天梨路",
                             "Tianlilu"
@@ -1952,8 +2604,8 @@
                     "zIndex": 0,
                     "x": -1040,
                     "y": -30,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "高滩岩",
                             "Gaotanyan"
@@ -1976,8 +2628,8 @@
                     "zIndex": 0,
                     "x": -1040,
                     "y": 20,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "新桥",
                             "Xinqiao"
@@ -2000,8 +2652,8 @@
                     "zIndex": 0,
                     "x": -1040,
                     "y": -180,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "杨公桥",
                             "Yanggongqiao"
@@ -2024,8 +2676,8 @@
                     "zIndex": 0,
                     "x": -1040,
                     "y": -230,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "烈士墓",
                             "Lieshimu"
@@ -2048,8 +2700,8 @@
                     "zIndex": 0,
                     "x": -1040,
                     "y": -280,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "磁器口",
                             "Ciqikou"
@@ -2072,8 +2724,8 @@
                     "zIndex": 0,
                     "x": -1040,
                     "y": -330,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "石井坡",
                             "Shijingpo"
@@ -2096,8 +2748,8 @@
                     "zIndex": 0,
                     "x": -1040,
                     "y": -380,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "双碑",
                             "Shuangbei"
@@ -2120,8 +2772,8 @@
                     "zIndex": 0,
                     "x": -1090,
                     "y": -430,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "赖家桥",
                             "Laijiaqiao"
@@ -2144,8 +2796,8 @@
                     "zIndex": 0,
                     "x": -1160,
                     "y": -430,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "微电园",
                             "Weidianyuan"
@@ -2168,8 +2820,8 @@
                     "zIndex": 0,
                     "x": -1230,
                     "y": -430,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "陈家桥",
                             "Chenjiaqiao"
@@ -2192,8 +2844,8 @@
                     "zIndex": 0,
                     "x": -1300,
                     "y": -430,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "大学城",
                             "Daxuecheng"
@@ -2216,8 +2868,8 @@
                     "zIndex": 0,
                     "x": -1370,
                     "y": -430,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "尖顶坡",
                             "Jiandingpo"
@@ -2240,8 +2892,8 @@
                     "zIndex": 0,
                     "x": -1440,
                     "y": -430,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "璧山",
                             "Bishan"
@@ -2262,10 +2914,10 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -115,
+                    "x": -112.5,
                     "y": -455,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "龙头寺",
                             "Longtousi"
@@ -2288,8 +2940,8 @@
                     "zIndex": 0,
                     "x": 27.5,
                     "y": -350,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "溉澜溪",
                             "Gailanxi"
@@ -2312,15 +2964,35 @@
                     "zIndex": 0,
                     "x": 65,
                     "y": -450,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "头塘",
                             "Toutang"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 45,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq4",
+                                    "#DC8633",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq9",
+                                    "#861f41",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -2331,15 +3003,35 @@
                     "zIndex": 0,
                     "x": 100,
                     "y": -485,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "保税港",
                             "Baoshuigang"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 45,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq4",
+                                    "#DC8633",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq9",
+                                    "#861f41",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -2350,8 +3042,8 @@
                     "zIndex": 0,
                     "x": 132.5,
                     "y": -515,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "邮轮母港",
                             "Cruise Port Station"
@@ -2374,8 +3066,8 @@
                     "zIndex": 0,
                     "x": 200,
                     "y": -560,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "何家梁",
                             "Hejialiang"
@@ -2398,8 +3090,8 @@
                     "zIndex": 0,
                     "x": 200,
                     "y": -600,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "石盘河",
                             "Shipanhe"
@@ -2422,15 +3114,35 @@
                     "zIndex": 0,
                     "x": 200,
                     "y": -640,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "上湾路",
                             "Shangwanlu"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq9",
+                                    "#861f41",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -2441,8 +3153,8 @@
                     "zIndex": 0,
                     "x": -60,
                     "y": -550,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "民心佳园",
                             "Minxinjiayuan"
@@ -2465,8 +3177,8 @@
                     "zIndex": 0,
                     "x": 10,
                     "y": -620,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "三亚湾",
                             "Sanyawan"
@@ -2489,8 +3201,8 @@
                     "zIndex": 0,
                     "x": 170,
                     "y": -670,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "青岗坪",
                             "Qinggangping"
@@ -2513,8 +3225,8 @@
                     "zIndex": 0,
                     "x": 145,
                     "y": -695,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "宝圣湖",
                             "Baoshenghu"
@@ -2537,8 +3249,8 @@
                     "zIndex": 0,
                     "x": 90,
                     "y": -770,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "兴科大道",
                             "Xingke Avenue"
@@ -2559,10 +3271,10 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -115,
+                    "x": -112.5,
                     "y": -500,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "童家院子",
                             "Tongjiayuanzi"
@@ -2583,10 +3295,10 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -115,
+                    "x": -112.5,
                     "y": -540,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "金渝",
                             "Jinyu"
@@ -2607,10 +3319,10 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -115,
+                    "x": -112.5,
                     "y": -580,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "金童路",
                             "Jintonglu"
@@ -2631,10 +3343,10 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -115,
+                    "x": -112.5,
                     "y": -620,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "鸳鸯",
                             "Yuanyang"
@@ -2655,10 +3367,10 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -115,
+                    "x": -112.5,
                     "y": -655,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "园博园",
                             "The EXPO Garden"
@@ -2679,10 +3391,10 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -115,
+                    "x": -112.5,
                     "y": -690,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "翠云",
                             "Cuiyun"
@@ -2705,8 +3417,8 @@
                     "zIndex": 0,
                     "x": 0,
                     "y": -710,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "长福路",
                             "Changfulu"
@@ -2727,10 +3439,10 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 210,
+                    "x": 215,
                     "y": -710,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "回兴",
                             "Huixing"
@@ -2753,8 +3465,8 @@
                     "zIndex": 0,
                     "x": 290,
                     "y": -710,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "双龙",
                             "Shuanglong"
@@ -2777,15 +3489,35 @@
                     "zIndex": 0,
                     "x": 360,
                     "y": -740,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "碧津",
                             "Bijin"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
-                        "outOfStation": false
+                        "rotate": 90,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq3",
+                                    "#003DA5",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq3",
+                                    "#003DA5",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -2796,15 +3528,35 @@
                     "zIndex": 0,
                     "x": 435,
                     "y": -770,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "江北机场T2航站楼",
                             "Terminal 2 of Jiangbei Airport"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq3",
+                                    "#003DA5",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -2815,8 +3567,8 @@
                     "zIndex": 0,
                     "x": 315,
                     "y": -640,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "环山公园",
                             "Huanshan Park"
@@ -2839,8 +3591,8 @@
                     "zIndex": 0,
                     "x": 390,
                     "y": -640,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "长河",
                             "Changhe"
@@ -2863,8 +3615,8 @@
                     "zIndex": 0,
                     "x": 435,
                     "y": -710,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "江北机场T3航站楼",
                             "Terminal 3 of Jiangbei Airport"
@@ -2913,8 +3665,8 @@
                     "zIndex": 0,
                     "x": 360,
                     "y": -800,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "双凤桥",
                             "Shuangfengqiao"
@@ -2937,8 +3689,8 @@
                     "zIndex": 0,
                     "x": 360,
                     "y": -850,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "空港广场",
                             "Konggang Square"
@@ -2961,8 +3713,8 @@
                     "zIndex": 0,
                     "x": 360,
                     "y": -895,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "高堡湖",
                             "Gaobaohu"
@@ -2985,8 +3737,8 @@
                     "zIndex": 0,
                     "x": 360,
                     "y": -945,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "观月路",
                             "Guanyuelu"
@@ -3009,8 +3761,8 @@
                     "zIndex": 0,
                     "x": 360,
                     "y": -990,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "莲花",
                             "Lianhua"
@@ -3033,8 +3785,8 @@
                     "zIndex": 0,
                     "x": 360,
                     "y": -1035,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "举人坝",
                             "Jurenba"
@@ -3055,8 +3807,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -930,
-                    "y": -102.5,
+                    "x": -1025,
+                    "y": -150,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -3068,8 +3820,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -970,
-                    "y": 245,
+                    "x": -1045,
+                    "y": 250,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -3094,8 +3846,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -50,
-                    "y": -437.5,
+                    "x": -105,
+                    "y": -445,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -3109,8 +3861,8 @@
                     "zIndex": 0,
                     "x": 280,
                     "y": -920,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "渝北广场",
                             "Yubei Square"
@@ -3133,8 +3885,8 @@
                     "zIndex": 0,
                     "x": 200,
                     "y": -920,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "鹿山",
                             "Lushan"
@@ -3157,15 +3909,35 @@
                     "zIndex": 0,
                     "x": 90,
                     "y": -920,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "中央公园东",
                             "Central Park East"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq9",
+                                    "#861f41",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -3176,8 +3948,8 @@
                     "zIndex": 0,
                     "x": 90,
                     "y": -870,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "兰桂大道",
                             "Langui Avenue"
@@ -3200,8 +3972,8 @@
                     "zIndex": 0,
                     "x": 90,
                     "y": -820,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "春华大道",
                             "Chunhua Avenue"
@@ -3224,8 +3996,8 @@
                     "zIndex": 0,
                     "x": -520,
                     "y": -470,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "幸福广场",
                             "Xingfu Square"
@@ -3248,8 +4020,8 @@
                     "zIndex": 0,
                     "x": -435,
                     "y": -470,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "人和",
                             "Renhe"
@@ -3272,8 +4044,8 @@
                     "zIndex": 0,
                     "x": -350,
                     "y": -490,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "和睦路",
                             "Hemulu"
@@ -3296,8 +4068,8 @@
                     "zIndex": 0,
                     "x": -305,
                     "y": -535,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "重光",
                             "Chongguang"
@@ -3320,8 +4092,8 @@
                     "zIndex": 0,
                     "x": -260,
                     "y": -580,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "湖霞街",
                             "Huxiajie"
@@ -3344,8 +4116,8 @@
                     "zIndex": 0,
                     "x": -220,
                     "y": -670,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "丹鹤",
                             "Danhe"
@@ -3368,8 +4140,8 @@
                     "zIndex": 0,
                     "x": -220,
                     "y": -720,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "园博中心",
                             "The EXPO Garden Center"
@@ -3392,8 +4164,8 @@
                     "zIndex": 0,
                     "x": -220,
                     "y": -770,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "玉河沟",
                             "Yuhegou"
@@ -3416,8 +4188,8 @@
                     "zIndex": 0,
                     "x": -220,
                     "y": -820,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "甘悦大道",
                             "Ganyue Avenue"
@@ -3440,8 +4212,8 @@
                     "zIndex": 0,
                     "x": -220,
                     "y": -870,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "鲁家沟",
                             "Lujiagou"
@@ -3464,15 +4236,35 @@
                     "zIndex": 0,
                     "x": -220,
                     "y": -920,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "中央公园西",
                             "Central Park West"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq5",
+                                    "#00A3E0",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -3483,8 +4275,8 @@
                     "zIndex": 0,
                     "x": -70,
                     "y": -920,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "中央公园",
                             "Central Park"
@@ -3507,8 +4299,8 @@
                     "zIndex": 0,
                     "x": -220,
                     "y": -970,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "椿萱大道",
                             "Chunxuan Avenue"
@@ -3531,8 +4323,8 @@
                     "zIndex": 0,
                     "x": -220,
                     "y": -1030,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "悦港大道",
                             "Yuegang Avenue"
@@ -3555,8 +4347,8 @@
                     "zIndex": 0,
                     "x": -220,
                     "y": -1090,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "悦港北路",
                             "Yuegangbeilu"
@@ -3579,8 +4371,8 @@
                     "zIndex": 0,
                     "x": 90,
                     "y": -970,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "从岩寺",
                             "Congyansi"
@@ -3602,9 +4394,9 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 90,
-                    "y": -1030,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "y": -1025,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "花石沟",
                             "Huashigou"
@@ -3627,8 +4419,8 @@
                     "zIndex": 0,
                     "x": -650,
                     "y": -470,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "光电园",
                             "Guangdianyuan"
@@ -3651,8 +4443,8 @@
                     "zIndex": 0,
                     "x": -745,
                     "y": -470,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "大竹林",
                             "Dazhulin"
@@ -3675,8 +4467,8 @@
                     "zIndex": 0,
                     "x": -840,
                     "y": -520,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "康庄",
                             "Kangzhuang"
@@ -3699,8 +4491,8 @@
                     "zIndex": 0,
                     "x": -840,
                     "y": -570,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "九曲河",
                             "Jiuquhe"
@@ -3723,15 +4515,35 @@
                     "zIndex": 0,
                     "x": -840,
                     "y": -620,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "礼嘉",
                             "Lijia"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq6",
+                                    "#F67599",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq6",
+                                    "#F67599",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -3742,8 +4554,8 @@
                     "zIndex": 0,
                     "x": -620,
                     "y": -620,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "欢乐谷",
                             "Happy Valley"
@@ -3766,8 +4578,8 @@
                     "zIndex": 0,
                     "x": -402.5,
                     "y": -670,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "黄茅坪",
                             "Huangmaoping"
@@ -3790,8 +4602,8 @@
                     "zIndex": 0,
                     "x": -402.5,
                     "y": -870,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "国博中心",
                             "International Expo Center"
@@ -3814,8 +4626,8 @@
                     "zIndex": 0,
                     "x": -402.5,
                     "y": -770,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "高义口",
                             "Gaoyikou"
@@ -3838,8 +4650,8 @@
                     "zIndex": 0,
                     "x": -402.5,
                     "y": -1090,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "清溪河",
                             "Qingxihe"
@@ -3862,8 +4674,8 @@
                     "zIndex": 0,
                     "x": -402.5,
                     "y": -1150,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "刘家院子",
                             "Liujiayuanzi"
@@ -3886,8 +4698,8 @@
                     "zIndex": 0,
                     "x": -402.5,
                     "y": -1210,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "思源",
                             "Siyuan"
@@ -3910,8 +4722,8 @@
                     "zIndex": 0,
                     "x": -402.5,
                     "y": -1270,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "复兴",
                             "Fuxing"
@@ -3934,8 +4746,8 @@
                     "zIndex": 0,
                     "x": -402.5,
                     "y": -1330,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "红岩坪",
                             "Hongyanping"
@@ -3958,8 +4770,8 @@
                     "zIndex": 0,
                     "x": -402.5,
                     "y": -1390,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "沙河坝",
                             "Shaheba"
@@ -3982,15 +4794,35 @@
                     "zIndex": 0,
                     "x": -400,
                     "y": -965,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "悦来",
                             "Yuelai"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
-                        "outOfStation": false
+                        "rotate": 180,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq6",
+                                    "#F67599",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -4001,15 +4833,35 @@
                     "zIndex": 0,
                     "x": -400,
                     "y": -1035,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "王家庄",
                             "Wangjiazhuang"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq6",
+                                    "#F67599",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq10",
+                                    "#5f259f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -4020,8 +4872,8 @@
                     "zIndex": 0,
                     "x": -840,
                     "y": -670,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "金山寺",
                             "Jinshansi"
@@ -4044,8 +4896,8 @@
                     "zIndex": 0,
                     "x": -870,
                     "y": -730,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "曹家湾",
                             "Caojiawan"
@@ -4068,8 +4920,8 @@
                     "zIndex": 0,
                     "x": -920,
                     "y": -780,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "蔡家",
                             "Caijia"
@@ -4092,8 +4944,8 @@
                     "zIndex": 0,
                     "x": -970,
                     "y": -830,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "向家岗",
                             "Xiangjiagang"
@@ -4116,8 +4968,8 @@
                     "zIndex": 0,
                     "x": -1020,
                     "y": -880,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "龙凤溪",
                             "Longfengxi"
@@ -4140,8 +4992,8 @@
                     "zIndex": 0,
                     "x": -1050,
                     "y": -940,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "状元碑",
                             "Zhuangyuanbei"
@@ -4164,8 +5016,8 @@
                     "zIndex": 0,
                     "x": -1050,
                     "y": -990,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "西南大学",
                             "Southwest University"
@@ -4188,8 +5040,8 @@
                     "zIndex": 0,
                     "x": -1050,
                     "y": -1040,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "北碚",
                             "Beibei"
@@ -4212,8 +5064,8 @@
                     "zIndex": 0,
                     "x": 340,
                     "y": 20,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "刘家坪",
                             "Liujiaping"
@@ -4236,8 +5088,8 @@
                     "zIndex": 0,
                     "x": 340,
                     "y": 65,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "长生桥",
                             "Changshengqiao"
@@ -4260,8 +5112,8 @@
                     "zIndex": 0,
                     "x": 340,
                     "y": 110,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "邱家湾",
                             "Qiujiawan"
@@ -4284,8 +5136,8 @@
                     "zIndex": 0,
                     "x": 340,
                     "y": 160,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "茶园",
                             "Chayuan"
@@ -4308,15 +5160,35 @@
                     "zIndex": 0,
                     "x": -450,
                     "y": 230,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "杨家坪",
                             "Yangjiaping"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq2",
+                                    "#007033",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq18",
+                                    "#2ad2c9",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -4327,8 +5199,8 @@
                     "zIndex": 0,
                     "x": -500,
                     "y": 280,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "动物园",
                             "Zoo"
@@ -4351,8 +5223,8 @@
                     "zIndex": 0,
                     "x": -560,
                     "y": 280,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "大堰村",
                             "Dayancun"
@@ -4375,8 +5247,8 @@
                     "zIndex": 0,
                     "x": -620,
                     "y": 280,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "马王场",
                             "Mawangchang"
@@ -4399,8 +5271,8 @@
                     "zIndex": 0,
                     "x": -670,
                     "y": 330,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "平安",
                             "Ping'an"
@@ -4423,8 +5295,8 @@
                     "zIndex": 0,
                     "x": -670,
                     "y": 380,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "大渡口",
                             "Dadukou"
@@ -4447,8 +5319,8 @@
                     "zIndex": 0,
                     "x": -670,
                     "y": 430,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "新山村",
                             "Xinshancun"
@@ -4471,8 +5343,8 @@
                     "zIndex": 0,
                     "x": -670,
                     "y": 480,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "天堂堡",
                             "Tiantangbao"
@@ -4495,8 +5367,8 @@
                     "zIndex": 0,
                     "x": -670,
                     "y": 530,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "建桥",
                             "Jianqiao"
@@ -4519,8 +5391,8 @@
                     "zIndex": 0,
                     "x": -670,
                     "y": 580,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "金家湾",
                             "Jinjiawan"
@@ -4543,8 +5415,8 @@
                     "zIndex": 0,
                     "x": -670,
                     "y": 630,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "刘家坝",
                             "Liujiaba"
@@ -4567,15 +5439,35 @@
                     "zIndex": 0,
                     "x": -670,
                     "y": 685,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "白居寺",
                             "Baijusi"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq2",
+                                    "#007033",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq18",
+                                    "#2ad2c9",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -4586,8 +5478,8 @@
                     "zIndex": 0,
                     "x": -630,
                     "y": 765,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "大江",
                             "Dajiang"
@@ -4610,15 +5502,35 @@
                     "zIndex": 0,
                     "x": -505,
                     "y": 775,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "鱼洞",
                             "Yudong"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq2",
+                                    "#007033",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq3",
+                                    "#003DA5",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -4629,8 +5541,8 @@
                     "zIndex": 0,
                     "x": -945,
                     "y": 380,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "华岩寺",
                             "Huayan Temple"
@@ -4653,8 +5565,8 @@
                     "zIndex": 0,
                     "x": -945,
                     "y": 430,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "华成路",
                             "Huachenglu"
@@ -4677,8 +5589,8 @@
                     "zIndex": 0,
                     "x": -945,
                     "y": 480,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "半山",
                             "Banshan"
@@ -4701,8 +5613,8 @@
                     "zIndex": 0,
                     "x": -945,
                     "y": 530,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "中梁山",
                             "Zhongliangshan"
@@ -4725,8 +5637,8 @@
                     "zIndex": 0,
                     "x": -945,
                     "y": 580,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "金建路",
                             "Jinjianlu"
@@ -4749,8 +5661,8 @@
                     "zIndex": 0,
                     "x": -945,
                     "y": 630,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "华岩中心",
                             "Huayan Center"
@@ -4773,8 +5685,8 @@
                     "zIndex": 0,
                     "x": -1100,
                     "y": 685,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "石林寺",
                             "Shilinsi"
@@ -4797,15 +5709,43 @@
                     "zIndex": 0,
                     "x": -945,
                     "y": 685,
-                    "type": "bjsubway-int",
-                    "bjsubway-int": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "跳磴",
                             "Tiaodeng"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "top",
-                        "outOfStation": false
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "chongqing",
+                                    "cq5",
+                                    "#00A3E0",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "cq18",
+                                    "#2ad2c9",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "chongqing",
+                                    "jiangtiao",
+                                    "#0077c8",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
                     }
                 }
             },
@@ -4816,8 +5756,8 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": 230,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "重庆工商大学",
                             "Chongqing Technology and Business University"
@@ -4840,8 +5780,8 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": 280,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "六公里",
                             "Liugongli"
@@ -4864,8 +5804,8 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": 330,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "重庆交通大学",
                             "Chongqing Jiaotong University"
@@ -4888,8 +5828,8 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": 430,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "麒龙",
                             "Qilong"
@@ -4912,8 +5852,8 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": 380,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "八公里",
                             "Bagongli"
@@ -4936,8 +5876,8 @@
                     "zIndex": 0,
                     "x": -110,
                     "y": 480,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "九公里",
                             "Jiugongli"
@@ -4960,8 +5900,8 @@
                     "zIndex": 0,
                     "x": -140,
                     "y": 530,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "岔路口",
                             "Chalukou"
@@ -4984,8 +5924,8 @@
                     "zIndex": 0,
                     "x": -190,
                     "y": 580,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "花溪",
                             "Huaxi"
@@ -5008,8 +5948,8 @@
                     "zIndex": 0,
                     "x": -240,
                     "y": 630,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "大山村",
                             "Dashancun"
@@ -5032,8 +5972,8 @@
                     "zIndex": 0,
                     "x": -300,
                     "y": 690,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "学堂湾",
                             "Xuetangwan"
@@ -5056,8 +5996,8 @@
                     "zIndex": 0,
                     "x": -360,
                     "y": 750,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "鱼胡路",
                             "Yuhulu"
@@ -5080,8 +6020,8 @@
                     "zIndex": 0,
                     "x": -420,
                     "y": 775,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "金竹",
                             "Jinzhu"
@@ -5104,8 +6044,8 @@
                     "zIndex": 0,
                     "x": 220,
                     "y": -500,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "寸滩",
                             "Cuntan"
@@ -5128,8 +6068,8 @@
                     "zIndex": 0,
                     "x": 300,
                     "y": -500,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "黑石子",
                             "Heishizi"
@@ -5152,8 +6092,8 @@
                     "zIndex": 0,
                     "x": 400,
                     "y": -480,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "港城",
                             "Gangcheng"
@@ -5176,8 +6116,8 @@
                     "zIndex": 0,
                     "x": 450,
                     "y": -430,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "太平冲",
                             "Taipingchong"
@@ -5200,8 +6140,8 @@
                     "zIndex": 0,
                     "x": 550,
                     "y": -410,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "唐家沱",
                             "Tangjiatuo"
@@ -5224,8 +6164,8 @@
                     "zIndex": 0,
                     "x": 630,
                     "y": -410,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "铁山坪",
                             "Tieshanping"
@@ -5248,8 +6188,8 @@
                     "zIndex": 0,
                     "x": 710,
                     "y": -410,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "鹿栖",
                             "Luxi"
@@ -5272,8 +6212,8 @@
                     "zIndex": 0,
                     "x": 790,
                     "y": -410,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "果园物流枢纽",
                             "Guoyuan Logistics Hub"
@@ -5296,8 +6236,8 @@
                     "zIndex": 0,
                     "x": 880,
                     "y": -500,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "鱼嘴",
                             "Yuzui"
@@ -5320,8 +6260,8 @@
                     "zIndex": 0,
                     "x": 880,
                     "y": -550,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "雁坪",
                             "Yanping"
@@ -5344,8 +6284,8 @@
                     "zIndex": 0,
                     "x": 880,
                     "y": -600,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "石河清",
                             "Shiheqing"
@@ -5368,8 +6308,8 @@
                     "zIndex": 0,
                     "x": 880,
                     "y": -650,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "复盛",
                             "Fusheng"
@@ -5392,8 +6332,8 @@
                     "zIndex": 0,
                     "x": 880,
                     "y": -700,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "三板溪",
                             "Sanbanxi"
@@ -5416,8 +6356,8 @@
                     "zIndex": 0,
                     "x": 880,
                     "y": -750,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "龙驿大道",
                             "Longyi Avenue"
@@ -5440,8 +6380,8 @@
                     "zIndex": 0,
                     "x": 880,
                     "y": -800,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "龙兴",
                             "Longxing"
@@ -5464,8 +6404,8 @@
                     "zIndex": 0,
                     "x": 880,
                     "y": -850,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "高石塔",
                             "Gaoshita"
@@ -5488,8 +6428,8 @@
                     "zIndex": 0,
                     "x": 880,
                     "y": -900,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "普福",
                             "Pufu"
@@ -5512,8 +6452,8 @@
                     "zIndex": 0,
                     "x": 880,
                     "y": -950,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "桐梓林",
                             "Tongzilin"
@@ -5536,8 +6476,8 @@
                     "zIndex": 0,
                     "x": 880,
                     "y": -1000,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "石船",
                             "Shichuan"
@@ -5560,8 +6500,8 @@
                     "zIndex": 0,
                     "x": 880,
                     "y": -1050,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "黄岭",
                             "Huangling"
@@ -5584,8 +6524,8 @@
                     "zIndex": 0,
                     "x": -1220,
                     "y": 685,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "九龙园",
                             "Jiulongyuan"
@@ -5608,8 +6548,8 @@
                     "zIndex": 0,
                     "x": -1340,
                     "y": 685,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "双福",
                             "Shuangfu"
@@ -5632,8 +6572,8 @@
                     "zIndex": 0,
                     "x": -1460,
                     "y": 685,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "享堂",
                             "Xiangtang"
@@ -5656,8 +6596,8 @@
                     "zIndex": 0,
                     "x": -1550,
                     "y": 740,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "江津高铁",
                             "Jiangjin High-Speed Railway"
@@ -5680,8 +6620,8 @@
                     "zIndex": 0,
                     "x": -1550,
                     "y": 790,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "圣泉寺",
                             "Shengquansi"
@@ -5704,8 +6644,8 @@
                     "zIndex": 0,
                     "x": -1550,
                     "y": 860,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "几江",
                             "Jijiang"
@@ -5728,8 +6668,8 @@
                     "zIndex": 0,
                     "x": -1550,
                     "y": 910,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "鼎山",
                             "Dingshan"
@@ -6844,8 +7784,8 @@
                     "zIndex": 0,
                     "x": -577.5,
                     "y": -180,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "忠恕沱",
                             "Zhongshutuo"
@@ -6866,8 +7806,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -265,
-                    "y": -1095,
+                    "x": -220,
+                    "y": -1115,
                     "type": "text",
                     "text": {
                         "content": "●",
@@ -6893,8 +7833,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -265,
-                    "y": -1095,
+                    "x": -220,
+                    "y": -1115,
                     "type": "text",
                     "text": {
                         "content": "5",
@@ -7406,8 +8346,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 1,
-                    "x": 35,
-                    "y": -1035,
+                    "x": 90,
+                    "y": -1055,
                     "type": "text",
                     "text": {
                         "content": "9",
@@ -7433,8 +8373,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 35,
-                    "y": -1035,
+                    "x": 90,
+                    "y": -1055,
                     "type": "text",
                     "text": {
                         "content": "●",
@@ -7516,8 +8456,8 @@
                     "zIndex": 0,
                     "x": -160,
                     "y": 120,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "万寿路",
                             "Wanshoulu"
@@ -7540,8 +8480,8 @@
                     "zIndex": 0,
                     "x": -200,
                     "y": 180,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "兰花路",
                             "Lanhualu"
@@ -7616,8 +8556,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -260,
-                    "y": 180,
+                    "x": -200,
+                    "y": 205,
                     "type": "text",
                     "text": {
                         "content": "10",
@@ -7643,8 +8583,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": -2,
-                    "x": -260,
-                    "y": 180,
+                    "x": -200,
+                    "y": 205,
                     "type": "text",
                     "text": {
                         "content": "●",
@@ -7699,8 +8639,8 @@
                     "zIndex": 0,
                     "x": -945,
                     "y": 740,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "跳蹬南",
                             "Tiaodengnan"
@@ -7750,8 +8690,8 @@
                     "zIndex": 0,
                     "x": -735,
                     "y": 685,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "伏牛溪",
                             "Fuxiuxi"
@@ -7774,8 +8714,8 @@
                     "zIndex": 0,
                     "x": -845,
                     "y": 685,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "金鳌山",
                             "Jin'aoshan"
@@ -7798,8 +8738,8 @@
                     "zIndex": 0,
                     "x": -645,
                     "y": 685,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "茄子溪",
                             "Qiezixi"
@@ -7822,11 +8762,11 @@
                     "zIndex": 0,
                     "x": -540,
                     "y": 685,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
-                            "简家漕",
-                            "Jianjiacao"
+                            "巴滨路湿地公园",
+                            "Babinlu Wetland Park"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
@@ -7846,11 +8786,11 @@
                     "zIndex": 0,
                     "x": -485,
                     "y": 670,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
-                            "外河坪南",
-                            "Waihepingnan"
+                            "花溪工业园",
+                            "Huaxi Industrial Park"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
@@ -7870,11 +8810,11 @@
                     "zIndex": 0,
                     "x": -440,
                     "y": 625,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
-                            "外河坪北",
-                            "Waihepingbei"
+                            "重庆理工大学",
+                            "Chongqing University\\of Technology"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
@@ -7894,11 +8834,11 @@
                     "zIndex": 0,
                     "x": -390,
                     "y": 540,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
-                            "长江二桥",
-                            "Changjiangerqiao"
+                            "李家沱大桥",
+                            "Lijiatuo Daqiao"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
@@ -7918,8 +8858,8 @@
                     "zIndex": 0,
                     "x": -390,
                     "y": 405,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "电厂",
                             "Dianchang"
@@ -7942,8 +8882,8 @@
                     "zIndex": 0,
                     "x": -390,
                     "y": 360,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "四川美院",
                             "Sichuan Fine Arts Institute"
@@ -7966,8 +8906,8 @@
                     "zIndex": 0,
                     "x": -390,
                     "y": 315,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "黄桷坪",
                             "Huangjueping"
@@ -7990,8 +8930,8 @@
                     "zIndex": 0,
                     "x": -390,
                     "y": 275,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "滩子口",
                             "Tanzikou"
@@ -8014,8 +8954,8 @@
                     "zIndex": 0,
                     "x": -540,
                     "y": 190,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
                         "names": [
                             "石坪桥",
                             "Shipingqiao"
@@ -9064,114 +10004,6 @@
                 }
             },
             {
-                "key": "misc_node_4D-KzTi3kz",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 740,
-                    "y": 450,
-                    "type": "text",
-                    "text": {
-                        "content": "玉河沟暂未开通",
-                        "fontSize": 16,
-                        "lineHeight": 16,
-                        "textAnchor": "start",
-                        "dominantBaseline": "middle",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal"
-                    }
-                }
-            },
-            {
-                "key": "misc_node_73_mF6lPgd",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 740,
-                    "y": 540,
-                    "type": "text",
-                    "text": {
-                        "content": "新桥、邮轮母港暂未开通",
-                        "fontSize": 16,
-                        "lineHeight": 16,
-                        "textAnchor": "start",
-                        "dominantBaseline": "middle",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal"
-                    }
-                }
-            },
-            {
-                "key": "misc_node_xMuiWmpzBK",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 740,
-                    "y": 570,
-                    "type": "text",
-                    "text": {
-                        "content": "南坪暂未开通",
-                        "fontSize": 16,
-                        "lineHeight": 16,
-                        "textAnchor": "start",
-                        "dominantBaseline": "middle",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal"
-                    }
-                }
-            },
-            {
-                "key": "misc_node_Xv8uRZyCwK",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 740,
-                    "y": 630,
-                    "type": "text",
-                    "text": {
-                        "content": "暂未开通",
-                        "fontSize": 16,
-                        "lineHeight": 16,
-                        "textAnchor": "start",
-                        "dominantBaseline": "middle",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal"
-                    }
-                }
-            },
-            {
                 "key": "misc_node_gx1FTezBrL",
                 "attributes": {
                     "visible": true,
@@ -9289,33 +10121,6 @@
                     "type": "text",
                     "text": {
                         "content": "轨道交通环线（地铁）",
-                        "fontSize": 16,
-                        "lineHeight": 16,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "middle",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal"
-                    }
-                }
-            },
-            {
-                "key": "misc_node_OTeXKuV4yH",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 835,
-                    "y": 660,
-                    "type": "text",
-                    "text": {
-                        "content": "几江、鼎山暂未开通",
                         "fontSize": 16,
                         "lineHeight": 16,
                         "textAnchor": "middle",
@@ -10676,7 +11481,7 @@
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
+                        "offsetFrom": -2.5,
                         "offsetTo": -2.5,
                         "roundCornerFactor": 10
                     },
@@ -10703,7 +11508,7 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": -2.5,
-                        "offsetTo": 3,
+                        "offsetTo": -2.5,
                         "roundCornerFactor": 10
                     },
                     "style": "single-color",
@@ -13039,13 +13844,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "to",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
+                    "type": "perpendicular",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -13055,7 +13854,13 @@
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "perpendicular": {
+                        "startFrom": "to",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    }
                 }
             },
             {
@@ -13216,5 +14021,5 @@
             }
         ]
     },
-    "version": 21
+    "version": 26
 }

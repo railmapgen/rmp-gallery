@@ -154,7 +154,7 @@ export default function Donation() {
                                 <AccordionPanel>
                                     <Text>{t('donation.termsLastUpdatedOn')}</Text>
                                     <UnorderedList>
-                                        {Array.from({ length: 12 }).map((_, i) => (
+                                        {Array.from({ length: 10 }).map((_, i) => (
                                             <ListItem key={i}>{t(`donation.terms${i + 1}`)}</ListItem>
                                         ))}
                                     </UnorderedList>

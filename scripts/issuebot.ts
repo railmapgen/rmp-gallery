@@ -2,13 +2,13 @@ import { execSync } from 'child_process';
 import * as crypto from 'crypto';
 import { existsSync } from 'fs';
 import { mkdir, readdir, readFile, writeFile } from 'fs/promises';
-import { EOL, homedir } from 'os';
+import { homedir } from 'os';
 import { resolve } from 'path';
 
-import { Translation } from '@railmapgen/rmg-translate';
 import { JSDOM } from 'jsdom';
 import { parse } from 'zipson';
 
+import { getMetadataFromCity } from './common.js';
 import { Metadata, MetadataDetail } from './constants.js';
 import { makeImage, makeThumbnail } from './images.js';
 
@@ -127,42 +127,6 @@ const makeMetadataWithUpdateHistory = async (
     return metadata;
 };
 
-const getMetadataFromCity = async (
-    cityNameWithExtension: string,
-    type: 'real_world' | 'fantasy'
-): Promise<{
-    contributors: string[];
-    name: Translation;
-    lastUpdateOn: number;
-}> => {
-    const filePath = resolve('..', 'public', 'resources', type, cityNameWithExtension);
-    // https://stackoverflow.com/questions/15564185/exec-not-returning-anything-when-trying-to-run-git-shortlog-with-nodejs
-    // https://stackoverflow.com/questions/73085141/git-shortlog-in-a-github-workflow-for-a-specific-directory
-    const stdout = execSync(`git log -- ${filePath} | git shortlog -s -e`, { encoding: 'utf-8' });
-    const contributors = [
-        ...new Set(
-            stdout
-                .split(EOL)
-                .map(line => line.match(/<\d+/)?.at(0))
-                .filter(uid => uid !== undefined)
-                .map(s => s?.substring(1))
-                .reverse() as string[]
-        ),
-    ];
-
-    const metadataString = await readFile(
-        resolve('..', 'public', 'resources', 'metadata', cityNameWithExtension),
-        'utf-8'
-    );
-    const metadata = JSON.parse(metadataString) as Metadata;
-    const name = metadata.name;
-    if (!name) throw new Error('Metadata must contain name.');
-
-    const lastUpdateOn = Math.max(...metadata.updateHistory.map(entry => entry.time));
-
-    return { contributors, name, lastUpdateOn };
-};
-
 export const main = async () => {
     const detailsEls = await readIssueBody();
     const { metadataDetail, param, cityName, type } = parseDetailsEl(detailsEls);
@@ -187,6 +151,7 @@ export const main = async () => {
 
     if (!existsSync(resolve('..', 'public', 'resources', 'thumbnails')))
         await mkdir(resolve('..', 'public', 'resources', 'thumbnails'));
+    if (!existsSync(resolve(homedir(), 'Downloads'))) await mkdir(resolve(homedir(), 'Downloads'));
     const image = await makeImage(resolve('..', 'public', 'resources', type, `${cityName}.json`));
     await writeFile(resolve('..', 'public', 'resources', 'thumbnails', `${cityName}.png`), image);
     const thumbnail = await makeThumbnail(image);

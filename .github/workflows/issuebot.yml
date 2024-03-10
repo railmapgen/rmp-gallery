@@ -40,6 +40,10 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
 
+      - name: Sanity check
+        run: node --loader ts-node/esm ./sanity-check.ts
+        working-directory: scripts
+
       - name: Make metadata and images
         run: node --loader ts-node/esm ./issuebot.ts
         working-directory: scripts

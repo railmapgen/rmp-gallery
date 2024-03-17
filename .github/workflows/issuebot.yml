@@ -21,14 +21,6 @@ jobs:
       - run: npm ci
         working-directory: scripts
 
-      - name: Setup firefox
-        uses: browser-actions/setup-firefox@v1
-        with:
-          firefox-version: latest
-
-      - name: Install Noto CJK fonts
-        run: sudo apt install -y fonts-noto-cjk
-
       - name: Configure git
         run: |
           git config --global user.name 'github-actions[bot]'
@@ -43,6 +35,14 @@ jobs:
       - name: Sanity check
         run: node --loader ts-node/esm ./sanity-check.ts
         working-directory: scripts
+
+      - name: Setup firefox
+        uses: browser-actions/setup-firefox@v1
+        with:
+          firefox-version: latest
+
+      - name: Install Noto CJK fonts
+        run: sudo apt install -y fonts-noto-cjk
 
       - name: Make metadata and images
         run: node --loader ts-node/esm ./issuebot.ts

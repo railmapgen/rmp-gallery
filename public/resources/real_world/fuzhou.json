@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 260,
+    "svgViewBoxZoom": 120,
     "svgViewBoxMin": {
-        "x": -810.226,
-        "y": -222.654
+        "x": 97.5,
+        "y": 246.5
     },
     "graph": {
         "options": {
@@ -73,7 +73,7 @@
                 "attributes": {
                     "bjsubway-basic": {
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
+                        "nameOffsetY": "bottom",
                         "names": [
                             "福州火车站",
                             "Fuzhou Railway Station"
@@ -189,7 +189,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 895,
-                    "y": 385,
+                    "y": 345,
                     "type": "bjsubway-int",
                     "bjsubway-int": {
                         "names": [
@@ -386,8 +386,8 @@
                             "胪雷",
                             "Lulei"
                         ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "top",
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
                         "open": true
                     }
                 }
@@ -397,8 +397,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1330,
-                    "y": 890,
+                    "x": 1325,
+                    "y": 865,
                     "type": "bjsubway-int",
                     "bjsubway-int": {
                         "names": [
@@ -406,7 +406,7 @@
                             "Fuzhou South Railway Station"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetY": "top",
                         "outOfStation": false
                     }
                 }
@@ -416,8 +416,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1380,
-                    "y": 887,
+                    "x": 1365,
+                    "y": 865,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -473,8 +473,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1500,
-                    "y": 960,
+                    "x": 1505,
+                    "y": 965,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -492,8 +492,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 350,
-                    "y": 190,
+                    "x": 410,
+                    "y": 170,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -511,7 +511,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 390,
+                    "x": 410,
                     "y": 230,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
@@ -739,8 +739,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 845,
-                    "y": 385,
+                    "x": 835,
+                    "y": 375,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -759,7 +759,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 980,
-                    "y": 385,
+                    "y": 345,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -777,8 +777,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1055,
-                    "y": 385,
+                    "x": 1050,
+                    "y": 345,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -796,8 +796,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1130,
-                    "y": 385,
+                    "x": 1125,
+                    "y": 345,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -834,8 +834,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1250,
-                    "y": 385,
+                    "x": 1245,
+                    "y": 420,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -854,7 +854,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 1290,
-                    "y": 435,
+                    "y": 465,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -872,8 +872,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1290,
-                    "y": 480,
+                    "x": 1345,
+                    "y": 520,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -891,17 +891,17 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 630,
-                    "y": 310,
-                    "type": "bjsubway-basic",
-                    "bjsubway-basic": {
+                    "x": 600,
+                    "y": 305,
+                    "type": "bjsubway-int",
+                    "bjsubway-int": {
                         "names": [
                             "洪塘",
                             "Hongtang"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
-                        "open": true
+                        "outOfStation": false
                     }
                 }
             },
@@ -1120,7 +1120,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 1210,
-                    "y": 555,
+                    "y": 570,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
@@ -1210,22 +1210,11 @@
                 }
             },
             {
-                "key": "misc_node_oK0YX44a5B",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1330,
-                    "y": 680,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
                 "key": "stn_MY682Bnyf9",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 630,
+                    "x": 565,
                     "y": 200,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
@@ -1233,8 +1222,8 @@
                             "荆溪厚屿",
                             "Jingxi Houyu"
                         ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
                         "open": true
                     }
                 }
@@ -1244,7 +1233,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 630,
+                    "x": 565,
                     "y": 260,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
@@ -1761,7 +1750,7 @@
                     "y": 205,
                     "type": "text",
                     "text": {
-                        "content": "福州轨道交通线路示意图",
+                        "content": "福州地铁运营线路示意图",
                         "fontSize": 48,
                         "lineHeight": 16,
                         "textAnchor": "start",
@@ -1788,7 +1777,7 @@
                     "y": 245,
                     "type": "text",
                     "text": {
-                        "content": "Fuzhou Metro Map",
+                        "content": "Fuzhou Metro Route Map",
                         "fontSize": 24,
                         "lineHeight": 16,
                         "textAnchor": "start",
@@ -1811,8 +1800,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 330,
-                    "y": 115,
+                    "x": 490,
+                    "y": 80,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -1987,8 +1976,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 990,
-                    "y": 147.5,
+                    "x": 1035,
+                    "y": 140,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -2000,8 +1989,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1330,
-                    "y": 862.5,
+                    "x": 1325,
+                    "y": 830,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway"
@@ -2436,8 +2425,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1510,
-                    "y": 915,
+                    "x": 1515,
+                    "y": 970,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
                         "num": 1,
@@ -2455,8 +2444,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1275,
-                    "y": 490,
+                    "x": 1355,
+                    "y": 535,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
                         "num": 2,
@@ -2474,8 +2463,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 305,
-                    "y": 175,
+                    "x": 385,
+                    "y": 130,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
                         "num": 2,
@@ -2493,7 +2482,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 615,
+                    "x": 550,
                     "y": 155,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
@@ -2532,7 +2521,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 2135,
-                    "y": 1050,
+                    "y": 1000,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
                         "num": 6,
@@ -2543,17 +2532,6 @@
                             "#fff"
                         ]
                     }
-                }
-            },
-            {
-                "key": "misc_node_77NOIhCY_Y",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1255,
-                    "y": 605,
-                    "type": "virtual",
-                    "virtual": {}
                 }
             },
             {
@@ -3052,8 +3030,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 740,
-                    "y": 270,
+                    "x": 535,
+                    "y": 430,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
                         "num": 4,
@@ -3192,6 +3170,134 @@
                         "bold": "normal"
                     }
                 }
+            },
+            {
+                "key": "stn_uf0KgYR211",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 705,
+                    "y": 295,
+                    "type": "bjsubway-basic",
+                    "bjsubway-basic": {
+                        "names": [
+                            "金牛山",
+                            "Jinniushan"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "open": false
+                    }
+                }
+            },
+            {
+                "key": "stn_SEXq1wj7P2",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 550,
+                    "y": 330,
+                    "type": "bjsubway-basic",
+                    "bjsubway-basic": {
+                        "names": [
+                            "建新",
+                            "Jianxin"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "open": false
+                    }
+                }
+            },
+            {
+                "key": "stn_Bgifcep6dv",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 550,
+                    "y": 415,
+                    "type": "bjsubway-basic",
+                    "bjsubway-basic": {
+                        "names": [
+                            "半洲",
+                            "Banzhou"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "open": false
+                    }
+                }
+            },
+            {
+                "key": "misc_node_CAh69ZNEBm",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1295,
+                    "y": 890,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_kiSgk79NtD",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 630,
+                    "y": 350,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_Gwnjg-2sF1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 220,
+                    "y": 80,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_Gy153jrDSv",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1500,
+                    "y": 470,
+                    "type": "text",
+                    "text": {
+                        "content": "* 本图经过变形处理，不作为测量依据\n* Not to Scale",
+                        "fontSize": 18,
+                        "lineHeight": 18,
+                        "textAnchor": "start",
+                        "dominantBaseline": "middle",
+                        "language": "en",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_eKjGgTjefF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 865,
+                    "y": 345,
+                    "type": "virtual",
+                    "virtual": {}
+                }
             }
         ],
         "edges": [
@@ -3305,33 +3411,6 @@
                 "key": "line_9P9UTXR6Tu",
                 "source": "misc_node_ZYb9rz8GrY",
                 "target": "misc_node_fyASFHQL9k",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -5,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "to",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "river",
-                    "reconcileId": "",
-                    "river": {
-                        "color": [
-                            "shanghai",
-                            "river",
-                            "#B9E3F9",
-                            "#fff"
-                        ],
-                        "width": 40
-                    }
-                }
-            },
-            {
-                "key": "line_sPTFKBt2U_",
-                "source": "misc_node_pra2QXQ6wp",
-                "target": "misc_node_RgkpeGo7wP",
                 "attributes": {
                     "visible": true,
                     "zIndex": -5,
@@ -3696,33 +3775,6 @@
                         ]
                     },
                     "reconcileId": ""
-                }
-            },
-            {
-                "key": "line_qw9m_x1_PW",
-                "source": "misc_node_uEFZ-zxlFZ",
-                "target": "misc_node_77NOIhCY_Y",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -5,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "to",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "river",
-                    "reconcileId": "",
-                    "river": {
-                        "color": [
-                            "shanghai",
-                            "river",
-                            "#B9E3F9",
-                            "#fff"
-                        ],
-                        "width": 20
-                    }
                 }
             },
             {
@@ -4318,60 +4370,6 @@
                 }
             },
             {
-                "key": "line_9ITMT9LmUN",
-                "source": "misc_node_77NOIhCY_Y",
-                "target": "misc_node_oK0YX44a5B",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -5,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "to",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "river",
-                    "reconcileId": "",
-                    "river": {
-                        "color": [
-                            "shanghai",
-                            "river",
-                            "#B9E3F9",
-                            "#fff"
-                        ],
-                        "width": 20
-                    }
-                }
-            },
-            {
-                "key": "line_Rluww7p3X-",
-                "source": "misc_node_oK0YX44a5B",
-                "target": "misc_node_W0oXYUAUm3",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -5,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "river",
-                    "reconcileId": "",
-                    "river": {
-                        "color": [
-                            "shanghai",
-                            "river",
-                            "#B9E3F9",
-                            "#fff"
-                        ],
-                        "width": 20
-                    }
-                }
-            },
-            {
                 "key": "line_AWVpf4rx8h",
                 "source": "misc_node_W0oXYUAUm3",
                 "target": "misc_node_XpiD3hB7Nk",
@@ -4557,32 +4555,6 @@
                             "#fff"
                         ],
                         "width": 40
-                    }
-                }
-            },
-            {
-                "key": "line_HAI50HkcDM",
-                "source": "stn_J_qEI9OdUN",
-                "target": "stn_4xLXJtvzR5",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 3,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "reconcileId": "",
-                    "single-color": {
-                        "color": [
-                            "fuzhou",
-                            "fz5",
-                            "#893b67",
-                            "#fff"
-                        ]
                     }
                 }
             },
@@ -5165,13 +5137,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": -3,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
+                    "type": "perpendicular",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -5181,7 +5147,13 @@
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    }
                 }
             },
             {
@@ -5191,13 +5163,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": -3,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
+                    "type": "perpendicular",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -5207,7 +5173,13 @@
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    }
                 }
             },
             {
@@ -5246,7 +5218,7 @@
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": 5,
+                        "offsetFrom": -5,
                         "offsetTo": -5,
                         "roundCornerFactor": 10
                     },
@@ -5282,7 +5254,7 @@
                     "reconcileId": "",
                     "ro-perp": {
                         "startFrom": "from",
-                        "offsetFrom": 5,
+                        "offsetFrom": 0,
                         "offsetTo": 0,
                         "roundCornerFactor": 18.33
                     }
@@ -5679,32 +5651,6 @@
                 }
             },
             {
-                "key": "line_ne0SKSRr3t",
-                "source": "stn_oKNxkAm8zJ",
-                "target": "stn_pOV2ZdN3AW",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "fuzhou",
-                            "fz2",
-                            "#325928",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": ""
-                }
-            },
-            {
                 "key": "line_O-cpKfvb1Y",
                 "source": "stn_pOV2ZdN3AW",
                 "target": "stn_XOovIveSTO",
@@ -5841,13 +5787,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
+                    "type": "diagonal",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -5857,7 +5797,13 @@
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    }
                 }
             },
             {
@@ -5867,13 +5813,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
+                    "type": "diagonal",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -5883,7 +5823,13 @@
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    }
                 }
             },
             {
@@ -5916,32 +5862,6 @@
                 "key": "line_1Y3GkE929u",
                 "source": "stn_VvWuTREt7R",
                 "target": "stn_dn4W8HpsDU",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "fuzhou",
-                            "fz5",
-                            "#893b67",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": ""
-                }
-            },
-            {
-                "key": "line_KvuZ_ouyi0",
-                "source": "stn_dn4W8HpsDU",
-                "target": "stn_b_X0-TUR6e",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -7419,8 +7339,295 @@
                     },
                     "reconcileId": ""
                 }
+            },
+            {
+                "key": "line_Qj9RPaX7Fu",
+                "source": "stn_YKgGNSthqu",
+                "target": "stn_uf0KgYR211",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#f77d4a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_cLn4wHDkc8",
+                "source": "stn_uf0KgYR211",
+                "target": "stn_dn4W8HpsDU",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "bjsubway-dotted",
+                    "reconcileId": "",
+                    "bjsubway-dotted": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#f77d4a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_i6NO6_NrIv",
+                "source": "stn_dn4W8HpsDU",
+                "target": "stn_SEXq1wj7P2",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "style": "bjsubway-dotted",
+                    "reconcileId": "",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "bjsubway-dotted": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#f77d4a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_vdqBfnwZd8",
+                "source": "stn_SEXq1wj7P2",
+                "target": "stn_Bgifcep6dv",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "bjsubway-dotted",
+                    "reconcileId": "",
+                    "bjsubway-dotted": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#f77d4a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_kNWBK0kC9d",
+                "source": "stn_4xLXJtvzR5",
+                "target": "misc_node_CAh69ZNEBm",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#863667",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_zZQ0vrOr5y",
+                "source": "misc_node_CAh69ZNEBm",
+                "target": "stn_J_qEI9OdUN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#863667",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_xMmWX2gZ9l",
+                "source": "misc_node_kiSgk79NtD",
+                "target": "stn_b_X0-TUR6e",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#863667",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_MEzw8oopwD",
+                "source": "stn_dn4W8HpsDU",
+                "target": "misc_node_kiSgk79NtD",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#863667",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_XyHGHQEYKN",
+                "source": "misc_node_Gwnjg-2sF1",
+                "target": "misc_node_pra2QXQ6wp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -5,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "river",
+                    "reconcileId": "",
+                    "river": {
+                        "color": [
+                            "shanghai",
+                            "river",
+                            "#B9E3F9",
+                            "#fff"
+                        ],
+                        "width": 40
+                    }
+                }
+            },
+            {
+                "key": "line_6uXP7uVsRt",
+                "source": "stn_oKNxkAm8zJ",
+                "target": "misc_node_eKjGgTjefF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#345b2a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_t_6YGAlftn",
+                "source": "misc_node_eKjGgTjefF",
+                "target": "stn_pOV2ZdN3AW",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#345b2a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
             }
         ]
     },
-    "version": 19
+    "version": 28
 }

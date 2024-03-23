@@ -33,6 +33,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
       - name: Sanity check
+        id: sanity_check
         run: node --loader ts-node/esm ./sanity-check.ts
         working-directory: scripts
 
@@ -80,7 +81,7 @@ jobs:
   updateIssueIfFailed:
     runs-on: ubuntu-latest
     needs: updateGallery
-    if: ${{ failure() && needs.updateGallery.outputs.sanity_check == 'failure' }}
+    if: ${{ failure() && contains(needs.updateGallery.outputs.sanity_check, 'No simple path for style:') }}
     steps:
       - name: Comment if failed
         uses: peter-evans/create-or-update-comment@v4

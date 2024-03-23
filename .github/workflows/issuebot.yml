@@ -8,6 +8,8 @@ jobs:
   updateGallery:
     runs-on: ubuntu-latest
     if: contains(github.event.issue.body, 'Paste or Upload below. They are meant for BOTS ONLY!!!')
+    outputs:
+      sanityCheck: ${{ steps.sanity_check.outputs.status }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -34,7 +36,7 @@ jobs:
 
       - name: Sanity check
         id: sanity_check
-        run: node --loader ts-node/esm ./sanity-check.ts
+        run: node --loader ts-node/esm ./sanity-check.ts || (echo "status=Failed" >> "$GITHUB_OUTPUT" && exit 1)
         working-directory: scripts
 
       - name: Setup firefox
@@ -81,7 +83,7 @@ jobs:
   updateIssueIfFailed:
     runs-on: ubuntu-latest
     needs: updateGallery
-    if: ${{ failure() && contains(needs.updateGallery.outputs.sanity_check, 'No simple path for style:') }}
+    if: ${{ failure() && needs.updateGallery.outputs.sanityCheck == 'Failed' }}
     steps:
       - name: Comment if failed
         uses: peter-evans/create-or-update-comment@v4

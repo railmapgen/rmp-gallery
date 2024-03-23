@@ -8,6 +8,8 @@ jobs:
   updateGallery:
     runs-on: ubuntu-latest
     if: contains(github.event.issue.body, 'Paste or Upload below. They are meant for BOTS ONLY!!!')
+    outputs:
+      sanityCheck: ${{ steps.sanity_check.outputs.status }}
     steps:
       - uses: actions/checkout@v3
         with:
@@ -33,7 +35,8 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
       - name: Sanity check
-        run: node --loader ts-node/esm ./sanity-check.ts
+        id: sanity_check
+        run: node --loader ts-node/esm ./sanity-check.ts || (echo "status=Failed" >> "$GITHUB_OUTPUT" && exit 1)
         working-directory: scripts
 
       - name: Setup firefox
@@ -76,3 +79,43 @@ jobs:
           PULL_REQUEST_TOKEN: ${{ secrets.RMT_SVC }}
           PULL_REQUEST_TITLE: ${{ github.event.issue.title }}
           PULL_REQUEST_BODY: "Hi, I'm the rmp bot updating _${{ github.event.issue.title }}_ on behalf of @${{ github.event.issue.user.login }}.\nThis should fix #${{ github.event.issue.number }}"
+
+  updateIssueIfFailed:
+    runs-on: ubuntu-latest
+    needs: updateGallery
+    if: ${{ failure() && needs.updateGallery.outputs.sanityCheck == 'Failed' }}
+    steps:
+      - name: Comment if failed
+        uses: peter-evans/create-or-update-comment@v4
+        with:
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            Sorry, your submission failed sanity check.
+
+            - Your work may contain some line segments that do not support the line path style of simple paths.
+            
+            Please correct it and resubmit.
+      - name: Add labels
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const labelsToAdd = ['resources', 'need fixing'];
+            await github.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: labelsToAdd
+            });
+      - name: Close issue
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            await github.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              state_reason: 'not_planned'
+            });

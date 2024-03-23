@@ -1,0 +1,82 @@
+{
+    "svgViewBoxZoom": 30,
+    "svgViewBoxMin": {
+        "x": 61.08,
+        "y": 243.973
+    },
+    "graph": {
+        "options": {
+            "type": "directed",
+            "multi": true,
+            "allowSelfLoops": true
+        },
+        "attributes": {},
+        "nodes": [
+            {
+                "attributes": {
+                    "shmetro-basic": {
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "names": [
+                            "车站",
+                            "Stn"
+                        ]
+                    },
+                    "type": "shmetro-basic",
+                    "visible": true,
+                    "x": 135,
+                    "y": 365,
+                    "zIndex": 0
+                },
+                "key": "stn_szBIjVs8Tl"
+            },
+            {
+                "attributes": {
+                    "shmetro-basic": {
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "names": [
+                            "车站",
+                            "Stn"
+                        ]
+                    },
+                    "type": "shmetro-basic",
+                    "visible": true,
+                    "x": 240,
+                    "y": 385,
+                    "zIndex": 0
+                },
+                "key": "stn_mlx5W-kMiF"
+            }
+        ],
+        "edges": [
+            {
+                "key": "line_2cnuMTkNp4",
+                "source": "stn_szBIjVs8Tl",
+                "target": "stn_mlx5W-kMiF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            }
+        ]
+    },
+    "version": 30
+}

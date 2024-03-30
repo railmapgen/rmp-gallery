@@ -1,3 +1,4 @@
+import * as core from '@actions/core';
 import { SerializedGraph } from 'graphology-types';
 import pkg from 'graphology';
 // @ts-expect-error cjs compatibility
@@ -43,10 +44,15 @@ export const sanityCheck = async () => {
             ) => {
                 console.log(edge, attr.type, attr.style);
                 if (attr.type === 'simple' && noSimplePathStyle.includes(attr.style)) {
+                    core.setOutput(
+                        'message',
+                        "Your work contains line(s) that utilize the single-color style with a simple line path. To address this, you can modify the line path type to something other than the simple path in _Settings > Procedures > Change all objects' attributes_."
+                    );
                     throw new Error(`No simple path for style: ${attr.style}`);
                 }
             }
         );
+        core.setOutput('message', 'pass');
         console.log('Passed the sanity check!');
     }
 };

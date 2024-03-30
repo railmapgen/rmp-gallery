@@ -80,6 +80,19 @@ jobs:
           PULL_REQUEST_TITLE: ${{ github.event.issue.title }}
           PULL_REQUEST_BODY: "Hi, I'm the rmp bot updating _${{ github.event.issue.title }}_ on behalf of @${{ github.event.issue.user.login }}.\nThis should fix #${{ github.event.issue.number }}"
 
+      - name: Add label
+        uses: actions/github-script@v4
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const labelsToAdd = ['resources'];
+            await github.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: labelsToAdd
+            });
+
   updateIssueIfFailed:
     runs-on: ubuntu-latest
     needs: updateGallery

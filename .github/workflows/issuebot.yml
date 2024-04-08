@@ -16,7 +16,7 @@ jobs:
           token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
           fetch-depth: 0 # Fetch all to get authors of every template.
 
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
 
@@ -131,28 +131,4 @@ jobs:
               issue_number: context.issue.number,
               state: 'closed',
               state_reason: 'not_planned'
-            });
-
-  updateIssueIfSometingWentWrong:
-    runs-on: ubuntu-latest
-    needs: updateGallery
-    if: ${{ failure() && needs.updateGallery.outputs.sanityCheck == '' }}
-    steps:
-      - name: Comment if failed
-        uses: peter-evans/create-or-update-comment@v4
-        with:
-          issue-number: ${{ github.event.issue.number }}
-          body: |
-            We apologize, there may be some technical issues here. You do not need to take any action, please wait for our administrators to take care of it. Thank you for your contribution.
-      - name: Add labels
-        uses: actions/github-script@v4
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const labelsToAdd = ['resources', 'bug'];
-            await github.issues.addLabels({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              labels: labelsToAdd
             });

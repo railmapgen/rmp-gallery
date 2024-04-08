@@ -8,7 +8,7 @@ import { JSDOM } from 'jsdom';
 import { EOL, homedir } from 'os';
 import { resolve } from 'path';
 import { parse } from 'zipson';
-import { Metadata, MetadataDetail } from './constants.js';
+import { Metadata, MetadataDetail } from './constants';
 
 export const RES_PATH = ['..', 'public', 'resources'];
 

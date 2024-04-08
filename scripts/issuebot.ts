@@ -4,9 +4,9 @@ import { mkdir, readFile, writeFile } from 'fs/promises';
 import { homedir } from 'os';
 import { resolve } from 'path';
 
-import { parseDetailsEl, readIssueBody, rebuildTypeJSON } from './common.js';
-import { Metadata, MetadataDetail } from './constants.js';
-import { makeImage, makeThumbnail } from './images.js';
+import { parseDetailsEl, readIssueBody, rebuildTypeJSON } from './common.ts';
+import { Metadata, MetadataDetail } from './constants.ts';
+import { makeImage, makeThumbnail } from './images.ts';
 
 const makeMetadataWithUpdateHistory = async (
     cityName: string,

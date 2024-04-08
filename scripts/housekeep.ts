@@ -1,7 +1,7 @@
 import { readFile, unlink } from 'fs/promises';
 import { resolve } from 'path';
-import { RES_PATH, rebuildTypeJSON } from './common.js';
-import { Metadata } from './constants.js';
+import { RES_PATH, rebuildTypeJSON } from './common.ts';
+import { Metadata } from './constants.ts';
 
 export const housekeep = async () => {
     const fantasyFile = await readFile(resolve(...RES_PATH, 'fantasy.json'), 'utf-8');

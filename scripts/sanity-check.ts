@@ -4,7 +4,7 @@ import pkg from 'graphology';
 // @ts-expect-error cjs compatibility
 const { MultiDirectedGraph } = pkg;
 
-import { parseDetailsEl, readIssueBody } from './common.js';
+import { parseDetailsEl, readIssueBody } from './common.ts';
 
 const noSimplePathStyle = [
     'single-color',

@@ -87,6 +87,7 @@ export default function GalleryView() {
             .then(data => dispatch(setLogins(data)));
     }, []);
 
+    const [filterName, setFilterName] = React.useState('');
     const [filterID, setFilterID] = React.useState('');
     const [sortBy, setSortBy] = React.useState('alphabetical' as 'alphabetical' | 'update_time');
     const sortByOptions = {
@@ -94,6 +95,14 @@ export default function GalleryView() {
         ...(type === 'real_world' ? { update_time: t('gallery.sortBy.updateTime') } : {}),
     };
     const fields: RmgFieldsField[] = [
+        {
+            type: 'input',
+            label: t('gallery.filterName'),
+            value: filterName,
+            onChange: val => setFilterName(val),
+            debouncedDelay: 500,
+            minW: 200,
+        },
         {
             type: 'select',
             label: t('gallery.filterAuthor'),
@@ -176,6 +185,14 @@ export default function GalleryView() {
                                         {Object.entries(g)
                                             .filter(([_, metadata]) =>
                                                 filterID === '' ? true : metadata.contributors.includes(filterID)
+                                            )
+                                            .filter(([_, metadata]) =>
+                                                filterName === ''
+                                                    ? true
+                                                    : Object.values(metadata.name)
+                                                          .map(_ => _.toLowerCase())
+                                                          .join()
+                                                          .includes(filterName.toLowerCase())
                                             )
                                             .sort((a, b) =>
                                                 // https://stackoverflow.com/questions/59773396/why-array-prototype-sort-has-different-behavior-in-chrome

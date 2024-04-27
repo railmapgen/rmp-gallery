@@ -77,7 +77,7 @@ const DetailsModal = (props: {
         onClose();
     };
 
-    const rmpShareLink = `https://${window.location.hostname}/rmp/s/${city}`;
+    const rmpShareLink = `https://${window.location.hostname}/?app=rmp&searchParams=${city}`;
     const rmpShareLinkClickedToast = {
         title: t('Link copied.'),
         status: 'success' as const,

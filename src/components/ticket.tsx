@@ -19,7 +19,6 @@ import { RmgDebouncedTextarea, RmgFields, RmgFieldsField, RmgLabel, RmgPage } fr
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { stringify } from 'zipson';
 import { useRootSelector } from '../redux';
 import { GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, MetadataDetail } from '../util/constant';
 import { downloadAs, makeGitHubIssueDetails, readFileAsText } from '../util/utils';
@@ -70,7 +69,7 @@ export default function Ticket() {
         GITHUB_ISSUE_PREAMBLE,
         makeGitHubIssueDetails('metadata', JSON.stringify(metadata, null, 4), {}),
         makeGitHubIssueDetails(type, param, {
-            compress: 'zipson',
+            compress: 'none',
             city: id ?? cityName,
         }),
     ].join('\n\n');
@@ -95,7 +94,7 @@ export default function Ticket() {
 
         try {
             const paramStr = await readFileAsText(file);
-            setParam(stringify(JSON.parse(paramStr.trim())).trim());
+            setParam(paramStr);
         } catch (err) {
             alert('Invalid file!');
             event.target.value = '';
@@ -195,6 +194,7 @@ export default function Ticket() {
             isDisabled: id !== undefined,
             onChange: value => setMetadata({ ...metadata, earlyBirdIssue: value }),
             minW: 250,
+            hidden: true,
         },
         {
             type: 'input',
@@ -206,6 +206,7 @@ export default function Ticket() {
             isDisabled: id !== undefined,
             onChange: value => setMetadata({ ...metadata, personalizedLink: value }),
             minW: 250,
+            hidden: true,
         },
     ];
 

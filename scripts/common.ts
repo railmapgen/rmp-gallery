@@ -71,8 +71,8 @@ export const readIssueBody = async (): Promise<HTMLDetailsElement[]> => {
     const data = JSON.parse(issue);
     let issueBody = data.body as string;
 
-    if (issueBody.includes('https://github.com/railmapgen/rmp-gallery/files/')) {
-        const bodyURL = issueBody.match(/\(https:\/\/github.com\/railmapgen\/rmp-gallery\/files\/.+\)/)?.at(0);
+    if (issueBody.includes('https://github.com/user-attachments/files/')) {
+        const bodyURL = issueBody.match(/\(https:\/\/github.com\/user-attachments\/files\/.+\)/)?.at(0);
         if (bodyURL === undefined) {
             core.setOutput(
                 'message',

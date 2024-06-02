@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 93.424,
+    "svgViewBoxZoom": 40,
     "svgViewBoxMin": {
-        "x": 246.772,
-        "y": 74.357
+        "x": 320.1420012207033,
+        "y": -22.411774414062293
     },
     "graph": {
         "options": {
@@ -13,6 +13,7 @@
         "attributes": {},
         "nodes": [
             {
+                "key": "stn_6CgkS64TK1",
                 "attributes": {
                     "suzhourt-basic": {
                         "color": [
@@ -33,10 +34,10 @@
                     "x": 360,
                     "y": 300,
                     "zIndex": 0
-                },
-                "key": "stn_6CgkS64TK1"
+                }
             },
             {
+                "key": "stn_GaU4VgnlXk",
                 "attributes": {
                     "suzhourt-basic": {
                         "color": [
@@ -57,8 +58,7 @@
                     "x": 410,
                     "y": 300,
                     "zIndex": 0
-                },
-                "key": "stn_GaU4VgnlXk"
+                }
             },
             {
                 "key": "misc_node_6qmlTzCGAE",
@@ -906,16 +906,16 @@
                             [
                                 [
                                     "suzhou",
-                                    "wkt",
-                                    "#dddddd",
+                                    "sz3",
+                                    "#F88211",
                                     "#fff",
                                     "",
                                     ""
                                 ],
                                 [
                                     "suzhou",
-                                    "sz3",
-                                    "#F88211",
+                                    "wkt",
+                                    "#dddddd",
                                     "#fff",
                                     "",
                                     ""
@@ -1082,7 +1082,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 805,
-                    "y": 465,
+                    "y": 468,
                     "type": "suzhourt-int",
                     "suzhourt-int": {
                         "names": [
@@ -1096,16 +1096,24 @@
                             [
                                 [
                                     "suzhou",
-                                    "sz4",
-                                    "#196EAE",
+                                    "sz3",
+                                    "#f88211",
                                     "#fff",
                                     "",
                                     ""
                                 ],
                                 [
                                     "suzhou",
-                                    "sz3",
-                                    "#F88211",
+                                    "sz4",
+                                    "#196eae",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "suzhou",
+                                    "sz11",
+                                    "#f1c6a6",
                                     "#fff",
                                     "",
                                     ""
@@ -1169,7 +1177,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 940,
-                    "y": 465,
+                    "y": 468,
                     "type": "suzhourt-int",
                     "suzhourt-int": {
                         "names": [
@@ -1178,7 +1186,7 @@
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
-                        "rotate": 0,
+                        "rotate": 90,
                         "transfer": [
                             [
                                 [
@@ -1196,6 +1204,14 @@
                                     "#fff",
                                     "",
                                     ""
+                                ],
+                                [
+                                    "suzhou",
+                                    "sz11",
+                                    "#f1c6a6",
+                                    "#fff",
+                                    "",
+                                    ""
                                 ]
                             ]
                         ]
@@ -1208,20 +1224,35 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 850,
-                    "y": 465,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "y": 468,
+                    "type": "suzhourt-int",
+                    "suzhourt-int": {
                         "names": [
                             "迎春路",
                             "Yingchunlu"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "color": [
-                            "suzhou",
-                            "sz3",
-                            "#F88211",
-                            "#fff"
+                        "nameOffsetY": "top",
+                        "rotate": 90,
+                        "transfer": [
+                            [
+                                [
+                                    "suzhou",
+                                    "sz3",
+                                    "#f88211",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "suzhou",
+                                    "sz11",
+                                    "#f1c6a6",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
                         ]
                     }
                 }
@@ -1232,20 +1263,35 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 895,
-                    "y": 465,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "y": 468,
+                    "type": "suzhourt-int",
+                    "suzhourt-int": {
                         "names": [
                             "北港路",
                             "Beiganglu"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "color": [
-                            "suzhou",
-                            "sz3",
-                            "#F88211",
-                            "#fff"
+                        "nameOffsetY": "top",
+                        "rotate": 90,
+                        "transfer": [
+                            [
+                                [
+                                    "suzhou",
+                                    "sz3",
+                                    "#f88211",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "suzhou",
+                                    "sz11",
+                                    "#f1c6a6",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
                         ]
                     }
                 }
@@ -1255,21 +1301,36 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1000,
-                    "y": 390,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "x": 1003,
+                    "y": 385,
+                    "type": "suzhourt-int",
+                    "suzhourt-int": {
                         "names": [
                             "东振路",
                             "Dongzhenlu"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
-                        "color": [
-                            "suzhou",
-                            "sz3",
-                            "#F88211",
-                            "#fff"
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "suzhou",
+                                    "sz3",
+                                    "#F88211",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "suzhou",
+                                    "sz11",
+                                    "#f1c6a6",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
                         ]
                     }
                 }
@@ -1279,21 +1340,36 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 998.5,
-                    "y": 435,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "x": 1003,
+                    "y": 425,
+                    "type": "suzhourt-int",
+                    "suzhourt-int": {
                         "names": [
                             "墅浦路北",
                             "Shupulu North"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
-                        "color": [
-                            "suzhou",
-                            "sz3",
-                            "#F88211",
-                            "#fff"
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "suzhou",
+                                    "sz3",
+                                    "#f88211",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "suzhou",
+                                    "sz11",
+                                    "#f1c6a6",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
                         ]
                     }
                 }
@@ -1304,7 +1380,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 735,
-                    "y": 465,
+                    "y": 468,
                     "type": "suzhourt-int",
                     "suzhourt-int": {
                         "names": [
@@ -1328,6 +1404,14 @@
                                     "suzhou",
                                     "sz3",
                                     "#F88211",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "suzhou",
+                                    "sz11",
+                                    "#f1c6a6",
                                     "#fff",
                                     "",
                                     ""
@@ -2412,20 +2496,35 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 680,
-                    "y": 465,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "y": 468,
+                    "type": "suzhourt-int",
+                    "suzhourt-int": {
                         "names": [
                             "新郭",
                             "Xinguo"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "color": [
-                            "suzhou",
-                            "sz3",
-                            "#F88211",
-                            "#fff"
+                        "nameOffsetY": "top",
+                        "rotate": 90,
+                        "transfer": [
+                            [
+                                [
+                                    "suzhou",
+                                    "sz3",
+                                    "#f88211",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "suzhou",
+                                    "sz11",
+                                    "#f1c6a6",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
                         ]
                     }
                 }
@@ -2436,20 +2535,35 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 620,
-                    "y": 465,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "y": 468,
+                    "type": "suzhourt-int",
+                    "suzhourt-int": {
                         "names": [
                             "石湖北",
                             "Shihu North"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
-                        "color": [
-                            "suzhou",
-                            "sz3",
-                            "#F88211",
-                            "#fff"
+                        "rotate": 90,
+                        "transfer": [
+                            [
+                                [
+                                    "suzhou",
+                                    "sz3",
+                                    "#f88211",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "suzhou",
+                                    "sz11",
+                                    "#f1c6a6",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
                         ]
                     }
                 }
@@ -2459,21 +2573,36 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 555,
+                    "x": 552,
                     "y": 425,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "suzhourt-int",
+                    "suzhourt-int": {
                         "names": [
                             "横山",
                             "Hengshan"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
-                        "color": [
-                            "suzhou",
-                            "sz3",
-                            "#F88211",
-                            "#fff"
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "suzhou",
+                                    "sz11",
+                                    "#f1c6a6",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "suzhou",
+                                    "sz3",
+                                    "#f88211",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
                         ]
                     }
                 }
@@ -2483,21 +2612,36 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 575,
-                    "y": 458.5,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "x": 567.5,
+                    "y": 457.5,
+                    "type": "suzhourt-int",
+                    "suzhourt-int": {
                         "names": [
                             "横塘",
                             "Hengtang"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "bottom",
-                        "color": [
-                            "suzhou",
-                            "sz3",
-                            "#F88211",
-                            "#fff"
+                        "rotate": 135,
+                        "transfer": [
+                            [
+                                [
+                                    "suzhou",
+                                    "sz3",
+                                    "#f88211",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "suzhou",
+                                    "sz11",
+                                    "#f1c6a6",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
                         ]
                     }
                 }
@@ -8408,46 +8552,36 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1770,
+                    "x": 1775,
                     "y": 290,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
+                    "type": "suzhourt-int",
+                    "suzhourt-int": {
                         "names": [
                             "花桥",
                             "Huaqiao"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
-                        "color": [
-                            "suzhou",
-                            "sz11",
-                            "#f1c6a6",
-                            "#fff"
-                        ],
-                        "textVertical": true
-                    }
-                }
-            },
-            {
-                "key": "stn_3Bv5tm8qNC",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1777.5,
-                    "y": 290,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
-                        "names": [
-                            "",
-                            ""
-                        ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "top",
-                        "color": [
-                            "shanghai",
-                            "sh11",
-                            "#871C2B",
-                            "#fff"
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "suzhou",
+                                    "sz11",
+                                    "#f1c6a6",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "shanghai",
+                                    "sh11",
+                                    "#871c2b",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
                         ]
                     }
                 }
@@ -8550,16 +8684,16 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 1760,
-                    "y": 255,
+                    "y": 260,
                     "type": "suzhourt-num-line-badge",
                     "suzhourt-num-line-badge": {
                         "num": 11,
                         "branch": false,
                         "color": [
-                            "other",
-                            "other",
+                            "suzhou",
+                            "sz11",
                             "#f1c6a6",
-                            "#000"
+                            "#fff"
                         ]
                     }
                 }
@@ -8569,17 +8703,17 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1335,
-                    "y": 210,
+                    "x": 530,
+                    "y": 400,
                     "type": "suzhourt-num-line-badge",
                     "suzhourt-num-line-badge": {
                         "num": 11,
                         "branch": false,
                         "color": [
-                            "other",
-                            "other",
+                            "suzhou",
+                            "sz11",
                             "#f1c6a6",
-                            "#000"
+                            "#fff"
                         ]
                     }
                 }
@@ -9376,13 +9510,13 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1395,
-                    "y": 122.5,
+                    "x": 1405,
+                    "y": 182.5,
                     "type": "text",
                     "text": {
-                        "content": "阳澄湖站",
+                        "content": "阳\n澄\n湖\n站",
                         "fontSize": 5,
-                        "lineHeight": 16,
+                        "lineHeight": 5,
                         "textAnchor": "middle",
                         "dominantBaseline": "middle",
                         "language": "zh",
@@ -9403,8 +9537,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1395,
-                    "y": 132.5,
+                    "x": 1405,
+                    "y": 175,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway_suzhou"
@@ -9503,32 +9637,9 @@
         ],
         "edges": [
             {
-                "attributes": {
-                    "perpendicular": {
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33,
-                        "startFrom": "from"
-                    },
-                    "reconcileId": "",
-                    "single-color": {
-                        "color": [
-                            "suzhou",
-                            "sz1",
-                            "#78BA25",
-                            "#fff"
-                        ]
-                    },
-                    "style": "single-color",
-                    "type": "perpendicular",
-                    "visible": true,
-                    "zIndex": 0
-                },
                 "key": "line_H3wUnhAU_R",
                 "source": "stn_6CgkS64TK1",
-                "target": "stn_GaU4VgnlXk"
-            },
-            {
+                "target": "stn_GaU4VgnlXk",
                 "attributes": {
                     "perpendicular": {
                         "offsetFrom": 0,
@@ -9549,12 +9660,12 @@
                     "type": "perpendicular",
                     "visible": true,
                     "zIndex": 0
-                },
+                }
+            },
+            {
                 "key": "line_CxhR6lPQ4J",
                 "source": "stn_GaU4VgnlXk",
-                "target": "stn_Rb6F6N0iBx"
-            },
-            {
+                "target": "stn_Rb6F6N0iBx",
                 "attributes": {
                     "perpendicular": {
                         "offsetFrom": 0,
@@ -9575,10 +9686,33 @@
                     "type": "perpendicular",
                     "visible": true,
                     "zIndex": 0
-                },
+                }
+            },
+            {
                 "key": "line_6JXwt6cB8E",
                 "source": "stn_Rb6F6N0iBx",
-                "target": "stn_vVtm_-p1jx"
+                "target": "stn_vVtm_-p1jx",
+                "attributes": {
+                    "perpendicular": {
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33,
+                        "startFrom": "from"
+                    },
+                    "reconcileId": "",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz1",
+                            "#78BA25",
+                            "#fff"
+                        ]
+                    },
+                    "style": "single-color",
+                    "type": "perpendicular",
+                    "visible": true,
+                    "zIndex": 0
+                }
             },
             {
                 "key": "line_65maz9mhs5",
@@ -10630,8 +10764,8 @@
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetFrom": -3,
+                        "offsetTo": -3,
                         "roundCornerFactor": 18.33
                     },
                     "style": "single-color",
@@ -10656,8 +10790,8 @@
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetFrom": -3,
+                        "offsetTo": -3,
                         "roundCornerFactor": 18.33
                     },
                     "style": "single-color",
@@ -10682,8 +10816,8 @@
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetFrom": -3,
+                        "offsetTo": -3,
                         "roundCornerFactor": 18.33
                     },
                     "style": "single-color",
@@ -10709,34 +10843,8 @@
                     "perpendicular": {
                         "startFrom": "from",
                         "offsetFrom": -3,
-                        "offsetTo": 0,
+                        "offsetTo": -3,
                         "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "suzhou",
-                            "sz3",
-                            "#F88211",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": ""
-                }
-            },
-            {
-                "key": "line_wiNGspsqNc",
-                "source": "stn_sm5sJ6MgCG",
-                "target": "stn__SlcISW-pq",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 40
                     },
                     "style": "single-color",
                     "single-color": {
@@ -10760,8 +10868,8 @@
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetFrom": -3,
+                        "offsetTo": -3,
                         "roundCornerFactor": 18.33
                     },
                     "style": "single-color",
@@ -11930,8 +12038,8 @@
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetFrom": -3,
+                        "offsetTo": -3,
                         "roundCornerFactor": 18.33
                     },
                     "style": "single-color",
@@ -11956,8 +12064,8 @@
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetFrom": -3,
+                        "offsetTo": -3,
                         "roundCornerFactor": 18.33
                     },
                     "style": "single-color",
@@ -11983,34 +12091,8 @@
                     "perpendicular": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetTo": 3,
                         "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "suzhou",
-                            "sz3",
-                            "#F88211",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": ""
-                }
-            },
-            {
-                "key": "line_MGIwb59UqK",
-                "source": "stn_vWznyEM5ug",
-                "target": "stn_C-HsAIDkXt",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 40
                     },
                     "style": "single-color",
                     "single-color": {
@@ -17823,32 +17905,6 @@
                 }
             },
             {
-                "key": "line_KfP7BwH0Ll",
-                "source": "stn_3Bv5tm8qNC",
-                "target": "misc_node_O3B7qXW4A7",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 1
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "shanghai",
-                            "sh11",
-                            "#871C2B",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": ""
-                }
-            },
-            {
                 "key": "line_XfkxDOKcHi",
                 "source": "misc_node_bJ7_A7R98g",
                 "target": "misc_node_euWTebe3ZV",
@@ -18663,8 +18719,372 @@
                     },
                     "reconcileId": ""
                 }
+            },
+            {
+                "key": "line_c9CEUZEs8c",
+                "source": "stn_zIKfUMVKpj",
+                "target": "stn__SlcISW-pq",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 3,
+                        "offsetTo": 3,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz11",
+                            "#f1c6a6",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_eFyCDzErVY",
+                "source": "stn__SlcISW-pq",
+                "target": "stn_QrYYlB-5gj",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 3,
+                        "offsetTo": 3,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz11",
+                            "#f1c6a6",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_Usui4kOtFG",
+                "source": "stn__SlcISW-pq",
+                "target": "stn_QrYYlB-5gj",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -3,
+                        "offsetTo": -3,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz3",
+                            "#f88211",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_bmgUkmS52E",
+                "source": "stn_sm5sJ6MgCG",
+                "target": "stn_QrYYlB-5gj",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -3,
+                        "offsetTo": -3,
+                        "roundCornerFactor": 30
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz3",
+                            "#f88211",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_On4qctE8eQ",
+                "source": "stn_sm5sJ6MgCG",
+                "target": "stn_QrYYlB-5gj",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 3,
+                        "offsetTo": 3,
+                        "roundCornerFactor": 35
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz11",
+                            "#f1c6a6",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_EJfqisP3Ne",
+                "source": "stn_zH_U2cf4b3",
+                "target": "stn_sm5sJ6MgCG",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 3,
+                        "offsetTo": 3,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz11",
+                            "#f1c6a6",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_O8zumeo6iV",
+                "source": "stn_uPNHQiFzR5",
+                "target": "stn_zH_U2cf4b3",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 3,
+                        "offsetTo": 3,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz11",
+                            "#f1c6a6",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_H7uN_GAXma",
+                "source": "stn_XF6JcLxzXS",
+                "target": "stn_uPNHQiFzR5",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 3,
+                        "offsetTo": 3,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz11",
+                            "#f1c6a6",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_Qys2JKSYpa",
+                "source": "stn_XF6JcLxzXS",
+                "target": "stn_VQZVruVqcb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 3,
+                        "offsetTo": 3,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz11",
+                            "#f1c6a6",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_TLmBoRhYzL",
+                "source": "stn_VQZVruVqcb",
+                "target": "stn_yP_J__vzrB",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 3,
+                        "offsetTo": 3,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz11",
+                            "#f1c6a6",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_mB1qmVDrFh",
+                "source": "stn_vWznyEM5ug",
+                "target": "stn_yP_J__vzrB",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 3,
+                        "offsetTo": 3,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz11",
+                            "#f1c6a6",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_WKfjfz1lYL",
+                "source": "stn_vWznyEM5ug",
+                "target": "stn_C-HsAIDkXt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -3,
+                        "offsetTo": 3,
+                        "roundCornerFactor": 40
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz3",
+                            "#f88211",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_yItmic0VWK",
+                "source": "stn_vWznyEM5ug",
+                "target": "stn_C-HsAIDkXt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 3,
+                        "offsetTo": -3,
+                        "roundCornerFactor": 45
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "suzhou",
+                            "sz11",
+                            "#f1c6a6",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_vlT-gMsLGO",
+                "source": "stn_5skgXT3PBN",
+                "target": "misc_node_O3B7qXW4A7",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 1
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "shanghai",
+                            "sh11",
+                            "#871c2b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
             }
         ]
     },
-    "version": 30
+    "version": 31
 }

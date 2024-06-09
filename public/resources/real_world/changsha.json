@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 40,
+    "svgViewBoxZoom": 150,
     "svgViewBoxMin": {
-        "x": -160.9500000000001,
-        "y": -238.62
+        "x": -373.1500000000001,
+        "y": -612.32
     },
     "graph": {
         "options": {
@@ -17,8 +17,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -55,
-                    "y": -345,
+                    "x": -230,
+                    "y": -515,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
                         "num": 1,
@@ -45,7 +45,7 @@
                             "Kaifu District Government "
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
+                        "nameOffsetY": "bottom",
                         "color": [
                             "changsha",
                             "cs1",
@@ -4701,6 +4701,126 @@
                     "y": -255,
                     "type": "virtual",
                     "virtual": {}
+                }
+            },
+            {
+                "key": "stn_HoNtDkwKwa",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -70,
+                    "y": -350,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "宿龙桥",
+                            "Sulongqiao"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "changsha",
+                            "cs1",
+                            "#da291c",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_RWpSd5mik1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -105,
+                    "y": -385,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "秀峰山",
+                            "Xiufengshan"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "changsha",
+                            "cs1",
+                            "#da291c",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_2mWwzITgqj",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -140,
+                    "y": -420,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "鹅羊山",
+                            "Eyangshan"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "changsha",
+                            "cs1",
+                            "#da291c",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_NHjehdae5i",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -175,
+                    "y": -455,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "金霞",
+                            "Jinxia"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "changsha",
+                            "cs1",
+                            "#da291c",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_kgPHK5ADdK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -210,
+                    "y": -490,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "金盆丘",
+                            "Jinpenqiu"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "changsha",
+                            "cs1",
+                            "#da291c",
+                            "#fff"
+                        ]
+                    }
                 }
             }
         ],
@@ -9718,6 +9838,136 @@
                             "changsha",
                             "cs4",
                             "#A51890",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_13YaFl2z-J",
+                "source": "stn_HoNtDkwKwa",
+                "target": "stn_QPgaEGB_gv",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "changsha",
+                            "cs1",
+                            "#da291c",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_NJdsJpq2np",
+                "source": "stn_RWpSd5mik1",
+                "target": "stn_HoNtDkwKwa",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "changsha",
+                            "cs1",
+                            "#da291c",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_XXsfZGqcLP",
+                "source": "stn_2mWwzITgqj",
+                "target": "stn_RWpSd5mik1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "changsha",
+                            "cs1",
+                            "#da291c",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_jh9RI2Iswd",
+                "source": "stn_NHjehdae5i",
+                "target": "stn_2mWwzITgqj",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "changsha",
+                            "cs1",
+                            "#da291c",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_qT04WyKLPr",
+                "source": "stn_kgPHK5ADdK",
+                "target": "stn_NHjehdae5i",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "changsha",
+                            "cs1",
+                            "#da291c",
                             "#fff"
                         ]
                     },

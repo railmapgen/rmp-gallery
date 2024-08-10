@@ -47,7 +47,7 @@ import { decompressFromBase64, downloadAs } from '../util/utils';
 const RMP_GALLERY_CHANNEL_NAME = 'RMP_GALLERY_CHANNEL';
 const RMP_GALLERY_CHANNEL_EVENT = 'OPEN_TEMPLATE';
 const RMP_GALLERY_CHANNEL_DESIGNER_OPEN_EVENT = 'OPEN_DESIGNER';
-const RMP_GALLERY_CHANNEL_DESIGNER_NEW_EVENT = 'OPEN_DESIGNER';
+const RMP_GALLERY_CHANNEL_DESIGNER_NEW_EVENT = 'NEW_DESIGNER';
 const CHN = new BroadcastChannel(RMP_GALLERY_CHANNEL_NAME);
 
 const DetailsModal = (props: {
@@ -123,7 +123,7 @@ const DetailsModal = (props: {
             if (rmgRuntime.isStandaloneWindow()) {
                 window.open('/rmp-designer/#/new', '_blank');
             } else {
-                rmgRuntime.openApp('rmp-designer', '/new');
+                rmgRuntime.openApp('rmp-designer', '/#/new');
             }
         }
     };

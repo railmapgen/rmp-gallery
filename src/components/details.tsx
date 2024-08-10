@@ -123,7 +123,7 @@ const DetailsModal = (props: {
             if (rmgRuntime.isStandaloneWindow()) {
                 window.open('/rmp-designer/#/new', '_blank');
             } else {
-                rmgRuntime.openApp('rmp-designer', '/#/new');
+                rmgRuntime.openApp({ appId: 'rmp-designer', hash: '/new' });
             }
         }
     };

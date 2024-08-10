@@ -23,10 +23,19 @@ import { MdAdd } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
 import { useRootDispatch, useRootSelector } from '../redux';
-import { setFantasy, setLogins, setRealWorld } from '../redux/app/app-slice';
-import { Events, Gallery, MetadataDetail } from '../util/constant';
+import { setFantasy, setLogins, setRealWorld, setServerUsers } from '../redux/app/app-slice';
+import {
+    Designer,
+    DesignerMetadata,
+    DesignerResponse,
+    Events,
+    Gallery,
+    MetadataDetail,
+    RMT_SERVER,
+} from '../util/constant';
 import DetailsModal from './details';
 import { TemplateCard } from './template-card';
+import { decompressFromBase64 } from '../util/utils';
 
 const stickyHeaderStyles: SystemStyleObject = {
     position: 'sticky',
@@ -40,9 +49,13 @@ export default function GalleryView() {
     const dispatch = useRootDispatch();
     const { t } = useTranslation();
 
-    const { realWorld, fantasy, logins } = useRootSelector(state => state.app);
+    const { realWorld, fantasy, logins, serverUsers, rmtLogin } = useRootSelector(state => state.app);
+    const [designerPublic, setDesignerPublic] = React.useState<Designer>({});
+    const [designerAdmin, setDesignerAdmin] = React.useState<Designer>({});
+    const [designerUser, setDesignerUser] = React.useState<Designer>({});
+    const [userRole, setUserRole] = React.useState<'USER' | 'ADMIN'>('USER');
 
-    const [type, setType] = React.useState('real_world' as 'real_world' | 'fantasy');
+    const [type, setType] = React.useState('real_world' as 'real_world' | 'fantasy' | 'designer' | 'user' | 'admin');
     const [city, setCity] = React.useState('shanghai');
     const [isDetailsModalOpen, setIsDetailsModalOpen] = React.useState(false);
     const handleDetails = (city: string) => {
@@ -66,7 +79,100 @@ export default function GalleryView() {
             });
         } else if (type === 'fantasy') {
             navigate('/donation');
+        } else {
+            if (rmgRuntime.isStandaloneWindow()) {
+                window.open('/rmp-designer/#/new', '_blank');
+            } else {
+                rmgRuntime.openApp('rmp-designer', '/new');
+            }
         }
+    };
+
+    const designerSetItem = (p: DesignerResponse): DesignerMetadata => {
+        return {
+            id: p.id,
+            name: JSON.parse(p.name),
+            desc: JSON.parse(p.desc),
+            userId: p.userId,
+            lastUpdateAt: p.lastUpdateAt,
+            type: p.type,
+            status: p.status,
+            svg: decompressFromBase64(p.svg),
+        };
+    };
+
+    const fetchServerPublic = async () => {
+        if (!rmtLogin) return;
+        const rep = await fetch(RMT_SERVER + '/designer/public', {
+            headers: {
+                accept: 'application/json',
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${rmtLogin!.token}`,
+            },
+        });
+        if (rep.status !== 200) {
+            return;
+        }
+        const { data: res, userList } = await rep.json();
+
+        const pub: Designer = {};
+        res.forEach((p: DesignerResponse) => {
+            pub[`${p.id}`] = designerSetItem(p);
+        });
+        console.log(userList);
+        setDesignerPublic(pub);
+        dispatch(
+            setServerUsers(userList.reduce((s: string, k: { id: number; name: string }) => ({ [k.id]: k.name }), {}))
+        );
+        return;
+    };
+
+    const fetchServerUser = async () => {
+        if (!rmtLogin) return;
+        const rep = await fetch(RMT_SERVER + '/designer/user', {
+            headers: {
+                accept: 'application/json',
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${rmtLogin!.token}`,
+            },
+        });
+        if (rep.status !== 200) {
+            return;
+        }
+        const { userRole, data: res } = await rep.json();
+
+        const user: Designer = {};
+        res.forEach((p: DesignerResponse) => {
+            user[`${p.id}`] = designerSetItem(p);
+        });
+        setDesignerUser(user);
+        setUserRole(userRole);
+        if (userRole === 'ADMIN') {
+            await fetchServerAdmin();
+        }
+        return;
+    };
+
+    const fetchServerAdmin = async () => {
+        if (!rmtLogin) return;
+        const rep = await fetch(RMT_SERVER + '/designer/admin', {
+            headers: {
+                accept: 'application/json',
+                'Content-Type': 'application/json',
+                Authorization: `Bearer ${rmtLogin!.token}`,
+            },
+        });
+        if (rep.status !== 200) {
+            return;
+        }
+        const res = await rep.json();
+
+        const admin: Designer = {};
+        res.forEach((p: DesignerResponse) => {
+            admin[`${p.id}`] = designerSetItem(p);
+        });
+        setDesignerAdmin(admin);
+        return;
     };
 
     React.useEffect(() => {
@@ -85,14 +191,17 @@ export default function GalleryView() {
                     }>
             )
             .then(data => dispatch(setLogins(data)));
-    }, []);
+        fetchServerPublic();
+        fetchServerUser();
+    }, [type]);
 
     const [filterName, setFilterName] = React.useState('');
     const [filterID, setFilterID] = React.useState('');
+    const [filterIDServer, setFilterIDServer] = React.useState(-1);
     const [sortBy, setSortBy] = React.useState('alphabetical' as 'alphabetical' | 'update_time');
     const sortByOptions = {
         alphabetical: t('gallery.sortBy.alphabetical'),
-        ...(type === 'real_world' ? { update_time: t('gallery.sortBy.updateTime') } : {}),
+        ...(type !== 'fantasy' ? { update_time: t('gallery.sortBy.updateTime') } : {}),
     };
     const fields: RmgFieldsField[] = [
         {
@@ -109,6 +218,16 @@ export default function GalleryView() {
             value: filterID,
             options: { '': 'None', ...(type === 'real_world' ? logins.realWorld : logins.fantasy) },
             onChange: val => setFilterID(val.toString()),
+            hidden: type === 'user' || type === 'admin' || type === 'designer',
+            minW: 200,
+        },
+        {
+            type: 'select',
+            label: t('gallery.filterAuthor'),
+            value: filterIDServer,
+            options: { [-1]: 'None', ...serverUsers },
+            onChange: val => setFilterIDServer(Number(val)),
+            hidden: type === 'real_world' || type === 'fantasy' || type === 'user',
             minW: 200,
         },
         {
@@ -124,9 +243,30 @@ export default function GalleryView() {
 
     const handleTabChange = (i: number) => {
         // set some default values for different types
-        setType(i === 0 ? 'real_world' : 'fantasy');
-        setSortBy(i === 0 ? 'alphabetical' : 'update_time');
+        switch (i) {
+            case 0:
+                setType('real_world');
+                break;
+            case 1:
+                setType('fantasy');
+                break;
+            case 2:
+                setType('designer');
+                break;
+            case 3:
+                setType('user');
+                break;
+            case 4:
+                setType('admin');
+                break;
+        }
+        setSortBy(i === 0 || i === 2 ? 'alphabetical' : 'update_time');
     };
+
+    const tabs =
+        userRole === 'ADMIN'
+            ? [realWorld, fantasy, designerPublic, designerUser, designerAdmin]
+            : [realWorld, fantasy, designerPublic, designerUser];
 
     return (
         <>
@@ -134,9 +274,12 @@ export default function GalleryView() {
                 <TabList>
                     <Tab>{t('gallery.type.realWorld')}</Tab>
                     <Tab>{t('gallery.type.fantasy')}</Tab>
+                    <Tab>{t('gallery.type.designer')}</Tab>
+                    <Tab>{t('gallery.type.user')}</Tab>
+                    {userRole === 'ADMIN' && <Tab>{t('gallery.type.admin')}</Tab>}
                 </TabList>
                 <TabPanels overflow="hidden" h="100%">
-                    {[realWorld, fantasy].map((g, i) => (
+                    {tabs.map((g, i) => (
                         <TabPanel key={i} overflowY="auto" h="calc(100% - 2rem - 8px)">
                             {type === 'real_world' && (
                                 <>
@@ -184,13 +327,26 @@ export default function GalleryView() {
                                     <Flex flexWrap="wrap">
                                         {Object.entries(g)
                                             .filter(([_, metadata]) =>
-                                                filterID === '' ? true : metadata.contributors.includes(filterID)
+                                                filterID === '' ||
+                                                type === 'designer' ||
+                                                type === 'admin' ||
+                                                type === 'user'
+                                                    ? true
+                                                    : metadata.contributors.includes(filterID)
+                                            )
+                                            .filter(([_, metadata]) =>
+                                                filterIDServer === -1 ||
+                                                type === 'real_world' ||
+                                                type === 'fantasy' ||
+                                                type === 'user'
+                                                    ? true
+                                                    : (metadata as DesignerMetadata).userId === filterIDServer
                                             )
                                             .filter(([_, metadata]) =>
                                                 filterName === ''
                                                     ? true
                                                     : Object.values(metadata.name)
-                                                          .map(_ => _.toLowerCase())
+                                                          .map(_ => (_ as string).toLowerCase())
                                                           .join()
                                                           .includes(filterName.toLowerCase())
                                             )
@@ -211,8 +367,8 @@ export default function GalleryView() {
                                             <IconButton
                                                 aria-label="new"
                                                 size="lg"
-                                                icon={type === 'real_world' ? <MdAdd /> : <IoMdHeart />}
-                                                colorScheme={type === 'real_world' ? 'blue' : 'red'}
+                                                icon={type === 'fantasy' ? <IoMdHeart /> : <MdAdd />}
+                                                colorScheme={type === 'fantasy' ? 'red' : 'blue'}
                                                 variant="solid"
                                             />
                                         </Box>
@@ -226,6 +382,7 @@ export default function GalleryView() {
             <DetailsModal
                 city={city}
                 type={type}
+                userRole={userRole}
                 isOpen={isDetailsModalOpen}
                 onClose={() => setIsDetailsModalOpen(false)}
             />

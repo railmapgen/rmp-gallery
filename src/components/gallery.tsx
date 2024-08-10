@@ -23,7 +23,7 @@ import { MdAdd } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
 import { useRootDispatch, useRootSelector } from '../redux';
-import { setFantasy, setLogins, setRealWorld, setServerUsers } from '../redux/app/app-slice';
+import { setFantasy, setLogins, setRealWorld } from '../redux/app/app-slice';
 import {
     Designer,
     DesignerMetadata,
@@ -83,7 +83,7 @@ export default function GalleryView() {
             if (rmgRuntime.isStandaloneWindow()) {
                 window.open('/rmp-designer/#/new', '_blank');
             } else {
-                rmgRuntime.openApp('rmp-designer', '/new');
+                rmgRuntime.openApp({ appId: 'rmp-designer', hash: '/new' });
             }
         }
     };

@@ -113,17 +113,16 @@ export default function GalleryView() {
         if (rep.status !== 200) {
             return;
         }
-        const { data: res, userList } = await rep.json();
+        const { data: res } = await rep.json();
 
         const pub: Designer = {};
         res.forEach((p: DesignerResponse) => {
             pub[`${p.id}`] = designerSetItem(p);
         });
-        console.log(userList);
         setDesignerPublic(pub);
-        dispatch(
-            setServerUsers(userList.reduce((s: string, k: { id: number; name: string }) => ({ [k.id]: k.name }), {}))
-        );
+        // dispatch(
+        //     setServerUsers(userList.reduce((s: string, k: { id: number; name: string }) => ({ [k.id]: k.name }), {}))
+        // );
         return;
     };
 

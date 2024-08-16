@@ -1,0 +1,367 @@
+{
+    "svgViewBoxZoom": 70,
+    "svgViewBoxMin": {
+        "x": 102.28066732974973,
+        "y": -65.7717996352988
+    },
+    "graph": {
+        "options": {
+            "type": "directed",
+            "multi": true,
+            "allowSelfLoops": true
+        },
+        "attributes": {},
+        "nodes": [
+            {
+                "key": "stn_tMifPpWKSV",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 170,
+                    "y": 360,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "美高梅大酒店",
+                            "MGM Grand"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_s0h8t1Go8j",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 170,
+                    "y": 250,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "馬蹄灣與巴黎",
+                            "Horseshoe & Paris"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_CTNLWnuVvd",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 170,
+                    "y": 215,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "火鶴與凱撒宮",
+                            "Flamingo & Caesars Palace"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_nVqnl77DvR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 170,
+                    "y": 180,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "哈拉斯與林尼克",
+                            "Harrah's & The Linq"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_rFYV2TCo-4",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 225,
+                    "y": 155,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_Guu2HKstFg",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 290,
+                    "y": 75,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "會展中心",
+                            "Convention Center"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_Nens5X4ZGU",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 290,
+                    "y": 10,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "西門",
+                            "Westgate"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_27q8-1VDSw",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 290,
+                    "y": -40,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "撒哈拉",
+                            "Sahara"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            }
+        ],
+        "edges": [
+            {
+                "key": "line_WJBmffSKyz",
+                "source": "stn_tMifPpWKSV",
+                "target": "stn_s0h8t1Go8j",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#133c8c",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_ERNe00TQQq",
+                "source": "stn_s0h8t1Go8j",
+                "target": "stn_CTNLWnuVvd",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#133c8c",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_4DCFrPjvWk",
+                "source": "stn_CTNLWnuVvd",
+                "target": "stn_nVqnl77DvR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#133c8c",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_g5qEgcZvVG",
+                "source": "misc_node_rFYV2TCo-4",
+                "target": "stn_nVqnl77DvR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#133c8c",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_cb3VgQ5eeK",
+                "source": "misc_node_rFYV2TCo-4",
+                "target": "stn_Guu2HKstFg",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#133c8c",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_Z1DZ0DEwaV",
+                "source": "stn_Guu2HKstFg",
+                "target": "stn_Nens5X4ZGU",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#133c8c",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_ArsCMg8rv0",
+                "source": "stn_Nens5X4ZGU",
+                "target": "stn_27q8-1VDSw",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#133c8c",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            }
+        ]
+    },
+    "version": 31
+}

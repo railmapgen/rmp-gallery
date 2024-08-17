@@ -70,6 +70,7 @@ const DetailsModal = (props: {
         reference: '',
         updateHistory: [],
     });
+    const [isVisibleOpen, setIsVisibleOpen] = React.useState(false);
 
     const fetchServerById = async () => {
         if (!rmtLogin) return;
@@ -101,6 +102,7 @@ const DetailsModal = (props: {
     };
 
     React.useEffect(() => {
+        setIsVisibleOpen(false);
         if (type === 'real_world' || type === 'fantasy') {
             fetch(`resources/metadata/${city}.json`)
                 .then(res => res.json())
@@ -153,7 +155,7 @@ const DetailsModal = (props: {
 
     const handleChangeStatus = async (type: 'public' | 'pending' | 'rejected') => {
         if (!rmtLogin) return;
-        const rep = await fetch('http://localhost:3000/v1/designer/admin', {
+        const rep = await fetch(RMT_SERVER + '/designer/admin', {
             headers: {
                 accept: 'application/json',
                 'Content-Type': 'application/json',
@@ -191,8 +193,6 @@ const DetailsModal = (props: {
         duration: 9000,
         isClosable: true,
     };
-
-    const [isVisibleOpen, setIsVisibleOpen] = React.useState(false);
 
     return (
         <Modal isOpen={isOpen} onClose={onClose} size="6xl" scrollBehavior="inside">

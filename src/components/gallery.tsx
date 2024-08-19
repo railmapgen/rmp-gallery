@@ -55,6 +55,7 @@ export default function GalleryView() {
     const [designerUser, setDesignerUser] = React.useState<Designer>({});
     const [userRole, setUserRole] = React.useState<'USER' | 'ADMIN'>('USER');
 
+    const [tabIndex, setTabIndex] = React.useState(0);
     const [type, setType] = React.useState('real_world' as 'real_world' | 'fantasy' | 'designer' | 'user' | 'admin');
     const [city, setCity] = React.useState('shanghai');
     const [isDetailsModalOpen, setIsDetailsModalOpen] = React.useState(false);
@@ -240,7 +241,19 @@ export default function GalleryView() {
         },
     ];
 
+    React.useEffect(() => {
+        const url = new URL(window.location.href);
+        const searchParams = url.searchParams;
+        if (searchParams.size > 0) {
+            const id = searchParams.get('tabId');
+            if (id && Number.isInteger(Number(id))) {
+                handleTabChange(Number(id));
+            }
+        }
+    }, []);
+
     const handleTabChange = (i: number) => {
+        setTabIndex(i);
         // set some default values for different types
         switch (i) {
             case 0:
@@ -269,7 +282,7 @@ export default function GalleryView() {
 
     return (
         <>
-            <Tabs isLazy isFitted onChange={i => handleTabChange(i)} overflow="hidden">
+            <Tabs isLazy isFitted index={tabIndex} onChange={i => handleTabChange(i)} overflow="hidden">
                 <TabList>
                     <Tab>{t('gallery.type.realWorld')}</Tab>
                     <Tab>{t('gallery.type.fantasy')}</Tab>

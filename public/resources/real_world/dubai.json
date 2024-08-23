@@ -1,0 +1,4018 @@
+{
+    "svgViewBoxZoom": 230,
+    "svgViewBoxMin": {
+        "x": -2288.6999999999944,
+        "y": -1830.9999999999998
+    },
+    "graph": {
+        "options": {
+            "type": "directed",
+            "multi": true,
+            "allowSelfLoops": true
+        },
+        "attributes": {},
+        "nodes": [
+            {
+                "key": "stn_XdvtfsP4Tc",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 0,
+                    "y": 0,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Jumeirah Beach\\Residence 1"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "lineCode": "T",
+                        "stationCode": "01",
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_CWAoJQM9__",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -30,
+                    "y": 30,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Jumeirah Beach\\Residence 2"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "lineCode": "T",
+                        "stationCode": "02",
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_SIfcvtTo2r",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 80,
+                    "y": 115,
+                    "type": "mrt-int",
+                    "mrt-int": {
+                        "names": [
+                            "Jumeirah Lakes\\Towers"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "transfer": [
+                            [
+                                [
+                                    "dubai",
+                                    "dbtram",
+                                    "#ec6906",
+                                    "#fff",
+                                    "T",
+                                    "03"
+                                ],
+                                [
+                                    "dubai",
+                                    "dbred",
+                                    "#e4061f",
+                                    "#fff",
+                                    "R",
+                                    "37"
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_kLlWLnP2mx",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 95,
+                    "y": 90,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Dubai Marina\\Mall"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "lineCode": "T",
+                        "stationCode": "04",
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_fJWZ7BOJ-b",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -10,
+                    "y": 95,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_jjfyhc2k90",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 155,
+                    "y": 40,
+                    "type": "mrt-int",
+                    "mrt-int": {
+                        "names": [
+                            "Dubai Marina"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "transfer": [
+                            [
+                                [
+                                    "dubai",
+                                    "dbtram",
+                                    "#ec6906",
+                                    "#fff",
+                                    "T",
+                                    "05"
+                                ],
+                                [
+                                    "dubai",
+                                    "dbred",
+                                    "#e4061f",
+                                    "#fff",
+                                    "R",
+                                    "36"
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_BJZ_Z-zZQ0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 90,
+                    "y": 45,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_32WhBCE9Zu",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 130,
+                    "y": -30,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Marina Towers"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "T",
+                        "stationCode": "06",
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_CYPgcxcrsW",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 110,
+                    "y": -110,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Mina Seyahi"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "T",
+                        "stationCode": "07",
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_GuYg3MQuWB",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 140,
+                    "y": -140,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Media City"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "T",
+                        "stationCode": "08",
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_JEZJP4dA5X",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 180,
+                    "y": -180,
+                    "type": "mrt-int",
+                    "mrt-int": {
+                        "names": [
+                            "Palm Gateway"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "transfer": [
+                            [
+                                [
+                                    "other",
+                                    "other",
+                                    "#2d89c7",
+                                    "#fff",
+                                    "M",
+                                    "01"
+                                ],
+                                [
+                                    "dubai",
+                                    "dbtram",
+                                    "#ec6906",
+                                    "#fff",
+                                    "T",
+                                    "09"
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_-B0_FkcBXZ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 50,
+                    "y": -310,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Al Ittihad Park"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "lineCode": "M",
+                        "stationCode": "02",
+                        "color": [
+                            "other",
+                            "other",
+                            "#2d89c7",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_3dEl2mx122",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 20,
+                    "y": -340,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Nakheel Mall"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "lineCode": "M",
+                        "stationCode": "03",
+                        "color": [
+                            "other",
+                            "other",
+                            "#2d89c7",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_BgnsaRdKue",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -100,
+                    "y": -460,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Atlantis Aquaventure"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "lineCode": "M",
+                        "stationCode": "04",
+                        "color": [
+                            "other",
+                            "other",
+                            "#2d89c7",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_SNyn5YzaVb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 210,
+                    "y": -210,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Knowledge Village"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "T",
+                        "stationCode": "10",
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_TdjHMFOBIb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 240,
+                    "y": -240,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Al Sufouh"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "lineCode": "T",
+                        "stationCode": "11",
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_yUJtXcVuPi",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 20,
+                    "y": 180,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Jabal Ali"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "lineCode": "R",
+                        "stationCode": "38",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_qxJ5-riuVk",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -50,
+                    "y": 250,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Ibn Battuta"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "lineCode": "R",
+                        "stationCode": "39",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_9ozzni8aVb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -120,
+                    "y": 320,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Energy"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "lineCode": "R",
+                        "stationCode": "40",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_L6g51Dew0Q",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -190,
+                    "y": 390,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Danube"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "lineCode": "R",
+                        "stationCode": "41",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_1efrt4ncz0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -260,
+                    "y": 460,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "UAE Exchange"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "42",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_wXPNnz6Dqw",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 230,
+                    "y": -30,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Al Khali"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "35",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_eh2s4fkj3I",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "x": 95,
+                    "y": 115,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "DMCC"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "38",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_1WUECKZxjj",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "x": 170,
+                    "y": 40,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Sobha Realty"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "38",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_ACLufvDLlq",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 50,
+                    "y": 270,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "The Gardens"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "R",
+                        "stationCode": "70",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_-A_k1rd6KZ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 120,
+                    "y": 340,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Discovery Gardens"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "R",
+                        "stationCode": "71",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_id3TiL34ZH",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 190,
+                    "y": 410,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Al Furjan"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "R",
+                        "stationCode": "72",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_JIAh1GTKNC",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 180,
+                    "y": 520,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Jumeirah Golf Estates"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "73",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_rAK1GIiIDr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 110,
+                    "y": 590,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Dubai Investment Park"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "74",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_CnPX3P0jtS",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 40,
+                    "y": 660,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Expo 2020"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "76",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_Ce_mp5Hqr9",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 300,
+                    "y": -100,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Dubai Internet City"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "34",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_XDRGVRc0qq",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 370,
+                    "y": -170,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Mashreq"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "33",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_eglnZBqOFz",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 440,
+                    "y": -240,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Mall of the Emirates"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "32",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_a_ZNFqQT6T",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 510,
+                    "y": -310,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Equiti"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "31",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_0_U8kqPRNr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 580,
+                    "y": -380,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "ONPASSIVE"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "29",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_Tk8kHwe5gX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 650,
+                    "y": -450,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Business Bay"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "26",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_mzn2LvG5M0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 720,
+                    "y": -520,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Burj Khalifa / Dubai Mall"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "25",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_jKj97HUsXB",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 790,
+                    "y": -590,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Financial Centre"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "24",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_-oPxO2Ps6J",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 860,
+                    "y": -660,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Emirates Towers"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "23",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_VgucH20LNy",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 930,
+                    "y": -730,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "World Trade Centre"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "22",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_E7sTbL8PdT",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1000,
+                    "y": -800,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "max"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "21",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_v6AMlPVeG-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1070,
+                    "y": -870,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "ADCB"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "20",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_31F4ASN89Y",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1140,
+                    "y": -940,
+                    "type": "mrt-int",
+                    "mrt-int": {
+                        "names": [
+                            "BurJuman"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "transfer": [
+                            [
+                                [
+                                    "dubai",
+                                    "dbgreen",
+                                    "#00a243",
+                                    "#fff",
+                                    "G",
+                                    "26"
+                                ],
+                                [
+                                    "dubai",
+                                    "dbred",
+                                    "#e4061f",
+                                    "#fff",
+                                    "R",
+                                    "19"
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_ln8bUS4RCc",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1070,
+                    "y": -1010,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Sharaf DG"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "G",
+                        "stationCode": "25",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_rE8p4cChRk",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1050,
+                    "y": -1100,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Al Ghubaiba"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "24",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_K_tO4lmoog",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1120,
+                    "y": -1170,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Al Ras"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "23",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_6h9P9yphV0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1190,
+                    "y": -1190,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Gold Souq"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "22",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_450SfRqpyQ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1230,
+                    "y": -1150,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Baniyas Square"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "21",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_xhLIYgweBX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1335,
+                    "y": -1140,
+                    "type": "mrt-int",
+                    "mrt-int": {
+                        "names": [
+                            "Union"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "transfer": [
+                            [
+                                [
+                                    "dubai",
+                                    "dbgreen",
+                                    "#00a243",
+                                    "#fff",
+                                    "G",
+                                    "20"
+                                ],
+                                [
+                                    "dubai",
+                                    "dbred",
+                                    "#e4061f",
+                                    "#fff",
+                                    "R",
+                                    "18"
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_S20TrB8mcj",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1210,
+                    "y": -870,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Oud Metha"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "G",
+                        "stationCode": "27",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_op8xdjpqzn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1280,
+                    "y": -800,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Dubai Healthcare City"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "G",
+                        "stationCode": "28",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_SqK1uFNiUH",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1320,
+                    "y": -700,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Al Jadaf"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "lineCode": "G",
+                        "stationCode": "29",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_tFZB3fn3ZP",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1320,
+                    "y": -600,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Creek"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "lineCode": "G",
+                        "stationCode": "30",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_49ra9iMEyr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1400,
+                    "y": -1210,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Salah Al Din"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "19",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_YAe8ursx7U",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1720,
+                    "y": -1420,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Stadium"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "15",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_E83W0OIZGQ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1470,
+                    "y": -1280,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Abu Baker Al Siddique"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "18",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_7bOkoE6hGs",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1540,
+                    "y": -1350,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Abu Hail"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "17",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_aS9Lgn5GW-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1610,
+                    "y": -1420,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Al Qiyadah"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "16",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_WIihAI2cxQ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1790,
+                    "y": -1350,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Al Nahda"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "14",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_9lALOq0bCf",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1860,
+                    "y": -1280,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Dubai Airport Free Zone"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "13",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_UleydxbKhs",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1930,
+                    "y": -1210,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Ai Qusais"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "12",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_u7L12hpf2b",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 2000,
+                    "y": -1140,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "etisalat by e&"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "11",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_1zAVFVkR6r",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1440,
+                    "y": -1120,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Ai Rigga"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "17",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_JPlUherNXG",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1510,
+                    "y": -1050,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "City Centre Deira"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "16",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_oTB7FrEH6f",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1580,
+                    "y": -980,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "GGICO"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "15",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_pUX8NrKNrJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1650,
+                    "y": -910,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Airport Terminal 1"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "14",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_FFfBxhZgNf",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1555,
+                    "y": -900,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "airport_sg"
+                    }
+                }
+            },
+            {
+                "key": "stn_AeMceLrDCJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1720,
+                    "y": -840,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Airport Terminal 3"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "13",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_Iir1P28vXa",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1625,
+                    "y": -830,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "airport_sg"
+                    }
+                }
+            },
+            {
+                "key": "stn_ptOHrgjo7w",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1790,
+                    "y": -770,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Emirates"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "12",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_FHSb5re8Jr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1860,
+                    "y": -700,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "centrepoint"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "lineCode": "R",
+                        "stationCode": "11",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_RR4wt8T1s_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -120,
+                    "y": 560,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Al Maktoum International Airport"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "lineCode": "",
+                        "stationCode": "",
+                        "color": [
+                            "other",
+                            "other",
+                            "#bf83ba",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_YvVlwemw5p",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -270,
+                    "y": 560,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "airport_sg"
+                    }
+                }
+            },
+            {
+                "key": "stn_oXI3rIXR63",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1595,
+                    "y": -1295,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            "Airport Terminal 2"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "lineCode": "",
+                        "stationCode": "",
+                        "color": [
+                            "other",
+                            "other",
+                            "#bf83ba",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_G3oV7zbzw4",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1690,
+                    "y": -1295,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "airport_sg"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_xWCMt3EnIr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 995,
+                    "y": -450,
+                    "type": "text",
+                    "text": {
+                        "content": "Legend",
+                        "fontSize": 16,
+                        "lineHeight": 16,
+                        "textAnchor": "start",
+                        "dominantBaseline": "auto",
+                        "language": "mrt",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_PCsgy60TW3",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 995,
+                    "y": -405,
+                    "type": "text",
+                    "text": {
+                        "content": "Metro Red Line",
+                        "fontSize": 10,
+                        "lineHeight": 10,
+                        "textAnchor": "start",
+                        "dominantBaseline": "auto",
+                        "language": "mrt",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_uSZl4VLGd7",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 995,
+                    "y": -380,
+                    "type": "text",
+                    "text": {
+                        "content": "Metro Green Line",
+                        "fontSize": 10,
+                        "lineHeight": 10,
+                        "textAnchor": "start",
+                        "dominantBaseline": "auto",
+                        "language": "mrt",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_j6XCkY37Bf",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 995,
+                    "y": -355,
+                    "type": "text",
+                    "text": {
+                        "content": "Tram Line",
+                        "fontSize": 10,
+                        "lineHeight": 10,
+                        "textAnchor": "start",
+                        "dominantBaseline": "auto",
+                        "language": "mrt",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_ToFR_InRRU",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 995,
+                    "y": -330,
+                    "type": "text",
+                    "text": {
+                        "content": "Monorail Line",
+                        "fontSize": 10,
+                        "lineHeight": 10,
+                        "textAnchor": "start",
+                        "dominantBaseline": "auto",
+                        "language": "mrt",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_CYl7bEwemA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 995,
+                    "y": -305,
+                    "type": "text",
+                    "text": {
+                        "content": "Bus Line",
+                        "fontSize": 10,
+                        "lineHeight": 10,
+                        "textAnchor": "start",
+                        "dominantBaseline": "auto",
+                        "language": "mrt",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_XPsYSbjeSs",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 995,
+                    "y": -280,
+                    "type": "text",
+                    "text": {
+                        "content": "Ferry Route",
+                        "fontSize": 10,
+                        "lineHeight": 10,
+                        "textAnchor": "start",
+                        "dominantBaseline": "auto",
+                        "language": "mrt",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_-gOBwgGxrA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 995,
+                    "y": -255,
+                    "type": "text",
+                    "text": {
+                        "content": "Station Number",
+                        "fontSize": 10,
+                        "lineHeight": 10,
+                        "textAnchor": "start",
+                        "dominantBaseline": "auto",
+                        "language": "mrt",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_dTaVkqXQ--",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 995,
+                    "y": -230,
+                    "type": "text",
+                    "text": {
+                        "content": "Interchange Station",
+                        "fontSize": 10,
+                        "lineHeight": 10,
+                        "textAnchor": "start",
+                        "dominantBaseline": "auto",
+                        "language": "mrt",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "stn_k7Adc0Hazc",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1115,
+                    "y": -255,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            ""
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "R",
+                        "stationCode": "12",
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_AcJKNqpWpP",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1140,
+                    "y": -255,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            ""
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "G",
+                        "stationCode": "12",
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_-G0dNqb5ty",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1165,
+                    "y": -255,
+                    "type": "mrt-basic",
+                    "mrt-basic": {
+                        "names": [
+                            ""
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "lineCode": "T",
+                        "stationCode": "10",
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_k33kTQKkBL",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1105,
+                    "y": -380,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_itIFB6FgAT",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1175,
+                    "y": -380,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_jcuRXsBMXh",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1105,
+                    "y": -355,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_Yy3OPM0UW5",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1175,
+                    "y": -355,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_AhHMGKJXZK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1105,
+                    "y": -330,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_HH8YC67mtH",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1175,
+                    "y": -330,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_nmwNV59TqH",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1105,
+                    "y": -305,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_Jc9rmOc-kd",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1175,
+                    "y": -305,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_vZ-Ht-fRLw",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1105,
+                    "y": -280,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_Bsalc2LkCv",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1175,
+                    "y": -280,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_tgYz48Mhkb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1140,
+                    "y": -230,
+                    "type": "mrt-int",
+                    "mrt-int": {
+                        "names": [
+                            ""
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "transfer": [
+                            [
+                                [
+                                    "dubai",
+                                    "dbred",
+                                    "#e4061f",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "dubai",
+                                    "dbgreen",
+                                    "#00a243",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_zxGByWe7e_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 995,
+                    "y": -205,
+                    "type": "text",
+                    "text": {
+                        "content": "Airport",
+                        "fontSize": 10,
+                        "lineHeight": 10,
+                        "textAnchor": "start",
+                        "dominantBaseline": "auto",
+                        "language": "mrt",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_6tQCriYr4G",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1140,
+                    "y": -205,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "airport_sg"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_hi5GBMoDHJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 995,
+                    "y": -430,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_9-L7vct6pd",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1175,
+                    "y": -430,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_Fktzjz-LOa",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1105,
+                    "y": -405,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_8b7oVyxAw7",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1175,
+                    "y": -405,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_BiyqITNW7o",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -135,
+                    "y": -495,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_ajscExQQZo",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 235,
+                    "y": -495,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_RKFiaeSBMi",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -140,
+                    "y": -125,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_hTYx3VQKaV",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 75,
+                    "y": 55,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "cruise_centre"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_LPo6kQK30x",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 75,
+                    "y": 55,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_FfCXTwH64H",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -95,
+                    "y": 95,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_V7wBFI-lKe",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -120,
+                    "y": -5,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_NQOEnGzZE7",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 540,
+                    "y": -510,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "cruise_centre"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_SBh4sQHY34",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 550,
+                    "y": -505,
+                    "type": "text",
+                    "text": {
+                        "content": "Dubai Canal",
+                        "fontSize": 10,
+                        "lineHeight": 10,
+                        "textAnchor": "start",
+                        "dominantBaseline": "auto",
+                        "language": "mrt",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_NjunQVHYhK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 335,
+                    "y": -555,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_3pXn7CMPy6",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 495,
+                    "y": -515,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_flwY6UdjIY",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 540,
+                    "y": -510,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node__R0SJE560u",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1045,
+                    "y": -1135,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_QLfsIJZa-T",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1030,
+                    "y": -1165,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_ux67nUhsMm",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 995,
+                    "y": -1185,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_DyWPV_HYgq",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1025,
+                    "y": -1100,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "cruise_centre"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_sPUTtVnW-U",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 445,
+                    "y": -665,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_Cg_cRxKvLr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1610,
+                    "y": -1625,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "cruise_centre"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_YrvX_Qodfw",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1620,
+                    "y": -1620,
+                    "type": "text",
+                    "text": {
+                        "content": "Sharjah Aquarium",
+                        "fontSize": 10,
+                        "lineHeight": 10,
+                        "textAnchor": "start",
+                        "dominantBaseline": "auto",
+                        "language": "mrt",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_IL7LOGqstc",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1610,
+                    "y": -1625,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_vNdKuS22Pg",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1225,
+                    "y": -1375,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            }
+        ],
+        "edges": [
+            {
+                "key": "line_EsbRnfBJOS",
+                "source": "stn_XdvtfsP4Tc",
+                "target": "stn_CWAoJQM9__",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_Gg7qvJjI_I",
+                "source": "misc_node_fJWZ7BOJ-b",
+                "target": "stn_CWAoJQM9__",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_EVLU3muWnz",
+                "source": "misc_node_fJWZ7BOJ-b",
+                "target": "stn_SIfcvtTo2r",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": -5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_ffopBZuI0I",
+                "source": "stn_kLlWLnP2mx",
+                "target": "stn_SIfcvtTo2r",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 5,
+                        "offsetTo": -5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_969I3DXxrC",
+                "source": "stn_kLlWLnP2mx",
+                "target": "stn_jjfyhc2k90",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": -5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_yQLaeoVIPA",
+                "source": "misc_node_BJZ_Z-zZQ0",
+                "target": "stn_XdvtfsP4Tc",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_eQ-GeMWRgw",
+                "source": "misc_node_BJZ_Z-zZQ0",
+                "target": "stn_jjfyhc2k90",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": -5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_Hts_0-ArkM",
+                "source": "stn_jjfyhc2k90",
+                "target": "stn_SIfcvtTo2r",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 5,
+                        "offsetTo": 5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_emsdIPnEXf",
+                "source": "stn_32WhBCE9Zu",
+                "target": "stn_jjfyhc2k90",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": -5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_dSylxW_2o9",
+                "source": "stn_BgnsaRdKue",
+                "target": "stn_JEZJP4dA5X",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#2d89c7",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_WBDuiegrsF",
+                "source": "stn_32WhBCE9Zu",
+                "target": "stn_TdjHMFOBIb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_08JefHhxBd",
+                "source": "stn_SIfcvtTo2r",
+                "target": "stn_1efrt4ncz0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_urEPBhyAys",
+                "source": "stn_ACLufvDLlq",
+                "target": "stn_yUJtXcVuPi",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_-D_qxXnTlu",
+                "source": "stn_ACLufvDLlq",
+                "target": "stn_JIAh1GTKNC",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_lS-Ltn5Yyl",
+                "source": "stn_CnPX3P0jtS",
+                "target": "stn_JIAh1GTKNC",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_Yb7E2VlTyA",
+                "source": "stn_31F4ASN89Y",
+                "target": "stn_jjfyhc2k90",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_uNTRLQbGeB",
+                "source": "stn_31F4ASN89Y",
+                "target": "stn_rE8p4cChRk",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_jVywELnduu",
+                "source": "stn_6h9P9yphV0",
+                "target": "stn_rE8p4cChRk",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_ZquEFYRCCj",
+                "source": "stn_6h9P9yphV0",
+                "target": "stn_xhLIYgweBX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": -5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_vNilFFP1OD",
+                "source": "stn_31F4ASN89Y",
+                "target": "stn_xhLIYgweBX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_6iLlFaCXdh",
+                "source": "stn_tFZB3fn3ZP",
+                "target": "stn_31F4ASN89Y",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_shzzHbgqmq",
+                "source": "stn_YAe8ursx7U",
+                "target": "stn_xhLIYgweBX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": -5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_meDyMfiY2R",
+                "source": "stn_YAe8ursx7U",
+                "target": "stn_u7L12hpf2b",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_uKfheqHiZu",
+                "source": "stn_1zAVFVkR6r",
+                "target": "stn_1zAVFVkR6r",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_sbmsQs76BH",
+                "source": "stn_FHSb5re8Jr",
+                "target": "stn_xhLIYgweBX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 4,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_q1_3sGkjFd",
+                "source": "stn_qxJ5-riuVk",
+                "target": "stn_RR4wt8T1s_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#bf83ba",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_Hx2WFOxfiG",
+                "source": "stn_7bOkoE6hGs",
+                "target": "stn_oXI3rIXR63",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#bf83ba",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_iqCyomogZo",
+                "source": "stn_oXI3rIXR63",
+                "target": "stn_YAe8ursx7U",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#bf83ba",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_jawWbCrln6",
+                "source": "misc_node_k33kTQKkBL",
+                "target": "misc_node_itIFB6FgAT",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbgreen",
+                            "#00a243",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_sQOcubE8Sc",
+                "source": "misc_node_jcuRXsBMXh",
+                "target": "misc_node_Yy3OPM0UW5",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "dubai",
+                            "dbtram",
+                            "#ec6906",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_Xdkwi44w5e",
+                "source": "misc_node_AhHMGKJXZK",
+                "target": "misc_node_HH8YC67mtH",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#2d89c7",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_TzCPGCR8GA",
+                "source": "misc_node_nmwNV59TqH",
+                "target": "misc_node_Jc9rmOc-kd",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#bf83ba",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_EVqhrj5M1N",
+                "source": "misc_node_vZ-Ht-fRLw",
+                "target": "misc_node_Bsalc2LkCv",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_922aw0KYuv",
+                "source": "misc_node_hi5GBMoDHJ",
+                "target": "misc_node_9-L7vct6pd",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-paid-area",
+                    "reconcileId": "",
+                    "mtr-paid-area": {}
+                }
+            },
+            {
+                "key": "line_-ASxpe9Gs8",
+                "source": "misc_node_Fktzjz-LOa",
+                "target": "misc_node_8b7oVyxAw7",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dubai",
+                            "dbred",
+                            "#e4061f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": ""
+                }
+            },
+            {
+                "key": "line_XEyIPjL6Tl",
+                "source": "misc_node_ajscExQQZo",
+                "target": "misc_node_BiyqITNW7o",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 500
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_Jpcvh4sTOr",
+                "source": "misc_node_RKFiaeSBMi",
+                "target": "misc_node_BiyqITNW7o",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 500
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_n1zBk2KfKT",
+                "source": "misc_node_LPo6kQK30x",
+                "target": "misc_node_fJWZ7BOJ-b",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_Ary58Nlucx",
+                "source": "misc_node_FfCXTwH64H",
+                "target": "misc_node_fJWZ7BOJ-b",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_MFnywNLTd4",
+                "source": "misc_node_V7wBFI-lKe",
+                "target": "misc_node_RKFiaeSBMi",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_5ygcz1dI0z",
+                "source": "misc_node_V7wBFI-lKe",
+                "target": "misc_node_FfCXTwH64H",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_4m34r3oIBd",
+                "source": "misc_node_ajscExQQZo",
+                "target": "misc_node_NjunQVHYhK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_BokZIUS4qY",
+                "source": "misc_node_3pXn7CMPy6",
+                "target": "misc_node_NjunQVHYhK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_bQwQXxW9pt",
+                "source": "misc_node_3pXn7CMPy6",
+                "target": "misc_node_flwY6UdjIY",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_k-GmWAhUl0",
+                "source": "misc_node__R0SJE560u",
+                "target": "stn_rE8p4cChRk",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_O64hXb0RwA",
+                "source": "misc_node_QLfsIJZa-T",
+                "target": "misc_node__R0SJE560u",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_o-4q_DJfUf",
+                "source": "misc_node_ux67nUhsMm",
+                "target": "misc_node_QLfsIJZa-T",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_T6LkF190n3",
+                "source": "misc_node_3pXn7CMPy6",
+                "target": "misc_node_sPUTtVnW-U",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_k83pHlZVp9",
+                "source": "misc_node_ux67nUhsMm",
+                "target": "misc_node_sPUTtVnW-U",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_eI1gtI6yDb",
+                "source": "misc_node_IL7LOGqstc",
+                "target": "misc_node_vNdKuS22Pg",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_QtvICyVIin",
+                "source": "misc_node_QLfsIJZa-T",
+                "target": "misc_node_vNdKuS22Pg",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ace7ea",
+                            "#fff"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "version": 31
+}

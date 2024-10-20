@@ -56,6 +56,7 @@ export default function GalleryView() {
     const [userRole, setUserRole] = React.useState<'USER' | 'ADMIN'>('USER');
 
     const [tabIndex, setTabIndex] = React.useState(0);
+    const [isMasterImport, setIsMasterImport] = React.useState(false);
     const [type, setType] = React.useState('real_world' as 'real_world' | 'fantasy' | 'designer' | 'user' | 'admin');
     const [city, setCity] = React.useState('shanghai');
     const [isDetailsModalOpen, setIsDetailsModalOpen] = React.useState(false);
@@ -249,6 +250,9 @@ export default function GalleryView() {
             if (id && Number.isInteger(Number(id))) {
                 handleTabChange(Number(id));
             }
+
+            const master = searchParams.get('master');
+            setIsMasterImport(!!master);
         }
     }, []);
 
@@ -284,8 +288,8 @@ export default function GalleryView() {
         <>
             <Tabs isLazy isFitted index={tabIndex} onChange={i => handleTabChange(i)} overflow="hidden">
                 <TabList>
-                    <Tab>{t('gallery.type.realWorld')}</Tab>
-                    <Tab>{t('gallery.type.fantasy')}</Tab>
+                    <Tab isDisabled={isMasterImport}>{t('gallery.type.realWorld')}</Tab>
+                    <Tab isDisabled={isMasterImport}>{t('gallery.type.fantasy')}</Tab>
                     <Tab>{t('gallery.type.designer')}</Tab>
                     <Tab>{t('gallery.type.user')}</Tab>
                     {userRole === 'ADMIN' && <Tab>{t('gallery.type.admin')}</Tab>}

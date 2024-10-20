@@ -50,6 +50,10 @@ const RMP_GALLERY_CHANNEL_DESIGNER_OPEN_EVENT = 'OPEN_DESIGNER';
 const RMP_GALLERY_CHANNEL_DESIGNER_NEW_EVENT = 'NEW_DESIGNER';
 const CHN = new BroadcastChannel(RMP_GALLERY_CHANNEL_NAME);
 
+const RMP_MASTER_CHANNEL_NAME = 'RMP_MASTER_CHANNEL';
+const RMP_MASTER_CHANNEL_POST = 'MASTER_POST';
+const CHN_MASTER = new BroadcastChannel(RMP_MASTER_CHANNEL_NAME);
+
 const DetailsModal = (props: {
     city: string;
     type: 'real_world' | 'fantasy' | 'designer' | 'user' | 'admin';
@@ -63,6 +67,16 @@ const DetailsModal = (props: {
     const { t } = useTranslation();
     const { rmtLogin } = useRootSelector(state => state.app);
     const translateName = useTranslatedName();
+
+    const [isMasterImport, setIsMasterImport] = React.useState(false);
+    React.useEffect(() => {
+        const url = new URL(window.location.href);
+        const searchParams = url.searchParams;
+        if (searchParams.size > 0) {
+            const m = searchParams.get('master');
+            setIsMasterImport(!!m);
+        }
+    }, []);
 
     const [metadata, setMetadata] = React.useState<Metadata | DesignerDetails>({
         name: { en: '' },
@@ -194,6 +208,15 @@ const DetailsModal = (props: {
         isClosable: true,
     };
 
+    const handleMasterImport = () => {
+        if (isMasterImport && (metadata as DesignerDetails).data !== undefined) {
+            CHN_MASTER.postMessage({
+                event: RMP_MASTER_CHANNEL_POST,
+                data: (metadata as DesignerDetails).data,
+            });
+        }
+    };
+
     return (
         <Modal isOpen={isOpen} onClose={onClose} size="6xl" scrollBehavior="inside">
             <ModalOverlay />
@@ -279,88 +302,99 @@ const DetailsModal = (props: {
                     )}
                 </ModalBody>
 
-                <ModalFooter>
-                    <IconButton aria-label="Like" variant="ghost" icon={<IoHeartOutline />} isDisabled />
-                    <IconButton aria-label="Favorite" variant="ghost" icon={<IoStarOutline />} isDisabled />
-                    <Tooltip label={rmpShareLink}>
-                        <IconButton
-                            aria-label="Share"
-                            variant="ghost"
-                            icon={<MdShare />}
-                            isDisabled={type === 'admin' || type === 'designer' || type === 'user'}
-                            onClick={() => {
-                                navigator.clipboard.writeText(rmpShareLink);
-                                toast(rmpShareLinkClickedToast);
-                            }}
-                        />
-                    </Tooltip>
-                    <IconButton
-                        aria-label="Edit"
-                        variant="ghost"
-                        isDisabled={
-                            (type === 'fantasy' && ((metadata as Metadata).remainingUpdateCount ?? 0) === 0) ||
-                            type === 'designer'
-                        }
-                        icon={<MdEdit />}
-                        onClick={handleEditRmp}
-                    />
-                    <Popover isOpen={isVisibleOpen}>
-                        <PopoverTrigger>
-                            <IconButton
-                                hidden={userRole !== 'ADMIN'}
-                                aria-label="zoom"
-                                variant="ghost"
-                                icon={<MdVisibility />}
-                                onClick={() => setIsVisibleOpen(!isVisibleOpen)}
-                            />
-                        </PopoverTrigger>
-                        <PopoverContent>
-                            <PopoverBody>
-                                <Flex direction="row">
-                                    <Button colorScheme="green" onClick={() => handleChangeStatus('public')}>
-                                        PUBLIC
-                                    </Button>
-                                    <Button colorScheme="yellow" onClick={() => handleChangeStatus('pending')}>
-                                        PENDING
-                                    </Button>
-                                    <Button colorScheme="red" onClick={() => handleChangeStatus('rejected')}>
-                                        REJECTED
-                                    </Button>
-                                </Flex>
-                            </PopoverBody>
-                        </PopoverContent>
-                    </Popover>
-                    {type === 'real_world' || type === 'fantasy' ? (
-                        <a href={`resources/${type}/${city}.json`} target="_blank" rel="noopener noreferrer">
-                            <IconButton aria-label="Download" variant="ghost" icon={<MdDownload />} />
-                        </a>
-                    ) : (
-                        <IconButton
-                            aria-label="Download"
-                            variant="ghost"
-                            icon={<MdDownload />}
-                            onClick={() =>
-                                downloadAs(
-                                    `RMP-Designer_Marketplace_${new Date().valueOf()}.json`,
-                                    'application/json',
-                                    (metadata as DesignerDetails).data
-                                )
-                            }
-                        />
-                    )}
-                    {rmgRuntime.isStandaloneWindow() ? (
-                        <Tooltip label={t('details.import')}>
-                            <IconButton aria-label="Import" variant="ghost" icon={<BiImport />} isDisabled />
-                        </Tooltip>
-                    ) : (
+                {isMasterImport ? (
+                    <ModalFooter>
                         <IconButton
                             aria-label="Import"
                             variant="ghost"
                             icon={<BiImport />}
-                            onClick={handleOpenTemplate}
+                            onClick={handleMasterImport}
                         />
-                    )}
-                </ModalFooter>
+                    </ModalFooter>
+                ) : (
+                    <ModalFooter>
+                        <IconButton aria-label="Like" variant="ghost" icon={<IoHeartOutline />} isDisabled />
+                        <IconButton aria-label="Favorite" variant="ghost" icon={<IoStarOutline />} isDisabled />
+                        <Tooltip label={rmpShareLink}>
+                            <IconButton
+                                aria-label="Share"
+                                variant="ghost"
+                                icon={<MdShare />}
+                                isDisabled={type === 'admin' || type === 'designer' || type === 'user'}
+                                onClick={() => {
+                                    navigator.clipboard.writeText(rmpShareLink);
+                                    toast(rmpShareLinkClickedToast);
+                                }}
+                            />
+                        </Tooltip>
+                        <IconButton
+                            aria-label="Edit"
+                            variant="ghost"
+                            isDisabled={
+                                (type === 'fantasy' && ((metadata as Metadata).remainingUpdateCount ?? 0) === 0) ||
+                                type === 'designer'
+                            }
+                            icon={<MdEdit />}
+                            onClick={handleEditRmp}
+                        />
+                        <Popover isOpen={isVisibleOpen}>
+                            <PopoverTrigger>
+                                <IconButton
+                                    hidden={userRole !== 'ADMIN'}
+                                    aria-label="zoom"
+                                    variant="ghost"
+                                    icon={<MdVisibility />}
+                                    onClick={() => setIsVisibleOpen(!isVisibleOpen)}
+                                />
+                            </PopoverTrigger>
+                            <PopoverContent>
+                                <PopoverBody>
+                                    <Flex direction="row">
+                                        <Button colorScheme="green" onClick={() => handleChangeStatus('public')}>
+                                            PUBLIC
+                                        </Button>
+                                        <Button colorScheme="yellow" onClick={() => handleChangeStatus('pending')}>
+                                            PENDING
+                                        </Button>
+                                        <Button colorScheme="red" onClick={() => handleChangeStatus('rejected')}>
+                                            REJECTED
+                                        </Button>
+                                    </Flex>
+                                </PopoverBody>
+                            </PopoverContent>
+                        </Popover>
+                        {type === 'real_world' || type === 'fantasy' ? (
+                            <a href={`resources/${type}/${city}.json`} target="_blank" rel="noopener noreferrer">
+                                <IconButton aria-label="Download" variant="ghost" icon={<MdDownload />} />
+                            </a>
+                        ) : (
+                            <IconButton
+                                aria-label="Download"
+                                variant="ghost"
+                                icon={<MdDownload />}
+                                onClick={() =>
+                                    downloadAs(
+                                        `RMP-Designer_Marketplace_${new Date().valueOf()}.json`,
+                                        'application/json',
+                                        (metadata as DesignerDetails).data
+                                    )
+                                }
+                            />
+                        )}
+                        {rmgRuntime.isStandaloneWindow() ? (
+                            <Tooltip label={t('details.import')}>
+                                <IconButton aria-label="Import" variant="ghost" icon={<BiImport />} isDisabled />
+                            </Tooltip>
+                        ) : (
+                            <IconButton
+                                aria-label="Import"
+                                variant="ghost"
+                                icon={<BiImport />}
+                                onClick={handleOpenTemplate}
+                            />
+                        )}
+                    </ModalFooter>
+                )}
             </ModalContent>
         </Modal>
     );

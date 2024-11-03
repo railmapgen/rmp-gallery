@@ -368,7 +368,11 @@ export default function GalleryView() {
                                             )
                                             .sort((a, b) =>
                                                 // https://stackoverflow.com/questions/59773396/why-array-prototype-sort-has-different-behavior-in-chrome
-                                                sortBy === 'alphabetical' ? 0 : b[1].lastUpdateOn - a[1].lastUpdateOn
+                                                sortBy === 'alphabetical'
+                                                    ? a[1].name.en.toLowerCase() > b[1].name.en.toLowerCase()
+                                                        ? 1
+                                                        : -1
+                                                    : b[1].lastUpdateOn - a[1].lastUpdateOn
                                             )
                                             .map(([id, metadata]) => (
                                                 <TemplateCard

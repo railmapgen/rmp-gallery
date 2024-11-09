@@ -1,8 +1,8 @@
 {
     "svgViewBoxZoom": 50,
     "svgViewBoxMin": {
-        "x": 76.03000000000003,
-        "y": 234.962
+        "x": 242.0299694824219,
+        "y": 396.62864123535155
     },
     "graph": {
         "options": {
@@ -302,7 +302,7 @@
                 "key": "stn_XEnYyGaj_h",
                 "attributes": {
                     "mtr": {
-                        "nameOffsetX": "middle",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
                         "names": [
                             "協和醫院",
@@ -317,6 +317,28 @@
                     "visible": true,
                     "x": 425,
                     "y": 530,
+                    "zIndex": 5
+                }
+            },
+            {
+                "key": "stn_9h9h1ayDz1",
+                "attributes": {
+                    "mtr": {
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "names": [
+                            "石排灣",
+                            "Seac Pai Van\\Seac Pai Van"
+                        ],
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    },
+                    "type": "mtr",
+                    "visible": true,
+                    "x": 400,
+                    "y": 585,
                     "zIndex": 5
                 }
             }
@@ -672,8 +694,35 @@
                     "zIndex": -5,
                     "parallelIndex": -1
                 }
+            },
+            {
+                "key": "line_5n1grvMCUK",
+                "source": "stn_9h9h1ayDz1",
+                "target": "stn_XEnYyGaj_h",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#9900ff",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": 0
+                }
             }
         ]
     },
-    "version": 37
+    "version": 40
 }

@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 70,
+    "svgViewBoxZoom": 100,
     "svgViewBoxMin": {
-        "x": -240.52168426513154,
-        "y": 1664.2801132202155
+        "x": 218.21820831299135,
+        "y": 2297.100236511229
     },
     "graph": {
         "options": {
@@ -3523,7 +3523,7 @@
                     "shmetro-basic-2020": {
                         "names": [
                             "杨树浦路",
-                            "Yangshupu rd."
+                            "Yangshupu Rd."
                         ],
                         "rotate": 90,
                         "color": [
@@ -3567,7 +3567,7 @@
                     "shmetro-basic-2020": {
                         "names": [
                             "临平路",
-                            "Linpin Rd."
+                            "Linping Rd."
                         ],
                         "rotate": 0,
                         "color": [
@@ -10879,7 +10879,7 @@
                     "shmetro-basic-2020": {
                         "names": [
                             "黄兴路",
-                            "Huangxin Rd."
+                            "Huangxing Rd."
                         ],
                         "rotate": 135,
                         "color": [
@@ -11040,7 +11040,7 @@
                     "shmetro-basic-2020": {
                         "names": [
                             "凌兆新村",
-                            "Linzhao Xincun"
+                            "Lingzhao Xincun"
                         ],
                         "rotate": 90,
                         "color": [
@@ -13273,7 +13273,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1305,
+                    "x": 1310,
                     "y": 2585,
                     "type": "virtual",
                     "virtual": {}
@@ -13317,7 +13317,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 730,
+                    "x": 732.5,
                     "y": 2550,
                     "type": "virtual",
                     "virtual": {}
@@ -13329,7 +13329,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 600,
-                    "y": 2700,
+                    "y": 2702.5,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -13339,7 +13339,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 730,
+                    "x": 732.5,
                     "y": 2855,
                     "type": "virtual",
                     "virtual": {}
@@ -13351,7 +13351,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 865,
-                    "y": 2700,
+                    "y": 2702.5,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -29432,33 +29432,6 @@
                 }
             },
             {
-                "key": "line_VOxOgo52n6",
-                "source": "stn_23JhYpBZXa",
-                "target": "stn_zxbjrAy_0Y",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "china-railway",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "china-railway": {
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "line_c1A-KEF_78",
                 "source": "stn_PLESt_mP_E",
                 "target": "stn_zxbjrAy_0Y",
@@ -31543,8 +31516,35 @@
                         "width": 5
                     }
                 }
+            },
+            {
+                "key": "line_WPL57GtaI9",
+                "source": "stn_zxbjrAy_0Y",
+                "target": "stn_23JhYpBZXa",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "china-railway",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "china-railway": {
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ]
+                    }
+                }
             }
         ]
     },
-    "version": 40
+    "version": 41
 }

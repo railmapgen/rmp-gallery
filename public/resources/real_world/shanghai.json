@@ -1,8 +1,8 @@
 {
     "svgViewBoxZoom": 70,
     "svgViewBoxMin": {
-        "x": 1052.9183258056673,
-        "y": 81.72012786865089
+        "x": -105.58167419433269,
+        "y": 2344.8201278686506
     },
     "graph": {
         "options": {
@@ -1741,17 +1741,14 @@
                     "zIndex": 0,
                     "x": 475,
                     "y": 1055,
-                    "type": "shmetro-int",
-                    "shmetro-int": {
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
                         "names": [
                             "娄山关路",
                             "Loushanguan Rd."
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "bottom",
-                        "rotate": 0,
-                        "height": 10,
-                        "width": 13
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -3277,7 +3274,7 @@
                         "nameOffsetY": "middle",
                         "rotate": 0,
                         "height": 10,
-                        "width": 13
+                        "width": 10
                     }
                 }
             },
@@ -13533,7 +13530,7 @@
                     "y": 2684.878048780488,
                     "type": "text",
                     "text": {
-                        "content": "Nunber of Metro Lines",
+                        "content": "Number of Metro Lines",
                         "fontSize": 8,
                         "lineHeight": 8,
                         "textAnchor": "start",
@@ -14288,6 +14285,24 @@
                             "#871c2b",
                             "#fff"
                         ]
+                    }
+                }
+            },
+            {
+                "key": "stn_5woVNSC6BM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 475,
+                    "y": 1040,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "",
+                            ""
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top"
                     }
                 }
             }

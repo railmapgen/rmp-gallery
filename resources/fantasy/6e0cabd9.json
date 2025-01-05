@@ -1,8 +1,8 @@
 {
     "svgViewBoxZoom": 70,
     "svgViewBoxMin": {
-        "x": -638.2000000000005,
-        "y": -273.59999999999945
+        "x": -604.900000000002,
+        "y": -268.39999999999947
     },
     "graph": {
         "options": {
@@ -68,24 +68,7 @@
                         "nameOffsetY": "bottom",
                         "rotate": 90,
                         "transfer": [
-                            [
-                                [
-                                    "hefei",
-                                    "hf1",
-                                    "#e61e25",
-                                    "#fff",
-                                    "",
-                                    ""
-                                ],
-                                [
-                                    "other",
-                                    "other",
-                                    "#82bf25",
-                                    "#fff",
-                                    "",
-                                    ""
-                                ]
-                            ]
+                            []
                         ]
                     }
                 }
@@ -150,7 +133,7 @@
                             "铁建局",
                             "XAR.C. Bureau"
                         ],
-                        "nameOffsetX": "middle",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "bottom",
                         "rotate": 270,
                         "transfer": [
@@ -212,30 +195,30 @@
                             "Longcun East Station"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "top",
+                        "nameOffsetY": "bottom",
                         "rotate": 90,
                         "transfer": [
                             [
                                 [
-                                    "hefei",
-                                    "hf1",
-                                    "#e61e25",
-                                    "#fff",
-                                    "",
-                                    ""
-                                ],
-                                [
-                                    "other",
-                                    "other",
-                                    "#82BF25",
-                                    "#fff",
-                                    "",
-                                    ""
-                                ],
-                                [
                                     "other",
                                     "other",
                                     "#ffa3eb",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "other",
+                                    "other",
+                                    "#82bf25",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "hefei",
+                                    "hf1",
+                                    "#e61e25",
                                     "#fff",
                                     "",
                                     ""
@@ -250,8 +233,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 160,
-                    "y": -105,
+                    "x": 155,
+                    "y": -95,
                     "type": "mtr",
                     "mtr": {
                         "names": [
@@ -259,7 +242,7 @@
                             "Dongjiao"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
+                        "nameOffsetY": "bottom",
                         "rotate": 0,
                         "transfer": [
                             []
@@ -349,11 +332,28 @@
                             "国立大学",
                             "XG University"
                         ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "rotate": 0,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "rotate": 180,
                         "transfer": [
-                            []
+                            [
+                                [
+                                    "other",
+                                    "other",
+                                    "#fcd600",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "shanghai",
+                                    "sh5",
+                                    "#944d9a",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
                         ]
                     }
                 }
@@ -363,8 +363,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 105,
-                    "y": 0,
+                    "x": 110,
+                    "y": -25,
                     "type": "mtr",
                     "mtr": {
                         "names": [
@@ -373,13 +373,13 @@
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
-                        "rotate": 0,
+                        "rotate": 90,
                         "transfer": [
                             [
                                 [
                                     "other",
                                     "other",
-                                    "#ff9900",
+                                    "#ffa3eb",
                                     "#fff",
                                     "",
                                     ""
@@ -387,7 +387,7 @@
                                 [
                                     "other",
                                     "other",
-                                    "#ffa3eb",
+                                    "#ff9900",
                                     "#fff",
                                     "",
                                     ""
@@ -645,7 +645,7 @@
                             "West Development Area"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
+                        "nameOffsetY": "top",
                         "rotate": 0,
                         "transfer": [
                             [
@@ -1314,29 +1314,7 @@
                             "Heting"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "rotate": 0,
-                        "transfer": [
-                            []
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_Xko6u4yQbT",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 60,
-                    "y": -50,
-                    "type": "mtr",
-                    "mtr": {
-                        "names": [
-                            "白海残恒",
-                            "Baihai Ruin"
-                        ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
+                        "nameOffsetY": "top",
                         "rotate": 0,
                         "transfer": [
                             []
@@ -1354,8 +1332,8 @@
                     "type": "mtr",
                     "mtr": {
                         "names": [
-                            "金银台",
-                            "Jinyin Tai"
+                            "平瑶",
+                            "Pingyao"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
@@ -1376,8 +1354,8 @@
                     "type": "mtr",
                     "mtr": {
                         "names": [
-                            "云隙间",
-                            "Yunxijian"
+                            "金银台",
+                            "Jinyin Tai"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
@@ -1386,17 +1364,6 @@
                             []
                         ]
                     }
-                }
-            },
-            {
-                "key": "misc_node_PbMj1mla8d",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 0,
-                    "y": 25,
-                    "type": "virtual",
-                    "virtual": {}
                 }
             },
             {
@@ -1599,7 +1566,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -25,
+                    "x": 25,
                     "y": 20,
                     "type": "master",
                     "master": {
@@ -1750,6 +1717,28 @@
                         "bold": "normal"
                     }
                 }
+            },
+            {
+                "key": "stn_3V_PaIScbN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -200,
+                    "y": -65,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "风栖原",
+                            "Fengqi Plain"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
             }
         ],
         "edges": [
@@ -1871,7 +1860,7 @@
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
+                        "offsetFrom": 10,
                         "offsetTo": 0,
                         "roundCornerFactor": 18.33
                     },
@@ -1898,7 +1887,7 @@
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
+                        "offsetFrom": 10,
                         "offsetTo": 0,
                         "roundCornerFactor": 18.33
                     },
@@ -2787,12 +2776,6 @@
                     "visible": true,
                     "zIndex": 0,
                     "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -2803,7 +2786,13 @@
                         ]
                     },
                     "reconcileId": "",
-                    "parallelIndex": 0
+                    "parallelIndex": -1,
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    }
                 }
             },
             {
@@ -2853,60 +2842,6 @@
                             "other",
                             "other",
                             "#ff9900",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": 0
-                }
-            },
-            {
-                "key": "line_co48Ggo6dh",
-                "source": "stn_5wGS1274l8",
-                "target": "stn_Xko6u4yQbT",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#ffa3eb",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": 0
-                }
-            },
-            {
-                "key": "line_SZjKoVXY1m",
-                "source": "stn_Xko6u4yQbT",
-                "target": "stn_ieQItpiy9y",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#ffa3eb",
                             "#fff"
                         ]
                     },
@@ -3050,16 +2985,43 @@
                 }
             },
             {
-                "key": "line_lYIIAB5He7",
-                "source": "stn_1FnQ3MuxUT",
-                "target": "misc_node_PbMj1mla8d",
+                "key": "line_Hs_buHNTPI",
+                "source": "stn_5wGS1274l8",
+                "target": "stn_ieQItpiy9y",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ffa3eb",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    }
+                }
+            },
+            {
+                "key": "line_81DWRCeVmo",
+                "source": "stn_nR_3moFfPH",
+                "target": "stn_3V_PaIScbN",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
-                        "offsetFrom": 5,
+                        "offsetFrom": 0,
                         "offsetTo": 0,
                         "roundCornerFactor": 18.33
                     },
@@ -3068,7 +3030,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#82bf25",
+                            "#ff9900",
                             "#fff"
                         ]
                     },
@@ -3077,25 +3039,25 @@
                 }
             },
             {
-                "key": "line_1x9LNtm980",
-                "source": "misc_node_PbMj1mla8d",
-                "target": "stn_OvAFI3K_Oq",
+                "key": "line_cFfu9ymAnq",
+                "source": "stn_hlAqemklZW",
+                "target": "stn_ZGFXcL3z_E",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
                     "type": "perpendicular",
                     "perpendicular": {
-                        "startFrom": "to",
-                        "offsetFrom": 5,
+                        "startFrom": "from",
+                        "offsetFrom": 0,
                         "offsetTo": 0,
                         "roundCornerFactor": 18.33
                     },
                     "style": "single-color",
                     "single-color": {
                         "color": [
-                            "other",
-                            "other",
-                            "#82bf25",
+                            "shanghai",
+                            "sh5",
+                            "#944d9a",
                             "#fff"
                         ]
                     },
@@ -3105,5 +3067,5 @@
             }
         ]
     },
-    "version": 40
+    "version": 42
 }

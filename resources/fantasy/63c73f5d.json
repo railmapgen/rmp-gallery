@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 40,
+    "svgViewBoxZoom": 140,
     "svgViewBoxMin": {
-        "x": 440.5399999999975,
-        "y": -994.2799999999926
+        "x": -358.0600000000027,
+        "y": -780.8799999999928
     },
     "graph": {
         "options": {
@@ -12288,7 +12288,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 400,
-                    "y": 170,
+                    "y": 175,
                     "type": "gzmtr-line-badge",
                     "gzmtr-line-badge": {
                         "names": [
@@ -12304,17 +12304,6 @@
                         "tram": true,
                         "span": true
                     }
-                }
-            },
-            {
-                "key": "misc_node_ynz7-33ZQu",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 335,
-                    "y": 210,
-                    "type": "virtual",
-                    "virtual": {}
                 }
             },
             {
@@ -24528,60 +24517,6 @@
                 }
             },
             {
-                "key": "line_P5TMxjiLlF",
-                "source": "stn_GPH6Z2GH4t",
-                "target": "misc_node_ynz7-33ZQu",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "gzmtr-loop",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "gzmtr-loop": {
-                        "color": [
-                            "guangzhou",
-                            "gz11",
-                            "#ffb00a",
-                            "#000"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_5KNohlcUeV",
-                "source": "misc_node_ynz7-33ZQu",
-                "target": "stn_MDB_bzL20d",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "to",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "gzmtr-loop",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "gzmtr-loop": {
-                        "color": [
-                            "guangzhou",
-                            "gz11",
-                            "#ffb00a",
-                            "#000"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "line_t09hiLTy00",
                 "source": "stn_MDB_bzL20d",
                 "target": "misc_node_3YAPMNGxGr",
@@ -26392,6 +26327,60 @@
                     "reconcileId": "",
                     "parallelIndex": -1,
                     "gzmtr-virtual-int": {}
+                }
+            },
+            {
+                "key": "line_dEAHO7aYJh",
+                "source": "stn_RcOrssoIVj",
+                "target": "stn_GPH6Z2GH4t",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "to",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "gzmtr-loop",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "gzmtr-loop": {
+                        "color": [
+                            "guangzhou",
+                            "gz11",
+                            "#ffb00a",
+                            "#000"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_Sv148tw3a3",
+                "source": "stn_RcOrssoIVj",
+                "target": "stn_MDB_bzL20d",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "style": "gzmtr-loop",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "gzmtr-loop": {
+                        "color": [
+                            "guangzhou",
+                            "gz11",
+                            "#ffb00a",
+                            "#000"
+                        ]
+                    },
+                    "diagonal": {
+                        "startFrom": "to",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    }
                 }
             }
         ]

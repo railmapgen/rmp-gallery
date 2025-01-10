@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 120,
+    "svgViewBoxZoom": 140,
     "svgViewBoxMin": {
-        "x": -1044.5786071395733,
-        "y": -525.3879512786721
+        "x": -1935.8994292831294,
+        "y": -306.60783119199937
     },
     "graph": {
         "options": {
@@ -17,16 +17,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 585,
+                    "x": 595,
                     "y": 370,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
                             "中央車站"
                         ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "mereOffset": "left2",
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "mereOffset": "up",
                         "textVertical": false,
                         "interchanges": [
                             {
@@ -80,22 +80,22 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 490,
-                    "y": 375,
+                    "x": 500,
+                    "y": 390,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
                             "十一號廣場"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetY": "top",
                         "textVertical": false,
-                        "lineCode": "UC",
+                        "lineCode": "GN",
                         "stationCode": "24",
                         "color": [
-                            "rio",
-                            "r1",
-                            "#ff8301",
+                            "other",
+                            "other",
+                            "#993571",
                             "#fff"
                         ]
                     }
@@ -159,7 +159,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 740,
+                    "x": 750,
                     "y": 365,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -185,7 +185,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 705,
+                    "x": 710,
                     "y": 405,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -211,15 +211,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 700,
-                    "y": 450,
+                    "x": 705,
+                    "y": 455,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
                             "里約人"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetY": "top",
                         "mereOffset": "right2",
                         "textVertical": false,
                         "interchanges": [
@@ -275,7 +275,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 680,
-                    "y": 420,
+                    "y": 415,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -328,7 +328,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 710,
+                    "x": 715,
                     "y": 515,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
@@ -371,7 +371,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 705,
+                    "x": 710,
                     "y": 580,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -397,8 +397,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 585,
-                    "y": 455,
+                    "x": 595,
+                    "y": 460,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
@@ -406,7 +406,7 @@
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
-                        "mereOffset": "right2",
+                        "mereOffset": "left2",
                         "textVertical": false,
                         "interchanges": [
                             {
@@ -440,8 +440,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 640,
-                    "y": 445,
+                    "x": 650,
+                    "y": 450,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -466,7 +466,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 585,
+                    "x": 595,
                     "y": 580,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -492,15 +492,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 1,
-                    "x": 420,
-                    "y": 425,
+                    "x": 425,
+                    "y": 430,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
                             "市政廳"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
+                        "nameOffsetY": "bottom",
                         "mereOffset": "none",
                         "textVertical": false,
                         "interchanges": [
@@ -531,23 +531,12 @@
                 }
             },
             {
-                "key": "misc_node_aVS0RPzBid",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 460,
-                    "y": 405,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
                 "key": "stn_pIWeuDTmh-",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 515,
-                    "y": 455,
+                    "x": 495,
+                    "y": 445,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -568,22 +557,11 @@
                 }
             },
             {
-                "key": "misc_node_uCGMHWjZFe",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 460,
-                    "y": 445,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
                 "key": "misc_node_p7av6ELoPP",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 875,
+                    "x": 880,
                     "y": 510,
                     "type": "facilities",
                     "facilities": {
@@ -597,7 +575,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 805,
-                    "y": 445,
+                    "y": 450,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -661,8 +639,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 590,
-                    "y": 255,
+                    "x": 600,
+                    "y": 230,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -687,24 +665,41 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 510,
-                    "y": 265,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": 425,
+                    "y": 255,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "新里約巴士總站"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
+                        "mereOffset": "right2",
                         "textVertical": false,
-                        "lineCode": "AG",
-                        "stationCode": "05",
-                        "color": [
-                            "other",
-                            "other",
-                            "#93959b",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "AG",
+                                "stationCode": "05",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#93959b",
+                                    "#fff"
+                                ]
+                            },
+                            {
+                                "lineCode": "GN",
+                                "stationCode": "22",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#993571",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -713,8 +708,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 445,
-                    "y": 365,
+                    "x": 470,
+                    "y": 355,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -739,7 +734,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 1,
-                    "x": 330,
+                    "x": 310,
                     "y": 385,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
@@ -782,8 +777,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 380,
-                    "y": 380,
+                    "x": 395,
+                    "y": 375,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -793,7 +788,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 1,
-                    "x": 380,
+                    "x": 365,
                     "y": 405,
                     "type": "virtual",
                     "virtual": {}
@@ -893,7 +888,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 585,
+                    "x": 595,
                     "y": 640,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -919,7 +914,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 585,
+                    "x": 595,
                     "y": 700,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -945,8 +940,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 580,
-                    "y": 805,
+                    "x": 590,
+                    "y": 800,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
@@ -988,7 +983,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 705,
+                    "x": 710,
                     "y": 640,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -1014,7 +1009,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 705,
+                    "x": 710,
                     "y": 700,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -1040,7 +1035,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 645,
+                    "x": 650,
                     "y": 755,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -1066,8 +1061,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 559,
-                    "y": 251,
+                    "x": 514,
+                    "y": 238,
                     "type": "facilities",
                     "facilities": {
                         "type": "coach_station_london"
@@ -1079,7 +1074,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 575,
+                    "x": 585,
                     "y": 860,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -1220,8 +1215,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 3,
-                    "x": 90,
-                    "y": 210,
+                    "x": 95,
+                    "y": 215,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -1247,7 +1242,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 380,
-                    "y": 445,
+                    "y": 440,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -1541,7 +1536,7 @@
                         "names": [
                             "雅卡利"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "PD",
@@ -2004,7 +1999,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 605,
+                    "x": 615,
                     "y": 755,
                     "type": "virtual",
                     "virtual": {}
@@ -2201,7 +2196,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 755,
+                    "x": 760,
                     "y": 480,
                     "type": "virtual",
                     "virtual": {}
@@ -2277,7 +2272,7 @@
                         "textVertical": false,
                         "interchanges": [
                             {
-                                "lineCode": "VG",
+                                "lineCode": "OP",
                                 "stationCode": "19",
                                 "color": [
                                     "other",
@@ -2377,7 +2372,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 925,
-                    "y": 445,
+                    "y": 450,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -3107,7 +3102,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1985,
+                    "x": 1980,
                     "y": 25,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -3133,7 +3128,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 2045,
+                    "x": 2040,
                     "y": 25,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -4134,33 +4129,6 @@
                 }
             },
             {
-                "key": "misc_node_8O593evVAT",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 420,
-                    "y": 390,
-                    "type": "text",
-                    "text": {
-                        "content": "里約市政府",
-                        "fontSize": 12,
-                        "lineHeight": 16,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "middle",
-                        "language": "jreast_ja",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal"
-                    }
-                }
-            },
-            {
                 "key": "stn_22AB11Zxnl",
                 "attributes": {
                     "visible": true,
@@ -4240,7 +4208,7 @@
                                 ]
                             },
                             {
-                                "lineCode": "VG",
+                                "lineCode": "OP",
                                 "stationCode": "05",
                                 "color": [
                                     "other",
@@ -4293,7 +4261,7 @@
                         "names": [
                             "鎚子"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "BC",
@@ -4312,14 +4280,14 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 455,
-                    "y": 160,
+                    "x": 385,
+                    "y": 120,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
                             "腰果"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "AG",
@@ -4338,8 +4306,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 455,
-                    "y": 105,
+                    "x": 385,
+                    "y": 45,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -4364,8 +4332,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 430,
-                    "y": 55,
+                    "x": 360,
+                    "y": -25,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -4390,8 +4358,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 370,
-                    "y": -5,
+                    "x": 320,
+                    "y": -65,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -4416,8 +4384,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 250,
-                    "y": -125,
+                    "x": 235,
+                    "y": -150,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
@@ -4528,8 +4496,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 310,
-                    "y": -65,
+                    "x": 280,
+                    "y": -105,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -4580,14 +4548,14 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 455,
-                    "y": 215,
+                    "x": 385,
+                    "y": 195,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
-                            "聖艾德維格斯廣場"
+                            "東北傳統文化中心"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "AG",
@@ -4606,8 +4574,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 195,
-                    "y": -245,
+                    "x": 215,
+                    "y": -260,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -4632,8 +4600,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 125,
-                    "y": -315,
+                    "x": 145,
+                    "y": -330,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -4658,8 +4626,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 160,
-                    "y": -280,
+                    "x": 180,
+                    "y": -295,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -4724,13 +4692,13 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 1110,
-                    "y": 430,
+                    "y": 425,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
                             "法蒂瑪"
                         ],
-                        "nameOffsetX": "left",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "IU",
@@ -4775,7 +4743,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 625,
+                    "x": 630,
                     "y": 400,
                     "type": "text",
                     "text": {
@@ -4784,7 +4752,7 @@
                         "lineHeight": 30,
                         "textAnchor": "middle",
                         "dominantBaseline": "middle",
-                        "language": "jreast_ja",
+                        "language": "mtr__zh",
                         "color": [
                             "other",
                             "other",
@@ -4828,7 +4796,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1200,
+                    "x": 1195,
                     "y": 540,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -5247,7 +5215,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 565,
+                    "x": 575,
                     "y": 315,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
@@ -5438,7 +5406,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1330,
+                    "x": 1335,
                     "y": 300,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -5715,14 +5683,14 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 220,
-                    "y": -60,
+                    "x": 230,
+                    "y": -75,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
                             "潮汐"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "PA",
@@ -5825,8 +5793,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 365,
-                    "y": 350,
+                    "x": 360,
+                    "y": 345,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -5846,8 +5814,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 400,
-                    "y": 340,
+                    "x": 395,
+                    "y": 335,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -5857,8 +5825,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 330,
-                    "y": 340,
+                    "x": 325,
+                    "y": 335,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -5923,7 +5891,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 145,
-                    "y": 210,
+                    "y": 215,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -6135,7 +6103,7 @@
                     "visible": true,
                     "zIndex": 1,
                     "x": -270,
-                    "y": 215,
+                    "y": 195,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -6156,8 +6124,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -455,
-                    "y": -305,
+                    "x": -460,
+                    "y": -300,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -6177,8 +6145,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -410,
-                    "y": -180,
+                    "x": -445,
+                    "y": -250,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -6188,8 +6156,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -420,
-                    "y": -635,
+                    "x": -425,
+                    "y": -640,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -6231,7 +6199,7 @@
                     "visible": true,
                     "zIndex": 2,
                     "x": -355,
-                    "y": 175,
+                    "y": 165,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -6390,17 +6358,17 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -465,
-                    "y": -25,
+                    "x": -440,
+                    "y": 0,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
                             "奧諾裡奧．古格爾",
                             "Honório Gurgel"
                         ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "textVertical": true,
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
                         "mostImportant": false,
                         "minLength": 90
                     }
@@ -6411,8 +6379,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -500,
-                    "y": -35,
+                    "x": -495,
+                    "y": -20,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -6422,8 +6390,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -630,
-                    "y": 100,
+                    "x": -550,
+                    "y": 95,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -6433,8 +6401,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -405,
-                    "y": 35,
+                    "x": -400,
+                    "y": 40,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -6458,23 +6426,19 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -500,
-                    "y": -60,
-                    "type": "jr-east-basic",
-                    "jr-east-basic": {
+                    "x": -510,
+                    "y": -70,
+                    "type": "jr-east-imp",
+                    "jr-east-imp": {
                         "names": [
                             "小巴羅斯",
                             "Barros Filho"
                         ],
-                        "nameOffsetX": "left",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "middle",
-                        "rotate": 45,
-                        "textOneLine": false,
                         "textVertical": false,
-                        "important": false,
-                        "lines": [
-                            0
-                        ]
+                        "mostImportant": false,
+                        "minLength": 0
                     }
                 }
             },
@@ -6483,8 +6447,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -445,
-                    "y": -145,
+                    "x": -550,
+                    "y": -110,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -6493,7 +6457,7 @@
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
-                        "rotate": 45,
+                        "rotate": 0,
                         "textOneLine": false,
                         "textVertical": false,
                         "important": false,
@@ -6584,7 +6548,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -670,
+                    "x": -705,
                     "y": 75,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -6951,23 +6915,19 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -140,
-                    "y": -355,
-                    "type": "jr-east-basic",
-                    "jr-east-basic": {
+                    "x": -145,
+                    "y": -360,
+                    "type": "jr-east-imp",
+                    "jr-east-imp": {
                         "names": [
                             "盧卡的遊行",
                             "Parada de Lucas"
                         ],
-                        "nameOffsetX": "left",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "middle",
-                        "rotate": 45,
-                        "textOneLine": false,
                         "textVertical": false,
-                        "important": false,
-                        "lines": [
-                            0
-                        ]
+                        "mostImportant": false,
+                        "minLength": 0
                     }
                 }
             },
@@ -6976,8 +6936,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -180,
-                    "y": -395,
+                    "x": -195,
+                    "y": -410,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7001,8 +6961,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -215,
-                    "y": -430,
+                    "x": -230,
+                    "y": -445,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7026,8 +6986,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -255,
-                    "y": -470,
+                    "x": -270,
+                    "y": -485,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7051,8 +7011,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -295,
-                    "y": -510,
+                    "x": -305,
+                    "y": -520,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7076,8 +7036,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -335,
-                    "y": -550,
+                    "x": -340,
+                    "y": -555,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7101,8 +7061,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -375,
-                    "y": -590,
+                    "x": -380,
+                    "y": -595,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7201,7 +7161,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -720,
+                    "x": -755,
                     "y": 25,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -7226,7 +7186,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -765,
+                    "x": -800,
                     "y": -20,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -7251,7 +7211,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -810,
+                    "x": -845,
                     "y": -65,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -7276,7 +7236,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -855,
+                    "x": -890,
                     "y": -110,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -7301,7 +7261,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -910,
+                    "x": -945,
                     "y": -165,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -7326,7 +7286,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -955,
+                    "x": -990,
                     "y": -210,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -7784,7 +7744,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1845,
+                    "x": -1935,
                     "y": 155,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -7826,22 +7786,11 @@
                 }
             },
             {
-                "key": "misc_node_Yr1tEQRvpb",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -615,
-                    "y": 65,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
                 "key": "stn_ZKnkSFUK75",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -425,
+                    "x": -430,
                     "y": -695,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -7866,7 +7815,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -425,
+                    "x": -430,
                     "y": -750,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -7891,7 +7840,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -425,
+                    "x": -430,
                     "y": -805,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -7916,7 +7865,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -425,
+                    "x": -430,
                     "y": -860,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -7941,7 +7890,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -425,
+                    "x": -430,
                     "y": -970,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -7966,7 +7915,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -425,
+                    "x": -430,
                     "y": -915,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -7991,7 +7940,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -425,
+                    "x": -430,
                     "y": -1025,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -8366,8 +8315,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -565,
-                    "y": 15,
+                    "x": -550,
+                    "y": 35,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -8391,7 +8340,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
+                    "x": 585,
                     "y": -670,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
@@ -8413,7 +8362,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
+                    "x": 585,
                     "y": -700,
                     "type": "text",
                     "text": {
@@ -8440,7 +8389,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
+                    "x": 585,
                     "y": -635,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
@@ -8462,7 +8411,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
+                    "x": 585,
                     "y": -600,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
@@ -8484,7 +8433,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
+                    "x": 585,
                     "y": -565,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
@@ -8506,7 +8455,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
+                    "x": 585,
                     "y": -530,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
@@ -8528,7 +8477,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
+                    "x": 585,
                     "y": -495,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
@@ -8550,7 +8499,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
+                    "x": 585,
                     "y": -460,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
@@ -8572,8 +8521,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
-                    "y": -360,
+                    "x": 750,
+                    "y": -670,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "IU",
@@ -8594,8 +8543,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
-                    "y": -325,
+                    "x": 750,
+                    "y": -635,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "AL",
@@ -8616,8 +8565,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
-                    "y": -390,
+                    "x": 750,
+                    "y": -700,
                     "type": "text",
                     "text": {
                         "content": "Light rail",
@@ -8643,7 +8592,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 970,
+                    "x": 920,
                     "y": -700,
                     "type": "text",
                     "text": {
@@ -8670,7 +8619,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
+                    "x": 585,
                     "y": -425,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
@@ -8736,7 +8685,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 920,
+                    "x": 870,
                     "y": -675,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
@@ -8755,7 +8704,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 920,
+                    "x": 870,
                     "y": -645,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
@@ -8774,7 +8723,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 920,
+                    "x": 870,
                     "y": -615,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
@@ -8793,7 +8742,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 920,
+                    "x": 870,
                     "y": -585,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
@@ -8812,7 +8761,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 920,
+                    "x": 870,
                     "y": -555,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
@@ -8831,7 +8780,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 920,
+                    "x": 870,
                     "y": -525,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
@@ -8850,7 +8799,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 920,
+                    "x": 870,
                     "y": -495,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
@@ -8869,7 +8818,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 920,
+                    "x": 870,
                     "y": -465,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
@@ -8888,7 +8837,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 920,
+                    "x": 870,
                     "y": -435,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
@@ -8907,7 +8856,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 990,
+                    "x": 940,
                     "y": -670,
                     "type": "text",
                     "text": {
@@ -8934,7 +8883,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 985,
+                    "x": 935,
                     "y": -640,
                     "type": "text",
                     "text": {
@@ -8961,7 +8910,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 985,
+                    "x": 935,
                     "y": -610,
                     "type": "text",
                     "text": {
@@ -8988,7 +8937,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 995,
+                    "x": 945,
                     "y": -580,
                     "type": "text",
                     "text": {
@@ -9015,7 +8964,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 990,
+                    "x": 940,
                     "y": -550,
                     "type": "text",
                     "text": {
@@ -9042,7 +8991,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 995,
+                    "x": 945,
                     "y": -520,
                     "type": "text",
                     "text": {
@@ -9069,7 +9018,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1005,
+                    "x": 955,
                     "y": -490,
                     "type": "text",
                     "text": {
@@ -9096,7 +9045,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 995,
+                    "x": 945,
                     "y": -460,
                     "type": "text",
                     "text": {
@@ -9123,7 +9072,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 985,
+                    "x": 935,
                     "y": -430,
                     "type": "text",
                     "text": {
@@ -9172,19 +9121,6 @@
                 }
             },
             {
-                "key": "misc_node_hQPQH5_HLl",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -590,
-                    "y": 85,
-                    "type": "facilities",
-                    "facilities": {
-                        "type": "coach_station_london"
-                    }
-                }
-            },
-            {
                 "key": "stn_-XQEa_DbUS",
                 "attributes": {
                     "visible": true,
@@ -9199,7 +9135,7 @@
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "01",
                         "color": [
                             "other",
@@ -9215,12 +9151,12 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
-                    "y": -290,
+                    "x": 750,
+                    "y": -600,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
-                        "lineCode": "VG",
-                        "name": "Vasco da Gama Line",
+                        "lineCode": "OP",
+                        "name": "Olímpia Line",
                         "lines": "L3",
                         "isTram": false,
                         "color": [
@@ -9238,7 +9174,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -685,
-                    "y": 145,
+                    "y": 155,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9247,7 +9183,7 @@
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "02",
                         "color": [
                             "other",
@@ -9264,7 +9200,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -750,
-                    "y": 145,
+                    "y": 155,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9273,7 +9209,7 @@
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "03",
                         "color": [
                             "other",
@@ -9296,10 +9232,10 @@
                         "names": [
                             "赫里賓神父"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "04",
                         "color": [
                             "other",
@@ -9336,7 +9272,7 @@
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "06",
                         "color": [
                             "other",
@@ -9362,7 +9298,7 @@
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "07",
                         "color": [
                             "other",
@@ -9388,7 +9324,7 @@
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "11",
                         "color": [
                             "other",
@@ -9436,7 +9372,7 @@
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "08",
                         "color": [
                             "other",
@@ -9462,7 +9398,7 @@
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "10",
                         "color": [
                             "other",
@@ -9499,7 +9435,7 @@
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "12",
                         "color": [
                             "other",
@@ -9536,7 +9472,7 @@
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "13",
                         "color": [
                             "other",
@@ -9562,7 +9498,7 @@
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "14",
                         "color": [
                             "other",
@@ -9588,7 +9524,7 @@
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "15",
                         "color": [
                             "other",
@@ -9614,7 +9550,7 @@
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "16",
                         "color": [
                             "other",
@@ -9640,7 +9576,7 @@
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "17",
                         "color": [
                             "other",
@@ -9666,7 +9602,7 @@
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "18",
                         "color": [
                             "other",
@@ -9692,7 +9628,7 @@
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "textVertical": false,
-                        "lineCode": "VG",
+                        "lineCode": "OP",
                         "stationCode": "09",
                         "color": [
                             "other",
@@ -9760,8 +9696,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -2075,
-                    "y": 215,
+                    "x": -2070,
+                    "y": 220,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9786,8 +9722,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 775,
-                    "y": -255,
+                    "x": 750,
+                    "y": -565,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "SC",
@@ -9808,8 +9744,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -2040,
-                    "y": 250,
+                    "x": -2035,
+                    "y": 255,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9834,8 +9770,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -2005,
-                    "y": 285,
+                    "x": -2000,
+                    "y": 290,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9860,8 +9796,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1970,
-                    "y": 320,
+                    "x": -1965,
+                    "y": 325,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9886,8 +9822,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1920,
-                    "y": 340,
+                    "x": -1915,
+                    "y": 330,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9913,7 +9849,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -1900,
-                    "y": 420,
+                    "y": 415,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9938,8 +9874,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1820,
-                    "y": 510,
+                    "x": -1840,
+                    "y": 490,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9964,8 +9900,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1770,
-                    "y": 560,
+                    "x": -1775,
+                    "y": 555,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -10016,7 +9952,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 795,
+                    "x": 800,
                     "y": 510,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
@@ -10096,8 +10032,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1570,
-                    "y": 645,
+                    "x": -1565,
+                    "y": 650,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -10337,8 +10273,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1890,
-                    "y": 310,
+                    "x": -1885,
+                    "y": 300,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -10364,7 +10300,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -1855,
-                    "y": 275,
+                    "y": 270,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -10389,7 +10325,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1820,
+                    "x": -1825,
                     "y": 240,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -10415,7 +10351,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1790,
+                    "x": -1795,
                     "y": 210,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -10667,6 +10603,939 @@
                             "#00af86",
                             "#fff"
                         ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_-wJQ4YmJFd",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -1920,
+                    "y": 370,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_K34ljUCeGN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": -530,
+                    "type": "mrt-line-badge",
+                    "mrt-line-badge": {
+                        "lineCode": "GN",
+                        "name": "Grande Norte Line",
+                        "lines": "L5",
+                        "isTram": false,
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_J3d9BjDIry",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -545,
+                    "y": -70,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "小巴洛斯"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "03",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_7F07xpnIEb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -615,
+                    "y": 105,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "德奧多羅"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "01",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_a-1nec1uiE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -615,
+                    "y": 15,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "瓜達露佩"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "02",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_c_kjSfz_42",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -450,
+                    "y": -165,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "佩德羅路"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "04",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_ksjdLBDaYb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -320,
+                    "y": -225,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "科埃略．內托"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "05",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_9zHfebgRhn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -410,
+                    "y": -180,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_Qp2CwA4nlA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": -495,
+                    "type": "mrt-line-badge",
+                    "mrt-line-badge": {
+                        "lineCode": "NI",
+                        "name": "Novo Iguaçu Line",
+                        "lines": "L6",
+                        "isTram": false,
+                        "color": [
+                            "other",
+                            "other",
+                            "#7c6767",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_wAxYJt8jok",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -145,
+                    "y": -400,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "盧卡的遊行"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "09",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_BLS1HmmvrA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 575,
+                    "y": 390,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "中央車站"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "textVertical": true,
+                        "lineCode": "GN",
+                        "stationCode": "25",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_OnSqtvodLw",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 230,
+                    "y": -100,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "潮汐"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "15",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_unpAjhv1NT",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 405,
+                    "y": 195,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "聖艾德維格斯廣場"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "21",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_NJCHLa13NN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 255,
+                    "y": -45,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "喬安娜誕生"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "16",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_sHpeBoQWqZ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 255,
+                    "y": 5,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "菲奧克魯斯"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "17",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_xXP9K59fYN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 255,
+                    "y": 55,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "維多利亞公園"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "18",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_mQ7jM4bnd8",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 325,
+                    "y": 100,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "舊金山"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "19",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_pY8MnwuuYY",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 405,
+                    "y": 140,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "創傷研究中心"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "20",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_Ek6sbQEaEN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 420,
+                    "y": 405,
+                    "type": "text",
+                    "text": {
+                        "content": "里約市政府",
+                        "fontSize": 14,
+                        "lineHeight": 12,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "mtr__zh",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_QzcihwffXQ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 345,
+                    "y": 210,
+                    "type": "text",
+                    "text": {
+                        "content": "路易斯．岡薩加\n巴西東北傳統中心",
+                        "fontSize": 8,
+                        "lineHeight": 12,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "mtr__zh",
+                        "color": [
+                            "other",
+                            "other",
+                            "#00a86b",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_rw8Qhk0d7w",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 440,
+                    "y": 315,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_y9y_R9TYNF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 445,
+                    "y": 290,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "利奧波爾迪納"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "22",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_3MbSnzFZ4a",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 470,
+                    "y": 390,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "新城"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "23",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_S1iVbnm-BY",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 535,
+                    "y": 395,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_H396GLtujg",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 500,
+                    "y": 410,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "十一號廣場"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "textVertical": false,
+                        "lineCode": "UC",
+                        "stationCode": "24",
+                        "color": [
+                            "rio",
+                            "r1",
+                            "#ff8301",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_v4mXmxexzJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 465,
+                    "y": 420,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_gB2mJW92KG",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 500,
+                    "y": 360,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_i_DOl1SdCU",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 665,
+                    "y": 480,
+                    "type": "text",
+                    "text": {
+                        "content": "里約熱內盧\n大教堂",
+                        "fontSize": 10,
+                        "lineHeight": 12,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "mtr__zh",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_jH-tiytCfG",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 385,
+                    "y": 290,
+                    "type": "text",
+                    "text": {
+                        "content": "利奧波爾迪納火車站(已廢棄)",
+                        "fontSize": 8,
+                        "lineHeight": 12,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "mtr__zh",
+                        "color": [
+                            "other",
+                            "other",
+                            "#79560c",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "stn_mwixVEoLgp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -275,
+                    "y": -270,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "切薩"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "06",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_jumtHC1ZBe",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -230,
+                    "y": -315,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "雛菊"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "07",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_X7i4Mr5m5x",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -185,
+                    "y": -360,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "第二廣場"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "08",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_jddsz2mzJa",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -105,
+                    "y": -430,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "別緻點"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "10",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_AZoh4bXHNG",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -50,
+                    "y": -390,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "聖塞巴斯蒂安市場"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "11",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_oTAfpniuyf",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 145,
+                    "y": -195,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "拉莫斯池畔"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "14",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_GL08rEx1Qd",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 80,
+                    "y": -260,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "商船隊"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "13",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_y_P_KyEMmm",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 15,
+                    "y": -325,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "幼狼"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "12",
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_TBmFcreP1X",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 190,
+                    "y": -145,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_rwWeQ6JJ3m",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 255,
+                    "y": 230,
+                    "type": "text",
+                    "text": {
+                        "content": "里約熱內盧動物園",
+                        "fontSize": 8,
+                        "lineHeight": 12,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "mtr__zh",
+                        "color": [
+                            "other",
+                            "other",
+                            "#00a86b",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_iAgCB1o3Mr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 280,
+                    "y": 250,
+                    "type": "text",
+                    "text": {
+                        "content": "巴西國家博物館",
+                        "fontSize": 8,
+                        "lineHeight": 12,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "mtr__zh",
+                        "color": [
+                            "other",
+                            "other",
+                            "#00a86b",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
                     }
                 }
             }
@@ -11097,141 +11966,6 @@
                             "rio",
                             "r4",
                             "#ffc400",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_clx3_d7qfy",
-                "source": "stn_nW3vzA_ZUh",
-                "target": "misc_node_aVS0RPzBid",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r1",
-                            "#ff8301",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    }
-                }
-            },
-            {
-                "key": "line_8HBSghNk6d",
-                "source": "stn_iyZBzt6j1c",
-                "target": "misc_node_aVS0RPzBid",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r1",
-                            "#ff8301",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": -5,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    }
-                }
-            },
-            {
-                "key": "line_3RQCekR5Xe",
-                "source": "stn_iyZBzt6j1c",
-                "target": "misc_node_uCGMHWjZFe",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r2",
-                            "#bad02f",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 5,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    }
-                }
-            },
-            {
-                "key": "line_swk6ZxG3-1",
-                "source": "stn_pIWeuDTmh-",
-                "target": "misc_node_uCGMHWjZFe",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r2",
-                            "#bad02f",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    }
-                }
-            },
-            {
-                "key": "line_LX2QuNCsK8",
-                "source": "stn_pIWeuDTmh-",
-                "target": "stn_GEj1Q4MaTt",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r2",
-                            "#bad02f",
                             "#fff"
                         ]
                     },
@@ -15641,33 +16375,6 @@
                 }
             },
             {
-                "key": "line_r3eecoKYnO",
-                "source": "stn_nW3vzA_ZUh",
-                "target": "stn_4uJBe0tihZ",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r1",
-                            "#ff8301",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_rFn9HLq17s",
                 "source": "stn_D_Ie44IxIY",
                 "target": "stn_d7xstN6WN3",
@@ -16134,46 +16841,6 @@
                             "rio",
                             "rsc",
                             "#62a830",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_oySdtpBmG_",
-                "source": "stn_ZZbhC2NAjQ",
-                "target": "stn_HC0w425S2Z",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "rio",
-                            "rj",
-                            "#00a0de",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false,
-                        "color": [
-                            "rio",
-                            "rj",
-                            "#00a0de",
                             "#fff"
                         ]
                     }
@@ -17639,46 +18306,6 @@
                 "key": "line_iNHDWbl9mk",
                 "source": "stn_3sm3l7DRCG",
                 "target": "stn_75xKNTqLbc",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "rio",
-                            "rb",
-                            "#552381",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false,
-                        "color": [
-                            "rio",
-                            "rb",
-                            "#552381",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_6ZJvI-gbsd",
-                "source": "misc_node_WPTTw17TSy",
-                "target": "stn_1R8o-rp82S",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -20331,46 +20958,6 @@
                 }
             },
             {
-                "key": "line_365nUqZDCT",
-                "source": "misc_node_WzbcK_x7hy",
-                "target": "misc_node_Yr1tEQRvpb",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "other",
-                            "other",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false,
-                        "color": [
-                            "shanghai",
-                            "sh1",
-                            "#E3002B",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "line_-nPwzuh2kn",
                 "source": "stn_ZKnkSFUK75",
                 "target": "stn_GmkaVB6nuL",
@@ -21641,33 +22228,6 @@
                 }
             },
             {
-                "key": "line_l8fofXzU_o",
-                "source": "stn_HzEHztoCB_",
-                "target": "stn_4uJBe0tihZ",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#df0f37",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_Q8oR2DnTPm",
                 "source": "stn_dIrwXIYfmQ",
                 "target": "stn_atcWK82ruk",
@@ -21777,74 +22337,6 @@
                             "rio",
                             "rb",
                             "#552381",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false
-                    }
-                }
-            },
-            {
-                "key": "line_QoV9VwAcDZ",
-                "source": "misc_node_9fb8sI3iQw",
-                "target": "stn_Ir_aLr4Pi6",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "other",
-                            "other",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false
-                    }
-                }
-            },
-            {
-                "key": "line_Bd713Fli3f",
-                "source": "stn_Ir_aLr4Pi6",
-                "target": "misc_node_Yr1tEQRvpb",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "other",
-                            "other",
-                            "#000000",
                             "#fff"
                         ],
                         "colorForeground": [
@@ -22752,7 +23244,7 @@
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 10
+                        "roundCornerFactor": 5
                     },
                     "style": "london-sandwich",
                     "reconcileId": "",
@@ -22861,33 +23353,6 @@
                         "offsetFrom": 0,
                         "offsetTo": 0,
                         "roundCornerFactor": 18.33
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#00af86",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_XFaJi2apxM",
-                "source": "stn__tECj0oiwI",
-                "target": "stn_--NH1lx8Bp",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
                     },
                     "style": "london-sandwich",
                     "reconcileId": "",
@@ -23871,6 +24336,1394 @@
                     "reconcileId": "",
                     "parallelIndex": -1,
                     "london-tube-10-min-walk": {}
+                }
+            },
+            {
+                "key": "line_pau6BJS8Wv",
+                "source": "misc_node_9fb8sI3iQw",
+                "target": "stn_Ir_aLr4Pi6",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-rail",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-rail": {
+                        "colorBackground": [
+                            "other",
+                            "other",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "colorForeground": [
+                            "london",
+                            "white",
+                            "#ffffff",
+                            "#000"
+                        ],
+                        "limitedService": false
+                    }
+                }
+            },
+            {
+                "key": "line_NgZnHqhNrG",
+                "source": "misc_node_WzbcK_x7hy",
+                "target": "stn_Ir_aLr4Pi6",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-rail",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-rail": {
+                        "colorBackground": [
+                            "other",
+                            "other",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "colorForeground": [
+                            "london",
+                            "white",
+                            "#ffffff",
+                            "#000"
+                        ],
+                        "limitedService": false
+                    }
+                }
+            },
+            {
+                "key": "line_aJYAfYugj1",
+                "source": "stn_1R8o-rp82S",
+                "target": "misc_node_WPTTw17TSy",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-rail",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-rail": {
+                        "colorBackground": [
+                            "rio",
+                            "rb",
+                            "#552381",
+                            "#fff"
+                        ],
+                        "colorForeground": [
+                            "london",
+                            "white",
+                            "#ffffff",
+                            "#000"
+                        ],
+                        "limitedService": false
+                    }
+                }
+            },
+            {
+                "key": "line_i4B7DTYs2H",
+                "source": "stn__tECj0oiwI",
+                "target": "misc_node_-wJQ4YmJFd",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#00af86",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_3-nMK7Xo5K",
+                "source": "misc_node_-wJQ4YmJFd",
+                "target": "stn_--NH1lx8Bp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#00af86",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_y_SaISn3Bc",
+                "source": "misc_node_-wJQ4YmJFd",
+                "target": "stn_Aa__AGUEad",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#00af86",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_F1qdDm_6v7",
+                "source": "stn_7F07xpnIEb",
+                "target": "stn_k8IcyUpGiK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-tube-10-min-walk",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-tube-10-min-walk": {}
+                }
+            },
+            {
+                "key": "line_97bPOui3Y7",
+                "source": "stn_J3d9BjDIry",
+                "target": "stn_rI-5Y6dhxO",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-tube-10-min-walk",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-tube-10-min-walk": {}
+                }
+            },
+            {
+                "key": "line_1rf8sE7exa",
+                "source": "stn_a-1nec1uiE",
+                "target": "stn_J3d9BjDIry",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_qPMR3Z9ld2",
+                "source": "stn_a-1nec1uiE",
+                "target": "stn_7F07xpnIEb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_61vbm51U-S",
+                "source": "stn_J3d9BjDIry",
+                "target": "stn_c_kjSfz_42",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_7l42C5JygR",
+                "source": "misc_node_9zHfebgRhn",
+                "target": "stn_ksjdLBDaYb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_phrEvBV8eg",
+                "source": "misc_node_9zHfebgRhn",
+                "target": "stn_c_kjSfz_42",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_C1VPNbQzyf",
+                "source": "stn_ksjdLBDaYb",
+                "target": "stn_oc3hsqq_vd",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-tube-10-min-walk",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-tube-10-min-walk": {}
+                }
+            },
+            {
+                "key": "line_GbubgWbiUa",
+                "source": "stn_wAxYJt8jok",
+                "target": "stn_BwVz_blfK-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-tube-10-min-walk",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-tube-10-min-walk": {}
+                }
+            },
+            {
+                "key": "line_WSNjFr-poS",
+                "source": "stn_BLS1HmmvrA",
+                "target": "stn_4uJBe0tihZ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-tube-10-min-walk",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-tube-10-min-walk": {}
+                }
+            },
+            {
+                "key": "line_NNopiVpGBE",
+                "source": "stn_EW59KMOywx",
+                "target": "stn_OnSqtvodLw",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-tube-10-min-walk",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-tube-10-min-walk": {}
+                }
+            },
+            {
+                "key": "line_SCvo_KyJb9",
+                "source": "stn_unpAjhv1NT",
+                "target": "stn_VJlHXUtTh3",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-tube-10-min-walk",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-tube-10-min-walk": {}
+                }
+            },
+            {
+                "key": "line_EZQ6s88b1s",
+                "source": "stn_NJCHLa13NN",
+                "target": "stn_OnSqtvodLw",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_C8KXqUecMX",
+                "source": "stn_NJCHLa13NN",
+                "target": "stn_sHpeBoQWqZ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_OZE2cigRbI",
+                "source": "stn_sHpeBoQWqZ",
+                "target": "stn_xXP9K59fYN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_lmwCogcUQg",
+                "source": "stn_mQ7jM4bnd8",
+                "target": "stn_xXP9K59fYN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_1WpzaJ0evr",
+                "source": "stn_iyZBzt6j1c",
+                "target": "stn_pIWeuDTmh-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r2",
+                            "#bad02f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_WH20BgifIV",
+                "source": "stn_GEj1Q4MaTt",
+                "target": "stn_pIWeuDTmh-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r2",
+                            "#bad02f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_bpC0r0mfXM",
+                "source": "stn_mQ7jM4bnd8",
+                "target": "stn_pY8MnwuuYY",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_5al5i0iF66",
+                "source": "stn_pY8MnwuuYY",
+                "target": "stn_unpAjhv1NT",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_ECrUpOoGK3",
+                "source": "stn_unpAjhv1NT",
+                "target": "stn_T2DsTuL_QM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_npDg6bn6hf",
+                "source": "stn_ZZbhC2NAjQ",
+                "target": "misc_node_rw8Qhk0d7w",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-rail",
+                    "london-rail": {
+                        "colorBackground": [
+                            "rio",
+                            "rj",
+                            "#00a0de",
+                            "#fff"
+                        ],
+                        "colorForeground": [
+                            "london",
+                            "white",
+                            "#ffffff",
+                            "#000"
+                        ],
+                        "limitedService": false,
+                        "color": [
+                            "rio",
+                            "rj",
+                            "#00a0de",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line__NJ4H8Q0L_",
+                "source": "misc_node_rw8Qhk0d7w",
+                "target": "stn_HC0w425S2Z",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-rail",
+                    "london-rail": {
+                        "colorBackground": [
+                            "rio",
+                            "rj",
+                            "#00a0de",
+                            "#fff"
+                        ],
+                        "colorForeground": [
+                            "london",
+                            "white",
+                            "#ffffff",
+                            "#000"
+                        ],
+                        "limitedService": false,
+                        "color": [
+                            "rio",
+                            "rj",
+                            "#00a0de",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_y7yE6FndN7",
+                "source": "stn_y9y_R9TYNF",
+                "target": "stn_T2DsTuL_QM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_ujG2hneg4l",
+                "source": "stn_3MbSnzFZ4a",
+                "target": "stn_HzEHztoCB_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "style": "london-tube-10-min-walk",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-tube-10-min-walk": {},
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    }
+                }
+            },
+            {
+                "key": "line_Y2VU7gkELs",
+                "source": "stn_nW3vzA_ZUh",
+                "target": "stn_3MbSnzFZ4a",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_EdIQSdkk9E",
+                "source": "stn_3MbSnzFZ4a",
+                "target": "stn_y9y_R9TYNF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "perpendicular",
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    },
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    }
+                }
+            },
+            {
+                "key": "line_pE-XgjBJvd",
+                "source": "stn_4uJBe0tihZ",
+                "target": "misc_node_S1iVbnm-BY",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r1",
+                            "#ff8301",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    }
+                }
+            },
+            {
+                "key": "line_uR08tPGQeK",
+                "source": "stn_BLS1HmmvrA",
+                "target": "stn_nW3vzA_ZUh",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_S4crdmm9bm",
+                "source": "stn_H396GLtujg",
+                "target": "misc_node_S1iVbnm-BY",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r1",
+                            "#ff8301",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    }
+                }
+            },
+            {
+                "key": "line_VdVUq6DIXI",
+                "source": "stn_H396GLtujg",
+                "target": "misc_node_v4mXmxexzJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r1",
+                            "#ff8301",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_uRChzjjfpR",
+                "source": "stn_iyZBzt6j1c",
+                "target": "misc_node_v4mXmxexzJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": -5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r1",
+                            "#ff8301",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_6daAPRhJkI",
+                "source": "stn_HzEHztoCB_",
+                "target": "misc_node_gB2mJW92KG",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#df0f37",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_3SjmhppFqo",
+                "source": "stn_4uJBe0tihZ",
+                "target": "misc_node_gB2mJW92KG",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": -5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#df0f37",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_5tn8KoeuTb",
+                "source": "stn_H396GLtujg",
+                "target": "stn_nW3vzA_ZUh",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-tube-10-min-walk",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-tube-10-min-walk": {}
+                }
+            },
+            {
+                "key": "line_jaY8tOjURy",
+                "source": "stn_X7i4Mr5m5x",
+                "target": "stn_wAxYJt8jok",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_1QqSE0WUKJ",
+                "source": "stn_jumtHC1ZBe",
+                "target": "stn_X7i4Mr5m5x",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_8gBPdid8hP",
+                "source": "stn_mwixVEoLgp",
+                "target": "stn_jumtHC1ZBe",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_gOlp2yW8rM",
+                "source": "stn_ksjdLBDaYb",
+                "target": "stn_mwixVEoLgp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_IaYNOXZZmp",
+                "source": "stn_jddsz2mzJa",
+                "target": "stn_wAxYJt8jok",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_-Wozvj1Zxi",
+                "source": "stn_AZoh4bXHNG",
+                "target": "stn_jddsz2mzJa",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_YZwbU6OVZd",
+                "source": "misc_node_TBmFcreP1X",
+                "target": "stn_OnSqtvodLw",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_dKpzHGMKbE",
+                "source": "misc_node_TBmFcreP1X",
+                "target": "stn_oTAfpniuyf",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_VoEeALNW3s",
+                "source": "stn_AZoh4bXHNG",
+                "target": "stn_y_P_KyEMmm",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_CT4xf9bJMF",
+                "source": "stn_y_P_KyEMmm",
+                "target": "stn_GL08rEx1Qd",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_ji9qkmaYrI",
+                "source": "stn_GL08rEx1Qd",
+                "target": "stn_oTAfpniuyf",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
                 }
             }
         ]

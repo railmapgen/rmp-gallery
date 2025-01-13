@@ -1,8 +1,8 @@
 {
     "svgViewBoxZoom": 60,
     "svgViewBoxMin": {
-        "x": 440.800451698325,
-        "y": 173.09272613527102
+        "x": 245.30063938143059,
+        "y": 105.4127685547046
     },
     "graph": {
         "options": {
@@ -6055,7 +6055,7 @@
                     "visible": true,
                     "zIndex": 2,
                     "x": -375,
-                    "y": 130,
+                    "y": 135,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -6227,7 +6227,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -590,
-                    "y": 130,
+                    "y": 135,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -6375,7 +6375,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -470,
+                    "x": -465,
                     "y": 5,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
@@ -6418,7 +6418,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -430,
+                    "x": -425,
                     "y": 45,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -6443,7 +6443,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -540,
+                    "x": -535,
                     "y": -65,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
@@ -6515,8 +6515,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 1,
-                    "x": -285,
-                    "y": 90,
+                    "x": -280,
+                    "y": 95,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7104,7 +7104,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -550,
-                    "y": 135,
+                    "y": 140,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7129,7 +7129,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -480,
-                    "y": 135,
+                    "y": 140,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7154,7 +7154,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -415,
-                    "y": 135,
+                    "y": 140,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7329,7 +7329,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -755,
-                    "y": 130,
+                    "y": 135,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -7350,7 +7350,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -665,
-                    "y": 130,
+                    "y": 135,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -7361,7 +7361,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -685,
-                    "y": 130,
+                    "y": 135,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -9165,7 +9165,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -685,
-                    "y": 155,
+                    "y": 150,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9191,7 +9191,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -755,
-                    "y": 155,
+                    "y": 150,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -10674,16 +10674,6 @@
                         "textVertical": false,
                         "interchanges": [
                             {
-                                "lineCode": "OP",
-                                "stationCode": "01",
-                                "color": [
-                                    "other",
-                                    "other",
-                                    "#ec8d65",
-                                    "#fff"
-                                ]
-                            },
-                            {
                                 "lineCode": "GN",
                                 "stationCode": "01",
                                 "color": [
@@ -10692,9 +10682,19 @@
                                     "#993571",
                                     "#fff"
                                 ]
+                            },
+                            {
+                                "lineCode": "OP",
+                                "stationCode": "01",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#ec8d65",
+                                    "#fff"
+                                ]
                             }
                         ],
-                        "align": "horizontal",
+                        "align": "vertical",
                         "importance": "default"
                     }
                 }
@@ -10704,7 +10704,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -610,
+                    "x": -615,
                     "y": 20,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -25075,7 +25075,7 @@
                 "target": "stn_k8IcyUpGiK",
                 "attributes": {
                     "visible": true,
-                    "zIndex": 0,
+                    "zIndex": -1,
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
@@ -25147,7 +25147,7 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": 5,
+                        "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
                     "style": "london-sandwich",
@@ -26879,7 +26879,7 @@
                     "perpendicular": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": -5,
+                        "offsetTo": 0,
                         "roundCornerFactor": 18.33
                     },
                     "style": "london-sandwich",

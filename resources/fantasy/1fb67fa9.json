@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 60,
+    "svgViewBoxZoom": 110,
     "svgViewBoxMin": {
-        "x": 245.30063938143059,
-        "y": 105.4127685547046
+        "x": 220.9620041275279,
+        "y": -351.4467487335025
     },
     "graph": {
         "options": {
@@ -82,22 +82,29 @@
                     "zIndex": 0,
                     "x": 510,
                     "y": 390,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "十一號廣場"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "GN",
-                        "stationCode": "24",
-                        "color": [
-                            "other",
-                            "other",
-                            "#993571",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "GN",
+                                "stationCode": "25",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#993571",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -186,7 +193,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 710,
-                    "y": 405,
+                    "y": 410,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -212,7 +219,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 705,
-                    "y": 455,
+                    "y": 460,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
@@ -398,7 +405,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 595,
-                    "y": 460,
+                    "y": 465,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
@@ -441,7 +448,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 650,
-                    "y": 450,
+                    "y": 455,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -536,7 +543,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 495,
-                    "y": 445,
+                    "y": 450,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -575,7 +582,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 805,
-                    "y": 450,
+                    "y": 455,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -600,8 +607,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 853,
-                    "y": 460,
+                    "x": 855,
+                    "y": 470,
                     "type": "facilities",
                     "facilities": {
                         "type": "cruise_centre"
@@ -710,22 +717,29 @@
                     "zIndex": 0,
                     "x": 470,
                     "y": 355,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "新城"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "BC",
-                        "stationCode": "04",
-                        "color": [
-                            "other",
-                            "other",
-                            "#e10531",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "BC",
+                                "stationCode": "04",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#e10531",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -734,7 +748,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 1,
-                    "x": 310,
+                    "x": 320,
                     "y": 385,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
@@ -777,7 +791,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 395,
+                    "x": 370,
                     "y": 375,
                     "type": "virtual",
                     "virtual": {}
@@ -788,36 +802,10 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 1,
-                    "x": 370,
-                    "y": 405,
+                    "x": 360,
+                    "y": 395,
                     "type": "virtual",
                     "virtual": {}
-                }
-            },
-            {
-                "key": "stn__bYMNYDCnq",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 265,
-                    "y": 370,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "聖克里斯多福"
-                        ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "PD",
-                        "stationCode": "07",
-                        "color": [
-                            "rio",
-                            "r2",
-                            "#bad02f",
-                            "#fff"
-                        ]
-                    }
                 }
             },
             {
@@ -862,24 +850,31 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 200,
-                    "y": 335,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": 180,
+                    "y": 350,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "馬拉卡納"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
+                        "mereOffset": "left2",
                         "textVertical": false,
-                        "lineCode": "PD",
-                        "stationCode": "08",
-                        "color": [
-                            "rio",
-                            "r2",
-                            "#bad02f",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "PD",
+                                "stationCode": "08",
+                                "color": [
+                                    "rio",
+                                    "r2",
+                                    "#bad02f",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -1174,23 +1169,12 @@
                 }
             },
             {
-                "key": "misc_node_kI9Ti0tm1T",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 440,
-                    "y": 855,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
                 "key": "stn_N-OAuffbHZ",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
                     "x": 390,
-                    "y": 865,
+                    "y": 845,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -1215,24 +1199,31 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 3,
-                    "x": 100,
-                    "y": 215,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": 95,
+                    "y": 210,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "特里亞任"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "PD",
-                        "stationCode": "09",
-                        "color": [
-                            "rio",
-                            "r2",
-                            "#bad02f",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "PD",
+                                "stationCode": "09",
+                                "color": [
+                                    "rio",
+                                    "r2",
+                                    "#bad02f",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -1280,22 +1271,29 @@
                     "zIndex": 2,
                     "x": 0,
                     "y": 115,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "卡斯提略"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "PD",
-                        "stationCode": "11",
-                        "color": [
-                            "rio",
-                            "r2",
-                            "#bad02f",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "PD",
+                                "stationCode": "11",
+                                "color": [
+                                    "rio",
+                                    "r2",
+                                    "#bad02f",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -1505,22 +1503,29 @@
                     "zIndex": 0,
                     "x": -315,
                     "y": -200,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "科埃略．內托"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "PD",
-                        "stationCode": "18",
-                        "color": [
-                            "rio",
-                            "r2",
-                            "#bad02f",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "PD",
+                                "stationCode": "18",
+                                "color": [
+                                    "rio",
+                                    "r2",
+                                    "#bad02f",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -1650,8 +1655,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -555,
-                    "y": -440,
+                    "x": -560,
+                    "y": -445,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -1676,8 +1681,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -595,
-                    "y": -480,
+                    "x": -610,
+                    "y": -495,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -1702,8 +1707,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -640,
-                    "y": -525,
+                    "x": -660,
+                    "y": -545,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -1910,8 +1915,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 300,
-                    "y": 870,
+                    "x": 295,
+                    "y": 860,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -2388,44 +2393,18 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 925,
-                    "y": 450,
+                    "x": 970,
+                    "y": 410,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
                             "聖多明尼哥"
                         ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": false,
-                        "lineCode": "IG",
-                        "stationCode": "06",
-                        "color": [
-                            "rio",
-                            "r3",
-                            "#3e4095",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_ZEd7A05_Xg",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 970,
-                    "y": 400,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "阿拉里波亞"
-                        ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "07",
+                        "stationCode": "06",
                         "color": [
                             "rio",
                             "r3",
@@ -2467,7 +2446,7 @@
                         "interchanges": [
                             {
                                 "lineCode": "IG",
-                                "stationCode": "08",
+                                "stationCode": "07",
                                 "color": [
                                     "rio",
                                     "r3",
@@ -2596,7 +2575,7 @@
                         "interchanges": [
                             {
                                 "lineCode": "IG",
-                                "stationCode": "09",
+                                "stationCode": "08",
                                 "color": [
                                     "rio",
                                     "r3",
@@ -2636,7 +2615,7 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "10",
+                        "stationCode": "09",
                         "color": [
                             "rio",
                             "r3",
@@ -2675,7 +2654,7 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "11",
+                        "stationCode": "10",
                         "color": [
                             "rio",
                             "r3",
@@ -2701,7 +2680,7 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "12",
+                        "stationCode": "11",
                         "color": [
                             "rio",
                             "r3",
@@ -2727,7 +2706,7 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "13",
+                        "stationCode": "12",
                         "color": [
                             "rio",
                             "r3",
@@ -2753,7 +2732,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "14",
+                        "stationCode": "13",
                         "color": [
                             "rio",
                             "r3",
@@ -2779,7 +2758,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "30",
+                        "stationCode": "29",
                         "color": [
                             "rio",
                             "r3",
@@ -2805,7 +2784,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "15",
+                        "stationCode": "14",
                         "color": [
                             "rio",
                             "r3",
@@ -2831,7 +2810,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "16",
+                        "stationCode": "15",
                         "color": [
                             "rio",
                             "r3",
@@ -2857,7 +2836,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "18",
+                        "stationCode": "17",
                         "color": [
                             "rio",
                             "r3",
@@ -2883,7 +2862,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "17",
+                        "stationCode": "16",
                         "color": [
                             "rio",
                             "r3",
@@ -2909,7 +2888,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "19",
+                        "stationCode": "18",
                         "color": [
                             "rio",
                             "r3",
@@ -2935,7 +2914,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "20",
+                        "stationCode": "19",
                         "color": [
                             "rio",
                             "r3",
@@ -2961,7 +2940,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "21",
+                        "stationCode": "20",
                         "color": [
                             "rio",
                             "r3",
@@ -2990,7 +2969,7 @@
                         "interchanges": [
                             {
                                 "lineCode": "IG",
-                                "stationCode": "22",
+                                "stationCode": "21",
                                 "color": [
                                     "rio",
                                     "r3",
@@ -3052,7 +3031,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "23",
+                        "stationCode": "22",
                         "color": [
                             "rio",
                             "r3",
@@ -3078,7 +3057,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "24",
+                        "stationCode": "23",
                         "color": [
                             "rio",
                             "r3",
@@ -3104,7 +3083,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "25",
+                        "stationCode": "24",
                         "color": [
                             "rio",
                             "r3",
@@ -3119,7 +3098,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1980,
+                    "x": 1985,
                     "y": 25,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -3130,7 +3109,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "26",
+                        "stationCode": "25",
                         "color": [
                             "rio",
                             "r3",
@@ -3145,7 +3124,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 2040,
+                    "x": 2045,
                     "y": 25,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -3156,7 +3135,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "27",
+                        "stationCode": "26",
                         "color": [
                             "rio",
                             "r3",
@@ -3182,7 +3161,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "28",
+                        "stationCode": "27",
                         "color": [
                             "rio",
                             "r3",
@@ -3208,7 +3187,7 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "IG",
-                        "stationCode": "29",
+                        "stationCode": "28",
                         "color": [
                             "rio",
                             "r3",
@@ -3355,22 +3334,29 @@
                     "zIndex": 0,
                     "x": -355,
                     "y": 695,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "曼陀林廣場"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "PA",
-                        "stationCode": "22",
-                        "color": [
-                            "other",
-                            "other",
-                            "#ef34bd",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "PA",
+                                "stationCode": "22",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#ef34bd",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -3645,22 +3631,29 @@
                     "zIndex": 2,
                     "x": -355,
                     "y": 110,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "馬杜雷拉"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "PA",
-                        "stationCode": "12",
-                        "color": [
-                            "other",
-                            "other",
-                            "#ef34bd",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "PA",
+                                "stationCode": "12",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#ef34bd",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -3785,32 +3778,6 @@
                         "textVertical": false,
                         "lineCode": "PA",
                         "stationCode": "06",
-                        "color": [
-                            "other",
-                            "other",
-                            "#ef34bd",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_D_Ie44IxIY",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 10,
-                    "y": -175,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "彭哈"
-                        ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "PA",
-                        "stationCode": "05",
                         "color": [
                             "other",
                             "other",
@@ -3947,23 +3914,30 @@
                     "visible": true,
                     "zIndex": 2,
                     "x": -65,
-                    "y": 255,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "y": 250,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "邁爾"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "BC",
-                        "stationCode": "11",
-                        "color": [
-                            "other",
-                            "other",
-                            "#e10531",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "BC",
+                                "stationCode": "11",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#e10531",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -3973,7 +3947,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -65,
-                    "y": 175,
+                    "y": 170,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -4000,22 +3974,29 @@
                     "zIndex": 1,
                     "x": -145,
                     "y": 160,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "聖柱"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "BC",
-                        "stationCode": "13",
-                        "color": [
-                            "other",
-                            "other",
-                            "#e10531",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "BC",
+                                "stationCode": "13",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#e10531",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -4089,22 +4070,29 @@
                     "zIndex": 2,
                     "x": -315,
                     "y": 215,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "卡斯卡杜拉"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "BC",
-                        "stationCode": "16",
-                        "color": [
-                            "other",
-                            "other",
-                            "#e10531",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "BC",
+                                "stationCode": "16",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#e10531",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -4132,7 +4120,7 @@
                             "瓦爾奎爾廣場"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "BC",
                         "stationCode": "18",
@@ -4207,7 +4195,7 @@
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
-                            "蘇拉卡"
+                            "豐特奈爾元帥"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
@@ -4246,23 +4234,30 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -885,
-                    "y": 170,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "y": 175,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "雷倫戈"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "BC",
-                        "stationCode": "23",
-                        "color": [
-                            "other",
-                            "other",
-                            "#e10531",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "BC",
+                                "stationCode": "23",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#e10531",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -4539,7 +4534,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 420,
+                    "x": 415,
                     "y": -220,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -4567,22 +4562,29 @@
                     "zIndex": 0,
                     "x": 385,
                     "y": 195,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "東北傳統文化中心"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "AG",
-                        "stationCode": "06",
-                        "color": [
-                            "other",
-                            "other",
-                            "#93959b",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "AG",
+                                "stationCode": "06",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#93959b",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -5232,8 +5234,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 575,
-                    "y": 315,
+                    "x": 580,
+                    "y": 320,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -5244,7 +5246,7 @@
                         "nameOffsetY": "top",
                         "textVertical": true,
                         "mostImportant": true,
-                        "minLength": 50
+                        "minLength": 55
                     }
                 }
             },
@@ -5670,54 +5672,35 @@
                 }
             },
             {
-                "key": "stn_d7xstN6WN3",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 2,
-                    "x": 55,
-                    "y": -130,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "陶器"
-                        ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "PA",
-                        "stationCode": "04",
-                        "color": [
-                            "other",
-                            "other",
-                            "#ef34bd",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "stn_EW59KMOywx",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
                     "x": 230,
                     "y": -75,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "潮汐"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "PA",
-                        "stationCode": "02",
-                        "color": [
-                            "other",
-                            "other",
-                            "#ef34bd",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "PA",
+                                "stationCode": "02",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#ef34bd",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -5728,22 +5711,29 @@
                     "zIndex": 2,
                     "x": 140,
                     "y": -75,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "拉莫斯"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "PA",
-                        "stationCode": "03",
-                        "color": [
-                            "other",
-                            "other",
-                            "#ef34bd",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "PA",
+                                "stationCode": "03",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#ef34bd",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -5790,7 +5780,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 290,
-                    "y": 315,
+                    "y": 320,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -5831,7 +5821,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 395,
+                    "x": 400,
                     "y": 335,
                     "type": "virtual",
                     "virtual": {}
@@ -5842,7 +5832,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 325,
+                    "x": 320,
                     "y": 335,
                     "type": "virtual",
                     "virtual": {}
@@ -5908,7 +5898,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 150,
-                    "y": 215,
+                    "y": 210,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -5928,7 +5918,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 1,
-                    "x": -25,
+                    "x": -20,
                     "y": 135,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
@@ -5970,8 +5960,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 2,
-                    "x": 125,
-                    "y": -60,
+                    "x": 120,
+                    "y": -55,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -6195,7 +6185,7 @@
                     "visible": true,
                     "zIndex": 2,
                     "x": -315,
-                    "y": 200,
+                    "y": 195,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -6293,8 +6283,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -835,
-                    "y": 140,
+                    "x": -825,
+                    "y": 145,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -6490,23 +6480,30 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -1045,
-                    "y": 170,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "y": 175,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "班古"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "BC",
-                        "stationCode": "24",
-                        "color": [
-                            "other",
-                            "other",
-                            "#e10531",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "BC",
+                                "stationCode": "24",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#e10531",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -6516,7 +6513,7 @@
                     "visible": true,
                     "zIndex": 1,
                     "x": -280,
-                    "y": 95,
+                    "y": 90,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -6615,7 +6612,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -190,
+                    "x": -195,
                     "y": 285,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -6787,7 +6784,7 @@
                     "visible": true,
                     "zIndex": 2,
                     "x": 225,
-                    "y": 310,
+                    "y": 305,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -6808,7 +6805,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 155,
-                    "y": 130,
+                    "y": 120,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -6833,7 +6830,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 155,
-                    "y": 40,
+                    "y": 30,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -6857,8 +6854,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -25,
-                    "y": -240,
+                    "x": -20,
+                    "y": -235,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7511,7 +7508,7 @@
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
-                            "賈佩里",
+                            "雅佩里",
                             "Japeri"
                         ],
                         "nameOffsetX": "middle",
@@ -7808,7 +7805,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -430,
-                    "y": -695,
+                    "y": -700,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7858,7 +7855,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -430,
-                    "y": -805,
+                    "y": -800,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7883,7 +7880,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -430,
-                    "y": -860,
+                    "y": -850,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7908,7 +7905,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -430,
-                    "y": -970,
+                    "y": -950,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7933,7 +7930,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -430,
-                    "y": -915,
+                    "y": -900,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -7958,7 +7955,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -430,
-                    "y": -1005,
+                    "y": -1000,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -8586,7 +8583,7 @@
                     "y": 555,
                     "type": "text",
                     "text": {
-                        "content": "Light rail",
+                        "content": "Suburban Light rail",
                         "fontSize": 24,
                         "lineHeight": 16,
                         "textAnchor": "middle",
@@ -8641,7 +8638,7 @@
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "PM",
-                        "name": "Galeão Aeroporto ",
+                        "name": "Galeão Aeroporto",
                         "lines": "8",
                         "isTram": true,
                         "color": [
@@ -9165,23 +9162,30 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -685,
-                    "y": 150,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "y": 155,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "軍事村"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "OP",
-                        "stationCode": "02",
-                        "color": [
-                            "other",
-                            "other",
-                            "#ec8d65",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "OP",
+                                "stationCode": "02",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#ec8d65",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -9191,23 +9195,30 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -755,
-                    "y": 150,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "y": 155,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "馬加良斯"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "OP",
-                        "stationCode": "03",
-                        "color": [
-                            "other",
-                            "other",
-                            "#ec8d65",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "OP",
+                                "stationCode": "03",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#ec8d65",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -9216,7 +9227,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -785,
+                    "x": -780,
                     "y": 185,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -9254,7 +9265,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -735,
-                    "y": 350,
+                    "y": 345,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9279,8 +9290,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -630,
-                    "y": 435,
+                    "x": -665,
+                    "y": 440,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9307,22 +9318,29 @@
                     "zIndex": 0,
                     "x": -390,
                     "y": 695,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "庫里西卡"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "OP",
-                        "stationCode": "11",
-                        "color": [
-                            "other",
-                            "other",
-                            "#ec8d65",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "OP",
+                                "stationCode": "03",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#ec8d65",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -9342,7 +9360,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -395,
+                    "x": -390,
                     "y": 665,
                     "type": "virtual",
                     "virtual": {}
@@ -9398,17 +9416,6 @@
                             "#fff"
                         ]
                     }
-                }
-            },
-            {
-                "key": "misc_node_FUlmsIivDc",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -685,
-                    "y": 385,
-                    "type": "virtual",
-                    "virtual": {}
                 }
             },
             {
@@ -9635,7 +9642,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -2090,
+                    "x": -2085,
                     "y": 100,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -9663,22 +9670,29 @@
                     "zIndex": 0,
                     "x": -2085,
                     "y": 155,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "聖塔克魯茲"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "SC",
-                        "stationCode": "02",
-                        "color": [
-                            "other",
-                            "other",
-                            "#00af86",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "SC",
+                                "stationCode": "02",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#00af86",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -9839,7 +9853,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1900,
+                    "x": -1875,
                     "y": 415,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -9865,8 +9879,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1840,
-                    "y": 490,
+                    "x": -1815,
+                    "y": 475,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9891,8 +9905,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1775,
-                    "y": 555,
+                    "x": -1755,
+                    "y": 535,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -9917,15 +9931,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1705,
-                    "y": 605,
+                    "x": -1695,
+                    "y": 595,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
                             "水滴"
                         ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "SC",
                         "stationCode": "10",
@@ -9982,17 +9996,6 @@
                 }
             },
             {
-                "key": "misc_node_IIcC8oT17a",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -1665,
-                    "y": 620,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
                 "key": "stn_fwFVoU-p1p",
                 "attributes": {
                     "visible": true,
@@ -10023,14 +10026,14 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1565,
-                    "y": 650,
+                    "x": -1520,
+                    "y": 695,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
                             "卡寧德"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "SC",
@@ -10045,23 +10048,12 @@
                 }
             },
             {
-                "key": "misc_node_aEM3lBobaK",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -1470,
-                    "y": 785,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
                 "key": "stn_H7fAHN3xpV",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1465,
-                    "y": 875,
+                    "x": -1445,
+                    "y": 770,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -10086,15 +10078,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1390,
-                    "y": 890,
+                    "x": -1375,
+                    "y": 840,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
                             "恩布拉帕"
                         ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "SC",
                         "stationCode": "14",
@@ -10164,7 +10156,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1110,
+                    "x": -1105,
                     "y": 935,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -10190,15 +10182,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -990,
-                    "y": 995,
+                    "x": -965,
+                    "y": 985,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
                             "唐博斯科"
                         ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "SC",
                         "stationCode": "18",
@@ -10209,17 +10201,6 @@
                             "#fff"
                         ]
                     }
-                }
-            },
-            {
-                "key": "misc_node_Xk653G1Wbv",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -1050,
-                    "y": 965,
-                    "type": "virtual",
-                    "virtual": {}
                 }
             },
             {
@@ -10637,22 +10618,29 @@
                     "zIndex": 0,
                     "x": -580,
                     "y": -65,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "小巴羅斯"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "GN",
-                        "stationCode": "03",
-                        "color": [
-                            "other",
-                            "other",
-                            "#993571",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "GN",
+                                "stationCode": "03",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#993571",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -10661,7 +10649,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -615,
+                    "x": -620,
                     "y": 105,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
@@ -10704,7 +10692,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -615,
+                    "x": -620,
                     "y": 20,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -10758,22 +10746,29 @@
                     "zIndex": 0,
                     "x": -315,
                     "y": -230,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "科埃略．內托"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "GN",
-                        "stationCode": "05",
-                        "color": [
-                            "other",
-                            "other",
-                            "#993571",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "GN",
+                                "stationCode": "05",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#993571",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -10817,22 +10812,29 @@
                     "zIndex": 0,
                     "x": -145,
                     "y": -400,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "盧卡的遊行"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "GN",
-                        "stationCode": "09",
-                        "color": [
-                            "other",
-                            "other",
-                            "#993571",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "GN",
+                                "stationCode": "09",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#993571",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -10841,24 +10843,31 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 575,
-                    "y": 390,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": 580,
+                    "y": 400,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "中央車站"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
+                        "mereOffset": "none",
                         "textVertical": true,
-                        "lineCode": "GN",
-                        "stationCode": "25",
-                        "color": [
-                            "other",
-                            "other",
-                            "#993571",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "GN",
+                                "stationCode": "26",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#993571",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -10869,22 +10878,29 @@
                     "zIndex": 0,
                     "x": 230,
                     "y": -100,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "潮汐"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "GN",
-                        "stationCode": "15",
-                        "color": [
-                            "other",
-                            "other",
-                            "#993571",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "GN",
+                                "stationCode": "15",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#993571",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -10895,22 +10911,29 @@
                     "zIndex": 0,
                     "x": 405,
                     "y": 195,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "聖艾德維格斯廣場"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "GN",
-                        "stationCode": "21",
-                        "color": [
-                            "other",
-                            "other",
-                            "#993571",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "GN",
+                                "stationCode": "21",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#993571",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -11049,8 +11072,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 422,
-                    "y": 405,
+                    "x": 410,
+                    "y": 390,
                     "type": "text",
                     "text": {
                         "content": "里約市政府",
@@ -11077,7 +11100,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 330,
-                    "y": 210,
+                    "y": 215,
                     "type": "text",
                     "text": {
                         "content": "路易斯．岡薩加\n巴西東北傳統中心",
@@ -11104,7 +11127,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 440,
-                    "y": 315,
+                    "y": 320,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -11114,7 +11137,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 445,
+                    "x": 450,
                     "y": 290,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -11125,7 +11148,7 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "22",
+                        "stationCode": "23",
                         "color": [
                             "other",
                             "other",
@@ -11142,22 +11165,29 @@
                     "zIndex": 0,
                     "x": 470,
                     "y": 390,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "新城"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "GN",
-                        "stationCode": "23",
-                        "color": [
-                            "other",
-                            "other",
-                            "#993571",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "GN",
+                                "stationCode": "24",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#993571",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -11178,23 +11208,30 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 510,
-                    "y": 410,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "y": 415,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "十一號廣場"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
+                        "mereOffset": "none",
                         "textVertical": false,
-                        "lineCode": "UC",
-                        "stationCode": "24",
-                        "color": [
-                            "rio",
-                            "r1",
-                            "#ff8301",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "UC",
+                                "stationCode": "24",
+                                "color": [
+                                    "rio",
+                                    "r1",
+                                    "#ff8301",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
                     }
                 }
             },
@@ -11204,7 +11241,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 475,
-                    "y": 415,
+                    "y": 420,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -11226,7 +11263,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 660,
-                    "y": 480,
+                    "y": 485,
                     "type": "text",
                     "text": {
                         "content": "里約熱內盧\n大教堂",
@@ -11252,12 +11289,12 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 385,
+                    "x": 375,
                     "y": 290,
                     "type": "text",
                     "text": {
                         "content": "利奧波爾迪納火車站(已廢棄)",
-                        "fontSize": 8,
+                        "fontSize": 10,
                         "lineHeight": 12,
                         "textAnchor": "middle",
                         "dominantBaseline": "middle",
@@ -12166,6 +12203,184 @@
                             "other",
                             "other",
                             "#00a859",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
+                }
+            },
+            {
+                "key": "stn_QKCNX9Bq5c",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 255,
+                    "y": 355,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
+                        "names": [
+                            "聖克里斯多福"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "mereOffset": "left2",
+                        "textVertical": false,
+                        "interchanges": [
+                            {
+                                "lineCode": "PD",
+                                "stationCode": "07",
+                                "color": [
+                                    "rio",
+                                    "r2",
+                                    "#bad02f",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
+                    }
+                }
+            },
+            {
+                "key": "stn_nBoSI6dplW",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 2,
+                    "x": 5,
+                    "y": -170,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
+                        "names": [
+                            "彭哈"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "mereOffset": "none",
+                        "textVertical": false,
+                        "interchanges": [
+                            {
+                                "lineCode": "PA",
+                                "stationCode": "05",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#ef34bd",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
+                    }
+                }
+            },
+            {
+                "key": "stn_-CRnrotuVA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 2,
+                    "x": 50,
+                    "y": -125,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
+                        "names": [
+                            "陶器"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "mereOffset": "none",
+                        "textVertical": false,
+                        "interchanges": [
+                            {
+                                "lineCode": "PA",
+                                "stationCode": "04",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#ef34bd",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "horizontal",
+                        "importance": "default"
+                    }
+                }
+            },
+            {
+                "key": "stn_wNR0n8AAPN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -710,
+                    "y": -595,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "白沙廣場"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "PD",
+                        "stationCode": "26",
+                        "color": [
+                            "rio",
+                            "r2",
+                            "#bad02f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_SxtQ7iEGOt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -760,
+                    "y": -645,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "赫利奧波利斯廣場"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "PD",
+                        "stationCode": "27",
+                        "color": [
+                            "rio",
+                            "r2",
+                            "#bad02f",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_IYguDjo71m",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -915,
+                    "y": -60,
+                    "type": "text",
+                    "text": {
+                        "content": "新伊瓜蘇火山",
+                        "fontSize": 25,
+                        "lineHeight": 16,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "mtr__zh",
+                        "color": [
+                            "other",
+                            "other",
+                            "#70cb25",
                             "#fff"
                         ],
                         "rotate": 0,
@@ -13095,60 +13310,6 @@
                 }
             },
             {
-                "key": "line_F7CRx0lbB1",
-                "source": "stn_lCdnUI4VVn",
-                "target": "misc_node_kI9Ti0tm1T",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r4",
-                            "#ffc400",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    }
-                }
-            },
-            {
-                "key": "line_ITwh8jTJ3l",
-                "source": "stn_N-OAuffbHZ",
-                "target": "misc_node_kI9Ti0tm1T",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r4",
-                            "#ffc400",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    }
-                }
-            },
-            {
                 "key": "line_dXROzy2DVU",
                 "source": "stn_iyZBzt6j1c",
                 "target": "misc_node_Fv0_mtnDDx",
@@ -14040,33 +14201,6 @@
                 }
             },
             {
-                "key": "line_a7kX07DLlZ",
-                "source": "stn_E9LbESF6cQ",
-                "target": "stn__bYMNYDCnq",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r2",
-                            "#bad02f",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_zsZ05QaOyd",
                 "source": "stn_3D0JRk9kSh",
                 "target": "stn_HkdOtECE93",
@@ -14337,33 +14471,6 @@
                 }
             },
             {
-                "key": "line_FseTxN_BIK",
-                "source": "stn_ZEd7A05_Xg",
-                "target": "stn_0wbaWEf70Y",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r3",
-                            "#3e4095",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_aNxOAHtYbz",
                 "source": "stn_0wbaWEf70Y",
                 "target": "stn_Jrf0C-WSu9",
@@ -14394,33 +14501,6 @@
                 "key": "line_EvVfozbXmH",
                 "source": "stn_hL-HXLcKFo",
                 "target": "stn_0wbaWEf70Y",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r3",
-                            "#3e4095",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_KFn93gt6bc",
-                "source": "stn_tse0uZm-BO",
-                "target": "stn_ZEd7A05_Xg",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -14896,33 +14976,6 @@
                             "other",
                             "other",
                             "#1d5dcc",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_8C05uezjEq",
-                "source": "stn_D_Ie44IxIY",
-                "target": "stn_8KBKWtfDad",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "ro-perp",
-                    "ro-perp": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#ef34bd",
                             "#fff"
                         ]
                     },
@@ -17010,33 +17063,6 @@
                 }
             },
             {
-                "key": "line_rFn9HLq17s",
-                "source": "stn_D_Ie44IxIY",
-                "target": "stn_d7xstN6WN3",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#ef34bd",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_YvE5kApEVf",
                 "source": "stn_0kQoJHq5bg",
                 "target": "stn_EW59KMOywx",
@@ -17304,33 +17330,6 @@
                             "#fff"
                         ]
                     }
-                }
-            },
-            {
-                "key": "line_EPDSSHdSmv",
-                "source": "misc_node_CeCaME4KZ0",
-                "target": "stn_d7xstN6WN3",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#ef34bd",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
                 }
             },
             {
@@ -17742,26 +17741,6 @@
                 }
             },
             {
-                "key": "line_xvpf2_12aP",
-                "source": "stn_HC0w425S2Z",
-                "target": "stn__bYMNYDCnq",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "style": "london-tube-internal-int",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "london-tube-internal-int": {}
-                }
-            },
-            {
                 "key": "line_yONsuDJ0KU",
                 "source": "stn_cHa49tfUiA",
                 "target": "stn_dIrwXIYfmQ",
@@ -17902,46 +17881,6 @@
                 }
             },
             {
-                "key": "line_yU3nwPgM5F",
-                "source": "stn_OIbzWu8F7S",
-                "target": "stn_d7xstN6WN3",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-tube-internal-int",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-tube-internal-int": {}
-                }
-            },
-            {
-                "key": "line_ntyvivrlii",
-                "source": "stn_D_Ie44IxIY",
-                "target": "stn_K0-Bj1vF_L",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-tube-internal-int",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-tube-internal-int": {}
-                }
-            },
-            {
                 "key": "line_lOxvZugRST",
                 "source": "stn_VHVzCmcxud",
                 "target": "stn_0kQoJHq5bg",
@@ -18036,7 +17975,7 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetTo": -5,
                         "roundCornerFactor": 10
                     }
                 }
@@ -19440,46 +19379,6 @@
                 }
             },
             {
-                "key": "line_X2WhBH6NmG",
-                "source": "stn_HC0w425S2Z",
-                "target": "stn_ZgXjMS4QtN",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": -5,
-                        "offsetTo": 5,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "rio",
-                            "rb",
-                            "#552381",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false,
-                        "color": [
-                            "rio",
-                            "rb",
-                            "#552381",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "line_lfzQJzlTWg",
                 "source": "stn_HC0w425S2Z",
                 "target": "stn_ZgXjMS4QtN",
@@ -19517,33 +19416,6 @@
                             "#fff"
                         ]
                     }
-                }
-            },
-            {
-                "key": "line_2Ga5LeO0I9",
-                "source": "stn_qtmClFZKQi",
-                "target": "stn__bYMNYDCnq",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": -5,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r2",
-                            "#bad02f",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
                 }
             },
             {
@@ -21047,8 +20919,8 @@
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
-                        "offsetFrom": -20,
-                        "offsetTo": -20,
+                        "offsetFrom": -15,
+                        "offsetTo": -15,
                         "roundCornerFactor": 18.33
                     },
                     "style": "london-tube-internal-int",
@@ -22432,7 +22304,7 @@
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
+                        "offsetFrom": -5,
                         "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
@@ -23207,13 +23079,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
+                    "type": "perpendicular",
                     "style": "london-sandwich",
                     "reconcileId": "",
                     "parallelIndex": -1,
@@ -23224,60 +23090,12 @@
                             "#ec8d65",
                             "#fff"
                         ]
-                    }
-                }
-            },
-            {
-                "key": "line_cJceOPzEDj",
-                "source": "misc_node_FUlmsIivDc",
-                "target": "stn_r3Gs5FNHfm",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
+                    },
                     "perpendicular": {
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
                         "roundCornerFactor": 18.33
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#ec8d65",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_Hm8Jrdsmb3",
-                "source": "misc_node_FUlmsIivDc",
-                "target": "stn_YiMF-K163T",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#ec8d65",
-                            "#fff"
-                        ]
                     }
                 }
             },
@@ -24078,117 +23896,9 @@
                 }
             },
             {
-                "key": "line_wz6QOw0zVl",
-                "source": "stn_zhdg02j3me",
-                "target": "misc_node_IIcC8oT17a",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#00af86",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_YP7jEGLvQn",
-                "source": "stn_fwFVoU-p1p",
-                "target": "misc_node_IIcC8oT17a",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#00af86",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "line_JIgbsgJTXF",
                 "source": "stn_fwFVoU-p1p",
                 "target": "stn_NXu4SmHDYC",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#00af86",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_nJ9_0TiF5a",
-                "source": "misc_node_aEM3lBobaK",
-                "target": "stn_NXu4SmHDYC",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#00af86",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_Q76TZP-U1y",
-                "source": "misc_node_aEM3lBobaK",
-                "target": "stn_H7fAHN3xpV",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -24306,60 +24016,6 @@
                         "offsetFrom": 0,
                         "offsetTo": 0,
                         "roundCornerFactor": 18.33
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#00af86",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_7a8xxRZc2l",
-                "source": "stn_eapZKdMdc7",
-                "target": "misc_node_Xk653G1Wbv",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#00af86",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_y4rM7Zuvx9",
-                "source": "stn_sLThh7fB-4",
-                "target": "misc_node_Xk653G1Wbv",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
                     },
                     "style": "london-sandwich",
                     "reconcileId": "",
@@ -25295,7 +24951,7 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetTo": -10,
                         "roundCornerFactor": 10
                     },
                     "style": "london-tube-10-min-walk",
@@ -25792,33 +25448,6 @@
                         "offsetFrom": 5,
                         "offsetTo": 0,
                         "roundCornerFactor": 10
-                    }
-                }
-            },
-            {
-                "key": "line_uR08tPGQeK",
-                "source": "stn_BLS1HmmvrA",
-                "target": "stn_nW3vzA_ZUh",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#993571",
-                            "#fff"
-                        ]
                     }
                 }
             },
@@ -26981,6 +26610,505 @@
                             "#fff"
                         ]
                     }
+                }
+            },
+            {
+                "key": "line_hVvtH-Dh7v",
+                "source": "stn_YiMF-K163T",
+                "target": "stn_r3Gs5FNHfm",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ec8d65",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_o4J6vrWgUQ",
+                "source": "stn_H7fAHN3xpV",
+                "target": "stn_NXu4SmHDYC",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#00af86",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_blr6FwGVdu",
+                "source": "stn_fwFVoU-p1p",
+                "target": "stn_zhdg02j3me",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#00af86",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_Z2y8IxoeGp",
+                "source": "stn_eapZKdMdc7",
+                "target": "stn_sLThh7fB-4",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#00af86",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_L5tCjA0RnF",
+                "source": "stn_E9LbESF6cQ",
+                "target": "stn_QKCNX9Bq5c",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r2",
+                            "#bad02f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_EjSGvHZk5G",
+                "source": "stn_qtmClFZKQi",
+                "target": "stn_QKCNX9Bq5c",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": -5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r2",
+                            "#bad02f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_76aa7xTBS7",
+                "source": "stn_QKCNX9Bq5c",
+                "target": "stn_HC0w425S2Z",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-tube-internal-int",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-tube-internal-int": {}
+                }
+            },
+            {
+                "key": "line_yrqAGH8sv2",
+                "source": "stn_HC0w425S2Z",
+                "target": "stn_ZgXjMS4QtN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": -5,
+                        "offsetTo": 5,
+                        "roundCornerFactor": 11
+                    },
+                    "style": "london-rail",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-rail": {
+                        "colorBackground": [
+                            "rio",
+                            "rb",
+                            "#552381",
+                            "#fff"
+                        ],
+                        "colorForeground": [
+                            "london",
+                            "white",
+                            "#ffffff",
+                            "#000"
+                        ],
+                        "limitedService": false
+                    }
+                }
+            },
+            {
+                "key": "line_Y3rt0Igd8x",
+                "source": "stn_nBoSI6dplW",
+                "target": "stn_8KBKWtfDad",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ef34bd",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_FUtafFLhpI",
+                "source": "stn_nBoSI6dplW",
+                "target": "stn_-CRnrotuVA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ef34bd",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_fZux-U94_W",
+                "source": "misc_node_CeCaME4KZ0",
+                "target": "stn_-CRnrotuVA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ef34bd",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_OIPM4bwLsJ",
+                "source": "stn_nBoSI6dplW",
+                "target": "stn_K0-Bj1vF_L",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-tube-internal-int",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-tube-internal-int": {}
+                }
+            },
+            {
+                "key": "line_hrFj0jEFeO",
+                "source": "stn_-CRnrotuVA",
+                "target": "stn_OIbzWu8F7S",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-tube-internal-int",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-tube-internal-int": {}
+                }
+            },
+            {
+                "key": "line_JGp6X1eWTE",
+                "source": "stn__5dO-xHwFy",
+                "target": "stn_wNR0n8AAPN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r2",
+                            "#bad02f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_fEzI3K6MYI",
+                "source": "stn_wNR0n8AAPN",
+                "target": "stn_SxtQ7iEGOt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r2",
+                            "#bad02f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_3QfpkNSRHP",
+                "source": "stn_nW3vzA_ZUh",
+                "target": "misc_node_S1iVbnm-BY",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_wcf6TG4QQ4",
+                "source": "stn_BLS1HmmvrA",
+                "target": "misc_node_S1iVbnm-BY",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_6H2St3jILJ",
+                "source": "stn_N-OAuffbHZ",
+                "target": "stn_lCdnUI4VVn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r4",
+                            "#ffc400",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_vGKOhhyTBa",
+                "source": "stn_tse0uZm-BO",
+                "target": "stn_0wbaWEf70Y",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r3",
+                            "#3e4095",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
                 }
             }
         ]

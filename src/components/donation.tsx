@@ -78,11 +78,11 @@ export default function Donation() {
                             {t('donation.content2')}
                             <Link
                                 color="blue.500"
-                                href={`https://${window.location.hostname}/rmp/s/mcG7zS`}
+                                href={`https://${window.location.hostname}/?app=rmp&searchParams=wenxi`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                https://{window.location.hostname}/rmp/s/mcG7zS
+                                https://{window.location.hostname}/?app=rmp&searchParams=wenxi
                             </Link>
                         </Text>
                         <SimpleGrid columns={2} spacing="10">

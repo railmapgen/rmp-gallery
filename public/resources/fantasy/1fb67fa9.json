@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 190,
+    "svgViewBoxZoom": 70,
     "svgViewBoxMin": {
-        "x": -1306.3387694930748,
-        "y": -719.7276870727368
+        "x": 162.12080234530367,
+        "y": 59.192185974138184
     },
     "graph": {
         "options": {
@@ -166,7 +166,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 790,
+                    "x": 810,
                     "y": 365,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -193,7 +193,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 750,
-                    "y": 420,
+                    "y": 415,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -292,7 +292,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 665,
+                    "x": 680,
                     "y": 525,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
@@ -447,7 +447,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 675,
+                    "x": 680,
                     "y": 460,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -581,7 +581,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 845,
+                    "x": 835,
                     "y": 460,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -607,7 +607,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 875,
+                    "x": 865,
                     "y": 475,
                     "type": "facilities",
                     "facilities": {
@@ -716,7 +716,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 470,
-                    "y": 355,
+                    "y": 365,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
@@ -753,7 +753,7 @@
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
-                            "Praça"
+                            "Bandeira"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
@@ -850,8 +850,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 180,
-                    "y": 350,
+                    "x": 175,
+                    "y": 345,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
@@ -1243,7 +1243,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 340,
+                    "x": 335,
                     "y": 455,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -6731,7 +6731,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 2,
-                    "x": 225,
+                    "x": 215,
                     "y": 305,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
@@ -10820,7 +10820,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 600,
-                    "y": 405,
+                    "y": 395,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
@@ -11157,7 +11157,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 515,
-                    "y": 425,
+                    "y": 420,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
@@ -11190,7 +11190,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 475,
-                    "y": 430,
+                    "y": 425,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -11201,7 +11201,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 500,
-                    "y": 360,
+                    "y": 365,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -24822,7 +24822,7 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": -10,
+                        "offsetTo": -15,
                         "roundCornerFactor": 10
                     },
                     "style": "london-tube-10-min-walk",
@@ -26848,60 +26848,6 @@
                 }
             },
             {
-                "key": "line_3QfpkNSRHP",
-                "source": "stn_nW3vzA_ZUh",
-                "target": "misc_node_S1iVbnm-BY",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -1,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#993571",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_wcf6TG4QQ4",
-                "source": "stn_BLS1HmmvrA",
-                "target": "misc_node_S1iVbnm-BY",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -1,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#993571",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "line_6H2St3jILJ",
                 "source": "stn_N-OAuffbHZ",
                 "target": "stn_lCdnUI4VVn",
@@ -27196,6 +27142,33 @@
                     },
                     "reconcileId": "",
                     "parallelIndex": 0
+                }
+            },
+            {
+                "key": "line_274QE4eGse",
+                "source": "stn_nW3vzA_ZUh",
+                "target": "stn_BLS1HmmvrA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": 0,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#993571",
+                            "#fff"
+                        ]
+                    }
                 }
             }
         ]

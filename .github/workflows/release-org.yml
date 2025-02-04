@@ -1,13 +1,16 @@
 name: Release Org
 
 on:
-  push:
-    branches:
-      - gh-pages
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Build and Release"]  # Name of the workflow to listen to
+    types: [completed]                # Trigger when the workflow finishes
 
 jobs:
-  build:
+  release:
+    # Only run if the "Build and Release" workflow succeeded
+    # It's okay to run this if it is released to UAT as no changes will stop the script
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     runs-on: self-hosted
     steps:
       - name: Release

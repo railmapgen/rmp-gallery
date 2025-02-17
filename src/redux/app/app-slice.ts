@@ -44,11 +44,14 @@ const appSlice = createSlice({
         setServerUsers: (state, action: PayloadAction<AppState['serverUsers']>) => {
             state.serverUsers = action.payload;
         },
-        setRmtToken: (state, action: PayloadAction<string | undefined>) => {
+        setRmtToken: (state, action: PayloadAction<string>) => {
             state.rmtToken = action.payload;
+        },
+        removeRmtToken: state => {
+            state.rmtToken = undefined;
         },
     },
 });
 
-export const { setRealWorld, setFantasy, setLogins, setServerUsers, setRmtToken } = appSlice.actions;
+export const { setRealWorld, setFantasy, setLogins, setServerUsers, setRmtToken, removeRmtToken } = appSlice.actions;
 export default appSlice.reducer;

@@ -1,6 +1,6 @@
 import { logger } from '@railmapgen/rmg-runtime';
 import { createStore } from '../redux';
-import { setRmtToken } from '../redux/app/app-slice';
+import { removeRmtToken, setRmtToken } from '../redux/app/app-slice';
 import { LocalStorageKey } from './constant';
 
 /**
@@ -24,7 +24,7 @@ export const onLocalStorageChangeRMT = (store: ReturnType<typeof createStore>) =
     const handleAccountChange = (accountString?: string) => {
         if (!accountString) {
             logger.debug('Account string is empty, logging out');
-            store.dispatch(setRmtToken(undefined));
+            store.dispatch(removeRmtToken());
             return;
         }
 

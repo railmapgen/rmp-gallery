@@ -346,7 +346,8 @@ export default function GalleryView() {
                                                 filterID === '' ||
                                                 type === 'designer' ||
                                                 type === 'admin' ||
-                                                type === 'user'
+                                                type === 'user' ||
+                                                i >= 2 // designer, user, admin should never filter by contributor
                                                     ? true
                                                     : metadata.contributors.includes(filterID)
                                             )
@@ -354,7 +355,8 @@ export default function GalleryView() {
                                                 filterIDServer === -1 ||
                                                 type === 'real_world' ||
                                                 type === 'fantasy' ||
-                                                type === 'user'
+                                                type === 'user' ||
+                                                i < 2 // real_world, fantasy should never filter by server user
                                                     ? true
                                                     : (metadata as DesignerMetadata).userId === filterIDServer
                                             )

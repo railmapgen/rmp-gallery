@@ -33,9 +33,9 @@ import {
     MetadataDetail,
     RMT_SERVER,
 } from '../util/constant';
+import { decompressFromBase64 } from '../util/utils';
 import DetailsModal from './details';
 import { TemplateCard } from './template-card';
-import { decompressFromBase64 } from '../util/utils';
 
 const stickyHeaderStyles: SystemStyleObject = {
     position: 'sticky',
@@ -49,7 +49,7 @@ export default function GalleryView() {
     const dispatch = useRootDispatch();
     const { t } = useTranslation();
 
-    const { realWorld, fantasy, logins, serverUsers, rmtLogin } = useRootSelector(state => state.app);
+    const { realWorld, fantasy, logins, serverUsers, rmtToken } = useRootSelector(state => state.app);
     const [designerPublic, setDesignerPublic] = React.useState<Designer>({});
     const [designerAdmin, setDesignerAdmin] = React.useState<Designer>({});
     const [designerUser, setDesignerUser] = React.useState<Designer>({});
@@ -104,12 +104,12 @@ export default function GalleryView() {
     };
 
     const fetchServerPublic = async () => {
-        if (!rmtLogin) return;
+        if (!rmtToken) return;
         const rep = await fetch(RMT_SERVER + '/designer/public', {
             headers: {
                 accept: 'application/json',
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${rmtLogin!.token}`,
+                Authorization: `Bearer ${rmtToken}`,
             },
         });
         if (rep.status !== 200) {
@@ -129,12 +129,12 @@ export default function GalleryView() {
     };
 
     const fetchServerUser = async () => {
-        if (!rmtLogin) return;
+        if (!rmtToken) return;
         const rep = await fetch(RMT_SERVER + '/designer/user', {
             headers: {
                 accept: 'application/json',
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${rmtLogin!.token}`,
+                Authorization: `Bearer ${rmtToken}`,
             },
         });
         if (rep.status !== 200) {
@@ -155,12 +155,12 @@ export default function GalleryView() {
     };
 
     const fetchServerAdmin = async () => {
-        if (!rmtLogin) return;
+        if (!rmtToken) return;
         const rep = await fetch(RMT_SERVER + '/designer/admin', {
             headers: {
                 accept: 'application/json',
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${rmtLogin!.token}`,
+                Authorization: `Bearer ${rmtToken}`,
             },
         });
         if (rep.status !== 200) {

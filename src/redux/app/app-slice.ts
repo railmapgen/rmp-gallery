@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { Gallery, RmtLogin } from '../../util/constant';
+import { Gallery } from '../../util/constant';
 
 interface AppState {
     realWorld: Gallery;
@@ -9,7 +9,7 @@ interface AppState {
         fantasy: { [id in string]: string };
     };
     serverUsers: { [id in number]: string };
-    rmtLogin?: RmtLogin;
+    rmtToken?: string;
 }
 
 const initialState: AppState = {
@@ -44,11 +44,11 @@ const appSlice = createSlice({
         setServerUsers: (state, action: PayloadAction<AppState['serverUsers']>) => {
             state.serverUsers = action.payload;
         },
-        setRmtLogin: (state, action: PayloadAction<RmtLogin>) => {
-            state.rmtLogin = action.payload;
+        setRmtToken: (state, action: PayloadAction<string | undefined>) => {
+            state.rmtToken = action.payload;
         },
     },
 });
 
-export const { setRealWorld, setFantasy, setLogins, setServerUsers, setRmtLogin } = appSlice.actions;
+export const { setRealWorld, setFantasy, setLogins, setServerUsers, setRmtToken } = appSlice.actions;
 export default appSlice.reducer;

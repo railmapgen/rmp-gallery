@@ -10,13 +10,6 @@ export const GITHUB_ISSUE_PREAMBLE = '**Paste or Upload below. They are meant fo
 
 export const RMT_SERVER = 'https://railmapgen.org/v1';
 
-export interface RmtLogin {
-    name: string;
-    email: string;
-    token: string;
-    refreshToken: string;
-}
-
 export interface MetadataDetail {
     name: Translation;
     desc: Translation;
@@ -91,4 +84,8 @@ export interface DesignerResponse {
 export interface DesignerDetailsResponse extends DesignerResponse {
     data: string;
     userName: string;
+}
+
+export enum LocalStorageKey {
+    ACCOUNT = 'rmg-home__account',
 }

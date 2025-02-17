@@ -41,8 +41,8 @@ import {
     MetadataDetail,
     RMT_SERVER,
 } from '../util/constant';
-import useTranslatedName from './hooks/use-translated-name';
 import { decompressFromBase64, downloadAs } from '../util/utils';
+import useTranslatedName from './hooks/use-translated-name';
 
 const RMP_GALLERY_CHANNEL_NAME = 'RMP_GALLERY_CHANNEL';
 const RMP_GALLERY_CHANNEL_EVENT = 'OPEN_TEMPLATE';
@@ -65,7 +65,7 @@ const DetailsModal = (props: {
     const navigate = useNavigate();
     const toast = useToast();
     const { t } = useTranslation();
-    const { rmtLogin } = useRootSelector(state => state.app);
+    const { rmtToken } = useRootSelector(state => state.app);
     const translateName = useTranslatedName();
 
     const [isMasterImport, setIsMasterImport] = React.useState(false);
@@ -87,12 +87,12 @@ const DetailsModal = (props: {
     const [isVisibleOpen, setIsVisibleOpen] = React.useState(false);
 
     const fetchServerById = async () => {
-        if (!rmtLogin) return;
+        if (!rmtToken) return;
         const rep = await fetch(RMT_SERVER + `/designer/public/${city}`, {
             headers: {
                 accept: 'application/json',
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${rmtLogin!.token}`,
+                Authorization: `Bearer ${rmtToken}`,
             },
         });
         if (rep.status !== 200) {
@@ -168,12 +168,12 @@ const DetailsModal = (props: {
     };
 
     const handleChangeStatus = async (type: 'public' | 'pending' | 'rejected') => {
-        if (!rmtLogin) return;
+        if (!rmtToken) return;
         const rep = await fetch(RMT_SERVER + '/designer/admin', {
             headers: {
                 accept: 'application/json',
                 'Content-Type': 'application/json',
-                Authorization: `Bearer ${rmtLogin!.token}`,
+                Authorization: `Bearer ${rmtToken}`,
             },
             body: JSON.stringify({
                 id: Number(city),

@@ -1,14 +1,15 @@
-import './index.css';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { StrictMode } from 'react';
-import { Provider } from 'react-redux';
-import AppRoot from './components/app-root';
-import store from './redux';
-import i18n from './i18n/config';
 import { createRoot, Root } from 'react-dom/client';
 import { I18nextProvider } from 'react-i18next';
+import { Provider } from 'react-redux';
+import AppRoot from './components/app-root';
+import i18n from './i18n/config';
+import './index.css';
+import store from './redux';
 import initStore from './redux/init';
 import { Events } from './util/constant';
+import { onLocalStorageChangeRMT } from './util/token';
 
 let root: Root;
 
@@ -30,4 +31,6 @@ rmgRuntime.ready().then(() => {
     renderApp();
     rmgRuntime.injectUITools();
     rmgRuntime.event(Events.APP_LOAD, {});
+
+    onLocalStorageChangeRMT(store); // update the login state and token read from localStorage
 });

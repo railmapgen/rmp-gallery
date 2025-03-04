@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 180,
+    "svgViewBoxZoom": 60,
     "svgViewBoxMin": {
-        "x": 416.2816635131851,
-        "y": -174.77971115112274
+        "x": -1026.7593727111794,
+        "y": -66.09942245483373
     },
     "graph": {
         "options": {
@@ -3493,7 +3493,7 @@
                     "visible": true,
                     "zIndex": 2,
                     "x": -355,
-                    "y": 110,
+                    "y": 115,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
@@ -3681,7 +3681,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 70,
+                    "x": 69,
                     "y": 415,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
@@ -3971,80 +3971,45 @@
                 }
             },
             {
-                "key": "stn_CaBwULhBvR",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -460,
-                    "y": 215,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "Praça Valqueire"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "textVertical": false,
-                        "lineCode": "BC",
-                        "stationCode": "18",
-                        "color": [
-                            "other",
-                            "other",
-                            "#e10531",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "stn_22AB11Zxnl",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -545,
-                    "y": 225,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": -500,
+                    "y": 215,
+                    "type": "tokyo-metro-int",
+                    "tokyo-metro-int": {
                         "names": [
                             "Av. Jambeiro"
                         ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "BC",
-                        "stationCode": "19",
-                        "color": [
-                            "other",
-                            "other",
-                            "#e10531",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_l5wYE9wpcD",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -645,
-                    "y": 250,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "UNIFA"
-                        ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetY": "top",
+                        "mereOffset": "right1",
                         "textVertical": false,
-                        "lineCode": "BC",
-                        "stationCode": "20",
-                        "color": [
-                            "other",
-                            "other",
-                            "#e10531",
-                            "#fff"
-                        ]
+                        "interchanges": [
+                            {
+                                "lineCode": "GN",
+                                "stationCode": "01",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#874eba",
+                                    "#fff"
+                                ]
+                            },
+                            {
+                                "lineCode": "BC",
+                                "stationCode": "18",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#e10531",
+                                    "#fff"
+                                ]
+                            }
+                        ],
+                        "align": "vertical",
+                        "importance": "default"
                     }
                 }
             },
@@ -4054,11 +4019,11 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -740,
-                    "y": 250,
+                    "y": 255,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
-                            "Marechal Fontenelle"
+                            "Sulacap"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
@@ -4067,7 +4032,7 @@
                         "interchanges": [
                             {
                                 "lineCode": "BC",
-                                "stationCode": "21",
+                                "stationCode": "20",
                                 "color": [
                                     "other",
                                     "other",
@@ -4110,7 +4075,7 @@
                         "interchanges": [
                             {
                                 "lineCode": "BC",
-                                "stationCode": "23",
+                                "stationCode": "22",
                                 "color": [
                                     "other",
                                     "other",
@@ -4140,7 +4105,7 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "BC",
-                        "stationCode": "22",
+                        "stationCode": "21",
                         "color": [
                             "other",
                             "other",
@@ -4319,8 +4284,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 385,
-                    "y": -310,
+                    "x": 375.5,
+                    "y": -302.5,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -4371,15 +4336,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 465,
-                    "y": -250,
+                    "x": 438.12,
+                    "y": -275,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
                             "Cacuia"
                         ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
                         "textVertical": false,
                         "lineCode": "AG",
                         "stationCode": "15",
@@ -4582,7 +4547,7 @@
                         "lineHeight": 30,
                         "textAnchor": "middle",
                         "dominantBaseline": "middle",
-                        "language": "jreast_en",
+                        "language": "berlin",
                         "color": [
                             "other",
                             "other",
@@ -4757,17 +4722,6 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 1310,
-                    "y": 640,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_lKoMCBitEc",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1330,
                     "y": 640,
                     "type": "virtual",
                     "virtual": {}
@@ -5457,7 +5411,7 @@
                     "visible": true,
                     "zIndex": 1,
                     "x": -375,
-                    "y": 90,
+                    "y": 95,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
@@ -5643,14 +5597,14 @@
                     "type": "jr-east-imp",
                     "jr-east-imp": {
                         "names": [
-                            "德奧多羅總站",
-                            "Deodoro Terminal"
+                            "德奧多羅",
+                            "Deodoro"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
                         "textVertical": true,
                         "mostImportant": false,
-                        "minLength": 75
+                        "minLength": 50
                     }
                 }
             },
@@ -5915,7 +5869,7 @@
                         "interchanges": [
                             {
                                 "lineCode": "BC",
-                                "stationCode": "24",
+                                "stationCode": "23",
                                 "color": [
                                     "other",
                                     "other",
@@ -5935,7 +5889,7 @@
                     "visible": true,
                     "zIndex": 1,
                     "x": -280,
-                    "y": 90,
+                    "y": 95,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
                         "names": [
@@ -6130,7 +6084,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 1,
-                    "x": 30,
+                    "x": 35,
                     "y": 285,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
@@ -6777,7 +6731,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -673.48,
+                    "x": -685,
                     "y": 135,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
@@ -8515,8 +8469,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -673.48,
-                    "y": 154.36,
+                    "x": -685,
+                    "y": 155,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
@@ -8524,7 +8478,7 @@
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
-                        "mereOffset": "right2",
+                        "mereOffset": "none",
                         "textVertical": false,
                         "interchanges": [
                             {
@@ -8557,7 +8511,7 @@
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
-                        "mereOffset": "right1",
+                        "mereOffset": "none",
                         "textVertical": false,
                         "interchanges": [
                             {
@@ -9976,7 +9930,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10001,11 +9955,11 @@
                         "interchanges": [
                             {
                                 "lineCode": "GN",
-                                "stationCode": "03",
+                                "stationCode": "05",
                                 "color": [
                                     "other",
                                     "other",
-                                    "#993571",
+                                    "#874eba",
                                     "#fff"
                                 ]
                             }
@@ -10029,19 +9983,9 @@
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
-                        "mereOffset": "none",
+                        "mereOffset": "up",
                         "textVertical": false,
                         "interchanges": [
-                            {
-                                "lineCode": "GN",
-                                "stationCode": "01",
-                                "color": [
-                                    "other",
-                                    "other",
-                                    "#993571",
-                                    "#fff"
-                                ]
-                            },
                             {
                                 "lineCode": "OP",
                                 "stationCode": "01",
@@ -10051,9 +9995,19 @@
                                     "#ec8d65",
                                     "#fff"
                                 ]
+                            },
+                            {
+                                "lineCode": "GN",
+                                "stationCode": "03",
+                                "color": [
+                                    "other",
+                                    "other",
+                                    "#874eba",
+                                    "#fff"
+                                ]
                             }
                         ],
-                        "align": "vertical",
+                        "align": "horizontal",
                         "importance": "default"
                     }
                 }
@@ -10063,7 +10017,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -610,
+                    "x": -605,
                     "y": 20,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -10074,11 +10028,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "02",
+                        "stationCode": "04",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10100,11 +10054,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "04",
+                        "stationCode": "06",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10129,11 +10083,11 @@
                         "interchanges": [
                             {
                                 "lineCode": "GN",
-                                "stationCode": "05",
+                                "stationCode": "07",
                                 "color": [
                                     "other",
                                     "other",
-                                    "#993571",
+                                    "#874eba",
                                     "#fff"
                                 ]
                             }
@@ -10195,11 +10149,11 @@
                         "interchanges": [
                             {
                                 "lineCode": "GN",
-                                "stationCode": "09",
+                                "stationCode": "11",
                                 "color": [
                                     "other",
                                     "other",
-                                    "#993571",
+                                    "#874eba",
                                     "#fff"
                                 ]
                             }
@@ -10228,11 +10182,11 @@
                         "interchanges": [
                             {
                                 "lineCode": "GN",
-                                "stationCode": "25",
+                                "stationCode": "27",
                                 "color": [
                                     "other",
                                     "other",
-                                    "#993571",
+                                    "#874eba",
                                     "#fff"
                                 ]
                             }
@@ -10261,11 +10215,11 @@
                         "interchanges": [
                             {
                                 "lineCode": "GN",
-                                "stationCode": "15",
+                                "stationCode": "17",
                                 "color": [
                                     "other",
                                     "other",
-                                    "#993571",
+                                    "#874eba",
                                     "#fff"
                                 ]
                             }
@@ -10294,11 +10248,11 @@
                         "interchanges": [
                             {
                                 "lineCode": "GN",
-                                "stationCode": "21",
+                                "stationCode": "23",
                                 "color": [
                                     "other",
                                     "other",
-                                    "#993571",
+                                    "#874eba",
                                     "#fff"
                                 ]
                             }
@@ -10324,11 +10278,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "16",
+                        "stationCode": "18",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10350,11 +10304,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "17",
+                        "stationCode": "19",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10376,11 +10330,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "18",
+                        "stationCode": "20",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10402,11 +10356,11 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "19",
+                        "stationCode": "21",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10428,11 +10382,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "20",
+                        "stationCode": "22",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10452,7 +10406,7 @@
                         "lineHeight": 12,
                         "textAnchor": "middle",
                         "dominantBaseline": "middle",
-                        "language": "jreast_en",
+                        "language": "berlin",
                         "color": [
                             "shanghai",
                             "jsr",
@@ -10492,11 +10446,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "23",
+                        "stationCode": "25",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10521,11 +10475,11 @@
                         "interchanges": [
                             {
                                 "lineCode": "GN",
-                                "stationCode": "24",
+                                "stationCode": "26",
                                 "color": [
                                     "other",
                                     "other",
-                                    "#993571",
+                                    "#874eba",
                                     "#fff"
                                 ]
                             }
@@ -10626,7 +10580,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 365,
+                    "x": 370,
                     "y": 295,
                     "type": "text",
                     "text": {
@@ -10635,7 +10589,7 @@
                         "lineHeight": 12,
                         "textAnchor": "middle",
                         "dominantBaseline": "middle",
-                        "language": "mtr__zh",
+                        "language": "berlin",
                         "color": [
                             "other",
                             "other",
@@ -10664,11 +10618,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "06",
+                        "stationCode": "08",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10690,11 +10644,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "07",
+                        "stationCode": "09",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10716,11 +10670,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "08",
+                        "stationCode": "10",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10742,11 +10696,11 @@
                         "nameOffsetY": "top",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "10",
+                        "stationCode": "12",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10768,11 +10722,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "11",
+                        "stationCode": "13",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10794,11 +10748,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "14",
+                        "stationCode": "16",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10820,11 +10774,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "13",
+                        "stationCode": "15",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -10846,11 +10800,11 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "12",
+                        "stationCode": "14",
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -11416,7 +11370,7 @@
                         "lineHeight": 16,
                         "textAnchor": "middle",
                         "dominantBaseline": "middle",
-                        "language": "jreast_en",
+                        "language": "berlin",
                         "color": [
                             "other",
                             "other",
@@ -11443,7 +11397,7 @@
                         "lineHeight": 15,
                         "textAnchor": "middle",
                         "dominantBaseline": "middle",
-                        "language": "jreast_en",
+                        "language": "berlin",
                         "color": [
                             "other",
                             "other",
@@ -11470,7 +11424,7 @@
                         "lineHeight": 25,
                         "textAnchor": "middle",
                         "dominantBaseline": "middle",
-                        "language": "jreast_en",
+                        "language": "berlin",
                         "color": [
                             "other",
                             "other",
@@ -11705,7 +11659,7 @@
                         "lineHeight": 25,
                         "textAnchor": "middle",
                         "dominantBaseline": "middle",
-                        "language": "jreast_en",
+                        "language": "berlin",
                         "color": [
                             "other",
                             "other",
@@ -11732,7 +11686,7 @@
                         "lineHeight": 25,
                         "textAnchor": "middle",
                         "dominantBaseline": "middle",
-                        "language": "mtr__zh",
+                        "language": "berlin",
                         "color": [
                             "other",
                             "other",
@@ -11759,7 +11713,7 @@
                         "lineHeight": 25,
                         "textAnchor": "middle",
                         "dominantBaseline": "middle",
-                        "language": "mtr__zh",
+                        "language": "berlin",
                         "color": [
                             "other",
                             "other",
@@ -11791,11 +11745,11 @@
                         "interchanges": [
                             {
                                 "lineCode": "GN",
-                                "stationCode": "22",
+                                "stationCode": "24",
                                 "color": [
                                     "other",
                                     "other",
-                                    "#993571",
+                                    "#874eba",
                                     "#fff"
                                 ]
                             }
@@ -11823,8 +11777,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 55,
-                    "y": 310,
+                    "x": 62,
+                    "y": 312,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
@@ -11852,14 +11806,207 @@
                 }
             },
             {
-                "key": "misc_node_a7E3OU2IYZ",
+                "key": "stn_EOV9Twkir-",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 60,
-                    "y": 362.5,
+                    "x": -622.5,
+                    "y": 232.5,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "UNIFA"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "BC",
+                        "stationCode": "19",
+                        "color": [
+                            "other",
+                            "other",
+                            "#e10531",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_EH-eBpojPr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -580,
+                    "y": 180,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "Montese"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "textVertical": false,
+                        "lineCode": "GN",
+                        "stationCode": "02",
+                        "color": [
+                            "other",
+                            "other",
+                            "#874eba",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_I73DriwZyt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -540,
+                    "y": 190,
                     "type": "virtual",
                     "virtual": {}
+                }
+            },
+            {
+                "key": "stn_rAeaGQJdWQ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 497.72,
+                    "y": -317.72,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
+                        "names": [
+                            "Cocotá"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "textVertical": false,
+                        "lineCode": "AG",
+                        "stationCode": "16",
+                        "color": [
+                            "other",
+                            "other",
+                            "#93959b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_PR9wkgJ0KT",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 547,
+                    "y": -317.5,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "cruise_centre"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_sjGFA_S3Sj",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 410,
+                    "y": -285,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_6TqGcxL0VM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 845,
+                    "y": 220,
+                    "type": "master",
+                    "master": {
+                        "randomId": "hZosHk",
+                        "label": "SVG dDKPg",
+                        "labelColorBg": "#383a0e",
+                        "labelColorFg": "#fff",
+                        "nodeType": "MiscNode",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 1,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_xJrtXEIYYU",
+                                "type": "g",
+                                "label": "vYrmz",
+                                "attrs": {
+                                    "new": "1\"value\""
+                                },
+                                "children": [
+                                    {
+                                        "id": "id_ptZjmzpIwi",
+                                        "type": "path",
+                                        "label": "oXysj",
+                                        "attrs": {
+                                            "d": "1\"M46.91,0C21.323,0,0.583,21.006,0.583,46.91c0,25.904,20.74,46.91,46.327,46.91s46.327-21.006,46.327-46.91   C93.237,21.006,72.497,0,46.91,0z M65.884,68.782H53.099l3.643-25.921L41.728,61.09L31.225,43.179l-4.367,25.604   c-4.402,0-8.557-0.123-13.048-0.123h-0.037l7.197-43.976h13.598l9.372,16.497l13.721-16.497h15.012L67.28,58.58   c-0.213,0,8.734-6.561,20.918-6.561C77.57,54.639,68.907,65.37,65.884,68.782z\"",
+                                            "x": "1\"-46\"",
+                                            "y": "1\"-49\""
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "components": [],
+                        "color": {
+                            "id": "color",
+                            "label": "color",
+                            "type": "color",
+                            "defaultValue": [
+                                "beijing",
+                                "bj1",
+                                "#c23a30",
+                                "#fff"
+                            ],
+                            "value": [
+                                "beijing",
+                                "bj1",
+                                "#c23a30",
+                                "#fff"
+                            ]
+                        },
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_gBDoyeXCOA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 845,
+                    "y": 282.5,
+                    "type": "text",
+                    "text": {
+                        "content": "MetrôRio",
+                        "fontSize": 16,
+                        "lineHeight": 16,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "berlin",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal"
+                    }
                 }
             }
         ],
@@ -15024,114 +15171,6 @@
                 }
             },
             {
-                "key": "line_FFB7012XvE",
-                "source": "stn_6GWhzOWlNR",
-                "target": "stn_CaBwULhBvR",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#e10531",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_0ApUFGw9EW",
-                "source": "stn_CaBwULhBvR",
-                "target": "stn_22AB11Zxnl",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#e10531",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_6l-fw3_X3t",
-                "source": "stn_l5wYE9wpcD",
-                "target": "stn_22AB11Zxnl",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#e10531",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    }
-                }
-            },
-            {
-                "key": "line_UgzVkYctBb",
-                "source": "stn_81_8b6VQ9g",
-                "target": "stn_l5wYE9wpcD",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#e10531",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_ReKGprNYBT",
                 "source": "stn_81_8b6VQ9g",
                 "target": "stn_aWqyeKTbPh",
@@ -15243,33 +15282,6 @@
                 "key": "line_2bfxfEXti-",
                 "source": "stn_JBxWmtDwca",
                 "target": "stn_EAwyQhZlHg",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#93959b",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_eESJtmoudY",
-                "source": "stn_JBxWmtDwca",
-                "target": "stn_zNb7fZ20AF",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -15645,33 +15657,6 @@
                 }
             },
             {
-                "key": "line_Ap0ItY-vWH",
-                "source": "misc_node_NOR1jMJTy-",
-                "target": "misc_node_lKoMCBitEc",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#ec227a",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "line_YxOeqJmxCu",
                 "source": "stn_j5jn_iIoQJ",
                 "target": "stn_Pm2QrGziIS",
@@ -15688,33 +15673,6 @@
                     "style": "london-sandwich",
                     "reconcileId": "",
                     "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#ec227a",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_OyoyMaY4rv",
-                "source": "misc_node_lKoMCBitEc",
-                "target": "misc_node_F6uvj9qWDL",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
                     "london-sandwich": {
                         "color": [
                             "other",
@@ -20960,7 +20918,7 @@
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": -6.5,
+                        "offsetFrom": -7,
                         "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
@@ -21021,7 +20979,7 @@
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": -5,
+                        "offsetFrom": 0,
                         "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
@@ -23117,7 +23075,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23134,7 +23092,7 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetTo": 5,
                         "roundCornerFactor": 10
                     },
                     "style": "single-color",
@@ -23144,7 +23102,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23171,7 +23129,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23198,7 +23156,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23225,7 +23183,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23352,7 +23310,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23379,7 +23337,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23406,7 +23364,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23433,7 +23391,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23487,7 +23445,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23514,7 +23472,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23641,7 +23599,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23830,7 +23788,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23857,7 +23815,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23884,7 +23842,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23911,7 +23869,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23938,7 +23896,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23965,7 +23923,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -23992,7 +23950,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -24019,7 +23977,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -24046,7 +24004,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -24643,33 +24601,6 @@
                         "offsetFrom": 0,
                         "offsetTo": 0,
                         "roundCornerFactor": 10
-                    }
-                }
-            },
-            {
-                "key": "line_Jlh1UNWUDb",
-                "source": "stn_psoUghLwon",
-                "target": "stn_7F07xpnIEb",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -1,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#ec8d65",
-                            "#fff"
-                        ]
                     }
                 }
             },
@@ -25490,7 +25421,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -25517,7 +25448,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -25544,7 +25475,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -25571,7 +25502,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#993571",
+                            "#874eba",
                             "#fff"
                         ]
                     }
@@ -25767,60 +25698,6 @@
                 }
             },
             {
-                "key": "line_TSqVEyOM5Y",
-                "source": "stn_NWxO6vb3JX",
-                "target": "misc_node_a7E3OU2IYZ",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r1",
-                            "#ff8301",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_Tli2fUGsp7",
-                "source": "stn_qGgkcTP-71",
-                "target": "misc_node_a7E3OU2IYZ",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": -6.5,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r1",
-                            "#ff8301",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_GqaMu0zDwa",
                 "source": "stn_Vd7xYYaKuz",
                 "target": "stn_CFHnmuNPUY",
@@ -25989,8 +25866,359 @@
                         "limitedService": false
                     }
                 }
+            },
+            {
+                "key": "line_vCET-flZDX",
+                "source": "stn_6GWhzOWlNR",
+                "target": "stn_22AB11Zxnl",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#e10531",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_gld51MczXw",
+                "source": "stn_22AB11Zxnl",
+                "target": "stn_EOV9Twkir-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#e10531",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_vlXnUNp-Ym",
+                "source": "stn_81_8b6VQ9g",
+                "target": "stn_EOV9Twkir-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#e10531",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_j8FfKO5T_H",
+                "source": "stn_qGgkcTP-71",
+                "target": "stn_NWxO6vb3JX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 7,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r1",
+                            "#ff8301",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_RLBoIJgfHj",
+                "source": "stn_psoUghLwon",
+                "target": "stn_7F07xpnIEb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": -5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ec8d65",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_l4CqxupeQo",
+                "source": "stn_EH-eBpojPr",
+                "target": "stn_7F07xpnIEb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#874eba",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_fsllPwwfKa",
+                "source": "stn_22AB11Zxnl",
+                "target": "misc_node_I73DriwZyt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": -10,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#874eba",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_opud1GSRgJ",
+                "source": "stn_EH-eBpojPr",
+                "target": "misc_node_I73DriwZyt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#874eba",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_WWyvrnXjcp",
+                "source": "misc_node_NOR1jMJTy-",
+                "target": "misc_node_F6uvj9qWDL",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ec227a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_cRbOSaruCX",
+                "source": "stn_zNb7fZ20AF",
+                "target": "stn_zNb7fZ20AF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#e10531",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line__suN-SIRXA",
+                "source": "stn_zNb7fZ20AF",
+                "target": "stn_rAeaGQJdWQ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#93959b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_1IB1Uq4N1W",
+                "source": "misc_node_sjGFA_S3Sj",
+                "target": "stn_zNb7fZ20AF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#93959b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_tWaXyuAPfn",
+                "source": "stn_JBxWmtDwca",
+                "target": "misc_node_sjGFA_S3Sj",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#93959b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
             }
         ]
     },
-    "version": 44
+    "version": 46
 }

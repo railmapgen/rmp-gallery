@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 60,
+    "svgViewBoxZoom": 180,
     "svgViewBoxMin": {
-        "x": 170.10074081421158,
-        "y": -467.15971755981474
+        "x": -1888.218024444579,
+        "y": -237.55981903076122
     },
     "graph": {
         "options": {
@@ -3845,7 +3845,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 1,
-                    "x": -140,
+                    "x": -145,
                     "y": 160,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
@@ -5399,7 +5399,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 2,
-                    "x": -115,
+                    "x": -120,
                     "y": 135,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
@@ -5753,40 +5753,22 @@
                     "zIndex": 0,
                     "x": -465,
                     "y": 5,
-                    "type": "jr-east-imp",
-                    "jr-east-imp": {
+                    "type": "jr-east-basic",
+                    "jr-east-basic": {
                         "names": [
                             "奧諾裡奧．古格爾",
                             "Honório Gurgel"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
-                        "textVertical": true,
-                        "mostImportant": false,
-                        "minLength": 95
+                        "rotate": 315,
+                        "textOneLine": false,
+                        "textVertical": false,
+                        "important": false,
+                        "lines": [
+                            0
+                        ]
                     }
-                }
-            },
-            {
-                "key": "misc_node_9fb8sI3iQw",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -520,
-                    "y": -20,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_WzbcK_x7hy",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -550,
-                    "y": 95,
-                    "type": "virtual",
-                    "virtual": {}
                 }
             },
             {
@@ -7709,31 +7691,6 @@
                 }
             },
             {
-                "key": "stn_Ir_aLr4Pi6",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -550,
-                    "y": 50,
-                    "type": "jr-east-basic",
-                    "jr-east-basic": {
-                        "names": [
-                            "卡羅琳娜",
-                            "Carolina"
-                        ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "rotate": 45,
-                        "textOneLine": false,
-                        "textVertical": false,
-                        "important": false,
-                        "lines": [
-                            0
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "misc_node_SJugSWMJsw",
                 "attributes": {
                     "visible": true,
@@ -8165,25 +8122,6 @@
                 }
             },
             {
-                "key": "misc_node_KAE7ixhfZ4",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 950,
-                    "y": 120,
-                    "type": "berlin-s-bahn-line-badge",
-                    "berlin-s-bahn-line-badge": {
-                        "num": 99,
-                        "color": [
-                            "other",
-                            "other",
-                            "#000000",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "misc_node_3-VdEAF5Bt",
                 "attributes": {
                     "visible": true,
@@ -8382,33 +8320,6 @@
                     "type": "text",
                     "text": {
                         "content": "Guapimirim Line",
-                        "fontSize": 12,
-                        "lineHeight": 16,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "middle",
-                        "language": "mrt",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal"
-                    }
-                }
-            },
-            {
-                "key": "misc_node_1LHxqgX2XR",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1015,
-                    "y": 125,
-                    "type": "text",
-                    "text": {
-                        "content": "Shuttle Line",
                         "fontSize": 12,
                         "lineHeight": 16,
                         "textAnchor": "middle",
@@ -17576,86 +17487,6 @@
                 }
             },
             {
-                "key": "line_dclJdCioFe",
-                "source": "misc_node_9fb8sI3iQw",
-                "target": "stn_75xKNTqLbc",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": -5,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "other",
-                            "other",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false,
-                        "color": [
-                            "other",
-                            "other",
-                            "#000000",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_6HdayE8rwV",
-                "source": "stn_k8IcyUpGiK",
-                "target": "misc_node_WzbcK_x7hy",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": -10,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 26.5
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "other",
-                            "other",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false,
-                        "color": [
-                            "other",
-                            "other",
-                            "#000000",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "line_iNHDWbl9mk",
                 "source": "stn_3sm3l7DRCG",
                 "target": "stn_75xKNTqLbc",
@@ -22865,74 +22696,6 @@
                     "reconcileId": "",
                     "parallelIndex": -1,
                     "london-tube-10-min-walk": {}
-                }
-            },
-            {
-                "key": "line_pau6BJS8Wv",
-                "source": "misc_node_9fb8sI3iQw",
-                "target": "stn_Ir_aLr4Pi6",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "other",
-                            "other",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false
-                    }
-                }
-            },
-            {
-                "key": "line_NgZnHqhNrG",
-                "source": "misc_node_WzbcK_x7hy",
-                "target": "stn_Ir_aLr4Pi6",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "other",
-                            "other",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false
-                    }
                 }
             },
             {

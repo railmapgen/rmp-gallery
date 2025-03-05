@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 120,
+    "svgViewBoxZoom": 180,
     "svgViewBoxMin": {
-        "x": -998.813563841855,
-        "y": -29.05568441520421
+        "x": -1244.393495482479,
+        "y": -224.33571218620017
     },
     "graph": {
         "options": {
@@ -3994,7 +3994,7 @@
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
-                        "mereOffset": "right1",
+                        "mereOffset": "none",
                         "textVertical": false,
                         "interchanges": [
                             {
@@ -6097,23 +6097,19 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 1,
-                    "x": -925.91,
+                    "x": -925,
                     "y": 323.64,
-                    "type": "jr-east-basic",
-                    "jr-east-basic": {
+                    "type": "jr-east-imp",
+                    "jr-east-imp": {
                         "names": [
                             "澤維爾",
                             "Xavier"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
-                        "rotate": 0,
-                        "textOneLine": false,
-                        "textVertical": false,
-                        "important": false,
-                        "lines": [
-                            0
-                        ]
+                        "textVertical": true,
+                        "mostImportant": false,
+                        "minLength": 40
                     }
                 }
             },
@@ -7695,8 +7691,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -400.91,
-                    "y": -76.36,
+                    "x": -507.47,
+                    "y": -85,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "UC",
@@ -7717,8 +7713,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -390.91,
-                    "y": -106.36,
+                    "x": -497.47,
+                    "y": -115,
                     "type": "text",
                     "text": {
                         "content": "Metro",
@@ -7744,8 +7740,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -400.91,
-                    "y": -41.36,
+                    "x": -507.47,
+                    "y": -50,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "PD",
@@ -7766,8 +7762,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -400.91,
-                    "y": -6.36,
+                    "x": -507.47,
+                    "y": -15,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "IG",
@@ -7788,8 +7784,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -400.91,
-                    "y": 28.64,
+                    "x": -507.47,
+                    "y": 20,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "RS",
@@ -7810,8 +7806,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -400.91,
-                    "y": 63.64,
+                    "x": -507.47,
+                    "y": 55,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "BC",
@@ -7832,8 +7828,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -400.91,
-                    "y": 98.64,
+                    "x": -507.47,
+                    "y": 90,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "AG",
@@ -7854,8 +7850,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -400.91,
-                    "y": 133.64,
+                    "x": -507.47,
+                    "y": 125,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "PA",
@@ -7876,8 +7872,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -260.91,
-                    "y": -76.36,
+                    "x": -367.47,
+                    "y": -85,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "IU",
@@ -7898,8 +7894,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -235.91,
-                    "y": -106.36,
+                    "x": -342.47,
+                    "y": -115,
                     "type": "text",
                     "text": {
                         "content": "Suburban Light rail",
@@ -7925,8 +7921,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -75.91,
-                    "y": -106.36,
+                    "x": -182.47,
+                    "y": -115,
                     "type": "text",
                     "text": {
                         "content": "SuperVia",
@@ -7952,8 +7948,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -260.91,
-                    "y": 168.64,
+                    "x": -367.47,
+                    "y": 160,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "PM",
@@ -7974,8 +7970,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -120.91,
-                    "y": -81.36,
+                    "x": -227.47,
+                    "y": -90,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
                         "num": 1,
@@ -7993,8 +7989,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -120.91,
-                    "y": -51.36,
+                    "x": -227.47,
+                    "y": -60,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
                         "num": 2,
@@ -8012,8 +8008,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -120.91,
-                    "y": -21.36,
+                    "x": -227.47,
+                    "y": -30,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
                         "num": 3,
@@ -8031,8 +8027,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -120.91,
-                    "y": 8.64,
+                    "x": -227.47,
+                    "y": 0,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
                         "num": 4,
@@ -8050,8 +8046,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -120.91,
-                    "y": 38.64,
+                    "x": -227.47,
+                    "y": 30,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
                         "num": 5,
@@ -8069,8 +8065,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -120.91,
-                    "y": 128.64,
+                    "x": -227.47,
+                    "y": 120,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
                         "num": 31,
@@ -8088,8 +8084,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -120.91,
-                    "y": 98.64,
+                    "x": -227.47,
+                    "y": 90,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
                         "num": 12,
@@ -8107,8 +8103,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -120.91,
-                    "y": 68.64,
+                    "x": -227.47,
+                    "y": 60,
                     "type": "berlin-s-bahn-line-badge",
                     "berlin-s-bahn-line-badge": {
                         "num": 11,
@@ -8126,8 +8122,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -50.91,
-                    "y": -76.36,
+                    "x": -157.47,
+                    "y": -85,
                     "type": "text",
                     "text": {
                         "content": "Saracuna Line",
@@ -8153,8 +8149,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -55.91,
-                    "y": -46.36,
+                    "x": -162.47,
+                    "y": -55,
                     "type": "text",
                     "text": {
                         "content": "Pavuna Line",
@@ -8180,8 +8176,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -55.91,
-                    "y": -16.36,
+                    "x": -162.47,
+                    "y": -25,
                     "type": "text",
                     "text": {
                         "content": "Japeri Line",
@@ -8207,8 +8203,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -45.91,
-                    "y": 13.64,
+                    "x": -152.47,
+                    "y": 5,
                     "type": "text",
                     "text": {
                         "content": "Santa Cruz Line",
@@ -8234,8 +8230,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -50.91,
-                    "y": 43.64,
+                    "x": -157.47,
+                    "y": 35,
                     "type": "text",
                     "text": {
                         "content": "Derdoro Line",
@@ -8261,8 +8257,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -45.91,
-                    "y": 133.64,
+                    "x": -152.47,
+                    "y": 125,
                     "type": "text",
                     "text": {
                         "content": "Paracambi Line",
@@ -8288,8 +8284,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -35.91,
-                    "y": 103.64,
+                    "x": -142.47,
+                    "y": 95,
                     "type": "text",
                     "text": {
                         "content": "Vila Inhomirim Line",
@@ -8315,8 +8311,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -40.91,
-                    "y": 73.64,
+                    "x": -147.47,
+                    "y": 65,
                     "type": "text",
                     "text": {
                         "content": "Guapimirim Line",
@@ -8368,8 +8364,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -260.91,
-                    "y": -41.36,
+                    "x": -367.47,
+                    "y": -50,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "OP",
@@ -8956,8 +8952,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -260.91,
-                    "y": -6.36,
+                    "x": -367.47,
+                    "y": -15,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "SC",
@@ -9840,8 +9836,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -400.91,
-                    "y": 168.64,
+                    "x": -507.47,
+                    "y": 160,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "GN",
@@ -10034,8 +10030,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -260.91,
-                    "y": 28.64,
+                    "x": -367.47,
+                    "y": 20,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "NI",
@@ -11967,8 +11963,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -85.91,
-                    "y": 263.64,
+                    "x": 0,
+                    "y": 0,
                     "type": "master",
                     "master": {
                         "randomId": "eZlUTG",

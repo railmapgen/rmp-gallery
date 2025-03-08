@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 157,
+    "svgViewBoxZoom": 217,
     "svgViewBoxMin": {
-        "x": -1885.1241265161684,
-        "y": -130.19215316733408
+        "x": -2120.4837417658023,
+        "y": -404.70837417563365
     },
     "graph": {
         "options": {
@@ -639,31 +639,24 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -626.91,
-                    "y": 278.64,
-                    "type": "tokyo-metro-int",
-                    "tokyo-metro-int": {
+                    "x": -610,
+                    "y": 283.64,
+                    "type": "tokyo-metro-basic",
+                    "tokyo-metro-basic": {
                         "names": [
                             "Rodoviário Novo Rio"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
-                        "mereOffset": "right2",
                         "textVertical": false,
-                        "interchanges": [
-                            {
-                                "lineCode": "AG",
-                                "stationCode": "06",
-                                "color": [
-                                    "other",
-                                    "other",
-                                    "#a5a9b4",
-                                    "#fff"
-                                ]
-                            }
-                        ],
-                        "align": "horizontal",
-                        "importance": "default"
+                        "lineCode": "AG",
+                        "stationCode": "06",
+                        "color": [
+                            "other",
+                            "other",
+                            "#a5a9b4",
+                            "#fff"
+                        ]
                     }
                 }
             },
@@ -1013,8 +1006,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -508.71,
-                    "y": 262.44,
+                    "x": -545.5,
+                    "y": 268.75,
                     "type": "facilities",
                     "facilities": {
                         "type": "coach_station_london"
@@ -3995,7 +3988,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1570.91,
+                    "x": -1610,
                     "y": 253.64,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
@@ -4003,7 +3996,7 @@
                             "Av. Jambeiro"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
+                        "nameOffsetY": "bottom",
                         "mereOffset": "none",
                         "textVertical": false,
                         "interchanges": [
@@ -5810,7 +5803,7 @@
                 "key": "stn_rI-5Y6dhxO",
                 "attributes": {
                     "visible": true,
-                    "zIndex": 0,
+                    "zIndex": 1,
                     "x": -1605.91,
                     "y": -26.36,
                     "type": "jr-east-imp",
@@ -6040,7 +6033,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 1,
-                    "x": -1105.91,
+                    "x": -1125.91,
                     "y": 323.64,
                     "type": "jr-east-basic",
                     "jr-east-basic": {
@@ -6065,7 +6058,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 1,
-                    "x": -1080,
+                    "x": -1085,
                     "y": 313.64,
                     "type": "jr-east-imp",
                     "jr-east-imp": {
@@ -9868,14 +9861,14 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1650.91,
-                    "y": -26.36,
+                    "x": -1605.91,
+                    "y": -71.36,
                     "type": "tokyo-metro-int",
                     "tokyo-metro-int": {
                         "names": [
                             "Barros Filho"
                         ],
-                        "nameOffsetX": "left",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "mereOffset": "none",
                         "textVertical": false,
@@ -10109,7 +10102,7 @@
                         "interchanges": [
                             {
                                 "lineCode": "GN",
-                                "stationCode": "27",
+                                "stationCode": "26",
                                 "color": [
                                     "other",
                                     "other",
@@ -10373,7 +10366,7 @@
                         "nameOffsetY": "middle",
                         "textVertical": false,
                         "lineCode": "GN",
-                        "stationCode": "25",
+                        "stationCode": "24",
                         "color": [
                             "other",
                             "other",
@@ -11610,39 +11603,6 @@
                 }
             },
             {
-                "key": "stn_GWnuWpH1BW",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -646.91,
-                    "y": 299.44,
-                    "type": "tokyo-metro-int",
-                    "tokyo-metro-int": {
-                        "names": [
-                            "Gentileza"
-                        ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "mereOffset": "down",
-                        "textVertical": false,
-                        "interchanges": [
-                            {
-                                "lineCode": "GN",
-                                "stationCode": "24",
-                                "color": [
-                                    "other",
-                                    "other",
-                                    "#874eba",
-                                    "#fff"
-                                ]
-                            }
-                        ],
-                        "align": "horizontal",
-                        "importance": "default"
-                    }
-                }
-            },
-            {
                 "key": "misc_node_mxhvvcGX_I",
                 "attributes": {
                     "visible": true,
@@ -11738,17 +11698,6 @@
                             "#fff"
                         ]
                     }
-                }
-            },
-            {
-                "key": "misc_node_I73DriwZyt",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -1610.91,
-                    "y": 228.64,
-                    "type": "virtual",
-                    "virtual": {}
                 }
             },
             {
@@ -12412,7 +12361,7 @@
                         "interchanges": [
                             {
                                 "lineCode": "GN",
-                                "stationCode": "26",
+                                "stationCode": "25",
                                 "color": [
                                     "other",
                                     "other",
@@ -12682,6 +12631,17 @@
                         "components": [],
                         "version": 2
                     }
+                }
+            },
+            {
+                "key": "misc_node_iE39ZEU-Sc",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -646.91,
+                    "y": 299.44,
+                    "type": "virtual",
+                    "virtual": {}
                 }
             }
         ],
@@ -19418,7 +19378,7 @@
                 "target": "stn_1R8o-rp82S",
                 "attributes": {
                     "visible": true,
-                    "zIndex": 0,
+                    "zIndex": 1,
                     "type": "ro-perp",
                     "ro-perp": {
                         "startFrom": "from",
@@ -25753,80 +25713,6 @@
                 }
             },
             {
-                "key": "line_g8U2EXHr-O",
-                "source": "stn_GWnuWpH1BW",
-                "target": "stn_T2DsTuL_QM",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-tube-internal-int",
-                    "reconcileId": "",
-                    "parallelIndex": 0,
-                    "london-tube-internal-int": {}
-                }
-            },
-            {
-                "key": "line_tO5T9Hly31",
-                "source": "stn_GWnuWpH1BW",
-                "target": "stn_unpAjhv1NT",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "reconcileId": "",
-                    "parallelIndex": 0,
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#874eba",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_AprZNAeF0a",
-                "source": "stn_GWnuWpH1BW",
-                "target": "stn_y9y_R9TYNF",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "reconcileId": "",
-                    "parallelIndex": 0,
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#874eba",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "line_j7RzreVXgw",
                 "source": "stn_oTAfpniuyf",
                 "target": "stn_OnSqtvodLw",
@@ -26375,60 +26261,6 @@
                 }
             },
             {
-                "key": "line_fsllPwwfKa",
-                "source": "stn_22AB11Zxnl",
-                "target": "misc_node_I73DriwZyt",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": -10,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#874eba",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_opud1GSRgJ",
-                "source": "stn_EH-eBpojPr",
-                "target": "misc_node_I73DriwZyt",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#874eba",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_WWyvrnXjcp",
                 "source": "misc_node_NOR1jMJTy-",
                 "target": "misc_node_F6uvj9qWDL",
@@ -26858,6 +26690,87 @@
                         "offsetTo": -7,
                         "roundCornerFactor": 10
                     }
+                }
+            },
+            {
+                "key": "line_-N06h-P99K",
+                "source": "stn_EH-eBpojPr",
+                "target": "stn_22AB11Zxnl",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#874eba",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_RaquIoNXZZ",
+                "source": "misc_node_iE39ZEU-Sc",
+                "target": "stn_unpAjhv1NT",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#874eba",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_GPAU83fcHD",
+                "source": "misc_node_iE39ZEU-Sc",
+                "target": "stn_y9y_R9TYNF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#874eba",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
                 }
             }
         ]

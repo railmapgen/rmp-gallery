@@ -1,8 +1,8 @@
 {
     "svgViewBoxZoom": 77,
     "svgViewBoxMin": {
-        "x": -2896.4821395929434,
-        "y": -367.6243101497414
+        "x": -1661.5302611597149,
+        "y": -120.58416625936056
     },
     "graph": {
         "options": {
@@ -11761,8 +11761,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1050.91,
-                    "y": 248.64,
+                    "x": -1045.45,
+                    "y": 243.18,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
                         "names": [
@@ -12577,6 +12577,17 @@
                     "zIndex": 0,
                     "x": -1225,
                     "y": 230,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_U0jv1LTAud",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -1060.91,
+                    "y": 203.64,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -24813,33 +24824,6 @@
                 }
             },
             {
-                "key": "line_2JNbOqFIZL",
-                "source": "stn_dIrwXIYfmQ",
-                "target": "stn_W2MHtFML2o",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -1,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": -6.5,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r1",
-                            "#ff8301",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_hjFOPa2O2Y",
                 "source": "stn_NWxO6vb3JX",
                 "target": "stn_W2MHtFML2o",
@@ -25365,6 +25349,60 @@
                             "other",
                             "other",
                             "#ee3434",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_8kObOGrneT",
+                "source": "misc_node_U0jv1LTAud",
+                "target": "stn_dIrwXIYfmQ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": -10,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r1",
+                            "#ff8301",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_9GTYQTHe0F",
+                "source": "misc_node_U0jv1LTAud",
+                "target": "stn_W2MHtFML2o",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r1",
+                            "#ff8301",
                             "#fff"
                         ]
                     },

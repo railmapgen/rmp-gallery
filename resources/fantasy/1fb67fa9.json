@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 147,
+    "svgViewBoxZoom": 137,
     "svgViewBoxMin": {
-        "x": -2253.181877675828,
-        "y": -220.42033336598442
+        "x": -2201.5460012109884,
+        "y": 66.65149471323991
     },
     "graph": {
         "options": {
@@ -1992,7 +1992,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -935.91,
+                    "x": -959.19,
                     "y": 1068.64,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -2018,7 +2018,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1035.91,
+                    "x": -1075.91,
                     "y": 1068.64,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -2044,7 +2044,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1145.91,
+                    "x": -1200.28,
                     "y": 1068.64,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -2066,37 +2066,11 @@
                 }
             },
             {
-                "key": "stn_wz-7BQZ-2O",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -1345.91,
-                    "y": 1068.64,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "NY Center"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": false,
-                        "lineCode": "RS",
-                        "stationCode": "18",
-                        "color": [
-                            "rio",
-                            "r4",
-                            "#ffc400",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
                 "key": "stn_2ZkgqQPBmM",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -1250.91,
+                    "x": -1318.41,
                     "y": 1068.64,
                     "type": "tokyo-metro-basic",
                     "tokyo-metro-basic": {
@@ -2146,7 +2120,7 @@
                             },
                             {
                                 "lineCode": "RS",
-                                "stationCode": "19",
+                                "stationCode": "18",
                                 "color": [
                                     "rio",
                                     "r4",
@@ -2200,7 +2174,7 @@
                         "nameOffsetY": "bottom",
                         "textVertical": false,
                         "lineCode": "RS",
-                        "stationCode": "20",
+                        "stationCode": "19",
                         "color": [
                             "rio",
                             "r4",
@@ -2226,7 +2200,7 @@
                         "nameOffsetY": "bottom",
                         "textVertical": false,
                         "lineCode": "RS",
-                        "stationCode": "21",
+                        "stationCode": "20",
                         "color": [
                             "rio",
                             "r4",
@@ -2265,7 +2239,7 @@
                             },
                             {
                                 "lineCode": "RS",
-                                "stationCode": "22",
+                                "stationCode": "21",
                                 "color": [
                                     "rio",
                                     "r4",
@@ -2308,7 +2282,7 @@
                             },
                             {
                                 "lineCode": "RS",
-                                "stationCode": "24",
+                                "stationCode": "23",
                                 "color": [
                                     "other",
                                     "other",
@@ -2338,7 +2312,7 @@
                         "nameOffsetY": "bottom",
                         "textVertical": false,
                         "lineCode": "RS",
-                        "stationCode": "23",
+                        "stationCode": "22",
                         "color": [
                             "rio",
                             "r4",
@@ -7802,7 +7776,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": -507.47,
-                    "y": 125,
+                    "y": 123.9,
                     "type": "mrt-line-badge",
                     "mrt-line-badge": {
                         "lineCode": "PA",
@@ -14431,33 +14405,6 @@
                 }
             },
             {
-                "key": "line_XP1SqIDMR3",
-                "source": "stn_2ZkgqQPBmM",
-                "target": "stn_wz-7BQZ-2O",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r4",
-                            "#ffc400",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_B8P-4FCWxw",
                 "source": "stn_c9wXBaTcDc",
                 "target": "misc_node_NTjvkzdK1M",
@@ -14477,33 +14424,6 @@
                             "rio",
                             "r2",
                             "#bad02f",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_tzBpu_q5b-",
-                "source": "stn_wz-7BQZ-2O",
-                "target": "stn_M6hdAHgap6",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "rio",
-                            "r4",
-                            "#ffc400",
                             "#fff"
                         ]
                     },
@@ -25408,6 +25328,33 @@
                             "#fff"
                         ]
                     }
+                }
+            },
+            {
+                "key": "line_F6pYG_HNAz",
+                "source": "stn_2ZkgqQPBmM",
+                "target": "stn_M6hdAHgap6",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "rio",
+                            "r4",
+                            "#ffc400",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
                 }
             }
         ]

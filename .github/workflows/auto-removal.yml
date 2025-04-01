@@ -1,0 +1,40 @@
+name: Auto removal
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs at 12:00 AM UTC every day
+
+jobs:
+  removal:
+    name: Auto removal of fantasy works
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch all to get authors of every template.
+
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - run: npm ci
+        working-directory: scripts
+  
+      - name: Configure git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Housekeep
+        run: node --loader ts-node/esm ./housekeep.ts
+        working-directory: scripts
+  
+      - name: Commit if changed
+        run: |
+          if [[ -n $(git status -s) ]]; then
+            git add .
+            git commit -m "Auto removal $(date +%Y-%m-%d)"
+            git push
+          fi

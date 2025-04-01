@@ -42,7 +42,7 @@ export default function Donation() {
     const handleBack = () => navigate('/');
     const handleDonate = () => {
         if (i18n.language === 'zh-Hans') {
-            window.open('https://afdian.net/a/rail-map-toolkit', '_blank');
+            window.open('https://afdian.com/a/rail-map-toolkit', '_blank');
         } else {
             window.open('https://opencollective.com/rail-map-toolkit', '_blank');
         }
@@ -78,11 +78,11 @@ export default function Donation() {
                             {t('donation.content2')}
                             <Link
                                 color="blue.500"
-                                href={`https://${window.location.hostname}/rmp/s/mcG7zS`}
+                                href={`https://${window.location.hostname}/?app=rmp&searchParams=wenxi`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                https://{window.location.hostname}/rmp/s/mcG7zS
+                                https://{window.location.hostname}/?app=rmp&searchParams=wenxi
                             </Link>
                         </Text>
                         <SimpleGrid columns={2} spacing="10">
@@ -154,7 +154,7 @@ export default function Donation() {
                                 <AccordionPanel>
                                     <Text>{t('donation.termsLastUpdatedOn')}</Text>
                                     <UnorderedList>
-                                        {Array.from({ length: 12 }).map((_, i) => (
+                                        {Array.from({ length: 10 }).map((_, i) => (
                                             <ListItem key={i}>{t(`donation.terms${i + 1}`)}</ListItem>
                                         ))}
                                     </UnorderedList>
@@ -170,11 +170,11 @@ export default function Donation() {
                                 <AccordionPanel>
                                     <Link
                                         color="blue.500"
-                                        href="https://afdian.net/a/rail-map-toolkit"
+                                        href="https://afdian.com/a/rail-map-toolkit"
                                         target="_blank"
                                         rel="noopener noreferrer"
                                     >
-                                        https://afdian.net/a/rail-map-toolkit <Icon as={MdOpenInNew} />
+                                        https://afdian.com/a/rail-map-toolkit <Icon as={MdOpenInNew} />
                                     </Link>
                                     <UnorderedList>
                                         <ListItem key="1">{t('donation.methodGithubAccount')}</ListItem>

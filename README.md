@@ -4,7 +4,7 @@ Browse, set, and submit your RMP template here!
 
 ## How to submit your project
 
-1. Open [RMP Gallery / new](https://railmapgen.github.io/rmp-gallery/new).
+1. Open [RMP Gallery / new](https://railmapgen.github.io/rmp-gallery/#/new).
 2. Select your project JSON save.
 3. Enter the link where you get the valid data in _Reference link_.
   Do not use data without valid source such as Baidu Baike. Link from official website is preferred.

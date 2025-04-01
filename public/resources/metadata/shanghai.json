@@ -7,9 +7,9 @@
         "ko": "상해"
     },
     "desc": {
-        "en": "The Shanghai Metro is a rapid transit system in Shanghai, operating urban and suburban transit services to 14 of its 16 municipal districts and to Kunshan, Jiangsu Province. Served as a part of Shanghai rail transit, the Shanghai Metro system is the world's biggest metro system by route length, totaling 802 kilometers (498 mi). It is also the second biggest by the number of stations with 408 stations on 19 lines. It ranks first in the world by annual ridership with 3.88 billion rides delivered in 2019. The daily ridership record was set at 13.29 million on March 8, 2019.\nhttps://en.wikipedia.org/wiki/Shanghai_Metro"
+        "en": "The Shanghai Metro is a rapid transit system in Shanghai, operating urban and suburban transit services to 14 of its 16 municipal districts and to the neighboring township of Huaqiao, in Kunshan, Jiangsu Province.\nForming the vast majority of the broader, multi-operator Shanghai rail transit network, the Shanghai Metro system is the world's second longest metro system by route length, totaling 826 kilometres (513 mi). and the second largest system by number of stations, with 508 stations across 20 lines. It also ranks first in the world by annual ridership, with 3.88 billion rides delivered in 2019. The last daily ridership record was set on 9 March 2024, at 13.39 million rides. Post-pandemic, ridership still routinely stands at over 10 million on an average workday, accounting for 73% of trips on public transport in the city.\ncopy from https://en.wikipedia.org/wiki/Shanghai_Metro"
     },
-    "reference": "http://service.shmetro.com/yxxlt/index.htm",
+    "reference": "https://service.shmetro.com/skin/map/shmetro-map.jpg",
     "updateHistory": [
         {
             "id": 3353040,
@@ -40,6 +40,84 @@
             "issueNumber": 604,
             "reason": "Reconnect lines from start to end and move station names into stations. Also updated the line color of Line 2",
             "time": 1692925210970
+        },
+        {
+            "id": 123239445,
+            "issueNumber": 1245,
+            "reason": "Update colors and add Yangtze River in top right corner",
+            "time": 1708072782154
+        },
+        {
+            "id": 3353040,
+            "issueNumber": 1406,
+            "reason": "Fix West Nanjing Road and simple path",
+            "time": 1712587312366
+        },
+        {
+            "id": 140082406,
+            "issueNumber": 1671,
+            "reason": "Corrected the wrong Tangzhen",
+            "time": 1723528815852
+        },
+        {
+            "id": 140082406,
+            "issueNumber": 1822,
+            "reason": "New update in Sep 2024",
+            "time": 1728514340381
+        },
+        {
+            "id": 140082406,
+            "issueNumber": 1855,
+            "reason": "Correct the wrong Changshu Rd.",
+            "time": 1729980847509
+        },
+        {
+            "id": 140082406,
+            "issueNumber": 1880,
+            "reason": "Corrected the wrong Yindu Rd.",
+            "time": 1731106684291
+        },
+        {
+            "id": 3353040,
+            "issueNumber": 1891,
+            "reason": "Disable parallel index",
+            "time": 1731343421649
+        },
+        {
+            "id": 140082406,
+            "issueNumber": 1896,
+            "reason": "Corrected Yangshupu Rd. Linping Rd. Huangxing Rd. and Lingzhaoxincun",
+            "time": 1731399127130
+        },
+        {
+            "id": 140082406,
+            "issueNumber": 1898,
+            "reason": "Corrected the wrong Waigaoqiao Free Trade Zone S.",
+            "time": 1731445829208
+        },
+        {
+            "id": 187761245,
+            "issueNumber": 1902,
+            "reason": "Fix the label name and corrected Xinghaiwan Rd.",
+            "time": 1731640464527
+        },
+        {
+            "id": 187761245,
+            "issueNumber": 2022,
+            "reason": "The logo of Shanghai Indoor Stadium should be a circle.",
+            "time": 1734573520655
+        },
+        {
+            "id": 140082406,
+            "issueNumber": 2298,
+            "reason": "fix the problem about suburban line style also change Chinese jichanglianluoxian to shiyujichangxian",
+            "time": 1738900257203
+        },
+        {
+            "id": 3353040,
+            "issueNumber": 2304,
+            "reason": "Update color so that line 4 will be considered as loop in rmp2rmg",
+            "time": 1739028018316
         }
     ]
 }

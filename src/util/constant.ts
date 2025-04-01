@@ -8,6 +8,8 @@ export enum Events {
 export const GITHUB_ISSUE_HEADER = 'Hi RMP team! I would like to contribute to the gallery with the data below.';
 export const GITHUB_ISSUE_PREAMBLE = '**Paste or Upload below. They are meant for BOTS ONLY!!!**';
 
+export const RMT_SERVER = 'https://railmapgen.org/v1';
+
 export interface MetadataDetail {
     name: Translation;
     desc: Translation;
@@ -46,4 +48,44 @@ export interface Metadata {
 
 export interface Gallery {
     [cityName: string]: { contributors: string[]; name: Translation; lastUpdateOn: number };
+}
+
+export interface DesignerMetadata {
+    id: number;
+    name: Translation;
+    desc: Translation;
+    userId: number;
+    type: 'MiscNode' | 'Station';
+    status: 'public' | 'pending' | 'rejected';
+    lastUpdateAt: string;
+    svg: string;
+}
+
+export interface DesignerDetails extends DesignerMetadata {
+    data: string;
+    userName: string;
+}
+
+export interface Designer {
+    [id: string]: DesignerMetadata;
+}
+
+export interface DesignerResponse {
+    id: number;
+    name: string;
+    desc: string;
+    userId: number;
+    type: 'MiscNode' | 'Station';
+    status: 'public' | 'pending' | 'rejected';
+    lastUpdateAt: string;
+    svg: string;
+}
+
+export interface DesignerDetailsResponse extends DesignerResponse {
+    data: string;
+    userName: string;
+}
+
+export enum LocalStorageKey {
+    ACCOUNT = 'rmg-home__account',
 }

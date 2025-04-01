@@ -1,6 +1,5 @@
 import { RmgErrorBoundary, RmgPage, RmgThemeProvider, RmgWindow } from '@railmapgen/rmg-components';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import Donation from './donation';
 import GalleryView from './gallery';
 import Ticket from './ticket';
@@ -8,7 +7,7 @@ import WindowHeader from './window-header';
 
 export default function AppRoot() {
     return (
-        <BrowserRouter basename={import.meta.env.BASE_URL}>
+        <HashRouter>
             <RmgThemeProvider>
                 <RmgWindow>
                     <WindowHeader />
@@ -42,6 +41,6 @@ export default function AppRoot() {
                     </RmgPage>
                 </RmgWindow>
             </RmgThemeProvider>
-        </BrowserRouter>
+        </HashRouter>
     );
 }

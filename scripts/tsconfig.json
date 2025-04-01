@@ -1,21 +1,23 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "ESNext",
+    "lib": [ "esnext" ],
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "allowImportingTsExtensions": true,
+    "types": [ "node" ],
     "outDir": "./dist",
     "allowJs": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "downlevelIteration": true,
-    "module": "ESNext",
-    "moduleResolution": "node",
     "declaration": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
     "noFallthroughCasesInSwitch": true,
     "plugins": [
       {
@@ -23,5 +25,12 @@
       }
     ]
   },
-  "include": ["lib/**/*"]
+  "exclude": [ "node_modules" ],
+  "include": [ "*.ts" ],
+  "ts-node": {
+    "esm": true,
+    "transpileOnly": true,
+    "files": true,
+    "experimentalResolver": true
+  },
 }

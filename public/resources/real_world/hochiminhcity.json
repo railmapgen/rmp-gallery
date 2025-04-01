@@ -1,0 +1,2871 @@
+{
+    "svgViewBoxZoom": 100,
+    "svgViewBoxMin": {
+        "x": 321.9667175292969,
+        "y": -329.9667175292969
+    },
+    "graph": {
+        "options": {
+            "type": "directed",
+            "multi": true,
+            "allowSelfLoops": true
+        },
+        "attributes": {},
+        "nodes": [
+            {
+                "key": "misc_node_YTzYzbDeXr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 315,
+                    "y": 330,
+                    "type": "master",
+                    "master": {
+                        "randomId": "WstrfQ",
+                        "label": "New SVG",
+                        "labelColorBg": "#aa1224",
+                        "labelColorFg": "#fff",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "滨城"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "Ben Thanh"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "Bến Thành"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "12"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "6"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": false
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_hAzUSKzfX4",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 390,
+                    "y": 255,
+                    "type": "master",
+                    "master": {
+                        "randomId": "cwxwCm",
+                        "label": "New SVG",
+                        "labelColorBg": "#8392d7",
+                        "labelColorFg": "#000",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "市剧院"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "Opera House"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "Nhà hát Thành Phố"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "12"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "6"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": false
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_Yz2u-21gV8",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 460,
+                    "y": 185,
+                    "type": "master",
+                    "master": {
+                        "randomId": "cwxwCm",
+                        "label": "New SVG",
+                        "labelColorBg": "#8392d7",
+                        "labelColorFg": "#000",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "巴逊"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "Ba Son"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "Ba Son"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "12"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "6"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": false
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_8dOb6uzi0Z",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 535,
+                    "y": 110,
+                    "type": "master",
+                    "master": {
+                        "randomId": "cwxwCm",
+                        "label": "New SVG",
+                        "labelColorBg": "#8392d7",
+                        "labelColorFg": "#000",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "文圣公园"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "Van Thanh Park"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "Công viên Văn Thánh"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "12"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "6"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": false
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_7oHgqqdIOA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 610,
+                    "y": 35,
+                    "type": "master",
+                    "master": {
+                        "randomId": "cwxwCm",
+                        "label": "New SVG",
+                        "labelColorBg": "#8392d7",
+                        "labelColorFg": "#000",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "新港"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "Tan Cang"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "Tân Cảng"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "12"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "-38"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": false
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_5JhrCC6P8K",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 740,
+                    "y": 35,
+                    "type": "master",
+                    "master": {
+                        "randomId": "cwxwCm",
+                        "label": "New SVG",
+                        "labelColorBg": "#8392d7",
+                        "labelColorFg": "#000",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "草田"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "Thao Dien"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "Thảo Điền"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "0"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "-38"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": false
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": false
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_x4yvzknSOE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 855,
+                    "y": 35,
+                    "type": "master",
+                    "master": {
+                        "randomId": "cwxwCm",
+                        "label": "New SVG",
+                        "labelColorBg": "#8392d7",
+                        "labelColorFg": "#000",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "安富"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "An Phu"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "An Phú"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "-18"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "-38"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": false
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": true
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_yuqGjR3RpO",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 940,
+                    "y": -50,
+                    "type": "master",
+                    "master": {
+                        "randomId": "cwxwCm",
+                        "label": "New SVG",
+                        "labelColorBg": "#8392d7",
+                        "labelColorFg": "#000",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "沥只"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "Rach Chiec"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "Rạch Chiếc"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "12"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "-10"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": false
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_81k6ca3C4N",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 940,
+                    "y": -145,
+                    "type": "master",
+                    "master": {
+                        "randomId": "cwxwCm",
+                        "label": "New SVG",
+                        "labelColorBg": "#8392d7",
+                        "labelColorFg": "#000",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "福隆"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "Phuoc Long"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "Phước Long"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "12"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "-10"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": false
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_AXufqaD06F",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 940,
+                    "y": -250,
+                    "type": "master",
+                    "master": {
+                        "randomId": "cwxwCm",
+                        "label": "New SVG",
+                        "labelColorBg": "#8392d7",
+                        "labelColorFg": "#000",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "平太"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "Binh Thai"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "Bình Thái"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "12"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "-10"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": false
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_B1tYGqgHif",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 940,
+                    "y": -360,
+                    "type": "master",
+                    "master": {
+                        "randomId": "cwxwCm",
+                        "label": "New SVG",
+                        "labelColorBg": "#8392d7",
+                        "labelColorFg": "#000",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "守德"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "Thu Duc"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "Thủ Đức"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "12"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "-10"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": false
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_mkPfaSFjw9",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 940,
+                    "y": -475,
+                    "type": "master",
+                    "master": {
+                        "randomId": "cwxwCm",
+                        "label": "New SVG",
+                        "labelColorBg": "#8392d7",
+                        "labelColorFg": "#000",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "高科技园区"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "High Tech Park"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "Khu Công nghệ cao"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "12"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "-10"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": false
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_UORC3zSX_6",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 940,
+                    "y": -585,
+                    "type": "master",
+                    "master": {
+                        "randomId": "cwxwCm",
+                        "label": "New SVG",
+                        "labelColorBg": "#8392d7",
+                        "labelColorFg": "#000",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "国家大学"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "National University"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "Đại học Quốc Gia"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "12"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "-10"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": false
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_ltE3ie4bw2",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 940,
+                    "y": -685,
+                    "type": "master",
+                    "master": {
+                        "randomId": "cwxwCm",
+                        "label": "New SVG",
+                        "labelColorBg": "#8392d7",
+                        "labelColorFg": "#000",
+                        "nodeType": "Station",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_YNSfVdHMWj",
+                                "type": "path",
+                                "label": "CIRCLE",
+                                "attrs": {
+                                    "x": "1\"-10\"",
+                                    "y": "1\"0\"",
+                                    "d": "1\"M 0 0 A 10 10 0 1 0 20 0 A 10 10 0 1 0 0 0\"",
+                                    "stroke": "1\"gray\"",
+                                    "strokeWidth": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_GDcxEwAMaX",
+                                "type": "text",
+                                "label": "CN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "2CNy",
+                                    "_rmp_children_text": "2中文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"16\"",
+                                    "font-family": "2中文字体",
+                                    "font-weight": "3中文是否加粗?\"bold\":0"
+                                }
+                            },
+                            {
+                                "id": "id_XcnCOXNDVc",
+                                "type": "text",
+                                "label": "EN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+12",
+                                    "_rmp_children_text": "2英文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2英文字体"
+                                }
+                            },
+                            {
+                                "id": "id_gHfKWGUDTh",
+                                "type": "text",
+                                "label": "VN",
+                                "attrs": {
+                                    "x": "2CNx",
+                                    "y": "3CNy+24",
+                                    "_rmp_children_text": "2越南文站名",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "3左对齐?\"start\":(右对齐?\"end\":\"middle\")",
+                                    "fontSize": "1\"12\"",
+                                    "font-family": "2越南文字体"
+                                }
+                            }
+                        ],
+                        "components": [
+                            {
+                                "id": "OqojexThFw",
+                                "label": "中文站名",
+                                "type": "text",
+                                "defaultValue": "车站",
+                                "value": "仙泉客运站"
+                            },
+                            {
+                                "id": "TxkOqWwroU",
+                                "label": "英文站名",
+                                "type": "text",
+                                "defaultValue": "Station",
+                                "value": "Suoi Tien Terminal"
+                            },
+                            {
+                                "id": "HLVaHySgFG",
+                                "label": "越南文站名",
+                                "type": "text",
+                                "defaultValue": "Trạm ",
+                                "value": "Bến xe Suối Tiên"
+                            },
+                            {
+                                "id": "AakPfQbuZb",
+                                "label": "CNx",
+                                "type": "number",
+                                "defaultValue": "12",
+                                "value": "12"
+                            },
+                            {
+                                "id": "FivMRvpiYK",
+                                "label": "CNy",
+                                "type": "number",
+                                "defaultValue": "-8",
+                                "value": "-10"
+                            },
+                            {
+                                "id": "ElSZCZgQpC",
+                                "label": "左对齐",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            },
+                            {
+                                "id": "YPyLOkGcCJ",
+                                "label": "右对齐",
+                                "type": "switch",
+                                "defaultValue": false,
+                                "value": false
+                            },
+                            {
+                                "id": "YahAcYrgRi",
+                                "label": "中文字体",
+                                "type": "text",
+                                "defaultValue": "宋体",
+                                "value": "宋体"
+                            },
+                            {
+                                "id": "fMBRsEyjGI",
+                                "label": "英文字体",
+                                "type": "text",
+                                "defaultValue": "Georgia",
+                                "value": "Georgia"
+                            },
+                            {
+                                "id": "SGANUCrXNB",
+                                "label": "越南文字体",
+                                "type": "text",
+                                "defaultValue": "Tahoma",
+                                "value": "Tahoma"
+                            },
+                            {
+                                "id": "atrRfLQXTe",
+                                "label": "中文是否加粗",
+                                "type": "switch",
+                                "defaultValue": true,
+                                "value": true
+                            }
+                        ],
+                        "core": "id_YNSfVdHMWj",
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_6jcsTo2pDk",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1005,
+                    "y": -640,
+                    "type": "master",
+                    "master": {
+                        "randomId": "OTjaQH",
+                        "label": "New SVG",
+                        "labelColorBg": "#0741c7",
+                        "labelColorFg": "#fff",
+                        "nodeType": "MiscNode",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_uIqIDDWrxS",
+                                "type": "rect",
+                                "label": "outterRECT",
+                                "attrs": {
+                                    "x": "1\"-26\"",
+                                    "y": "1\"-26\"",
+                                    "width": "1\"52\"",
+                                    "height": "1\"52\"",
+                                    "rx": "1\"6\"",
+                                    "ry": "1\"6\"",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"#0079b8\""
+                                }
+                            },
+                            {
+                                "id": "id_LTDieuGBkd",
+                                "type": "rect",
+                                "label": "colorjuxing",
+                                "attrs": {
+                                    "x": "1\"-21\"",
+                                    "y": "1\"-21\"",
+                                    "width": "1\"42\"",
+                                    "height": "1\"42\"",
+                                    "rx": "1\"4\"",
+                                    "ry": "1\"4\"",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_efFZvpxttO",
+                                "type": "text",
+                                "label": "No.",
+                                "attrs": {
+                                    "x": "1\"0\"",
+                                    "y": "1\"9\"",
+                                    "_rmp_children_text": "1\"L1\"",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "1\"middle\"",
+                                    "fontSize": "1\"23\"",
+                                    "font-weight": "1\"bold\"",
+                                    "font-family": "1\"Bahnschrift\""
+                                }
+                            }
+                        ],
+                        "components": [],
+                        "version": 2
+                    }
+                }
+            },
+            {
+                "key": "misc_node_5mGsgQveZd",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 335,
+                    "y": 250,
+                    "type": "master",
+                    "master": {
+                        "randomId": "OTjaQH",
+                        "label": "New SVG",
+                        "labelColorBg": "#0741c7",
+                        "labelColorFg": "#fff",
+                        "nodeType": "MiscNode",
+                        "transform": {
+                            "translateX": 0,
+                            "translateY": 0,
+                            "scale": 0.6,
+                            "rotate": 0
+                        },
+                        "svgs": [
+                            {
+                                "id": "id_uIqIDDWrxS",
+                                "type": "rect",
+                                "label": "outterRECT",
+                                "attrs": {
+                                    "x": "1\"-26\"",
+                                    "y": "1\"-26\"",
+                                    "width": "1\"52\"",
+                                    "height": "1\"52\"",
+                                    "rx": "1\"6\"",
+                                    "ry": "1\"6\"",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"#0079b8\""
+                                }
+                            },
+                            {
+                                "id": "id_LTDieuGBkd",
+                                "type": "rect",
+                                "label": "colorjuxing",
+                                "attrs": {
+                                    "x": "1\"-21\"",
+                                    "y": "1\"-21\"",
+                                    "width": "1\"42\"",
+                                    "height": "1\"42\"",
+                                    "rx": "1\"4\"",
+                                    "ry": "1\"4\"",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"white\""
+                                }
+                            },
+                            {
+                                "id": "id_efFZvpxttO",
+                                "type": "text",
+                                "label": "No.",
+                                "attrs": {
+                                    "x": "1\"0\"",
+                                    "y": "1\"9\"",
+                                    "_rmp_children_text": "1\"L1\"",
+                                    "opacity": "1\"1\"",
+                                    "fill": "1\"black\"",
+                                    "className": "1\"rmp-name__en\"",
+                                    "textAnchor": "1\"middle\"",
+                                    "fontSize": "1\"23\"",
+                                    "font-weight": "1\"bold\"",
+                                    "font-family": "1\"Bahnschrift\""
+                                }
+                            }
+                        ],
+                        "components": [],
+                        "version": 2
+                    }
+                }
+            }
+        ],
+        "edges": [
+            {
+                "key": "line_GzHn61zDDF",
+                "source": "misc_node_YTzYzbDeXr",
+                "target": "misc_node_hAzUSKzfX4",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#0079b8",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_aZeXUIH66C",
+                "source": "misc_node_Yz2u-21gV8",
+                "target": "misc_node_hAzUSKzfX4",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#0079b8",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_orhwmfOL8x",
+                "source": "misc_node_Yz2u-21gV8",
+                "target": "misc_node_8dOb6uzi0Z",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#0079b8",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_LB31LBlPxu",
+                "source": "misc_node_7oHgqqdIOA",
+                "target": "misc_node_8dOb6uzi0Z",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#0079b8",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_VmvkM6PCo1",
+                "source": "misc_node_7oHgqqdIOA",
+                "target": "misc_node_5JhrCC6P8K",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#0079b8",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_4dPC_q5iBI",
+                "source": "misc_node_5JhrCC6P8K",
+                "target": "misc_node_x4yvzknSOE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#0079b8",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_uNaBnjYHmC",
+                "source": "misc_node_x4yvzknSOE",
+                "target": "misc_node_yuqGjR3RpO",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#0079b8",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_zND7aPesmy",
+                "source": "misc_node_81k6ca3C4N",
+                "target": "misc_node_yuqGjR3RpO",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#0079b8",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_IoY_qOuUsh",
+                "source": "misc_node_AXufqaD06F",
+                "target": "misc_node_81k6ca3C4N",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#0079b8",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_uiNBvyeRaJ",
+                "source": "misc_node_B1tYGqgHif",
+                "target": "misc_node_AXufqaD06F",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#0079b8",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_T_WQfEWpEm",
+                "source": "misc_node_mkPfaSFjw9",
+                "target": "misc_node_B1tYGqgHif",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#0079b8",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_G2GKFIF7YQ",
+                "source": "misc_node_UORC3zSX_6",
+                "target": "misc_node_mkPfaSFjw9",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#0079b8",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_5CH4jnk9bL",
+                "source": "misc_node_ltE3ie4bw2",
+                "target": "misc_node_UORC3zSX_6",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#0079b8",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            }
+        ]
+    },
+    "version": 43
+}

@@ -8,6 +8,8 @@ interface AppState {
         realWorld: { [id in string]: string };
         fantasy: { [id in string]: string };
     };
+    serverUsers: { [id in number]: string };
+    rmtToken?: string;
 }
 
 const initialState: AppState = {
@@ -23,6 +25,7 @@ const initialState: AppState = {
         realWorld: {},
         fantasy: {},
     },
+    serverUsers: [],
 };
 
 const appSlice = createSlice({
@@ -38,8 +41,17 @@ const appSlice = createSlice({
         setLogins: (state, action: PayloadAction<AppState['logins']>) => {
             state.logins = action.payload;
         },
+        setServerUsers: (state, action: PayloadAction<AppState['serverUsers']>) => {
+            state.serverUsers = action.payload;
+        },
+        setRmtToken: (state, action: PayloadAction<string>) => {
+            state.rmtToken = action.payload;
+        },
+        removeRmtToken: state => {
+            state.rmtToken = undefined;
+        },
     },
 });
 
-export const { setRealWorld, setFantasy, setLogins } = appSlice.actions;
+export const { setRealWorld, setFantasy, setLogins, setServerUsers, setRmtToken, removeRmtToken } = appSlice.actions;
 export default appSlice.reducer;

@@ -24,6 +24,8 @@ export const makeImage = async (filePath: string) => {
     await driver.wait(until.elementLocated(By.xpath(uploadMenuButtonXPath)), 10000);
     await driver.findElement(By.xpath(uploadMenuButtonXPath)).sendKeys(filePath);
 
+    await new Promise(r => setTimeout(r, 1000)); // wait a second to be fully loaded
+
     const downloadMenuButtonXPath = '//*[@id="menu-button-download"]';
     await driver.findElement(By.xpath(downloadMenuButtonXPath)).click();
 
@@ -33,7 +35,7 @@ export const makeImage = async (filePath: string) => {
     await driver.findElement(By.xpath(exportImageButtonXPath)).click();
 
     Promise.all(
-        [1, 2].map(i =>
+        [2, 3].map(i =>
             driver.findElement(By.xpath(`/html/body/div[6]/div[3]/div/section/div/label[${i}]/span[1]`)).click()
         )
     );

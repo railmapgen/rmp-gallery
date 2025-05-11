@@ -1,37 +1,20 @@
-import {
-    Avatar,
-    Button,
-    Flex,
-    Heading,
-    IconButton,
-    Image,
-    Link,
-    List,
-    ListItem,
-    Modal,
-    ModalBody,
-    ModalCloseButton,
-    ModalContent,
-    ModalFooter,
-    ModalHeader,
-    ModalOverlay,
-    Popover,
-    PopoverBody,
-    PopoverContent,
-    PopoverTrigger,
-    Text,
-    Tooltip,
-    useToast,
-    VStack,
-} from '@chakra-ui/react';
+import classes from './details.module.css';
+import { useToast } from '@chakra-ui/react';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { BiImport } from 'react-icons/bi';
 import { IoHeartOutline, IoStarOutline } from 'react-icons/io5';
-import { MdDownload, MdEdit, MdShare, MdVisibility } from 'react-icons/md';
+import {
+    MdOutlineBlock,
+    MdOutlineCheckCircleOutline,
+    MdOutlineDownload,
+    MdOutlineEdit,
+    MdOutlinePauseCircleOutline,
+    MdOutlineVisibility,
+    MdShare,
+} from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
-
 import { useRootSelector } from '../redux';
 import {
     DesignerDetails,
@@ -40,9 +23,11 @@ import {
     Metadata,
     MetadataDetail,
     RMT_SERVER,
+    TabType,
 } from '../util/constant';
 import { decompressFromBase64, downloadAs } from '../util/utils';
 import useTranslatedName from './hooks/use-translated-name';
+import { ActionIcon, Anchor, Avatar, Group, Image, List, Menu, Modal, Text, Title, Tooltip } from '@mantine/core';
 
 const RMP_GALLERY_CHANNEL_NAME = 'RMP_GALLERY_CHANNEL';
 const RMP_GALLERY_CHANNEL_EVENT = 'OPEN_TEMPLATE';
@@ -56,7 +41,7 @@ const CHN_MASTER = new BroadcastChannel(RMP_MASTER_CHANNEL_NAME);
 
 const DetailsModal = (props: {
     city: string;
-    type: 'real_world' | 'fantasy' | 'designer' | 'user' | 'admin';
+    type: TabType;
     userRole: 'USER' | 'ADMIN';
     isOpen: boolean;
     onClose: () => void;
@@ -200,7 +185,7 @@ const DetailsModal = (props: {
         onClose();
     };
 
-    const rmpShareLink = `https://${window.location.hostname}/?app=rmp&searchParams=${city}`;
+    const rmpShareLink = `https://${window.location.host}/?app=rmp&searchParams=${city}`;
     const rmpShareLinkClickedToast = {
         title: t('Link copied.'),
         status: 'success' as const,
@@ -218,184 +203,202 @@ const DetailsModal = (props: {
     };
 
     return (
-        <Modal isOpen={isOpen} onClose={onClose} size="6xl" scrollBehavior="inside">
-            <ModalOverlay />
-            <ModalContent>
-                <ModalHeader>{t('details.title')}</ModalHeader>
-                <ModalCloseButton />
+        <Modal opened={isOpen} onClose={onClose} title={t('details.title')} size="100%">
+            {type === 'real_world' || type === 'fantasy' ? (
+                <a href={`resources/thumbnails/${city}.png`} target="_blank" rel="noopener noreferrer">
+                    <Image src={`resources/thumbnails/${city}.png`} alt={city} className={classes.image} />
+                </a>
+            ) : (
+                <div dangerouslySetInnerHTML={{ __html: (metadata as DesignerMetadata).svg }} />
+            )}
 
-                <ModalBody paddingBottom={10}>
-                    <VStack>
-                        {type === 'real_world' || type === 'fantasy' ? (
-                            <a href={`resources/thumbnails/${city}.png`} target="_blank" rel="noopener noreferrer">
-                                <Image src={`resources/thumbnails/${city}.png`} alt={city} borderRadius="lg" />
-                            </a>
-                        ) : (
-                            <div dangerouslySetInnerHTML={{ __html: (metadata as DesignerMetadata).svg }} />
-                        )}
-                    </VStack>
-                    <Heading as="h5" size="md" mt={3} mb={2}>
-                        {translateName(metadata.name)}
-                    </Heading>
-                    <Text>{translateName(metadata.desc)}</Text>
+            <Title order={4} size="h4" my="sm">
+                {translateName(metadata.name)}
+            </Title>
+            <Text>{translateName(metadata.desc)}</Text>
 
-                    {type === 'real_world' || type === 'fantasy' ? (
-                        <>
-                            <Heading as="h5" size="sm" mt={3} mb={2}>
-                                {t('details.updateHistory')}
-                            </Heading>
-                            <List>
-                                {(type === 'real_world' || type === 'fantasy') &&
-                                    (metadata as Metadata).updateHistory &&
-                                    (metadata as Metadata).updateHistory.map(entry => (
-                                        <ListItem key={entry.issueNumber}>
-                                            <Flex flexDirection="row" alignItems="center">
-                                                <Avatar
-                                                    size="sm"
-                                                    mr="2"
-                                                    src={`https://avatars.githubusercontent.com/u/${entry.id}`}
-                                                    cursor="pointer"
-                                                    onClick={() =>
-                                                        fetch(`https://api.github.com/user/${entry.id}`)
-                                                            .then(res => res.json())
-                                                            .then(user =>
-                                                                window.open(`https://github.com/${user.login}`)
-                                                            )
-                                                    }
-                                                />
-                                                <Link
-                                                    mr="auto"
-                                                    href={`https://github.com/railmapgen/rmp-gallery/issues/${entry.issueNumber}`}
-                                                    isExternal
-                                                >
-                                                    {entry.reason}
-                                                </Link>
-                                                <Text>
-                                                    {new Date(entry.time).toLocaleDateString(undefined, {
-                                                        hour12: false,
-                                                    })}
-                                                </Text>
-                                            </Flex>
-                                        </ListItem>
-                                    ))}
-                            </List>
-                        </>
-                    ) : (
-                        <Flex flexDirection="row" alignItems="center" my={4}>
-                            <Avatar />
-                            <Text mr="auto" px={2}>
-                                {(metadata as DesignerDetails).userName}
-                            </Text>
-                            <Text>
-                                {new Date((metadata as DesignerDetails).lastUpdateAt).toLocaleDateString(undefined, {
-                                    hour12: false,
-                                })}
-                            </Text>
-                        </Flex>
-                    )}
-
-                    {type === 'fantasy' && (
-                        <Text mt={3}>
-                            {t('details.expireOn')}
-                            {new Date((metadata as Metadata).expireOn ?? 0).toLocaleDateString()}
+            {type === 'real_world' || type === 'fantasy' ? (
+                <>
+                    <Title order={5} size="h5" my="sm">
+                        {t('details.updateHistory')}
+                    </Title>
+                    <List
+                        classNames={{
+                            itemWrapper: classes['list-item'],
+                            itemIcon: classes.avatar,
+                            itemLabel: classes['list-item-label'],
+                        }}
+                    >
+                        {(type === 'real_world' || type === 'fantasy') &&
+                            (metadata as Metadata).updateHistory &&
+                            (metadata as Metadata).updateHistory.map(entry => (
+                                <List.Item
+                                    key={entry.issueNumber}
+                                    icon={
+                                        <Avatar
+                                            size="sm"
+                                            src={`https://avatars.githubusercontent.com/u/${entry.id}`}
+                                            onClick={() =>
+                                                fetch(`https://api.github.com/user/${entry.id}`)
+                                                    .then(res => res.json())
+                                                    .then(user => window.open(`https://github.com/${user.login}`))
+                                            }
+                                        />
+                                    }
+                                >
+                                    <Anchor
+                                        href={`https://github.com/railmapgen/rmp-gallery/issues/${entry.issueNumber}`}
+                                        target="_blank"
+                                    >
+                                        {entry.reason}
+                                    </Anchor>
+                                    <Text className={classes.date}>
+                                        {new Date(entry.time).toLocaleDateString(undefined, {
+                                            hour12: false,
+                                        })}
+                                    </Text>
+                                </List.Item>
+                            ))}
+                    </List>
+                </>
+            ) : (
+                <List
+                    classNames={{
+                        itemWrapper: classes['list-item'],
+                        itemIcon: classes.avatar,
+                        itemLabel: classes['list-item-label'],
+                    }}
+                >
+                    <List.Item icon={<Avatar />}>
+                        <Text mr="auto" px={2}>
+                            {(metadata as DesignerDetails).userName}
                         </Text>
-                    )}
-                </ModalBody>
+                        <Text>
+                            {new Date((metadata as DesignerDetails).lastUpdateAt).toLocaleDateString(undefined, {
+                                hour12: false,
+                            })}
+                        </Text>
+                    </List.Item>
+                </List>
+            )}
 
+            {type === 'fantasy' && (
+                <Text mt={3}>
+                    {t('details.expireOn')}
+                    {new Date((metadata as Metadata).expireOn ?? 0).toLocaleDateString()}
+                </Text>
+            )}
+
+            <Group gap="xs" className={classes.footer}>
                 {isMasterImport ? (
-                    <ModalFooter>
-                        <IconButton
-                            aria-label="Import"
-                            variant="ghost"
-                            icon={<BiImport />}
-                            onClick={handleMasterImport}
-                        />
-                    </ModalFooter>
+                    <ActionIcon aria-label="Import" variant="default" onClick={handleMasterImport}>
+                        <BiImport />
+                    </ActionIcon>
                 ) : (
-                    <ModalFooter>
-                        <IconButton aria-label="Like" variant="ghost" icon={<IoHeartOutline />} isDisabled />
-                        <IconButton aria-label="Favorite" variant="ghost" icon={<IoStarOutline />} isDisabled />
+                    <>
+                        <ActionIcon aria-label="Like" variant="default" disabled>
+                            <IoHeartOutline />
+                        </ActionIcon>
+                        <ActionIcon aria-label="Favorite" variant="default" disabled>
+                            <IoStarOutline />
+                        </ActionIcon>
                         <Tooltip label={rmpShareLink}>
-                            <IconButton
+                            <ActionIcon
                                 aria-label="Share"
-                                variant="ghost"
-                                icon={<MdShare />}
-                                isDisabled={type === 'admin' || type === 'designer' || type === 'user'}
+                                variant="default"
+                                disabled={type === 'admin' || type === 'designer' || type === 'user'}
                                 onClick={() => {
                                     navigator.clipboard.writeText(rmpShareLink);
                                     toast(rmpShareLinkClickedToast);
                                 }}
-                            />
+                            >
+                                <MdShare />
+                            </ActionIcon>
                         </Tooltip>
-                        <IconButton
-                            aria-label="Edit"
-                            variant="ghost"
-                            isDisabled={
-                                (type === 'fantasy' && ((metadata as Metadata).remainingUpdateCount ?? 0) === 0) ||
-                                type === 'designer'
-                            }
-                            icon={<MdEdit />}
-                            onClick={handleEditRmp}
-                        />
-                        <Popover isOpen={isVisibleOpen}>
-                            <PopoverTrigger>
-                                <IconButton
-                                    hidden={userRole !== 'ADMIN'}
-                                    aria-label="zoom"
-                                    variant="ghost"
-                                    icon={<MdVisibility />}
-                                    onClick={() => setIsVisibleOpen(!isVisibleOpen)}
-                                />
-                            </PopoverTrigger>
-                            <PopoverContent>
-                                <PopoverBody>
-                                    <Flex direction="row">
-                                        <Button colorScheme="green" onClick={() => handleChangeStatus('public')}>
-                                            PUBLIC
-                                        </Button>
-                                        <Button colorScheme="yellow" onClick={() => handleChangeStatus('pending')}>
-                                            PENDING
-                                        </Button>
-                                        <Button colorScheme="red" onClick={() => handleChangeStatus('rejected')}>
-                                            REJECTED
-                                        </Button>
-                                    </Flex>
-                                </PopoverBody>
-                            </PopoverContent>
-                        </Popover>
-                        {type === 'real_world' || type === 'fantasy' ? (
-                            <a href={`resources/${type}/${city}.json`} target="_blank" rel="noopener noreferrer">
-                                <IconButton aria-label="Download" variant="ghost" icon={<MdDownload />} />
-                            </a>
-                        ) : (
-                            <IconButton
-                                aria-label="Download"
-                                variant="ghost"
-                                icon={<MdDownload />}
-                                onClick={() =>
-                                    downloadAs(
-                                        `RMP-Designer_Marketplace_${new Date().valueOf()}.json`,
-                                        'application/json',
-                                        (metadata as DesignerDetails).data
-                                    )
+                        <Tooltip label={t('details.edit')}>
+                            <ActionIcon
+                                aria-label={t('details.edit')}
+                                variant="default"
+                                disabled={
+                                    (type === 'fantasy' && ((metadata as Metadata).remainingUpdateCount ?? 0) === 0) ||
+                                    type === 'designer'
                                 }
-                            />
-                        )}
+                                onClick={handleEditRmp}
+                            >
+                                <MdOutlineEdit />
+                            </ActionIcon>
+                        </Tooltip>
+                        <Menu>
+                            <Menu.Target>
+                                <ActionIcon aria-label="Change status" variant="default">
+                                    <MdOutlineVisibility />
+                                </ActionIcon>
+                            </Menu.Target>
+                            <Menu.Dropdown>
+                                <Menu.Item
+                                    leftSection={<MdOutlineCheckCircleOutline />}
+                                    onClick={() => handleChangeStatus('public')}
+                                >
+                                    Public
+                                </Menu.Item>
+                                <Menu.Item
+                                    leftSection={<MdOutlinePauseCircleOutline />}
+                                    onClick={() => handleChangeStatus('pending')}
+                                >
+                                    Pending
+                                </Menu.Item>
+                                <Menu.Item
+                                    leftSection={<MdOutlineBlock />}
+                                    onClick={() => handleChangeStatus('rejected')}
+                                >
+                                    Rejected
+                                </Menu.Item>
+                            </Menu.Dropdown>
+                        </Menu>
+                        <Tooltip label={t('details.download')}>
+                            {type === 'real_world' || type === 'fantasy' ? (
+                                <ActionIcon
+                                    component="a"
+                                    variant="default"
+                                    aria-label={t('details.download')}
+                                    href={`resources/${type}/${city}.json`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <MdOutlineDownload />
+                                </ActionIcon>
+                            ) : (
+                                <ActionIcon
+                                    aria-label={t('details.download')}
+                                    variant="default"
+                                    onClick={() =>
+                                        downloadAs(
+                                            `RMP-Designer_Marketplace_${new Date().valueOf()}.json`,
+                                            'application/json',
+                                            (metadata as DesignerDetails).data
+                                        )
+                                    }
+                                >
+                                    <MdOutlineDownload />
+                                </ActionIcon>
+                            )}
+                        </Tooltip>
                         {rmgRuntime.isStandaloneWindow() ? (
                             <Tooltip label={t('details.import')}>
-                                <IconButton aria-label="Import" variant="ghost" icon={<BiImport />} isDisabled />
+                                <ActionIcon aria-label="Import" variant="ghost" disabled>
+                                    <BiImport />
+                                </ActionIcon>
                             </Tooltip>
                         ) : (
-                            <IconButton
-                                aria-label="Import"
-                                variant="ghost"
-                                icon={<BiImport />}
-                                onClick={handleOpenTemplate}
-                            />
+                            <Tooltip label="Import">
+                                <ActionIcon aria-label="Import" variant="default" onClick={handleOpenTemplate}>
+                                    <BiImport />
+                                </ActionIcon>
+                            </Tooltip>
                         )}
-                    </ModalFooter>
+                    </>
                 )}
-            </ModalContent>
+            </Group>
         </Modal>
     );
 };

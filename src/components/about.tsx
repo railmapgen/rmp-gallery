@@ -1,24 +1,10 @@
+import classes from './about.module.css';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { useTranslation } from 'react-i18next';
-import {
-    Avatar,
-    Box,
-    Flex,
-    Heading,
-    Image,
-    Modal,
-    ModalBody,
-    ModalCloseButton,
-    ModalContent,
-    ModalHeader,
-    ModalOverlay,
-    Tag,
-    TagLabel,
-    Text,
-    VStack,
-} from '@chakra-ui/react';
 import GithubIcon from '../images/github-mark.svg';
 import SlackIcon from '../images/slack-mark.svg';
+import { Avatar, Card, Flex, Group, Image, Modal, Stack, Text, Title } from '@mantine/core';
+import { RMSection, RMSectionBody, RMSectionHeader } from '@railmapgen/mantine-components';
 
 const AboutModal = (props: { isOpen: boolean; onClose: () => void }) => {
     const { isOpen, onClose } = props;
@@ -26,127 +12,118 @@ const AboutModal = (props: { isOpen: boolean; onClose: () => void }) => {
     const appVersion = rmgRuntime.getAppVersion();
 
     return (
-        <Modal isOpen={isOpen} onClose={onClose} size="xl" scrollBehavior="inside">
-            <ModalOverlay />
-            <ModalContent>
-                <ModalHeader>{t('header.about.title')}</ModalHeader>
-                <ModalCloseButton />
+        <Modal
+            opened={isOpen}
+            onClose={onClose}
+            title={t('header.about.title')}
+            size="lg"
+            classNames={{ body: classes.body }}
+        >
+            <Stack align="center">
+                <Group>
+                    <Image w={128} src="/rmp-gallery/logo192.png" />
+                    <Stack gap="sm">
+                        <Text size="xl" component="b">
+                            {t('header.about.rmpGallery')}
+                        </Text>
+                        <Text>{appVersion}</Text>
+                        <Text size="sm">{t('header.about.railmapgen')}</Text>
+                    </Stack>
+                </Group>
 
-                <ModalBody paddingBottom={10}>
-                    <Flex direction="row">
-                        <Image boxSize="128px" src="/rmp-gallery/logo192.png" />
-                        <Flex direction="column" width="100%" alignItems="center" justifyContent="center">
-                            <Text fontSize="xl" as="b">
-                                {t('header.about.rmpGallery')}
-                            </Text>
-                            <Text>{appVersion}</Text>
-                            <Text />
-                            <Text fontSize="sm">{t('header.about.railmapgen')}</Text>
-                        </Flex>
-                    </Flex>
+                <Text size="md">{t('header.about.desc')}</Text>
+            </Stack>
 
-                    <Box margin={5}>
-                        <Text fontSize="xl">{t('header.about.desc')}</Text>
-                    </Box>
-
-                    <Heading as="h5" size="sm" mt={3} mb={2}>
-                        {t('header.about.contributors')}
-                    </Heading>
-
-                    <Heading as="h6" size="xs" my={2}>
+            <RMSection>
+                <RMSectionHeader>
+                    <Title order={2} size="h4">
                         {t('header.about.coreContributors')}
-                    </Heading>
+                    </Title>
+                </RMSectionHeader>
 
-                    <VStack>
-                        <Tag
-                            size="lg"
-                            w="85%"
-                            onClick={() => window.open('https://github.com/thekingofcity', '_blank')}
-                            cursor="pointer"
-                        >
-                            <Avatar src="https://github.com/thekingofcity.png" size="lg" my={2} ml={-1} mr={2} />
-                            <TagLabel display="block" width="100%">
-                                <Text fontSize="lg" fontWeight="bold" mb={1}>
-                                    thekingofcity
-                                </Text>
-                                <Text fontSize="sm">{t('header.about.content1')}</Text>
-                                <Text fontSize="sm" align="right" mb={1}>
-                                    {t('header.about.content2')}
-                                </Text>
-                            </TagLabel>
-                        </Tag>
-                    </VStack>
+                <RMSectionBody className={classes['dev-section-body']}>
+                    <Card
+                        component="a"
+                        className={classes['dev-card']}
+                        href="https://github.com/thekingofcity"
+                        target="_blank"
+                        withBorder
+                    >
+                        <Avatar src="https://github.com/thekingofcity.png" size="lg" />
+                        <Flex>
+                            <Title order={3}>thekingofcity</Title>
+                            <Text span>{t('header.about.content1')}</Text>
+                            <Text span>{t('header.about.content2')}</Text>
+                        </Flex>
+                    </Card>
+                </RMSectionBody>
+            </RMSection>
 
-                    <Heading as="h6" size="xs" my={2}>
+            <RMSection>
+                <RMSectionHeader>
+                    <Title order={2} size="h4">
                         {t('header.about.templateAdministrators')}
-                    </Heading>
+                    </Title>
+                </RMSectionHeader>
+                <RMSectionBody className={classes['dev-section-body']}>
+                    {['52PD', 'linchen1965'].map(id => (
+                        <Card
+                            key={id}
+                            component="a"
+                            className={classes['dev-card']}
+                            href={`https://github.com/${id}`}
+                            target="_blank"
+                            withBorder
+                        >
+                            <Avatar src={`https://github.com/${id}.png`} size="lg" />
+                            <Flex>
+                                <Title order={3}>{id}</Title>
+                                <Text span>{t(`header.about.${id}`)}</Text>
+                            </Flex>
+                        </Card>
+                    ))}
+                </RMSectionBody>
+            </RMSection>
 
-                    <VStack>
-                        {['52PD', 'linchen1965'].map(id => (
-                            <Tag
-                                key={id}
-                                size="lg"
-                                w="85%"
-                                onClick={() => window.open(`https://github.com/${id}`, '_blank')}
-                                cursor="pointer"
-                            >
-                                <Avatar src={`https://github.com/${id}.png`} size="lg" my={2} ml={-1} mr={2} />
-                                <TagLabel display="block" width="100%">
-                                    <Text fontSize="lg" fontWeight="bold" mb={1}>
-                                        {id}
-                                    </Text>
-                                    <Text fontSize="sm" mb={1}>
-                                        {t(`header.about.${id}`)}
-                                    </Text>
-                                </TagLabel>
-                            </Tag>
-                        ))}
-                    </VStack>
-
-                    <Heading as="h5" size="sm" mt={3} mb={2}>
+            <RMSection>
+                <RMSectionHeader>
+                    <Title order={2} size="h4">
                         {t('header.about.contactUs')}
-                    </Heading>
+                    </Title>
+                </RMSectionHeader>
 
-                    <VStack>
-                        <Tag
-                            size="lg"
-                            w="85%"
-                            onClick={() => window.open('https://github.com/railmapgen/rmp-gallery/issues', '_blank')}
-                            cursor="pointer"
-                        >
-                            <Avatar src={GithubIcon} size="lg" my={2} ml={-1} mr={2} />
-                            <TagLabel display="block" width="100%">
-                                <Text fontSize="lg" fontWeight="bold" mb={1}>
-                                    {t('header.about.github')}
-                                </Text>
-                                <Text fontSize="sm">{t('header.about.githubContent')}</Text>
-                            </TagLabel>
-                        </Tag>
-                        <Tag
-                            size="lg"
-                            w="85%"
-                            onClick={() =>
-                                window.open(
-                                    'https://join.slack.com/t/railmapgenerator/shared_invite/zt-1odhhta3n-DdZF~fnVwo_q0S0RJmgV8A',
-                                    '_blank'
-                                )
-                            }
-                            cursor="pointer"
-                        >
-                            <Avatar src={SlackIcon} size="lg" my={2} ml={-1} mr={2} />
-                            <TagLabel display="block" width="100%">
-                                <Text fontSize="lg" fontWeight="bold" mb={1}>
-                                    {t('header.about.slack')}
-                                </Text>
-                                <Text fontSize="sm">{t('header.about.slackContent')}</Text>
-                                <Text fontSize="sm" as="i">
-                                    #rmg, #rmp, #gallery, #random
-                                </Text>
-                            </TagLabel>
-                        </Tag>
-                    </VStack>
-                </ModalBody>
-            </ModalContent>
+                <RMSectionBody className={classes['dev-section-body']}>
+                    <Card
+                        component="a"
+                        className={classes['dev-card']}
+                        href="https://github.com/railmapgen/rmp-gallery/issues"
+                        target="_blank"
+                        withBorder
+                    >
+                        <Avatar src={GithubIcon} size="lg" />
+                        <Flex>
+                            <Title order={3}>{t('header.about.github')}</Title>
+                            <Text span>{t('header.about.githubContent')}</Text>
+                        </Flex>
+                    </Card>
+                    <Card
+                        component="a"
+                        className={classes['dev-card']}
+                        href="https://join.slack.com/t/railmapgenerator/shared_invite/zt-1odhhta3n-DdZF~fnVwo_q0S0RJmgV8A"
+                        target="_blank"
+                        withBorder
+                    >
+                        <Avatar src={SlackIcon} size="lg" />
+                        <Flex>
+                            <Title order={3}>{t('header.about.slack')}</Title>
+                            <Text span>{t('header.about.slackContent')}</Text>
+                            <Text component="i" span>
+                                #rmg, #rmp, #gallery, #random
+                            </Text>
+                        </Flex>
+                    </Card>
+                </RMSectionBody>
+            </RMSection>
         </Modal>
     );
 };

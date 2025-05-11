@@ -1,25 +1,9 @@
-import {
-    Box,
-    Card,
-    CardBody,
-    CardHeader,
-    Flex,
-    Heading,
-    IconButton,
-    SystemStyleObject,
-    Tab,
-    TabList,
-    TabPanel,
-    TabPanels,
-    Tabs,
-    Text,
-} from '@chakra-ui/react';
-import { RmgFields, RmgFieldsField } from '@railmapgen/rmg-components';
+import classes from './gallery.module.css';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoMdHeart } from 'react-icons/io';
-import { MdAdd } from 'react-icons/md';
+import { MdAdd, MdOutlineWarning } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
 import { useRootDispatch, useRootSelector } from '../redux';
@@ -32,17 +16,25 @@ import {
     Gallery,
     MetadataDetail,
     RMT_SERVER,
+    TAB_TYPES,
+    TabType,
 } from '../util/constant';
 import { decompressFromBase64 } from '../util/utils';
 import DetailsModal from './details';
 import { TemplateCard } from './template-card';
-
-const stickyHeaderStyles: SystemStyleObject = {
-    position: 'sticky',
-    top: -4,
-    zIndex: 1,
-    background: 'inherit',
-};
+import {
+    ActionIcon,
+    Affix,
+    Group,
+    NativeSelect,
+    Notification,
+    Select,
+    SimpleGrid,
+    Tabs,
+    TextInput,
+    Title,
+} from '@mantine/core';
+import { RMPage, RMSection, RMSectionHeader } from '@railmapgen/mantine-components';
 
 export default function GalleryView() {
     const navigate = useNavigate();
@@ -55,9 +47,8 @@ export default function GalleryView() {
     const [designerUser, setDesignerUser] = React.useState<Designer>({});
     const [userRole, setUserRole] = React.useState<'USER' | 'ADMIN'>('USER');
 
-    const [tabIndex, setTabIndex] = React.useState(0);
     const [isMasterImport, setIsMasterImport] = React.useState(false);
-    const [type, setType] = React.useState('real_world' as 'real_world' | 'fantasy' | 'designer' | 'user' | 'admin');
+    const [type, setType] = React.useState<TabType>('real_world');
     const [city, setCity] = React.useState('shanghai');
     const [isDetailsModalOpen, setIsDetailsModalOpen] = React.useState(false);
     const handleDetails = (city: string) => {
@@ -197,58 +188,24 @@ export default function GalleryView() {
     }, [type]);
 
     const [filterName, setFilterName] = React.useState('');
-    const [filterID, setFilterID] = React.useState('');
-    const [filterIDServer, setFilterIDServer] = React.useState(-1);
+    const [filterID, setFilterID] = React.useState<string | null>(null);
+    const [filterIDServer, setFilterIDServer] = React.useState<string | null>(null);
     const [sortBy, setSortBy] = React.useState('alphabetical' as 'alphabetical' | 'update_time');
-    const sortByOptions = {
-        alphabetical: t('gallery.sortBy.alphabetical'),
-        ...(type !== 'fantasy' ? { update_time: t('gallery.sortBy.updateTime') } : {}),
-    };
-    const fields: RmgFieldsField[] = [
-        {
-            type: 'input',
-            label: t('gallery.filterName'),
-            value: filterName,
-            onChange: val => setFilterName(val),
-            debouncedDelay: 500,
-            minW: 200,
-        },
-        {
-            type: 'select',
-            label: t('gallery.filterAuthor'),
-            value: filterID,
-            options: { '': 'None', ...(type === 'real_world' ? logins.realWorld : logins.fantasy) },
-            onChange: val => setFilterID(val.toString()),
-            hidden: type === 'user' || type === 'admin' || type === 'designer',
-            minW: 200,
-        },
-        {
-            type: 'select',
-            label: t('gallery.filterAuthor'),
-            value: filterIDServer,
-            options: { [-1]: 'None', ...serverUsers },
-            onChange: val => setFilterIDServer(Number(val)),
-            hidden: type === 'real_world' || type === 'fantasy' || type === 'user',
-            minW: 200,
-        },
-        {
-            type: 'select',
-            label: t('gallery.sortBy.label'),
-            value: sortBy,
-            options: sortByOptions,
-            onChange: val => setSortBy(val.toString() as 'alphabetical' | 'update_time'),
-            hidden: type === 'fantasy',
-            minW: 200,
-        },
+
+    const sortByOptions = [
+        { value: 'alphabetical', label: t('gallery.sortBy.alphabetical') },
+        ...(type !== 'fantasy' ? [{ value: 'update_time', label: t('gallery.sortBy.updateTime') }] : []),
     ];
+    const REAL_WORLD_AUTHOR_OPTIONS = Object.entries(logins.realWorld).map(([value, label]) => ({ value, label }));
+    const FANTASY_AUTHOR_OPTIONS = Object.entries(logins.fantasy).map(([value, label]) => ({ value, label }));
 
     React.useEffect(() => {
         const url = new URL(window.location.href);
         const searchParams = url.searchParams;
         if (searchParams.size > 0) {
             const id = searchParams.get('tabId');
-            if (id && Number.isInteger(Number(id))) {
-                handleTabChange(Number(id));
+            if (id && TAB_TYPES.includes(id as TabType)) {
+                handleTabChange(id as TabType);
             }
 
             const master = searchParams.get('master');
@@ -256,127 +213,61 @@ export default function GalleryView() {
         }
     }, []);
 
-    const handleTabChange = (i: number) => {
-        setTabIndex(i);
-        // set some default values for different types
-        switch (i) {
-            case 0:
-                setType('real_world');
-                break;
-            case 1:
-                setType('fantasy');
-                break;
-            case 2:
-                setType('designer');
-                break;
-            case 3:
-                setType('user');
-                break;
-            case 4:
-                setType('admin');
-                break;
-        }
-        setSortBy(i === 0 || i === 2 ? 'alphabetical' : 'update_time');
+    const handleTabChange = (tab: TabType) => {
+        setType(tab);
+        setSortBy(tab === 'real_world' || tab === 'designer' ? 'alphabetical' : 'update_time');
     };
 
-    const tabs =
-        userRole === 'ADMIN'
-            ? [realWorld, fantasy, designerPublic, designerUser, designerAdmin]
-            : [realWorld, fantasy, designerPublic, designerUser];
+    const tabs: { value: TabType; label: string; data: Gallery | Designer; disabled?: boolean; hidden?: boolean }[] = [
+        { value: 'real_world', label: t('gallery.type.realWorld'), data: realWorld, disabled: isMasterImport },
+        { value: 'fantasy', label: t('gallery.type.fantasy'), data: fantasy, disabled: isMasterImport },
+        { value: 'designer', label: t('gallery.type.designer'), data: designerPublic },
+        { value: 'user', label: t('gallery.type.user'), data: designerUser },
+        { value: 'admin', label: t('gallery.type.admin'), data: designerAdmin, hidden: userRole !== 'ADMIN' },
+    ];
 
     return (
-        <>
-            <Tabs isLazy isFitted index={tabIndex} onChange={i => handleTabChange(i)} overflow="hidden">
-                <TabList>
-                    <Tab isDisabled={isMasterImport}>{t('gallery.type.realWorld')}</Tab>
-                    <Tab isDisabled={isMasterImport}>{t('gallery.type.fantasy')}</Tab>
-                    <Tab>{t('gallery.type.designer')}</Tab>
-                    <Tab>{t('gallery.type.user')}</Tab>
-                    {userRole === 'ADMIN' && <Tab>{t('gallery.type.admin')}</Tab>}
-                </TabList>
-                <TabPanels overflow="hidden" h="100%">
-                    {tabs.map((g, i) => (
-                        <TabPanel key={i} overflowY="auto" h="calc(100% - 2rem - 8px)">
-                            {type === 'real_world' && (
-                                <>
-                                    <Card variant="filled">
-                                        <CardHeader>
-                                            <Heading size="lg">{t('gallery.warning')}</Heading>
-                                        </CardHeader>
-                                        <CardBody paddingTop="0">
-                                            <Text size="xl">{t('gallery.noTravelAdvice')}</Text>
-                                        </CardBody>
-                                    </Card>
-                                    <Card mt="2">
-                                        <CardHeader sx={stickyHeaderStyles}>
-                                            <Heading size="lg">{t('gallery.editorSelected')}</Heading>
-                                        </CardHeader>
-                                        <CardBody paddingTop="0">
-                                            <Flex flexWrap="wrap">
-                                                {['shanghai', 'guangzhou', 'hongkong', 'beijing']
-                                                    .map(id => ({ id, metadata: g[id] }))
-                                                    .filter(({ metadata }) => metadata !== undefined)
-                                                    .map(({ id, metadata }) => (
-                                                        <TemplateCard
-                                                            key={`${type}+${id}`}
-                                                            type={type}
-                                                            id={id}
-                                                            metadata={metadata}
-                                                            handleDetails={handleDetails}
-                                                        />
-                                                    ))}
-                                            </Flex>
-                                        </CardBody>
-                                    </Card>
-                                </>
-                            )}
-                            <Card mt="2">
-                                <CardHeader sx={stickyHeaderStyles}>
-                                    <Flex direction="row">
-                                        <Heading size="lg" mr="auto">
-                                            {t('gallery.all')}
-                                        </Heading>
-                                        <RmgFields fields={fields} />
-                                    </Flex>
-                                </CardHeader>
-                                <CardBody paddingTop="0">
-                                    <Flex flexWrap="wrap">
-                                        {Object.entries(g)
-                                            .filter(([_, metadata]) =>
-                                                filterID === '' ||
-                                                type === 'designer' ||
-                                                type === 'admin' ||
-                                                type === 'user' ||
-                                                i >= 2 // designer, user, admin should never filter by contributor
-                                                    ? true
-                                                    : metadata.contributors.includes(filterID)
-                                            )
-                                            .filter(([_, metadata]) =>
-                                                filterIDServer === -1 ||
-                                                type === 'real_world' ||
-                                                type === 'fantasy' ||
-                                                type === 'user' ||
-                                                i < 2 // real_world, fantasy should never filter by server user
-                                                    ? true
-                                                    : (metadata as DesignerMetadata).userId === filterIDServer
-                                            )
-                                            .filter(([_, metadata]) =>
-                                                filterName === ''
-                                                    ? true
-                                                    : Object.values(metadata.name)
-                                                          .map(_ => (_ as string).toLowerCase())
-                                                          .join()
-                                                          .includes(filterName.toLowerCase())
-                                            )
-                                            .sort((a, b) =>
-                                                // https://stackoverflow.com/questions/59773396/why-array-prototype-sort-has-different-behavior-in-chrome
-                                                sortBy === 'alphabetical'
-                                                    ? a[1].name.en.toLowerCase() > b[1].name.en.toLowerCase()
-                                                        ? 1
-                                                        : -1
-                                                    : b[1].lastUpdateOn - a[1].lastUpdateOn
-                                            )
-                                            .map(([id, metadata]) => (
+        <RMPage>
+            <Tabs
+                value={type}
+                onChange={tab => {
+                    if (tab) handleTabChange(tab as TabType);
+                }}
+                keepMounted={false}
+                classNames={{ root: classes.tabs, tab: classes.tab, panel: classes['tab-panel'] }}
+            >
+                <Tabs.List grow>
+                    {tabs
+                        .filter(({ hidden }) => !hidden)
+                        .map(({ value, label, disabled }) => (
+                            <Tabs.Tab key={value} value={value} disabled={disabled}>
+                                {label}
+                            </Tabs.Tab>
+                        ))}
+                </Tabs.List>
+                {tabs.map(({ value, data }) => (
+                    <Tabs.Panel key={value} value={value}>
+                        {value === 'real_world' && (
+                            <>
+                                <Notification
+                                    icon={<MdOutlineWarning />}
+                                    color="yellow"
+                                    title={t('gallery.warning')}
+                                    withCloseButton={false}
+                                >
+                                    {t('gallery.noTravelAdvice')}
+                                </Notification>
+                                <RMSection>
+                                    <RMSectionHeader>
+                                        <Title order={2} size="h3">
+                                            {t('gallery.editorSelected')}
+                                        </Title>
+                                    </RMSectionHeader>
+                                    <SimpleGrid cols={{ base: 1, xs: 1, sm: 2, md: 3, lg: 4, xl: 5 }}>
+                                        {['shanghai', 'guangzhou', 'hongkong', 'beijing']
+                                            .map(id => ({ id, metadata: data[id] }))
+                                            .filter(({ metadata }) => metadata !== undefined)
+                                            .map(({ id, metadata }) => (
                                                 <TemplateCard
                                                     key={`${type}+${id}`}
                                                     type={type}
@@ -385,21 +276,116 @@ export default function GalleryView() {
                                                     handleDetails={handleDetails}
                                                 />
                                             ))}
-                                        <Box onClick={handleNew} position="fixed" bottom="20px" right="20px" zIndex={3}>
-                                            <IconButton
-                                                aria-label="new"
-                                                size="lg"
-                                                icon={type === 'fantasy' ? <IoMdHeart /> : <MdAdd />}
-                                                colorScheme={type === 'fantasy' ? 'red' : 'blue'}
-                                                variant="solid"
-                                            />
-                                        </Box>
-                                    </Flex>
-                                </CardBody>
-                            </Card>
-                        </TabPanel>
-                    ))}
-                </TabPanels>
+                                    </SimpleGrid>
+                                </RMSection>
+                            </>
+                        )}
+                        <RMSection>
+                            <RMSectionHeader>
+                                <Title order={2} size="h3">
+                                    {t('gallery.all')}
+                                </Title>
+                                <Group ml="auto">
+                                    <TextInput
+                                        label={t('gallery.filterName')}
+                                        value={filterName}
+                                        onChange={({ currentTarget: { value } }) => setFilterName(value)}
+                                    />
+                                    {(value === 'real_world' || value === 'fantasy') && (
+                                        <Select
+                                            label={t('gallery.filterAuthor')}
+                                            value={filterID}
+                                            onChange={value => setFilterID(value)}
+                                            data={
+                                                value === 'real_world'
+                                                    ? REAL_WORLD_AUTHOR_OPTIONS
+                                                    : FANTASY_AUTHOR_OPTIONS
+                                            }
+                                            clearable
+                                            searchable
+                                        />
+                                    )}
+                                    {(value === 'designer' || value === 'admin') && (
+                                        <Select
+                                            label={t('gallery.filterAuthor')}
+                                            value={filterIDServer}
+                                            onChange={value => setFilterID(value)}
+                                            data={[]}
+                                            clearable
+                                            searchable
+                                        />
+                                    )}
+                                    {value !== 'fantasy' && (
+                                        <NativeSelect
+                                            label={t('gallery.sortBy.label')}
+                                            value={sortBy}
+                                            onChange={({ currentTarget: { value } }) =>
+                                                setSortBy(value as 'alphabetical' | 'update_time')
+                                            }
+                                            data={sortByOptions}
+                                        />
+                                    )}
+                                </Group>
+                            </RMSectionHeader>
+                            <SimpleGrid cols={{ base: 1, xs: 1, sm: 2, md: 3, lg: 4, xl: 5 }}>
+                                {Object.entries(data)
+                                    .filter(([_, metadata]) =>
+                                        !filterID ||
+                                        type === 'designer' ||
+                                        type === 'admin' ||
+                                        type === 'user' ||
+                                        !['real_world', 'fantasy'].includes(value) // designer, user, admin should never filter by contributor
+                                            ? true
+                                            : metadata.contributors.includes(filterID)
+                                    )
+                                    .filter(([_, metadata]) =>
+                                        filterIDServer === null ||
+                                        type === 'real_world' ||
+                                        type === 'fantasy' ||
+                                        type === 'user' ||
+                                        ['real_world', 'fantasy'].includes(value) // real_world, fantasy should never filter by server user
+                                            ? true
+                                            : (metadata as DesignerMetadata).userId === Number(filterIDServer)
+                                    )
+                                    .filter(([_, metadata]) =>
+                                        filterName === ''
+                                            ? true
+                                            : Object.values(metadata.name)
+                                                  .map(_ => (_ as string).toLowerCase())
+                                                  .join()
+                                                  .includes(filterName.toLowerCase())
+                                    )
+                                    .sort((a, b) =>
+                                        // https://stackoverflow.com/questions/59773396/why-array-prototype-sort-has-different-behavior-in-chrome
+                                        sortBy === 'alphabetical'
+                                            ? a[1].name.en.toLowerCase() > b[1].name.en.toLowerCase()
+                                                ? 1
+                                                : -1
+                                            : b[1].lastUpdateOn - a[1].lastUpdateOn
+                                    )
+                                    .map(([id, metadata]) => (
+                                        <TemplateCard
+                                            key={`${type}+${id}`}
+                                            type={type}
+                                            id={id}
+                                            metadata={metadata}
+                                            handleDetails={handleDetails}
+                                        />
+                                    ))}
+                                <Affix position={{ bottom: 20, right: 20 }} onClick={handleNew} zIndex={3}>
+                                    <ActionIcon
+                                        aria-label="new"
+                                        size="xl"
+                                        color={type === 'fantasy' ? 'red' : undefined}
+                                        variant="filled"
+                                    >
+                                        {type === 'fantasy' ? <IoMdHeart /> : <MdAdd />}
+                                    </ActionIcon>
+                                </Affix>
+                            </SimpleGrid>
+                        </RMSection>
+                    </Tabs.Panel>
+                ))}
             </Tabs>
             <DetailsModal
                 city={city}
@@ -408,6 +394,6 @@ export default function GalleryView() {
                 isOpen={isDetailsModalOpen}
                 onClose={() => setIsDetailsModalOpen(false)}
             />
-        </>
+        </RMPage>
     );
 }

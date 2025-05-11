@@ -1,5 +1,6 @@
-import { TextEncoder } from 'util';
-import { vi } from 'vitest';
+import { setupTest } from '@railmapgen/mantine-components/utils';
+
+setupTest();
 
 const originalFetch = global.fetch;
 global.fetch = vi.fn().mockImplementation((...args: any[]) => {
@@ -13,5 +14,3 @@ global.fetch = vi.fn().mockImplementation((...args: any[]) => {
         return originalFetch(args[0], args[1]);
     }
 });
-
-global.TextEncoder = TextEncoder;

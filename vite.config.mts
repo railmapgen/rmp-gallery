@@ -20,6 +20,7 @@ export default defineConfig({
                 manualChunks: {
                     react: ['react', 'react-dom', 'react-router-dom', '@reduxjs/toolkit', 'react-redux', 'react-i18next'],
                     chakra: ['@chakra-ui/react', '@emotion/react', '@emotion/styled', 'framer-motion', 'react-icons'],
+                    mantine: ['@mantine/core', '@mantine/hooks', '@railmapgen/mantine-components'],
                 },
             },
         },

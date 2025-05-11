@@ -1,0 +1,24 @@
+.tabs {
+    --tabs-display: flex !important;
+    --tabs-flex-direction: column !important;
+    overflow: hidden;
+}
+
+.tab {
+    font-weight: 500;
+}
+
+.tab-panel {
+    padding: var(--mantine-spacing-sm);
+    overflow-y: auto;
+}
+
+.tab-panel :global(.rm-section__header) {
+    padding: var(--mantine-spacing-sm) 0;
+    align-items: center;
+    top: calc(var(--mantine-spacing-sm) * -1);
+
+    & > div {
+        gap: var(--mantine-spacing-xs);
+    }
+}

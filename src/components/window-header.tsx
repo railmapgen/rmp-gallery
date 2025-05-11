@@ -1,12 +1,11 @@
-import { Heading, HStack, IconButton, Menu, MenuButton, MenuItem, MenuList } from '@chakra-ui/react';
-import { RmgEnvBadge, RmgWindowHeader } from '@railmapgen/rmg-components';
 import rmgRuntime from '@railmapgen/rmg-runtime';
-import { LanguageCode, LANGUAGE_NAMES, SUPPORTED_LANGUAGES } from '@railmapgen/rmg-translate';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { MdHelp, MdTranslate } from 'react-icons/md';
+import { MdOutlineHelpOutline } from 'react-icons/md';
 
 import AboutModal from './about';
+import { RMEnvBadge, RMWindowHeader } from '@railmapgen/mantine-components';
+import { ActionIcon, Title } from '@mantine/core';
 
 export default function WindowHeader() {
     const { t } = useTranslation();
@@ -16,39 +15,24 @@ export default function WindowHeader() {
 
     const [isAboutModalOpen, setIsAboutModalOpen] = React.useState(false);
 
-    const handleSelectLanguage = (language: LanguageCode) => {
-        rmgRuntime.setLanguage(language);
-        rmgRuntime.getI18nInstance().changeLanguage(language);
-    };
-
     return (
-        <RmgWindowHeader>
-            <Heading as="h4" size="md">
-                {t('header.about.rmpGallery')}
-            </Heading>
-            <RmgEnvBadge environment={environment} version={appVersion} />
+        <RMWindowHeader>
+            <Title>{t('header.about.rmpGallery')}</Title>
+            <RMEnvBadge env={environment} ver={appVersion} />
 
-            <HStack ml="auto">
-                <Menu>
-                    <MenuButton as={IconButton} icon={<MdTranslate />} variant="ghost" size="sm" />
-                    <MenuList>
-                        {(['en', 'zh-Hans', 'zh-Hant', 'ja', 'ko'] as LanguageCode[]).map(lang => (
-                            <MenuItem key={lang} onClick={() => handleSelectLanguage(lang)}>
-                                {LANGUAGE_NAMES[lang][lang]}
-                            </MenuItem>
-                        ))}
-                    </MenuList>
-                </Menu>
-                <IconButton
-                    size="sm"
-                    variant="ghost"
-                    aria-label="Help"
-                    icon={<MdHelp />}
-                    onClick={() => setIsAboutModalOpen(true)}
-                />
-            </HStack>
+            <ActionIcon
+                size="sm"
+                variant="subtle"
+                color="gray"
+                aria-label="Help"
+                title="help"
+                onClick={() => setIsAboutModalOpen(true)}
+                ml="auto"
+            >
+                <MdOutlineHelpOutline />
+            </ActionIcon>
 
             <AboutModal isOpen={isAboutModalOpen} onClose={() => setIsAboutModalOpen(false)} />
-        </RmgWindowHeader>
+        </RMWindowHeader>
     );
 }

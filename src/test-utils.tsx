@@ -6,6 +6,7 @@ import i18n from './i18n/config';
 import { Provider } from 'react-redux';
 import { createStore } from './redux';
 import { Store } from '@reduxjs/toolkit';
+import { MantineProvider } from '@mantine/core';
 
 interface CustomRenderOptions extends Omit<RenderOptions, 'wrapper'> {
     store: Store;
@@ -25,7 +26,9 @@ export const TestingProvider = (props: TestingProviderProps) => {
 
     return (
         <I18nextProvider i18n={i18n}>
-            <Provider store={store}>{children}</Provider>
+            <Provider store={store}>
+                <MantineProvider>{children}</MantineProvider>
+            </Provider>
         </I18nextProvider>
     );
 };

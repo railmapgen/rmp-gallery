@@ -1,0 +1,35 @@
+.image {
+    border-radius: var(--mantine-radius-md);
+}
+
+.list-item {
+    width: 100%;
+}
+
+.list-item-label {
+    display: flex;
+    flex: 1;
+
+    & a {
+        color: var(--mantine-color-text);
+    }
+
+    & .date {
+        margin-left: auto;
+    }
+}
+
+.avatar {
+    cursor: pointer;
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    background: var(--mantine-color-body);
+    padding: var(--mantine-spacing-xs) 0;
+
+    > button:first-of-type {
+        margin-left: auto;
+    }
+}

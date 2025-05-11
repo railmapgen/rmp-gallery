@@ -5,6 +5,9 @@ export enum Events {
     UPLOAD_TEMPLATES = 'UPLOAD_TEMPLATES',
 }
 
+export const TAB_TYPES = ['real_world', 'fantasy', 'designer', 'user', 'admin'] as const;
+export type TabType = (typeof TAB_TYPES)[number];
+
 export const GITHUB_ISSUE_HEADER = 'Hi RMP team! I would like to contribute to the gallery with the data below.';
 export const GITHUB_ISSUE_PREAMBLE = '**Paste or Upload below. They are meant for BOTS ONLY!!!**';
 

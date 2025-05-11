@@ -1,21 +1,3 @@
-import {
-    Button,
-    Code,
-    Divider,
-    Flex,
-    HStack,
-    Input,
-    Modal,
-    ModalBody,
-    ModalCloseButton,
-    ModalContent,
-    ModalFooter,
-    ModalHeader,
-    ModalOverlay,
-    SystemStyleObject,
-    Text,
-} from '@chakra-ui/react';
-import { RmgDebouncedTextarea, RmgFields, RmgFieldsField, RmgLabel, RmgPage } from '@railmapgen/rmg-components';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { useLocation, useNavigate } from 'react-router-dom';
@@ -23,22 +5,8 @@ import { useRootSelector } from '../redux';
 import { GITHUB_ISSUE_HEADER, GITHUB_ISSUE_PREAMBLE, MetadataDetail } from '../util/constant';
 import { downloadAs, makeGitHubIssueDetails, readFileAsText } from '../util/utils';
 import MultiLangEntryCard from './multi-lang-entry-card';
-
-const styles: SystemStyleObject = {
-    px: 2,
-    pt: 2,
-    width: { base: '100%', md: 520 },
-
-    '& > div:first-of-type': {
-        flexDirection: 'column',
-        flex: 1,
-        overflowY: 'auto',
-    },
-
-    '& > div:nth-of-type(2)': {
-        my: 2,
-    },
-};
+import { Button, Code, Divider, Group, Modal, NativeSelect, Stack, Text, Textarea, TextInput } from '@mantine/core';
+import { RMPage, RMPageBody, RMPageFooter } from '@railmapgen/mantine-components';
 
 export default function Ticket() {
     const {
@@ -117,82 +85,20 @@ export default function Ticket() {
         window.open('https://github.com/railmapgen/rmp-gallery/issues/new?' + fileParam.toString(), '_blank');
     };
 
-    const fileField: RmgFieldsField[] = [
-        {
-            type: 'custom',
-            label: t('ticket.file'),
-            component: <Input variant="flushed" size="xs" type="file" accept=".json" onChange={handleFileUpload} />,
-            minW: 250,
-        },
-    ];
-    const realWorldFields: RmgFieldsField[] = [
-        {
-            type: 'input',
-            label: t('ticket.link'),
-            placeholder: t('ticket.linkPlaceHolder'),
-            value: metadata.reference,
-            onChange: value => setMetadata({ ...metadata, reference: value }),
-            minW: 250,
-        },
-        {
-            type: 'input',
-            label: t('ticket.justification'),
-            placeholder: t('ticket.justificationPlaceHolder'),
-            // Enforce a pure English update history.
-            validator: val => /^[a-zA-Z0-9. -]+$/.test(val),
-            value: metadata.justification,
-            onChange: value => setMetadata({ ...metadata, justification: value }),
-            minW: 250,
-        },
-    ];
     const [donationDate, setDonationDate] = React.useState(new Date());
     const [donationChannel, setDonationChannel] = React.useState('');
     React.useEffect(() => {
         if (type === 'fantasy') setMetadata({ ...metadata, reference: `${donationChannel},${donationDate}` });
     }, [donationDate, donationChannel]);
-    const fantasyFields: RmgFieldsField[] = [
-        {
-            type: 'input',
-            label: t('ticket.donationDate'),
-            variant: 'date',
-            value: donationDate.toJSON().slice(0, 10),
-            onChange: value => setDonationDate(new Date(value)),
-            minW: 250,
-        },
-        {
-            type: 'input',
-            label: t('ticket.donation'),
-            placeholder: t('ticket.donationPlaceHolder'),
-            value: donationChannel,
-            isDisabled: id !== undefined,
-            onChange: value => setDonationChannel(value),
-            optionList: ['Open Collective', '爱发电'],
-            minW: 250,
-        },
-        {
-            type: 'select',
-            label: t('ticket.remainingUpdateCount'),
-            value: metadata.remainingUpdateCount,
-            isDisabled: id !== undefined,
-            options: { 0: t('donation.noUpdates'), '-1': t('donation.unlimitedUpdates') },
-            onChange: value => setMetadata({ ...metadata, remainingUpdateCount: value as number }),
-            minW: 250,
-        },
-        {
-            type: 'input',
-            label: t('ticket.reasonOptional'),
-            placeholder: t('ticket.reasonPlaceHolder'),
-            value: metadata.justification,
-            onChange: value => setMetadata({ ...metadata, justification: value }),
-            minW: 250,
-        },
+    const fantasyFields = [
+        // legacy fields for reference only
         {
             type: 'input',
             label: t('ticket.earlyBirdIssue'),
             placeholder: t('ticket.earlyBirdIssuePlaceHolder'),
             value: metadata.earlyBirdIssue ?? '',
             isDisabled: id !== undefined,
-            onChange: value => setMetadata({ ...metadata, earlyBirdIssue: value }),
+            onChange: (value: string) => setMetadata({ ...metadata, earlyBirdIssue: value }),
             minW: 250,
             hidden: true,
         },
@@ -201,23 +107,100 @@ export default function Ticket() {
             label: t('ticket.personalizedLink'),
             placeholder: t('ticket.personalizedLinkPlaceHolder'),
             // Enforce a valid personalized link.
-            validator: val => /^[a-zA-Z0-9]{5,20}$/.test(val),
+            validator: (val: string) => /^[a-zA-Z0-9]{5,20}$/.test(val),
             value: id ?? metadata.personalizedLink ?? '',
             isDisabled: id !== undefined,
-            onChange: value => setMetadata({ ...metadata, personalizedLink: value }),
+            onChange: (value: string) => setMetadata({ ...metadata, personalizedLink: value }),
             minW: 250,
             hidden: true,
         },
     ];
 
     return (
-        <RmgPage sx={styles}>
-            <Flex>
-                <RmgFields fields={fileField} />
-                {type === 'real_world' && <RmgFields fields={realWorldFields} />}
-                {type === 'fantasy' && <RmgFields fields={fantasyFields} />}
-                <RmgLabel label={t('ticket.cityName')}>
+        <RMPage w={{ base: '100%', sm: 600 }} style={{ alignSelf: 'center' }}>
+            <RMPageBody>
+                <Stack flex={1} gap="xs">
+                    <TextInput type="file" label={t('ticket.file')} accept=".json" onChange={handleFileUpload} />
+                    {type === 'real_world' && (
+                        <>
+                            <TextInput
+                                label={t('ticket.link')}
+                                placeholder={t('ticket.linkPlaceHolder')}
+                                value={metadata.reference}
+                                onChange={({ currentTarget: { value } }) =>
+                                    setMetadata(prevState => ({
+                                        ...prevState,
+                                        reference: value,
+                                    }))
+                                }
+                            />
+                            <TextInput
+                                label={t('ticket.justification')}
+                                placeholder={t('ticket.justificationPlaceHolder')}
+                                value={metadata.justification}
+                                onChange={({ currentTarget: { value } }) =>
+                                    setMetadata(prevState => ({
+                                        ...prevState,
+                                        justification: value,
+                                    }))
+                                }
+                                error={
+                                    !/^[a-zA-Z0-9. -]+$/.test(metadata.justification)
+                                        ? 'Non-English characters are not allowed.'
+                                        : undefined
+                                }
+                            />
+                        </>
+                    )}
+                    {type === 'fantasy' && (
+                        <>
+                            <Group gap="xs" grow>
+                                <TextInput
+                                    type="date"
+                                    label={t('ticket.donationDate')}
+                                    value={donationDate.toJSON().slice(0, 10)}
+                                    onChange={({ currentTarget: { value } }) => setDonationDate(new Date(value))}
+                                />
+                                <NativeSelect
+                                    label={t('ticket.donation')}
+                                    data={['', 'Open Collective', '爱发电']}
+                                    value={donationChannel}
+                                    onChange={({ currentTarget: { value } }) => setDonationChannel(value)}
+                                    disabled={id !== undefined}
+                                />
+                            </Group>
+                            <Group gap="xs" grow>
+                                <NativeSelect
+                                    label={t('ticket.remainingUpdateCount')}
+                                    data={[
+                                        { value: '0', label: t('donation.noUpdates') },
+                                        { value: '-1', label: t('donation.unlimitedUpdates') },
+                                    ]}
+                                    value={metadata.remainingUpdateCount}
+                                    onChange={({ currentTarget: { value } }) =>
+                                        setMetadata(prevState => ({
+                                            ...prevState,
+                                            remainingUpdateCount: Number(value),
+                                        }))
+                                    }
+                                    disabled={id !== undefined}
+                                />
+                                <TextInput
+                                    label={t('ticket.reasonOptional')}
+                                    placeholder={t('ticket.reasonPlaceHolder')}
+                                    value={metadata.justification}
+                                    onChange={({ currentTarget: { value } }) =>
+                                        setMetadata(prevState => ({
+                                            ...prevState,
+                                            justification: value,
+                                        }))
+                                    }
+                                />
+                            </Group>
+                        </>
+                    )}
                     <MultiLangEntryCard
+                        label={t('ticket.cityName')}
                         inputType="input"
                         translations={Object.entries(metadata.name)}
                         onUpdate={(lang, name) =>
@@ -235,9 +218,8 @@ export default function Ticket() {
                             setMetadata(metadataCopy);
                         }}
                     />
-                </RmgLabel>
-                <RmgLabel label={t('ticket.description')}>
                     <MultiLangEntryCard
+                        label={t('ticket.description')}
                         inputType="textarea"
                         translations={Object.entries(metadata.desc)}
                         onUpdate={(lang, desc) =>
@@ -255,19 +237,20 @@ export default function Ticket() {
                             setMetadata(metadataCopy);
                         }}
                     />
-                </RmgLabel>
-            </Flex>
+                </Stack>
+            </RMPageBody>
 
-            <Flex>
-                <Button size="sm" onClick={handleBack}>
-                    {t('ticket.back')}
-                </Button>
+            <Divider />
 
-                <HStack ml="auto">
+            <RMPageFooter>
+                <Group flex={1} gap="sm">
+                    <Button variant="default" onClick={handleBack}>
+                        {t('ticket.back')}
+                    </Button>
+
                     <Button
-                        size="sm"
-                        colorScheme="primary"
-                        isDisabled={
+                        ml="auto"
+                        disabled={
                             param === '' ||
                             metadata.reference === '' ||
                             (type === 'real_world' &&
@@ -282,50 +265,49 @@ export default function Ticket() {
                     >
                         {t('ticket.submit')}
                     </Button>
-                </HStack>
-            </Flex>
+                </Group>
+            </RMPageFooter>
 
-            <Modal isOpen={isSubmitModalOpen} onClose={() => setIsSubmitModalOpen(false)}>
-                <ModalOverlay />
-                <ModalContent>
-                    <ModalHeader>{t('ticket.submitTemplate')}</ModalHeader>
-                    <ModalCloseButton />
-                    <ModalBody>
-                        {issueBody.length < 100 * 100 ? (
-                            <>
-                                <Text>{t('ticket.instruction')}</Text>
-                                <Divider mt="2" mb="4" />
-                                <RmgDebouncedTextarea
-                                    ref={textareaRef}
-                                    isReadOnly
-                                    defaultValue={issueBody}
-                                    onClick={({ target }) => (target as HTMLTextAreaElement).select()}
-                                />
-                            </>
-                        ) : (
-                            <>
-                                <Text>{t('ticket.instructionFile')}</Text>
-                                <Text>
-                                    {t('ticket.instructionFileHint1')}
-                                    <Code>{t('Uploading your files... (1/1)')}</Code>
-                                    {t('ticket.instructionFileHint2')}
-                                </Text>
-                            </>
-                        )}
-                    </ModalBody>
-                    <ModalFooter>
-                        {issueBody.length < 100 * 100 ? (
-                            <Button colorScheme="primary" onClick={handleNew}>
-                                {t('ticket.openIssue')}
-                            </Button>
-                        ) : (
-                            <Button colorScheme="primary" onClick={handleDownload}>
-                                {t('ticket.download')}
-                            </Button>
-                        )}
-                    </ModalFooter>
-                </ModalContent>
+            <Modal
+                opened={isSubmitModalOpen}
+                onClose={() => setIsSubmitModalOpen(false)}
+                title={t('ticket.submitTemplate')}
+            >
+                {issueBody.length < 100 * 100 ? (
+                    <>
+                        <Text>{t('ticket.instruction')}</Text>
+                        <Textarea
+                            ref={textareaRef}
+                            readOnly
+                            defaultValue={issueBody}
+                            onClick={({ target }) => (target as HTMLTextAreaElement).select()}
+                            mt="xs"
+                            autosize
+                            maxRows={3}
+                        />
+                    </>
+                ) : (
+                    <>
+                        <Text>{t('ticket.instructionFile')}</Text>
+                        <Text mt="xs">
+                            {t('ticket.instructionFileHint1')}
+                            <Code>{t('Uploading your files... (1/1)')}</Code>
+                            {t('ticket.instructionFileHint2')}
+                        </Text>
+                    </>
+                )}
+                <Group gap="sm" pt="xs">
+                    {issueBody.length < 100 * 100 ? (
+                        <Button ml="auto" onClick={handleNew}>
+                            {t('ticket.openIssue')}
+                        </Button>
+                    ) : (
+                        <Button ml="auto" onClick={handleDownload}>
+                            {t('ticket.download')}
+                        </Button>
+                    )}
+                </Group>
             </Modal>
-        </RmgPage>
+        </RMPage>
     );
 }

@@ -1,0 +1,31 @@
+.body {
+    flex-direction: column;
+    /*padding: 0 var(--mantine-spacing-xs) var(--mantine-spacing-xs) var(--mantine-spacing-xs);*/
+    overflow-y: auto;
+
+    > div:not(:first-of-type) {
+        margin-top: var(--mantine-spacing-sm)
+    }
+}
+
+.dev-section-body {
+    flex-direction: column;
+    gap: var(--mantine-spacing-xs);
+    align-items: center;
+}
+
+.dev-card {
+    width: 400px;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: var(--mantine-shadow-sm);
+
+    > div:first-of-type {
+        margin-right: var(--mantine-spacing-lg);
+    }
+
+    > div:last-of-type {
+        flex-direction: column;
+    }
+}

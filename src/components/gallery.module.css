@@ -9,16 +9,20 @@
 }
 
 .tab-panel {
-    padding: var(--mantine-spacing-sm);
+    padding: 0 var(--mantine-spacing-sm);
+    padding-bottom: var(--mantine-spacing-sm);
     overflow-y: auto;
 }
 
 .tab-panel :global(.rm-section__header) {
     padding: var(--mantine-spacing-sm) 0;
     align-items: center;
-    top: calc(var(--mantine-spacing-sm) * -1);
 
     & > div {
         gap: var(--mantine-spacing-xs);
     }
+}
+
+.notification {
+    margin-top: var(--mantine-spacing-sm);
 }

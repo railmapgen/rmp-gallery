@@ -1,11 +1,11 @@
 import classes from './details.module.css';
-import { useToast } from '@chakra-ui/react';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { BiImport } from 'react-icons/bi';
 import { IoHeartOutline, IoStarOutline } from 'react-icons/io5';
 import {
+    MdCheck,
     MdOutlineBlock,
     MdOutlineCheckCircleOutline,
     MdOutlineDownload,
@@ -39,6 +39,8 @@ const RMP_MASTER_CHANNEL_NAME = 'RMP_MASTER_CHANNEL';
 const RMP_MASTER_CHANNEL_POST = 'MASTER_POST';
 const CHN_MASTER = new BroadcastChannel(RMP_MASTER_CHANNEL_NAME);
 
+type ButtonLoadingState = 'IDLE' | 'LOADING' | 'COMPLETE';
+
 const DetailsModal = (props: {
     city: string;
     type: TabType;
@@ -48,7 +50,6 @@ const DetailsModal = (props: {
 }) => {
     const { city, type, userRole, isOpen, onClose } = props;
     const navigate = useNavigate();
-    const toast = useToast();
     const { t } = useTranslation();
     const { rmtToken } = useRootSelector(state => state.app);
     const translateName = useTranslatedName();
@@ -69,7 +70,7 @@ const DetailsModal = (props: {
         reference: '',
         updateHistory: [],
     });
-    const [isVisibleOpen, setIsVisibleOpen] = React.useState(false);
+    const [shareState, setShareState] = React.useState<ButtonLoadingState>('IDLE');
 
     const fetchServerById = async () => {
         if (!rmtToken) return;
@@ -101,7 +102,6 @@ const DetailsModal = (props: {
     };
 
     React.useEffect(() => {
-        setIsVisibleOpen(false);
         if (type === 'real_world' || type === 'fantasy') {
             fetch(`resources/metadata/${city}.json`)
                 .then(res => res.json())
@@ -131,22 +131,22 @@ const DetailsModal = (props: {
     const handleOpenTemplate = () => {
         if (type === 'real_world' || type === 'fantasy') {
             CHN.postMessage({ event: RMP_GALLERY_CHANNEL_EVENT, data: city });
-            toast({
-                title: t(`Template ${city} imported in Rail Map Painter.`),
-                status: 'success' as const,
+            rmgRuntime.sendNotification({
+                title: t('Success'),
+                message: t(`Template ${city} imported in Rail Map Painter.`),
+                type: 'success',
                 duration: 9000,
-                isClosable: true,
             });
         } else {
             CHN.postMessage({
                 event: RMP_GALLERY_CHANNEL_DESIGNER_OPEN_EVENT,
                 data: (metadata as DesignerDetails).data,
             });
-            toast({
-                title: t(`Template ${translateName(metadata.name)} imported in RMP Designer.`),
-                status: 'success' as const,
+            rmgRuntime.sendNotification({
+                title: t('Success'),
+                message: t(`Template ${translateName(metadata.name)} imported in RMP Designer.`),
+                type: 'success',
                 duration: 9000,
-                isClosable: true,
             });
         }
         onClose();
@@ -167,31 +167,24 @@ const DetailsModal = (props: {
             method: 'PATCH',
         });
         if (rep.status !== 200) {
-            toast({
-                title: `Failed: ${rep.status} ${rep.statusText}`,
-                status: 'error' as const,
+            rmgRuntime.sendNotification({
+                title: t('Error'),
+                message: `Failed: ${rep.status} ${rep.statusText}`,
+                type: 'error',
                 duration: 9000,
-                isClosable: true,
             });
             return;
         }
-        toast({
-            title: `Success!`,
-            status: 'success' as const,
+        rmgRuntime.sendNotification({
+            title: t('Success'),
+            message: `Success!`,
+            type: 'success',
             duration: 9000,
-            isClosable: true,
         });
-        setIsVisibleOpen(false);
         onClose();
     };
 
     const rmpShareLink = `https://${window.location.host}/?app=rmp&searchParams=${city}`;
-    const rmpShareLinkClickedToast = {
-        title: t('Link copied.'),
-        status: 'success' as const,
-        duration: 9000,
-        isClosable: true,
-    };
 
     const handleMasterImport = () => {
         if (isMasterImport && (metadata as DesignerDetails).data !== undefined) {
@@ -302,17 +295,23 @@ const DetailsModal = (props: {
                         <ActionIcon aria-label="Favorite" variant="default" disabled>
                             <IoStarOutline />
                         </ActionIcon>
-                        <Tooltip label={rmpShareLink}>
+                        <Tooltip label={shareState === 'COMPLETE' ? t('Link copied.') : rmpShareLink}>
                             <ActionIcon
                                 aria-label="Share"
-                                variant="default"
+                                variant={shareState === 'COMPLETE' ? 'filled' : 'default'}
                                 disabled={type === 'admin' || type === 'designer' || type === 'user'}
-                                onClick={() => {
-                                    navigator.clipboard.writeText(rmpShareLink);
-                                    toast(rmpShareLinkClickedToast);
+                                onClick={async () => {
+                                    setShareState('LOADING');
+                                    await navigator.clipboard.writeText(rmpShareLink);
+                                    setShareState('COMPLETE');
+                                    setTimeout(() => {
+                                        setShareState('IDLE');
+                                    }, 2000);
                                 }}
+                                color={shareState === 'COMPLETE' ? 'green' : undefined}
+                                loading={shareState === 'LOADING'}
                             >
-                                <MdShare />
+                                {shareState === 'COMPLETE' ? <MdCheck /> : <MdShare />}
                             </ActionIcon>
                         </Tooltip>
                         <Tooltip label={t('details.edit')}>
@@ -328,33 +327,35 @@ const DetailsModal = (props: {
                                 <MdOutlineEdit />
                             </ActionIcon>
                         </Tooltip>
-                        <Menu>
-                            <Menu.Target>
-                                <ActionIcon aria-label="Change status" variant="default">
-                                    <MdOutlineVisibility />
-                                </ActionIcon>
-                            </Menu.Target>
-                            <Menu.Dropdown>
-                                <Menu.Item
-                                    leftSection={<MdOutlineCheckCircleOutline />}
-                                    onClick={() => handleChangeStatus('public')}
-                                >
-                                    Public
-                                </Menu.Item>
-                                <Menu.Item
-                                    leftSection={<MdOutlinePauseCircleOutline />}
-                                    onClick={() => handleChangeStatus('pending')}
-                                >
-                                    Pending
-                                </Menu.Item>
-                                <Menu.Item
-                                    leftSection={<MdOutlineBlock />}
-                                    onClick={() => handleChangeStatus('rejected')}
-                                >
-                                    Rejected
-                                </Menu.Item>
-                            </Menu.Dropdown>
-                        </Menu>
+                        {userRole === 'ADMIN' && (
+                            <Menu>
+                                <Menu.Target>
+                                    <ActionIcon aria-label="Change status" variant="default">
+                                        <MdOutlineVisibility />
+                                    </ActionIcon>
+                                </Menu.Target>
+                                <Menu.Dropdown>
+                                    <Menu.Item
+                                        leftSection={<MdOutlineCheckCircleOutline />}
+                                        onClick={() => handleChangeStatus('public')}
+                                    >
+                                        Public
+                                    </Menu.Item>
+                                    <Menu.Item
+                                        leftSection={<MdOutlinePauseCircleOutline />}
+                                        onClick={() => handleChangeStatus('pending')}
+                                    >
+                                        Pending
+                                    </Menu.Item>
+                                    <Menu.Item
+                                        leftSection={<MdOutlineBlock />}
+                                        onClick={() => handleChangeStatus('rejected')}
+                                    >
+                                        Rejected
+                                    </Menu.Item>
+                                </Menu.Dropdown>
+                            </Menu>
+                        )}
                         <Tooltip label={t('details.download')}>
                             {type === 'real_world' || type === 'fantasy' ? (
                                 <ActionIcon

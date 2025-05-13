@@ -22,7 +22,7 @@ export const TemplateCard = (props: {
     };
 
     return (
-        <Card className={classes.card}>
+        <Card className={classes.card} withBorder>
             <Card.Section>
                 {/* Using native img due to: https://bugzilla.mozilla.org/show_bug.cgi?id=1647077 */}
                 {type === 'real_world' || type === 'fantasy' ? (

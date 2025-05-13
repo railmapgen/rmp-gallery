@@ -23,7 +23,7 @@ const AboutModal = (props: { isOpen: boolean; onClose: () => void }) => {
                 <Group>
                     <Image w={128} src="/rmp-gallery/logo192.png" />
                     <Stack gap="sm">
-                        <Text size="xl" component="b">
+                        <Text size="xl" fw={500}>
                             {t('header.about.rmpGallery')}
                         </Text>
                         <Text>{appVersion}</Text>

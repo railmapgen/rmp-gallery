@@ -254,6 +254,7 @@ export default function GalleryView() {
                                     color="yellow"
                                     title={t('gallery.warning')}
                                     withCloseButton={false}
+                                    withBorder
                                     className={classes.notification}
                                 >
                                     {t('gallery.noTravelAdvice')}

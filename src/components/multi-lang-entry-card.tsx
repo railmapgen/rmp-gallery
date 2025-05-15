@@ -2,7 +2,7 @@ import { MdAdd, MdDeleteOutline } from 'react-icons/md';
 import { useTranslation } from 'react-i18next';
 import { LANGUAGE_NAMES, LanguageCode } from '@railmapgen/rmg-translate';
 import useTranslatedName from './hooks/use-translated-name';
-import { ActionIcon, Box, Fieldset, Flex, Group, Select, Textarea, TextInput } from '@mantine/core';
+import { ActionIcon, Box, Fieldset, Flex, Group, Select, Stack, Textarea, TextInput } from '@mantine/core';
 
 interface MultiLangEntryCardProps {
     label: string;
@@ -20,7 +20,7 @@ export const MultiLangEntryCardInner = (props: MultiLangEntryCardProps) => {
     const { t } = useTranslation();
     const translateName = useTranslatedName();
 
-    const TextBox = inputType === 'textarea' ? Textarea : TextInput;
+    const Wrapper = inputType === 'textarea' ? Stack : Group;
 
     const languageOptions = Object.entries(LANGUAGE_NAMES).map(([lang, name]) => ({
         value: lang,
@@ -38,8 +38,8 @@ export const MultiLangEntryCardInner = (props: MultiLangEntryCardProps) => {
     return (
         <Fieldset legend={label}>
             {entries.map(([lang, name], idx, arr) => (
-                <Flex key={idx} pt={4} align="center" data-testid={'entry-card-stack-' + lang}>
-                    <Group gap="xs" flex={1} grow>
+                <Flex key={idx} pt="xs" align="center" data-testid={'entry-card-stack-' + lang}>
+                    <Wrapper gap="xs" flex={1} grow>
                         <Select
                             size="xs"
                             aria-label={t('multiLangEntry.lang')}
@@ -48,14 +48,26 @@ export const MultiLangEntryCardInner = (props: MultiLangEntryCardProps) => {
                             data={languageOptions}
                             searchable
                         />
-                        <TextBox
-                            size="xs"
-                            aria-label={t('multiLangEntry.name')}
-                            placeholder={t('multiLangEntry.name')}
-                            value={name}
-                            onChange={({ currentTarget: { value } }) => onUpdate(lang, value)}
-                        />
-                    </Group>
+                        {inputType === 'textarea' ? (
+                            <Textarea
+                                size="xs"
+                                aria-label={t('multiLangEntry.name')}
+                                placeholder={t('multiLangEntry.name')}
+                                value={name}
+                                onChange={({ currentTarget: { value } }) => onUpdate(lang, value)}
+                                rows={3}
+                                resize="vertical"
+                            />
+                        ) : (
+                            <TextInput
+                                size="xs"
+                                aria-label={t('multiLangEntry.name')}
+                                placeholder={t('multiLangEntry.name')}
+                                value={name}
+                                onChange={({ currentTarget: { value } }) => onUpdate(lang, value)}
+                            />
+                        )}
+                    </Wrapper>
                     <Flex ml={8} wrap="nowrap">
                         {idx === arr.length - 1 ? (
                             <ActionIcon

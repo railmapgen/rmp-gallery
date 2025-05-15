@@ -5,6 +5,8 @@ on:
   workflow_run:
     workflows: ["Build and Release"]  # Name of the workflow to listen to
     types: [completed]                # Trigger when the workflow finishes
+    branches:
+      - "main"
 
 jobs:
   release:

@@ -1,6 +1,6 @@
 .tabs {
-    --tabs-display: flex !important;
-    --tabs-flex-direction: column !important;
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
 }
 

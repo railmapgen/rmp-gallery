@@ -1,3 +1,4 @@
+import './index.css';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { StrictMode } from 'react';
 import { createRoot, Root } from 'react-dom/client';
@@ -5,7 +6,6 @@ import { I18nextProvider } from 'react-i18next';
 import { Provider } from 'react-redux';
 import AppRoot from './components/app-root';
 import i18n from './i18n/config';
-import './index.css';
 import store from './redux';
 import initStore from './redux/init';
 import { Events } from './util/constant';

@@ -1,8 +1,8 @@
 {
     "svgViewBoxZoom": 70,
     "svgViewBoxMin": {
-        "x": -721.0908749999987,
-        "y": -102.29326562500017
+        "x": -445.9708005371084,
+        "y": -454.893254943848
     },
     "graph": {
         "options": {
@@ -1222,7 +1222,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 215,
+                    "x": 220,
                     "y": -50,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
@@ -3500,7 +3500,7 @@
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
-                        "open": true
+                        "open": false
                     }
                 }
             },
@@ -6065,7 +6065,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 375,
+                    "x": 370,
                     "y": 0,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
@@ -8212,7 +8212,8 @@
                         ],
                         "rotate": 0,
                         "italic": "normal",
-                        "bold": "normal"
+                        "bold": "normal",
+                        "outline": 0
                     }
                 }
             },
@@ -8239,7 +8240,8 @@
                         ],
                         "rotate": 0,
                         "italic": "normal",
-                        "bold": "normal"
+                        "bold": "normal",
+                        "outline": 0
                     }
                 }
             },
@@ -8266,7 +8268,8 @@
                         ],
                         "rotate": 0,
                         "italic": "normal",
-                        "bold": "normal"
+                        "bold": "normal",
+                        "outline": 0
                     }
                 }
             },
@@ -8293,7 +8296,8 @@
                         ],
                         "rotate": 0,
                         "italic": "normal",
-                        "bold": "normal"
+                        "bold": "normal",
+                        "outline": 0
                     }
                 }
             },
@@ -8320,7 +8324,8 @@
                         ],
                         "rotate": 0,
                         "italic": "normal",
-                        "bold": "normal"
+                        "bold": "normal",
+                        "outline": 0
                     }
                 }
             },
@@ -8347,7 +8352,8 @@
                         ],
                         "rotate": 0,
                         "italic": "normal",
-                        "bold": "normal"
+                        "bold": "normal",
+                        "outline": 0
                     }
                 }
             },
@@ -8467,7 +8473,7 @@
                     "visible": true,
                     "zIndex": 5,
                     "x": 0,
-                    "y": -20,
+                    "y": -15,
                     "type": "facilities",
                     "facilities": {
                         "type": "tiananmen"
@@ -8755,7 +8761,8 @@
                         ],
                         "rotate": 0,
                         "italic": "normal",
-                        "bold": "normal"
+                        "bold": "normal",
+                        "outline": 0
                     }
                 }
             },
@@ -8782,7 +8789,8 @@
                         ],
                         "rotate": 0,
                         "italic": "normal",
-                        "bold": "normal"
+                        "bold": "normal",
+                        "outline": 0
                     }
                 }
             },
@@ -8809,7 +8817,8 @@
                         ],
                         "rotate": 0,
                         "italic": "normal",
-                        "bold": "normal"
+                        "bold": "normal",
+                        "outline": 0
                     }
                 }
             },
@@ -9076,6 +9085,62 @@
                             "#bd6f16",
                             "#fff"
                         ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_jbzzWvZj46",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 6,
+                    "x": -495,
+                    "y": -9.75,
+                    "type": "text",
+                    "text": {
+                        "content": "████████",
+                        "fontSize": 6,
+                        "lineHeight": 16,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "en",
+                        "color": [
+                            "other",
+                            "other",
+                            "#ffffff",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_X6-xHdU9kF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 7,
+                    "x": -495,
+                    "y": -9,
+                    "type": "text",
+                    "text": {
+                        "content": "（施工封闭）",
+                        "fontSize": 6,
+                        "lineHeight": 16,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "zh",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
                     }
                 }
             }
@@ -22716,5 +22781,5 @@
             }
         ]
     },
-    "version": 43
+    "version": 53
 }

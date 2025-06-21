@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 170,
+    "svgViewBoxZoom": 50,
     "svgViewBoxMin": {
-        "x": 100.24999999999893,
-        "y": 364.7500000000107
+        "x": 352.34999999999764,
+        "y": 100.35000000001065
     },
     "graph": {
         "options": {
@@ -810,6 +810,15 @@
                                     "GF",
                                     "18",
                                     "gz"
+                                ],
+                                [
+                                    "guangzhou",
+                                    "gz10",
+                                    "#7d9cc0",
+                                    "#fff",
+                                    "10",
+                                    "01",
+                                    "gz"
                                 ]
                             ],
                             []
@@ -1604,7 +1613,7 @@
                     "visible": true,
                     "zIndex": 5,
                     "x": 475,
-                    "y": -140,
+                    "y": -175,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -2477,6 +2486,15 @@
                                     "7",
                                     "09",
                                     "gz"
+                                ],
+                                [
+                                    "guangzhou",
+                                    "gz12",
+                                    "#59621d",
+                                    "#fff",
+                                    "12",
+                                    "25",
+                                    "gz"
                                 ]
                             ],
                             []
@@ -3022,7 +3040,7 @@
                     "visible": true,
                     "zIndex": 5,
                     "x": 1245,
-                    "y": 155,
+                    "y": 185,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -6856,6 +6874,54 @@
                         "italic": "normal",
                         "bold": "normal",
                         "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_ugX3xu0TGi",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 475,
+                    "y": -190,
+                    "type": "gzmtr-line-badge",
+                    "gzmtr-line-badge": {
+                        "names": [
+                            "广州10号线",
+                            "Guangzhou Line 10"
+                        ],
+                        "color": [
+                            "other",
+                            "other",
+                            "#555555",
+                            "#fff"
+                        ],
+                        "tram": false,
+                        "span": true
+                    }
+                }
+            },
+            {
+                "key": "misc_node_lylhoJJ8uH",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 1245,
+                    "y": 175,
+                    "type": "gzmtr-line-badge",
+                    "gzmtr-line-badge": {
+                        "names": [
+                            "广州12号线",
+                            "Guangzhou Line 12"
+                        ],
+                        "color": [
+                            "other",
+                            "other",
+                            "#555555",
+                            "#fff"
+                        ],
+                        "tram": false,
+                        "span": true
                     }
                 }
             }
@@ -11535,5 +11601,5 @@
             }
         ]
     },
-    "version": 50
+    "version": 53
 }

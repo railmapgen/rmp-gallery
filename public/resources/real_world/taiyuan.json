@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 334,
+    "svgViewBoxZoom": 44,
     "svgViewBoxMin": {
-        "x": -3257.4900000000557,
-        "y": -1171.1800000000117
+        "x": 148.3499999999483,
+        "y": 1398.1399999999883
     },
     "graph": {
         "options": {
@@ -414,20 +414,20 @@
             {
                 "key": "stn_ql9301bUyA",
                 "attributes": {
-                    "bjsubway-basic": {
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "names": [
-                            "化章西街",
-                            "Huazhang West Street"
-                        ],
-                        "open": false
-                    },
                     "type": "bjsubway-basic",
                     "visible": true,
                     "x": 330,
                     "y": 1582.25,
-                    "zIndex": 5
+                    "zIndex": 5,
+                    "bjsubway-basic": {
+                        "names": [
+                            "化章西街",
+                            "Huazhang West Street"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "open": true
+                    }
                 }
             },
             {
@@ -795,8 +795,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -400,
-                    "y": 575,
+                    "x": -400.34,
+                    "y": 573.98,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
                         "num": 1,
@@ -3477,5 +3477,5 @@
             }
         ]
     },
-    "version": 50
+    "version": 53
 }

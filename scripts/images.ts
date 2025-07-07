@@ -25,11 +25,8 @@ export const makeImage = async (filePath: string) => {
     await driver.findElement(By.xpath(uploadMenuButtonXPath)).sendKeys(filePath);
 
     const confirmButtonXPath = '//*[@id="confirm_overwrite"]';
-    const confirmButtons = await driver.findElements(By.xpath(confirmButtonXPath));
-    // sometimes the confirm button is not there, don't know why yet
-    if (confirmButtons.length > 0) {
-        await confirmButtons[0].click();
-    }
+    await driver.wait(until.elementLocated(By.xpath(confirmButtonXPath)), 10000);
+    await driver.findElement(By.xpath(confirmButtonXPath)).click();
 
     await new Promise(r => setTimeout(r, 1000)); // wait a second to be fully loaded
 

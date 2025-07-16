@@ -1,0 +1,385 @@
+{
+    "svgViewBoxZoom": 90,
+    "svgViewBoxMin": {
+        "x": 88.09999999999945,
+        "y": 18.700000000000017
+    },
+    "graph": {
+        "options": {
+            "type": "directed",
+            "multi": true,
+            "allowSelfLoops": true
+        },
+        "attributes": {},
+        "nodes": [
+            {
+                "key": "stn_n3qQOBOZBS",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 545,
+                    "y": 380,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "",
+                            "Brin"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_QJ5SrPdtAB",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 640,
+                    "y": 465,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "",
+                            "Dinegro"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_aUOToaWbBJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 765,
+                    "y": 405,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "",
+                            "Principe"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_IpUHL9Wb7A",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 865,
+                    "y": 405,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "",
+                            "Darsena"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_SYSaUUmHjn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 890,
+                    "y": 465,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "",
+                            "San Giorgio"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_Rvt_zGlHhn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 945,
+                    "y": 530,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "",
+                            "Sarzano Sant'Agostino"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_bpdmq_fYx_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 990,
+                    "y": 460,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "",
+                            "De Ferrari"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_nQDT50Gedi",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1120,
+                    "y": 405,
+                    "type": "mtr",
+                    "mtr": {
+                        "names": [
+                            "",
+                            "Brignole"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "rotate": 0,
+                        "transfer": [
+                            []
+                        ]
+                    }
+                }
+            }
+        ],
+        "edges": [
+            {
+                "key": "line_wYVDg9mVJr",
+                "source": "stn_QJ5SrPdtAB",
+                "target": "stn_n3qQOBOZBS",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_KDFy0NNFxH",
+                "source": "stn_QJ5SrPdtAB",
+                "target": "stn_aUOToaWbBJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_EGbkIepVRG",
+                "source": "stn_IpUHL9Wb7A",
+                "target": "stn_aUOToaWbBJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_ozBPiCMRI8",
+                "source": "stn_SYSaUUmHjn",
+                "target": "stn_IpUHL9Wb7A",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_zylITTPEX7",
+                "source": "stn_SYSaUUmHjn",
+                "target": "stn_Rvt_zGlHhn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_hhBb9OeqCP",
+                "source": "stn_Rvt_zGlHhn",
+                "target": "stn_bpdmq_fYx_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_-9carTBRkf",
+                "source": "stn_nQDT50Gedi",
+                "target": "stn_bpdmq_fYx_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            }
+        ]
+    },
+    "version": 56
+}

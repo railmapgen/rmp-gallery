@@ -1,0 +1,267 @@
+{
+    "svgViewBoxZoom": 70,
+    "svgViewBoxMin": {
+        "x": -426.8665130615227,
+        "y": -306.5446784973153
+    },
+    "graph": {
+        "options": {
+            "type": "directed",
+            "multi": true,
+            "allowSelfLoops": true
+        },
+        "attributes": {},
+        "nodes": [
+            {
+                "key": "misc_node_KIgPcclihe",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -50,
+                    "y": -140,
+                    "type": "text",
+                    "text": {
+                        "content": "清远磁浮线路图",
+                        "fontSize": 24,
+                        "lineHeight": 24,
+                        "textAnchor": "start",
+                        "dominantBaseline": "middle",
+                        "language": "zh",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_WRv5Kj7mQo",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -50,
+                    "y": -125,
+                    "type": "text",
+                    "text": {
+                        "content": "Qingyuan Maglev Route Map",
+                        "fontSize": 12,
+                        "lineHeight": 12,
+                        "textAnchor": "start",
+                        "dominantBaseline": "middle",
+                        "language": "en",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "bold",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_kuhnvBibLB",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -50,
+                    "y": -90,
+                    "type": "text",
+                    "text": {
+                        "content": "by bilibili@GoForLiftoff",
+                        "fontSize": 12,
+                        "lineHeight": 12,
+                        "textAnchor": "start",
+                        "dominantBaseline": "middle",
+                        "language": "en",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_gkOmxkSZON",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -27.5,
+                    "y": -62.5,
+                    "type": "bjsubway-text-line-badge",
+                    "bjsubway-text-line-badge": {
+                        "names": [
+                            "旅游专线",
+                            "Tourist Line"
+                        ],
+                        "color": [
+                            "osaka",
+                            "p",
+                            "#00a6e2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_dS6qcqkhB5",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -10,
+                    "y": -40,
+                    "type": "suzhourt-basic",
+                    "suzhourt-basic": {
+                        "names": [
+                            "清远长隆",
+                            "Qingyuan Changlong"
+                        ],
+                        "color": [
+                            "osaka",
+                            "p",
+                            "#00a6e2",
+                            "#fff"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "textVertical": false
+                    }
+                }
+            },
+            {
+                "key": "stn_CMZDbPpgEZ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 40,
+                    "y": -40,
+                    "type": "suzhourt-basic",
+                    "suzhourt-basic": {
+                        "names": [
+                            "湖蝶湾",
+                            "Butterfly Bay"
+                        ],
+                        "color": [
+                            "osaka",
+                            "p",
+                            "#00a6e2",
+                            "#fff"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "textVertical": false
+                    }
+                }
+            },
+            {
+                "key": "stn_0xA4iZdgq-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 90,
+                    "y": -40,
+                    "type": "suzhourt-basic",
+                    "suzhourt-basic": {
+                        "names": [
+                            "长隆森林王国",
+                            "Changlong Forest Kingdom"
+                        ],
+                        "color": [
+                            "osaka",
+                            "p",
+                            "#00a6e2",
+                            "#fff"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "textVertical": false
+                    }
+                }
+            }
+        ],
+        "edges": [
+            {
+                "key": "line_Hylajv7ZBp",
+                "source": "stn_dS6qcqkhB5",
+                "target": "stn_CMZDbPpgEZ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "dual-color",
+                    "dual-color": {
+                        "colorA": [
+                            "other",
+                            "other",
+                            "#217dcb",
+                            "#fff"
+                        ],
+                        "colorB": [
+                            "osaka",
+                            "p",
+                            "#00a6e2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_2PUcY-gzv9",
+                "source": "stn_CMZDbPpgEZ",
+                "target": "stn_0xA4iZdgq-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "dual-color",
+                    "dual-color": {
+                        "colorA": [
+                            "other",
+                            "other",
+                            "#217dcb",
+                            "#fff"
+                        ],
+                        "colorB": [
+                            "osaka",
+                            "p",
+                            "#00a6e2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            }
+        ]
+    },
+    "version": 57
+}

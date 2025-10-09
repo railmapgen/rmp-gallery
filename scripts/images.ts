@@ -38,11 +38,8 @@ export const makeImage = async (filePath: string) => {
         "//button[contains(@class, 'chakra-menu__menuitem')][starts-with(@id, 'menu-list-download-menuitem-')][3]";
     await driver.findElement(By.xpath(exportImageButtonXPath)).click();
 
-    Promise.all(
-        [2, 3].map(i =>
-            driver.findElement(By.xpath(`/html/body/div[7]/div[3]/div/section/div/label[${i}]/span[1]`)).click()
-        )
-    );
+    driver.findElement(By.xpath('/html/body/div[7]/div[3]/div/section/div/div[3]/label/span[2]')).click();
+    driver.findElement(By.xpath('/html/body/div[7]/div[3]/div/section/div/label[2]/span[1]')).click();
 
     const downloadButtonXPath = '//*[@id="download_button"]';
     await driver.findElement(By.xpath(downloadButtonXPath)).click();

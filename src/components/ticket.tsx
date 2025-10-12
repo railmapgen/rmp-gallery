@@ -8,6 +8,8 @@ import MultiLangEntryCard from './multi-lang-entry-card';
 import { Button, Code, Divider, Group, Modal, NativeSelect, Stack, Text, Textarea, TextInput } from '@mantine/core';
 import { RMPage, RMPageBody, RMPageFooter } from '@railmapgen/mantine-components';
 
+const JUSTIFY_REGEX = /^[a-zA-Z0-9.,&()!?:;'" -]+$/;
+
 export default function Ticket() {
     const {
         state: { metadata: metadataParam, type, id },
@@ -144,7 +146,7 @@ export default function Ticket() {
                                 }))
                             }
                             error={
-                                !/^[a-zA-Z0-9. -]+$/.test(metadata.justification)
+                                !JUSTIFY_REGEX.test(metadata.justification)
                                     ? 'Non-English characters are not allowed.'
                                     : undefined
                             }
@@ -248,7 +250,7 @@ export default function Ticket() {
                             param === '' ||
                             metadata.reference === '' ||
                             (type === 'real_world' &&
-                                (metadata.justification === '' || !/^[a-zA-Z0-9. -]+$/.test(metadata.justification))) ||
+                                (metadata.justification === '' || !JUSTIFY_REGEX.test(metadata.justification))) ||
                             (type === 'fantasy' &&
                                 metadata.personalizedLink &&
                                 !/^[a-zA-Z0-9]{5,20}$/.test(metadata.personalizedLink)) ||

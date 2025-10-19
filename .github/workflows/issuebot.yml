@@ -11,14 +11,14 @@ jobs:
     outputs:
       sanityCheck: ${{ steps.sanity_check.outputs.message }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
         with:
           token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
           fetch-depth: 0 # Fetch all to get authors of every template.
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '24'
 
       - run: npm ci
         working-directory: scripts
@@ -56,6 +56,52 @@ jobs:
           USER_LOGIN: ${{ github.event.issue.user.login }}
           USER_ID: ${{ github.event.issue.user.id }}
         id: bot
+
+      - name: Download resvg
+        run: |
+          wget https://github.com/linebender/resvg/releases/download/v0.45.1/resvg-linux-x86_64.tar.gz
+          tar -xzf resvg-linux-x86_64.tar.gz
+          chmod +x resvg
+        working-directory: scripts
+
+      - name: Clone RMP
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
+          repository: railmapgen/rmp
+          path: rmp
+
+      - name: Clone RMT
+        uses: actions/checkout@v5
+        with:
+          token: ${{ secrets.RMG_BUILD_AND_RELEASE }}
+          repository: railmapgen/railmapgen.github.io
+          path: rmt
+
+      - name: Copy fonts
+        run: |
+          mkdir -p fonts
+          ls ../rmp/public/fonts/
+          ls ../rmt/public/fonts/
+          cp -r ../rmp/public/fonts/ ./fonts/
+          cp ../rmt/public/fonts/*.ttf ./fonts/
+          tree /usr/share/fonts
+          echo "Copy system Noto CJK fonts for fallback"
+          sudo find /usr/share/fonts -name "NotoSans*.ttf" -o -name "NotoSansCJK*.ttc" -o -name "NotoSerif*.ttf" -o -name "NotoSerifCJK*.ttc" | xargs -I {} sudo cp {} ./fonts/ || true
+          ls fonts/
+        working-directory: scripts
+
+      - name: Convert SVG to PNG using resvg
+        run: |
+          SVG_FILE=$(ls $HOME/Downloads/RMP_*.svg | head -n 1)
+          CITY_NAME=$(basename "$SVG_FILE" .svg | sed 's/RMP_//')
+          ./resvg --use-fonts-dir fonts --font-family "Noto Sans CJK SC" --background white -z 2 "$SVG_FILE" "$HOME/Downloads/${CITY_NAME}.png"
+          cp "$HOME/Downloads/${CITY_NAME}.png" ../public/resources/thumbnails/
+        working-directory: scripts
+
+      - name: Generate thumbnail
+        run: node --loader ts-node/esm ./make-thumbnail.ts
+        working-directory: scripts
 
       - name: Make logins
         run: |

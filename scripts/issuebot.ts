@@ -80,10 +80,8 @@ export const main = async () => {
     if (!existsSync(resolve('..', 'public', 'resources', 'thumbnails')))
         await mkdir(resolve('..', 'public', 'resources', 'thumbnails'));
     if (!existsSync(resolve(homedir(), 'Downloads'))) await mkdir(resolve(homedir(), 'Downloads'));
-    const image = await makeImage(resolve('..', 'public', 'resources', type, `${cityName}.json`));
-    await writeFile(resolve('..', 'public', 'resources', 'thumbnails', `${cityName}.png`), image);
-    const thumbnail = await makeThumbnail(image);
-    await writeFile(resolve('..', 'public', 'resources', 'thumbnails', `${cityName}@300.png`), thumbnail);
+    const imageSVG = await makeImage(resolve('..', 'public', 'resources', type, `${cityName}.json`), true);
+    await writeFile(resolve(homedir(), 'Downloads', `RMP_${cityName}.svg`), imageSVG);
 
     execSync(`git checkout -b bot-${process.env.ISSUE_NUMBER}`);
 

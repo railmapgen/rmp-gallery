@@ -7,7 +7,7 @@ import { resolve } from 'path';
 import { Browser, Builder, By, Capabilities, until } from 'selenium-webdriver';
 import sharp from 'sharp';
 
-export const makeImage = async (filePath: string) => {
+export const makeImage = async (filePath: string, svg = false) => {
     const capabilities = new Capabilities();
     capabilities.set('browserName', Browser.FIREFOX);
     // https://developer.mozilla.org/en-US/docs/Web/WebDriver/Capabilities/firefoxOptions
@@ -38,6 +38,13 @@ export const makeImage = async (filePath: string) => {
         "//button[contains(@class, 'chakra-menu__menuitem')][starts-with(@id, 'menu-list-download-menuitem-')][3]";
     await driver.findElement(By.xpath(exportImageButtonXPath)).click();
 
+    if (svg) {
+        const dropdownXpath = '/html/body/div[7]/div[3]/div/section/div/div[1]/div/div/select';
+        await driver.findElement(By.xpath(dropdownXpath)).click();
+        const option2Xpath = '/html/body/div[7]/div[3]/div/section/div/div[1]/div/div/select/option[2]';
+        await driver.findElement(By.xpath(option2Xpath)).click();
+    }
+
     driver.findElement(By.xpath('/html/body/div[7]/div[3]/div/section/div/div[3]/label/span[2]')).click();
     driver.findElement(By.xpath('/html/body/div[7]/div[3]/div/section/div/label[2]/span[1]')).click();
 
@@ -47,9 +54,9 @@ export const makeImage = async (filePath: string) => {
     let retry = 0;
     while (retry < 3) {
         retry += 1;
-        await new Promise(r => setTimeout(r, 20000));
+        await new Promise(r => setTimeout(r, svg ? 5000 : 20000));
         const files = await readdir(resolve(homedir(), 'Downloads'));
-        const filename = files.find(s => s.startsWith('RMP_') && s.endsWith('.png'));
+        const filename = files.find(s => s.startsWith('RMP_') && s.endsWith(svg ? '.svg' : '.png'));
         if (!filename) continue;
 
         await driver.quit();

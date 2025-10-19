@@ -3,22 +3,22 @@
   "version": "1.0.0",
   "license": "GPL-3.0-only",
   "dependencies": {
-    "@actions/core": "^1.10.1",
-    "@railmapgen/rmg-translate": "^3.1.2",
-    "graphology": "^0.25.4",
-    "jsdom": "^24.0.0",
+    "@actions/core": "^1.11.1",
+    "@railmapgen/rmg-translate": "^3.4.4",
+    "graphology": "^0.23.0",
+    "jsdom": "^27.0.1",
     "pako": "^2.1.0",
-    "selenium-webdriver": "^4.19.0",
-    "sharp": "^0.32.1",
+    "selenium-webdriver": "^4.37.0",
+    "sharp": "^0.34.4",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.4",
+    "typescript": "^5.9.3",
     "zipson": "^0.2.12"
   },
   "type": "module",
   "devDependencies": {
-    "@types/jsdom": "^21.1.6",
-    "@types/node": "^20.12.5",
-    "@types/selenium-webdriver": "^4.1.22",
-    "graphology-types": "^0.24.7"
+    "@types/jsdom": "^27.0.0",
+    "@types/node": "^24.8.1",
+    "@types/selenium-webdriver": "^4.35.1",
+    "graphology-types": "^0.24.8"
   }
 }

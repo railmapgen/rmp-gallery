@@ -4,7 +4,7 @@ import { homedir } from 'os';
 import sharp from 'sharp';
 
 const makeThumbnail = async (image: Buffer): Promise<Buffer> => {
-    const img = sharp(image, { limitInputPixels: 1024000000 });
+    const img = sharp(image, { limitInputPixels: 2048000000 });
     const metadata = await img.metadata();
     const width = Math.floor((metadata.width! * 2) / 3);
     const height = Math.floor((metadata.height! * 2) / 3);

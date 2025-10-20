@@ -97,21 +97,9 @@ jobs:
           cp "$HOME/Downloads/${CITY_NAME}.png" ../public/resources/thumbnails/
         working-directory: scripts
 
-      - name: Install ImageMagick
-        run: sudo apt update && sudo apt install -y imagemagick
-
-      - name: Generate Thumbnails
-        run: |
-          cd ~/Downloads
-          pngFile=$(find . -maxdepth 1 -name "*.png" ! -name "*@300*" | head -n 1)
-          if [ -z "$pngFile" ]; then
-            echo "PNG file not found"
-            exit 1
-          fi
-          cityName=$(basename "$pngFile" .png)
-          convert -list resource
-          convert "$pngFile" -resize 67% -gravity center -crop 300x300+0+0 "../public/resources/thumbnails/${cityName}@300.png"
-          echo "Thumbnail generated successfully"
+      - name: Generate thumbnail
+        run: node --loader ts-node/esm ./make-thumbnail.ts
+        working-directory: scripts
 
       - name: Make logins
         run: |

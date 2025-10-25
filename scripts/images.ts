@@ -1,6 +1,6 @@
 // https://askubuntu.com/questions/1444962/how-do-i-install-firefox-in-wsl-when-it-requires-snap-but-snap-doesnt-work
 
-import { readdir, readFile } from 'fs/promises';
+import { readdir, readFile, rm } from 'fs/promises';
 import { homedir } from 'os';
 import { resolve } from 'path';
 
@@ -60,7 +60,10 @@ export const makeImage = async (filePath: string, svg = false) => {
         if (!filename) continue;
 
         await driver.quit();
-        const file = await readFile(resolve(homedir(), 'Downloads', filename));
+        const filePath = resolve(homedir(), 'Downloads', filename);
+        const file = await readFile(filePath);
+        // remove the time named file, city named file will be created in issuebot
+        await rm(filePath);
         return file;
     }
 

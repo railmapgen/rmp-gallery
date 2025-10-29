@@ -6,7 +6,7 @@ import { resolve } from 'path';
 
 import { parseDetailsEl, readIssueBody, rebuildTypeJSON } from './common.ts';
 import { Metadata, MetadataDetail } from './constants.ts';
-import { makeImage, makeThumbnail } from './images.ts';
+import { makeImage } from './images.ts';
 
 const makeMetadataWithUpdateHistory = async (
     cityName: string,

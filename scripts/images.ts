@@ -69,14 +69,3 @@ export const makeImage = async (filePath: string, svg = false) => {
 
     throw new Error('No image generated after 60 secs.');
 };
-
-export const makeThumbnail = async (image: Buffer) => {
-    const img = sharp(image, { limitInputPixels: 1024000000 });
-    const metadata = await img.metadata();
-    const width = Math.floor((metadata.width! * 2) / 3);
-    const height = Math.floor((metadata.height! * 2) / 3);
-    const sideLength = Math.min(width, height);
-    const left = Math.floor((metadata.width! - sideLength) / 2);
-    const top = Math.floor((metadata.height! - sideLength) / 2);
-    return await img.extract({ width: sideLength, height: sideLength, left, top }).resize(300, 300).toBuffer();
-};

@@ -1,9 +1,10 @@
 {
-    "svgViewBoxZoom": 110,
+    "svgViewBoxZoom": 90,
     "svgViewBoxMin": {
-        "x": -553.874,
-        "y": -266.914
+        "x": 260.39999999999213,
+        "y": 194.7999999999971
     },
+    "images": [],
     "graph": {
         "options": {
             "type": "directed",
@@ -13,292 +14,634 @@
         "attributes": {},
         "nodes": [
             {
-                "key": "stn_3fWLGAZSma",
+                "key": "stn__XBgtNFEze",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 270,
-                    "y": -150,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 520,
+                    "y": 225,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
-                            "东莞火车站",
-                            "Dongguan Railway Station"
+                            "东莞西站",
+                            "Dongguanxi Railway station"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetY": "top",
                         "color": [
                             "dongguan",
-                            "r2",
-                            "#ED1C24",
-                            "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "01",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
-                    }
-                }
-            },
-            {
-                "key": "misc_node_NlodJ-pCel",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 315,
-                    "y": -170,
-                    "type": "gzmtr-line-badge",
-                    "gzmtr-line-badge": {
-                        "names": [
-                            "2号线",
-                            "Line 2"
-                        ],
-                        "color": [
-                            "dongguan",
-                            "r2",
-                            "#ED1C24",
+                            "r1",
+                            "#034ea2",
                             "#fff"
                         ]
                     }
                 }
             },
             {
-                "key": "stn_oXwGKSKbUj",
+                "key": "stn_siMRxiBNB1",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 180,
-                    "y": -150,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 585.35,
+                    "y": 225,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
-                            "茶山",
-                            "Chashan"
+                            "厚德",
+                            "Houde"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
                         "color": [
                             "dongguan",
-                            "r2",
-                            "#ED1C24",
+                            "r1",
+                            "#034ea2",
                             "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "02",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
+                        ]
                     }
                 }
             },
             {
-                "key": "stn_ZaX8PBNt_i",
+                "key": "stn_-6DH_jLGag",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 90,
-                    "y": -150,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 650.7,
+                    "y": 225,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
-                            "榴花公园",
-                            "Liuhua Park"
+                            "昌平",
+                            "Changping"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_SW82LawyRr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 716.05,
+                    "y": 225,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "人民医院",
+                            "People's Hospital"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_ilPCEDqUlZ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 780,
+                    "y": 265,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "曲海",
+                            "Quhai"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_92ovCkOJA1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 832.5,
+                    "y": 317.5,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "坝头",
+                            "Batou"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_lbPDedLuN1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 877.3,
+                    "y": 362.3,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "元美",
+                            "Yuanmei"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_-KZecNEb82",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 922.1,
+                    "y": 407.1,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "中心广场",
+                            "Central Square"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_pDVk-fHk2S",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 974.6,
+                    "y": 459.6,
+                    "type": "wuhanrt-int",
+                    "wuhanrt-int": {
+                        "names": [
+                            "市民中心",
+                            "Civic Center"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_w2OniQM3dA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1027.1,
+                    "y": 512.1,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "立新",
+                            "Linxin"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_g0eOB0Oy4l",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1055.6,
+                    "y": 579.5,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "东城南站",
+                            "Dongchengnan Railway Station"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_dh9RKC70o5",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1055.6,
+                    "y": 640.1,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "同沙公园",
+                            "Tongsha Park"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_UKn2VPjpDC",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1055.6,
+                    "y": 700.7,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "牛山",
+                            "Niushan"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_KvTQy-Iv46",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1055.6,
+                    "y": 761.3,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "连平",
+                            "Lianping"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_bJbmRL3BXi",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1109.7,
+                    "y": 815.4,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "大岭山",
+                            "Dalingshan"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_ZMZGL8JUWO",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1170.3,
+                    "y": 815.4,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "金桔",
+                            "Jinju"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_SapEjBQpX3",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1250.55,
+                    "y": 774.45,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "广东医大",
+                            "Guangdong Medical University"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_Rznj8HVUM_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1300.4,
+                    "y": 724.6,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "松山湖",
+                            "Songshan Lake"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_T9JZVlrr2Y",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1033.6,
+                    "y": 578.5,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway_2024"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_IwWDO7pDXI",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 517.8,
+                    "y": 243.5,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway_2024"
+                    }
+                }
+            },
+            {
+                "key": "stn_87Pvlf9xqg",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1434.5,
+                    "y": 705,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "大朗",
+                            "Dalang"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_0p716jFds-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1359,
+                    "y": 705,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "松佛",
+                            "Songfo"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
                         "color": [
                             "dongguan",
-                            "r2",
-                            "#ED1C24",
+                            "r1",
+                            "#034ea2",
                             "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "03",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
+                        ]
                     }
                 }
             },
             {
-                "key": "stn_8Oo1t4ljvp",
+                "key": "stn_Uqi_tRYT0w",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -10,
-                    "y": -110,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 1510,
+                    "y": 705,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
-                            "下桥",
-                            "Xiaqiao"
+                            "荔香公园",
+                            "Lixiang Park"
                         ],
-                        "nameOffsetX": "left",
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_-H5nk3EoSw",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1585.5,
+                    "y": 705,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "凤山",
+                            "Fengshan"
+                        ],
+                        "nameOffsetX": "middle",
                         "nameOffsetY": "top",
                         "color": [
                             "dongguan",
-                            "r2",
-                            "#ED1C24",
+                            "r1",
+                            "#034ea2",
                             "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "04",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
+                        ]
                     }
                 }
             },
             {
-                "key": "stn_2ZP569XD1m",
+                "key": "stn_u5hzbx12lu",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -60,
-                    "y": -60,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 1655,
+                    "y": 740,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
-                            "天宝",
-                            "Tianbao"
+                            "黄江",
+                            "Huangjiang"
                         ],
-                        "nameOffsetX": "left",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "top",
                         "color": [
                             "dongguan",
-                            "r2",
-                            "#ED1C24",
+                            "r1",
+                            "#034ea2",
                             "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "05",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
+                        ]
                     }
                 }
             },
             {
-                "key": "stn_pkapOdFpKe",
+                "key": "stn_cIizs0uGrX",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -110,
-                    "y": -10,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 1708.4,
+                    "y": 793.4,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
-                            "东城",
-                            "Dongcheng"
+                            "黄牛埔",
+                            "Huangniupu"
                         ],
-                        "nameOffsetX": "left",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "top",
                         "color": [
                             "dongguan",
-                            "r2",
-                            "#ED1C24",
+                            "r1",
+                            "#034ea2",
                             "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "06",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
+                        ]
                     }
                 }
             },
             {
-                "key": "stn__wMD5hVG42",
+                "key": "stn_2S8mgOduPy",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -160,
-                    "y": 40,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 1761.8,
+                    "y": 846.8,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
-                            "旗峰公园",
-                            "Qifeng Park"
+                            "梅塘",
+                            "Metang"
                         ],
-                        "nameOffsetX": "left",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "top",
                         "color": [
                             "dongguan",
-                            "r2",
-                            "#ED1C24",
+                            "r1",
+                            "#034ea2",
                             "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "07",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
+                        ]
                     }
                 }
             },
             {
-                "key": "stn_E6Dzv_e_1j",
+                "key": "stn_vIVBc3sZ77",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -210,
-                    "y": 90,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
-                        "names": [
-                            "鸿福路",
-                            "Hongfu Road"
-                        ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "top",
-                        "color": [
-                            "dongguan",
-                            "r2",
-                            "#ED1C24",
-                            "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "08",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
-                    }
-                }
-            },
-            {
-                "key": "stn_1T52FlOeNI",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -260,
-                    "y": 140,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 923.78,
+                    "y": 510.43,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
                             "西平",
                             "Xiping"
@@ -308,29 +651,45 @@
                         "color": [
                             "dongguan",
                             "r2",
-                            "#ED1C24",
+                            "#ed1c24",
                             "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "09",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
+                        ]
                     }
                 }
             },
             {
-                "key": "stn_wSJ40jtjOt",
+                "key": "stn_aSR7BXEXUf",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -310,
-                    "y": 190,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 1027.1,
+                    "y": 407.1,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "旗峰公园",
+                            "Qifeng Park"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "dongguan",
+                            "r2",
+                            "#ed1c24",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_VimG45YGLr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 876.3,
+                    "y": 557.9,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
                             "蛤地",
                             "Gedi"
@@ -340,29 +699,21 @@
                         "color": [
                             "dongguan",
                             "r2",
-                            "#ED1C24",
+                            "#ed1c24",
                             "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "10",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
+                        ]
                     }
                 }
             },
             {
-                "key": "stn_L_mjl9R_0r",
+                "key": "stn_3kc1wUb2Dp",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -360,
-                    "y": 240,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 823.8,
+                    "y": 610.4,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
                             "陈屋",
                             "Chenwu"
@@ -372,61 +723,45 @@
                         "color": [
                             "dongguan",
                             "r2",
-                            "#ED1C24",
+                            "#ed1c24",
                             "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "11",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
+                        ]
                     }
                 }
             },
             {
-                "key": "stn_sIi9eVXXi6",
+                "key": "stn_6j7yjs3c5l",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -400,
-                    "y": 310,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 778,
+                    "y": 656.2,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
-                            "寮厦",
-                            "Liaoxia"
+                            "竂厦",
+                            "Liaosha"
                         ],
                         "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
+                        "nameOffsetY": "top",
                         "color": [
                             "dongguan",
                             "r2",
-                            "#ED1C24",
+                            "#ed1c24",
                             "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "12",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
+                        ]
                     }
                 }
             },
             {
-                "key": "stn_MQ8gBCML65",
+                "key": "stn_kuW7qjaQjo",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -400,
-                    "y": 380,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 754,
+                    "y": 719.1,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
                             "珊美",
                             "Shanmei"
@@ -436,29 +771,21 @@
                         "color": [
                             "dongguan",
                             "r2",
-                            "#ED1C24",
+                            "#ed1c24",
                             "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "13",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
+                        ]
                     }
                 }
             },
             {
-                "key": "stn_evpPLLr6uJ",
+                "key": "stn_dZNUF-ZVh6",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -400,
-                    "y": 450,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 754,
+                    "y": 771.15,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
                             "展览中心",
                             "Exhibition Center"
@@ -468,29 +795,21 @@
                         "color": [
                             "dongguan",
                             "r2",
-                            "#ED1C24",
+                            "#ed1c24",
                             "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "14",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
+                        ]
                     }
                 }
             },
             {
-                "key": "stn_5iEozUvmHt",
+                "key": "stn_xXMfrt-UxY",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -400,
-                    "y": 520,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
+                    "x": 754,
+                    "y": 823.2,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
                         "names": [
                             "虎门火车站",
                             "Humen Railway Station"
@@ -500,27 +819,237 @@
                         "color": [
                             "dongguan",
                             "r2",
-                            "#ED1C24",
+                            "#ed1c24",
                             "#fff"
-                        ],
-                        "lineCode": "2",
-                        "stationCode": "15",
-                        "open": true,
-                        "secondaryNames": [
-                            "",
-                            ""
-                        ],
-                        "tram": false
+                        ]
                     }
                 }
             },
             {
-                "key": "misc_node_jGXsiiDBd6",
+                "key": "misc_node_Mg2U-EbJlp",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -400,
-                    "y": 545,
+                    "x": 775.5,
+                    "y": 820,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway_2024"
+                    }
+                }
+            },
+            {
+                "key": "stn_0QZtpY5JVR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1079.6,
+                    "y": 354.6,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "东城",
+                            "Dongcheng"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_41xO9gPRW6",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1132.5,
+                    "y": 301.7,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "天宝",
+                            "Tianbao"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_zERo6YWraq",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1185.4,
+                    "y": 248.8,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "下桥",
+                            "Xiaqiao"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_f6fDsQePsp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1268.6,
+                    "y": 215,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "榴花公园",
+                            "Liuhua Park"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_YJyk81A10i",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1362.2,
+                    "y": 215,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "茶山",
+                            "Chashan"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_BaPg7lnVp_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1455.8,
+                    "y": 215,
+                    "type": "wuhanrt-basic",
+                    "wuhanrt-basic": {
+                        "names": [
+                            "东莞火车站",
+                            "Dongguan Railway Station "
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_CHz0UDNFsM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1455,
+                    "y": 233,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway_2024"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_djhnbCifRI",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 521.2,
+                    "y": 180,
+                    "type": "gzmtr-line-badge",
+                    "gzmtr-line-badge": {
+                        "names": [
+                            "1号线",
+                            "Line 1"
+                        ],
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ],
+                        "tram": false,
+                        "span": true
+                    }
+                }
+            },
+            {
+                "key": "misc_node_vdRo0Hc5L5",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1780,
+                    "y": 878,
+                    "type": "gzmtr-line-badge",
+                    "gzmtr-line-badge": {
+                        "names": [
+                            "1号线",
+                            "Line 1"
+                        ],
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ],
+                        "tram": false,
+                        "span": true
+                    }
+                }
+            },
+            {
+                "key": "misc_node_y7TIsOX1wa",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 745,
+                    "y": 860,
                     "type": "gzmtr-line-badge",
                     "gzmtr-line-badge": {
                         "names": [
@@ -530,64 +1059,840 @@
                         "color": [
                             "dongguan",
                             "r2",
-                            "#ED1C24",
+                            "#ed1c24",
                             "#fff"
-                        ]
+                        ],
+                        "tram": false,
+                        "span": true
+                    }
+                }
+            },
+            {
+                "key": "misc_node_Gm96EhzRT_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1458.6,
+                    "y": 166.6,
+                    "type": "gzmtr-line-badge",
+                    "gzmtr-line-badge": {
+                        "names": [
+                            "2号线",
+                            "Line 2"
+                        ],
+                        "color": [
+                            "dongguan",
+                            "r2",
+                            "#ed1c24",
+                            "#fff"
+                        ],
+                        "tram": false,
+                        "span": true
+                    }
+                }
+            },
+            {
+                "key": "misc_node_V88d3EM0Jl",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 946,
+                    "y": 518,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway_2024"
                     }
                 }
             }
         ],
         "edges": [
             {
+                "key": "line_BPXz0ZJ1Ni",
+                "source": "stn__XBgtNFEze",
+                "target": "stn_siMRxiBNB1",
                 "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
                     "reconcileId": "",
-                    "simple": {
-                        "offset": 0
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_uXV4kJZb79",
+                "source": "stn_siMRxiBNB1",
+                "target": "stn_-6DH_jLGag",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
                     },
+                    "style": "single-color",
                     "single-color": {
                         "color": [
                             "dongguan",
-                            "r2",
-                            "#ED1C24",
+                            "r1",
+                            "#034ea2",
                             "#fff"
                         ]
                     },
-                    "style": "single-color",
-                    "type": "simple",
-                    "visible": true,
-                    "zIndex": 0
-                },
-                "key": "line_ld7ra6ZLo9",
-                "source": "stn_oXwGKSKbUj",
-                "target": "stn_3fWLGAZSma"
-            },
-            {
-                "attributes": {
                     "reconcileId": "",
-                    "simple": {
-                        "offset": 0
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_FI4Tu3SYv6",
+                "source": "stn_-6DH_jLGag",
+                "target": "stn_SW82LawyRr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
                     },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_LXIuFh9mYk",
+                "source": "stn_SW82LawyRr",
+                "target": "stn_ilPCEDqUlZ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_m0S5IhX5gp",
+                "source": "stn_ilPCEDqUlZ",
+                "target": "stn_92ovCkOJA1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_d5g7QRPSzc",
+                "source": "stn_92ovCkOJA1",
+                "target": "stn_lbPDedLuN1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_0nUXVp_Tgp",
+                "source": "stn_lbPDedLuN1",
+                "target": "stn_-KZecNEb82",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_rGG5wTIOAd",
+                "source": "stn_-KZecNEb82",
+                "target": "stn_pDVk-fHk2S",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_Gd2rKXfYUU",
+                "source": "stn_pDVk-fHk2S",
+                "target": "stn_w2OniQM3dA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_lvuOp_q5zp",
+                "source": "stn_w2OniQM3dA",
+                "target": "stn_g0eOB0Oy4l",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "to",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_8vEXKuV-db",
+                "source": "stn_g0eOB0Oy4l",
+                "target": "stn_dh9RKC70o5",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line__4zZ6KGH4r",
+                "source": "stn_dh9RKC70o5",
+                "target": "stn_UKn2VPjpDC",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line__ZkMUumK65",
+                "source": "stn_UKn2VPjpDC",
+                "target": "stn_KvTQy-Iv46",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_BMuTFfaHv3",
+                "source": "stn_bJbmRL3BXi",
+                "target": "stn_KvTQy-Iv46",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_rh1P_Fp884",
+                "source": "stn_bJbmRL3BXi",
+                "target": "stn_ZMZGL8JUWO",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_KGpXIP7sl9",
+                "source": "stn_ZMZGL8JUWO",
+                "target": "stn_SapEjBQpX3",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_rRPng4_x1Q",
+                "source": "stn_SapEjBQpX3",
+                "target": "stn_Rznj8HVUM_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_NcsUtYzTXA",
+                "source": "stn_0p716jFds-",
+                "target": "stn_Rznj8HVUM_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_Rcs3DAQbJM",
+                "source": "stn_0p716jFds-",
+                "target": "stn_87Pvlf9xqg",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_eCo80OfaFR",
+                "source": "stn_87Pvlf9xqg",
+                "target": "stn_Uqi_tRYT0w",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_cxv--V8ymX",
+                "source": "stn_Uqi_tRYT0w",
+                "target": "stn_-H5nk3EoSw",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_6ZZ9DPfs5u",
+                "source": "stn_-H5nk3EoSw",
+                "target": "stn_u5hzbx12lu",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_DvB4DxlT2m",
+                "source": "stn_u5hzbx12lu",
+                "target": "stn_cIizs0uGrX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_6A8CPD-6UO",
+                "source": "stn_cIizs0uGrX",
+                "target": "stn_2S8mgOduPy",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r1",
+                            "#034ea2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_rDKuFsXikV",
+                "source": "stn_pDVk-fHk2S",
+                "target": "stn_vIVBc3sZ77",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
                     "single-color": {
                         "color": [
                             "dongguan",
                             "r2",
-                            "#ED1C24",
+                            "#ed1c24",
                             "#fff"
                         ]
                     },
-                    "style": "single-color",
-                    "type": "simple",
-                    "visible": true,
-                    "zIndex": 0
-                },
-                "key": "line_RB785DXrv3",
-                "source": "stn_ZaX8PBNt_i",
-                "target": "stn_oXwGKSKbUj"
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
             },
             {
-                "key": "line_g5FdR5am8y",
-                "source": "stn_ZaX8PBNt_i",
-                "target": "stn_8Oo1t4ljvp",
+                "key": "line_QWGEhCZ6jt",
+                "source": "stn_aSR7BXEXUf",
+                "target": "stn_pDVk-fHk2S",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r2",
+                            "#ed1c24",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_kCCfhx7Fmd",
+                "source": "stn_vIVBc3sZ77",
+                "target": "stn_VimG45YGLr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r2",
+                            "#ed1c24",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_9ujLDcJ0Y1",
+                "source": "stn_VimG45YGLr",
+                "target": "stn_3kc1wUb2Dp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r2",
+                            "#ed1c24",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_2EQL3yzndj",
+                "source": "stn_3kc1wUb2Dp",
+                "target": "stn_6j7yjs3c5l",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "dongguan",
+                            "r2",
+                            "#ed1c24",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_wLpLg7cIGr",
+                "source": "stn_kuW7qjaQjo",
+                "target": "stn_6j7yjs3c5l",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -603,132 +1908,72 @@
                         "color": [
                             "dongguan",
                             "r2",
-                            "#ED1C24",
+                            "#ed1c24",
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "parallelIndex": -1
                 }
             },
             {
-                "key": "line_9fu6uZO1WW",
-                "source": "stn_8Oo1t4ljvp",
-                "target": "stn_2ZP569XD1m",
+                "key": "line_hLjORdlDCn",
+                "source": "stn_kuW7qjaQjo",
+                "target": "stn_dZNUF-ZVh6",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "simple",
-                    "simple": {
-                        "offset": 0
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
                     },
                     "style": "single-color",
                     "single-color": {
                         "color": [
                             "dongguan",
                             "r2",
-                            "#ED1C24",
+                            "#ed1c24",
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "parallelIndex": -1
                 }
             },
             {
-                "key": "line_z9u2zywqqW",
-                "source": "stn_2ZP569XD1m",
-                "target": "stn_pkapOdFpKe",
+                "key": "line_OBDSymKtP_",
+                "source": "stn_dZNUF-ZVh6",
+                "target": "stn_xXMfrt-UxY",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "simple",
-                    "simple": {
-                        "offset": 0
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
                     },
                     "style": "single-color",
                     "single-color": {
                         "color": [
                             "dongguan",
                             "r2",
-                            "#ED1C24",
+                            "#ed1c24",
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "parallelIndex": -1
                 }
             },
             {
-                "key": "line_lp5Os-WVlI",
-                "source": "stn_pkapOdFpKe",
-                "target": "stn__wMD5hVG42",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "simple",
-                    "simple": {
-                        "offset": 0
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "dongguan",
-                            "r2",
-                            "#ED1C24",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": ""
-                }
-            },
-            {
-                "key": "line_CyZ6aotQgr",
-                "source": "stn__wMD5hVG42",
-                "target": "stn_E6Dzv_e_1j",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "simple",
-                    "simple": {
-                        "offset": 0
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "dongguan",
-                            "r2",
-                            "#ED1C24",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": ""
-                }
-            },
-            {
-                "key": "line_HoiDdzuT9t",
-                "source": "stn_E6Dzv_e_1j",
-                "target": "stn_1T52FlOeNI",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "simple",
-                    "simple": {
-                        "offset": 0
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "dongguan",
-                            "r2",
-                            "#ED1C24",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": ""
-                }
-            },
-            {
-                "key": "line_P8UcAYbngg",
-                "source": "stn_wSJ40jtjOt",
-                "target": "stn_wSJ40jtjOt",
+                "key": "line_xuVxN1uvL2",
+                "source": "stn_0QZtpY5JVR",
+                "target": "stn_aSR7BXEXUf",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -742,65 +1987,20 @@
                     "style": "single-color",
                     "single-color": {
                         "color": [
-                            "dongguan",
-                            "r2",
-                            "#ED1C24",
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "parallelIndex": -1
                 }
             },
             {
-                "key": "line_iueoKx4gBK",
-                "source": "stn_1T52FlOeNI",
-                "target": "stn_wSJ40jtjOt",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "simple",
-                    "simple": {
-                        "offset": 0
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "dongguan",
-                            "r2",
-                            "#ED1C24",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": ""
-                }
-            },
-            {
-                "key": "line_poGOUzDsQw",
-                "source": "stn_wSJ40jtjOt",
-                "target": "stn_L_mjl9R_0r",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "simple",
-                    "simple": {
-                        "offset": 0
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "dongguan",
-                            "r2",
-                            "#ED1C24",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": ""
-                }
-            },
-            {
-                "key": "line_WbXR7q5Iaf",
-                "source": "stn_sIi9eVXXi6",
-                "target": "stn_L_mjl9R_0r",
+                "key": "line_NRufGI0Z6X",
+                "source": "stn_0QZtpY5JVR",
+                "target": "stn_41xO9gPRW6",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -814,85 +2014,125 @@
                     "style": "single-color",
                     "single-color": {
                         "color": [
-                            "dongguan",
-                            "r2",
-                            "#ED1C24",
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "parallelIndex": -1
                 }
             },
             {
-                "key": "line_ffydYkBF7h",
-                "source": "stn_sIi9eVXXi6",
-                "target": "stn_MQ8gBCML65",
+                "key": "line_0PI7UW85us",
+                "source": "stn_zERo6YWraq",
+                "target": "stn_41xO9gPRW6",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "simple",
-                    "simple": {
-                        "offset": 0
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
                     },
                     "style": "single-color",
                     "single-color": {
                         "color": [
-                            "dongguan",
-                            "r2",
-                            "#ED1C24",
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "parallelIndex": -1
                 }
             },
             {
-                "key": "line_uz491xo-Px",
-                "source": "stn_MQ8gBCML65",
-                "target": "stn_evpPLLr6uJ",
+                "key": "line_m5ytLpPmwc",
+                "source": "stn_f6fDsQePsp",
+                "target": "stn_zERo6YWraq",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "simple",
-                    "simple": {
-                        "offset": 0
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
                     },
                     "style": "single-color",
                     "single-color": {
                         "color": [
-                            "dongguan",
-                            "r2",
-                            "#ED1C24",
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "parallelIndex": -1
                 }
             },
             {
-                "key": "line_j8pju8krB2",
-                "source": "stn_evpPLLr6uJ",
-                "target": "stn_5iEozUvmHt",
+                "key": "line_1j6jnJYRhC",
+                "source": "stn_f6fDsQePsp",
+                "target": "stn_YJyk81A10i",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "simple",
-                    "simple": {
-                        "offset": 0
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
                     },
                     "style": "single-color",
                     "single-color": {
                         "color": [
-                            "dongguan",
-                            "r2",
-                            "#ED1C24",
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
                             "#fff"
                         ]
                     },
-                    "reconcileId": ""
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_B97Bv35ilE",
+                "source": "stn_YJyk81A10i",
+                "target": "stn_BaPg7lnVp_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
                 }
             }
         ]
     },
-    "version": 19
+    "version": 65
 }

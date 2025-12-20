@@ -19,3 +19,34 @@ Browse, set, and submit your RMP template here!
 9. Paste the auto-copied context in issue body.
 10. Click _Submit new issue_.
 11. Wait check, approval, and merge from administrators. (No action required.)
+
+## Development - Optimizing Storage & Reclaiming Space
+
+This repository contains numerous large image assets (>10 MB). While some files are eventually
+deleted from the project, they remain in the Git history, causing the .git directory to expand
+significantly over time.
+
+To save disk space, we recommend using a Shallow Clone approach. Follow these steps whenever
+you need to synchronize with the latest code while purging old historical data from your local
+machine.
+
+Run the following commands to reset your local environment to the latest remote state and prune
+unneeded historical blobs:
+
+```bash
+# 1. Fetch only the latest snapshot from the remote (shallow fetch)
+git fetch --depth 1 origin main
+
+# 2. Forcefully reset the local branch to match the remote state (discards local changes and history)
+git reset --hard origin/main
+
+# 3. Remove all untracked files and directories from the working tree
+git clean -df
+
+# 4. Permanently prune unreachable objects and recompress the database to minimize disk usage
+git -c gc.reflogExpire=now gc --prune=now --aggressive
+```
+
+> [!CAUTION]
+> Warning: These steps are destructive. Ensure you have committed or backed up any local changes
+> before running them, as reset --hard and clean -df will permanently discard uncommitted work.

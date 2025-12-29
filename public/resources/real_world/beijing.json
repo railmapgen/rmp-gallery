@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 50,
+    "svgViewBoxZoom": 130,
     "svgViewBoxMin": {
-        "x": -220.16574682616834,
-        "y": -589.1250771484372
+        "x": -728.3324216308552,
+        "y": -505.5917336425767
     },
     "images": [],
     "graph": {
@@ -4404,7 +4404,7 @@
                             "2号航站楼",
                             "2 Hao Hangzhanlou\n(Terminal 2)"
                         ],
-                        "nameOffsetX": "left",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "open": true
                     }
@@ -4434,8 +4434,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 496.89,
-                    "y": -415,
+                    "x": 495,
+                    "y": -430,
                     "type": "facilities",
                     "facilities": {
                         "type": "airport_bj"
@@ -8130,7 +8130,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 486.89,
+                    "x": 495,
                     "y": -300,
                     "type": "virtual",
                     "virtual": {}
@@ -8375,8 +8375,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 441.89,
-                    "y": -320,
+                    "x": 442,
+                    "y": -330,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -8386,8 +8386,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 416.89,
-                    "y": -280,
+                    "x": 426.89,
+                    "y": -290,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -8397,8 +8397,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 426.89,
-                    "y": -282,
+                    "x": 436.89,
+                    "y": -292,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -8408,8 +8408,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 418.89,
-                    "y": -290,
+                    "x": 428.89,
+                    "y": -300,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -8419,8 +8419,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 506.89,
-                    "y": -320,
+                    "x": 520,
+                    "y": -325,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -8430,7 +8430,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 491.89,
+                    "x": 497,
                     "y": -310,
                     "type": "virtual",
                     "virtual": {}
@@ -8441,8 +8441,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 471.89,
-                    "y": -335,
+                    "x": 475,
+                    "y": -325,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -8452,8 +8452,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 466.89,
-                    "y": -325,
+                    "x": 475,
+                    "y": -316.89,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -8463,8 +8463,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 481.89,
-                    "y": -330,
+                    "x": 483.11,
+                    "y": -325,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -22155,7 +22155,7 @@
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 20
+                        "roundCornerFactor": 15
                     },
                     "style": "mtr-light-rail",
                     "reconcileId": "",
@@ -22231,33 +22231,6 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": -5,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "to",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "mtr-light-rail",
-                    "reconcileId": "",
-                    "mtr-light-rail": {
-                        "color": [
-                            "beijing",
-                            "bj34sj",
-                            "#a29bbb",
-                            "#000"
-                        ]
-                    },
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_E5SdAePn-d",
-                "source": "misc_node_hlqL7IoRDr",
-                "target": "misc_node_ANgK0c4Ucs",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -5,
                     "type": "perpendicular",
                     "style": "mtr-light-rail",
                     "reconcileId": "",
@@ -22269,13 +22242,40 @@
                             "#000"
                         ]
                     },
+                    "parallelIndex": 0,
                     "perpendicular": {
+                        "startFrom": "to",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 50
+                    }
+                }
+            },
+            {
+                "key": "line_E5SdAePn-d",
+                "source": "misc_node_hlqL7IoRDr",
+                "target": "misc_node_ANgK0c4Ucs",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -5,
+                    "type": "diagonal",
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "mtr-light-rail": {
+                        "color": [
+                            "beijing",
+                            "bj34sj",
+                            "#a29bbb",
+                            "#000"
+                        ]
+                    },
+                    "parallelIndex": 0,
+                    "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 40
-                    },
-                    "parallelIndex": -1
+                        "roundCornerFactor": 10
+                    }
                 }
             },
             {

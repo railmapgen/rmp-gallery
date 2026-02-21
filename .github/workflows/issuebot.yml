@@ -89,6 +89,12 @@ jobs:
           ./resvg --skip-system-fonts --use-fonts-dir fonts --list-fonts
         working-directory: scripts
 
+      - name: Workaround for postscript font name
+        run: |
+          SVG_FILE=$(ls $HOME/Downloads/RMP_*.svg | head -n 1)
+          sed -i 's/font-family="GenYoMinTW-SB, HiraMinProN-W6, Vegur-Bold, Helvetica, serif"/font-family="源樣明體"/g' "$SVG_FILE"
+          sed -i 's/font-family="MyriadPro-Semibold, Vegur-Bold, Helvetica, sans-serif"/font-family="Vegur" font-weight="700"/g' "$SVG_FILE"
+
       - name: Render SVG
         run: |
           SVG_FILE=$(ls $HOME/Downloads/RMP_*.svg | head -n 1)

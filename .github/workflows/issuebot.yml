@@ -92,8 +92,7 @@ jobs:
       - name: Workaround for postscript font name
         run: |
           SVG_FILE=$(ls $HOME/Downloads/RMP_*.svg | head -n 1)
-          sed -i 's/font-family="GenYoMinTW-SB, HiraMinProN-W6, Vegur-Bold, Helvetica, serif"/font-family="源樣明體"/g' "$SVG_FILE"
-          sed -i 's/font-family="MyriadPro-Semibold, Vegur-Bold, Helvetica, sans-serif"/font-family="Vegur" font-weight="700"/g' "$SVG_FILE"
+          python -c "import xml.etree.ElementTree as ET; import sys; file_path = sys.argv[1]; tree = ET.parse(file_path); root = tree.getroot(); ns = {'svg': 'http://www.w3.org/2000/svg'}; ET.register_namespace('', ns['svg']); target_nodes = root.findall('.//svg:text[@font-family=\'GenYoMinTW-SB, HiraMinProN-W6, Vegur-Bold, Helvetica, serif\']', ns); [node.set('font-family', '源樣明體') for node in target_nodes]; target_nodes = root.findall('.//svg:text[@font-family=\'MyriadPro-Semibold, Vegur-Bold, Helvetica, sans-serif\']', ns); [node.set('font-family', 'Vegur') or node.set('font-weight', '700') for node in target_nodes]; tree.write(file_path, encoding='utf-8', xml_declaration=True)" "$SVG_FILE"
 
       - name: Render SVG
         run: |

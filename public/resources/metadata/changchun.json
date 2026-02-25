@@ -2,12 +2,11 @@
     "name": {
         "en": "Changchun",
         "zh-Hans": "长春",
-        "zh-Hant": "長春",
-        "ja": "長春",
-        "ko": "창춘"
+        "zh-Hant": "長春"
     },
     "desc": {
-        "en": ""
+        "zh-Hans": "更正了以前版本中车站名称的拼写错误（紫杉路中文，一二三中学、北亚泰大街英文），并更改了一个车站名称（2025年4月，硅谷广场站更名为硅谷广场（吉大中心校区）站，英文名改为Guigu Guangchang(Jida Zhongxin Xiaoqu)。此外，还增加了2号线东延线上的车站（2025年9月28日，2号线东延线（东方广场站至雾开河大街站）投入运营",
+        "en": "The spelling errors of station names in the previous version have been corrected (Zishan Road in Chinese, and Yi'ersan Zhongxue in English), and the names of stations have been changed(In April 2025, Guigu Guangchang Station of Line 6 was changed to Guigu Guangchang(Jida Zhongxin Xiaoqu). Additionally, stations on the east extension line of Line 2 have been added.(On September 28, 2025, east extension line of Line 2 (from Dongfang Guangchang Station to Wukaihe Dajie Station) was put into operation."
     },
     "reference": "http://www.ccqg.com/xccx",
     "updateHistory": [
@@ -28,6 +27,12 @@
             "issueNumber": 1375,
             "reason": "Update all station English names to lowercase Pinyin and add Line 6",
             "time": 1711620188421
+        },
+        {
+            "id": 226451845,
+            "issueNumber": 3315,
+            "reason": "Route Map in all stations of Changchun Rail Transit was updated on September 28, 2025.",
+            "time": 1772021219029
         }
     ]
 }

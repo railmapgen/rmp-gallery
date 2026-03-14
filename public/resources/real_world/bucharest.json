@@ -1,0 +1,3378 @@
+{
+    "svgViewBoxZoom": 210.86062741767793,
+    "svgViewBoxMin": {
+        "x": -1095.0911942263062,
+        "y": -558.6977652690848
+    },
+    "images": [
+        {
+            "id": "img-l_6bE9tY9bP5",
+            "base64": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPsAAACZCAYAAADpTkz3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAD1TSURBVHhe7Z0HeJPV24efLtpCS1tKWUX2EmTJBgEF0c+JKIjg3rgQ99+9FyJDERFExYUD3FsR2XuJMkSm7E337nfuk/eFEJI0STPaNPd19Urytk3T5PzOM885YVWrVi1ev369hAguCgoK5PDhw8e+8vLy9PUjR47o20qVKknlypX1/SpVqki1atX0lxoP+lqI4EOLfcmSJVJYVGRcqtiEh4VLQkL5GPAZGRmyYcMGWbt2rWzevFn+++8//bVjxw4tcE+IjIyUGjVqyCmnnCL16tXTX02bNpVTTz1VGjVqJBEREcZPll3y8/MlIzPTeBQiJjpGYmNjLGKf9cdsWbxkmRSFBK9p1rSxnNaqpfGobFBYWCh4YEzMy5Ytk5UrV8q2bdukuLjY+AnXwIoj6Ozs7GPW3lWio6O16Dt06CCdOnWSzp07S61atYzvlg0Q+rwFi9RkZ/FgKjrxcXHS84xuEhNjiJ1BtGfvPlm0eGlI8AaNGjaQdm1bG48Cw+7du2XWrFn6a+7cuZKWlmZ850RSUlKkefPmUrduXW2R+apZs6Z2y5OSkvQtH7YjeN6DBw/KoUOHtEewa9euY14CEwreQ05OjvHTJ9KwYUM566yzpE+fPtK9e3enf8fX5Obmydz5Cx2+TxWN+Ph4OaNHV4k1PpMTYva9+/ZrwWNFQqiB3KC+FnxYWJhxxffggn/zzTfy7bffyurVq42rx0HYpmU97bTTtKWtXr268V3fwHhA9H///bd+TUuXLtW3tp4BQj/77LPloosu0rexsbHGd3xPbm6utuhHj4aEDoSiPXt007kZk5MSdAcOHJQFi5boBE8IkQYN6kn7tm18KvisrCwt8I8//liWL19+gmuO233GGWdo69mzZ09tScsCCH3VqlXyxx9/aM9jzZo1J3iFJP/OP/98ufLKK6VLly7GVd+A14HQ09LSjSsVm8SEBG3RrYUOJ4kdDiiXbuHCJZIfErzmlLqp0uH0dhIeHm5c8Q7//POPvPPOO/Lll19KevrxgZqYmCjnnXeeXHzxxdo1joqKMr5Tdjlw4ID8/PPP8vXXX6uxs/AE77BJkyZy1VVXyZAhQ7Rr6U3IPcydtzCUkDNIUmOnB0K3M2bsih0OHjykLTwJjxCi4uFU6eglwc+bN0/eeust+f33349ZcQR97rnnyuDBg6VXr17lQuCOQPh4Kh999JGsW7fOuGqJIRH9jTfeKHXq1DGuek6WEvo8FaNnZISEDsnVkqR7ty4Ox45DscPhI0dk/vxFkhcSvKa0gsflfeWVV3Qm3YRk2jXXXCOXX365jseDjRUrVmjRf/HFFzquBgYj/++IESMkNTVVX3MXQp+5amxmhiy6Jjm5mkXokZHGlZNxKnY4cuSojofcLdMEK3VT60jHDu3dEvyiRYvkpZde0mUzk3bt2smwYcN0XEspLNjB2r/33nv6i6w/EFMS09999926tu8qmUro85Trzm0IkerJydKtW2enQocSxQ5kOClphARvoXatmtKlc8cSBb99+3Z59tln5fvvvzeuiHTs2FEefPBBnXTzJeQAsH6U4IDaPCU18gAwY8YMfUt+gJJd48aN/TLpEGNPnTpV3njjDV3uA9z74cOHy80333xSUskWXPY58xY4LAVWNFKqK6F37ezSZ+eS2IHBg9sUepMt1KpZQ7p26WRX8LxHY8eO1XG56bpSJnvooYekb9+++rG3IBG2YMECXRqj1k5JDh555BFdHjMnmhdffFF++eUXnTkHyndA1pxJAJExAbRs2VK73T/88IM0a9ZMTwIk2Liuxor+HW+A+01yEtGbdfEGDRrIM888o8t29khPz1BjEKFb3tOKTk3GoDI6rnY1uuyLMvtSt4uJiTauVGxoQlpopycBV/2cc86R1157TQudhhYG8I8//ugVodPoYoLlHjRokA4HPv/8c7nkkktk1KhR+ntYbLMPHhISEk54zH2sKc06f/75px4wVAUAL2DLli26HXf69Olyww03yIcffqi/x/+LcdizZ49+7CmUFO+66y4d4pCwwzJt3bpV5y+uvfZa2bt3r/GTFjA2JONCQreAsemmjI077ctuZZri42m9C2yXVFlirxL8/IWLdU8Clgr3fMCAAfLvv//qwXvbbbfpwXzTTTd53FPOhGFm7GfOnCldu3bVnXXwySefyKZNm3R2n5IXVpIwAeicsxY34jf75XlO3GleG78zYcIEFaod1d4H8Pp79+6tk4lfffWV7r2/5ZZb9OugfEbVgFZZ8g0ItDTwugh1KNuZXsmvv/6q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"
+        }
+    ],
+    "graph": {
+        "options": {
+            "type": "directed",
+            "multi": true,
+            "allowSelfLoops": true
+        },
+        "attributes": {},
+        "nodes": [
+            {
+                "key": "stn_uUpUW1Ltgp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 300,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "皮佩拉",
+                            "Pipera"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top"
+                    }
+                }
+            },
+            {
+                "key": "stn_j7HaeJXWAN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 325,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "奧雷爾·弗萊庫",
+                            "Aurel Vlaicu"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_YAHGr1Vaow",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 375,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "航空員",
+                            "Aviatorilor"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_TimFnqY81m",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 425,
+                    "type": "shmetro-int",
+                    "shmetro-int": {
+                        "names": [
+                            "維多利亞廣場",
+                            "Piaţa Victoriei"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 15
+                    }
+                }
+            },
+            {
+                "key": "stn_eloZlM26xD",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 475,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "羅馬廣場",
+                            "Piaţa Romană"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_NT6j_KgzNr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 525,
+                    "type": "shmetro-int",
+                    "shmetro-int": {
+                        "names": [
+                            "大學",
+                            "Universitate"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 15
+                    }
+                }
+            },
+            {
+                "key": "stn_p49q8NNz8S",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 575,
+                    "type": "shmetro-int",
+                    "shmetro-int": {
+                        "names": [
+                            "聯合廣場",
+                            "Piaţa Unirii"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "rotate": 90,
+                        "height": 10,
+                        "width": 13
+                    }
+                }
+            },
+            {
+                "key": "stn_xXQFzVrkXV",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 625,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "青年",
+                            "Tineretului"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_2gPKftnq4I",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 675,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "革命英雄",
+                            "Eroii Revoluţiei"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_Wdixff1Az8",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 725,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "康斯坦丁·布蘭科夫內烏",
+                            "Constantin Brâncoveanu"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_LAAY7oZ_kU",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 775,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "南廣場",
+                            "Piaţa Sudului"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_jITXuSHCJP",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 825,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "祖國的捍衛者",
+                            "Apărătorii Patriei"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_dZhUKHOj6p",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 875,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "迪米特里·列奧尼達",
+                            "Dimitrie Leonida"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_CPIHsYxCZu",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 925,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "貝爾切尼",
+                            "Berceni"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_PrygBvDuzW",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 750,
+                    "y": 955,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "圖多爾·阿爾格齊",
+                            "Tudor Arghezi"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_V4Dzs5ZJLs",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 900,
+                    "y": 425,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "大斯蒂芬",
+                            "Ştefan cel Mare"
+                        ],
+                        "rotate": 0,
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_z60Ps6dMxz",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 950,
+                    "y": 450,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "奧博爾",
+                            "Obor"
+                        ],
+                        "rotate": 45,
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_jgsOVrupOb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 980,
+                    "y": 480,
+                    "type": "shmetro-int",
+                    "shmetro-int": {
+                        "names": [
+                            "揚庫利",
+                            "Iancului"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "rotate": 315,
+                        "height": 10,
+                        "width": 13
+                    }
+                }
+            },
+            {
+                "key": "stn_Bf5SIgv5nH",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1025,
+                    "y": 560,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "",
+                            ""
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top"
+                    }
+                }
+            },
+            {
+                "key": "stn_vJcQZn7GwM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1015,
+                    "y": 515,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "工作廣場",
+                            "Piaţa Muncii"
+                        ],
+                        "rotate": 45,
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_1KvBf2rmXq",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 850,
+                    "y": 575,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "新時代",
+                            "Timpuri Noi"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_CPjmvclAZ_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 940,
+                    "y": 575,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "米海·布拉武",
+                            "Mihai Bravu"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_lBBPoQj5pb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1025,
+                    "y": 575,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "德里斯托",
+                            "Dristor"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_hdk8cjFqQK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1125,
+                    "y": 575,
+                    "type": "shmetro-int",
+                    "shmetro-int": {
+                        "names": [
+                            "尼古拉·格里戈雷斯庫",
+                            "Nicolae Grigorescu"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "rotate": 90,
+                        "height": 10,
+                        "width": 13
+                    }
+                }
+            },
+            {
+                "key": "stn_aMDKE3Qh1Y",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1175,
+                    "y": 550,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "泰坦",
+                            "Titan"
+                        ],
+                        "rotate": 270,
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_WUoe8nuGvN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1175,
+                    "y": 500,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "康斯坦丁·喬治安工程師",
+                            "Ing. Constantin Georgian"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_nrMLQf6ttB",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1175,
+                    "y": 450,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "共和國",
+                            "Republica"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_9P15RKvwSo",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1175,
+                    "y": 425,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "潘泰利蒙",
+                            "Pantelimon"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top"
+                    }
+                }
+            },
+            {
+                "key": "stn_WPDvsoOcYQ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1225,
+                    "y": 610,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "1918年12月1日",
+                            "1 Decembrie 1918"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_DJXJVGBHAf",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1225,
+                    "y": 650,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "尼古拉·特爾庫",
+                            "Nicolae Telcu"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_WdmXP01gBy",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1225,
+                    "y": 680,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "安赫爾·薩利尼",
+                            "Anghel Saligny"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_h-pULH-W6n",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 700,
+                    "y": 575,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "泉",
+                            "Izvor"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_t1gGbsQqzF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 625,
+                    "y": 575,
+                    "type": "shmetro-int",
+                    "shmetro-int": {
+                        "names": [
+                            "英雄們",
+                            "Eroilor"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "rotate": 90,
+                        "height": 10,
+                        "width": 13
+                    }
+                }
+            },
+            {
+                "key": "misc_node_yararZouXb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 575,
+                    "y": 600,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_Hhq3amNH4I",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 600,
+                    "y": 590,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_vXk5Bdrx1y",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 550,
+                    "y": 600,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "波利特尼卡",
+                            "Politehnica"
+                        ],
+                        "rotate": 180,
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_W0oE8c-Qck",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 475,
+                    "y": 600,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "盧傑爾",
+                            "Lujerului"
+                        ],
+                        "rotate": 180,
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_2G_iIyGijY",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 415,
+                    "y": 600,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "戈爾日",
+                            "Gorjului"
+                        ],
+                        "rotate": 180,
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_dck_lZbLUJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 365,
+                    "y": 600,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "和平",
+                            "Păcii"
+                        ],
+                        "rotate": 180,
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_zUH2T-s8s1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 340,
+                    "y": 600,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "精確度",
+                            "Preciziei"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_3iy52IwClE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 600,
+                    "y": 560,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_VzZCL4Bl9Y",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 575,
+                    "y": 550,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_Eow4dO1W55",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 545,
+                    "y": 550,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "格羅扎韋什蒂",
+                            "Grozăveşti"
+                        ],
+                        "rotate": 0,
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_A6Z5dPQvXL",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 500,
+                    "y": 510,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "佩特拉切·波埃納魯",
+                            "Petrache Poenaru"
+                        ],
+                        "rotate": 270,
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_ak8QH0JVYr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 500,
+                    "y": 465,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "克朗加希",
+                            "Crângaşi"
+                        ],
+                        "rotate": 270,
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_KZ7KGL7M79",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 565,
+                    "y": 425,
+                    "type": "shmetro-int",
+                    "shmetro-int": {
+                        "names": [
+                            "巴薩拉布",
+                            "Basarab"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "rotate": 90,
+                        "height": 10,
+                        "width": 21
+                    }
+                }
+            },
+            {
+                "key": "stn_4hbH1gOJgn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 650,
+                    "y": 440,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "主要火車站",
+                            "Gara de Nord"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_LjCd4F2XvE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 610,
+                    "y": 435,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_6KINDNFjwv",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 700,
+                    "y": 435,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_G9mUkuLnUt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 650,
+                    "y": 420,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "",
+                            ""
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top"
+                    }
+                }
+            },
+            {
+                "key": "stn_f-5W7okgS-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 465,
+                    "y": 435,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "格里維察",
+                            "Griviţa"
+                        ],
+                        "rotate": 0,
+                        "color": [
+                            "bucharest",
+                            "b4",
+                            "#3b8476",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_5nmnEu-GFs",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 505,
+                    "y": 430,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_NoRdXn5rmJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 375,
+                    "y": 435,
+                    "type": "shmetro-int",
+                    "shmetro-int": {
+                        "names": [
+                            "5月1日",
+                            "1 Mai"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "rotate": 90,
+                        "height": 10,
+                        "width": 13
+                    }
+                }
+            },
+            {
+                "key": "stn_dBKsn7CO2O",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 325,
+                    "y": 435,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "吉烏伊",
+                            "Jiului"
+                        ],
+                        "rotate": 0,
+                        "color": [
+                            "bucharest",
+                            "b4",
+                            "#3b8476",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_i2TxlkGeMM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 250,
+                    "y": 435,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "巴齊萊斯庫公園",
+                            "Parc Bazilescu"
+                        ],
+                        "rotate": 0,
+                        "color": [
+                            "bucharest",
+                            "b4",
+                            "#3b8476",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_I3giKPCVh5",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 175,
+                    "y": 435,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "軋鋼廠",
+                            "Laminorului"
+                        ],
+                        "rotate": 0,
+                        "color": [
+                            "bucharest",
+                            "b4",
+                            "#3b8476",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_GwZOH5he3Q",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 135,
+                    "y": 435,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "斯特拉乌列什蒂",
+                            "Străuleşti"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_N6M30d0m8M",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 375,
+                    "y": 375,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "帕朱拉",
+                            "Pajura"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_VHa9L8z4ky",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 375,
+                    "y": 325,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "展覽",
+                            "Expoziţiei"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_UK6YeSMmIe",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 375,
+                    "y": 275,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "蒙特婁廣場",
+                            "Piaţa Montreal"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_Te7mO6gK0W",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 375,
+                    "y": 225,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "巴內阿薩火車站",
+                            "Gara Băneasa"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_Spj4kEIjyA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 375,
+                    "y": 175,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "巴內薩機場",
+                            "Aeroport Băneasa"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_doDq20J7-6",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 375,
+                    "y": 125,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "東京",
+                            "Tokyo"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_os9RXKDH5o",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 375,
+                    "y": 75,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "華盛頓",
+                            "Washington"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_CZyXSyeWRn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 375,
+                    "y": 25,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "巴黎",
+                            "Paris"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_fJspxduc_8",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 375,
+                    "y": -25,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "布魯塞爾",
+                            "Bruxelles"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_-I23MjYOz8",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 375,
+                    "y": -75,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "奧托佩尼",
+                            "Otopeni"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_Pw9Q7eXpxh",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 375,
+                    "y": -125,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "伊昂·布拉蒂亞努",
+                            "Ion I. C. Brătianu"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_GXgIMytU54",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 375,
+                    "y": -150,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "布加勒斯特奧托佩尼「亨利·科安達」機場",
+                            "Aeroport \"Henri Coandă\" Bucureşti-Otopeni"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top"
+                    }
+                }
+            },
+            {
+                "key": "stn_Ow0x9-boRn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 625,
+                    "y": 655,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "軍事學院",
+                            "Academia MIlitară"
+                        ],
+                        "rotate": 270,
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_fZ-wbhxTyR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 625,
+                    "y": 695,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "地平線",
+                            "Orizont"
+                        ],
+                        "rotate": 270,
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_04VjWx8l5X",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 625,
+                    "y": 730,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "最愛",
+                            "Favorit"
+                        ],
+                        "rotate": 270,
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_1SYL5sg7-l",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 625,
+                    "y": 765,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "圖多爾·弗拉迪米雷斯庫",
+                            "Tudor Vladimirescu"
+                        ],
+                        "rotate": 270,
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_oCCdKvVCbS",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 625,
+                    "y": 805,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "德魯姆·塔貝雷公園",
+                            "Parc Drumul Taberei"
+                        ],
+                        "rotate": 270,
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_eTfnAk_ztj",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 625,
+                    "y": 845,
+                    "type": "shmetro-int",
+                    "shmetro-int": {
+                        "names": [
+                            "小說家們",
+                            "Romancierilor"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
+                    }
+                }
+            },
+            {
+                "key": "stn_3RRgUq1Nnz",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 625,
+                    "y": 905,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "康斯坦丁\n布朗庫西",
+                            "Constantin Brâncuşi"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_q-t_T6lFsC",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 625,
+                    "y": 965,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "多阿姆內河",
+                            "Râul Doamnei"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_3HUoLtXmi3",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 580,
+                    "y": 925,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "亞洛米察河谷",
+                            "Valea Ialomiţei"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_Fvrapa9ACK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 590,
+                    "y": 895,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_ANeFQoPa0P",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 655,
+                    "y": 525,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "哈什杜",
+                            "Haşdeu"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top"
+                    }
+                }
+            },
+            {
+                "key": "stn_i6AFPS93Ay",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 695,
+                    "y": 525,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "契什米吉烏",
+                            "Cişmigiu"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_fY0mu5osRz",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 360,
+                    "y": -190,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "airport"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_sOJWxTaxqM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 355,
+                    "y": 175,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "airport"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_KbZ81PDziv",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 355,
+                    "y": 220,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_AMq_c7WsUV",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 565,
+                    "y": 450,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_nQN3U9YjPb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 670,
+                    "y": 425,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_StSkB_Z-Km",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1240,
+                    "y": 450,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_IZQQd1fnxt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 350,
+                    "y": -225,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 6,
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_OUnQOI9WVx",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 385,
+                    "y": -190,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_-buiTxilPQ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 345,
+                    "y": 465,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 6,
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_IYKs_yVswB",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 50,
+                    "y": 395,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 4,
+                        "color": [
+                            "bucharest",
+                            "b4",
+                            "#3b8476",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_H1fsGdT7f6",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 625,
+                    "y": 465,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 4,
+                        "color": [
+                            "bucharest",
+                            "b4",
+                            "#3b8476",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_RqraD-9n5u",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 725,
+                    "y": 245,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 2,
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_qmV150yt3x",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 730,
+                    "y": 985,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 2,
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_ICOqRmHmbI",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 485,
+                    "y": 930,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 5,
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_38BkNv1_y8",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 600,
+                    "y": 1000,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 5,
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_OD8vI4Vg0v",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 630,
+                    "y": 605,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 5,
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_67bXMCB2NK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1150,
+                    "y": 370,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 1,
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_HR1tKrS36c",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1200,
+                    "y": 710,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 3,
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_TVTEjuR55t",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1000,
+                    "y": 605,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 1,
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_fwTjxi6NqN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 285,
+                    "y": 610,
+                    "type": "shmetro-num-line-badge",
+                    "shmetro-num-line-badge": {
+                        "num": 3,
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_fvH7TVC5fh",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 690,
+                    "y": -45,
+                    "type": "text",
+                    "text": {
+                        "content": "Harta de Metrou a Bucureştiului\n\nBucharest Metro Map\n\nU-Bahn-Plan von Bukarest\n\nPlan du métro de Bucarest\n\nMapa del metro de Bucarest",
+                        "fontSize": 24,
+                        "lineHeight": 16,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "mtr_en",
+                        "color": [
+                            "other",
+                            "other",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_FYXiMNsXTT",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 680,
+                    "y": 115,
+                    "type": "text",
+                    "text": {
+                        "content": "布加勒斯特地鐵圖",
+                        "fontSize": 24,
+                        "lineHeight": 16,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "mtr_zh",
+                        "color": [
+                            "other",
+                            "other",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_9UMz8BYxdi",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 640,
+                    "y": -95,
+                    "type": "image",
+                    "image": {
+                        "type": "local",
+                        "scale": 0.25,
+                        "rotate": 0,
+                        "opacity": 1,
+                        "href": "img-l_6bE9tY9bP5"
+                    }
+                }
+            }
+        ],
+        "edges": [
+            {
+                "key": "line_AJ1MBF6YIm",
+                "source": "stn_uUpUW1Ltgp",
+                "target": "stn_TimFnqY81m",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_ztc-0XdbBZ",
+                "source": "stn_TimFnqY81m",
+                "target": "stn_NT6j_KgzNr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_80qba8GfBi",
+                "source": "stn_NT6j_KgzNr",
+                "target": "stn_p49q8NNz8S",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_ZgeFw3vrsX",
+                "source": "stn_p49q8NNz8S",
+                "target": "stn_PrygBvDuzW",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b2",
+                            "#015aaa",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_o2YTW1icC3",
+                "source": "stn_V4Dzs5ZJLs",
+                "target": "stn_z60Ps6dMxz",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_4WuN04alyV",
+                "source": "stn_z60Ps6dMxz",
+                "target": "stn_jgsOVrupOb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_5omTgfd4QS",
+                "source": "stn_TimFnqY81m",
+                "target": "stn_V4Dzs5ZJLs",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_7TLWjcRlS8",
+                "source": "stn_jgsOVrupOb",
+                "target": "stn_vJcQZn7GwM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_jDo2wGGalP",
+                "source": "stn_Bf5SIgv5nH",
+                "target": "stn_vJcQZn7GwM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_68fhihUShq",
+                "source": "stn_p49q8NNz8S",
+                "target": "stn_1KvBf2rmXq",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "mtr-light-rail": {
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_rHoYHqoz1g",
+                "source": "stn_1KvBf2rmXq",
+                "target": "stn_CPjmvclAZ_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-light-rail",
+                    "mtr-light-rail": {
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_yzwBmDmyx_",
+                "source": "stn_Bf5SIgv5nH",
+                "target": "stn_lBBPoQj5pb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "mtr-unpaid-area",
+                    "mtr-unpaid-area": {},
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_L4nQCogKUt",
+                "source": "stn_p49q8NNz8S",
+                "target": "stn_lBBPoQj5pb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -2.5,
+                        "offsetTo": -2.5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_ObMI-uTTpD",
+                "source": "stn_p49q8NNz8S",
+                "target": "stn_lBBPoQj5pb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 2.5,
+                        "offsetTo": 2.5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_HUeePqvrbG",
+                "source": "stn_lBBPoQj5pb",
+                "target": "stn_hdk8cjFqQK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -2.5,
+                        "offsetTo": -2.5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_qvhunufxXR",
+                "source": "stn_lBBPoQj5pb",
+                "target": "stn_hdk8cjFqQK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 2.5,
+                        "offsetTo": 2.5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_Q2j6u5uLiC",
+                "source": "stn_hdk8cjFqQK",
+                "target": "stn_aMDKE3Qh1Y",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -2.5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_2vFsTJUvEo",
+                "source": "stn_aMDKE3Qh1Y",
+                "target": "stn_9P15RKvwSo",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_h0x-v2L1rR",
+                "source": "stn_hdk8cjFqQK",
+                "target": "stn_WPDvsoOcYQ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 2.5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_MbqiRyI1Du",
+                "source": "stn_WPDvsoOcYQ",
+                "target": "stn_WdmXP01gBy",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_lECss3blKp",
+                "source": "stn_p49q8NNz8S",
+                "target": "stn_t1gGbsQqzF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 2.5,
+                        "offsetTo": 2.5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line__iiOrZ8Gkn",
+                "source": "stn_p49q8NNz8S",
+                "target": "stn_t1gGbsQqzF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -2.5,
+                        "offsetTo": -2.5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_-ZF-56nMsb",
+                "source": "misc_node_yararZouXb",
+                "target": "misc_node_Hhq3amNH4I",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_PiD789t46t",
+                "source": "stn_t1gGbsQqzF",
+                "target": "misc_node_Hhq3amNH4I",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 2.5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_4DNC40g0s9",
+                "source": "misc_node_yararZouXb",
+                "target": "stn_vXk5Bdrx1y",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": 0
+                }
+            },
+            {
+                "key": "line_ZdgBZT_Lbl",
+                "source": "stn_vXk5Bdrx1y",
+                "target": "stn_zUH2T-s8s1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b3",
+                            "#ed1a3a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": 0
+                }
+            },
+            {
+                "key": "line_U3My_RqXH3",
+                "source": "stn_t1gGbsQqzF",
+                "target": "misc_node_3iy52IwClE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": 0
+                }
+            },
+            {
+                "key": "line_5rTO_gaQxb",
+                "source": "misc_node_VzZCL4Bl9Y",
+                "target": "misc_node_3iy52IwClE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": 0
+                }
+            },
+            {
+                "key": "line_QPDsJXCjeO",
+                "source": "misc_node_VzZCL4Bl9Y",
+                "target": "stn_A6Z5dPQvXL",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": 0
+                }
+            },
+            {
+                "key": "line_yTWNruQz_L",
+                "source": "stn_ak8QH0JVYr",
+                "target": "stn_A6Z5dPQvXL",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_k4JdqZRwnQ",
+                "source": "stn_KZ7KGL7M79",
+                "target": "stn_ak8QH0JVYr",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_Vsz21UnYyb",
+                "source": "stn_KZ7KGL7M79",
+                "target": "misc_node_LjCd4F2XvE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_pkMtgJ1uE_",
+                "source": "stn_4hbH1gOJgn",
+                "target": "misc_node_LjCd4F2XvE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_Lhz8xUzgma",
+                "source": "stn_KZ7KGL7M79",
+                "target": "stn_G9mUkuLnUt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b4",
+                            "#3b8476",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_mdw73ZS3TZ",
+                "source": "stn_G9mUkuLnUt",
+                "target": "stn_4hbH1gOJgn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "shmetro-virtual-int",
+                    "shmetro-virtual-int": {},
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_LJRaPE0K8i",
+                "source": "stn_4hbH1gOJgn",
+                "target": "misc_node_6KINDNFjwv",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_R6fPoeT8gQ",
+                "source": "stn_TimFnqY81m",
+                "target": "misc_node_6KINDNFjwv",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b1",
+                            "#feca0a",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_h1qfCQymA1",
+                "source": "stn_f-5W7okgS-",
+                "target": "misc_node_5nmnEu-GFs",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b4",
+                            "#3b8476",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_nnaZvjjenZ",
+                "source": "stn_KZ7KGL7M79",
+                "target": "misc_node_5nmnEu-GFs",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": -5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b4",
+                            "#3b8476",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_S9PqONexoJ",
+                "source": "stn_f-5W7okgS-",
+                "target": "stn_NoRdXn5rmJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b4",
+                            "#3b8476",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_Y_iamyPvEo",
+                "source": "stn_NoRdXn5rmJ",
+                "target": "stn_GwZOH5he3Q",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b4",
+                            "#3b8476",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_ICDIi6kIPP",
+                "source": "stn_GXgIMytU54",
+                "target": "stn_NoRdXn5rmJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b6",
+                            "#cb90ac",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_PlHDlXq97i",
+                "source": "stn_eTfnAk_ztj",
+                "target": "misc_node_Fvrapa9ACK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_Mh9Ns97Rby",
+                "source": "stn_3HUoLtXmi3",
+                "target": "misc_node_Fvrapa9ACK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_4lYmxM7Yh4",
+                "source": "stn_t1gGbsQqzF",
+                "target": "stn_q-t_T6lFsC",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_tp8NxhHmkd",
+                "source": "stn_NT6j_KgzNr",
+                "target": "stn_t1gGbsQqzF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mrt-under-constr",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "mrt-under-constr": {
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_76nhDV1EwW",
+                "source": "stn_NT6j_KgzNr",
+                "target": "stn_jgsOVrupOb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "mrt-under-constr",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "mrt-under-constr": {
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_mzThlgEA-Z",
+                "source": "stn_9P15RKvwSo",
+                "target": "stn_jgsOVrupOb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "mrt-under-constr",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "mrt-under-constr": {
+                        "color": [
+                            "bucharest",
+                            "b5",
+                            "#f79d00",
+                            "#fff"
+                        ]
+                    }
+                }
+            }
+        ]
+    },
+    "version": 68
+}

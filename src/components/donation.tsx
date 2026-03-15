@@ -13,7 +13,7 @@ export default function Donation() {
     const handleBack = () => navigate('/');
     const handleDonate = () => {
         if (i18n.language === 'zh-Hans') {
-            window.open('https://afdian.com/a/rail-map-toolkit', '_blank');
+            window.open('https://ifdian.net/a/rail-map-toolkit', '_blank');
         } else {
             window.open('https://opencollective.com/rail-map-toolkit', '_blank');
         }
@@ -105,11 +105,11 @@ export default function Donation() {
                         <Accordion.Control>{t('donation.methodCN')}</Accordion.Control>
                         <Accordion.Panel>
                             <Anchor
-                                href="https://afdian.com/a/rail-map-toolkit"
+                                href="https://ifdian.net/a/rail-map-toolkit"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                https://afdian.com/a/rail-map-toolkit <MdOpenInNew />
+                                https://ifdian.net/a/rail-map-toolkit <MdOpenInNew />
                             </Anchor>
                             <List withPadding>
                                 <List.Item>{t('donation.methodGithubAccount')}</List.Item>

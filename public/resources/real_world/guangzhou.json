@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 390,
+    "svgViewBoxZoom": 48.98257130119274,
     "svgViewBoxMin": {
-        "x": -298.0691427214045,
-        "y": -1608.346464673889
+        "x": 3.2450292736090205,
+        "y": 527.955503383537
     },
     "images": [],
     "graph": {
@@ -5457,7 +5457,7 @@
                         ],
                         "lineCode": "3",
                         "stationCode": "29",
-                        "open": true,
+                        "open": false,
                         "secondaryNames": [
                             "1号航站楼",
                             "Terminal 1"
@@ -15311,8 +15311,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -475,
-                    "y": -695,
+                    "x": -442.63,
+                    "y": -665.68,
                     "type": "facilities",
                     "facilities": {
                         "type": "airport_guangzhou"
@@ -20643,8 +20643,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -890,
-                    "y": -255,
+                    "x": -893,
+                    "y": -256,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway_guangzhou"
@@ -21071,8 +21071,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -170,
-                    "y": -705,
+                    "x": -131.22,
+                    "y": -703.93,
                     "type": "facilities",
                     "facilities": {
                         "type": "airport_guangzhou"
@@ -21998,15 +21998,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -165,
-                    "y": -725,
+                    "x": -265,
+                    "y": -725.5,
                     "type": "gzmtr-basic",
                     "gzmtr-basic": {
                         "names": [
                             "",
                             ""
                         ],
-                        "nameOffsetX": "left",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
                         "color": [
                             "other",
@@ -22016,7 +22016,7 @@
                         ],
                         "lineCode": "",
                         "stationCode": "",
-                        "open": true,
+                        "open": false,
                         "secondaryNames": [
                             "1号航站楼",
                             "Terminal 1"
@@ -22493,7 +22493,7 @@
                     "y": -910,
                     "type": "text",
                     "text": {
-                        "content": "12号线赤岗站尚未开通。",
+                        "content": "3号线机场南站停止对外开放。",
                         "fontSize": 15.5,
                         "lineHeight": 16,
                         "textAnchor": "start",
@@ -22521,7 +22521,7 @@
                     "y": -895,
                     "type": "text",
                     "text": {
-                        "content": "Chigang Station of Line 12 is under construction.",
+                        "content": "Airport South Station of Line 3 is stopped for service.",
                         "fontSize": 11.5,
                         "lineHeight": 11.5,
                         "textAnchor": "start",
@@ -23680,6 +23680,17 @@
                         "bold": "normal",
                         "outline": 0
                     }
+                }
+            },
+            {
+                "key": "misc_node_FcLMCSn8XJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -245,
+                    "y": 0,
+                    "type": "virtual",
+                    "virtual": {}
                 }
             }
         ],
@@ -41682,5 +41693,5 @@
             }
         ]
     },
-    "version": 68
+    "version": 74
 }

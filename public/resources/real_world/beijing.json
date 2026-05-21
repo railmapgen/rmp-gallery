@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 55.296384725243435,
+    "svgViewBoxZoom": 40.964569342286566,
     "svgViewBoxMin": {
-        "x": -480.3526328034202,
-        "y": -263.1330037573382
+        "x": -695.1013737295291,
+        "y": -218.58737519342574
     },
     "images": [],
     "graph": {
@@ -3588,7 +3588,8 @@
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
-                        "scale": 1
+                        "scale": 1,
+                        "outOfStation": false
                     }
                 }
             },
@@ -3669,7 +3670,7 @@
                         "nameOffsetY": "bottom",
                         "open": true,
                         "scale": 1,
-                        "construction": true
+                        "construction": false
                     }
                 }
             },
@@ -3711,7 +3712,7 @@
                         "nameOffsetY": "bottom",
                         "open": true,
                         "scale": 1,
-                        "construction": true
+                        "construction": false
                     }
                 }
             },
@@ -8585,90 +8586,6 @@
                     "y": 245,
                     "type": "virtual",
                     "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_HioeSl4tuk",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -565,
-                    "y": -5,
-                    "type": "text",
-                    "text": {
-                        "content": "1号线苹果园站\n施工封闭",
-                        "fontSize": 6,
-                        "lineHeight": 7,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "auto",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_A_CTFU-cNk",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -590,
-                    "y": 0,
-                    "type": "text",
-                    "text": {
-                        "content": "(",
-                        "fontSize": 14,
-                        "lineHeight": 8,
-                        "textAnchor": "start",
-                        "dominantBaseline": "auto",
-                        "language": "en",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_d747sVdoU-",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -545,
-                    "y": 0,
-                    "type": "text",
-                    "text": {
-                        "content": ")",
-                        "fontSize": 14,
-                        "lineHeight": 8,
-                        "textAnchor": "start",
-                        "dominantBaseline": "auto",
-                        "language": "en",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
                 }
             },
             {
@@ -23479,17 +23396,17 @@
                         "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
-                    "style": "bjsubway-dotted",
-                    "bjsubway-dotted": {
+                    "style": "single-color",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "single-color": {
                         "color": [
                             "beijing",
                             "bj1",
                             "#c23a30",
                             "#fff"
                         ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
+                    }
                 }
             },
             {
@@ -23687,5 +23604,5 @@
             }
         ]
     },
-    "version": 69
+    "version": 74
 }

@@ -1,8 +1,8 @@
 {
     "svgViewBoxZoom": 55.296384725243435,
     "svgViewBoxMin": {
-        "x": -480.3526328034202,
-        "y": -263.1330037573382
+        "x": -699.6018276554238,
+        "y": -238.89344295809238
     },
     "images": [],
     "graph": {
@@ -3669,7 +3669,7 @@
                         "nameOffsetY": "bottom",
                         "open": true,
                         "scale": 1,
-                        "construction": true
+                        "construction": false
                     }
                 }
             },
@@ -3711,7 +3711,7 @@
                         "nameOffsetY": "bottom",
                         "open": true,
                         "scale": 1,
-                        "construction": true
+                        "construction": false
                     }
                 }
             },
@@ -7888,8 +7888,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -461.34,
-                    "y": 28.68,
+                    "x": -579.5,
+                    "y": -8.89,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
                         "num": 1,
@@ -8585,90 +8585,6 @@
                     "y": 245,
                     "type": "virtual",
                     "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_HioeSl4tuk",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -565,
-                    "y": -5,
-                    "type": "text",
-                    "text": {
-                        "content": "1号线苹果园站\n施工封闭",
-                        "fontSize": 6,
-                        "lineHeight": 7,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "auto",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_A_CTFU-cNk",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -590,
-                    "y": 0,
-                    "type": "text",
-                    "text": {
-                        "content": "(",
-                        "fontSize": 14,
-                        "lineHeight": 8,
-                        "textAnchor": "start",
-                        "dominantBaseline": "auto",
-                        "language": "en",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_d747sVdoU-",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -545,
-                    "y": 0,
-                    "type": "text",
-                    "text": {
-                        "content": ")",
-                        "fontSize": 14,
-                        "lineHeight": 8,
-                        "textAnchor": "start",
-                        "dominantBaseline": "auto",
-                        "language": "en",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
                 }
             },
             {
@@ -9647,17 +9563,6 @@
                         "tram": true,
                         "span": true
                     }
-                }
-            },
-            {
-                "key": "misc_node_mjyU4ZB380",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -535.38,
-                    "y": -15.38,
-                    "type": "virtual",
-                    "virtual": {}
                 }
             },
             {
@@ -23439,60 +23344,6 @@
                 }
             },
             {
-                "key": "line_uhh_djQPvo",
-                "source": "stn_TOBOQpWWLz",
-                "target": "misc_node_mjyU4ZB380",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "bjsubway-single-color",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "bjsubway-single-color": {
-                        "color": [
-                            "beijing",
-                            "bj1",
-                            "#c23a30",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_VeUxoyJW3r",
-                "source": "misc_node_mjyU4ZB380",
-                "target": "stn_uDpJ66mSjB",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "bjsubway-dotted",
-                    "bjsubway-dotted": {
-                        "color": [
-                            "beijing",
-                            "bj1",
-                            "#c23a30",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_7JPodQI-mS",
                 "source": "stn_TOBOQpWWLz",
                 "target": "stn_kh_J_oun-Y",
@@ -23684,8 +23535,35 @@
                     "reconcileId": "",
                     "parallelIndex": -1
                 }
+            },
+            {
+                "key": "line_HO8yVwhv9v",
+                "source": "stn_TOBOQpWWLz",
+                "target": "stn_uDpJ66mSjB",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "beijing",
+                            "bj1",
+                            "#c23a30",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": 0
+                }
             }
         ]
     },
-    "version": 69
+    "version": 74
 }

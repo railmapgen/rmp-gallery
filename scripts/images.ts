@@ -18,7 +18,49 @@ export const makeImage = async (filePath: string, svg = false) => {
     });
 
     const driver = await new Builder().withCapabilities(capabilities).build();
-    await driver.get('https://railmapgen.github.io/rmp/');
+    await driver.get('https://railmapgen.org/rmp/');
+
+    const waitUntilNoVisibleModal = async () => {
+        await driver.wait(
+            async () => {
+                const containers = await driver.findElements(By.css('.chakra-modal__content-container'));
+                const visibleStates = await Promise.all(
+                    containers.map(container => container.isDisplayed().catch(() => false))
+                );
+                return visibleStates.every(isVisible => !isVisible);
+            },
+            120000,
+            'Timed out waiting for the RMP import modal to close.'
+        );
+    };
+
+    const waitUntilElementReceivesClick = async (xpath: string) => {
+        await driver.wait(
+            async () => {
+                try {
+                    const element = await driver.findElement(By.xpath(xpath));
+                    return Boolean(
+                        await driver.executeScript(
+                            `
+                    const element = arguments[0];
+                    const rect = element.getBoundingClientRect();
+                    const x = rect.left + rect.width / 2;
+                    const y = rect.top + rect.height / 2;
+                    const topElement = document.elementFromPoint(x, y);
+                    return topElement === element || element.contains(topElement);
+                    `,
+                            element
+                        )
+                    );
+                } catch {
+                    return false;
+                }
+            },
+            120000,
+            `Timed out waiting for ${xpath} to receive clicks.`
+        );
+        return driver.findElement(By.xpath(xpath));
+    };
 
     const uploadMenuButtonXPath = '//*[@id="upload_project"]';
     await driver.wait(until.elementLocated(By.xpath(uploadMenuButtonXPath)), 10000);
@@ -28,10 +70,10 @@ export const makeImage = async (filePath: string, svg = false) => {
     await driver.wait(until.elementLocated(By.xpath(confirmButtonXPath)), 10000);
     await driver.findElement(By.xpath(confirmButtonXPath)).click();
 
-    await new Promise(r => setTimeout(r, 1000)); // wait a second to be fully loaded
+    await waitUntilNoVisibleModal();
 
     const downloadMenuButtonXPath = '//*[@id="menu-button-download"]';
-    await driver.findElement(By.xpath(downloadMenuButtonXPath)).click();
+    await (await waitUntilElementReceivesClick(downloadMenuButtonXPath)).click();
 
     // https://stackoverflow.com/questions/75168142/how-to-choose-an-option-from-a-non-select-dropdown-menu-in-selenium-python
     const exportImageButtonXPath =

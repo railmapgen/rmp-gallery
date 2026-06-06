@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 210,
+    "svgViewBoxZoom": 48.98257130119274,
     "svgViewBoxMin": {
-        "x": -140.955130707752,
-        "y": -1719.642308375257
+        "x": 3.2450292736090205,
+        "y": 527.955503383537
     },
     "images": [],
     "graph": {
@@ -5457,7 +5457,7 @@
                         ],
                         "lineCode": "3",
                         "stationCode": "29",
-                        "open": true,
+                        "open": false,
                         "secondaryNames": [
                             "1号航站楼",
                             "Terminal 1"
@@ -13404,7 +13404,7 @@
                     "visible": true,
                     "zIndex": 5,
                     "x": 925,
-                    "y": -745,
+                    "y": -710,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -15311,8 +15311,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -475,
-                    "y": -695,
+                    "x": -442.63,
+                    "y": -665.68,
                     "type": "facilities",
                     "facilities": {
                         "type": "airport_guangzhou"
@@ -20643,8 +20643,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -890,
-                    "y": -255,
+                    "x": -893,
+                    "y": -256,
                     "type": "facilities",
                     "facilities": {
                         "type": "railway_guangzhou"
@@ -21071,8 +21071,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -170,
-                    "y": -705,
+                    "x": -131.22,
+                    "y": -703.93,
                     "type": "facilities",
                     "facilities": {
                         "type": "airport_guangzhou"
@@ -21998,15 +21998,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -165,
-                    "y": -725,
+                    "x": -265,
+                    "y": -725.5,
                     "type": "gzmtr-basic",
                     "gzmtr-basic": {
                         "names": [
                             "",
                             ""
                         ],
-                        "nameOffsetX": "left",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "bottom",
                         "color": [
                             "other",
@@ -22016,7 +22016,7 @@
                         ],
                         "lineCode": "",
                         "stationCode": "",
-                        "open": true,
+                        "open": false,
                         "secondaryNames": [
                             "1号航站楼",
                             "Terminal 1"
@@ -22156,7 +22156,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 755,
-                    "y": -810,
+                    "y": -775,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -22167,7 +22167,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 925,
-                    "y": -755,
+                    "y": -720,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -22178,7 +22178,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 925,
-                    "y": -860,
+                    "y": -825,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -22189,7 +22189,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 1095,
-                    "y": -810,
+                    "y": -775,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -22200,7 +22200,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 760,
-                    "y": -855,
+                    "y": -820,
                     "type": "text",
                     "text": {
                         "content": "出站后需经地面换乘的站点：琶洲、五羊邨、机场南、\n龙洞、科韵路、汉溪长隆、陈村、石潭、新塘、张槎 、\n北滘西站。",
@@ -22228,7 +22228,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 760,
-                    "y": -805,
+                    "y": -770,
                     "type": "text",
                     "text": {
                         "content": "Stations that require ground transfer after exiting: Pazhou,\nWuyangcun, Airport S., Longdong, Keyun Lu, Hanxi Changlong,\nChencun, Shitan, Xintang, Zhangcha, and Beijiao West Railway\nStation.",
@@ -22481,6 +22481,62 @@
                     "type": "facilities",
                     "facilities": {
                         "type": "railway_guangzhou"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_xF0vWd0WCT",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 750,
+                    "y": -910,
+                    "type": "text",
+                    "text": {
+                        "content": "3号线机场南站停止对外开放。",
+                        "fontSize": 15.5,
+                        "lineHeight": 16,
+                        "textAnchor": "start",
+                        "dominantBaseline": "middle",
+                        "language": "zh",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_1PhXahiYck",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 750,
+                    "y": -895,
+                    "type": "text",
+                    "text": {
+                        "content": "Airport South Station of Line 3 is stopped for service.",
+                        "fontSize": 11.5,
+                        "lineHeight": 11.5,
+                        "textAnchor": "start",
+                        "dominantBaseline": "middle",
+                        "language": "en",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
                     }
                 }
             },
@@ -23576,7 +23632,7 @@
                     "visible": true,
                     "zIndex": 5,
                     "x": 750,
-                    "y": -895,
+                    "y": -860,
                     "type": "text",
                     "text": {
                         "content": "Passengers transferring between the Guangzhou-Shenzhen Intercity\nand the Guangzhou-Huizhou Intercity at Dongguanxi Railway Station\nare required to exit the fare gates.",
@@ -23604,7 +23660,7 @@
                     "visible": true,
                     "zIndex": 5,
                     "x": 750,
-                    "y": -910,
+                    "y": -875,
                     "type": "text",
                     "text": {
                         "content": "穗深城际与广惠城际在东莞西站需出闸换乘。",
@@ -23624,6 +23680,17 @@
                         "bold": "normal",
                         "outline": 0
                     }
+                }
+            },
+            {
+                "key": "misc_node_FcLMCSn8XJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -245,
+                    "y": 0,
+                    "type": "virtual",
+                    "virtual": {}
                 }
             }
         ],
@@ -41626,5 +41693,5 @@
             }
         ]
     },
-    "version": 68
+    "version": 74
 }

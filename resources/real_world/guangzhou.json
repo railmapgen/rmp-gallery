@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 400,
+    "svgViewBoxZoom": 131.82358443007502,
     "svgViewBoxMin": {
-        "x": -2019.5779874621103,
-        "y": -1390.3168495421755
+        "x": -1800.7339317463545,
+        "y": -302.4422161334061
     },
     "images": [],
     "graph": {
@@ -5491,7 +5491,7 @@
                         "stationCode": "30",
                         "open": true,
                         "secondaryNames": [
-                            "T2",
+                            "　 ",
                             ""
                         ],
                         "tram": false
@@ -5721,8 +5721,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -405,
-                    "y": -750,
+                    "x": -412,
+                    "y": -745,
                     "type": "gzmtr-line-badge",
                     "gzmtr-line-badge": {
                         "names": [
@@ -10353,7 +10353,12 @@
                             "",
                             ""
                         ],
-                        "tram": false
+                        "tram": false,
+                        "preciseNameOffsets": {
+                            "x": 11.5589352013643,
+                            "y": -3.705745313658759,
+                            "anchor": "start"
+                        }
                     }
                 }
             },
@@ -13392,8 +13397,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 926.17,
-                    "y": -1053.72,
+                    "x": 1060.78,
+                    "y": -1109.6200000000001,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -13403,8 +13408,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 912.3,
-                    "y": -647.69,
+                    "x": 1046.9099999999999,
+                    "y": -703.5900000000001,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -13414,8 +13419,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 745,
-                    "y": -925,
+                    "x": 879.61,
+                    "y": -980.9000000000001,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -13425,8 +13430,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 1105,
-                    "y": -925,
+                    "x": 1239.6100000000001,
+                    "y": -980.9000000000001,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -14876,7 +14881,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 696.25,
+                    "x": 685,
                     "y": 635,
                     "type": "guangdong-intercity-rwy",
                     "guangdong-intercity-rwy": {
@@ -15450,54 +15455,6 @@
                 }
             },
             {
-                "key": "misc_node_zbYd_vEowd",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -1165,
-                    "y": 430.01,
-                    "type": "gzmtr-line-badge",
-                    "gzmtr-line-badge": {
-                        "names": [
-                            "佛山3号线",
-                            "Foshan Line 3"
-                        ],
-                        "color": [
-                            "foshan",
-                            "fs3",
-                            "#002da0",
-                            "#fff"
-                        ],
-                        "tram": true,
-                        "span": true
-                    }
-                }
-            },
-            {
-                "key": "misc_node_bmZRJHECg-",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -1060,
-                    "y": 535,
-                    "type": "gzmtr-line-badge",
-                    "gzmtr-line-badge": {
-                        "names": [
-                            "佛山3号线",
-                            "Foshan Line 3"
-                        ],
-                        "color": [
-                            "foshan",
-                            "fs3",
-                            "#002da0",
-                            "#fff"
-                        ],
-                        "tram": true,
-                        "span": true
-                    }
-                }
-            },
-            {
                 "key": "stn_NkOax_edwu",
                 "attributes": {
                     "visible": true,
@@ -15622,8 +15579,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 753.2,
-                    "y": -897.48,
+                    "x": 887.8100000000001,
+                    "y": -953.3800000000001,
                     "type": "text",
                     "text": {
                         "content": "海珠有轨1号线会展西站停止对外服务。",
@@ -15650,8 +15607,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 754.67,
-                    "y": -879.4,
+                    "x": 889.28,
+                    "y": -935.3000000000001,
                     "type": "text",
                     "text": {
                         "content": "Canton Fair Complex West Station of THZ1 is out of service.",
@@ -15838,8 +15795,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 750.8,
-                    "y": -860.22,
+                    "x": 885.41,
+                    "y": -916.1200000000001,
                     "type": "text",
                     "text": {
                         "content": "11号线广州火车站尚未开通。",
@@ -15866,8 +15823,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 750.8,
-                    "y": -845.22,
+                    "x": 885.41,
+                    "y": -901.1200000000001,
                     "type": "text",
                     "text": {
                         "content": "Guangzhou Railway Station of Line 11 is under construction.",
@@ -20395,8 +20352,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 925.39,
-                    "y": -1034.1,
+                    "x": 1060,
+                    "y": -1090,
                     "type": "master",
                     "master": {
                         "randomId": "elZAaH",
@@ -20630,7 +20587,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -890,
+                    "x": -910,
                     "y": -255,
                     "type": "facilities",
                     "facilities": {
@@ -21936,76 +21893,12 @@
                 }
             },
             {
-                "key": "stn_nyqUrlE9ES",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -243.87,
-                    "y": -766.23,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
-                        "names": [
-                            "",
-                            ""
-                        ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "bottom",
-                        "color": [
-                            "other",
-                            "other",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "lineCode": "",
-                        "stationCode": "",
-                        "open": true,
-                        "secondaryNames": [
-                            "T2",
-                            ""
-                        ],
-                        "tram": false
-                    }
-                }
-            },
-            {
-                "key": "stn_fVULlFzP71",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -133.72,
-                    "y": -656.08,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
-                        "names": [
-                            "",
-                            ""
-                        ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "bottom",
-                        "color": [
-                            "other",
-                            "other",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "lineCode": "",
-                        "stationCode": "",
-                        "open": true,
-                        "secondaryNames": [
-                            "T3",
-                            ""
-                        ],
-                        "tram": false
-                    }
-                }
-            },
-            {
                 "key": "misc_node_1IJyxL_LRX",
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -136.91,
-                    "y": -635.92,
+                    "x": -135,
+                    "y": -635,
                     "type": "facilities",
                     "facilities": {
                         "type": "airport_guangzhou"
@@ -22097,8 +21990,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 755,
-                    "y": -736.39,
+                    "x": 889.61,
+                    "y": -792.2900000000001,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -22108,8 +22001,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 931.24,
-                    "y": -666.63,
+                    "x": 1065.85,
+                    "y": -722.5300000000001,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -22119,8 +22012,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 939.45,
-                    "y": -777.82,
+                    "x": 1074.06,
+                    "y": -833.7200000000001,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -22130,8 +22023,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1095,
-                    "y": -736.39,
+                    "x": 1229.6100000000001,
+                    "y": -792.2900000000001,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -22141,8 +22034,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 757.77,
-                    "y": -771.69,
+                    "x": 892.38,
+                    "y": -827.5900000000001,
                     "type": "text",
                     "text": {
                         "content": "出站后需经地面换乘的站点：琶洲、五羊邨、机场南、\n龙洞、科韵路、汉溪长隆、陈村、石潭、新塘、张槎 、\n北滘西站。",
@@ -22169,8 +22062,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 757.03,
-                    "y": -715.7,
+                    "x": 891.64,
+                    "y": -771.6000000000001,
                     "type": "text",
                     "text": {
                         "content": "Stations that require ground transfer after exiting: Pazhou,\nWuyangcun, Airport S., Longdong, Keyun Lu, Hanxi Changlong,\nChencun, Shitan, Xintang, Zhangcha, and Beijiao West Railway\nStation.",
@@ -23081,8 +22974,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 970,
-                    "y": 10,
+                    "x": 185,
+                    "y": -595,
                     "type": "gd-intercity-rwy-line-badge",
                     "gd-intercity-rwy-line-badge": {
                         "names": [
@@ -23103,43 +22996,11 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1280,
+                    "x": 1255,
                     "y": 1070,
                     "type": "facilities",
                     "facilities": {
                         "type": "airport_guangzhou"
-                    }
-                }
-            },
-            {
-                "key": "stn_f-HcRrSu2Z",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": 1285,
-                    "y": 1050,
-                    "type": "gzmtr-basic",
-                    "gzmtr-basic": {
-                        "names": [
-                            "",
-                            ""
-                        ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "bottom",
-                        "color": [
-                            "other",
-                            "other",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "lineCode": "",
-                        "stationCode": "",
-                        "open": true,
-                        "secondaryNames": [
-                            "3号航站楼",
-                            "Terminal 3"
-                        ],
-                        "tram": false
                     }
                 }
             },
@@ -23517,8 +23378,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 752.58,
-                    "y": -814.26,
+                    "x": 887.19,
+                    "y": -870.1600000000001,
                     "type": "text",
                     "text": {
                         "content": "Passengers transferring between the Guangzhou-Shenzhen Intercity\nand the Guangzhou-Huizhou Intercity at Dongguanxi Railway Station\nare required to exit the fare gates.",
@@ -23545,8 +23406,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 752.34,
-                    "y": -826.55,
+                    "x": 886.95,
+                    "y": -882.45,
                     "type": "text",
                     "text": {
                         "content": "穗深城际与广惠城际在东莞西站需出闸换乘。",
@@ -23573,8 +23434,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 751.46,
-                    "y": -999.73,
+                    "x": 886.07,
+                    "y": -1055.63,
                     "type": "text",
                     "text": {
                         "content": "3号线机场南站（T1）停止对外服务。",
@@ -23601,8 +23462,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 751.46,
-                    "y": -984.73,
+                    "x": 886.07,
+                    "y": -1040.63,
                     "type": "text",
                     "text": {
                         "content": "Service at Airport S. Station(T1) of Line 3 is suspended",
@@ -23629,8 +23490,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 752.55,
-                    "y": -943.42,
+                    "x": 887.16,
+                    "y": -999.32,
                     "type": "text",
                     "text": {
                         "content": "广州东环城际白云机场南站（T1）停止对外服务。",
@@ -23657,8 +23518,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 752.61,
-                    "y": -927.33,
+                    "x": 887.22,
+                    "y": -983.2300000000001,
                     "type": "text",
                     "text": {
                         "content": "Service at Baiyun Airport South Railway Station(T1) of Guangzhou\nEast Ring Intercity is suspended",
@@ -23729,8 +23590,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -465.02,
-                    "y": -702.68,
+                    "x": -465,
+                    "y": -705,
                     "type": "text",
                     "text": {
                         "content": "停止对外服务",
@@ -23857,8 +23718,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -245.64,
-                    "y": -689.73,
+                    "x": -245,
+                    "y": -690,
                     "type": "text",
                     "text": {
                         "content": "Service Suspended",
@@ -23877,6 +23738,412 @@
                         "italic": "normal",
                         "bold": "normal",
                         "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_qFFzU_6HIx",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -450,
+                    "y": -740,
+                    "type": "text",
+                    "text": {
+                        "content": "T2",
+                        "fontSize": 15,
+                        "lineHeight": 14,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "hanging",
+                        "language": "en",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_AhgeIgNcJy",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -275,
+                    "y": -750,
+                    "type": "text",
+                    "text": {
+                        "content": "T2",
+                        "fontSize": 15,
+                        "lineHeight": 14,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "hanging",
+                        "language": "en",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_oNZzBJNOzZ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -275,
+                    "y": -750,
+                    "type": "text",
+                    "text": {
+                        "content": "（　）",
+                        "fontSize": 15,
+                        "lineHeight": 14,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "hanging",
+                        "language": "zh",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_AJx99ClblJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -165,
+                    "y": -640,
+                    "type": "text",
+                    "text": {
+                        "content": "T3",
+                        "fontSize": 15,
+                        "lineHeight": 14,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "hanging",
+                        "language": "en",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_77M5MwIAiI",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -165,
+                    "y": -640,
+                    "type": "text",
+                    "text": {
+                        "content": "（　）",
+                        "fontSize": 15,
+                        "lineHeight": 14,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "hanging",
+                        "language": "zh",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_tzHUeRKmGp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1215,
+                    "y": 1065,
+                    "type": "text",
+                    "text": {
+                        "content": "T3",
+                        "fontSize": 15,
+                        "lineHeight": 14,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "hanging",
+                        "language": "en",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_-U4hY0d2fk",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 1215,
+                    "y": 1065,
+                    "type": "text",
+                    "text": {
+                        "content": "（　）",
+                        "fontSize": 15,
+                        "lineHeight": 14,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "hanging",
+                        "language": "zh",
+                        "color": [
+                            "shanghai",
+                            "jsr",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "stn_1fRW_5OLD8",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": -1125,
+                    "y": 510,
+                    "type": "foshan-metro-basic",
+                    "foshan-metro-basic": {
+                        "names": [
+                            "敦厚",
+                            "Dunhou"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "foshan",
+                            "fs3",
+                            "#002da0",
+                            "#fff"
+                        ],
+                        "lineCode": "F3",
+                        "stationCode": "28",
+                        "open": true,
+                        "secondaryNames": [
+                            "",
+                            ""
+                        ],
+                        "tram": false
+                    }
+                }
+            },
+            {
+                "key": "stn_eBCqd7-XGe",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": -1165,
+                    "y": 460,
+                    "type": "foshan-metro-basic",
+                    "foshan-metro-basic": {
+                        "names": [
+                            "佛山站",
+                            "Foshan Railway \nStation"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "color": [
+                            "foshan",
+                            "fs3",
+                            "#002da0",
+                            "#fff"
+                        ],
+                        "lineCode": "F3",
+                        "stationCode": "29",
+                        "open": true,
+                        "secondaryNames": [
+                            "",
+                            ""
+                        ],
+                        "tram": false
+                    }
+                }
+            },
+            {
+                "key": "misc_node_b2ag7ZwlB9",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": -1085,
+                    "y": 465,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway_guangzhou"
+                    }
+                }
+            },
+            {
+                "key": "stn_39QK7wKFDo",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 1000,
+                    "y": -170,
+                    "type": "guangdong-intercity-rwy",
+                    "guangdong-intercity-rwy": {
+                        "names": [
+                            "永宁南",
+                            "Yongningnan"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "interchange": false
+                    }
+                }
+            },
+            {
+                "key": "stn__yOkY4LG2g",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 1000,
+                    "y": -290,
+                    "type": "guangdong-intercity-rwy",
+                    "guangdong-intercity-rwy": {
+                        "names": [
+                            "永宁北",
+                            "Yongningbei"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "interchange": false
+                    }
+                }
+            },
+            {
+                "key": "stn_oDf7aX-ph9",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 880,
+                    "y": -490,
+                    "type": "guangdong-intercity-rwy",
+                    "guangdong-intercity-rwy": {
+                        "names": [
+                            "镇龙",
+                            "Zhenlong"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "interchange": false
+                    }
+                }
+            },
+            {
+                "key": "stn_6mQdNeDBhP",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 785,
+                    "y": -585,
+                    "type": "guangdong-intercity-rwy",
+                    "guangdong-intercity-rwy": {
+                        "names": [
+                            "新龙",
+                            "Xinlong"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "interchange": false
+                    }
+                }
+            },
+            {
+                "key": "stn_rec5F_k1iI",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 695,
+                    "y": -675,
+                    "type": "guangdong-intercity-rwy",
+                    "guangdong-intercity-rwy": {
+                        "names": [
+                            "佛塱",
+                            "Folang"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "interchange": false
+                    }
+                }
+            },
+            {
+                "key": "stn_uHai0SPu0e",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 520,
+                    "y": -700,
+                    "type": "guangdong-intercity-rwy",
+                    "guangdong-intercity-rwy": {
+                        "names": [
+                            "九佛",
+                            "Jiufo"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "interchange": false
+                    }
+                }
+            },
+            {
+                "key": "stn_0tF6z78me0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 400,
+                    "y": -640,
+                    "type": "guangdong-intercity-rwy",
+                    "guangdong-intercity-rwy": {
+                        "names": [
+                            "钟落潭东",
+                            "Zhongluotandong"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "interchange": false
                     }
                 }
             }
@@ -41890,7 +42157,7 @@
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 10
+                        "roundCornerFactor": 5
                     },
                     "style": "mtr-paid-area",
                     "reconcileId": "",
@@ -41910,7 +42177,7 @@
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 10
+                        "roundCornerFactor": 5
                     },
                     "style": "mtr-paid-area",
                     "reconcileId": "",
@@ -41930,7 +42197,7 @@
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 10
+                        "roundCornerFactor": 5
                     },
                     "style": "mtr-paid-area",
                     "reconcileId": "",
@@ -41950,7 +42217,7 @@
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 10
+                        "roundCornerFactor": 5
                     },
                     "style": "mtr-paid-area",
                     "reconcileId": "",
@@ -41970,7 +42237,7 @@
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 10
+                        "roundCornerFactor": 5
                     },
                     "style": "mtr-paid-area",
                     "reconcileId": "",
@@ -41990,7 +42257,7 @@
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 10
+                        "roundCornerFactor": 5
                     },
                     "style": "mtr-paid-area",
                     "reconcileId": "",
@@ -42010,7 +42277,7 @@
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 10
+                        "roundCornerFactor": 5
                     },
                     "style": "mtr-paid-area",
                     "reconcileId": "",
@@ -42030,15 +42297,379 @@
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 10
+                        "roundCornerFactor": 5
                     },
                     "style": "mtr-paid-area",
                     "reconcileId": "",
                     "parallelIndex": -1,
                     "mtr-paid-area": {}
                 }
+            },
+            {
+                "key": "line_-dPyz45VvG",
+                "source": "stn__KPnSabIUv",
+                "target": "stn_1fRW_5OLD8",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "foshan",
+                            "fs3",
+                            "#002da0",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_2XVL8H9jWR",
+                "source": "stn_1fRW_5OLD8",
+                "target": "stn_eBCqd7-XGe",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "foshan",
+                            "fs3",
+                            "#002da0",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_c_UgqnYaf-",
+                "source": "stn_eBCqd7-XGe",
+                "target": "stn_SzChRwaukE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "foshan",
+                            "fs3",
+                            "#002da0",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_fw7JFur52t",
+                "source": "stn_-1b8mEKWMG",
+                "target": "stn_39QK7wKFDo",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "gd-intercity-rwy",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "gd-intercity-rwy": {
+                        "color": [
+                            "guangzhou",
+                            "ir",
+                            "#2559a8",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_Gxyd7oRmOc",
+                "source": "stn_39QK7wKFDo",
+                "target": "stn__yOkY4LG2g",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "gd-intercity-rwy",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "gd-intercity-rwy": {
+                        "color": [
+                            "guangzhou",
+                            "ir",
+                            "#2559a8",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_XQckm6MMx4",
+                "source": "stn_oDf7aX-ph9",
+                "target": "stn_G2DJXLV3EI",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 5,
+                        "roundCornerFactor": 3
+                    },
+                    "style": "gzmtr-virtual-int",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "gzmtr-virtual-int": {}
+                }
+            },
+            {
+                "key": "line_RWoCkAPbB9",
+                "source": "stn__yOkY4LG2g",
+                "target": "stn_oDf7aX-ph9",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -6,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "gd-intercity-rwy",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "gd-intercity-rwy": {
+                        "color": [
+                            "guangzhou",
+                            "ir",
+                            "#2559a8",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_KzpAE6Eiz4",
+                "source": "stn_QwDYvHbzJv",
+                "target": "stn_uHai0SPu0e",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "style": "gzmtr-virtual-int",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": -4,
+                        "offsetTo": -6,
+                        "roundCornerFactor": 10
+                    },
+                    "gzmtr-virtual-int": {}
+                }
+            },
+            {
+                "key": "line_PRxbZww5N4",
+                "source": "stn_PUEbUdmj5n",
+                "target": "stn_0tF6z78me0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "gd-intercity-rwy",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "gd-intercity-rwy": {
+                        "color": [
+                            "guangzhou",
+                            "ir",
+                            "#2559a8",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_w83g0CDXzN",
+                "source": "stn_uHai0SPu0e",
+                "target": "stn_0tF6z78me0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "gd-intercity-rwy",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "gd-intercity-rwy": {
+                        "color": [
+                            "guangzhou",
+                            "ir",
+                            "#2559a8",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_eNbJeUDe2A",
+                "source": "stn_uHai0SPu0e",
+                "target": "stn_rec5F_k1iI",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -6,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "gd-intercity-rwy",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "gd-intercity-rwy": {
+                        "color": [
+                            "guangzhou",
+                            "ir",
+                            "#2559a8",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_43TEyOuD9j",
+                "source": "stn_rec5F_k1iI",
+                "target": "stn_6mQdNeDBhP",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "gd-intercity-rwy",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "gd-intercity-rwy": {
+                        "color": [
+                            "guangzhou",
+                            "ir",
+                            "#2559a8",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_quiMYYqyY5",
+                "source": "stn_6mQdNeDBhP",
+                "target": "stn_oDf7aX-ph9",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "gd-intercity-rwy",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "gd-intercity-rwy": {
+                        "color": [
+                            "guangzhou",
+                            "ir",
+                            "#2559a8",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_iOOWTsp1hc",
+                "source": "stn_4F23qP44EH",
+                "target": "stn_-5BmIib355",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "gd-intercity-rwy",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "gd-intercity-rwy": {
+                        "color": [
+                            "guangzhou",
+                            "ir",
+                            "#2559a8",
+                            "#fff"
+                        ]
+                    }
+                }
             }
         ]
     },
-    "version": 74
+    "version": 76
 }

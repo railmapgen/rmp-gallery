@@ -3,7 +3,7 @@ import rmgRuntime from '@railmapgen/rmg-runtime';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoMdHeart } from 'react-icons/io';
-import { MdAdd, MdOutlineWarning } from 'react-icons/md';
+import { MdAdd, MdOutlineAutoAwesome, MdOutlineWarning } from 'react-icons/md';
 import { useNavigate } from 'react-router-dom';
 
 import { useRootDispatch, useRootSelector } from '../redux';
@@ -25,6 +25,7 @@ import { TemplateCard } from './template-card';
 import {
     ActionIcon,
     Affix,
+    Anchor,
     Group,
     NativeSelect,
     Notification,
@@ -228,6 +229,14 @@ export default function GalleryView() {
 
     return (
         <RMPage>
+            <div className={classes['global-alert']} role="status">
+                <MdOutlineAutoAwesome className={classes['global-alert-icon']} />
+                <strong className={classes['global-alert-title']}>{t('gallery.aiReview.title')}</strong>
+                <span>{t('gallery.aiReview.content')}</span>
+                <Anchor href={t('gallery.aiReview.linkHref')} target="_blank" rel="noreferrer">
+                    {t('gallery.aiReview.linkText')}
+                </Anchor>
+            </div>
             <Tabs
                 value={type}
                 onChange={tab => {

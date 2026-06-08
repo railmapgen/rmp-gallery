@@ -23,6 +23,32 @@
     }
 }
 
+.global-alert {
+    margin: var(--mantine-spacing-sm);
+    margin-bottom: 0;
+    padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+    display: flex;
+    flex: 0 0 auto;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+    min-height: 44px;
+    line-height: 1.45;
+    color: var(--mantine-color-blue-8);
+    background: var(--mantine-color-blue-0);
+    border-radius: var(--mantine-radius-sm);
+}
+
+.global-alert-icon {
+    flex: 0 0 auto;
+    width: 18px;
+    height: 18px;
+}
+
+.global-alert-title {
+    color: var(--mantine-color-blue-9);
+}
+
 .notification {
     margin-top: var(--mantine-spacing-sm);
 }

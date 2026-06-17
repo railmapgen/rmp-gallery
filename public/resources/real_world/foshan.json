@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 120,
+    "svgViewBoxZoom": 43.904930887521935,
     "svgViewBoxMin": {
-        "x": -416.4298313238225,
-        "y": -410.17374630707155
+        "x": -313.7491593128728,
+        "y": -228.94371709503162
     },
     "images": [],
     "graph": {
@@ -783,7 +783,7 @@
                     "visible": true,
                     "zIndex": 5,
                     "x": 475,
-                    "y": -80,
+                    "y": -80.33,
                     "type": "gzmtr-int",
                     "gzmtr-int": {
                         "names": [
@@ -804,6 +804,15 @@
                                     "gz"
                                 ],
                                 [
+                                    "foshan",
+                                    "fs1",
+                                    "#bbd501",
+                                    "#000",
+                                    "GF",
+                                    "18",
+                                    "gz"
+                                ],
+                                [
                                     "guangzhou",
                                     "gz10",
                                     "#7D9CC0",
@@ -819,15 +828,6 @@
                                     "#fff",
                                     "22",
                                     "07"
-                                ],
-                                [
-                                    "foshan",
-                                    "fs1",
-                                    "#bbd501",
-                                    "#000",
-                                    "GF",
-                                    "18",
-                                    "gz"
                                 ]
                             ],
                             []
@@ -1566,7 +1566,7 @@
                     "visible": true,
                     "zIndex": 5,
                     "x": 475,
-                    "y": -205,
+                    "y": -175,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -4079,106 +4079,6 @@
                 }
             },
             {
-                "key": "misc_node_0CvBrml-iJ",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -60,
-                    "y": -210,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_gzNZ4v8tDE",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -160,
-                    "y": -150,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_0owNnmq9do",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -50,
-                    "y": -130,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_1Z59N9aZ-r",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": 35,
-                    "y": -150,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_GodjEeKCDL",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -155,
-                    "y": -180,
-                    "type": "text",
-                    "text": {
-                        "content": "3号线中山公园-联和段\n尚未开通。",
-                        "fontSize": 16,
-                        "lineHeight": 16,
-                        "textAnchor": "start",
-                        "dominantBaseline": "middle",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_z8XdyCcZnN",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 4,
-                    "x": -155,
-                    "y": -150,
-                    "type": "text",
-                    "text": {
-                        "content": "Line 3 (Zhongshan Park-Lianhe) is under\nconstruction.",
-                        "fontSize": 10,
-                        "lineHeight": 8,
-                        "textAnchor": "start",
-                        "dominantBaseline": "middle",
-                        "language": "en",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
-                }
-            },
-            {
                 "key": "misc_node_1jXEkjOUeH",
                 "attributes": {
                     "visible": true,
@@ -4223,6 +4123,32 @@
                         ],
                         "tram": true,
                         "span": true
+                    }
+                }
+            },
+            {
+                "key": "misc_node_Ntr-M2z3NI",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": -320,
+                    "y": -45,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway_qingdao"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_ZJRIc0VAVy",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 809.67,
+                    "y": 230,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway_qingdao"
                     }
                 }
             },
@@ -5101,246 +5027,80 @@
                 }
             },
             {
-                "key": "misc_node_WkiRYRi2QT",
+                "key": "misc_node_T11ghPgXWh",
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 20,
-                    "y": -13,
-                    "type": "gzmtr-line-badge",
-                    "gzmtr-line-badge": {
-                        "names": [
-                            "3号线",
-                            "Line 3"
-                        ],
-                        "color": [
-                            "foshan",
-                            "fs3",
-                            "#002da0",
-                            "#fff"
-                        ],
-                        "tram": false,
-                        "span": false
+                    "x": -200,
+                    "y": 25,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "airport_qingdao"
                     }
                 }
             },
             {
-                "key": "misc_node_oYXYEYX4qI",
+                "key": "misc_node_RhkaS5AxRt",
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -90,
-                    "y": -13,
-                    "type": "gzmtr-line-badge",
-                    "gzmtr-line-badge": {
-                        "names": [
-                            "3号线",
-                            "Line 3"
-                        ],
-                        "color": [
-                            "foshan",
-                            "fs3",
-                            "#002da0",
-                            "#fff"
-                        ],
-                        "tram": false,
-                        "span": false
+                    "x": 135,
+                    "y": 465,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
                     }
                 }
             },
             {
-                "key": "misc_node_kJ7C0QIV9W",
+                "key": "misc_node_1MTzVpJivr",
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -120,
-                    "y": -195,
-                    "type": "text",
-                    "text": {
-                        "content": "温馨提示  Notice",
-                        "fontSize": 16,
-                        "lineHeight": 16,
-                        "textAnchor": "start",
-                        "dominantBaseline": "middle",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "bold",
-                        "outline": 0
+                    "x": 385,
+                    "y": 455,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
                     }
                 }
             },
             {
-                "key": "misc_node_lMu5vpeTqU",
+                "key": "misc_node_POpjJkHC2a",
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -140,
-                    "y": -303,
-                    "type": "text",
-                    "text": {
-                        "content": "（联和-佛山大学）",
-                        "fontSize": 10,
-                        "lineHeight": 9,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "middle",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
+                    "x": 965,
+                    "y": 930,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
                     }
                 }
             },
             {
-                "key": "misc_node_aOtFG0eeYw",
+                "key": "misc_node_uLH6Eg3kfs",
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -140,
-                    "y": -295,
-                    "type": "text",
-                    "text": {
-                        "content": "(Lianhe-Foshan University)",
-                        "fontSize": 5,
-                        "lineHeight": 9,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "middle",
-                        "language": "en",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
+                    "x": -165,
+                    "y": 260,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
                     }
                 }
             },
             {
-                "key": "misc_node_MUz0GfKg4r",
+                "key": "misc_node_aZUZuG2zj9",
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -90,
-                    "y": 5,
-                    "type": "text",
-                    "text": {
-                        "content": "（联和-佛山大学）",
-                        "fontSize": 10,
-                        "lineHeight": 9,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "middle",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_dzSgKI7YH9",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -90,
-                    "y": 13,
-                    "type": "text",
-                    "text": {
-                        "content": "(Lianhe-Foshan University)",
-                        "fontSize": 5,
-                        "lineHeight": 9,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "middle",
-                        "language": "en",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_zu2O9O8jPX",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": 20,
-                    "y": 5,
-                    "type": "text",
-                    "text": {
-                        "content": "（顺德学院站-中山公园）",
-                        "fontSize": 10,
-                        "lineHeight": 9,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "middle",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_LqHbPBHKL4",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": 20,
-                    "y": 13,
-                    "type": "text",
-                    "text": {
-                        "content": "(Shunde College Railway Station-Zhongshan Park)",
-                        "fontSize": 5,
-                        "lineHeight": 9,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "middle",
-                        "language": "en",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
+                    "x": 970,
+                    "y": 210,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
                     }
                 }
             },
@@ -6732,7 +6492,7 @@
                     "visible": true,
                     "zIndex": 5,
                     "x": 475,
-                    "y": -180,
+                    "y": -178,
                     "type": "gzmtr-line-badge",
                     "gzmtr-line-badge": {
                         "names": [
@@ -6775,12 +6535,76 @@
                 }
             },
             {
-                "key": "misc_node_ZT3EAPGfPZ",
+                "key": "stn_seizV6b0aO",
                 "attributes": {
                     "visible": true,
-                    "zIndex": 5,
-                    "x": 475,
-                    "y": -210,
+                    "zIndex": 0,
+                    "x": -10,
+                    "y": -15,
+                    "type": "foshan-metro-basic",
+                    "foshan-metro-basic": {
+                        "names": [
+                            "敦厚",
+                            "Dunhou"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "foshan",
+                            "fs3",
+                            "#002da0",
+                            "#fff"
+                        ],
+                        "lineCode": "F3",
+                        "stationCode": "28",
+                        "open": true,
+                        "secondaryNames": [
+                            "",
+                            ""
+                        ],
+                        "tram": false
+                    }
+                }
+            },
+            {
+                "key": "stn_OkOLpwIIUt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -70.44,
+                    "y": -15,
+                    "type": "foshan-metro-basic",
+                    "foshan-metro-basic": {
+                        "names": [
+                            "佛山站",
+                            "Foshan\nRailway Station"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "foshan",
+                            "fs3",
+                            "#002da0",
+                            "#fff"
+                        ],
+                        "lineCode": "F3",
+                        "stationCode": "29",
+                        "open": true,
+                        "secondaryNames": [
+                            "",
+                            ""
+                        ],
+                        "tram": false
+                    }
+                }
+            },
+            {
+                "key": "misc_node_EgYjymaTrZ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 474.59,
+                    "y": -208.27,
                     "type": "gzmtr-line-badge",
                     "gzmtr-line-badge": {
                         "names": [
@@ -6795,6 +6619,19 @@
                         ],
                         "tram": false,
                         "span": true
+                    }
+                }
+            },
+            {
+                "key": "misc_node_OL9q-xI4Z1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -40,
+                    "y": -50,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway_qingdao"
                     }
                 }
             }
@@ -9926,114 +9763,6 @@
                 }
             },
             {
-                "key": "line_4ovEm8DdYO",
-                "source": "misc_node_0CvBrml-iJ",
-                "target": "misc_node_gzNZ4v8tDE",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -5,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 0
-                    },
-                    "style": "mtr-light-rail",
-                    "reconcileId": "",
-                    "mtr-light-rail": {
-                        "color": [
-                            "guangzhou",
-                            "fsmtr",
-                            "#565656",
-                            "#fff"
-                        ]
-                    },
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_5C27qe6OP7",
-                "source": "misc_node_0CvBrml-iJ",
-                "target": "misc_node_1Z59N9aZ-r",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -5,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 0
-                    },
-                    "style": "mtr-light-rail",
-                    "reconcileId": "",
-                    "mtr-light-rail": {
-                        "color": [
-                            "guangzhou",
-                            "fsmtr",
-                            "#565656",
-                            "#fff"
-                        ]
-                    },
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_oHFawhjUN0",
-                "source": "misc_node_0owNnmq9do",
-                "target": "misc_node_1Z59N9aZ-r",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -5,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 0
-                    },
-                    "style": "mtr-light-rail",
-                    "reconcileId": "",
-                    "mtr-light-rail": {
-                        "color": [
-                            "guangzhou",
-                            "fsmtr",
-                            "#565656",
-                            "#fff"
-                        ]
-                    },
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_KQFQflYaKM",
-                "source": "misc_node_0owNnmq9do",
-                "target": "misc_node_gzNZ4v8tDE",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -5,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 0
-                    },
-                    "style": "mtr-light-rail",
-                    "reconcileId": "",
-                    "mtr-light-rail": {
-                        "color": [
-                            "guangzhou",
-                            "fsmtr",
-                            "#565656",
-                            "#fff"
-                        ]
-                    },
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_18k5S-G-8D",
                 "source": "misc_node_KHRmLxq4JA",
                 "target": "misc_node_4dFmW_QL3Q",
@@ -11471,8 +11200,116 @@
                     "parallelIndex": -1,
                     "gzmtr-virtual-int": {}
                 }
+            },
+            {
+                "key": "line__YZo8pPWmJ",
+                "source": "stn_zQXAN9bbbE",
+                "target": "stn_seizV6b0aO",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "foshan",
+                            "fs3",
+                            "#002da0",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_bsohXkqn5o",
+                "source": "stn_seizV6b0aO",
+                "target": "stn_OkOLpwIIUt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "foshan",
+                            "fs3",
+                            "#002da0",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_4gP8Mi13fE",
+                "source": "stn_OkOLpwIIUt",
+                "target": "stn_zvYyINMNLf",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "foshan",
+                            "fs3",
+                            "#002da0",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_o266qrjO2Y",
+                "source": "misc_node_ugX3xu0TGi",
+                "target": "misc_node_EgYjymaTrZ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#555555",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
             }
         ]
     },
-    "version": 68
+    "version": 76
 }

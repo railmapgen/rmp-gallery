@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 50,
+    "svgViewBoxZoom": 150,
     "svgViewBoxMin": {
-        "x": -284.7499999999993,
-        "y": -172.54999999999887
+        "x": -695.2897872924775,
+        "y": -341.92964096068806
     },
     "graph": {
         "options": {
@@ -17,24 +17,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -200,
-                    "y": 10,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": -400,
+                    "y": 25,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "姪浜"
+                            "姪浜",
+                            "Meinohama"
                         ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk1",
+                                    "#ee5511",
+                                    "#fff",
+                                    "K",
+                                    "01"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "textVertical": true,
-                        "lineCode": "K",
-                        "stationCode": "01",
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -43,24 +56,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -175,
-                    "y": 10,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": -350,
+                    "y": 25,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "室見"
+                            "室見",
+                            "Muromi"
                         ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk1",
+                                    "#ee5511",
+                                    "#fff",
+                                    "K",
+                                    "02"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "textVertical": true,
-                        "lineCode": "K",
-                        "stationCode": "02",
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -69,24 +95,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -150,
-                    "y": 10,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": -300,
+                    "y": 25,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "藤崎"
+                            "藤崎",
+                            "Fujisaki"
                         ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk1",
+                                    "#ee5511",
+                                    "#fff",
+                                    "K",
+                                    "03"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "textVertical": true,
-                        "lineCode": "K",
-                        "stationCode": "03",
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -95,24 +134,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -125,
-                    "y": 10,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": -250,
+                    "y": 25,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "西新"
+                            "西新",
+                            "Nishijin"
                         ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk1",
+                                    "#ee5511",
+                                    "#fff",
+                                    "K",
+                                    "04"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "textVertical": true,
-                        "lineCode": "K",
-                        "stationCode": "04",
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -121,24 +173,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -100,
-                    "y": 10,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": -200,
+                    "y": 25,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "唐人町"
+                            "唐人町",
+                            "Tojinmachi"
                         ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk1",
+                                    "#ee5511",
+                                    "#fff",
+                                    "K",
+                                    "05"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "textVertical": true,
-                        "lineCode": "K",
-                        "stationCode": "05",
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -147,24 +212,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -75,
-                    "y": 10,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": -150,
+                    "y": 25,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "大濠公園"
+                            "大濠公園",
+                            "Ohori Park"
                         ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk1",
+                                    "#ee5511",
+                                    "#fff",
+                                    "K",
+                                    "06"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "福岡市美術館口",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "textVertical": true,
-                        "lineCode": "K",
-                        "stationCode": "06",
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -173,24 +251,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -50,
-                    "y": 10,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": -100,
+                    "y": 25,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "赤坂"
+                            "赤坂",
+                            "Akasaka"
                         ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk1",
+                                    "#ee5511",
+                                    "#fff",
+                                    "K",
+                                    "07"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "textVertical": true,
-                        "lineCode": "K",
-                        "stationCode": "07",
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -199,24 +290,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -25,
-                    "y": 10,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": -50,
+                    "y": 25,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "天神"
+                            "天神",
+                            "Tenjin"
                         ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk1",
+                                    "#ee5511",
+                                    "#fff",
+                                    "K",
+                                    "08"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "textVertical": true,
-                        "lineCode": "K",
-                        "stationCode": "08",
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -226,40 +330,36 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 0,
-                    "y": 0,
-                    "type": "tokyo-metro-int",
-                    "tokyo-metro-int": {
+                    "y": 25,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "中洲川端"
+                            "中洲川端",
+                            "Nakasu-Kawabata"
                         ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "mereOffset": "none",
-                        "textVertical": false,
-                        "interchanges": [
-                            {
-                                "lineCode": "H",
-                                "stationCode": "01",
-                                "color": [
-                                    "fukuoka",
-                                    "fuk2",
-                                    "#0077cc",
-                                    "#fff"
-                                ]
-                            },
-                            {
-                                "lineCode": "K",
-                                "stationCode": "09",
-                                "color": [
+                        "transfer": [
+                            [
+                                [
                                     "fukuoka",
                                     "fuk1",
                                     "#ee5511",
-                                    "#fff"
+                                    "#fff",
+                                    "H01",
+                                    "K09"
                                 ]
-                            }
+                            ]
                         ],
-                        "align": "vertical",
-                        "importance": "middle"
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -268,24 +368,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 25,
-                    "y": 30,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": 50,
+                    "y": 75,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "祇園"
+                            "祇園",
+                            "Gion"
                         ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk1",
+                                    "#ee5511",
+                                    "#fff",
+                                    "K",
+                                    "10"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "horizontal",
+                        "stationDirection": "horizontal",
+                        "oldName": "博多旧市街口",
+                        "nameOverallPosition": "right",
+                        "nameOffsetPosition": "up",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "K",
-                        "stationCode": "10",
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -294,24 +407,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 75,
-                    "y": 65,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": 150,
+                    "y": 125,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "東比恵"
+                            "東比恵",
+                            "Higashi-Hie"
                         ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk1",
+                                    "#ee5511",
+                                    "#fff",
+                                    "K",
+                                    "12"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "textVertical": true,
-                        "lineCode": "K",
-                        "stationCode": "12",
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -320,41 +446,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 45,
-                    "y": 65,
-                    "type": "tokyo-metro-int",
-                    "tokyo-metro-int": {
+                    "x": 100,
+                    "y": 125,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "博多"
+                            "博多",
+                            "Hakata"
                         ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "mereOffset": "none",
-                        "textVertical": false,
-                        "interchanges": [
-                            {
-                                "lineCode": "N",
-                                "stationCode": "18",
-                                "color": [
-                                    "fukuoka",
-                                    "fuk3",
-                                    "#00936b",
-                                    "#fff"
-                                ]
-                            },
-                            {
-                                "lineCode": "K",
-                                "stationCode": "11",
-                                "color": [
+                        "transfer": [
+                            [
+                                [
                                     "fukuoka",
                                     "fuk1",
                                     "#ee5511",
-                                    "#fff"
+                                    "#fff",
+                                    "K11",
+                                    "N18"
                                 ]
-                            }
+                            ]
                         ],
-                        "align": "horizontal",
-                        "importance": "middle"
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -363,24 +485,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 100,
-                    "y": 65,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": 200,
+                    "y": 125,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "福岡空港"
+                            "福岡空港",
+                            "Fukuoka Airport"
                         ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk1",
+                                    "#ee5511",
+                                    "#fff",
+                                    "K",
+                                    "13"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
-                        "textVertical": true,
-                        "lineCode": "K",
-                        "stationCode": "13",
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -389,24 +524,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 25,
-                    "y": -35,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": 35,
+                    "y": -10,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "呉服町"
+                            "呉服町",
+                            "Gofukumachi"
                         ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk2",
+                                    "#0077cc",
+                                    "#fff",
+                                    "H",
+                                    "02"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "horizontal",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "left",
+                        "nameOffsetPosition": "up",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "H",
-                        "stationCode": "02",
-                        "color": [
-                            "fukuoka",
-                            "fuk2",
-                            "#0077cc",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -415,102 +563,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 50,
-                    "y": -60,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": 70,
+                    "y": -45,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "千代県庁口"
+                            "千代県庁口",
+                            "Chiyo-Kenchoguchi"
                         ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "H",
-                        "stationCode": "03",
-                        "color": [
-                            "fukuoka",
-                            "fuk2",
-                            "#0077cc",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_ZTzcP_epwn",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 75,
-                    "y": -85,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "馬出九大病院前"
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk2",
+                                    "#0077cc",
+                                    "#fff",
+                                    "H",
+                                    "03"
+                                ]
+                            ]
                         ],
+                        "nameDirection": "horizontal",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "left",
+                        "nameOffsetPosition": "up",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "H",
-                        "stationCode": "04",
-                        "color": [
-                            "fukuoka",
-                            "fuk2",
-                            "#0077cc",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_pfRXW44o8N",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 100,
-                    "y": -110,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "箱崎宮前"
-                        ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "H",
-                        "stationCode": "05",
-                        "color": [
-                            "fukuoka",
-                            "fuk2",
-                            "#0077cc",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_xPHtqwVOCy",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 125,
-                    "y": -135,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "貝塚"
-                        ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "H",
-                        "stationCode": "06",
-                        "color": [
-                            "fukuoka",
-                            "fuk2",
-                            "#0077cc",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "middle"
                     }
                 }
             },
@@ -519,414 +602,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 15,
-                    "y": 65,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "櫛田神社前"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": true,
-                        "lineCode": "N",
-                        "stationCode": "17",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_hZEr_x903v",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -5,
-                    "y": 65,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "天神南"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": true,
-                        "lineCode": "N",
-                        "stationCode": "16",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_FIo9rQj3sJ",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -25,
-                    "y": 65,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "渡辺通"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": true,
-                        "lineCode": "N",
-                        "stationCode": "15",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_4p3zcT9re8",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -45,
-                    "y": 65,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "薬院"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": true,
-                        "lineCode": "N",
-                        "stationCode": "14",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_aYoL7Tycjn",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -65,
-                    "y": 65,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "薬院大通"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": true,
-                        "lineCode": "N",
-                        "stationCode": "13",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_ppgjMEvqIp",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -85,
-                    "y": 65,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "桜坂"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": true,
-                        "lineCode": "N",
-                        "stationCode": "12",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn__53UFb4nqC",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -105,
-                    "y": 65,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "六本松"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": true,
-                        "lineCode": "N",
-                        "stationCode": "11",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_oDOO4z9CHq",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -125,
-                    "y": 65,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "別府"
-                        ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "N",
-                        "stationCode": "10",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_NT5MNAgj-_",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -125,
-                    "y": 85,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "茶山"
-                        ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "N",
-                        "stationCode": "09",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_fPEv1s62YP",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -125,
-                    "y": 105,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "金山"
-                        ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "N",
-                        "stationCode": "08",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_Ug25NfyO-j",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -125,
+                    "x": 50,
                     "y": 125,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "七隈"
+                            "櫛田神社前",
+                            "Kushida Shrine"
                         ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
-                        "textVertical": false,
-                        "lineCode": "N",
-                        "stationCode": "07",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_TUUcp-iDEz",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -125,
-                    "y": 145,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "福大前"
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "17"
+                                ]
+                            ]
                         ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": true,
-                        "lineCode": "N",
-                        "stationCode": "06",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_d0pxW7PjTS",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -145,
-                    "y": 145,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "梅林"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": true,
-                        "lineCode": "N",
-                        "stationCode": "05",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_dyt-ivxCK7",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -165,
-                    "y": 145,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "野芥"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": true,
-                        "lineCode": "N",
-                        "stationCode": "04",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_1YRtvgyry0",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -185,
-                    "y": 145,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "賀茂"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": true,
-                        "lineCode": "N",
-                        "stationCode": "03",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn__bed0KK8l3",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -205,
-                    "y": 145,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
-                        "names": [
-                            "次郎丸"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": true,
-                        "lineCode": "N",
-                        "stationCode": "02",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -935,49 +641,37 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -225,
-                    "y": 145,
-                    "type": "tokyo-metro-basic",
-                    "tokyo-metro-basic": {
+                    "x": -500,
+                    "y": 375,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
                         "names": [
-                            "橋本"
+                            "橋本",
+                            "Hashimoto"
                         ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "01"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "textVertical": true,
-                        "lineCode": "N",
-                        "stationCode": "01",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "stn_pzbgeWiE4g",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -25,
-                    "y": 40,
-                    "type": "suzhourt-basic",
-                    "suzhourt-basic": {
-                        "names": [
-                            "",
-                            ""
-                        ],
-                        "color": [
-                            "other",
-                            "other",
-                            "#aaaaaa",
-                            "#fff"
-                        ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
-                        "textVertical": false
+                        "nameOffsetY": "bottom"
                     }
                 }
             },
@@ -986,15 +680,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -20,
-                    "y": 38.75,
+                    "x": -55,
+                    "y": 75,
                     "type": "text",
                     "text": {
                         "content": "西鉄福岡",
                         "fontSize": 8,
                         "lineHeight": 16,
-                        "textAnchor": "start",
-                        "dominantBaseline": "middle",
+                        "textAnchor": "end",
+                        "dominantBaseline": "auto",
                         "language": "jreast_ja",
                         "color": [
                             "shanghai",
@@ -1007,17 +701,6 @@
                         "bold": "normal",
                         "outline": 0
                     }
-                }
-            },
-            {
-                "key": "misc_node_kfeL-itkX3",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -45,
-                    "y": 180,
-                    "type": "virtual",
-                    "virtual": {}
                 }
             },
             {
@@ -1025,15 +708,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -40,
-                    "y": 135,
+                    "x": -440,
+                    "y": 225,
                     "type": "text",
                     "text": {
-                        "content": "西\n鉄\n天\n神\n大\n牟\n田\n線",
-                        "fontSize": 6,
-                        "lineHeight": 6,
+                        "content": "西鉄天神大牟田線",
+                        "fontSize": 8,
+                        "lineHeight": 8,
                         "textAnchor": "start",
-                        "dominantBaseline": "middle",
+                        "dominantBaseline": "auto",
                         "language": "jreast_ja",
                         "color": [
                             "shanghai",
@@ -1049,23 +732,12 @@
                 }
             },
             {
-                "key": "misc_node_IOdi-WQKis",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 40,
-                    "y": 180,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
                 "key": "misc_node_tbHLWebO0v",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 150,
-                    "y": -75,
+                    "x": 250,
+                    "y": -170,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -1075,15 +747,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 35,
-                    "y": 140,
+                    "x": -390,
+                    "y": 300,
                     "type": "text",
                     "text": {
-                        "content": "J\nR\n鹿\n児\n島\n本\n線",
-                        "fontSize": 6,
-                        "lineHeight": 6,
+                        "content": "JR鹿児島本線",
+                        "fontSize": 8,
+                        "lineHeight": 8,
                         "textAnchor": "end",
-                        "dominantBaseline": "middle",
+                        "dominantBaseline": "auto",
                         "language": "jreast_ja",
                         "color": [
                             "shanghai",
@@ -1103,15 +775,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 55,
-                    "y": 152,
+                    "x": -440,
+                    "y": 250,
                     "type": "text",
                     "text": {
-                        "content": "九\n州\n新\n幹\n線",
-                        "fontSize": 6,
-                        "lineHeight": 6,
+                        "content": "新幹線",
+                        "fontSize": 8,
+                        "lineHeight": 8,
                         "textAnchor": "start",
-                        "dominantBaseline": "middle",
+                        "dominantBaseline": "auto",
                         "language": "jreast_ja",
                         "color": [
                             "shanghai",
@@ -1127,23 +799,12 @@
                 }
             },
             {
-                "key": "misc_node_GNM7bNK9ud",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 50,
-                    "y": 180,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
                 "key": "misc_node_GJimZvWa9D",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 150,
-                    "y": -62,
+                    "x": 250,
+                    "y": -155,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -1153,8 +814,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -225,
-                    "y": 10,
+                    "x": -500,
+                    "y": 25,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -1164,15 +825,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -225,
-                    "y": -5,
+                    "x": -440,
+                    "y": 275,
                     "type": "text",
                     "text": {
-                        "content": "JR\n筑肥線",
-                        "fontSize": 6,
-                        "lineHeight": 6,
+                        "content": "JR筑肥線",
+                        "fontSize": 8,
+                        "lineHeight": 8,
                         "textAnchor": "start",
-                        "dominantBaseline": "middle",
+                        "dominantBaseline": "auto",
                         "language": "jreast_ja",
                         "color": [
                             "shanghai",
@@ -1192,8 +853,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 150,
-                    "y": -160,
+                    "x": 250,
+                    "y": -225,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -1203,15 +864,15 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 140,
-                    "y": -160,
+                    "x": -440,
+                    "y": 200,
                     "type": "text",
                     "text": {
                         "content": "西鉄貝塚線",
-                        "fontSize": 6,
-                        "lineHeight": 6,
-                        "textAnchor": "end",
-                        "dominantBaseline": "middle",
+                        "fontSize": 8,
+                        "lineHeight": 8,
+                        "textAnchor": "start",
+                        "dominantBaseline": "auto",
                         "language": "jreast_ja",
                         "color": [
                             "shanghai",
@@ -1227,170 +888,15 @@
                 }
             },
             {
-                "key": "misc_node_5mTcg3gqji",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -220,
-                    "y": -30,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_ysOXfufcs1",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 90,
-                    "y": -155,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_w-Dcq--_jk",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -220,
-                    "y": -155,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_maxgw1eW6b",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 50,
-                    "y": -135,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_L45GgCJQlK",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -210,
-                    "y": -125,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_ICx9Uxq2mT",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -210,
-                    "y": -90,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_WfWazmw3a3",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 10,
-                    "y": -95,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_giXAGzKLYt",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -210,
-                    "y": -55,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_IWESrjfma2",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -20,
-                    "y": -60,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
                 "key": "misc_node_nPpuhK3bPT",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 120,
-                    "y": 65,
+                    "x": 225,
+                    "y": 125,
                     "type": "facilities",
                     "facilities": {
                         "type": "airport_chengdu"
-                    }
-                }
-            },
-            {
-                "key": "misc_node_OqUnBW59eJ",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -200,
-                    "y": 20,
-                    "type": "text",
-                    "text": {
-                        "content": "〇",
-                        "fontSize": 16,
-                        "lineHeight": 16,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "hanging",
-                        "language": "en",
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "bold",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_3r6fo6Alzq",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -200,
-                    "y": 23,
-                    "type": "text",
-                    "text": {
-                        "content": "K",
-                        "fontSize": 8,
-                        "lineHeight": 16,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "hanging",
-                        "language": "en",
-                        "color": [
-                            "other",
-                            "other",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "bold",
-                        "outline": 0
                     }
                 }
             },
@@ -1399,72 +905,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -190,
-                    "y": 19.5,
+                    "x": -440,
+                    "y": 125,
                     "type": "text",
                     "text": {
                         "content": "空港線",
                         "fontSize": 12,
-                        "lineHeight": 16,
+                        "lineHeight": 12,
                         "textAnchor": "start",
-                        "dominantBaseline": "hanging",
+                        "dominantBaseline": "middle",
                         "language": "jreast_ja",
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "bold",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_XFiRFKC7RW",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -225,
-                    "y": 120,
-                    "type": "text",
-                    "text": {
-                        "content": "〇",
-                        "fontSize": 16,
-                        "lineHeight": 16,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "hanging",
-                        "language": "en",
-                        "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "bold",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_hXWKCOQKe3",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": -225,
-                    "y": 123,
-                    "type": "text",
-                    "text": {
-                        "content": "N",
-                        "fontSize": 8,
-                        "lineHeight": 16,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "hanging",
-                        "language": "en",
                         "color": [
                             "other",
                             "other",
@@ -1473,7 +923,7 @@
                         ],
                         "rotate": 0,
                         "italic": "normal",
-                        "bold": "bold",
+                        "bold": "normal",
                         "outline": 0
                     }
                 }
@@ -1483,75 +933,1276 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -215,
-                    "y": 119.5,
+                    "x": -440,
+                    "y": 175,
                     "type": "text",
                     "text": {
                         "content": "七隈線",
                         "fontSize": 12,
                         "lineHeight": 16,
                         "textAnchor": "start",
-                        "dominantBaseline": "hanging",
+                        "dominantBaseline": "middle",
                         "language": "jreast_ja",
                         "color": [
-                            "fukuoka",
-                            "fuk3",
-                            "#00936b",
+                            "other",
+                            "other",
+                            "#000000",
                             "#fff"
                         ],
                         "rotate": 0,
                         "italic": "normal",
-                        "bold": "bold",
+                        "bold": "normal",
                         "outline": 0
                     }
                 }
             },
             {
-                "key": "misc_node_bDRtqHp4dp",
+                "key": "misc_node_WHl-7wTlm6",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 25,
-                    "y": -25,
+                    "x": -440,
+                    "y": 150,
                     "type": "text",
                     "text": {
-                        "content": "〇",
-                        "fontSize": 16,
+                        "content": "箱崎線",
+                        "fontSize": 12,
                         "lineHeight": 16,
-                        "textAnchor": "middle",
-                        "dominantBaseline": "hanging",
-                        "language": "en",
+                        "textAnchor": "start",
+                        "dominantBaseline": "middle",
+                        "language": "jreast_ja",
+                        "color": [
+                            "other",
+                            "other",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "stn_JqBzcr6ugA",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 105,
+                    "y": -80,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "馬出九大病院前",
+                            "Maidashi-Kyudai byoinmae"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk2",
+                                    "#0077cc",
+                                    "#fff",
+                                    "H",
+                                    "04"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "horizontal",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "left",
+                        "nameOffsetPosition": "up",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_5TI8ICJ7Qy",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 140,
+                    "y": -115,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "箱崎宮前",
+                            "Hakozaki-Miyamae"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk2",
+                                    "#0077cc",
+                                    "#fff",
+                                    "H",
+                                    "05"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "horizontal",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "left",
+                        "nameOffsetPosition": "up",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_tqjo0p7M6r",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 210,
+                    "y": -185,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "貝塚",
+                            "Kaizuka"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk2",
+                                    "#0077cc",
+                                    "#fff",
+                                    "H",
+                                    "07"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "horizontal",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "left",
+                        "nameOffsetPosition": "up",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_RbTe7H2dZ2",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 175,
+                    "y": -150,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "箱崎九大前",
+                            "Hakozaki-Kyudaimae"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk2",
+                                    "#0077cc",
+                                    "#fff",
+                                    "H",
+                                    "06"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "horizontal",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "left",
+                        "nameOffsetPosition": "up",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_cOF_6Zll92",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 0,
+                    "y": 125,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "天神南",
+                            "Tenjin-minami"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "16"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "horizontal",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "left",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_MgAbmvjAYJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -450,
+                    "y": 375,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "次郎丸",
+                            "Jiromaru"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "02"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_iZdZCuYUII",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -150,
+                    "y": 175,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "桜坂",
+                            "Sakurazaka"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "12"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_I0B6nEaQPE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -100,
+                    "y": 175,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "薬院大通",
+                            "Yakuin-odori"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "13"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "動植物園口",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_d2TH4TkMV6",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -50,
+                    "y": 175,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "薬院",
+                            "Yakuin"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "14"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_KoZU2_3FQM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 0,
+                    "y": 175,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "渡辺通",
+                            "Watanabe-dori"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "15"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_k0W7ymlVJB",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -300,
+                    "y": 375,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "梅林",
+                            "Umebayashi"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "05"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_kK_SdIIfaC",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -250,
+                    "y": 375,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "福大前",
+                            "Fukuoka University"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "06"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_JrwQ9_7Lr1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -250,
+                    "y": 225,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "茶山",
+                            "Chayama"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "09"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "horizontal",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "left",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_7jfNSGIfbP",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -250,
+                    "y": 175,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "別府",
+                            "Befu"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "10"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "horizontal",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "left",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_g3-Fy5RZfT",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -200,
+                    "y": 175,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "六本松",
+                            "Ropponmatsu"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "11"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "科学館前",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_r7f91hIe9c",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -250,
+                    "y": 325,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "七隈",
+                            "Nanakuma"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "07"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "horizontal",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "left",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_4a_m8vsWGk",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -250,
+                    "y": 275,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "金山",
+                            "Kanayama"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "08"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "horizontal",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "left",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_6CGaGFLNyP",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -400,
+                    "y": 375,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "賀茂",
+                            "Kamo"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "03"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_ThSEQFNmLw",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -350,
+                    "y": 375,
+                    "type": "osaka-metro",
+                    "osaka-metro": {
+                        "stationType": "through",
+                        "names": [
+                            "野芥",
+                            "Noke"
+                        ],
+                        "transfer": [
+                            [
+                                [
+                                    "fukuoka",
+                                    "fuk3",
+                                    "#00936b",
+                                    "#fff",
+                                    "N",
+                                    "04"
+                                ]
+                            ]
+                        ],
+                        "nameDirection": "vertical",
+                        "stationDirection": "horizontal",
+                        "oldName": "",
+                        "nameOverallPosition": "down",
+                        "nameOffsetPosition": "middle",
+                        "nameMaxWidth": 100,
+                        "oldNameMaxWidth": 100,
+                        "translationMaxWidth": 100,
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_acNtUIc9pW",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 95,
+                    "y": 450,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_--Py73R945",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -50,
+                    "y": 75,
+                    "type": "suzhourt-basic",
+                    "suzhourt-basic": {
+                        "names": [
+                            "",
+                            ""
+                        ],
+                        "color": [
+                            "other",
+                            "other",
+                            "#c07196",
+                            "#fff"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "textVertical": false
+                    }
+                }
+            },
+            {
+                "key": "misc_node_9MSQvVblv-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 250,
+                    "y": -80,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_A_ChoPFI_j",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 160,
+                    "y": -80,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_u8pRYTEFK6",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -475,
+                    "y": 125,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "",
+                            ""
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "fukuoka",
+                            "fuk1",
+                            "#ee5511",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_Y4TTj2N6WH",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -450,
+                    "y": 125,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_9m2T7xMRi0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -475,
+                    "y": 150,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "",
+                            ""
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
                         "color": [
                             "fukuoka",
                             "fuk2",
                             "#0077cc",
                             "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "bold",
-                        "outline": 0
+                        ]
                     }
                 }
             },
             {
-                "key": "misc_node_QeXNfGDFM3",
+                "key": "misc_node_6VA8Z40p6l",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 25,
-                    "y": -22,
+                    "x": -450,
+                    "y": 150,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_ylvNA2x5fY",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -475,
+                    "y": 175,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "",
+                            ""
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "fukuoka",
+                            "fuk3",
+                            "#00936b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_NIi3JJZY3o",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -450,
+                    "y": 175,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_YIU5PcDIML",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -475,
+                    "y": 200,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_XskSkufHG2",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -450,
+                    "y": 200,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_duOe9jJqey",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -475,
+                    "y": 225,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_cqdWeu4YHj",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -450,
+                    "y": 225,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_E_-CB0_x3Z",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -475,
+                    "y": 275,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_mLO3vOHuPM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -450,
+                    "y": 275,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_O3HFis4OjF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -475,
+                    "y": 250,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_ggnudMWOBh",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -450,
+                    "y": 250,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_R3aaX_3ldy",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -475,
+                    "y": 300,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_xb1RFy2SqF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -450,
+                    "y": 300,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_GdROOrCwsO",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -20,
+                    "y": 450,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_s6NOs1EdKb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 75,
+                    "y": 450,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_Luu2CX7dYY",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 105,
+                    "y": 125,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_L033kILqai",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 95,
+                    "y": 125,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_P6Y4pn6SBq",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -500,
+                    "y": -50,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_Mm5m2yCxP0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 100,
+                    "y": -225,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_LfYyVObOmG",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -500,
+                    "y": -225,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_QbnfLRrfsz",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -490,
+                    "y": -200,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_CAtM5mDD39",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 65,
+                    "y": -205,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_2rKaY1EwSt",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -490,
+                    "y": -165,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_jYezbl1ISn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 30,
+                    "y": -170,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_gMHzm57dI4",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -490,
+                    "y": -130,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_PZv-sMOF9z",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -5,
+                    "y": -135,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_vhvjNpHOY_",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -490,
+                    "y": -95,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_nSDiEB4HBF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -40,
+                    "y": -100,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_iMxdOwbtp8",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -490,
+                    "y": -65,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_btc8KIxPSz",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -75,
+                    "y": -65,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_an4WPWDh-R",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -475,
+                    "y": 120,
                     "type": "text",
                     "text": {
-                        "content": "H",
+                        "content": "K",
                         "fontSize": 8,
                         "lineHeight": 16,
                         "textAnchor": "middle",
                         "dominantBaseline": "hanging",
-                        "language": "en",
+                        "language": "jreast_en",
                         "color": [
-                            "other",
-                            "other",
+                            "shanghai",
+                            "jsr",
                             "#000000",
                             "#fff"
                         ],
@@ -1563,24 +2214,24 @@
                 }
             },
             {
-                "key": "misc_node_WHl-7wTlm6",
+                "key": "misc_node_CwRW3Xhivu",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 35,
-                    "y": -25.5,
+                    "x": -475,
+                    "y": 145,
                     "type": "text",
                     "text": {
-                        "content": "箱崎線",
-                        "fontSize": 12,
+                        "content": "H",
+                        "fontSize": 8,
                         "lineHeight": 16,
-                        "textAnchor": "start",
+                        "textAnchor": "middle",
                         "dominantBaseline": "hanging",
-                        "language": "jreast_ja",
+                        "language": "jreast_en",
                         "color": [
-                            "fukuoka",
-                            "fuk2",
-                            "#0077cc",
+                            "shanghai",
+                            "jsr",
+                            "#000000",
                             "#fff"
                         ],
                         "rotate": 0,
@@ -1591,89 +2242,35 @@
                 }
             },
             {
-                "key": "misc_node_ey1Cfo4AQp",
+                "key": "misc_node_xY2_pjrK0W",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -220,
-                    "y": -140,
+                    "x": -475,
+                    "y": 170,
                     "type": "text",
                     "text": {
-                        "content": "福岡市地下鉄",
-                        "fontSize": 24,
+                        "content": "N",
+                        "fontSize": 8,
                         "lineHeight": 16,
-                        "textAnchor": "start",
-                        "dominantBaseline": "middle",
-                        "language": "jreast_ja",
+                        "textAnchor": "middle",
+                        "dominantBaseline": "hanging",
+                        "language": "jreast_en",
                         "color": [
-                            "other",
-                            "other",
-                            "#004ea1",
+                            "shanghai",
+                            "jsr",
+                            "#000000",
                             "#fff"
                         ],
                         "rotate": 0,
                         "italic": "normal",
-                        "bold": "normal",
-                        "outline": 3
+                        "bold": "bold",
+                        "outline": 0
                     }
                 }
             }
         ],
         "edges": [
-            {
-                "key": "line_C-XR7Hjb1o",
-                "source": "stn_xPHtqwVOCy",
-                "target": "stn_XgnCfXdAPk",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": -10,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "chongqingrt-loop",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "chongqingrt-loop": {
-                        "color": [
-                            "fukuoka",
-                            "fuk2",
-                            "#0077cc",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_LgIDP4aU0H",
-                "source": "stn_XgnCfXdAPk",
-                "target": "stn_AN2Hxt7S-L",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 10,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "chongqingrt-loop",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "chongqingrt-loop": {
-                        "color": [
-                            "fukuoka",
-                            "fuk1",
-                            "#ee5511",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
             {
                 "key": "line__W3n1VKTo7",
                 "source": "stn_sd7DNJBiIV",
@@ -1702,7 +2299,34 @@
                 }
             },
             {
-                "key": "line__CmJ8ddVIr",
+                "key": "line_jSn8kSaAW4",
+                "source": "misc_node_m2OiMo07Vh",
+                "target": "stn_2u8bMhq53d",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "chongqingrt-loop",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "chongqingrt-loop": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#717176",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_RVhzzWwiLr",
                 "source": "stn_2u8bMhq53d",
                 "target": "stn_XgnCfXdAPk",
                 "attributes": {
@@ -1712,7 +2336,7 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": 10,
+                        "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
                     "style": "chongqingrt-loop",
@@ -1729,9 +2353,9 @@
                 }
             },
             {
-                "key": "line_PA8I8s6bzn",
-                "source": "stn_PVaGFX4ZCL",
-                "target": "stn_TUUcp-iDEz",
+                "key": "line_ZJfro1TWoO",
+                "source": "stn_XgnCfXdAPk",
+                "target": "stn_AN2Hxt7S-L",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -1748,17 +2372,17 @@
                     "chongqingrt-loop": {
                         "color": [
                             "fukuoka",
-                            "fuk3",
-                            "#00936b",
+                            "fuk1",
+                            "#ee5511",
                             "#fff"
                         ]
                     }
                 }
             },
             {
-                "key": "line_VikjEbog3C",
-                "source": "stn_oDOO4z9CHq",
-                "target": "stn_TUUcp-iDEz",
+                "key": "line_BHaQIwDcVB",
+                "source": "stn_tqjo0p7M6r",
+                "target": "stn_XgnCfXdAPk",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -1775,16 +2399,16 @@
                     "chongqingrt-loop": {
                         "color": [
                             "fukuoka",
-                            "fuk3",
-                            "#00936b",
+                            "fuk2",
+                            "#0077cc",
                             "#fff"
                         ]
                     }
                 }
             },
             {
-                "key": "line_ivgtRngPgz",
-                "source": "stn_oDOO4z9CHq",
+                "key": "line_BYkJ_1EPX4",
+                "source": "stn_cOF_6Zll92",
                 "target": "stn_AN2Hxt7S-L",
                 "attributes": {
                     "visible": true,
@@ -1810,9 +2434,387 @@
                 }
             },
             {
-                "key": "line_jXixNfZWFn",
-                "source": "misc_node_kfeL-itkX3",
-                "target": "stn_pzbgeWiE4g",
+                "key": "line_7lMrT4QP99",
+                "source": "stn_cOF_6Zll92",
+                "target": "stn_KoZU2_3FQM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "chongqingrt-loop",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "chongqingrt-loop": {
+                        "color": [
+                            "fukuoka",
+                            "fuk3",
+                            "#00936b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_NhTdKTeXuX",
+                "source": "stn_7jfNSGIfbP",
+                "target": "stn_KoZU2_3FQM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "chongqingrt-loop",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "chongqingrt-loop": {
+                        "color": [
+                            "fukuoka",
+                            "fuk3",
+                            "#00936b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_UeD4TSqs76",
+                "source": "stn_7jfNSGIfbP",
+                "target": "stn_kK_SdIIfaC",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "chongqingrt-loop",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "chongqingrt-loop": {
+                        "color": [
+                            "fukuoka",
+                            "fuk3",
+                            "#00936b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_ZcfZNtH3nS",
+                "source": "stn_PVaGFX4ZCL",
+                "target": "stn_kK_SdIIfaC",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "chongqingrt-loop",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "chongqingrt-loop": {
+                        "color": [
+                            "fukuoka",
+                            "fuk3",
+                            "#00936b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_rcFz6ZvJBZ",
+                "source": "misc_node_zEFqFUHC7_",
+                "target": "stn_tqjo0p7M6r",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "chongqingrt-loop",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "chongqingrt-loop": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#f1d23c",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_JFxCqK5mHV",
+                "source": "misc_node_A_ChoPFI_j",
+                "target": "misc_node_9MSQvVblv-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -2,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#97999d",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_6030gnal0g",
+                "source": "stn_u8pRYTEFK6",
+                "target": "misc_node_Y4TTj2N6WH",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "chongqingrt-loop",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "chongqingrt-loop": {
+                        "color": [
+                            "fukuoka",
+                            "fuk1",
+                            "#ee5511",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_oUs5zgmJZF",
+                "source": "stn_9m2T7xMRi0",
+                "target": "misc_node_6VA8Z40p6l",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "chongqingrt-loop",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "chongqingrt-loop": {
+                        "color": [
+                            "fukuoka",
+                            "fuk2",
+                            "#0077cc",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_FQ95GA2Mbn",
+                "source": "stn_ylvNA2x5fY",
+                "target": "misc_node_NIi3JJZY3o",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "chongqingrt-loop",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "chongqingrt-loop": {
+                        "color": [
+                            "fukuoka",
+                            "fuk3",
+                            "#00936b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_O26LDibE2h",
+                "source": "misc_node_YIU5PcDIML",
+                "target": "misc_node_XskSkufHG2",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#f1d23c",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_OBtl0KIjNk",
+                "source": "misc_node_duOe9jJqey",
+                "target": "misc_node_cqdWeu4YHj",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#c07196",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_HiIZ6BKBe0",
+                "source": "misc_node_E_-CB0_x3Z",
+                "target": "misc_node_mLO3vOHuPM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#717176",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_4qxEslol0I",
+                "source": "misc_node_O3HFis4OjF",
+                "target": "misc_node_ggnudMWOBh",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#6994b2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_kVHUBiCQGT",
+                "source": "misc_node_R3aaX_3ldy",
+                "target": "misc_node_xb1RFy2SqF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#97999d",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_2hZLJG6F8l",
+                "source": "stn_--Py73R945",
+                "target": "misc_node_s6NOs1EdKb",
                 "attributes": {
                     "visible": true,
                     "zIndex": -1,
@@ -1821,24 +2823,78 @@
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 0
+                        "roundCornerFactor": 6
                     },
                     "style": "single-color",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
                     "single-color": {
                         "color": [
                             "other",
                             "other",
-                            "#aaaaaa",
+                            "#c07196",
                             "#fff"
                         ]
-                    }
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
                 }
             },
             {
-                "key": "line_wP4fgmxRsF",
-                "source": "misc_node_IOdi-WQKis",
+                "key": "line_k95Tdbwh5U",
+                "source": "misc_node_Luu2CX7dYY",
+                "target": "misc_node_GdROOrCwsO",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -1,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 6
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#6994b2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_Tkdscvjd3o",
+                "source": "misc_node_Luu2CX7dYY",
+                "target": "misc_node_GJimZvWa9D",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 6
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#6994b2",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_ZDZcdnE1uV",
+                "source": "misc_node_L033kILqai",
                 "target": "misc_node_tbHLWebO0v",
                 "attributes": {
                     "visible": true,
@@ -1848,14 +2904,14 @@
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 6
+                        "roundCornerFactor": 10
                     },
                     "style": "single-color",
                     "single-color": {
                         "color": [
                             "other",
                             "other",
-                            "#aaaaaa",
+                            "#97999d",
                             "#fff"
                         ]
                     },
@@ -1864,9 +2920,9 @@
                 }
             },
             {
-                "key": "line_FTYxNaTxQX",
-                "source": "misc_node_GNM7bNK9ud",
-                "target": "misc_node_GJimZvWa9D",
+                "key": "line_Ui-StWcc0L",
+                "source": "misc_node_L033kILqai",
+                "target": "misc_node_acNtUIc9pW",
                 "attributes": {
                     "visible": true,
                     "zIndex": -1,
@@ -1875,33 +2931,6 @@
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 4
-                    },
-                    "style": "gd-intercity-rwy",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "gd-intercity-rwy": {
-                        "color": [
-                            "guangzhou",
-                            "ir",
-                            "#2559a8",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_jSn8kSaAW4",
-                "source": "misc_node_m2OiMo07Vh",
-                "target": "stn_2u8bMhq53d",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
                     "style": "single-color",
@@ -1909,7 +2938,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#aaaaaa",
+                            "#97999d",
                             "#fff"
                         ]
                     },
@@ -1918,36 +2947,9 @@
                 }
             },
             {
-                "key": "line_2TVvyrSMSq",
-                "source": "misc_node_zEFqFUHC7_",
-                "target": "stn_xPHtqwVOCy",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "other",
-                            "other",
-                            "#aaaaaa",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_ATxp75DmsU",
-                "source": "misc_node_5mTcg3gqji",
-                "target": "misc_node_ysOXfufcs1",
+                "key": "line_dwBsKXuoK2",
+                "source": "misc_node_P6Y4pn6SBq",
+                "target": "misc_node_Mm5m2yCxP0",
                 "attributes": {
                     "visible": true,
                     "zIndex": -5,
@@ -1973,9 +2975,9 @@
                 }
             },
             {
-                "key": "line_GsJjx2b6zx",
-                "source": "misc_node_w-Dcq--_jk",
-                "target": "misc_node_ysOXfufcs1",
+                "key": "line_jX6ArNTtPf",
+                "source": "misc_node_LfYyVObOmG",
+                "target": "misc_node_P6Y4pn6SBq",
                 "attributes": {
                     "visible": true,
                     "zIndex": -5,
@@ -2001,9 +3003,9 @@
                 }
             },
             {
-                "key": "line_waIm53AfsX",
-                "source": "misc_node_w-Dcq--_jk",
-                "target": "misc_node_5mTcg3gqji",
+                "key": "line_NQGdsIb2WQ",
+                "source": "misc_node_LfYyVObOmG",
+                "target": "misc_node_Mm5m2yCxP0",
                 "attributes": {
                     "visible": true,
                     "zIndex": -5,
@@ -2029,9 +3031,9 @@
                 }
             },
             {
-                "key": "line_8S0JHJpLY7",
-                "source": "misc_node_L45GgCJQlK",
-                "target": "misc_node_maxgw1eW6b",
+                "key": "line_jmGag5oQ_g",
+                "source": "misc_node_QbnfLRrfsz",
+                "target": "misc_node_CAtM5mDD39",
                 "attributes": {
                     "visible": true,
                     "zIndex": -5,
@@ -2057,9 +3059,9 @@
                 }
             },
             {
-                "key": "line_UCTC24kycA",
-                "source": "misc_node_ICx9Uxq2mT",
-                "target": "misc_node_WfWazmw3a3",
+                "key": "line_oSa8l-3Y_1",
+                "source": "misc_node_2rKaY1EwSt",
+                "target": "misc_node_jYezbl1ISn",
                 "attributes": {
                     "visible": true,
                     "zIndex": -5,
@@ -2085,9 +3087,65 @@
                 }
             },
             {
-                "key": "line_fHs9_zNVRX",
-                "source": "misc_node_giXAGzKLYt",
-                "target": "misc_node_IWESrjfma2",
+                "key": "line_CxxkdAGysp",
+                "source": "misc_node_gMHzm57dI4",
+                "target": "misc_node_PZv-sMOF9z",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -5,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "river",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "river": {
+                        "color": [
+                            "shanghai",
+                            "river",
+                            "#B9E3F9",
+                            "#fff"
+                        ],
+                        "width": 40
+                    }
+                }
+            },
+            {
+                "key": "line_E-f1qeZHmu",
+                "source": "misc_node_vhvjNpHOY_",
+                "target": "misc_node_nSDiEB4HBF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -5,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "river",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "river": {
+                        "color": [
+                            "shanghai",
+                            "river",
+                            "#B9E3F9",
+                            "#fff"
+                        ],
+                        "width": 40
+                    }
+                }
+            },
+            {
+                "key": "line_EMs4ch0NxB",
+                "source": "misc_node_iMxdOwbtp8",
+                "target": "misc_node_btc8KIxPSz",
                 "attributes": {
                     "visible": true,
                     "zIndex": -5,
@@ -2114,5 +3172,5 @@
             }
         ]
     },
-    "version": 56
+    "version": 57
 }

@@ -190,7 +190,7 @@ const DetailsModal = (props: {
         if (isMasterImport && (metadata as DesignerDetails).data !== undefined) {
             CHN_MASTER.postMessage({
                 event: RMP_MASTER_CHANNEL_POST,
-                data: (metadata as DesignerDetails).data,
+                id: (metadata as DesignerDetails).id,
             });
         }
     };

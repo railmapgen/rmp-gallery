@@ -1,8 +1,8 @@
 import classes from './about.module.css';
 import rmgRuntime from '@railmapgen/rmg-runtime';
 import { useTranslation } from 'react-i18next';
+import { SiZulip } from 'react-icons/si';
 import GithubIcon from '../images/github-mark.svg';
-import SlackIcon from '../images/slack-mark.svg';
 import { Avatar, Card, Flex, Group, Image, Modal, Stack, Text, Title } from '@mantine/core';
 import { RMSection, RMSectionBody, RMSectionHeader } from '@railmapgen/mantine-components';
 
@@ -109,17 +109,16 @@ const AboutModal = (props: { isOpen: boolean; onClose: () => void }) => {
                     <Card
                         component="a"
                         className={classes['dev-card']}
-                        href="https://join.slack.com/t/railmapgenerator/shared_invite/zt-1odhhta3n-DdZF~fnVwo_q0S0RJmgV8A"
+                        href="https://railmapgen.zulipchat.com/join/psex5yvk5b2g4vaq5chtkkrs/"
                         target="_blank"
                         withBorder
                     >
-                        <Avatar src={SlackIcon} size="lg" />
+                        <Avatar size="lg">
+                            <SiZulip size={32} />
+                        </Avatar>
                         <Flex>
-                            <Title order={3}>{t('header.about.slack')}</Title>
-                            <Text span>{t('header.about.slackContent')}</Text>
-                            <Text component="i" span>
-                                #rmg, #rmp, #gallery, #random
-                            </Text>
+                            <Title order={3}>{t('header.about.zulip')}</Title>
+                            <Text span>{t('header.about.zulipContent')}</Text>
                         </Flex>
                     </Card>
                 </RMSectionBody>

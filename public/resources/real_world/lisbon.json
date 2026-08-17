@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 100,
+    "svgViewBoxZoom": 130,
     "svgViewBoxMin": {
-        "x": -113.69871738599431,
-        "y": -780.6931338949508
+        "x": -1065.5928185080554,
+        "y": -659.5965072446706
     },
     "images": [
         {
@@ -2075,7 +2075,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -746.6,
+                    "x": -751.6,
                     "y": 46.8,
                     "type": "virtual",
                     "virtual": {}
@@ -2207,6 +2207,129 @@
                         "content": "Transferência para\na ferrovia",
                         "fontSize": 10,
                         "lineHeight": 9,
+                        "textAnchor": "start",
+                        "dominantBaseline": "middle",
+                        "language": "mtr_en",
+                        "color": [
+                            "other",
+                            "other",
+                            "#012f7b",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_IE9I9kbbYI",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -226.57,
+                    "y": 191.61,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_OeEjeMcArL",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -297.7,
+                    "y": 22.5,
+                    "type": "text",
+                    "text": {
+                        "content": "温馨提示",
+                        "fontSize": 20,
+                        "lineHeight": 16,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "mtr_zh",
+                        "color": [
+                            "other",
+                            "other",
+                            "#012f7b",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_5jQcY5mO1o",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -297.9,
+                    "y": 36.95,
+                    "type": "text",
+                    "text": {
+                        "content": "Lembrete caloroso",
+                        "fontSize": 11,
+                        "lineHeight": 16,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "mtr_en",
+                        "color": [
+                            "other",
+                            "other",
+                            "#012f7b",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_WWSCX-kIV6",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -350.6,
+                    "y": 61,
+                    "type": "text",
+                    "text": {
+                        "content": "绿线索德雷码头站\n于8月8日-8月26日\n暂停对外服务。",
+                        "fontSize": 14,
+                        "lineHeight": 16,
+                        "textAnchor": "start",
+                        "dominantBaseline": "middle",
+                        "language": "mtr_zh",
+                        "color": [
+                            "other",
+                            "other",
+                            "#012f7b",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "misc_node_Ygm3v-cEnu",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -350.6,
+                    "y": 111.65,
+                    "type": "text",
+                    "text": {
+                        "content": "A Estação Linha Verde\nCais do Sodré suspenderá\n o serviço externo de\n8 a 26 de agosto.",
+                        "fontSize": 11,
+                        "lineHeight": 11,
                         "textAnchor": "start",
                         "dominantBaseline": "middle",
                         "language": "mtr_en",
@@ -3169,17 +3292,17 @@
                         "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
-                    "style": "single-color",
-                    "single-color": {
+                    "style": "mtr-race-days",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "mtr-race-days": {
                         "color": [
                             "lisbon",
                             "lbg",
                             "#00a19b",
                             "#fff"
                         ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
+                    }
                 }
             },
             {
@@ -4168,8 +4291,30 @@
                     "reconcileId": "",
                     "parallelIndex": -1
                 }
+            },
+            {
+                "key": "line_qrlMQjIRSr",
+                "source": "misc_node_iua0V-ZcNB",
+                "target": "misc_node_IE9I9kbbYI",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "style": "sh-sub-rwy",
+                    "sh-sub-rwy": {
+                        "isEnd": false
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": 0,
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 0
+                    }
+                }
             }
         ]
     },
-    "version": 76
+    "version": 77
 }

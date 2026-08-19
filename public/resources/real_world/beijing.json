@@ -1,8 +1,8 @@
 {
-    "svgViewBoxZoom": 127.25358589012733,
+    "svgViewBoxZoom": 127.25358589012731,
     "svgViewBoxMin": {
-        "x": -533.1058627287407,
-        "y": -608.903821974932
+        "x": -818.4743882449518,
+        "y": -626.1088604238212
     },
     "images": [],
     "graph": {
@@ -365,18 +365,18 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 140,
-                    "y": 40,
+                    "x": 141.4,
+                    "y": 31.4,
                     "type": "bjsubway-basic",
                     "bjsubway-basic": {
                         "names": [
-                            "  北京站",
-                            "　Beijing Zhan\n　(Beijing Railway Station)"
+                            "北京站",
+                            "Beijing Zhan\n(Beijing Railway\nStation)"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "open": true,
-                        "scale": 0.75
+                        "scale": 1
                     }
                 }
             },
@@ -6496,7 +6496,7 @@
                     "bjsubway-basic": {
                         "names": [
                             "管庄",
-                            "Guaanzhuang"
+                            "Guanzhuang"
                         ],
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
@@ -9436,56 +9436,6 @@
                         ],
                         "rotate": 135,
                         "type": "sandwich"
-                    }
-                }
-            },
-            {
-                "key": "misc_node__LHNXQ1n5M",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": 150,
-                    "y": 24.9,
-                    "type": "bjsubway-text-line-badge",
-                    "bjsubway-text-line-badge": {
-                        "names": [
-                            "",
-                            ""
-                        ],
-                        "color": [
-                            "other",
-                            "other",
-                            "#ffffff",
-                            "#000"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "misc_node_CNj6lbvLOf",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 7,
-                    "x": 148.92,
-                    "y": 35.34,
-                    "type": "text",
-                    "text": {
-                        "content": "北京站",
-                        "fontSize": 9,
-                        "lineHeight": 16,
-                        "textAnchor": "start",
-                        "dominantBaseline": "middle",
-                        "language": "zh",
-                        "color": [
-                            "other",
-                            "other",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
                     }
                 }
             },
@@ -23565,5 +23515,5 @@
             }
         ]
     },
-    "version": 76
+    "version": 77
 }

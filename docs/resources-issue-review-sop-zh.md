@@ -8,6 +8,8 @@
 - 在同城市、同类型的更新链中，若同一用户提交多个议题，只保留最新的那个，较早议题直接按重复关闭。
 - 审核默认以当前官方线路图为准，但允许较早 issue 按其更新范围先通过。
 - 只有在同城市更早议题已经合入主线后，后续议题才强制重建 `issuebot` 产物。
+- 面向投稿者的 issue 回复使用对应城市或地区的官方语言；若有多种官方语言，选择当地最主要或使用人数最多的一种。
+- 只有审核通过且对应 PR 已合并的议题才按完成处理；其余所有议题均以 `not planned` 原因关闭。
 - 每处理完一个议题，都先向人工汇报结果并准备好 `gh` CLI 操作，只有在获得明确许可后才执行合并、关闭、删分支等动作。
 
 ## 项目现状约束
@@ -19,7 +21,7 @@
 - `issuebot` 会创建从 `bot-<issue_number>` 指向 `main` 的 PR。
 - PR 标题默认与 issue 标题一致。
 - 缩略图会写入 `public/resources/thumbnails/<city>.png`。
-- 若 `sanity check` 失败，workflow 会给 issue 打上 `need fixing` 并自动关闭 issue。
+- 若 `sanity check` 失败，workflow 会给 issue 打上 `need fixing`，并以 `not planned` 原因自动关闭 issue。
 
 这意味着：
 
@@ -121,6 +123,16 @@
 - 合入后，再重建议题 2 的 bot 产物
 - 议题 2 基于最新主线重建后，再审核其是否覆盖 4 号线等后续变化
 
+### 回复语言
+
+面向投稿者的 issue 回复必须遵守以下规则：
+
+- 使用审核所确定城市或地区的官方语言，不默认使用中文或英语。
+- 若当地有多种官方语言，选择其中最主要或使用人数最多的一种。
+- 开头、通过提示、错误说明、重复或冗余原因、重新提交提示等完整回复均使用所选语言；线路名、站名、issue 编号、标签及命令等专有内容可保留其官方写法。
+- 本 SOP 中出现的中文回复均为语义模板。实际发布前必须翻译为上述所选语言，不得直接把中文模板作为默认回复。
+- 面向人工的审核汇报继续使用中文，不受本规则影响。
+
 ### 审核状态标签
 
 每次执行最终的 `gh` 处置操作前，都要先给 issue 同步一个审核状态标签。
@@ -140,6 +152,13 @@
 - 设置常规状态标签时，应同时移除另外四个常规状态标签，避免并存
 - 若按“同一用户较早议题重复”关闭，则使用 `duplicate` 标签，不强制再叠加上述五个常规状态标签
 - `resources` 标签可与上述状态标签并存，不需要移除
+
+### Issue 关闭原因
+
+- 只有内容审核通过且对应 PR 已实际合并的 issue，才可按完成处理。
+- 只要 issue 未满足“审核通过”，关闭时一律使用 `not planned`，包括但不限于 `need fixing`、`invalid content`、`invalid format`、`duplicate`、`better version exists` 以及其他未合并结论。
+- 手工关闭命令必须显式带上 `--reason "not planned"`，不要依赖 GitHub CLI 的默认关闭原因。
+- PR 的关闭与分支删除规则不变；`not planned` 仅指 issue 的关闭原因。
 
 ### 需要重建 bot 产物
 
@@ -236,7 +255,7 @@
 
 定位描述要求：
 
-- 每次对人工的汇报，以及需要写给 issue 的中文回复时，都应指出“图中哪里被更新了”
+- 每次对人工的汇报，以及需要写给 issue 的对应地区官方语言回复时，都应指出“图中哪里被更新了”
 - 更新位置描述至少包含：方位（如“顶部偏右”“底部中偏左”）、线路或支线名称、起止或关键站点
 - 若只是局部修正而非整线新增，也要说明修正发生在哪一段、哪个换乘站附近或哪组站名附近
 - 若为重复关闭、冗余关闭、无效等未进入完整内容审核的情形，也应说明该稿件声称更新的图面区域；若无法稳定定位，则明确写“未形成可审核图面更新”
@@ -250,10 +269,11 @@
 
 回复文案规则：
 
-- 无论通过或拒绝，issue 回复开头都必须先写：`嗨，感谢您的支持与贡献！`
-- 通过时，后续固定接：`您的作品已被合入并即将上线`
+- 所有 issue 回复均使用“回复语言”一节确定的对应地区官方语言。
+- 无论通过或拒绝，issue 回复开头都必须表达与 `嗨，感谢您的支持与贡献！` 等义的内容。
+- 通过时，后续固定表达与 `您的作品已被合入并即将上线` 等义的内容。
 - 不通过、无效或冗余关闭时，后续直接接对应的不一致理由或关闭原因
-- 不通过时，issue 回复末尾必须另起一段追加：`您可以修正此错误后，重新打开一个新的议题，并附上此议题的编号。请不要再次尝试更新此议题 :)`
+- 不通过时，issue 回复末尾必须另起一段，以所选语言表达与 `您可以修正此错误后，重新打开一个新的议题，并附上此议题的编号。请不要再次尝试更新此议题 :)` 等义的内容。
 - 同一用户较早议题按重复关闭时，后续直接说明该议题已被该用户更新提交的最新议题替代，并指向最新议题编号
 
 通过可再细分为：
@@ -280,7 +300,7 @@
 1. 回复所有已确认且可复核的错误点，并在末尾追加固定的重新提交提示
 2. 将 issue 状态标签设为 `need fixing`
 3. 准备关闭该 issue、对应 PR 并删除分支
-4. 视人工确认，关闭该 issue
+4. 视人工确认，以 `not planned` 原因关闭该 issue
 5. 继续处理同城市更新链中的下一个议题
 
 说明：
@@ -301,14 +321,14 @@
 1. 回复所有已确认且可复核的元数据、参考资料或内容无效问题
 2. 按原因将 issue 状态标签设为 `invalid content` 或 `invalid format`
 3. 准备关闭该 issue 对应 PR 和分支
-4. 视人工确认，关闭该 issue
+4. 视人工确认，以 `not planned` 原因关闭该 issue
 5. 继续处理同城市更新链中的下一个议题
 
 #### 情况 C：当前议题通过
 
 处理方式：
 
-1. 回复 `嗨，感谢您的支持与贡献！您的作品已被合入并即将上线`
+1. 使用对应地区的官方语言，表达与 `嗨，感谢您的支持与贡献！您的作品已被合入并即将上线` 等义的内容
 2. 将 issue 状态标签设为 `ready for merge`
 3. 准备合并当前 PR
 4. 获得人工许可后执行合并
@@ -323,9 +343,9 @@
 处理方式：
 
 1. 给较早议题打上 `duplicate` 标签
-2. 回复 `嗨，感谢您的支持与贡献！该议题已被您后续提交的较新议题 #<latest> 替代，本议题按重复关闭。`
+2. 使用对应地区的官方语言，表达与 `嗨，感谢您的支持与贡献！该议题已被您后续提交的较新议题 #<latest> 替代，本议题按重复关闭。` 等义的内容
 3. 若该较早议题已有 PR 和分支，则一并准备关闭其 PR、删除其分支
-4. 获得人工许可后执行关闭
+4. 获得人工许可后，以 `not planned` 原因关闭 issue
 
 #### 情况 E：后续议题冗余
 
@@ -333,10 +353,10 @@
 
 处理方式：
 
-1. 回复 `嗨，感谢您的支持与贡献！该更新已被更早且已符合官方图的议题覆盖。`
+1. 使用对应地区的官方语言，表达与 `嗨，感谢您的支持与贡献！该更新已被更早且已符合官方图的议题覆盖。` 等义的内容
 2. 将 issue 状态标签设为 `better version exists`
 3. 准备关闭其 PR、删除其分支、关闭其 issue
-4. 获得人工许可后执行
+4. 获得人工许可后，以 `not planned` 原因关闭 issue
 
 ## 每个议题处理后的汇报格式
 
@@ -355,6 +375,8 @@
 结论：通过 / 不通过 / 无效 / 重复关闭 / 冗余关闭
 通过类型：范围通过 / 完全通过 / 不适用
 标签：ready for merge / need fixing / invalid content / invalid format / better version exists / duplicate
+回复语言：<对应城市或地区的官方语言；多种时填写最主要或使用人数最多的一种>
+关闭原因：not planned / 不适用（审核通过且 PR 已合并）
 说明：<完全通过时写“与当前官方图一致”；范围通过时写“本次更新范围正确，剩余差异属于后续官方变化”；不通过时写所有已确认且可复核的错误点；无效时写已确认的内容或格式问题；重复关闭时写被该用户哪个较新议题替代；冗余时写被哪个更早议题覆盖>
 
 待执行 gh CLI：
@@ -368,6 +390,8 @@
 ## `gh` CLI 操作模板
 
 以下命令默认在 PowerShell 下执行。
+
+以下评论正文中的中文只表示所需语义。实际创建 `--body-file` 前，必须先按照“回复语言”一节翻译成对应城市或地区的官方语言；若有多种官方语言，使用其中最主要或使用人数最多的一种。
 
 ### 0. 统一变量
 
@@ -548,7 +572,7 @@ $commentFile = Join-Path $tmp "issue-$issue-comment.md"
 您可以修正此错误后，重新打开一个新的议题，并附上此议题的编号。请不要再次尝试更新此议题 :)
 '@ | Set-Content $commentFile -Encoding utf8
 gh issue comment $issue -R $repo --body-file $commentFile
-gh issue close $issue -R $repo
+gh issue close $issue -R $repo --reason "not planned"
 ```
 
 ### 11. 内容无效时准备关闭 issue
@@ -562,7 +586,7 @@ $commentFile = Join-Path $tmp "issue-$issue-comment.md"
 嗨，感谢您的支持与贡献！<列出已确认的内容或参考资料问题>
 '@ | Set-Content $commentFile -Encoding utf8
 gh issue comment $issue -R $repo --body-file $commentFile
-gh issue close $issue -R $repo
+gh issue close $issue -R $repo --reason "not planned"
 ```
 
 ### 11.1 格式无效时准备关闭 issue
@@ -576,7 +600,7 @@ $commentFile = Join-Path $tmp "issue-$issue-comment.md"
 嗨，感谢您的支持与贡献！<列出已确认的格式或元数据结构问题>
 '@ | Set-Content $commentFile -Encoding utf8
 gh issue comment $issue -R $repo --body-file $commentFile
-gh issue close $issue -R $repo
+gh issue close $issue -R $repo --reason "not planned"
 ```
 
 ### 12. 同一用户较早议题按重复关闭
@@ -592,7 +616,7 @@ $commentFile = Join-Path $tmp "issue-$older-comment.md"
 嗨，感谢您的支持与贡献！该议题已被您后续提交的较新议题 #$latest 替代，本议题按重复关闭。
 "@ | Set-Content $commentFile -Encoding utf8
 gh issue comment $older -R $repo --body-file $commentFile
-gh issue close $older -R $repo
+gh issue close $older -R $repo --reason "not planned"
 ```
 
 如果较早议题也已有 PR 和分支：
@@ -617,7 +641,7 @@ $issueCommentFile = Join-Path $tmp "issue-$older-comment.md"
 嗨，感谢您的支持与贡献！该议题已被您后续提交的较新议题 #$latest 替代，本议题按重复关闭。
 "@ | Set-Content $issueCommentFile -Encoding utf8
 gh issue comment $older -R $repo --body-file $issueCommentFile
-gh issue close $older -R $repo
+gh issue close $older -R $repo --reason "not planned"
 ```
 
 ### 13. 冗余关闭较新的 issue
@@ -633,7 +657,7 @@ $commentFile = Join-Path $tmp "issue-$newer-comment.md"
 嗨，感谢您的支持与贡献！该更新已被更早且已符合官方图的 #$older 覆盖。
 "@ | Set-Content $commentFile -Encoding utf8
 gh issue comment $newer -R $repo --body-file $commentFile
-gh issue close $newer -R $repo
+gh issue close $newer -R $repo --reason "not planned"
 ```
 
 如果较新的 issue 也已有 PR 和分支：
@@ -657,7 +681,7 @@ $issueCommentFile = Join-Path $tmp "issue-$newer-comment.md"
 嗨，感谢您的支持与贡献！该更新已被更早且已符合官方图的议题覆盖。
 '@ | Set-Content $issueCommentFile -Encoding utf8
 gh issue comment $newer -R $repo --body-file $issueCommentFile
-gh issue close $newer -R $repo
+gh issue close $newer -R $repo --reason "not planned"
 ```
 
 ## 推荐执行顺序
@@ -703,7 +727,8 @@ gh issue close $newer -R $repo
 - 如果提交仅仅改了布局、没有修正或新增内容，不予通过
 - 每次执行最终 `gh` 处置动作前，先同步 issue 的状态标签为 `ready for merge`、`need fixing`、`invalid content`、`invalid format` 或 `better version exists` 之一
 - 同一用户在同城市、同类型更新链中重复投稿时，直接关闭其较早议题，只保留最新议题继续审核；较早议题需打上 `duplicate` 标签并指向最新议题
-- issue 回复文案必须统一以 `嗨，感谢您的支持与贡献！` 开头；通过时固定接 `您的作品已被合入并即将上线`
+- issue 回复必须使用对应城市或地区的官方语言；若有多种官方语言，选择最主要或使用人数最多的一种。中文固定文案只作为语义模板，发布前必须翻译
+- 只有审核通过且 PR 已合并的 issue 才按完成处理；其余所有 issue 关闭时必须显式使用 `--reason "not planned"`
 - 任何 merge、close、delete 动作都必须等人工明确批准
 - 回复“不通过”时，尽可能列出所有已确认且可复核的错误点；不要为了凑数量写入不确定或无法稳定复核的问题；末尾必须追加固定的重新提交提示
 - 一旦出现“更早 issue 已完全符合官方图”，后续 issue 不再做重复审核

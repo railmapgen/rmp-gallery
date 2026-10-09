@@ -1,10 +1,5 @@
 {
-    "svgViewBoxZoom": 344.28319057002165,
-    "svgViewBoxMin": {
-        "x": -1920.8185432229711,
-        "y": -1177.9141142452759
-    },
-    "images": [],
+    "mapEnabled": false,
     "graph": {
         "options": {
             "type": "directed",
@@ -8993,8 +8988,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 1540,
-                    "y": 45,
+                    "x": 1545,
+                    "y": -34.81,
                     "type": "virtual",
                     "virtual": {}
                 }
@@ -9045,62 +9040,6 @@
                         "rotate": 0,
                         "italic": "normal",
                         "bold": "bold",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_Zw1ZWelMka",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1375,
-                    "y": 5,
-                    "type": "text",
-                    "text": {
-                        "content": "穗深城际与广惠城际在东莞西站需出闸换乘。",
-                        "fontSize": 13.9,
-                        "lineHeight": 16,
-                        "textAnchor": "start",
-                        "dominantBaseline": "auto",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_brALf5h76D",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1375,
-                    "y": 15,
-                    "type": "text",
-                    "text": {
-                        "content": "Passengers transfferring between the Guangzhou-Shenzhen Intercity and the\nGuangzhou-Huizhou Intercity at Dongguanxi Railway Station are required\nto exit the fare gates.",
-                        "fontSize": 9.5,
-                        "lineHeight": 10.5,
-                        "textAnchor": "start",
-                        "dominantBaseline": "auto",
-                        "language": "en",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
                         "outline": 0
                     }
                 }
@@ -9544,62 +9483,6 @@
                     "type": "text",
                     "text": {
                         "content": "Service at Baiyun Airport South Railway Station(Terminal 1) of Guangzhou\nEast Ring Intercity Is suspended.",
-                        "fontSize": 9.5,
-                        "lineHeight": 10.5,
-                        "textAnchor": "start",
-                        "dominantBaseline": "auto",
-                        "language": "en",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_xPz5fgTPoD",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1375,
-                    "y": -25,
-                    "type": "text",
-                    "text": {
-                        "content": "东莞西联络线（麻涌-洪梅）尚未开通。",
-                        "fontSize": 13.9,
-                        "lineHeight": 16,
-                        "textAnchor": "start",
-                        "dominantBaseline": "auto",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
-                }
-            },
-            {
-                "key": "misc_node_Tdk27AG8-k",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "x": 1375,
-                    "y": -15,
-                    "type": "text",
-                    "text": {
-                        "content": "Dongguanxi Link Line (Machong-Hongmei) is under construction.",
                         "fontSize": 9.5,
                         "lineHeight": 10.5,
                         "textAnchor": "start",
@@ -17028,5 +16911,188 @@
             }
         ]
     },
-    "version": 76
+    "mapStyle": {
+        "roads": {
+            "path": {
+                "enabled": true,
+                "casingColor": "#dedbd4",
+                "color": "#dedbd4",
+                "widthScale": 1
+            },
+            "local": {
+                "enabled": true,
+                "casingColor": "#cfd39c",
+                "color": "#fbf8d0",
+                "widthScale": 1
+            },
+            "collector": {
+                "enabled": true,
+                "casingColor": "#c8cf86",
+                "color": "#f7fabf",
+                "widthScale": 1
+            },
+            "arterial": {
+                "enabled": true,
+                "casingColor": "#d8ab62",
+                "color": "#f6d19b",
+                "widthScale": 1
+            }
+        },
+        "rails": {
+            "metro": {
+                "enabled": true,
+                "color": "#4d8fd1",
+                "widthScale": 1
+            },
+            "national": {
+                "enabled": true,
+                "color": "#8f8a83",
+                "widthScale": 1
+            }
+        },
+        "labels": {
+            "enabled": true,
+            "categories": {
+                "place-major": {
+                    "enabled": true,
+                    "color": "#3a342d",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "place-medium": {
+                    "enabled": true,
+                    "color": "#4a443d",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "place-minor": {
+                    "enabled": true,
+                    "color": "#625c54",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "road-arterial": {
+                    "enabled": true,
+                    "color": "#554f48",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "road-collector": {
+                    "enabled": true,
+                    "color": "#68625a",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "building": {
+                    "enabled": true,
+                    "color": "#726c64",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-water": {
+                    "enabled": true,
+                    "color": "#477285",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-park": {
+                    "enabled": true,
+                    "color": "#4f6f45",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-grass": {
+                    "enabled": true,
+                    "color": "#5f744e",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-forest": {
+                    "enabled": true,
+                    "color": "#4f6a43",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-farmland": {
+                    "enabled": true,
+                    "color": "#746d45",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-cemetery": {
+                    "enabled": true,
+                    "color": "#5e6f58",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-residential": {
+                    "enabled": true,
+                    "color": "#625c54",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-commercial": {
+                    "enabled": true,
+                    "color": "#795a5a",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-industrial": {
+                    "enabled": true,
+                    "color": "#675d75",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-education": {
+                    "enabled": true,
+                    "color": "#715f3b",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-healthcare": {
+                    "enabled": true,
+                    "color": "#7a5661",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-airport": {
+                    "enabled": true,
+                    "color": "#3d6482",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-rail": {
+                    "enabled": true,
+                    "color": "#3f3a34",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-metro": {
+                    "enabled": true,
+                    "color": "#4d6c88",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-platform": {
+                    "enabled": true,
+                    "color": "#655f58",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-entrance": {
+                    "enabled": true,
+                    "color": "#6f8496",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                }
+            }
+        }
+    },
+    "svgViewBoxZoom": 128.69748168814817,
+    "svgViewBoxMin": {
+        "x": -1358.8747256137658,
+        "y": 345.70689503201663
+    },
+    "version": 78,
+    "images": []
 }

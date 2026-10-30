@@ -2,8 +2,8 @@ import { setupTest } from '@railmapgen/mantine-components/utils';
 
 setupTest();
 
-const originalFetch = global.fetch;
-global.fetch = vi.fn().mockImplementation((...args: any[]) => {
+const originalFetch = globalThis.fetch;
+globalThis.fetch = vi.fn().mockImplementation((...args: any[]) => {
     if (args[0].toString().includes('/info.json')) {
         return Promise.resolve({
             ok: true,

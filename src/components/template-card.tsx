@@ -46,7 +46,7 @@ export const TemplateCard = (props: {
                     {translateName(metadata.name)}
                     {(type === 'admin' || type === 'user') && (metadata as DesignerMetadata).status !== 'public' && (
                         <Badge mx="xs" bg={(metadata as DesignerMetadata).status === 'pending' ? '#faa037' : '#ec0202'}>
-                            (metadata as DesignerMetadata).status
+                            {t(`details.status.${(metadata as DesignerMetadata).status}`)}
                         </Badge>
                     )}
                 </Title>

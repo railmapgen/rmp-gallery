@@ -49,7 +49,17 @@
         "title": "詳細",
         "expireOn": "この作品の有効期限は次のとおりです。",
         "updateHistory": "更新履歴",
-        "import": "地下鉄路線図画家または地下鉄路線図ツールキットを使用している場合、この作品を直接使用することができます"
+        "import": "地下鉄路線図画家または地下鉄路線図ツールキットを使用している場合、この作品を直接使用することができます",
+        "download": "ダウンロード",
+        "edit": "編集",
+        "importedRmp": "作品「{{name}}」を Rail Map Painter に読み込みました。",
+        "importedDesigner": "作品「{{name}}」を RMP Designer に読み込みました。",
+        "failed": "失敗：{{status}} {{message}}",
+        "status": {
+            "public": "公開",
+            "pending": "審査待ち",
+            "rejected": "却下"
+        }
     },
     "ticket": {
         "file": "作品ファイル",
@@ -76,8 +86,8 @@
         "instruction": "以下のテキストを新しい問題の本文にコピーできます。",
         "openIssue": "問題本文をコピーして問題を開く",
         "instructionFile": "以下のファイルを新しい問題の本文の最後にアップロードしてください。",
-        "instructionFileHint1": "消える前に問題を送信してください。",
-        "instructionFileHint2": "",
+        "instructionFileHint1": "次の表示が消えてから投稿してください：",
+        "instructionFileHint2": "（表示中はアップロードが完了していません）。",
         "download": "ファイルをダウンロードする"
     },
     "donation": {
@@ -122,5 +132,17 @@
         "name": "名前",
         "add": "他の言語で名前を追加する",
         "remove": "この名前を削除する"
-    }
+    },
+    "Success": "成功",
+    "Error": "エラー",
+    "Link copied.": "リンクを複製しました。",
+    "Import": "読み込み",
+    "Like": "いいね",
+    "Favorite": "お気に入り",
+    "Share": "共有",
+    "Change status": "状態を変更",
+    "Help": "操作案内",
+    "New": "新規作成",
+    "Invalid file type!": "ファイル形式が無効です。",
+    "Invalid file!": "ファイルが無効です。"
 }

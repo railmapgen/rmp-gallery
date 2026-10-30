@@ -385,7 +385,7 @@ export default function GalleryView() {
                                     ))}
                                 <Affix position={{ bottom: 20, right: 20 }} onClick={handleNew} zIndex={3}>
                                     <ActionIcon
-                                        aria-label="new"
+                                        aria-label={t('New')}
                                         size="xl"
                                         color={type === 'fantasy' ? 'red' : undefined}
                                         variant="filled"

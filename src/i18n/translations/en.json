@@ -54,7 +54,12 @@
         "import": "You may directly use this work if your are in Rail Map Painter or Rail Map Toolkit",
         "importedRmp": "Template {{name}} imported in Rail Map Painter.",
         "importedDesigner": "Template {{name}} imported in RMP Designer.",
-        "failed": "Failed: {{status}} {{message}}"
+        "failed": "Failed: {{status}} {{message}}",
+        "status": {
+            "public": "Public",
+            "pending": "Pending",
+            "rejected": "Rejected"
+        }
     },
     "ticket": {
         "file": "Project file",

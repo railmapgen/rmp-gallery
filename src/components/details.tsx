@@ -342,19 +342,19 @@ const DetailsModal = (props: {
                                         leftSection={<MdOutlineCheckCircleOutline />}
                                         onClick={() => handleChangeStatus('public')}
                                     >
-                                        Public
+                                        {t('details.status.public')}
                                     </Menu.Item>
                                     <Menu.Item
                                         leftSection={<MdOutlinePauseCircleOutline />}
                                         onClick={() => handleChangeStatus('pending')}
                                     >
-                                        Pending
+                                        {t('details.status.pending')}
                                     </Menu.Item>
                                     <Menu.Item
                                         leftSection={<MdOutlineBlock />}
                                         onClick={() => handleChangeStatus('rejected')}
                                     >
-                                        Rejected
+                                        {t('details.status.rejected')}
                                     </Menu.Item>
                                 </Menu.Dropdown>
                             </Menu>

@@ -54,7 +54,12 @@
         "edit": "편집",
         "importedRmp": "작품 {{name}}을(를) Rail Map Painter에 불러왔습니다.",
         "importedDesigner": "작품 {{name}}을(를) RMP Designer에 불러왔습니다.",
-        "failed": "실패: {{status}} {{message}}"
+        "failed": "실패: {{status}} {{message}}",
+        "status": {
+            "public": "공개",
+            "pending": "심사 대기",
+            "rejected": "반려"
+        }
     },
     "ticket": {
         "file": "프로젝트 파일",

@@ -54,7 +54,12 @@
         "edit": "編集",
         "importedRmp": "作品「{{name}}」を Rail Map Painter に読み込みました。",
         "importedDesigner": "作品「{{name}}」を RMP Designer に読み込みました。",
-        "failed": "失敗：{{status}} {{message}}"
+        "failed": "失敗：{{status}} {{message}}",
+        "status": {
+            "public": "公開",
+            "pending": "審査待ち",
+            "rejected": "却下"
+        }
     },
     "ticket": {
         "file": "作品ファイル",

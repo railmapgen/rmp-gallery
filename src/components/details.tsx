@@ -50,7 +50,7 @@ const DetailsModal = (props: {
 }) => {
     const { city, type, userRole, isOpen, onClose } = props;
     const navigate = useNavigate();
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const { rmtToken } = useRootSelector(state => state.app);
     const translateName = useTranslatedName();
 
@@ -133,7 +133,7 @@ const DetailsModal = (props: {
             CHN.postMessage({ event: RMP_GALLERY_CHANNEL_EVENT, data: city });
             rmgRuntime.sendNotification({
                 title: t('Success'),
-                message: t(`Template ${city} imported in Rail Map Painter.`),
+                message: t('details.importedRmp', { name: city }),
                 type: 'success',
                 duration: 9000,
             });
@@ -144,7 +144,7 @@ const DetailsModal = (props: {
             });
             rmgRuntime.sendNotification({
                 title: t('Success'),
-                message: t(`Template ${translateName(metadata.name)} imported in RMP Designer.`),
+                message: t('details.importedDesigner', { name: translateName(metadata.name) }),
                 type: 'success',
                 duration: 9000,
             });
@@ -169,7 +169,7 @@ const DetailsModal = (props: {
         if (rep.status !== 200) {
             rmgRuntime.sendNotification({
                 title: t('Error'),
-                message: `Failed: ${rep.status} ${rep.statusText}`,
+                message: t('details.failed', { status: rep.status, message: rep.statusText }),
                 type: 'error',
                 duration: 9000,
             });
@@ -177,7 +177,7 @@ const DetailsModal = (props: {
         }
         rmgRuntime.sendNotification({
             title: t('Success'),
-            message: `Success!`,
+            message: t('Success'),
             type: 'success',
             duration: 9000,
         });
@@ -246,7 +246,7 @@ const DetailsModal = (props: {
                                         {entry.reason}
                                     </Anchor>
                                     <Text className={classes.date}>
-                                        {new Date(entry.time).toLocaleDateString(undefined, {
+                                        {new Date(entry.time).toLocaleDateString(i18n.resolvedLanguage, {
                                             hour12: false,
                                         })}
                                     </Text>
@@ -267,9 +267,12 @@ const DetailsModal = (props: {
                             {(metadata as DesignerDetails).userName}
                         </Text>
                         <Text>
-                            {new Date((metadata as DesignerDetails).lastUpdateAt).toLocaleDateString(undefined, {
-                                hour12: false,
-                            })}
+                            {new Date((metadata as DesignerDetails).lastUpdateAt).toLocaleDateString(
+                                i18n.resolvedLanguage,
+                                {
+                                    hour12: false,
+                                }
+                            )}
                         </Text>
                     </List.Item>
                 </List>
@@ -278,26 +281,26 @@ const DetailsModal = (props: {
             {type === 'fantasy' && (
                 <Text mt={3}>
                     {t('details.expireOn')}
-                    {new Date((metadata as Metadata).expireOn ?? 0).toLocaleDateString()}
+                    {new Date((metadata as Metadata).expireOn ?? 0).toLocaleDateString(i18n.resolvedLanguage)}
                 </Text>
             )}
 
             <Group gap="xs" className={classes.footer}>
                 {isMasterImport ? (
-                    <ActionIcon aria-label="Import" variant="default" onClick={handleMasterImport}>
+                    <ActionIcon aria-label={t('Import')} variant="default" onClick={handleMasterImport}>
                         <BiImport />
                     </ActionIcon>
                 ) : (
                     <>
-                        <ActionIcon aria-label="Like" variant="default" disabled>
+                        <ActionIcon aria-label={t('Like')} variant="default" disabled>
                             <IoHeartOutline />
                         </ActionIcon>
-                        <ActionIcon aria-label="Favorite" variant="default" disabled>
+                        <ActionIcon aria-label={t('Favorite')} variant="default" disabled>
                             <IoStarOutline />
                         </ActionIcon>
                         <Tooltip label={shareState === 'COMPLETE' ? t('Link copied.') : rmpShareLink}>
                             <ActionIcon
-                                aria-label="Share"
+                                aria-label={t('Share')}
                                 variant={shareState === 'COMPLETE' ? 'filled' : 'default'}
                                 disabled={type === 'admin' || type === 'designer' || type === 'user'}
                                 onClick={async () => {
@@ -330,7 +333,7 @@ const DetailsModal = (props: {
                         {userRole === 'ADMIN' && (
                             <Menu>
                                 <Menu.Target>
-                                    <ActionIcon aria-label="Change status" variant="default">
+                                    <ActionIcon aria-label={t('Change status')} variant="default">
                                         <MdOutlineVisibility />
                                     </ActionIcon>
                                 </Menu.Target>
@@ -386,13 +389,13 @@ const DetailsModal = (props: {
                         </Tooltip>
                         {rmgRuntime.isStandaloneWindow() ? (
                             <Tooltip label={t('details.import')}>
-                                <ActionIcon aria-label="Import" variant="ghost" disabled>
+                                <ActionIcon aria-label={t('Import')} variant="ghost" disabled>
                                     <BiImport />
                                 </ActionIcon>
                             </Tooltip>
                         ) : (
-                            <Tooltip label="Import">
-                                <ActionIcon aria-label="Import" variant="default" onClick={handleOpenTemplate}>
+                            <Tooltip label={t('Import')}>
+                                <ActionIcon aria-label={t('Import')} variant="default" onClick={handleOpenTemplate}>
                                     <BiImport />
                                 </ActionIcon>
                             </Tooltip>

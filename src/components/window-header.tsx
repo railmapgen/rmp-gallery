@@ -24,8 +24,8 @@ export default function WindowHeader() {
                 size="sm"
                 variant="subtle"
                 color="gray"
-                aria-label="Help"
-                title="help"
+                aria-label={t('Help')}
+                title={t('Help')}
                 onClick={() => setIsAboutModalOpen(true)}
                 ml="auto"
             >

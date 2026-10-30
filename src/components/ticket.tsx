@@ -57,7 +57,7 @@ export default function Ticket() {
         }
 
         if (file.type !== 'application/json') {
-            alert('Invalid file type!');
+            alert(t('Invalid file type!'));
             event.target.value = '';
             return;
         }
@@ -66,7 +66,7 @@ export default function Ticket() {
             const paramStr = await readFileAsText(file);
             setParam(paramStr);
         } catch (err) {
-            alert('Invalid file!');
+            alert(t('Invalid file!'));
             event.target.value = '';
         }
     };
@@ -287,7 +287,7 @@ export default function Ticket() {
                         <Text>{t('ticket.instructionFile')}</Text>
                         <Text mt="xs">
                             {t('ticket.instructionFileHint1')}
-                            <Code>{t('Uploading your files... (1/1)')}</Code>
+                            <Code>Uploading your files... (1/1)</Code>
                             {t('ticket.instructionFileHint2')}
                         </Text>
                     </>

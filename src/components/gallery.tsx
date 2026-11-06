@@ -229,14 +229,6 @@ export default function GalleryView() {
 
     return (
         <RMPage>
-            <div className={classes['global-alert']} role="status">
-                <MdOutlineAutoAwesome className={classes['global-alert-icon']} />
-                <strong className={classes['global-alert-title']}>{t('gallery.aiReview.title')}</strong>
-                <span>{t('gallery.aiReview.content')}</span>
-                <Anchor href={t('gallery.aiReview.linkHref')} target="_blank" rel="noreferrer">
-                    {t('gallery.aiReview.linkText')}
-                </Anchor>
-            </div>
             <Tabs
                 value={type}
                 onChange={tab => {
@@ -258,6 +250,21 @@ export default function GalleryView() {
                     <Tabs.Panel key={value} value={value}>
                         {value === 'real_world' && (
                             <>
+                                <div className={classes['global-alert']} role="status">
+                                    <MdOutlineAutoAwesome className={classes['global-alert-icon']} />
+                                    <strong className={classes['global-alert-title']}>
+                                        {t('gallery.aiReview.title')}
+                                    </strong>
+                                    <span>{t('gallery.aiReview.content')}</span>
+                                    <Anchor
+                                        c="inherit"
+                                        href={t('gallery.aiReview.linkHref')}
+                                        target="_blank"
+                                        rel="noreferrer"
+                                    >
+                                        {t('gallery.aiReview.linkText')}
+                                    </Anchor>
+                                </div>
                                 <Notification
                                     icon={<MdOutlineWarning />}
                                     color="yellow"

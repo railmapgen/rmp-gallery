@@ -1,8 +1,181 @@
 {
-    "svgViewBoxZoom": 200,
-    "svgViewBoxMin": {
-        "x": -1006.8200012207012,
-        "y": -289.3396916198724
+    "mapEnabled": false,
+    "mapStyle": {
+        "roads": {
+            "path": {
+                "enabled": true,
+                "casingColor": "#dedbd4",
+                "color": "#dedbd4",
+                "widthScale": 1
+            },
+            "local": {
+                "enabled": true,
+                "casingColor": "#cfd39c",
+                "color": "#fbf8d0",
+                "widthScale": 1
+            },
+            "collector": {
+                "enabled": true,
+                "casingColor": "#c8cf86",
+                "color": "#f7fabf",
+                "widthScale": 1
+            },
+            "arterial": {
+                "enabled": true,
+                "casingColor": "#d8ab62",
+                "color": "#f6d19b",
+                "widthScale": 1
+            }
+        },
+        "rails": {
+            "metro": {
+                "enabled": true,
+                "color": "#4d8fd1",
+                "widthScale": 1
+            },
+            "national": {
+                "enabled": true,
+                "color": "#8f8a83",
+                "widthScale": 1
+            }
+        },
+        "labels": {
+            "enabled": true,
+            "categories": {
+                "place-major": {
+                    "enabled": true,
+                    "color": "#3a342d",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "place-medium": {
+                    "enabled": true,
+                    "color": "#4a443d",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "place-minor": {
+                    "enabled": true,
+                    "color": "#625c54",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "road-arterial": {
+                    "enabled": true,
+                    "color": "#554f48",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "road-collector": {
+                    "enabled": true,
+                    "color": "#68625a",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "building": {
+                    "enabled": true,
+                    "color": "#726c64",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-water": {
+                    "enabled": true,
+                    "color": "#477285",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-park": {
+                    "enabled": true,
+                    "color": "#4f6f45",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-grass": {
+                    "enabled": true,
+                    "color": "#5f744e",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-forest": {
+                    "enabled": true,
+                    "color": "#4f6a43",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-farmland": {
+                    "enabled": true,
+                    "color": "#746d45",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-cemetery": {
+                    "enabled": true,
+                    "color": "#5e6f58",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-residential": {
+                    "enabled": true,
+                    "color": "#625c54",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-commercial": {
+                    "enabled": true,
+                    "color": "#795a5a",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-industrial": {
+                    "enabled": true,
+                    "color": "#675d75",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-education": {
+                    "enabled": true,
+                    "color": "#715f3b",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-healthcare": {
+                    "enabled": true,
+                    "color": "#7a5661",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-airport": {
+                    "enabled": true,
+                    "color": "#3d6482",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-rail": {
+                    "enabled": true,
+                    "color": "#3f3a34",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-metro": {
+                    "enabled": true,
+                    "color": "#4d6c88",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-platform": {
+                    "enabled": true,
+                    "color": "#655f58",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-entrance": {
+                    "enabled": true,
+                    "color": "#6f8496",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                }
+            }
+        }
     },
     "graph": {
         "options": {
@@ -10,15 +183,45 @@
             "multi": true,
             "allowSelfLoops": true
         },
-        "attributes": {},
+        "attributes": {
+            "lineDefinitions": [
+                {
+                    "id": "Tn29wt9xee",
+                    "edgeIds": [
+                        "line_-cnhxvVvT8",
+                        "line_236hQ-cd7l",
+                        "line_DABUFXZT6O",
+                        "line_FEmBmxUn23",
+                        "line_L1u_KqnGvG",
+                        "line_QdAMsCCB33",
+                        "line_U_QCuXUqDi",
+                        "line_Xu7nocfeVd",
+                        "line_YEWe1WW76M",
+                        "line_cx7eSwcaQT",
+                        "line_o8ofT3akmB",
+                        "line_qQ8-CaDLbf"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_RkVgvN-39B"
+                }
+            ]
+        },
         "nodes": [
             {
                 "key": "stn_xsI4TweYSO",
                 "attributes": {
                     "type": "shmetro-int",
                     "visible": true,
-                    "x": 315,
-                    "y": -10,
+                    "x": -280,
+                    "y": -630,
                     "zIndex": 5,
                     "shmetro-int": {
                         "names": [
@@ -46,8 +249,8 @@
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 405,
-                    "y": -10,
+                    "x": -210,
+                    "y": -630,
                     "zIndex": 5
                 }
             },
@@ -64,8 +267,8 @@
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 495,
-                    "y": -10,
+                    "x": -140,
+                    "y": -630,
                     "zIndex": 5
                 }
             },
@@ -76,14 +279,14 @@
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "names": [
-                            "سەنگۇڭ\n三工",
+                            "سەنگوڭ\n三工",
                             "Sangong\n"
                         ]
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 605,
-                    "y": 40,
+                    "x": -70,
+                    "y": -560,
                     "zIndex": 5
                 }
             },
@@ -94,14 +297,14 @@
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "names": [
-                            "يىنبىن يولى ئېغىز ى\n迎宾路口",
+                            "يىنبىن يولى ئېغىزى\n迎宾路口",
                             "Yingbin Road Crossing\n"
                         ]
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 605,
-                    "y": 100,
+                    "x": -70,
+                    "y": -490,
                     "zIndex": 5
                 }
             },
@@ -118,8 +321,8 @@
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 605,
-                    "y": 160,
+                    "x": -70,
+                    "y": -420,
                     "zIndex": 5
                 }
             },
@@ -136,8 +339,8 @@
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 605,
-                    "y": 220,
+                    "x": -70,
+                    "y": -350,
                     "zIndex": 5
                 }
             },
@@ -148,14 +351,14 @@
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "names": [
-                            "تۆمۈر يول ئىدارىسى\n铁路局",
+                            "تۆمۈريول ئىدارىسى\n铁路局",
                             "Tieluju\n"
                         ]
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 605,
-                    "y": 280,
+                    "x": -70,
+                    "y": -280,
                     "zIndex": 5
                 }
             },
@@ -172,8 +375,8 @@
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 605,
-                    "y": 340,
+                    "x": -70,
+                    "y": -210,
                     "zIndex": 5
                 }
             },
@@ -184,14 +387,14 @@
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "names": [
-                            "جۇڭيىڭگۇڭ\n中营工",
+                            "جوڭيىڭگوڭ\n中营工",
                             "Zhongyinggong\n"
                         ]
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 605,
-                    "y": 400,
+                    "x": -70,
+                    "y": -140,
                     "zIndex": 5
                 }
             },
@@ -208,8 +411,8 @@
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 605,
-                    "y": 460,
+                    "x": -70,
+                    "y": -70,
                     "zIndex": 5
                 }
             },
@@ -220,14 +423,14 @@
                         "nameOffsetX": "middle",
                         "nameOffsetY": "bottom",
                         "names": [
-                            "بالۈ\n八楼",
+                            "بالۇ\n八楼",
                             "Balou\n"
                         ]
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 655,
-                    "y": 500,
+                    "x": 0,
+                    "y": 0,
                     "zIndex": 5
                 }
             },
@@ -238,14 +441,14 @@
                         "nameOffsetX": "middle",
                         "nameOffsetY": "top",
                         "names": [
-                            "ۋاڭجيالياڭ\n王家梁",
+                            "ۋاڭجىيالىياڭ\n王家梁",
                             "Wangjialiang\n"
                         ]
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 720,
-                    "y": 500,
+                    "x": 70,
+                    "y": 0,
                     "zIndex": 5
                 }
             },
@@ -262,8 +465,8 @@
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 770,
-                    "y": 540,
+                    "x": 140,
+                    "y": 70,
                     "zIndex": 5
                 }
             },
@@ -280,8 +483,8 @@
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 770,
-                    "y": 600,
+                    "x": 140,
+                    "y": 140,
                     "zIndex": 5
                 }
             },
@@ -298,8 +501,8 @@
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 770,
-                    "y": 660,
+                    "x": 140,
+                    "y": 210,
                     "zIndex": 5
                 }
             },
@@ -310,33 +513,36 @@
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "names": [
-                            "بېيمېن\n北门",
+                            "بېيمىن\n北门",
                             "Beimen\n"
                         ]
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 770,
-                    "y": 720,
+                    "x": 140,
+                    "y": 280,
                     "zIndex": 5
                 }
             },
             {
                 "key": "stn_eLIKGjEZl4",
                 "attributes": {
-                    "shmetro-basic": {
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
+                    "type": "shmetro-int",
+                    "visible": true,
+                    "x": 140,
+                    "y": 350,
+                    "zIndex": 5,
+                    "shmetro-int": {
                         "names": [
                             "نەنمېن\n南门",
                             "Nanmen\n"
-                        ]
-                    },
-                    "type": "shmetro-basic",
-                    "visible": true,
-                    "x": 770,
-                    "y": 780,
-                    "zIndex": 5
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
+                    }
                 }
             },
             {
@@ -352,8 +558,8 @@
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 770,
-                    "y": 840,
+                    "x": 100,
+                    "y": 450,
                     "zIndex": 5
                 }
             },
@@ -370,8 +576,8 @@
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 770,
-                    "y": 900,
+                    "x": 50,
+                    "y": 500,
                     "zIndex": 5
                 }
             },
@@ -382,14 +588,14 @@
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "names": [
-                            "ىىىەندۈڭبېي\n三屯碑",
+                            "سەندۇڭبىي\n三屯碑",
                             "Santunbei\n"
                         ]
                     },
                     "type": "shmetro-basic",
                     "visible": true,
-                    "x": 770,
-                    "y": 960,
+                    "x": 0,
+                    "y": 550,
                     "zIndex": 5
                 }
             },
@@ -398,8 +604,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 720,
-                    "y": 950,
+                    "x": -0.66,
+                    "y": 577.67,
                     "type": "gzmtr-line-badge",
                     "gzmtr-line-badge": {
                         "names": [
@@ -422,8 +628,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 312.8,
-                    "y": 36.96,
+                    "x": -330,
+                    "y": -640,
                     "type": "gzmtr-line-badge",
                     "gzmtr-line-badge": {
                         "names": [
@@ -446,12 +652,12 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 405,
-                    "y": -100.4,
+                    "x": -210,
+                    "y": -700,
                     "type": "shmetro-basic",
                     "shmetro-basic": {
                         "names": [
-                            "خەلقئارا ئايروپورت شىمالى\n国际机场北",
+                            "خەلقئارا ئايروپورت شىمالىي\n国际机场北",
                             "North International Airport"
                         ],
                         "nameOffsetX": "middle",
@@ -464,8 +670,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 495,
-                    "y": -100,
+                    "x": -140,
+                    "y": -700,
                     "type": "shmetro-basic",
                     "shmetro-basic": {
                         "names": [
@@ -482,8 +688,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 273.2,
-                    "y": -66.32,
+                    "x": -330,
+                    "y": -670,
                     "type": "gzmtr-line-badge",
                     "gzmtr-line-badge": {
                         "names": [
@@ -506,11 +712,290 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 405,
-                    "y": -80,
+                    "x": -260.21,
+                    "y": -650.39,
                     "type": "facilities",
                     "facilities": {
                         "type": "airport"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_j7L3BNmcUz",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -91.55,
+                    "y": -683.5,
+                    "type": "text",
+                    "text": {
+                        "content": "ۋاقتىنچە ئېچىلمىدى\n暂未开通\nNot in Service",
+                        "fontSize": 10,
+                        "lineHeight": 10,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "en",
+                        "color": [
+                            "other",
+                            "other",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
+                    }
+                }
+            },
+            {
+                "key": "stn_7xIpC2h4jo",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 70,
+                    "y": 350,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "ئوتتۇرا كۆۋرۈك\n中桥",
+                            "Zhongqiao"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom"
+                    }
+                }
+            },
+            {
+                "key": "stn_D5DoUJ3a-b",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -50,
+                    "y": 280,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "نيەنزىگوۋ\n碾子沟",
+                            "Nianzigou"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_mkgt3cWEsd",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -120,
+                    "y": 210,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "نەنلياڭپو\n南梁坡",
+                            "Nanliangpo"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_AnpKsHpl10",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -400,
+                    "y": -70,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "جيۇجياۋەن\n九家湾",
+                            "Jiujiawan"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_iEvoYk8dVm",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -330,
+                    "y": 0,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "پىڭچۈەن يولى\n平川路",
+                            "Pingchuan Road"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_8cLJAK1kBh",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -260,
+                    "y": 70,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "مالياۋدى\n马料地",
+                            "Maliaodi"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_TtZ2puv4yN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -190,
+                    "y": 140,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "يېزا ئىگىلىك داشۆسى\n农业大学",
+                            "Agricultural University"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "stn_teqVpMaN0j",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -450,
+                    "y": -210,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "ئۈرۈمچى بېكىتى\n乌鲁木齐站",
+                            "Urumqi Railway Station"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_gmO7Yp44MD",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -428,
+                    "y": -210,
+                    "type": "facilities",
+                    "facilities": {
+                        "type": "railway"
+                    }
+                }
+            },
+            {
+                "key": "stn_dH9VjL3uNc",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -450,
+                    "y": -280,
+                    "type": "shmetro-basic",
+                    "shmetro-basic": {
+                        "names": [
+                            "خۇاشەن كوچىسى\n华山街",
+                            "Huashan Street"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle"
+                    }
+                }
+            },
+            {
+                "key": "misc_node_owFB6x_PNX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 104.39,
+                    "y": 325.12,
+                    "type": "gzmtr-line-badge",
+                    "gzmtr-line-badge": {
+                        "names": [
+                            "2号线",
+                            "Line 2"
+                        ],
+                        "color": [
+                            "other",
+                            "other",
+                            "#ffcc00",
+                            "#000"
+                        ],
+                        "tram": false,
+                        "span": false
+                    }
+                }
+            },
+            {
+                "key": "misc_node_Q5TfmJVOf1",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": -415.39,
+                    "y": -282.44,
+                    "type": "gzmtr-line-badge",
+                    "gzmtr-line-badge": {
+                        "names": [
+                            "2号线",
+                            "Line 2"
+                        ],
+                        "color": [
+                            "other",
+                            "other",
+                            "#ffcc00",
+                            "#000"
+                        ],
+                        "tram": false,
+                        "span": false
+                    }
+                }
+            },
+            {
+                "key": "misc_node_OHfl0NEzpQ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -155,
+                    "y": -850,
+                    "type": "text",
+                    "text": {
+                        "content": "ئۈرۈمچى شەھىرى رېلىسلىق قاتناش لىنىيە تورى كۆرسەتمە خەرىتىسى\n乌鲁木齐市轨道交通线网示意图\nUrumqi Rail Transit Network Map",
+                        "fontSize": 30,
+                        "lineHeight": 40,
+                        "textAnchor": "middle",
+                        "dominantBaseline": "middle",
+                        "language": "en",
+                        "color": [
+                            "other",
+                            "other",
+                            "#000000",
+                            "#fff"
+                        ],
+                        "rotate": 0,
+                        "italic": "normal",
+                        "bold": "normal",
+                        "outline": 0
                     }
                 }
             }
@@ -571,6 +1056,33 @@
                 }
             },
             {
+                "key": "line_qQ8-CaDLbf",
+                "source": "stn_XF8sFeY8EN",
+                "target": "stn_LGJdxWisWc",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -5,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "urumqi",
+                            "urumqi1",
+                            "#10069f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
                 "key": "line_DABUFXZT6O",
                 "source": "stn_LGJdxWisWc",
                 "target": "stn_obzGDUE2m5",
@@ -625,72 +1137,18 @@
                 }
             },
             {
-                "key": "line_cx7eSwcaQT",
+                "key": "line_FEmBmxUn23",
                 "source": "stn_0Weoask3D4",
-                "target": "stn_RqmLjjCVSp",
+                "target": "stn_s2YRYdNNFP",
                 "attributes": {
                     "visible": true,
-                    "zIndex": -5,
-                    "type": "perpendicular",
-                    "perpendicular": {
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "urumqi",
-                            "urumqi1",
-                            "#10069f",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_QdAMsCCB33",
-                "source": "stn_s2YRYdNNFP",
-                "target": "stn_OgIYjjsyEp",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -5,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "urumqi",
-                            "urumqi1",
-                            "#10069f",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_qQ8-CaDLbf",
-                "source": "stn_XF8sFeY8EN",
-                "target": "stn_LGJdxWisWc",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -5,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
+                        "roundCornerFactor": 10
                     },
                     "style": "single-color",
                     "single-color": {
@@ -749,6 +1207,33 @@
                     "style": "single-color",
                     "single-color": {
                         "color": [
+                            "suzhou",
+                            "wkt",
+                            "#dddddd",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_jmkg90TXmg",
+                "source": "stn_s2YRYdNNFP",
+                "target": "stn_OgIYjjsyEp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
                             "urumqi",
                             "urumqi1",
                             "#10069f",
@@ -760,7 +1245,34 @@
                 }
             },
             {
-                "key": "line_U_QCuXUqDi",
+                "key": "line_gULTtrpWbM",
+                "source": "stn_0Weoask3D4",
+                "target": "stn_RqmLjjCVSp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "urumqi",
+                            "urumqi1",
+                            "#10069f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_JSjqxbqGtO",
                 "source": "stn_z9obM7DYH7",
                 "target": "stn_RqmLjjCVSp",
                 "attributes": {
@@ -787,9 +1299,9 @@
                 }
             },
             {
-                "key": "line_FEmBmxUn23",
-                "source": "stn_0Weoask3D4",
-                "target": "stn_s2YRYdNNFP",
+                "key": "line_J8wlx3eh-h",
+                "source": "stn_eLIKGjEZl4",
+                "target": "stn_g9v7nL0Ubo",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -814,9 +1326,9 @@
                 }
             },
             {
-                "key": "line_Xu7nocfeVd",
-                "source": "stn_1Thtn9Hk10",
-                "target": "stn_OgIYjjsyEp",
+                "key": "line_b6wPCdLxxM",
+                "source": "stn_OgIYjjsyEp",
+                "target": "stn_eLIKGjEZl4",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -839,8 +1351,176 @@
                     "reconcileId": "",
                     "parallelIndex": -1
                 }
+            },
+            {
+                "key": "line_0RE8jEfGc4",
+                "source": "stn_1Thtn9Hk10",
+                "target": "stn_g9v7nL0Ubo",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "urumqi",
+                            "urumqi1",
+                            "#10069f",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_wxbcgj18el",
+                "source": "stn_7xIpC2h4jo",
+                "target": "stn_eLIKGjEZl4",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ffcc00",
+                            "#000"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_81hPG_EOvJ",
+                "source": "stn_7xIpC2h4jo",
+                "target": "stn_D5DoUJ3a-b",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ffcc00",
+                            "#000"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_AJch5V0ly3",
+                "source": "stn_AnpKsHpl10",
+                "target": "stn_D5DoUJ3a-b",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ffcc00",
+                            "#000"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_7APZjpqsFs",
+                "source": "stn_teqVpMaN0j",
+                "target": "stn_AnpKsHpl10",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ffcc00",
+                            "#000"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_P-V_DGeXL6",
+                "source": "stn_dH9VjL3uNc",
+                "target": "stn_teqVpMaN0j",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ffcc00",
+                            "#000"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
             }
         ]
     },
-    "version": 51
+    "svgViewBoxZoom": 255.05126064870873,
+    "svgViewBoxMin": {
+        "x": -2063.573508877031,
+        "y": -990.7554990264177
+    },
+    "version": 81,
+    "images": []
 }

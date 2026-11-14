@@ -1,17 +1,790 @@
 {
-    "svgViewBoxZoom": 31.32274772584978,
-    "svgViewBoxMin": {
-        "x": 253.62747317131686,
-        "y": 1057.116855082831
+    "mapEnabled": false,
+    "mapStyle": {
+        "roads": {
+            "path": {
+                "enabled": true,
+                "casingColor": "#dedbd4",
+                "color": "#dedbd4",
+                "widthScale": 1
+            },
+            "local": {
+                "enabled": true,
+                "casingColor": "#cfd39c",
+                "color": "#fbf8d0",
+                "widthScale": 1
+            },
+            "collector": {
+                "enabled": true,
+                "casingColor": "#c8cf86",
+                "color": "#f7fabf",
+                "widthScale": 1
+            },
+            "arterial": {
+                "enabled": true,
+                "casingColor": "#d8ab62",
+                "color": "#f6d19b",
+                "widthScale": 1
+            }
+        },
+        "rails": {
+            "metro": {
+                "enabled": true,
+                "color": "#4d8fd1",
+                "widthScale": 1
+            },
+            "national": {
+                "enabled": true,
+                "color": "#8f8a83",
+                "widthScale": 1
+            }
+        },
+        "labels": {
+            "enabled": true,
+            "categories": {
+                "place-major": {
+                    "enabled": true,
+                    "color": "#3a342d",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "place-medium": {
+                    "enabled": true,
+                    "color": "#4a443d",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "place-minor": {
+                    "enabled": true,
+                    "color": "#625c54",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "road-arterial": {
+                    "enabled": true,
+                    "color": "#554f48",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "road-collector": {
+                    "enabled": true,
+                    "color": "#68625a",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "building": {
+                    "enabled": true,
+                    "color": "#726c64",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-water": {
+                    "enabled": true,
+                    "color": "#477285",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-park": {
+                    "enabled": true,
+                    "color": "#4f6f45",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-grass": {
+                    "enabled": true,
+                    "color": "#5f744e",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-forest": {
+                    "enabled": true,
+                    "color": "#4f6a43",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-farmland": {
+                    "enabled": true,
+                    "color": "#746d45",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-cemetery": {
+                    "enabled": true,
+                    "color": "#5e6f58",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-residential": {
+                    "enabled": true,
+                    "color": "#625c54",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-commercial": {
+                    "enabled": true,
+                    "color": "#795a5a",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-industrial": {
+                    "enabled": true,
+                    "color": "#675d75",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-education": {
+                    "enabled": true,
+                    "color": "#715f3b",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-healthcare": {
+                    "enabled": true,
+                    "color": "#7a5661",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-airport": {
+                    "enabled": true,
+                    "color": "#3d6482",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-rail": {
+                    "enabled": true,
+                    "color": "#3f3a34",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-metro": {
+                    "enabled": true,
+                    "color": "#4d6c88",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-platform": {
+                    "enabled": true,
+                    "color": "#655f58",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-entrance": {
+                    "enabled": true,
+                    "color": "#6f8496",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                }
+            }
+        }
     },
-    "images": [],
     "graph": {
         "options": {
             "type": "directed",
             "multi": true,
             "allowSelfLoops": true
         },
-        "attributes": {},
+        "attributes": {
+            "lineDefinitions": [
+                {
+                    "id": "wWeJWZGVse",
+                    "edgeIds": [
+                        "line_1jrUtGrh0I",
+                        "line_554v2sBuKo",
+                        "line_AZzYctz3mp",
+                        "line_Agoiaq1N0O",
+                        "line_BBZLXkvrXx",
+                        "line_Br-g1z4t_t",
+                        "line_CPfwVsrjRL",
+                        "line_CUYiJ2ya-x",
+                        "line_Df7RL6N4s5",
+                        "line_Iw0YRmIJmr",
+                        "line_RGDSV7DrSx",
+                        "line_YQWtfsqjRW",
+                        "line_ZAG7dHSh42",
+                        "line_ZvQ7scubcY",
+                        "line_gBejjZI7GR",
+                        "line_j8sq8rvtfR",
+                        "line_ka3Em0Fjq4",
+                        "line_kkbT3FwBut",
+                        "line_nCbQJpgo6O",
+                        "line_pgaPSS642M",
+                        "line_t2fDMb6iRu",
+                        "line_tLpZ6vHeJn",
+                        "line_vmNGZZbYPq",
+                        "line_ypfduHyXf8"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_e_20qcGPr9"
+                },
+                {
+                    "id": "nJ4bhIl6pZ",
+                    "edgeIds": [
+                        "line_-copl4mJ1y",
+                        "line_0PfOeDKUji",
+                        "line_1JO3237yzP",
+                        "line_2ffla33JgZ",
+                        "line_36R2TcKZcv",
+                        "line_BdXtpUPKHq",
+                        "line_BzW0qmo2ca",
+                        "line_C7N1V7guwC",
+                        "line_DbMTZ99ZyE",
+                        "line_GFXR_TEDd4",
+                        "line_GR8l7BNTI9",
+                        "line_GuCKkhDSTF",
+                        "line_RXy9WdpckL",
+                        "line_WRZDGUgcrw",
+                        "line_YNgo8xgG2c",
+                        "line__aHHJS42Ma",
+                        "line_c6e3UF6wnL",
+                        "line_fePgtlRbS8",
+                        "line_h3EuNEHRQJ",
+                        "line_lee3374bwt",
+                        "line_sffnInRfoT",
+                        "line_xBfK1y-BWk",
+                        "line_y-2PWuP9EJ",
+                        "line_zCU0rFAPTx"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_zNZ5oVYBG2"
+                },
+                {
+                    "id": "7zzLvQWIp5",
+                    "edgeIds": [
+                        "line_0ls4_S5nMQ",
+                        "line_1D6UJmnPEn",
+                        "line_1t2jTiVEnd",
+                        "line_2vD-JsEjqC",
+                        "line_5nhHVtqZUx",
+                        "line_77rLWyo8Ve",
+                        "line_7oHm8JzugS",
+                        "line_9ICRjhs4Pk",
+                        "line_A9F3FT5iYc",
+                        "line_D_BF2Nsb7p",
+                        "line_Emu-vbZXnb",
+                        "line_EwGlLQeCuF",
+                        "line_FBfzfw3SvL",
+                        "line_GO-N14D_Vc",
+                        "line_Jk7es70bOu",
+                        "line_Js86CEPac8",
+                        "line_KuT6g9P9G2",
+                        "line_P2BedL5zSl",
+                        "line_Qd1kGA22s2",
+                        "line_SSXVKlaXzs",
+                        "line_Vbq9sqMclO",
+                        "line_W6wUT2zRzn",
+                        "line_XDa6UzPtOX",
+                        "line_ZbzyWMh6fc",
+                        "line__fZ6KJC2Cc",
+                        "line_b7TixZ0jpD",
+                        "line_bMHUjxWVYf",
+                        "line_ejfx9RpFjf",
+                        "line_ibFcDmxoDo",
+                        "line_jX7TGiypap",
+                        "line_ju1xA2A8Ve",
+                        "line_kqRF1IA3-N",
+                        "line_m7uSx_vKJZ",
+                        "line_mqCY013OuF",
+                        "line_ntrMmzF_QO",
+                        "line_oE_m7UQaO3",
+                        "line_phhwtm1qGd",
+                        "line_q1KXYOSZOw",
+                        "line_rgMp6rT40m",
+                        "line_tMiCPPeBuW",
+                        "line_tv2wydfxkV",
+                        "line_vYhXtZG0AK",
+                        "line_yRoDKI-P8g",
+                        "line_z_jXF0whov"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_e_20qcGPr9"
+                },
+                {
+                    "id": "Ahe8_sPatD",
+                    "edgeIds": [
+                        "line_1Qmple3sru",
+                        "line_1f44GX3jCN",
+                        "line_3BjSC70hWX",
+                        "line_5s5ucXbF0m",
+                        "line_6qRUPOfi3R",
+                        "line_BwIuOxEe-d",
+                        "line_CdqJNH_2_a",
+                        "line_CuIAHybJ9q",
+                        "line_I7Uh4gYJzK",
+                        "line_J0--xS0ZES",
+                        "line_NmDXl8LwzU",
+                        "line_SUUNCS2Jp3",
+                        "line_XsMkuvy1xz",
+                        "line__V3j9l2RvG",
+                        "line_ahb8-aZppr",
+                        "line_auBdn-p0yl",
+                        "line_bFR_1pHWE4",
+                        "line_bv1uyxA6K5",
+                        "line_g9pVK5JnDJ",
+                        "line_iy-OoCgMuH",
+                        "line_s1J7KRUDL5",
+                        "line_tZWNsOGArO",
+                        "line_uzORKtcHTN",
+                        "line_wTGKZ6GkJa",
+                        "line_xk7OuI_RF5",
+                        "line_znoxgnFfee"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_p4UaxqwlaK"
+                },
+                {
+                    "id": "ENGRrLETQG",
+                    "edgeIds": [
+                        "line_09SBl3bseZ",
+                        "line_7g1oORoTUf",
+                        "line_FLCglcetgQ",
+                        "line_IrOnJMM4p0",
+                        "line_Kg6WdYIQwI",
+                        "line_LOGpLtlkN4",
+                        "line_ME1KBa4QTG",
+                        "line_QAjxU0V5fq",
+                        "line_Sy8JhuzT6u",
+                        "line_UovABs6sNx",
+                        "line_X_nhLFLr-0",
+                        "line_YGZhFtq6IC",
+                        "line_YtePso8mds",
+                        "line_alQjPjSEeI",
+                        "line_bJRbX-SjMu",
+                        "line_bzuWMLr-nV",
+                        "line_cJaO46tNZV",
+                        "line_droofARCcb",
+                        "line_g01K02Xf8_",
+                        "line_g6Y3yZrUlL",
+                        "line_hhqMrLizmq",
+                        "line_iF5bu3-zZ7",
+                        "line_iTlEt0kGI9",
+                        "line_nBrGbtZ5sM",
+                        "line_qD9YNwSxTc",
+                        "line_qepbqx2ZA2",
+                        "line_rPjR4xbh5_",
+                        "line_uHCvM9OhEq",
+                        "line_ul-6v3XtsR",
+                        "line_vIc1ATe5Xy",
+                        "line_vuBUAgieRs",
+                        "line_vvL8S-IE6c",
+                        "line_ynZQn9ix4v"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_PLSDDGwGMT"
+                },
+                {
+                    "id": "Ubsthd8ykB",
+                    "edgeIds": [
+                        "line_-AFuropK8M",
+                        "line_-Pfir0zJCC",
+                        "line_25lBQ5JYkP",
+                        "line_4Bx2lY5xq4",
+                        "line_7CayvADQkW",
+                        "line_7HExe9WfnD",
+                        "line_8hfg1pLmlj",
+                        "line_97I5EX7Byw",
+                        "line_A-Zem30fIU",
+                        "line_CkNaPOZvEQ",
+                        "line_FpT_AMRzPM",
+                        "line_Ge4LA3wwqi",
+                        "line_IGfmqwaoGF",
+                        "line_J3gP8nbTte",
+                        "line_K8V5Uit5ue",
+                        "line_OVPWbNdhqv",
+                        "line_QAEVYH-9if",
+                        "line_RWqDQBakKg",
+                        "line_SIGaBwPqhR",
+                        "line_UmV4d4QM8a",
+                        "line_Vg0m34fhgG",
+                        "line_XSsdAvSBme",
+                        "line_XqSU_GKWyY",
+                        "line_YwNnCWOcUl",
+                        "line_aSJiUsEms6",
+                        "line_abxmJBCY35",
+                        "line_b-o4U_yjR7",
+                        "line_i9_jy6a2cy",
+                        "line_ijsi7hPNU5",
+                        "line_k3o7UwopuX",
+                        "line_kZcZwkEVKm",
+                        "line_ka_U19biIl",
+                        "line_khIe5S7YLM",
+                        "line_mJEWtFxSor",
+                        "line_mh4FdiMPss",
+                        "line_n_4HSSX4P7",
+                        "line_qsZlv7EbKE",
+                        "line_roObsCBpHZ",
+                        "line_u4PeY7X1mj",
+                        "line_wWrY__63ul",
+                        "line_xOk8714QJa",
+                        "line_zb0yilfxQ0"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_PNShZVOBoq"
+                },
+                {
+                    "id": "GxvjJ0dAg-",
+                    "edgeIds": [
+                        "line_0lIy96vnNt",
+                        "line_42GDpAhiWt",
+                        "line_7nOe4F9xHC",
+                        "line_7sd2BJpuEK",
+                        "line_DkmYD3BM71",
+                        "line_Hq10gSJGBm",
+                        "line_J0nD4aBG-T",
+                        "line_Jo5Mo8csN6",
+                        "line_LM0hNfZi9s",
+                        "line_MwzEElkJr5",
+                        "line_Q8rfbolra6",
+                        "line_Sc3b99x7ci",
+                        "line_UyVob4SQEK",
+                        "line_WCT0Vt1c_Q",
+                        "line_Xc1tPMshR4",
+                        "line_Z2xaRl7g-s",
+                        "line_ZBinZma_M7",
+                        "line_bRWn9H8GSU",
+                        "line_cjOSzAIE5X",
+                        "line_dRy1lB-oOo",
+                        "line_dU1iDyQEky",
+                        "line_kb1JoMRadP",
+                        "line_mR3XOQbra4",
+                        "line_nQ2boXwA1F",
+                        "line_qB0KfqdEkS",
+                        "line_qkOueev93S",
+                        "line_sz5pUHPklq",
+                        "line_t7sX4sei2b",
+                        "line_uGMCvozhhy",
+                        "line_wXiD7bDz0C"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_seeXxbZUSu"
+                },
+                {
+                    "id": "AzupqhuUud",
+                    "edgeIds": [
+                        "line_-N7NbVImsM",
+                        "line_2FVrF6_56Y",
+                        "line_61YgScv4hJ",
+                        "line_6JozYAjP0k",
+                        "line_7Cbx-iigLM",
+                        "line_A4f_P5aVtt",
+                        "line_BZ95KtTZ7E",
+                        "line_BsQ4bNVeqG",
+                        "line_EbtN_qdSo0",
+                        "line_FmMxcXcq3j",
+                        "line_HGyfwVaew6",
+                        "line_IKCKFrYh0j",
+                        "line_OIqSgKre0n",
+                        "line_T34u42bYiN",
+                        "line_TvEvk9DMtz",
+                        "line_Ucy_TC3Nlk",
+                        "line_a0xcWwY-VQ",
+                        "line_a5WDAqx51_",
+                        "line_g66hIEDsDQ",
+                        "line_h3MPBbTE_X",
+                        "line_mHxcLFDIOO",
+                        "line_n0Ors9VvSW",
+                        "line_nOLbH1FGOI",
+                        "line_nqJ6iqQYIo",
+                        "line_ouyL8VHGMe",
+                        "line_p_Ld3mxBX7",
+                        "line_qTj6mUQlmy",
+                        "line_qc5hyowd2_",
+                        "line_r36g7dzadP",
+                        "line_rItuLQB_jG",
+                        "line_wR4UO-L4Bf",
+                        "line_wpTMtEUM0A"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_L6_JaOSIEg"
+                },
+                {
+                    "id": "t3EYGqWaYk",
+                    "edgeIds": [
+                        "line_1fU2EqHNnL",
+                        "line_58zyn6CW6J",
+                        "line_7fAy_K_zWb",
+                        "line_8SPkGuFFSZ",
+                        "line_A-FGQt4Atw",
+                        "line_BoWc_5b0vR",
+                        "line_FXRH5NzX9m",
+                        "line_Faip-pgNmZ",
+                        "line_J-jXzuDeie",
+                        "line_LapFjthBwX",
+                        "line_M7rItXwbrf",
+                        "line_NEMzVx3ez-",
+                        "line_O01OMkqR8k",
+                        "line_OsyPBiR1Cw",
+                        "line_V0UEQdQza1",
+                        "line_W6qZ5n9M_q",
+                        "line_XYUQUmIi5T",
+                        "line_aBzHMx7Y0V",
+                        "line_al5qpQD0ne",
+                        "line_bB0S6duop2",
+                        "line_c5AJoph58K",
+                        "line_dWiE2Ye3T4",
+                        "line_hzoOYfqCWF",
+                        "line_kkZOsqwad-",
+                        "line_mcRyEv429p",
+                        "line_o-3YWk7WQJ",
+                        "line_tVNU_E2Nxp",
+                        "line_tgKfjq3sov",
+                        "line_x9fPVz2zDB",
+                        "line_xLQ2dC6I36",
+                        "line_zC4iASO1zw"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_VrSPxiuqDO"
+                },
+                {
+                    "id": "WTdhGHXWDU",
+                    "edgeIds": [
+                        "line_0jpUB_Dshd",
+                        "line_9PQHHrkxPR",
+                        "line_CJUIUoIfQV",
+                        "line_GJh5rr3Ajn",
+                        "line_IrqMSL3ZOW",
+                        "line_JVbpUeH71I",
+                        "line_MtkGFVbabX",
+                        "line_NVapKsRsjV",
+                        "line_NpCzTLVry1",
+                        "line_Q8V61_N2op",
+                        "line_YRylo3ZJxh",
+                        "line_bNpESFlLQ4",
+                        "line_bXHmVLz-SW",
+                        "line_p2IJMks17L",
+                        "line_qo-9HUeIVM",
+                        "line_r7blK_6l8j",
+                        "line_u2pdPqQtUx",
+                        "line_xttZtH_4YD"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_9xNBYrh55v"
+                },
+                {
+                    "id": "BR5H0blS10",
+                    "edgeIds": [
+                        "line_9d8u4Gbel0",
+                        "line_NaiHR0nT_w",
+                        "line_S_CkNz4eim",
+                        "line_T3TSlNIcLF",
+                        "line_bW0VQC8XM_",
+                        "line_pBl411vTSe",
+                        "line_w04OmZYR6b",
+                        "line_yyUN5a0tJn"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_d96ydlPcqZ"
+                },
+                {
+                    "id": "EnyGsYGSjt",
+                    "edgeIds": [
+                        "line_0Lqo3Wssl-",
+                        "line_5-8p0_nbW8",
+                        "line_9DBO-V8aiU",
+                        "line_CcbK_P7cJq",
+                        "line_HhOy5SzHpw",
+                        "line_OI11TGBkkB",
+                        "line_PVbJZv7S1n",
+                        "line_QFCWluGxB4",
+                        "line_VD03deCuti",
+                        "line_VfdBNa2gMN",
+                        "line_Ya1LXpz2Z9",
+                        "line_bBBLgiReI7",
+                        "line_fDypDtCRgP",
+                        "line_fkG4oXZsy2",
+                        "line_n0McIB_5o_",
+                        "line_pnEGOf-JZo",
+                        "line_rOf9ulHjK-"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_q23w8EDlv8"
+                },
+                {
+                    "id": "6c2ViXRtpO",
+                    "edgeIds": [
+                        "line_GRKjaWwTZn",
+                        "line_GkqbJVOryJ",
+                        "line_J-cL6AJfLm",
+                        "line_iMP7vB8zzj",
+                        "line_p5f48k0uTP",
+                        "line_pEhwMO5xrA",
+                        "line_uyGPrRk6Iv",
+                        "line_xDNuMmOg3X"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_AlImgxjWir"
+                },
+                {
+                    "id": "3rTfhK4prJ",
+                    "edgeIds": [
+                        "line_0P7nysSNnA",
+                        "line_2qEPqxM1Of",
+                        "line_6EyLbrfAAy",
+                        "line_8j_mcvOYUP",
+                        "line_9AzfADRgFs",
+                        "line_AQ47WA7uXR",
+                        "line_E9f6zS2SHW",
+                        "line_HiDXUiKXMT",
+                        "line_L1XggXrn3f",
+                        "line_P_wsXDd6x3",
+                        "line_PdwLEfI180",
+                        "line_Qy7TuIRmY0",
+                        "line_U25fxcXHiN",
+                        "line_jbB8W98flr",
+                        "line_lr_hgg-MFy",
+                        "line_nbsDgGzSKY",
+                        "line_oHen82BAl2",
+                        "line_oTQu3AaNXR",
+                        "line_pu556I4cdI"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                },
+                {
+                    "id": "prZ1M2xHKF",
+                    "edgeIds": [
+                        "line_K0UC0q31KA"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                },
+                {
+                    "id": "iJNM1SuuBP",
+                    "edgeIds": [
+                        "line_pcLxu0MoHt"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                }
+            ]
+        },
         "nodes": [
             {
                 "key": "stn_21jDSEx93u",
@@ -11858,34 +12631,6 @@
                 }
             },
             {
-                "key": "misc_node_gxbhcuhMSf",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": 1380,
-                    "y": 1315,
-                    "type": "text",
-                    "text": {
-                        "content": "暂未开通",
-                        "fontSize": 10,
-                        "lineHeight": 10,
-                        "textAnchor": "start",
-                        "dominantBaseline": "middle",
-                        "language": "zh",
-                        "color": [
-                            "shanghai",
-                            "jsr",
-                            "#000000",
-                            "#fff"
-                        ],
-                        "rotate": 0,
-                        "italic": "normal",
-                        "bold": "normal",
-                        "outline": 0
-                    }
-                }
-            },
-            {
                 "key": "stn_vg0AijgFTR",
                 "attributes": {
                     "visible": true,
@@ -22050,5 +22795,11 @@
             }
         ]
     },
-    "version": 77
+    "svgViewBoxZoom": 117.25424343149513,
+    "svgViewBoxMin": {
+        "x": 800.4875540632038,
+        "y": 363.1224795287551
+    },
+    "version": 81,
+    "images": []
 }

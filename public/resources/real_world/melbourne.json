@@ -1,8 +1,181 @@
 {
-    "svgViewBoxZoom": 155,
-    "svgViewBoxMin": {
-        "x": -1747.3726034545605,
-        "y": -1234.1396665954762
+    "mapEnabled": false,
+    "mapStyle": {
+        "roads": {
+            "path": {
+                "enabled": true,
+                "casingColor": "#dedbd4",
+                "color": "#dedbd4",
+                "widthScale": 1
+            },
+            "local": {
+                "enabled": true,
+                "casingColor": "#cfd39c",
+                "color": "#fbf8d0",
+                "widthScale": 1
+            },
+            "collector": {
+                "enabled": true,
+                "casingColor": "#c8cf86",
+                "color": "#f7fabf",
+                "widthScale": 1
+            },
+            "arterial": {
+                "enabled": true,
+                "casingColor": "#d8ab62",
+                "color": "#f6d19b",
+                "widthScale": 1
+            }
+        },
+        "rails": {
+            "metro": {
+                "enabled": true,
+                "color": "#4d8fd1",
+                "widthScale": 1
+            },
+            "national": {
+                "enabled": true,
+                "color": "#8f8a83",
+                "widthScale": 1
+            }
+        },
+        "labels": {
+            "enabled": true,
+            "categories": {
+                "place-major": {
+                    "enabled": true,
+                    "color": "#3a342d",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "place-medium": {
+                    "enabled": true,
+                    "color": "#4a443d",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "place-minor": {
+                    "enabled": true,
+                    "color": "#625c54",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "road-arterial": {
+                    "enabled": true,
+                    "color": "#554f48",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "road-collector": {
+                    "enabled": true,
+                    "color": "#68625a",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "building": {
+                    "enabled": true,
+                    "color": "#726c64",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-water": {
+                    "enabled": true,
+                    "color": "#477285",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-park": {
+                    "enabled": true,
+                    "color": "#4f6f45",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-grass": {
+                    "enabled": true,
+                    "color": "#5f744e",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-forest": {
+                    "enabled": true,
+                    "color": "#4f6a43",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-farmland": {
+                    "enabled": true,
+                    "color": "#746d45",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-cemetery": {
+                    "enabled": true,
+                    "color": "#5e6f58",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-residential": {
+                    "enabled": true,
+                    "color": "#625c54",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-commercial": {
+                    "enabled": true,
+                    "color": "#795a5a",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-industrial": {
+                    "enabled": true,
+                    "color": "#675d75",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-education": {
+                    "enabled": true,
+                    "color": "#715f3b",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-healthcare": {
+                    "enabled": true,
+                    "color": "#7a5661",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-airport": {
+                    "enabled": true,
+                    "color": "#3d6482",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-rail": {
+                    "enabled": true,
+                    "color": "#3f3a34",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-metro": {
+                    "enabled": true,
+                    "color": "#4d6c88",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-platform": {
+                    "enabled": true,
+                    "color": "#655f58",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-entrance": {
+                    "enabled": true,
+                    "color": "#6f8496",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                }
+            }
+        }
     },
     "graph": {
         "options": {
@@ -10,7 +183,522 @@
             "multi": true,
             "allowSelfLoops": true
         },
-        "attributes": {},
+        "attributes": {
+            "lineDefinitions": [
+                {
+                    "id": "-t6fEJERFg",
+                    "edgeIds": [
+                        "line_3vebc9TqTV",
+                        "line_6teX_dtAnD",
+                        "line_GgUPDh2Pgj",
+                        "line_JiDur8-f0c",
+                        "line_K5tWDLFgbW",
+                        "line_OKf2RAQ91Q",
+                        "line_SWP9ly0CbH",
+                        "line_YSYcBtvPAU",
+                        "line_j9wG-i2bO1",
+                        "line_nnjZh97wC0"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_LN3SsO9FRo"
+                },
+                {
+                    "id": "nfn3r6e-39",
+                    "edgeIds": [
+                        "line_Ys4TzV1fCm"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                },
+                {
+                    "id": "c61rO-4Oa5",
+                    "edgeIds": [
+                        "line_1WRLsU8SKo",
+                        "line_F0-rWxD74l",
+                        "line_X1EaoiY0xU",
+                        "line_bkhAM8aHtp",
+                        "line_iI2bBJ2vMZ",
+                        "line_kmzHJwaP5I"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_kex-Du5UDE"
+                },
+                {
+                    "id": "ypzf6t6CCR",
+                    "edgeIds": [
+                        "line_MXgKo1zGZJ",
+                        "line_l2-dpp58B-",
+                        "line_nXzP4E-ubx"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_fObbWQAo37"
+                },
+                {
+                    "id": "QG5N2aXtt1",
+                    "edgeIds": [
+                        "line_a69EzyOtU0"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                },
+                {
+                    "id": "4C-qxnP71B",
+                    "edgeIds": [
+                        "line_7WvVzh6a_Q",
+                        "line_BLtRChZCsg",
+                        "line_EYzi0FX92e",
+                        "line_HiakswUq9A",
+                        "line_hMgtbbueuR",
+                        "line_pXuOqhQJT9"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_l-a50AoGig"
+                },
+                {
+                    "id": "xl1OnUKFVb",
+                    "edgeIds": [
+                        "line_bboC07kPaQ"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_NbI42R3pmQ"
+                },
+                {
+                    "id": "dQvjiXR207",
+                    "edgeIds": [
+                        "line_B_vZBt2-qk"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                },
+                {
+                    "id": "VVsTXTwXjF",
+                    "edgeIds": [
+                        "line_-YDiJSG74F",
+                        "line_1vw2Rj94PB",
+                        "line_7dX3sGdLuU",
+                        "line_JHwHdfX4qG",
+                        "line_Nz2oUCQeOX",
+                        "line_Typ1sS8tHf",
+                        "line_Z2qbiKL4ZQ",
+                        "line_h3dlGG04Jt",
+                        "line_tVxKLRvXbg",
+                        "line_xJJfcoFkyK"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_cNTms2fg2j"
+                },
+                {
+                    "id": "81x8OuRUoV",
+                    "edgeIds": [
+                        "line_t_tAcO98pu"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_qi3nE7QIwt"
+                },
+                {
+                    "id": "xjCstXu7Cs",
+                    "edgeIds": [
+                        "line_n0F0URv2OW"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_pmo-rnbHuk"
+                },
+                {
+                    "id": "IChBkitqXb",
+                    "edgeIds": [
+                        "line_E_LOcuuQUa"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                },
+                {
+                    "id": "Nxwp2TdUSz",
+                    "edgeIds": [
+                        "line_G8TreiJrAv",
+                        "line_LzzrrQdzIg",
+                        "line_P_574JS52H",
+                        "line_UWkStTeaez",
+                        "line_aAtyrBXx-U",
+                        "line_fwNxKNJicI",
+                        "line_hCwY3W7MCO",
+                        "line_nSsNFpkBrS",
+                        "line_prdvU2jUhT",
+                        "line_rIUgfUFzyS",
+                        "line_sp88uM5rNd",
+                        "line_xrGzMJf4hR",
+                        "line_zLJUy_k3ZC"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_gHzCVKSzdn"
+                },
+                {
+                    "id": "iIx4JNRzAO",
+                    "edgeIds": [
+                        "line_6CgyFy2kAm"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                },
+                {
+                    "id": "XvcOCRRYoQ",
+                    "edgeIds": [
+                        "line_A3f7XeMXvY",
+                        "line_FhlCCx_gat",
+                        "line_NQ5DpaeOiE",
+                        "line_Own01St3wj",
+                        "line_TwzJPj1Gk3",
+                        "line_XDRGkxtqmg",
+                        "line__hHMiGDMOR",
+                        "line_f0WIuP57vN",
+                        "line_roezlONqie",
+                        "line_tWOm5gHTSc",
+                        "line_tnczsGVvmy",
+                        "line_vmZGFPWrJ-"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_FTvskxddlv"
+                },
+                {
+                    "id": "l8aSXWP7gq",
+                    "edgeIds": [
+                        "line_858YvbupwL",
+                        "line_bX3SN89IA9"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_zfEQ0TCko2"
+                },
+                {
+                    "id": "FCWxAU5Uvy",
+                    "edgeIds": [
+                        "line_qlRpdTW27Q"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_Vn9Waffm2R"
+                },
+                {
+                    "id": "HM5_GbB9bs",
+                    "edgeIds": [
+                        "line_7ZNRQszA30"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                },
+                {
+                    "id": "NAQtiNMY6r",
+                    "edgeIds": [
+                        "line_XymASoF6G7",
+                        "line_bvcafbB115",
+                        "line_tPhbCn642r"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_oG7kMXgiYX"
+                },
+                {
+                    "id": "HShQwMJNI8",
+                    "edgeIds": [
+                        "line_EPhuEOyzww"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                },
+                {
+                    "id": "iMNLhrgYaw",
+                    "edgeIds": [
+                        "line_QdsCknKa16"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_hgoAI4Apr0"
+                },
+                {
+                    "id": "fy-8nYugWm",
+                    "edgeIds": [
+                        "line_CjZjvpDXeO"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                },
+                {
+                    "id": "0MbJ8ma6Hc",
+                    "edgeIds": [
+                        "line_3z_xG9cvwQ"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_IVW7Lb5Gnm"
+                },
+                {
+                    "id": "i_Vm972Et-",
+                    "edgeIds": [
+                        "line_JSE2KAlrrA",
+                        "line_P0fs4JeX3H",
+                        "line_V9cIZ7deo1",
+                        "line_X5z0eT_9_t",
+                        "line_ZQawKZxvIi",
+                        "line_Za6GPyhBCZ",
+                        "line_r4k_1gTN44"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_UMhDOoo4-y"
+                },
+                {
+                    "id": "AkTz5Sro9-",
+                    "edgeIds": [
+                        "line_mDJdFBOsMB"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                },
+                {
+                    "id": "P0lcMG8226",
+                    "edgeIds": [
+                        "line_4GMVsyhMgL"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                },
+                {
+                    "id": "4KQ9neA6Wl",
+                    "edgeIds": [
+                        "line_dnxWq9ua32"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": ""
+                },
+                {
+                    "id": "KMvniH18su",
+                    "edgeIds": [
+                        "line_Td42USrbA0",
+                        "line__DTYaHcxDD",
+                        "line_ivKC2NLTfl"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_-77yBtseTN"
+                }
+            ]
+        },
         "nodes": [
             {
                 "key": "stn_27BiBVp0el",
@@ -36,22 +724,22 @@
             {
                 "key": "stn_oZje9nJdXp",
                 "attributes": {
-                    "shmetro-int": {
-                        "height": 10,
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
-                        "names": [
-                            "福莱格斯塔弗",
-                            "Flagstaff"
-                        ],
-                        "rotate": 90,
-                        "width": 35
-                    },
                     "type": "shmetro-int",
                     "visible": true,
                     "x": -100,
                     "y": -11,
-                    "zIndex": 5
+                    "zIndex": 5,
+                    "shmetro-int": {
+                        "names": [
+                            "福莱格斯塔弗",
+                            "Flagstaff"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "rotate": 90,
+                        "height": 10,
+                        "width": 35
+                    }
                 }
             },
             {
@@ -87,7 +775,7 @@
                             "Flinders Street"
                         ],
                         "rotate": 90,
-                        "width": 56
+                        "width": 50
                     },
                     "type": "shmetro-int",
                     "visible": true,
@@ -2155,27 +2843,6 @@
                 }
             },
             {
-                "key": "stn_V_s8jimklV",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": 170,
-                    "y": 245,
-                    "type": "shmetro-int",
-                    "shmetro-int": {
-                        "names": [
-                            "",
-                            ""
-                        ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "top",
-                        "rotate": 135,
-                        "height": 10,
-                        "width": 10
-                    }
-                }
-            },
-            {
                 "key": "stn_JQM7gi8XtA",
                 "attributes": {
                     "visible": true,
@@ -3486,17 +4153,21 @@
                     "zIndex": 5,
                     "x": 553,
                     "y": 633,
-                    "type": "shmetro-int",
-                    "shmetro-int": {
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
                         "names": [
                             "克雷顿",
                             "Clayton"
                         ],
+                        "rotate": 45,
+                        "color": [
+                            "other",
+                            "other",
+                            "#279fd5",
+                            "#fff"
+                        ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "top",
-                        "rotate": 135,
-                        "height": 10,
-                        "width": 20
+                        "nameOffsetY": "top"
                     }
                 }
             },
@@ -4548,7 +5219,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#95979a",
+                            "#ffbe00",
                             "#fff"
                         ]
                     }
@@ -4571,7 +5242,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#95979a",
+                            "#ffbe00",
                             "#fff"
                         ]
                     }
@@ -4885,9 +5556,9 @@
                         ],
                         "rotate": 180,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
@@ -4908,23 +5579,12 @@
                         ],
                         "rotate": 135,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
-                }
-            },
-            {
-                "key": "misc_node_nuCBNjzRLD",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -670,
-                    "y": -72,
-                    "type": "virtual",
-                    "virtual": {}
                 }
             },
             {
@@ -4944,7 +5604,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#ffbe00",
+                            "#279fd5",
                             "#fff"
                         ]
                     }
@@ -4967,7 +5627,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#ffbe00",
+                            "#279fd5",
                             "#fff"
                         ]
                     }
@@ -4990,7 +5650,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#ffbe00",
+                            "#279fd5",
                             "#fff"
                         ]
                     }
@@ -5001,8 +5661,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -670,
-                    "y": -69,
+                    "x": -670.3,
+                    "y": -70.3,
                     "type": "shmetro-int",
                     "shmetro-int": {
                         "names": [
@@ -5034,7 +5694,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#ffbe00",
+                            "#279fd5",
                             "#fff"
                         ]
                     }
@@ -5057,7 +5717,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#ffbe00",
+                            "#279fd5",
                             "#fff"
                         ]
                     }
@@ -5080,7 +5740,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#ffbe00",
+                            "#279fd5",
                             "#fff"
                         ]
                     }
@@ -5103,7 +5763,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#ffbe00",
+                            "#279fd5",
                             "#fff"
                         ]
                     }
@@ -5147,7 +5807,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#ffbe00",
+                            "#279fd5",
                             "#fff"
                         ]
                     }
@@ -5179,8 +5839,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": -450,
-                    "y": 0,
+                    "x": -450.39,
+                    "y": 0.39,
                     "type": "shmetro-basic-2020",
                     "shmetro-basic-2020": {
                         "names": [
@@ -5189,9 +5849,9 @@
                         ],
                         "rotate": 135,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
@@ -5212,9 +5872,9 @@
                         ],
                         "rotate": 135,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
@@ -5256,9 +5916,9 @@
                         ],
                         "rotate": 90,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
@@ -5279,9 +5939,9 @@
                         ],
                         "rotate": 90,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
@@ -5302,9 +5962,9 @@
                         ],
                         "rotate": 90,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
@@ -5325,9 +5985,9 @@
                         ],
                         "rotate": 180,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
@@ -5348,9 +6008,9 @@
                         ],
                         "rotate": 0,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
@@ -5371,9 +6031,9 @@
                         ],
                         "rotate": 180,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
@@ -5426,9 +6086,9 @@
                         ],
                         "rotate": 135,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
@@ -5449,9 +6109,9 @@
                         ],
                         "rotate": 135,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
@@ -5472,9 +6132,9 @@
                         ],
                         "rotate": 135,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
@@ -5495,9 +6155,9 @@
                         ],
                         "rotate": 135,
                         "color": [
-                            "other",
-                            "other",
-                            "#028430",
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     }
@@ -5576,7 +6236,7 @@
                 "key": "stn_zh1m8Z54RX",
                 "attributes": {
                     "visible": true,
-                    "zIndex": 5,
+                    "zIndex": 0,
                     "x": -327,
                     "y": -260,
                     "type": "shmetro-basic-2020",
@@ -7392,141 +8052,6 @@
                 }
             },
             {
-                "key": "stn_B24_zsXU8f",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -500,
-                    "y": -360,
-                    "type": "shmetro-basic",
-                    "shmetro-basic": {
-                        "names": [
-                            "墨尔本国际机场",
-                            "Melbourne Airport"
-                        ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle"
-                    }
-                }
-            },
-            {
-                "key": "misc_node_8HSyQao_lw",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -525,
-                    "y": -360.5,
-                    "type": "facilities",
-                    "facilities": {
-                        "type": "airport_hk"
-                    }
-                }
-            },
-            {
-                "key": "stn__Xc70LiNjf",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -205,
-                    "y": 80,
-                    "type": "shmetro-basic",
-                    "shmetro-basic": {
-                        "names": [
-                            "",
-                            ""
-                        ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "top"
-                    }
-                }
-            },
-            {
-                "key": "misc_node_Zx8JJyuik7",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -480,
-                    "y": -170,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_XtORV66SG8",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -410,
-                    "y": -140,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_Dg-m_HT-n0",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -222.73,
-                    "y": -14.67,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "stn_UMhDOoo4-y",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -780,
-                    "y": 30,
-                    "type": "shmetro-basic",
-                    "shmetro-basic": {
-                        "names": [
-                            "阿瓦隆机场",
-                            "Avalon Airport"
-                        ],
-                        "nameOffsetX": "middle",
-                        "nameOffsetY": "top"
-                    }
-                }
-            },
-            {
-                "key": "misc_node_Iw_n2HARBh",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -805,
-                    "y": 39.5,
-                    "type": "facilities",
-                    "facilities": {
-                        "type": "airport_hk"
-                    }
-                }
-            },
-            {
-                "key": "misc_node_8YXNY6Z-wk",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -510,
-                    "y": 90,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
-                "key": "misc_node_X0LlFlwHQs",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -360,
-                    "y": 120,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
                 "key": "misc_node_IRfC88Kmi9",
                 "attributes": {
                     "visible": true,
@@ -7741,7 +8266,7 @@
                     "y": 540,
                     "type": "text",
                     "text": {
-                        "content": "Sunbury, Craigieburn and Upfield Lines",
+                        "content": "Craigieburn and Upfield Lines",
                         "fontSize": 10,
                         "lineHeight": 16,
                         "textAnchor": "start",
@@ -7897,7 +8422,7 @@
                     "y": 620,
                     "type": "text",
                     "text": {
-                        "content": "Cranbourne and Pakenham Lines",
+                        "content": "Sunbury, Cranbourne, and Pakenham Lines",
                         "fontSize": 10,
                         "lineHeight": 16,
                         "textAnchor": "start",
@@ -7975,7 +8500,7 @@
                     "y": 660,
                     "type": "text",
                     "text": {
-                        "content": "Frankston, Werribee and Williamstown Lines",
+                        "content": "Frankston Line",
                         "fontSize": 10,
                         "lineHeight": 16,
                         "textAnchor": "start",
@@ -8053,7 +8578,7 @@
                     "y": 700,
                     "type": "text",
                     "text": {
-                        "content": "Sandringham Line",
+                        "content": "Werribee and Sandringham Lines",
                         "fontSize": 10,
                         "lineHeight": 16,
                         "textAnchor": "start",
@@ -8675,23 +9200,12 @@
                 }
             },
             {
-                "key": "misc_node_IgkNqaAhOr",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": -296.5,
-                    "y": -72,
-                    "type": "virtual",
-                    "virtual": {}
-                }
-            },
-            {
                 "key": "stn_Yd7KK4A7Wq",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -125.5,
-                    "y": -90,
+                    "x": -116.08,
+                    "y": -71.9,
                     "type": "shmetro-basic-2020",
                     "shmetro-basic-2020": {
                         "names": [
@@ -8700,9 +9214,9 @@
                         ],
                         "rotate": 0,
                         "color": [
-                            "melbourne",
-                            "flrc",
-                            "#95979a",
+                            "other",
+                            "other",
+                            "#279fd5",
                             "#fff"
                         ]
                     }
@@ -8869,8 +9383,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -31,
-                    "y": -90,
+                    "x": -44.14,
+                    "y": -71.83,
                     "type": "shmetro-basic-2020",
                     "shmetro-basic-2020": {
                         "names": [
@@ -8879,9 +9393,9 @@
                         ],
                         "rotate": 0,
                         "color": [
-                            "melbourne",
-                            "flrc",
-                            "#95979a",
+                            "other",
+                            "other",
+                            "#279fd5",
                             "#fff"
                         ]
                     }
@@ -8892,21 +9406,17 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -5,
-                    "y": -35,
-                    "type": "shmetro-basic-2020",
-                    "shmetro-basic-2020": {
+                    "x": 2.76,
+                    "y": -35.94,
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "州立图书馆",
                             "State Library"
                         ],
-                        "rotate": 90,
-                        "color": [
-                            "other",
-                            "other",
-                            "#95979a",
-                            "#fff"
-                        ]
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13
                     }
                 }
             },
@@ -8915,33 +9425,23 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": -5,
-                    "y": 181,
-                    "type": "shmetro-basic-2020",
-                    "shmetro-basic-2020": {
+                    "x": 2.76,
+                    "y": 116.08,
+                    "type": "shmetro-int",
+                    "shmetro-int": {
                         "names": [
                             "市政厅",
                             "Town Hall"
                         ],
-                        "rotate": 90,
-                        "color": [
-                            "other",
-                            "other",
-                            "#95979a",
-                            "#fff"
-                        ]
+                        "rotate": 0,
+                        "height": 10,
+                        "width": 13,
+                        "preciseNameOffsets": {
+                            "x": -57.60497042165653,
+                            "y": -4.910726828495443,
+                            "anchor": "start"
+                        }
                     }
-                }
-            },
-            {
-                "key": "misc_node_fBM3MCNBA6",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 5,
-                    "x": 215,
-                    "y": 290,
-                    "type": "virtual",
-                    "virtual": {}
                 }
             },
             {
@@ -8949,7 +9449,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 64,
+                    "x": 63.28,
                     "y": 290,
                     "type": "shmetro-basic-2020",
                     "shmetro-basic-2020": {
@@ -8961,7 +9461,7 @@
                         "color": [
                             "other",
                             "other",
-                            "#95979a",
+                            "#279fd5",
                             "#fff"
                         ]
                     }
@@ -8981,7 +9481,7 @@
                             "North Melbourne"
                         ],
                         "nameOffsetX": "right",
-                        "nameOffsetY": "top",
+                        "nameOffsetY": "middle",
                         "rotate": 135,
                         "height": 10,
                         "width": 18
@@ -9179,473 +9679,163 @@
                         "type": "tube"
                     }
                 }
+            },
+            {
+                "key": "misc_node_BDL0bRZuKV",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -9.739999999999998,
+                    "y": -23.439999999999998,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_fMRmEco8el",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -10,
+                    "y": 128.84,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_synT2R7Wvp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -670.3,
+                    "y": -74.33,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "misc_node_iLGNrv1H2N",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -669.45,
+                    "y": -71.31,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_I_Se7CeYuM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": -590,
+                    "y": -236.71,
+                    "type": "shmetro-int",
+                    "shmetro-int": {
+                        "names": [
+                            "墨尔本机场",
+                            "Melbourne Airport"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "rotate": 90,
+                        "height": 10,
+                        "width": 20
+                    }
+                }
+            },
+            {
+                "key": "stn_SVKux9CGYL",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": -590,
+                    "y": -160,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "凯勒东",
+                            "Keilor East"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "melbourne",
+                            "flrc",
+                            "#95979a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_qb7Bpc6hXl",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 680,
+                    "y": 530,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "莫纳什",
+                            "Monash"
+                        ],
+                        "rotate": 180,
+                        "color": [
+                            "melbourne",
+                            "flrc",
+                            "#95979a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_c8It_bAN4-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 5,
+                    "x": 840,
+                    "y": 184.77,
+                    "type": "shmetro-basic-2020",
+                    "shmetro-basic-2020": {
+                        "names": [
+                            "迪肯",
+                            "Deakin"
+                        ],
+                        "rotate": 90,
+                        "color": [
+                            "melbourne",
+                            "flrc",
+                            "#95979a",
+                            "#fff"
+                        ]
+                    }
+                }
             }
         ],
         "edges": [
             {
-                "key": "line_3qKJQmbmPy",
-                "source": "misc_node_v1-Fsl5lUY",
-                "target": "misc_node_Fmz5KEJlM7",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 0
-                    },
-                    "style": "mtr-unpaid-area",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-unpaid-area": {}
-                }
-            },
-            {
-                "key": "line_qUm04QOYai",
-                "source": "misc_node_H9h5d2KJBh",
-                "target": "misc_node_Fmz5KEJlM7",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 0
-                    },
-                    "style": "mtr-unpaid-area",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-unpaid-area": {}
-                }
-            },
-            {
-                "key": "line_T1posiam-E",
-                "source": "misc_node_LOkRBgPLNF",
-                "target": "misc_node_H9h5d2KJBh",
+                "key": "line_nnjZh97wC0",
+                "source": "stn_27BiBVp0el",
+                "target": "stn_kex-Du5UDE",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 0
-                    },
-                    "style": "mtr-unpaid-area",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-unpaid-area": {}
-                }
-            },
-            {
-                "key": "line_8QfW4bLEEP",
-                "source": "misc_node_4p7hSs-2U7",
-                "target": "misc_node_a46Hm_pBn4",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetFrom": 10.5,
+                        "offsetTo": -10.5,
                         "roundCornerFactor": 18.33
-                    },
-                    "style": "mtr-paid-area",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-paid-area": {}
-                }
-            },
-            {
-                "key": "line_TjYL8hE8Le",
-                "source": "misc_node_qLCrRNmdzp",
-                "target": "misc_node_xUGP9vaYTb",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "mtr-paid-area",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-paid-area": {}
-                }
-            },
-            {
-                "key": "line_D5mM5P9FAa",
-                "source": "misc_node_xoSUNXHS0c",
-                "target": "misc_node_dVUdhsqwYu",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "mtr-paid-area",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-paid-area": {}
-                }
-            },
-            {
-                "key": "line_9JEGimFFjb",
-                "source": "misc_node_Svgk8S-8gZ",
-                "target": "misc_node_n8S8tztaU2",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "mtr-paid-area",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-paid-area": {}
-                }
-            },
-            {
-                "key": "line_ZQawKZxvIi",
-                "source": "stn__Xc70LiNjf",
-                "target": "misc_node_Dg-m_HT-n0",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "mtr-light-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-light-rail": {
-                        "color": [
-                            "melbourne",
-                            "flrc",
-                            "#95979a",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_JSE2KAlrrA",
-                "source": "misc_node_XtORV66SG8",
-                "target": "misc_node_Dg-m_HT-n0",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "mtr-light-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-light-rail": {
-                        "color": [
-                            "melbourne",
-                            "flrc",
-                            "#95979a",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_Za6GPyhBCZ",
-                "source": "misc_node_XtORV66SG8",
-                "target": "misc_node_Zx8JJyuik7",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "mtr-light-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-light-rail": {
-                        "color": [
-                            "melbourne",
-                            "flrc",
-                            "#95979a",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_V9cIZ7deo1",
-                "source": "stn_B24_zsXU8f",
-                "target": "misc_node_Zx8JJyuik7",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "mtr-light-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-light-rail": {
-                        "color": [
-                            "melbourne",
-                            "flrc",
-                            "#95979a",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_r4k_1gTN44",
-                "source": "misc_node_X0LlFlwHQs",
-                "target": "stn__Xc70LiNjf",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "mtr-light-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-light-rail": {
-                        "color": [
-                            "melbourne",
-                            "flrc",
-                            "#95979a",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_X5z0eT_9_t",
-                "source": "misc_node_X0LlFlwHQs",
-                "target": "misc_node_8YXNY6Z-wk",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "mtr-light-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-light-rail": {
-                        "color": [
-                            "melbourne",
-                            "flrc",
-                            "#95979a",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_P0fs4JeX3H",
-                "source": "stn_UMhDOoo4-y",
-                "target": "misc_node_8YXNY6Z-wk",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "mtr-light-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-light-rail": {
-                        "color": [
-                            "melbourne",
-                            "flrc",
-                            "#95979a",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_ivKC2NLTfl",
-                "source": "stn_-77yBtseTN",
-                "target": "misc_node_IgkNqaAhOr",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "mtr-race-days",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-race-days": {
-                        "color": [
-                            "melbourne",
-                            "flrc",
-                            "#95979a",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line__DTYaHcxDD",
-                "source": "stn_-77yBtseTN",
-                "target": "stn_WrUhC9HzqF",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "mtr-race-days",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-race-days": {
-                        "color": [
-                            "melbourne",
-                            "flrc",
-                            "#95979a",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_Td42USrbA0",
-                "source": "misc_node_fBM3MCNBA6",
-                "target": "stn_WrUhC9HzqF",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "mtr-race-days",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-race-days": {
-                        "color": [
-                            "melbourne",
-                            "flrc",
-                            "#95979a",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_vi7TE8MwfT",
-                "source": "stn_7yEWGoOfL0",
-                "target": "stn_uXdcxLqPgZ",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "melbourne",
-                            "mlvl",
-                            "#7f0d82",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false
-                    }
-                }
-            },
-            {
-                "key": "line_TwzJPj1Gk3",
-                "source": "stn_IxfYaFhA-0",
-                "target": "stn_uXdcxLqPgZ",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
                     },
                     "style": "single-color",
                     "single-color": {
                         "color": [
                             "melbourne",
-                            "mlvl",
-                            "#7f0d82",
+                            "csul",
+                            "#ffbe00",
                             "#fff"
                         ]
                     },
@@ -9654,25 +9844,160 @@
                 }
             },
             {
-                "key": "line_vmZGFPWrJ-",
-                "source": "stn_IxfYaFhA-0",
+                "key": "line_kmzHJwaP5I",
+                "source": "stn_27BiBVp0el",
+                "target": "stn_kex-Du5UDE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 3.5,
+                        "offsetTo": -3.5,
+                        "roundCornerFactor": 25.66
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "hume",
+                            "#be1014",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_3vebc9TqTV",
+                "source": "stn_27BiBVp0el",
+                "target": "stn_Nt576sFLZH",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 10.5,
+                        "offsetTo": 3.5,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "csul",
+                            "#ffbe00",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_bkhAM8aHtp",
+                "source": "stn_27BiBVp0el",
+                "target": "stn_FqbEbIuihR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 3.5,
+                        "offsetTo": 10.5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "hume",
+                            "#be1014",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_h3dlGG04Jt",
+                "source": "stn_oZje9nJdXp",
+                "target": "stn_kex-Du5UDE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -3.5,
+                        "offsetTo": 3.5,
+                        "roundCornerFactor": 32
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "abgl",
+                            "#152c6b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_JHwHdfX4qG",
+                "source": "stn_oZje9nJdXp",
+                "target": "stn_FqbEbIuihR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -3.5,
+                        "offsetTo": 3.5,
+                        "roundCornerFactor": 25.66
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "abgl",
+                            "#152c6b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_Nz2oUCQeOX",
+                "source": "stn_kex-Du5UDE",
                 "target": "stn_zGDmtG4ilX",
                 "attributes": {
                     "visible": true,
-                    "zIndex": 0,
+                    "zIndex": 2,
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetFrom": 3.5,
+                        "offsetTo": 7,
                         "roundCornerFactor": 10
                     },
                     "style": "single-color",
                     "single-color": {
                         "color": [
                             "melbourne",
-                            "mlvl",
-                            "#7f0d82",
+                            "abgl",
+                            "#152c6b",
                             "#fff"
                         ]
                     },
@@ -9681,23 +10006,30 @@
                 }
             },
             {
-                "key": "line_qKUK1uKPSe",
-                "source": "stn_JQM7gi8XtA",
-                "target": "stn_V_s8jimklV",
+                "key": "line_1vw2Rj94PB",
+                "source": "stn_oG7kMXgiYX",
+                "target": "stn_zGDmtG4ilX",
                 "attributes": {
                     "visible": true,
-                    "zIndex": 1,
+                    "zIndex": 3,
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
+                        "offsetFrom": -7,
+                        "offsetTo": 7,
                         "roundCornerFactor": 10
                     },
-                    "style": "mtr-paid-area",
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "abgl",
+                            "#152c6b",
+                            "#fff"
+                        ]
+                    },
                     "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-paid-area": {}
+                    "parallelIndex": -1
                 }
             },
             {
@@ -9737,7 +10069,7 @@
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": 21,
+                        "offsetFrom": 15,
                         "offsetTo": -3.5,
                         "roundCornerFactor": 10
                     },
@@ -9755,43 +10087,16 @@
                 }
             },
             {
-                "key": "line_tPhbCn642r",
-                "source": "stn_JQM7gi8XtA",
-                "target": "misc_node_OY06jKRigK",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "ro-perp",
-                    "ro-perp": {
-                        "startFrom": "from",
-                        "offsetFrom": 3.5,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "mlsd",
-                            "#f178af",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_bvcafbB115",
-                "source": "stn_HPjyCA3Jdw",
-                "target": "misc_node_OY06jKRigK",
+                "key": "line_F0-rWxD74l",
+                "source": "stn_oG7kMXgiYX",
+                "target": "stn_Mwi154BX2V",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
+                        "offsetFrom": -14,
                         "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
@@ -9799,8 +10104,8 @@
                     "single-color": {
                         "color": [
                             "melbourne",
-                            "mlsd",
-                            "#f178af",
+                            "hume",
+                            "#be1014",
                             "#fff"
                         ]
                     },
@@ -9809,16 +10114,151 @@
                 }
             },
             {
-                "key": "line_EYzi0FX92e",
-                "source": "stn_l-a50AoGig",
-                "target": "stn_zGDmtG4ilX",
+                "key": "line_SWP9ly0CbH",
+                "source": "stn_oG7kMXgiYX",
+                "target": "stn_FqbEbIuihR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -21,
+                        "offsetTo": 17.5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#ffbe00",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_X1EaoiY0xU",
+                "source": "stn_oG7kMXgiYX",
+                "target": "stn_FqbEbIuihR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -14,
+                        "offsetTo": 10.5,
+                        "roundCornerFactor": 25.66
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "hume",
+                            "#be1014",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_Typ1sS8tHf",
+                "source": "stn_oG7kMXgiYX",
+                "target": "stn_FqbEbIuihR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -7,
+                        "offsetTo": 3.5,
+                        "roundCornerFactor": 32
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "abgl",
+                            "#152c6b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_Own01St3wj",
+                "source": "stn_oG7kMXgiYX",
+                "target": "stn_FqbEbIuihR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 7,
+                        "offsetTo": -10.5,
+                        "roundCornerFactor": 46.66
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlvl",
+                            "#7f0d82",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_6teX_dtAnD",
+                "source": "stn_oG7kMXgiYX",
+                "target": "stn_kex-Du5UDE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -21,
+                        "offsetTo": -10.5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "csul",
+                            "#ffbe00",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_tWOm5gHTSc",
+                "source": "stn_FqbEbIuihR",
+                "target": "stn_wj-gnoJOVF",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
+                        "offsetFrom": -10.5,
                         "offsetTo": 7,
                         "roundCornerFactor": 10
                     },
@@ -9826,8 +10266,8 @@
                     "single-color": {
                         "color": [
                             "melbourne",
-                            "crpa",
-                            "#279fd5",
+                            "mlvl",
+                            "#7f0d82",
                             "#fff"
                         ]
                     },
@@ -9836,16 +10276,43 @@
                 }
             },
             {
-                "key": "line_bboC07kPaQ",
-                "source": "stn_q7dfJSGHLG",
-                "target": "stn_NbI42R3pmQ",
+                "key": "line_NQ5DpaeOiE",
+                "source": "stn_FqbEbIuihR",
+                "target": "stn_Nt576sFLZH",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
+                        "offsetFrom": -11,
+                        "offsetTo": -3.5,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlvl",
+                            "#7f0d82",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_OKf2RAQ91Q",
+                "source": "stn_FqbEbIuihR",
+                "target": "stn_Nt576sFLZH",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 17.5,
                         "offsetTo": 3.5,
                         "roundCornerFactor": 10
                     },
@@ -9853,224 +10320,8 @@
                     "single-color": {
                         "color": [
                             "melbourne",
-                            "crpa",
-                            "#279fd5",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_QdsCknKa16",
-                "source": "stn_hgoAI4Apr0",
-                "target": "stn_VsMCrXOHn2",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 3.5,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "melbourne",
-                            "stpt",
-                            "#028430",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_zLJUy_k3ZC",
-                "source": "stn_hgoAI4Apr0",
-                "target": "stn_nKMAe6Q_3a",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": -3.5,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "fwwl",
-                            "#028430",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_xrGzMJf4hR",
-                "source": "stn_uNa_3Dylod",
-                "target": "stn_nKMAe6Q_3a",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "fwwl",
-                            "#028430",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_fwNxKNJicI",
-                "source": "stn_uNa_3Dylod",
-                "target": "stn_zGDmtG4ilX",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": -7,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "fwwl",
-                            "#028430",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_G8TreiJrAv",
-                "source": "stn_oG7kMXgiYX",
-                "target": "stn_zGDmtG4ilX",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 14,
-                        "offsetTo": -7,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "fwwl",
-                            "#028430",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_n0F0URv2OW",
-                "source": "stn_pmo-rnbHuk",
-                "target": "stn_M1Ww50DJ-r",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "abgl",
-                            "#152c6b",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_Z2qbiKL4ZQ",
-                "source": "stn_1jq8Q9_3BJ",
-                "target": "stn_ChvBmVqP8Z",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "abgl",
-                            "#152c6b",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_t_tAcO98pu",
-                "source": "stn_TvG0fHgRZO",
-                "target": "stn_qi3nE7QIwt",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "ro-perp",
-                    "ro-perp": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "abgl",
-                            "#152c6b",
+                            "csul",
+                            "#ffbe00",
                             "#fff"
                         ]
                     },
@@ -10133,6 +10384,33 @@
                 }
             },
             {
+                "key": "line_xJJfcoFkyK",
+                "source": "stn_nZKw6EfKpZ",
+                "target": "stn_zGDmtG4ilX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 7,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "abgl",
+                            "#152c6b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
                 "key": "line_7dX3sGdLuU",
                 "source": "stn_cNTms2fg2j",
                 "target": "stn_NtE1TNpDuI",
@@ -10160,45 +10438,18 @@
                 }
             },
             {
-                "key": "line_hMgtbbueuR",
-                "source": "stn_oG7kMXgiYX",
-                "target": "stn_zGDmtG4ilX",
+                "key": "line_t_tAcO98pu",
+                "source": "stn_TvG0fHgRZO",
+                "target": "stn_qi3nE7QIwt",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
+                    "type": "ro-perp",
+                    "ro-perp": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": 7,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "crpa",
-                            "#279fd5",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_xJJfcoFkyK",
-                "source": "stn_nZKw6EfKpZ",
-                "target": "stn_zGDmtG4ilX",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 14,
-                        "roundCornerFactor": 10
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
                     },
                     "style": "single-color",
                     "single-color": {
@@ -10214,43 +10465,16 @@
                 }
             },
             {
-                "key": "line_1vw2Rj94PB",
-                "source": "stn_oG7kMXgiYX",
-                "target": "stn_zGDmtG4ilX",
+                "key": "line_n0F0URv2OW",
+                "source": "stn_pmo-rnbHuk",
+                "target": "stn_M1Ww50DJ-r",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": -7,
-                        "offsetTo": 14,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "abgl",
-                            "#152c6b",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_F0-rWxD74l",
-                "source": "stn_oG7kMXgiYX",
-                "target": "stn_Mwi154BX2V",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": -14,
+                        "offsetFrom": 0,
                         "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
@@ -10258,8 +10482,35 @@
                     "single-color": {
                         "color": [
                             "melbourne",
-                            "hume",
-                            "#be1014",
+                            "abgl",
+                            "#152c6b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_Z2qbiKL4ZQ",
+                "source": "stn_1jq8Q9_3BJ",
+                "target": "stn_ChvBmVqP8Z",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "abgl",
+                            "#152c6b",
                             "#fff"
                         ]
                     },
@@ -10271,33 +10522,6 @@
                 "key": "line_1WRLsU8SKo",
                 "source": "stn_WCyWDPpHQu",
                 "target": "stn_Mwi154BX2V",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "hume",
-                            "#be1014",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_MXgKo1zGZJ",
-                "source": "stn_CMM5uthbL9",
-                "target": "stn_szC198s4fH",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -10376,9 +10600,9 @@
                 }
             },
             {
-                "key": "line_UWkStTeaez",
-                "source": "stn_55yywW8Xv4",
-                "target": "stn_gHzCVKSzdn",
+                "key": "line_MXgKo1zGZJ",
+                "source": "stn_CMM5uthbL9",
+                "target": "stn_szC198s4fH",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -10393,8 +10617,8 @@
                     "single-color": {
                         "color": [
                             "melbourne",
-                            "fwwl",
-                            "#028430",
+                            "hume",
+                            "#be1014",
                             "#fff"
                         ]
                     },
@@ -10403,173 +10627,72 @@
                 }
             },
             {
-                "key": "line_hCwY3W7MCO",
-                "source": "misc_node_Jnz4k1UmVv",
-                "target": "stn_wMqxOTKdUP",
+                "key": "line_tPhbCn642r",
+                "source": "stn_JQM7gi8XtA",
+                "target": "misc_node_OY06jKRigK",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
+                    "type": "ro-perp",
+                    "ro-perp": {
                         "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "fwwl",
-                            "#028430",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_LzzrrQdzIg",
-                "source": "misc_node_Jnz4k1UmVv",
-                "target": "stn_5NSZAdARHK",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "fwwl",
-                            "#028430",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_prdvU2jUhT",
-                "source": "stn_55yywW8Xv4",
-                "target": "stn_5NSZAdARHK",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "fwwl",
-                            "#028430",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_aAtyrBXx-U",
-                "source": "stn_V7g2lFmIQ6",
-                "target": "stn_5NSZAdARHK",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "fwwl",
-                            "#028430",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_sp88uM5rNd",
-                "source": "stn_SHKN3Trf5F",
-                "target": "stn_5NSZAdARHK",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "fwwl",
-                            "#028430",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_UdqfO2ZJXn",
-                "source": "stn__Xc70LiNjf",
-                "target": "stn_FqbEbIuihR",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
+                        "offsetFrom": 3.5,
                         "offsetTo": 0,
                         "roundCornerFactor": 18.33
                     },
-                    "style": "mtr-paid-area",
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
+                            "#fff"
+                        ]
+                    },
                     "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-paid-area": {}
+                    "parallelIndex": -1
                 }
             },
             {
-                "key": "line_rIUgfUFzyS",
-                "source": "stn_oG7kMXgiYX",
-                "target": "stn_FqbEbIuihR",
+                "key": "line_bvcafbB115",
+                "source": "stn_HPjyCA3Jdw",
+                "target": "misc_node_OY06jKRigK",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
+                    "type": "diagonal",
+                    "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": 14,
-                        "offsetTo": -17.5,
-                        "roundCornerFactor": 53
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_xrGzMJf4hR",
+                "source": "stn_uNa_3Dylod",
+                "target": "stn_nKMAe6Q_3a",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
                     },
                     "style": "single-color",
                     "single-color": {
@@ -10585,25 +10708,25 @@
                 }
             },
             {
-                "key": "line_Own01St3wj",
-                "source": "stn_oG7kMXgiYX",
-                "target": "stn_FqbEbIuihR",
+                "key": "line_fwNxKNJicI",
+                "source": "stn_uNa_3Dylod",
+                "target": "stn_zGDmtG4ilX",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
+                    "type": "diagonal",
+                    "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": 7,
-                        "offsetTo": -10.5,
-                        "roundCornerFactor": 46.66
+                        "offsetFrom": 0,
+                        "offsetTo": -7,
+                        "roundCornerFactor": 10
                     },
                     "style": "single-color",
                     "single-color": {
                         "color": [
                             "melbourne",
-                            "mlvl",
-                            "#7f0d82",
+                            "fwwl",
+                            "#028430",
                             "#fff"
                         ]
                     },
@@ -10612,18 +10735,72 @@
                 }
             },
             {
-                "key": "line_pXuOqhQJT9",
-                "source": "stn_oG7kMXgiYX",
-                "target": "stn_FqbEbIuihR",
+                "key": "line_QdsCknKa16",
+                "source": "stn_hgoAI4Apr0",
+                "target": "stn_VsMCrXOHn2",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
+                        "offsetFrom": 3.5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "melbourne",
+                            "stpt",
+                            "#028430",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_zLJUy_k3ZC",
+                "source": "stn_hgoAI4Apr0",
+                "target": "stn_nKMAe6Q_3a",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": -3.5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "fwwl",
+                            "#028430",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_bboC07kPaQ",
+                "source": "stn_q7dfJSGHLG",
+                "target": "stn_NbI42R3pmQ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": -3.5,
-                        "roundCornerFactor": 39.33
+                        "offsetTo": 3.5,
+                        "roundCornerFactor": 10
                     },
                     "style": "single-color",
                     "single-color": {
@@ -10639,25 +10816,25 @@
                 }
             },
             {
-                "key": "line_Typ1sS8tHf",
-                "source": "stn_oG7kMXgiYX",
-                "target": "stn_FqbEbIuihR",
+                "key": "line_TwzJPj1Gk3",
+                "source": "stn_IxfYaFhA-0",
+                "target": "stn_uXdcxLqPgZ",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
+                    "type": "diagonal",
+                    "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": -7,
-                        "offsetTo": 3.5,
-                        "roundCornerFactor": 32
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
                     },
                     "style": "single-color",
                     "single-color": {
                         "color": [
                             "melbourne",
-                            "abgl",
-                            "#152c6b",
+                            "mlvl",
+                            "#7f0d82",
                             "#fff"
                         ]
                     },
@@ -10666,30 +10843,64 @@
                 }
             },
             {
-                "key": "line_X1EaoiY0xU",
-                "source": "stn_oG7kMXgiYX",
-                "target": "stn_FqbEbIuihR",
+                "key": "line_vmZGFPWrJ-",
+                "source": "stn_IxfYaFhA-0",
+                "target": "stn_zGDmtG4ilX",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
+                    "type": "diagonal",
+                    "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": -14,
-                        "offsetTo": 10.5,
-                        "roundCornerFactor": 25.66
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
                     },
                     "style": "single-color",
                     "single-color": {
                         "color": [
                             "melbourne",
-                            "hume",
-                            "#be1014",
+                            "mlvl",
+                            "#7f0d82",
                             "#fff"
                         ]
                     },
                     "reconcileId": "",
                     "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_vi7TE8MwfT",
+                "source": "stn_7yEWGoOfL0",
+                "target": "stn_uXdcxLqPgZ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-rail",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-rail": {
+                        "colorBackground": [
+                            "melbourne",
+                            "mlvl",
+                            "#7f0d82",
+                            "#fff"
+                        ],
+                        "colorForeground": [
+                            "london",
+                            "white",
+                            "#ffffff",
+                            "#000"
+                        ],
+                        "limitedService": false
+                    }
                 }
             },
             {
@@ -10720,12 +10931,12 @@
                 }
             },
             {
-                "key": "line_nSsNFpkBrS",
-                "source": "stn_SHKN3Trf5F",
-                "target": "stn_wj-gnoJOVF",
+                "key": "line_3z_xG9cvwQ",
+                "source": "stn_IVW7Lb5Gnm",
+                "target": "stn_feyMWkWm0E",
                 "attributes": {
                     "visible": true,
-                    "zIndex": 0,
+                    "zIndex": -1,
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
@@ -10733,98 +10944,24 @@
                         "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "fwwl",
-                            "#028430",
-                            "#fff"
-                        ]
-                    },
+                    "style": "london-rail",
                     "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_P_574JS52H",
-                "source": "stn_FqbEbIuihR",
-                "target": "stn_wj-gnoJOVF",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": -17.5,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "fwwl",
-                            "#028430",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_j9wG-i2bO1",
-                "source": "stn_Nt576sFLZH",
-                "target": "stn_0L9HhApJV7",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "ro-perp",
-                    "ro-perp": {
-                        "startFrom": "from",
-                        "offsetFrom": -3.5,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "csul",
+                    "parallelIndex": -1,
+                    "london-rail": {
+                        "colorBackground": [
+                            "other",
+                            "other",
                             "#ffbe00",
                             "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_JiDur8-f0c",
-                "source": "stn_Fr5qEzX1fm",
-                "target": "stn_Nt576sFLZH",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 3.5,
-                        "offsetTo": 3.5,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "csul",
-                            "#ffbe00",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
+                        ],
+                        "colorForeground": [
+                            "london",
+                            "white",
+                            "#ffffff",
+                            "#000"
+                        ],
+                        "limitedService": false
+                    }
                 }
             },
             {
@@ -10855,16 +10992,16 @@
                 }
             },
             {
-                "key": "line_OKf2RAQ91Q",
-                "source": "stn_FqbEbIuihR",
+                "key": "line_JiDur8-f0c",
+                "source": "stn_Fr5qEzX1fm",
                 "target": "stn_Nt576sFLZH",
                 "attributes": {
                     "visible": true,
-                    "zIndex": 0,
+                    "zIndex": 1,
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": 17.5,
+                        "offsetFrom": 3.5,
                         "offsetTo": 3.5,
                         "roundCornerFactor": 10
                     },
@@ -10882,44 +11019,17 @@
                 }
             },
             {
-                "key": "line_SWP9ly0CbH",
-                "source": "stn_oG7kMXgiYX",
-                "target": "stn_FqbEbIuihR",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": -21,
-                        "offsetTo": 17.5,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "csul",
-                            "#ffbe00",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_NQ5DpaeOiE",
-                "source": "stn_FqbEbIuihR",
-                "target": "stn_Nt576sFLZH",
+                "key": "line_FhlCCx_gat",
+                "source": "stn_Fr5qEzX1fm",
+                "target": "stn_z3vGLuenOu",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": -10.5,
-                        "offsetTo": -3.5,
+                        "offsetFrom": -3.5,
+                        "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
                     "style": "single-color",
@@ -10936,39 +11046,12 @@
                 }
             },
             {
-                "key": "line_tWOm5gHTSc",
-                "source": "stn_FqbEbIuihR",
-                "target": "stn_wj-gnoJOVF",
+                "key": "line_sp88uM5rNd",
+                "source": "stn_SHKN3Trf5F",
+                "target": "stn_5NSZAdARHK",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": -10.5,
-                        "offsetTo": 7,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "mlvl",
-                            "#7f0d82",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_wv5Rkc5EbR",
-                "source": "stn_Nt576sFLZH",
-                "target": "stn_wj-gnoJOVF",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 1,
                     "type": "diagonal",
                     "diagonal": {
                         "startFrom": "from",
@@ -10976,15 +11059,22 @@
                         "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
-                    "style": "mtr-paid-area",
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
+                            "#fff"
+                        ]
+                    },
                     "reconcileId": "",
-                    "parallelIndex": -1,
-                    "mtr-paid-area": {}
+                    "parallelIndex": -1
                 }
             },
             {
-                "key": "line_tnczsGVvmy",
-                "source": "stn_J_051dkRtm",
+                "key": "line_nSsNFpkBrS",
+                "source": "stn_SHKN3Trf5F",
                 "target": "stn_wj-gnoJOVF",
                 "attributes": {
                     "visible": true,
@@ -10993,69 +11083,15 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": 7,
+                        "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
                     "style": "single-color",
                     "single-color": {
                         "color": [
                             "melbourne",
-                            "mlvl",
-                            "#7f0d82",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_K5tWDLFgbW",
-                "source": "stn_9Acqm2UvTb",
-                "target": "stn_Nt576sFLZH",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": -3.5,
-                        "offsetTo": 3.5,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "csul",
-                            "#ffbe00",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_YSYcBtvPAU",
-                "source": "stn_9Acqm2UvTb",
-                "target": "stn_LN3SsO9FRo",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": -3.5,
-                        "offsetTo": 3.5,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "csul",
-                            "#ffbe00",
+                            "mlsd",
+                            "#f178af",
                             "#fff"
                         ]
                     },
@@ -11091,6 +11127,33 @@
                 }
             },
             {
+                "key": "line_YSYcBtvPAU",
+                "source": "stn_9Acqm2UvTb",
+                "target": "stn_LN3SsO9FRo",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -3.5,
+                        "offsetTo": 3.5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#279fd5",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
                 "key": "line_858YvbupwL",
                 "source": "stn_LN3SsO9FRo",
                 "target": "stn_zfEQ0TCko2",
@@ -11118,9 +11181,171 @@
                 }
             },
             {
-                "key": "line_qlRpdTW27Q",
-                "source": "stn_Vn9Waffm2R",
-                "target": "stn_8cOEYyNzZw",
+                "key": "line_aAtyrBXx-U",
+                "source": "stn_V7g2lFmIQ6",
+                "target": "stn_5NSZAdARHK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_UWkStTeaez",
+                "source": "stn_55yywW8Xv4",
+                "target": "stn_gHzCVKSzdn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_prdvU2jUhT",
+                "source": "stn_55yywW8Xv4",
+                "target": "stn_5NSZAdARHK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_hCwY3W7MCO",
+                "source": "misc_node_Jnz4k1UmVv",
+                "target": "stn_wMqxOTKdUP",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_LzzrrQdzIg",
+                "source": "misc_node_Jnz4k1UmVv",
+                "target": "stn_5NSZAdARHK",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_tnczsGVvmy",
+                "source": "stn_J_051dkRtm",
+                "target": "stn_wj-gnoJOVF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 7,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlvl",
+                            "#7f0d82",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_f0WIuP57vN",
+                "source": "stn_J_051dkRtm",
+                "target": "stn_FTvskxddlv",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -11145,9 +11370,9 @@
                 }
             },
             {
-                "key": "line_724Sth4PDm",
-                "source": "stn_euh10O6ExM",
-                "target": "stn_zfEQ0TCko2",
+                "key": "line_A3f7XeMXvY",
+                "source": "stn_J_051dkRtm",
+                "target": "stn_28sYCvFIlc",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -11155,101 +11380,6 @@
                     "diagonal": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "melbourne",
-                            "mlvl",
-                            "#7f0d82",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false
-                    }
-                }
-            },
-            {
-                "key": "line_Y5k5d4brgZ",
-                "source": "stn_Rvyg1KHhHh",
-                "target": "stn_Vn9Waffm2R",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "melbourne",
-                            "mlvl",
-                            "#7f0d82",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false
-                    }
-                }
-            },
-            {
-                "key": "line_3z_xG9cvwQ",
-                "source": "stn_IVW7Lb5Gnm",
-                "target": "stn_feyMWkWm0E",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -1,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-sandwich",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-sandwich": {
-                        "color": [
-                            "melbourne",
-                            "flrc",
-                            "#95979a",
-                            "#fff"
-                        ]
-                    }
-                }
-            },
-            {
-                "key": "line_FhlCCx_gat",
-                "source": "stn_Fr5qEzX1fm",
-                "target": "stn_z3vGLuenOu",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": -3.5,
                         "offsetTo": 0,
                         "roundCornerFactor": 10
                     },
@@ -11264,40 +11394,6 @@
                     },
                     "reconcileId": "",
                     "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_3HVou3NiW_",
-                "source": "stn_5xRuukIg8k",
-                "target": "stn_z3vGLuenOu",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "melbourne",
-                            "mlvl",
-                            "#7f0d82",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false
-                    }
                 }
             },
             {
@@ -11335,9 +11431,103 @@
                 }
             },
             {
-                "key": "line_f0WIuP57vN",
-                "source": "stn_J_051dkRtm",
-                "target": "stn_FTvskxddlv",
+                "key": "line_3qKJQmbmPy",
+                "source": "misc_node_v1-Fsl5lUY",
+                "target": "misc_node_Fmz5KEJlM7",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 0
+                    },
+                    "style": "mtr-unpaid-area",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "mtr-unpaid-area": {}
+                }
+            },
+            {
+                "key": "line_T1posiam-E",
+                "source": "misc_node_LOkRBgPLNF",
+                "target": "misc_node_H9h5d2KJBh",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 0
+                    },
+                    "style": "mtr-unpaid-area",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "mtr-unpaid-area": {}
+                }
+            },
+            {
+                "key": "line_qUm04QOYai",
+                "source": "misc_node_H9h5d2KJBh",
+                "target": "misc_node_Fmz5KEJlM7",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 0
+                    },
+                    "style": "mtr-unpaid-area",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "mtr-unpaid-area": {}
+                }
+            },
+            {
+                "key": "line_3HVou3NiW_",
+                "source": "stn_5xRuukIg8k",
+                "target": "stn_z3vGLuenOu",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-rail",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-rail": {
+                        "colorBackground": [
+                            "melbourne",
+                            "mlvl",
+                            "#7f0d82",
+                            "#fff"
+                        ],
+                        "colorForeground": [
+                            "london",
+                            "white",
+                            "#ffffff",
+                            "#000"
+                        ],
+                        "limitedService": false
+                    }
+                }
+            },
+            {
+                "key": "line_qlRpdTW27Q",
+                "source": "stn_Vn9Waffm2R",
+                "target": "stn_8cOEYyNzZw",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -11362,9 +11552,63 @@
                 }
             },
             {
-                "key": "line_0kGPzqKgpj",
-                "source": "stn_FTvskxddlv",
-                "target": "stn__nFqtGJ54M",
+                "key": "line_Y5k5d4brgZ",
+                "source": "stn_Rvyg1KHhHh",
+                "target": "stn_Vn9Waffm2R",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlvl",
+                            "#7f0d82",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_724Sth4PDm",
+                "source": "stn_euh10O6ExM",
+                "target": "stn_zfEQ0TCko2",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlvl",
+                            "#7f0d82",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_8rKVnbaywj",
+                "source": "stn__fciY691Hu",
+                "target": "stn_PM894sWLsf",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -11423,67 +11667,6 @@
                 }
             },
             {
-                "key": "line_A3f7XeMXvY",
-                "source": "stn_J_051dkRtm",
-                "target": "stn_28sYCvFIlc",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "mlvl",
-                            "#7f0d82",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_8rKVnbaywj",
-                "source": "stn__fciY691Hu",
-                "target": "stn_PM894sWLsf",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "london-rail",
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "london-rail": {
-                        "colorBackground": [
-                            "melbourne",
-                            "mlvl",
-                            "#7f0d82",
-                            "#fff"
-                        ],
-                        "colorForeground": [
-                            "london",
-                            "white",
-                            "#ffffff",
-                            "#000"
-                        ],
-                        "limitedService": false
-                    }
-                }
-            },
-            {
                 "key": "line_iW4gmd2YWy",
                 "source": "stn_-JjTZDGOWM",
                 "target": "stn_LXOjqZ0Sgg",
@@ -11518,36 +11701,43 @@
                 }
             },
             {
-                "key": "line_kmzHJwaP5I",
-                "source": "stn_27BiBVp0el",
-                "target": "stn_kex-Du5UDE",
+                "key": "line_0kGPzqKgpj",
+                "source": "stn_FTvskxddlv",
+                "target": "stn__nFqtGJ54M",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
+                    "type": "diagonal",
+                    "diagonal": {
                         "startFrom": "from",
-                        "offsetFrom": 3.5,
-                        "offsetTo": -3.5,
-                        "roundCornerFactor": 25.66
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
                     },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "hume",
-                            "#be1014",
-                            "#fff"
-                        ]
-                    },
+                    "style": "london-rail",
                     "reconcileId": "",
-                    "parallelIndex": -1
+                    "parallelIndex": -1,
+                    "london-rail": {
+                        "colorBackground": [
+                            "melbourne",
+                            "mlvl",
+                            "#7f0d82",
+                            "#fff"
+                        ],
+                        "colorForeground": [
+                            "london",
+                            "white",
+                            "#ffffff",
+                            "#000"
+                        ],
+                        "limitedService": false
+                    }
                 }
             },
             {
-                "key": "line_iI2bBJ2vMZ",
-                "source": "misc_node_nGxRDS0rST",
-                "target": "stn_kex-Du5UDE",
+                "key": "line_8QfW4bLEEP",
+                "source": "misc_node_4p7hSs-2U7",
+                "target": "misc_node_a46Hm_pBn4",
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
@@ -11555,290 +11745,13 @@
                     "perpendicular": {
                         "startFrom": "from",
                         "offsetFrom": 0,
-                        "offsetTo": -3.5,
+                        "offsetTo": 0,
                         "roundCornerFactor": 18.33
                     },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "hume",
-                            "#be1014",
-                            "#fff"
-                        ]
-                    },
+                    "style": "mtr-paid-area",
                     "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_3vebc9TqTV",
-                "source": "stn_27BiBVp0el",
-                "target": "stn_Nt576sFLZH",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 10.5,
-                        "offsetTo": 3.5,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "csul",
-                            "#ffbe00",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_nnjZh97wC0",
-                "source": "stn_27BiBVp0el",
-                "target": "stn_kex-Du5UDE",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 10.5,
-                        "offsetTo": -10.5,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "csul",
-                            "#ffbe00",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_6teX_dtAnD",
-                "source": "stn_oG7kMXgiYX",
-                "target": "stn_kex-Du5UDE",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": -21,
-                        "offsetTo": -10.5,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "csul",
-                            "#ffbe00",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_Nz2oUCQeOX",
-                "source": "stn_kex-Du5UDE",
-                "target": "stn_zGDmtG4ilX",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 3.5,
-                        "offsetTo": 14,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "abgl",
-                            "#152c6b",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_h3dlGG04Jt",
-                "source": "stn_oZje9nJdXp",
-                "target": "stn_kex-Du5UDE",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": -3.5,
-                        "offsetTo": 3.5,
-                        "roundCornerFactor": 32
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "abgl",
-                            "#152c6b",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_JHwHdfX4qG",
-                "source": "stn_oZje9nJdXp",
-                "target": "stn_FqbEbIuihR",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": -3.5,
-                        "offsetTo": 3.5,
-                        "roundCornerFactor": 25.66
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "abgl",
-                            "#152c6b",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_BLtRChZCsg",
-                "source": "stn_kex-Du5UDE",
-                "target": "stn_zGDmtG4ilX",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 10.5,
-                        "offsetTo": 7,
-                        "roundCornerFactor": 10
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "crpa",
-                            "#279fd5",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_bkhAM8aHtp",
-                "source": "stn_27BiBVp0el",
-                "target": "stn_FqbEbIuihR",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": 3.5,
-                        "offsetTo": 10.5,
-                        "roundCornerFactor": 18.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "hume",
-                            "#be1014",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_7WvVzh6a_Q",
-                "source": "stn_oZje9nJdXp",
-                "target": "stn_kex-Du5UDE",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": -10.5,
-                        "offsetTo": 10.5,
-                        "roundCornerFactor": 39.33
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "crpa",
-                            "#279fd5",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
-                }
-            },
-            {
-                "key": "line_HiakswUq9A",
-                "source": "stn_oZje9nJdXp",
-                "target": "stn_FqbEbIuihR",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": 0,
-                    "type": "perpendicular",
-                    "perpendicular": {
-                        "startFrom": "from",
-                        "offsetFrom": -10.5,
-                        "offsetTo": -3.5,
-                        "roundCornerFactor": 32
-                    },
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "melbourne",
-                            "crpa",
-                            "#279fd5",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1
+                    "parallelIndex": -1,
+                    "mtr-paid-area": {}
                 }
             },
             {
@@ -12058,6 +11971,26 @@
                 }
             },
             {
+                "key": "line_TjYL8hE8Le",
+                "source": "misc_node_qLCrRNmdzp",
+                "target": "misc_node_xUGP9vaYTb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-paid-area",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "mtr-paid-area": {}
+                }
+            },
+            {
                 "key": "line_7ZNRQszA30",
                 "source": "misc_node_oF07CzibUB",
                 "target": "misc_node_vHkSjWha3n",
@@ -12119,6 +12052,26 @@
                 }
             },
             {
+                "key": "line_D5mM5P9FAa",
+                "source": "misc_node_xoSUNXHS0c",
+                "target": "misc_node_dVUdhsqwYu",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "mtr-paid-area",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "mtr-paid-area": {}
+                }
+            },
+            {
                 "key": "line_4GMVsyhMgL",
                 "source": "misc_node_UjFDc_h-0o",
                 "target": "misc_node_LYN4Se_R5o",
@@ -12143,6 +12096,26 @@
                             "#fff"
                         ]
                     }
+                }
+            },
+            {
+                "key": "line_9JEGimFFjb",
+                "source": "misc_node_Svgk8S-8gZ",
+                "target": "misc_node_n8S8tztaU2",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "mtr-paid-area",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "mtr-paid-area": {}
                 }
             },
             {
@@ -12171,8 +12144,709 @@
                         ]
                     }
                 }
+            },
+            {
+                "key": "line_j9wG-i2bO1",
+                "source": "stn_Nt576sFLZH",
+                "target": "stn_0L9HhApJV7",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "ro-perp",
+                    "ro-perp": {
+                        "startFrom": "from",
+                        "offsetFrom": -3.5,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "csul",
+                            "#ffbe00",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_wv5Rkc5EbR",
+                "source": "stn_Nt576sFLZH",
+                "target": "stn_wj-gnoJOVF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 1,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "mtr-paid-area",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "mtr-paid-area": {}
+                }
+            },
+            {
+                "key": "line_iI2bBJ2vMZ",
+                "source": "misc_node_nGxRDS0rST",
+                "target": "stn_kex-Du5UDE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 1,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": -3.5,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "hume",
+                            "#be1014",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_yI5dQYUL1f",
+                "source": "stn_LPL0zOHF8t",
+                "target": "misc_node_BDL0bRZuKV",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "parallelIndex": 0,
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#000000",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_inxboiH2fb",
+                "source": "misc_node_BDL0bRZuKV",
+                "target": "stn_27BiBVp0el",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "shanghai",
+                            "sh1",
+                            "#E3002B",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": 0
+                }
+            },
+            {
+                "key": "line_W2ZwnwipRq",
+                "source": "misc_node_fMRmEco8el",
+                "target": "stn_WrUhC9HzqF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "mtr-light-rail",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "mtr-light-rail": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#000000",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_t09F6A97es",
+                "source": "stn_9Acqm2UvTb",
+                "target": "misc_node_synT2R7Wvp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#279fd5",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_K87UBN4wY1",
+                "source": "misc_node_synT2R7Wvp",
+                "target": "misc_node_iLGNrv1H2N",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#279fd5",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_4662vJsbYc",
+                "source": "misc_node_iLGNrv1H2N",
+                "target": "stn_LPL0zOHF8t",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#279fd5",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_GpGxV9Mi9X",
+                "source": "stn_LPL0zOHF8t",
+                "target": "stn_WrUhC9HzqF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#279fd5",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_i9mmZc9NYG",
+                "source": "stn_ntr3sNXzxQ",
+                "target": "stn_WrUhC9HzqF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#279fd5",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_YUdepFzZu-",
+                "source": "stn_ntr3sNXzxQ",
+                "target": "stn_3-FFhMDxY0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#279fd5",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_nl8E-gGZsr",
+                "source": "stn_l-a50AoGig",
+                "target": "stn_3-FFhMDxY0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "other",
+                            "other",
+                            "#279fd5",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_cOPdmL0nyX",
+                "source": "stn_oG7kMXgiYX",
+                "target": "stn_zGDmtG4ilX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": -7,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "fwwl",
+                            "#028430",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_RIFiZrtd-z",
+                "source": "stn_oG7kMXgiYX",
+                "target": "stn_FqbEbIuihR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": -3.5,
+                        "roundCornerFactor": 39
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "fwwl",
+                            "#028430",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_ZiSU5inRSS",
+                "source": "stn_FqbEbIuihR",
+                "target": "stn_oZje9nJdXp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "to",
+                        "offsetFrom": -11,
+                        "offsetTo": -3.5,
+                        "roundCornerFactor": 32
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "fwwl",
+                            "#028430",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_2D6YLIrWGB",
+                "source": "stn_oZje9nJdXp",
+                "target": "stn_27BiBVp0el",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": -10,
+                        "offsetTo": 10,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "fwwl",
+                            "#028430",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_JxLTbgVKNE",
+                "source": "stn_27BiBVp0el",
+                "target": "stn_kex-Du5UDE",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": -10,
+                        "offsetTo": 10,
+                        "roundCornerFactor": 38
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "fwwl",
+                            "#028430",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_otVw-QfcZT",
+                "source": "stn_kex-Du5UDE",
+                "target": "stn_zGDmtG4ilX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 10,
+                        "offsetTo": -7,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "fwwl",
+                            "#028430",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_T2DVDM_VLM",
+                "source": "stn_wj-gnoJOVF",
+                "target": "stn_FqbEbIuihR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "to",
+                        "offsetFrom": 0,
+                        "offsetTo": -18,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_36nQym68N1",
+                "source": "stn_FqbEbIuihR",
+                "target": "stn_oG7kMXgiYX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "to",
+                        "offsetFrom": 15,
+                        "offsetTo": -19,
+                        "roundCornerFactor": 55
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "melbourne",
+                            "mlsd",
+                            "#f178af",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_hIdrSn0_Um",
+                "source": "stn_9Acqm2UvTb",
+                "target": "stn_I_Se7CeYuM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "to",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "melbourne",
+                            "flrc",
+                            "#95979a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_3W2yjj2wHK",
+                "source": "stn_lLhPQMJar0",
+                "target": "stn_URQMUTwmRb",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "melbourne",
+                            "flrc",
+                            "#95979a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_IC29jzrWJ4",
+                "source": "stn_URQMUTwmRb",
+                "target": "stn_qb7Bpc6hXl",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "to",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "melbourne",
+                            "flrc",
+                            "#95979a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_lV8beEzYzy",
+                "source": "stn_qb7Bpc6hXl",
+                "target": "stn_cNTms2fg2j",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "melbourne",
+                            "flrc",
+                            "#95979a",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "line_47rtRl8grm",
+                "source": "stn_cNTms2fg2j",
+                "target": "stn_3VjkKv-0yL",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "london-sandwich",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "london-sandwich": {
+                        "color": [
+                            "melbourne",
+                            "flrc",
+                            "#95979a",
+                            "#fff"
+                        ]
+                    }
+                }
             }
         ]
     },
-    "version": 56
+    "svgViewBoxZoom": 133.0101068807615,
+    "svgViewBoxMin": {
+        "x": -1259.1470644134372,
+        "y": -652.3635007561595
+    },
+    "version": 81,
+    "images": []
 }

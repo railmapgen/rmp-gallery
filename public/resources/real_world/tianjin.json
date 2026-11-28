@@ -1,17 +1,644 @@
 {
-    "svgViewBoxZoom": 208.8183181723305,
-    "svgViewBoxMin": {
-        "x": 599.7494806870246,
-        "y": -272.76180201424575
+    "mapEnabled": false,
+    "mapStyle": {
+        "roads": {
+            "path": {
+                "enabled": true,
+                "casingColor": "#dedbd4",
+                "color": "#dedbd4",
+                "widthScale": 1
+            },
+            "local": {
+                "enabled": true,
+                "casingColor": "#cfd39c",
+                "color": "#fbf8d0",
+                "widthScale": 1
+            },
+            "collector": {
+                "enabled": true,
+                "casingColor": "#c8cf86",
+                "color": "#f7fabf",
+                "widthScale": 1
+            },
+            "arterial": {
+                "enabled": true,
+                "casingColor": "#d8ab62",
+                "color": "#f6d19b",
+                "widthScale": 1
+            }
+        },
+        "rails": {
+            "metro": {
+                "enabled": true,
+                "color": "#4d8fd1",
+                "widthScale": 1
+            },
+            "national": {
+                "enabled": true,
+                "color": "#8f8a83",
+                "widthScale": 1
+            }
+        },
+        "labels": {
+            "enabled": true,
+            "categories": {
+                "place-major": {
+                    "enabled": true,
+                    "color": "#3a342d",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "place-medium": {
+                    "enabled": true,
+                    "color": "#4a443d",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "place-minor": {
+                    "enabled": true,
+                    "color": "#625c54",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "road-arterial": {
+                    "enabled": true,
+                    "color": "#554f48",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "road-collector": {
+                    "enabled": true,
+                    "color": "#68625a",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "building": {
+                    "enabled": true,
+                    "color": "#726c64",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-water": {
+                    "enabled": true,
+                    "color": "#477285",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-park": {
+                    "enabled": true,
+                    "color": "#4f6f45",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-grass": {
+                    "enabled": true,
+                    "color": "#5f744e",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-forest": {
+                    "enabled": true,
+                    "color": "#4f6a43",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-farmland": {
+                    "enabled": true,
+                    "color": "#746d45",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-cemetery": {
+                    "enabled": true,
+                    "color": "#5e6f58",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-residential": {
+                    "enabled": true,
+                    "color": "#625c54",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-commercial": {
+                    "enabled": true,
+                    "color": "#795a5a",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-industrial": {
+                    "enabled": true,
+                    "color": "#675d75",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-education": {
+                    "enabled": true,
+                    "color": "#715f3b",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "area-healthcare": {
+                    "enabled": true,
+                    "color": "#7a5661",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-airport": {
+                    "enabled": true,
+                    "color": "#3d6482",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-rail": {
+                    "enabled": true,
+                    "color": "#3f3a34",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-metro": {
+                    "enabled": true,
+                    "color": "#4d6c88",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-platform": {
+                    "enabled": true,
+                    "color": "#655f58",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                },
+                "transport-entrance": {
+                    "enabled": true,
+                    "color": "#6f8496",
+                    "strokeColor": "#f8f5ef",
+                    "sizeScale": 1
+                }
+            }
+        }
     },
-    "images": [],
     "graph": {
         "options": {
             "type": "directed",
             "multi": true,
             "allowSelfLoops": true
         },
-        "attributes": {},
+        "attributes": {
+            "lineDefinitions": [
+                {
+                    "id": "-jsdi_fR4P",
+                    "edgeIds": [
+                        "line_07gBWiySIW",
+                        "line_19jO_caBy9",
+                        "line_1_3N2P-X_b",
+                        "line_2veme8QP-1",
+                        "line_8CZuIl04Ef",
+                        "line_9i9SlSYzi_",
+                        "line_BQ0NXmTFEu",
+                        "line_K0Pz8-DFwC",
+                        "line_OebnP7wvhw",
+                        "line_Pt_sDMK_x7",
+                        "line_PwgT_zumMe",
+                        "line_Sy6qitkQRq",
+                        "line_UQwtiW6NCY",
+                        "line_URGK21H0Eq",
+                        "line_Ufz6oRDt4f",
+                        "line_UjCDZni09g",
+                        "line_VE7P4kf6Jj",
+                        "line_ZiTjNth-Uv",
+                        "line_aIF-Hy6-DY",
+                        "line_bsfdtTEXqT",
+                        "line_cxgV8tG2Qg",
+                        "line_i3jV10Yly2",
+                        "line_iYxpMGZDSI",
+                        "line_nasgPw8I-3",
+                        "line_pGpVwFaoRd",
+                        "line_qVfIZ4nXpb",
+                        "line_v6Peh4xwt4",
+                        "line_vj6x-TE-ol",
+                        "line_yBggIXtJjo",
+                        "line_yDFG-l07t0",
+                        "line_yS9gguVji0",
+                        "line_zcexWK_8K7"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_z2HAccCGQ-"
+                },
+                {
+                    "id": "WoVQ_Nq2UK",
+                    "edgeIds": [
+                        "line_1eqLx7zI5m",
+                        "line_1kud-Mh1ut",
+                        "line_2K2ocdRIAC",
+                        "line_2iNiUccwg5",
+                        "line_64kkIyFud6",
+                        "line_7mSAlXzZQd",
+                        "line_AhP5kkaimB",
+                        "line_BkJMdgXvZw",
+                        "line_CYzCxLGA3m",
+                        "line_E2hVTh1JCr",
+                        "line_JfrQbmmD1a",
+                        "line_LAV84JIBE0",
+                        "line_M13UNhRraU",
+                        "line_MYSDf__Uqj",
+                        "line_ODgKaq0HqG",
+                        "line_OnkmvM_62h",
+                        "line_R94CJT6VLy",
+                        "line_T0YZ3-qQj9",
+                        "line_TC9BEdCSyL",
+                        "line_TkagWrpMzu",
+                        "line_VzywhBN2LQ",
+                        "line_Wj-NMpB-c9",
+                        "line_XVHZJMDD_1",
+                        "line_ZFIdRBajkV",
+                        "line_es3M_VowgL",
+                        "line_es7YVaKslQ",
+                        "line_iyriV69dJH",
+                        "line_l75xTy4nz5",
+                        "line_mz2qse54kY",
+                        "line_nNNHBv8Hzm",
+                        "line_nO1LC0J3NE",
+                        "line_nl_bJtf6Wx",
+                        "line_oZ4JSDxrX7",
+                        "line_pr7X6_n9g5",
+                        "line_s21NuO5EfK",
+                        "line_t7JaFPKI3T",
+                        "line_tQKY8eK7jk",
+                        "line_wDABfc-avv",
+                        "line_xmYdmsLpr2"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_wPy4vpFeFX"
+                },
+                {
+                    "id": "59uHP5_q2Q",
+                    "edgeIds": [
+                        "line_EdvFE2D4SW",
+                        "line_GLsXGS9BEE",
+                        "line_I9oon7cMlx",
+                        "line_Iu9SZTCjG-",
+                        "line_NQk1iPIhrE",
+                        "line_NlUMfzokTX",
+                        "line_RF8Q-O1_aV",
+                        "line_S5pLCNZRZm",
+                        "line_WdjYG486r0",
+                        "line_XwzpPveXI9",
+                        "line_cc-dTCyeyt",
+                        "line_dJV58ky0so",
+                        "line_jA97sqbExj",
+                        "line_l_JoVFPutR",
+                        "line_m89B-Hp5bI",
+                        "line_nUOHLCPx-b",
+                        "line_pUauhu3k8d",
+                        "line_t7NGEEqSfQ",
+                        "line_uwZTcnsEu-"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_Ayiz9WJbQQ"
+                },
+                {
+                    "id": "v-w7qZ1TI3",
+                    "edgeIds": [
+                        "line_0OVSfhGysw",
+                        "line_9l0o0pdh3c",
+                        "line_FKfHXnnRP6",
+                        "line_JwmD1RFg6z",
+                        "line_aQ8W-6APF2",
+                        "line_dAfDK_uHz4",
+                        "line_fXq3brxKAU",
+                        "line_qay_iV8sMx",
+                        "line_rYPXDitfaa",
+                        "line_vnFNkaBltp",
+                        "line_wohNcsTXCW",
+                        "line_wzRAN880gb",
+                        "line_xwq-dCBv50"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_BemsxlzH0s"
+                },
+                {
+                    "id": "YLLj1zHL8N",
+                    "edgeIds": [
+                        "line_7mUw9DG7zo",
+                        "line_8BKR6sdbmT",
+                        "line_E_kjT6VRNp",
+                        "line_GcOQhu-Xq2",
+                        "line_HjBwU7uZSv",
+                        "line_MzPg8p7b1k",
+                        "line_NPZQSip3vw",
+                        "line_NuWRFuhwA4",
+                        "line_PpGQ7z0ofr",
+                        "line_ReNNThoQiF",
+                        "line_WRgS05VGEk",
+                        "line_YMyznheECs",
+                        "line_aUmNig9G_A",
+                        "line_pAB1AwrXyM",
+                        "line_sUso5CeXz-"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_nGs8x_zPPj"
+                },
+                {
+                    "id": "7XfAAmGSJM",
+                    "edgeIds": [
+                        "line_1K85KPhiC6",
+                        "line_1n3sh1voUN",
+                        "line_2qUYqO7Uxa",
+                        "line_7m2p_myiJQ",
+                        "line_9G2f6iojAd",
+                        "line_Agv_th_hwv",
+                        "line_D1QHet2G15",
+                        "line_F9CU0bx9SL",
+                        "line_GeLB01GOlf",
+                        "line_HzeRVd6RlB",
+                        "line_NbjGsjokQI",
+                        "line_SWHpP3JVZq",
+                        "line_Vsnq-QuabH",
+                        "line_a6TP7ayxBR",
+                        "line_cmohCGoG-3",
+                        "line_fRNJDjayoQ",
+                        "line_iqSV-XfNck",
+                        "line_iyyKl6oK14",
+                        "line_lVXUZ6VJOA",
+                        "line_nz6NW_oEB7",
+                        "line_opQpi6yiku",
+                        "line_roFDAlcpKZ",
+                        "line_s2PiHj9x2d",
+                        "line_wgp5263vuw",
+                        "line_yY4brssphr",
+                        "line_zGGs_2m2Tm"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_s19iaQYGYS"
+                },
+                {
+                    "id": "7bSW5QufUJ",
+                    "edgeIds": [
+                        "line_-NL4CqG7kC",
+                        "line_0Kb2EzW9td",
+                        "line_8WYlACdftW",
+                        "line_BprtuHhsJo",
+                        "line_JpQEHMgQfD",
+                        "line_LXZ0JAhvQO",
+                        "line_NBfz81f9bQ",
+                        "line_NvujGc8bun",
+                        "line_OpDH8EUEBY",
+                        "line_Xk5zf_QVAS",
+                        "line_YEhuTPI24v",
+                        "line__8M78mb29k",
+                        "line__ExhD-sdPa",
+                        "line_bFhk4_l7Zq",
+                        "line_bpvyozVRsp",
+                        "line_h-oTXFZe-n",
+                        "line_p472l2pdAd",
+                        "line_uVoVW4u05t",
+                        "line_xvWaqxexKT",
+                        "line_yN0R6ajoX6"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_KuMZBKhyAR"
+                },
+                {
+                    "id": "Rs7DtGlGeu",
+                    "edgeIds": [
+                        "line_02wEyMN9DR",
+                        "line_0G1EDJ2--6",
+                        "line_0yvGTGZ3Jn",
+                        "line_22WqCw5HD4",
+                        "line_3dtxHYP96r",
+                        "line_59KrMj3Hqa",
+                        "line_61eolzGYAU",
+                        "line_6Zi3tLW-rE",
+                        "line_86JedXRs3D",
+                        "line_9b-BTWMI4v",
+                        "line_ANG3s5eWl5",
+                        "line_CA2M7Prssf",
+                        "line_CG2ZM1LTTl",
+                        "line_EBLNYYJtyR",
+                        "line_GErPAwIwAy",
+                        "line_HAwNRDqFz_",
+                        "line_KGPxkYL-vN",
+                        "line_U1bf9KCTxL",
+                        "line_UsBzkGgIY-",
+                        "line_Vahy554DPr",
+                        "line_ZZAJfQ6REb",
+                        "line_dmGSWL0bCh",
+                        "line_lbAavNzxeG",
+                        "line_qURZicnU8n",
+                        "line_qn4kup-sUs",
+                        "line_rOIsKhoeLl",
+                        "line_yPGkGEsPJq",
+                        "line_zAmJ2TTbTE"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_Bz57Kbtprk"
+                },
+                {
+                    "id": "gTgTqDMYYx",
+                    "edgeIds": [
+                        "line_3JZjDqErYW",
+                        "line_6SfBNdUotS",
+                        "line_6WYgeDXPFC",
+                        "line_99w0b5lofZ",
+                        "line_AvIvyAJ40A",
+                        "line_G4T9sYEYry",
+                        "line_MRyH6jm8Sb",
+                        "line_NkJ28NvuIm",
+                        "line_Qk1MJ4rGEk",
+                        "line_RdZsBx8PWK",
+                        "line_RvELCAvN88",
+                        "line_SBW-i4sESd",
+                        "line_Tqnah_MOvg",
+                        "line_XSNjrEXO3d",
+                        "line_YiyeGvg2cf",
+                        "line_YlRvRvXGyP",
+                        "line__-fy_ws4dl",
+                        "line_dZ23UJo34i",
+                        "line_godqaz7zqE",
+                        "line_j4DxPy25Wr"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_qTPCXayaEx"
+                },
+                {
+                    "id": "aZBUz-DKP_",
+                    "edgeIds": [
+                        "line_2K3Ot4Yz-6",
+                        "line_Fqc-HXy_5t",
+                        "line_Hz9hJuiCCl",
+                        "line_Lnofr2C34w",
+                        "line_PL3yHVTBrJ",
+                        "line_Q6NPw29NHa",
+                        "line_Rmnp7JEduI",
+                        "line_TmTvKLGL6q",
+                        "line_bN--jswKLt",
+                        "line_bo44rbFxZ-",
+                        "line_eFGWSYZgQj",
+                        "line_gShel78lV8",
+                        "line_hX6B7GpnmG",
+                        "line_k4ZifL1duY",
+                        "line_oIwExMbM1w",
+                        "line_pxy3A7iff6",
+                        "line_sQYGUOumO7",
+                        "line_v4yPgCQ3vW",
+                        "line_wb1jp4WYlE",
+                        "line_wy-tC8zYdc"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_qMl1oGPxZR"
+                },
+                {
+                    "id": "WELhj5ChBR",
+                    "edgeIds": [
+                        "line_5U3bWckTZQ",
+                        "line_MK0VI_viBS",
+                        "line_QVCaurDT_u",
+                        "line_TovsqCGdc1",
+                        "line_VZpLJlarBR",
+                        "line_ezbaJ0xxiR",
+                        "line_gI9TMqdG9C",
+                        "line_uzSoV1JRkL"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_wPy4vpFeFX"
+                },
+                {
+                    "id": "WtskIL04R3",
+                    "edgeIds": [
+                        "line_KCHmMEk7Ok",
+                        "line_LYZQBy6x_k",
+                        "line_h8TQFrmA3F"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_Nyy7YBZd0E"
+                },
+                {
+                    "id": "Hf9VjtTQPx",
+                    "edgeIds": [
+                        "line_5o4A0WgTgA",
+                        "line_5oLWXWRzIS",
+                        "line_76ISEyCeyr",
+                        "line_DoEmBRSZ-R",
+                        "line_EKqL8AXA5z",
+                        "line_Hl6U6d65lU",
+                        "line_QWjaMCFyXn",
+                        "line_TkTVxwPlSi",
+                        "line_UPJbX9GGFq",
+                        "line__IV5f-BBkM",
+                        "line_g6KUeh6wh8",
+                        "line_grAs-YKkqS",
+                        "line_q-nJrKvkyk",
+                        "line_x4I5HEREe_"
+                    ],
+                    "name": [
+                        "",
+                        ""
+                    ],
+                    "lineNumber": "",
+                    "openingDate": "",
+                    "operator": "",
+                    "status": "operating",
+                    "notes": "",
+                    "exportStartStationId": "stn_AeOz5Str5D"
+                }
+            ]
+        },
         "nodes": [
             {
                 "key": "stn_c3DLHdoWJ2",
@@ -1315,7 +1942,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 545,
+                    "x": 540,
                     "y": 765,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
@@ -1324,13 +1951,18 @@
                             "ANSHANDAO"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetY": "top",
                         "color": [
                             "tianjin",
                             "tj1",
                             "#CB333B",
                             "#fff"
-                        ]
+                        ],
+                        "preciseNameOffsets": {
+                            "x": 0,
+                            "y": -13.517267273106782,
+                            "anchor": "middle"
+                        }
                     }
                 }
             },
@@ -1340,7 +1972,7 @@
                     "visible": true,
                     "zIndex": 10,
                     "x": 335,
-                    "y": 695,
+                    "y": 712.5,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
@@ -1364,21 +1996,41 @@
                     "visible": true,
                     "zIndex": 10,
                     "x": 335,
-                    "y": 765,
-                    "type": "kunmingrt-basic",
-                    "kunmingrt-basic": {
+                    "y": 808.84,
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "鞍山西道",
                             "ANSHANXIDAO"
                         ],
                         "nameOffsetX": "left",
                         "nameOffsetY": "middle",
-                        "color": [
-                            "tianjin",
-                            "tj6",
-                            "#994878",
-                            "#fff"
-                        ]
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "tianjin",
+                                    "tj6",
+                                    "#994878",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "tianjin",
+                                    "tj8",
+                                    "#84329b",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ],
+                        "preciseNameOffsets": {
+                            "x": -4.500897746378039,
+                            "y": -12.87027511733059,
+                            "anchor": "end"
+                        }
                     }
                 }
             },
@@ -1388,7 +2040,7 @@
                     "visible": true,
                     "zIndex": 10,
                     "x": 335,
-                    "y": 820,
+                    "y": 843.75,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
@@ -1412,7 +2064,7 @@
                     "visible": true,
                     "zIndex": 10,
                     "x": 335,
-                    "y": 870,
+                    "y": 890,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
@@ -1479,26 +2131,41 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 559.6,
-                    "y": 818.84,
-                    "type": "kunmingrt-basic",
-                    "kunmingrt-basic": {
+                    "x": 569.6,
+                    "y": 808.84,
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "西康路",
                             "XIKANGLU"
                         ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "bottom",
-                        "color": [
-                            "tianjin",
-                            "tj3",
-                            "#0081a6",
-                            "#fff"
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "top",
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "tianjin",
+                                    "tj8",
+                                    "#84329b",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "tianjin",
+                                    "tj3",
+                                    "#0081a6",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
                         ],
                         "preciseNameOffsets": {
-                            "x": 4.786538175755442,
-                            "y": 15.871243607889486,
-                            "anchor": "start"
+                            "x": -8.469330792442424,
+                            "y": -10.84663768071308,
+                            "anchor": "end"
                         }
                     }
                 }
@@ -1988,8 +2655,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 645,
-                    "y": 990,
+                    "x": 652.58,
+                    "y": 992.58,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
@@ -2017,8 +2684,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 640,
-                    "y": 920,
+                    "x": 633.49,
+                    "y": 947.03,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
@@ -2046,27 +2713,19 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 690,
-                    "y": 830,
+                    "x": 700,
+                    "y": 875,
                     "type": "kunmingrt-int",
                     "kunmingrt-int": {
                         "names": [
                             "下瓦房",
                             "XIAWAFANG"
                         ],
-                        "nameOffsetX": "middle",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "top",
                         "rotate": 0,
                         "transfer": [
                             [
-                                [
-                                    "tianjin",
-                                    "tj1",
-                                    "#CB333B",
-                                    "#fff",
-                                    "",
-                                    ""
-                                ],
                                 [
                                     "tianjin",
                                     "tj5",
@@ -2074,9 +2733,30 @@
                                     "#fff",
                                     "",
                                     ""
+                                ],
+                                [
+                                    "tianjin",
+                                    "tj8",
+                                    "#84329b",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "tianjin",
+                                    "tj1",
+                                    "#CB333B",
+                                    "#fff",
+                                    "",
+                                    ""
                                 ]
                             ]
-                        ]
+                        ],
+                        "preciseNameOffsets": {
+                            "x": -11.362767416461583,
+                            "y": -12.219103017808724,
+                            "anchor": "end"
+                        }
                     }
                 }
             },
@@ -2085,16 +2765,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 650,
-                    "y": 790,
+                    "x": 665,
+                    "y": 765,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
                             "小白楼",
                             "XIAOBAILOU"
                         ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "top",
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
                         "color": [
                             "tianjin",
                             "tj1",
@@ -2102,9 +2782,9 @@
                             "#fff"
                         ],
                         "preciseNameOffsets": {
-                            "x": 11.567543587101696,
-                            "y": -3.3259410242898753,
-                            "anchor": "start"
+                            "x": -0.7418321993264297,
+                            "y": 18.5,
+                            "anchor": "middle"
                         }
                     }
                 }
@@ -2881,16 +3561,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 450,
-                    "y": 1230,
+                    "x": 415,
+                    "y": 1241.27,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
                             "李七庄南",
                             "LIQIZHUANGNAN"
                         ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
                         "color": [
                             "tianjin",
                             "tj5",
@@ -3045,22 +3725,42 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 765,
+                    "x": 735,
                     "y": 1145,
-                    "type": "kunmingrt-basic",
-                    "kunmingrt-basic": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "南珠桥",
                             "NANZHUQIAO"
                         ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "top",
-                        "color": [
-                            "tianjin",
-                            "tj10",
-                            "#C4D600",
-                            "#fff"
-                        ]
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "bottom",
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "tianjin",
+                                    "tj10",
+                                    "#c4d600",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "tianjin",
+                                    "tj8",
+                                    "#84329b",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ],
+                        "preciseNameOffsets": {
+                            "x": 6.39241230461648,
+                            "y": 17.960887110251505,
+                            "anchor": "start"
+                        }
                     }
                 }
             },
@@ -3069,8 +3769,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 739.74,
-                    "y": 879.74,
+                    "x": 700,
+                    "y": 920,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
@@ -3086,8 +3786,8 @@
                             "#fff"
                         ],
                         "preciseNameOffsets": {
-                            "x": -7.287382964636416,
-                            "y": 14.854726834451258,
+                            "x": -8.026023650041427,
+                            "y": 1.6690923816821854,
                             "anchor": "end"
                         }
                     }
@@ -3098,22 +3798,42 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 765,
-                    "y": 905,
-                    "type": "kunmingrt-basic",
-                    "kunmingrt-basic": {
+                    "x": 735,
+                    "y": 955,
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "土城",
                             "TUCHENG"
                         ],
                         "nameOffsetX": "right",
                         "nameOffsetY": "middle",
-                        "color": [
-                            "tianjin",
-                            "tj1",
-                            "#CB333B",
-                            "#fff"
-                        ]
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "tianjin",
+                                    "tj8",
+                                    "#84329b",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "tianjin",
+                                    "tj1",
+                                    "#cb333b",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ],
+                        "preciseNameOffsets": {
+                            "x": 6.429310284376109,
+                            "y": -9.866409141892618,
+                            "anchor": "start"
+                        }
                     }
                 }
             },
@@ -3122,16 +3842,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 795,
-                    "y": 935,
+                    "x": 800,
+                    "y": 955,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
                             "陈塘庄",
                             "CHENTANGZHUANG"
                         ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
                         "color": [
                             "tianjin",
                             "tj1",
@@ -3139,9 +3859,9 @@
                             "#fff"
                         ],
                         "preciseNameOffsets": {
-                            "x": 7.035621610279918,
-                            "y": -2.0141996340543944,
-                            "anchor": "start"
+                            "x": 10.185847400262118,
+                            "y": 19.16755517097067,
+                            "anchor": "end"
                         }
                     }
                 }
@@ -3152,7 +3872,7 @@
                     "visible": true,
                     "zIndex": 10,
                     "x": 850,
-                    "y": 990,
+                    "y": 995,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
@@ -3262,7 +3982,7 @@
                             "WEISHANLU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetY": "top",
                         "color": [
                             "tianjin",
                             "tj10",
@@ -3286,7 +4006,7 @@
                             "MAGANGCHANG"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "top",
+                        "nameOffsetY": "bottom",
                         "color": [
                             "tianjin",
                             "tj10",
@@ -3310,7 +4030,7 @@
                             "CHUNHAILU"
                         ],
                         "nameOffsetX": "middle",
-                        "nameOffsetY": "bottom",
+                        "nameOffsetY": "top",
                         "color": [
                             "tianjin",
                             "tj10",
@@ -3384,7 +4104,12 @@
                             "tj6",
                             "#994878",
                             "#fff"
-                        ]
+                        ],
+                        "preciseNameOffsets": {
+                            "x": -13.181854851799505,
+                            "y": 2.633683505750422,
+                            "anchor": "end"
+                        }
                     }
                 }
             },
@@ -3394,7 +4119,7 @@
                     "visible": true,
                     "zIndex": 10,
                     "x": 680,
-                    "y": 1210,
+                    "y": 1205,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
@@ -3430,7 +4155,7 @@
                             "左江道",
                             "ZUOJIANGDAO"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "color": [
                             "tianjin",
@@ -3439,9 +4164,9 @@
                             "#fff"
                         ],
                         "preciseNameOffsets": {
-                            "x": 7.790951006350414,
-                            "y": 0.7553565958710985,
-                            "anchor": "start"
+                            "x": -10.91909947243321,
+                            "y": 2.2997014660095747,
+                            "anchor": "end"
                         }
                     }
                 }
@@ -3459,14 +4184,19 @@
                             "梅江会展中心",
                             "MEIJIANGHUIZHANZHONGXIN"
                         ],
-                        "nameOffsetX": "right",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "middle",
                         "color": [
                             "tianjin",
                             "tj6",
                             "#994878",
                             "#fff"
-                        ]
+                        ],
+                        "preciseNameOffsets": {
+                            "x": -7.803288778741445,
+                            "y": 1.149682358912012,
+                            "anchor": "end"
+                        }
                     }
                 }
             },
@@ -3499,7 +4229,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 800,
+                    "x": 795,
                     "y": 1250,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
@@ -3523,7 +4253,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 870,
+                    "x": 860,
                     "y": 1250,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
@@ -3577,7 +4307,12 @@
                                     ""
                                 ]
                             ]
-                        ]
+                        ],
+                        "preciseNameOffsets": {
+                            "x": 10.112278017440822,
+                            "y": 0.20342031839782845,
+                            "anchor": "start"
+                        }
                     }
                 }
             },
@@ -5250,7 +5985,7 @@
                     "visible": true,
                     "zIndex": 10,
                     "x": 160,
-                    "y": 1095,
+                    "y": 1090,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
                         "num": 3,
@@ -5287,8 +6022,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 335,
-                    "y": 1260,
+                    "x": 348.22,
+                    "y": 1216.4,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
                         "num": 5,
@@ -5401,8 +6136,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 881,
-                    "y": 1221,
+                    "x": 958.75,
+                    "y": 1239.43,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
                         "num": 6,
@@ -5924,16 +6659,16 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 450,
-                    "y": 1270,
+                    "x": 365,
+                    "y": 1240,
                     "type": "kunmingrt-int",
                     "kunmingrt-int": {
                         "names": [
                             "京华东道",
                             "JINGHUADONGDAO"
                         ],
-                        "nameOffsetX": "left",
-                        "nameOffsetY": "middle",
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
                         "rotate": 0,
                         "transfer": [
                             [
@@ -5963,8 +6698,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 440,
-                    "y": 1320,
+                    "x": 320,
+                    "y": 1290,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
@@ -5987,22 +6722,27 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 425,
-                    "y": 1355,
+                    "x": 289.21,
+                    "y": 1385.2,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
                             "团泊健康城",
                             "TUANBOJIANKANGCHENG"
                         ],
-                        "nameOffsetX": "left",
+                        "nameOffsetX": "right",
                         "nameOffsetY": "middle",
                         "color": [
                             "tianjin",
                             "jinjing",
                             "#F8B5C4",
                             "#fff"
-                        ]
+                        ],
+                        "preciseNameOffsets": {
+                            "x": 9.806363200164478,
+                            "y": 2.37395444092351,
+                            "anchor": "start"
+                        }
                     }
                 }
             },
@@ -6011,8 +6751,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 425,
-                    "y": 1390,
+                    "x": 289.21,
+                    "y": 1440.79,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
@@ -6035,8 +6775,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 5,
-                    "x": 407.5,
-                    "y": 1401.5,
+                    "x": 298.37,
+                    "y": 1430.66,
                     "type": "bjsubway-text-line-badge",
                     "bjsubway-text-line-badge": {
                         "names": [
@@ -6179,7 +6919,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 600,
-                    "y": 915,
+                    "y": 910,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
@@ -6231,7 +6971,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 800,
+                    "x": 780,
                     "y": 1055,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
@@ -6260,22 +7000,42 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 765,
+                    "x": 735,
                     "y": 1055,
-                    "type": "kunmingrt-basic",
-                    "kunmingrt-basic": {
+                    "type": "kunmingrt-int",
+                    "kunmingrt-int": {
                         "names": [
                             "澧水道",
                             "LISHUIDAO"
                         ],
-                        "nameOffsetX": "middle",
+                        "nameOffsetX": "left",
                         "nameOffsetY": "bottom",
-                        "color": [
-                            "tianjin",
-                            "tj11",
-                            "#002D72",
-                            "#fff"
-                        ]
+                        "rotate": 0,
+                        "transfer": [
+                            [
+                                [
+                                    "tianjin",
+                                    "tj11",
+                                    "#002d72",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ],
+                                [
+                                    "tianjin",
+                                    "tj8",
+                                    "#84329b",
+                                    "#fff",
+                                    "",
+                                    ""
+                                ]
+                            ]
+                        ],
+                        "preciseNameOffsets": {
+                            "x": -5.094199942434772,
+                            "y": 17.367584914194772,
+                            "anchor": "end"
+                        }
                     }
                 }
             },
@@ -6770,7 +7530,7 @@
                     "visible": true,
                     "zIndex": 0,
                     "x": 500,
-                    "y": 815,
+                    "y": 808.84,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
@@ -6786,8 +7546,8 @@
                             "#fff"
                         ],
                         "preciseNameOffsets": {
-                            "x": -6.783860255923436,
-                            "y": 1.7095671274461992,
+                            "x": -4.083168546113466,
+                            "y": 18.85966193328693,
                             "anchor": "end"
                         }
                     }
@@ -6851,8 +7611,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 500,
-                    "y": 1410,
+                    "x": 535,
+                    "y": 1415,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
                         "names": [
@@ -6875,7 +7635,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 500,
+                    "x": 535,
                     "y": 1317.54,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
@@ -6899,7 +7659,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 500,
+                    "x": 520,
                     "y": 1240,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
@@ -6907,14 +7667,19 @@
                             "梅江会展中心南",
                             "MEIJIANGHUIZHANZHONGXINNAN"
                         ],
-                        "nameOffsetX": "right",
-                        "nameOffsetY": "middle",
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
                         "color": [
                             "tianjin",
                             "tj7",
                             "#c6893f",
                             "#fff"
-                        ]
+                        ],
+                        "preciseNameOffsets": {
+                            "x": 7.404006719590287,
+                            "y": 20.465755506431464,
+                            "anchor": "end"
+                        }
                     }
                 }
             },
@@ -6923,7 +7688,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 500,
+                    "x": 535,
                     "y": 1351.37,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
@@ -6971,7 +7736,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 500,
+                    "x": 535,
                     "y": 1280,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
@@ -6995,7 +7760,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "x": 500,
+                    "x": 535,
                     "y": 1385.2,
                     "type": "kunmingrt-basic",
                     "kunmingrt-basic": {
@@ -7019,8 +7784,8 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 10,
-                    "x": 556,
-                    "y": 1399.4,
+                    "x": 492.89,
+                    "y": 1407.58,
                     "type": "bjsubway-num-line-badge",
                     "bjsubway-num-line-badge": {
                         "num": 7,
@@ -7049,6 +7814,460 @@
                             "#c6893f",
                             "#fff"
                         ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_zva3ul8ZC-",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 10,
+                    "x": 1211.08,
+                    "y": 1335.88,
+                    "type": "bjsubway-num-line-badge",
+                    "bjsubway-num-line-badge": {
+                        "num": 8,
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_y_CxtPf6LB",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 10,
+                    "x": 860,
+                    "y": 1205,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "长泰河东",
+                            "CHANGTAIHEDONG"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_7JsGQ-dnAp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 770,
+                    "y": 1205,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "沂山路",
+                            "YISHANLU"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_TQSgSY-JHJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 303.41,
+                    "y": 1336.59,
+                    "type": "virtual",
+                    "virtual": {}
+                }
+            },
+            {
+                "key": "stn_Yqsv176AZW",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 10,
+                    "x": 735,
+                    "y": 1100,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "梅江道东",
+                            "MEIJIANGDAO"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ],
+                        "preciseNameOffsets": {
+                            "x": 10.1403211864635,
+                            "y": 1.6317854934115297,
+                            "anchor": "start"
+                        }
+                    }
+                }
+            },
+            {
+                "key": "stn_kitZeYj7zm",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 735,
+                    "y": 905,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "湘江道",
+                            "XIANGJIANGDAO"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ],
+                        "preciseNameOffsets": {
+                            "x": 8.879103017808722,
+                            "y": 1.743345356596121,
+                            "anchor": "start"
+                        }
+                    }
+                }
+            },
+            {
+                "key": "stn_UxqRiozEOM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 633.49,
+                    "y": 823.84,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "马场道",
+                            "MACHANGDAO"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "middle",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ],
+                        "preciseNameOffsets": {
+                            "x": 8.879103017808722,
+                            "y": 1.743345356596121,
+                            "anchor": "start"
+                        }
+                    }
+                }
+            },
+            {
+                "key": "stn_dWgyPkJgeN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 633.49,
+                    "y": 851.51,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "人民公园",
+                            "RENMINGONGYUAN"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "middle",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ],
+                        "preciseNameOffsets": {
+                            "x": -2.4712579509878276,
+                            "y": 3.1559393923772743,
+                            "anchor": "end"
+                        }
+                    }
+                }
+            },
+            {
+                "key": "stn_nTdKqySi0N",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 601.16,
+                    "y": 808.84,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "成都道",
+                            "CHENGDUDAO"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_wNevG4ZACo",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 418.84,
+                    "y": 808.84,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "南丰路",
+                            "NANFENGLU"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ],
+                        "preciseNameOffsets": {
+                            "x": -0.18545203647115116,
+                            "y": -14.333328393905322,
+                            "anchor": "middle"
+                        }
+                    }
+                }
+            },
+            {
+                "key": "stn__C_unmOPi0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 10,
+                    "x": 70,
+                    "y": 717.68,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "中北",
+                            "ZHONGBEI"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_lfMVXWS9Kl",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 10,
+                    "x": 114.87,
+                    "y": 717.68,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "福姜路",
+                            "FUJIANGLU"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_0sGl78ltMF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 170,
+                    "y": 725,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "南泥湾路",
+                            "NANNIWANLU"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ],
+                        "preciseNameOffsets": {
+                            "x": 5.652430010745295,
+                            "y": -11.291842835452968,
+                            "anchor": "start"
+                        }
+                    }
+                }
+            },
+            {
+                "key": "stn_l3alZ0tQER",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 227.34,
+                    "y": 782.34,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "绿水公园",
+                            "LÜSHUIGONGYUAN"
+                        ],
+                        "nameOffsetX": "left",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ],
+                        "preciseNameOffsets": {
+                            "x": -4.205759805619364,
+                            "y": 16.75665464340388,
+                            "anchor": "end"
+                        }
+                    }
+                }
+            },
+            {
+                "key": "stn_wYHYMW_iky",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 198.67,
+                    "y": 753.67,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "乐山道",
+                            "LESHANDAO"
+                        ],
+                        "nameOffsetX": "right",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ],
+                        "preciseNameOffsets": {
+                            "x": 5.652430010745295,
+                            "y": -11.291842835452968,
+                            "anchor": "start"
+                        }
+                    }
+                }
+            },
+            {
+                "key": "stn_71TiryY-3P",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 257.5,
+                    "y": 807.5,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "兰坪路",
+                            "LANPINGLU"
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "bottom",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "misc_node_yIeB-6gKfT",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 10,
+                    "x": 59.87,
+                    "y": 729.78,
+                    "type": "bjsubway-num-line-badge",
+                    "bjsubway-num-line-badge": {
+                        "num": 8,
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    }
+                }
+            },
+            {
+                "key": "stn_PRoYS5LKqx",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "x": 485,
+                    "y": 808.84,
+                    "type": "kunmingrt-basic",
+                    "kunmingrt-basic": {
+                        "names": [
+                            "",
+                            ""
+                        ],
+                        "nameOffsetX": "middle",
+                        "nameOffsetY": "top",
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ],
+                        "preciseNameOffsets": {
+                            "x": -0.18545203647115116,
+                            "y": -14.333328393905322,
+                            "anchor": "middle"
+                        }
                     }
                 }
             }
@@ -9232,33 +10451,6 @@
                 }
             },
             {
-                "key": "line_6Zi3tLW-rE",
-                "source": "stn_KrCFpVCFfJ",
-                "target": "stn_zjrk84tDXN",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -10,
-                    "type": "diagonal",
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "tianjin",
-                            "tj5",
-                            "#E35205",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "diagonal": {
-                        "startFrom": "to",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 5
-                    },
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_nNNHBv8Hzm",
                 "source": "stn_6GFM6GCrKU",
                 "target": "stn_oB0xhNUWvF",
@@ -9291,7 +10483,7 @@
                 "target": "stn_KrCFpVCFfJ",
                 "attributes": {
                     "visible": true,
-                    "zIndex": -10,
+                    "zIndex": -1,
                     "type": "perpendicular",
                     "perpendicular": {
                         "startFrom": "from",
@@ -9313,40 +10505,13 @@
                 }
             },
             {
-                "key": "line_0G1EDJ2--6",
-                "source": "stn_zjrk84tDXN",
-                "target": "stn_FNl_2BPR47",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -10,
-                    "type": "diagonal",
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "tianjin",
-                            "tj5",
-                            "#E35205",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 5
-                    },
-                    "parallelIndex": -1
-                }
-            },
-            {
                 "key": "line_nasgPw8I-3",
                 "source": "stn_FNl_2BPR47",
                 "target": "stn_B36KT_Tsio",
                 "attributes": {
                     "visible": true,
                     "zIndex": -10,
-                    "type": "diagonal",
+                    "type": "perpendicular",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -9357,13 +10522,13 @@
                         ]
                     },
                     "reconcileId": "",
-                    "diagonal": {
-                        "startFrom": "from",
+                    "parallelIndex": -1,
+                    "perpendicular": {
+                        "startFrom": "to",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "parallelIndex": -1
+                        "roundCornerFactor": 18.33
+                    }
                 }
             },
             {
@@ -10168,7 +11333,7 @@
                     },
                     "reconcileId": "",
                     "perpendicular": {
-                        "startFrom": "from",
+                        "startFrom": "to",
                         "offsetFrom": 0,
                         "offsetTo": 0,
                         "roundCornerFactor": 18.33
@@ -10416,7 +11581,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": -10,
-                    "type": "diagonal",
+                    "type": "perpendicular",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -10427,13 +11592,13 @@
                         ]
                     },
                     "reconcileId": "",
-                    "diagonal": {
-                        "startFrom": "from",
+                    "parallelIndex": -1,
+                    "perpendicular": {
+                        "startFrom": "to",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
-                    "parallelIndex": -1
+                        "roundCornerFactor": 18.33
+                    }
                 }
             },
             {
@@ -12880,7 +14045,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": -5,
-                    "type": "diagonal",
+                    "type": "perpendicular",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -12892,38 +14057,11 @@
                     },
                     "reconcileId": "",
                     "parallelIndex": -1,
-                    "diagonal": {
+                    "perpendicular": {
                         "startFrom": "from",
                         "offsetFrom": 0,
                         "offsetTo": 0,
-                        "roundCornerFactor": 5
-                    }
-                }
-            },
-            {
-                "key": "line_KCHmMEk7Ok",
-                "source": "stn_NYHBj_h2hy",
-                "target": "stn_HjtuXE8xq7",
-                "attributes": {
-                    "visible": true,
-                    "zIndex": -5,
-                    "type": "diagonal",
-                    "style": "single-color",
-                    "single-color": {
-                        "color": [
-                            "tianjin",
-                            "jinjing",
-                            "#F8B5C4",
-                            "#fff"
-                        ]
-                    },
-                    "reconcileId": "",
-                    "parallelIndex": -1,
-                    "diagonal": {
-                        "startFrom": "to",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 5
+                        "roundCornerFactor": 18.33
                     }
                 }
             },
@@ -13986,13 +15124,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
+                    "type": "perpendicular",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -14003,7 +15135,13 @@
                         ]
                     },
                     "reconcileId": "",
-                    "parallelIndex": -1
+                    "parallelIndex": -1,
+                    "perpendicular": {
+                        "startFrom": "to",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    }
                 }
             },
             {
@@ -14013,13 +15151,7 @@
                 "attributes": {
                     "visible": true,
                     "zIndex": 0,
-                    "type": "diagonal",
-                    "diagonal": {
-                        "startFrom": "from",
-                        "offsetFrom": 0,
-                        "offsetTo": 0,
-                        "roundCornerFactor": 10
-                    },
+                    "type": "perpendicular",
                     "style": "single-color",
                     "single-color": {
                         "color": [
@@ -14030,7 +15162,13 @@
                         ]
                     },
                     "reconcileId": "",
-                    "parallelIndex": -1
+                    "parallelIndex": -1,
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    }
                 }
             },
             {
@@ -14275,8 +15413,547 @@
                     "reconcileId": "",
                     "parallelIndex": -1
                 }
+            },
+            {
+                "key": "line_YXY3Fsr97n",
+                "source": "stn_y_CxtPf6LB",
+                "target": "stn_wPy4vpFeFX",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_EbwOoEjCvI",
+                "source": "stn_y_CxtPf6LB",
+                "target": "stn_7JsGQ-dnAp",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_5oW3fU1HsX",
+                "source": "stn_NYHBj_h2hy",
+                "target": "misc_node_TQSgSY-JHJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "jinjing",
+                            "#F8B5C4",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_CFt2lBdfrG",
+                "source": "stn_HjtuXE8xq7",
+                "target": "misc_node_TQSgSY-JHJ",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "jinjing",
+                            "#f8b5c4",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_7LbO4XJJ6G",
+                "source": "stn_7JsGQ-dnAp",
+                "target": "stn_gxSHc2KGZn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_A4-anWnsFy",
+                "source": "stn_Qp9DFYmImG",
+                "target": "stn_NbBlq0gYr2",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line__Vj6JAOs4T",
+                "source": "stn_NbBlq0gYr2",
+                "target": "stn_gxSHc2KGZn",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_U3B3StcyMR",
+                "source": "stn_FNl_2BPR47",
+                "target": "stn_Qp9DFYmImG",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_AHUlrn-_8-",
+                "source": "stn_zjrk84tDXN",
+                "target": "stn_FNl_2BPR47",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj5",
+                            "#e35205",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_tgHzEZ7YI7",
+                "source": "stn_KrCFpVCFfJ",
+                "target": "stn_zjrk84tDXN",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": -10,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 2,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj5",
+                            "#e35205",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_VHvjdayr3g",
+                "source": "stn_CViMiHT6Hw",
+                "target": "stn_UxqRiozEOM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_28VDz2l-CL",
+                "source": "stn_FNl_2BPR47",
+                "target": "stn_UxqRiozEOM",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "perpendicular",
+                    "perpendicular": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 18.33
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_JQX_oAtyUu",
+                "source": "stn_CViMiHT6Hw",
+                "target": "stn_5WJAQ3M94d",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_PCG5RsZjyR",
+                "source": "stn_5WJAQ3M94d",
+                "target": "stn_meSBNMBlpR",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_NqR9gJSLUD",
+                "source": "stn_lfMVXWS9Kl",
+                "target": "stn__C_unmOPi0",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_7FAAMO5nI4",
+                "source": "stn_lfMVXWS9Kl",
+                "target": "stn_0sGl78ltMF",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_kc35Ipdn1j",
+                "source": "stn_0sGl78ltMF",
+                "target": "stn_l3alZ0tQER",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line__K67jHR-Cm",
+                "source": "stn_meSBNMBlpR",
+                "target": "stn_71TiryY-3P",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_L_cS_pWZ_N",
+                "source": "stn_71TiryY-3P",
+                "target": "stn_l3alZ0tQER",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "single-color",
+                    "single-color": {
+                        "color": [
+                            "tianjin",
+                            "tj8",
+                            "#84329b",
+                            "#fff"
+                        ]
+                    },
+                    "reconcileId": "",
+                    "parallelIndex": -1
+                }
+            },
+            {
+                "key": "line_Vt93kPrijF",
+                "source": "stn_5WJAQ3M94d",
+                "target": "stn_PRoYS5LKqx",
+                "attributes": {
+                    "visible": true,
+                    "zIndex": 0,
+                    "type": "diagonal",
+                    "diagonal": {
+                        "startFrom": "from",
+                        "offsetFrom": 0,
+                        "offsetTo": 0,
+                        "roundCornerFactor": 10
+                    },
+                    "style": "shmetro-virtual-int",
+                    "reconcileId": "",
+                    "parallelIndex": -1,
+                    "shmetro-virtual-int": {}
+                }
             }
         ]
     },
-    "version": 77
+    "svgViewBoxZoom": 68.81831817233049,
+    "svgViewBoxMin": {
+        "x": 404.0239748530407,
+        "y": 648.0846386348577
+    },
+    "version": 81,
+    "images": []
 }
